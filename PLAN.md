@@ -110,13 +110,16 @@ PLAN.md CLAUDE.md TODO-CONTENU.md README.md .env.example
 - **Chiffres dans le frontmatter** : syntaxe `{{cle.reference}}` remplacée au build (`interpolateRefs`).
 - **Recherche** : Pagefind indexe le HTML généré (`.next/server/app`) après `next build` ; index dans `public/pagefind` (non versionné). Indisponible en `pnpm dev`.
 - **Progression du parcours** : `localStorage` (clé `parcours:v1`, aucun cookie), logique pure dans `src/lib/parcours/progress.ts` ; la synchronisation avec le compte (phase 7) se branchera derrière le hook `useParcoursProgress`.
-- **Progression du parcours** : `localStorage` (clé `parcours:v1`, aucun cookie), logique pure dans `src/lib/parcours/progress.ts` ; la synchronisation avec le compte (phase 7) se branchera derrière le hook `useParcoursProgress`.
 - **Brouillons** : visibles en local et en preview avec un badge, jamais en production.
 - **Registre des pages** `src/config/routes.ts` : source unique des titres, descriptions, fil d'Ariane, sitemap et plan du site.
 
 ## Journal des phases
 
-| Phase            | État                                     | Commit                                 |
-| ---------------- | ---------------------------------------- | -------------------------------------- |
-| 1. Fondations    | ✅ terminée                              | `chore: bootstrap project foundations` |
-| 2. Design system | ⏳ à faire (arrêt sur le choix de piste) |                                        |
+| Phase                      | État                                                            | Commit                                       |
+| -------------------------- | --------------------------------------------------------------- | -------------------------------------------- |
+| 1. Fondations              | ✅ terminée                                                     | `chore: bootstrap project foundations`       |
+| 2. Design system           | ✅ terminée — piste A « Carnet de route » + fiche de calcul (B) | `feat: add design system`                    |
+| 3. Squelette et navigation | ✅ terminée                                                     | `feat: add site skeleton and navigation`     |
+| 4. Contenu éditorial       | ✅ terminée                                                     | `feat: add editorial content pipeline`       |
+| 5. Parcours « Se lancer »  | ✅ terminée                                                     | `feat: add guided launch path with progress` |
+| 6. Outils interactifs      | ⏳ à faire                                                      |                                              |
