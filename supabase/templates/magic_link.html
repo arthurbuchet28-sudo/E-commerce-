@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+  <body
+    style="
+      margin: 0;
+      padding: 24px;
+      background: #f4f7fb;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #262a31;
+    "
+  >
+    <div
+      style="
+        max-width: 560px;
+        margin: 0 auto;
+        background: #ffffff;
+        border: 1px solid #d3dbe6;
+        border-radius: 6px;
+        padding: 32px;
+      "
+    >
+      <p
+        style="
+          margin: 0 0 24px;
+          font-family: Georgia, serif;
+          font-size: 20px;
+          font-weight: bold;
+          color: #1c2b4b;
+        "
+      >
+        Première Vente
+      </p>
+      <h1 style="margin: 0 0 16px; font-family: Georgia, serif; font-size: 22px; color: #1c2b4b">
+        Votre lien de connexion
+      </h1>
+      <p style="margin: 0 0 24px; line-height: 1.6">
+        Voici le lien pour vous connecter à votre compte, sans mot de passe.
+      </p>
+      <p style="margin: 0 0 24px">
+        <a
+          href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&amp;type=email&amp;next=/compte"
+          style="
+            display: inline-block;
+            background: #1c2b4b;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 20px;
+            border-radius: 6px;
+          "
+          >Me connecter</a
+        >
+      </p>
+      <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #4a5363">
+        Ce lien est valable une heure. Si vous n’êtes pas à l’origine de cette demande, ignorez ce
+        message&nbsp;: rien ne sera modifié.
+      </p>
+    </div>
+  </body>
+</html>

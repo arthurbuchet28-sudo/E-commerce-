@@ -14,6 +14,7 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     // Generated search index
     "public/pagefind/**",
+    "coverage/**",
   ]),
 ]);
 

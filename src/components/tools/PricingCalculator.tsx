@@ -8,6 +8,22 @@ import { formatEuro, formatNumber, formatPercent, parseFrNumber } from "@/lib/ca
 import { computePricing } from "@/lib/calc/pricing";
 
 import { NumberField, num, numberError } from "./NumberField";
+import { SaveSimulation } from "./SaveSimulation";
+import { pick, useInitialInputs } from "./useInitialInputs";
+
+export const PRICING_KEYS = [
+  "price",
+  "purchaseCost",
+  "packagingCost",
+  "shippingCost",
+  "shippingCharged",
+  "commission",
+  "paymentRate",
+  "paymentFixed",
+  "social",
+  "vatRegime",
+  "vatRate",
+] as const;
 
 export type VatOption = { value: number; label: string };
 
@@ -15,6 +31,7 @@ type Props = { vatOptions: VatOption[]; defaultSocialRate: number | null };
 
 /** Tool 1 — selling price and margin. Values are example inputs, editable by the user. */
 export function PricingCalculator({ vatOptions, defaultSocialRate }: Props) {
+  const init = useInitialInputs(PRICING_KEYS);
   const [f, setF] = useState({
     price: "39",
     purchaseCost: "12",
@@ -25,9 +42,26 @@ export function PricingCalculator({ vatOptions, defaultSocialRate }: Props) {
     paymentRate: "",
     paymentFixed: "",
     social: defaultSocialRate === null ? "" : formatNumber(defaultSocialRate),
+    ...pick(init, [
+      "price",
+      "purchaseCost",
+      "packagingCost",
+      "shippingCost",
+      "shippingCharged",
+      "commission",
+      "paymentRate",
+      "paymentFixed",
+      "social",
+    ]),
   });
-  const [vatRegime, setVatRegime] = useState<"franchise" | "assujetti">("franchise");
-  const [vatRate, setVatRate] = useState(String(vatOptions[0]?.value ?? 0));
+  const [vatRegime, setVatRegime] = useState<"franchise" | "assujetti">(
+    init.vatRegime === "assujetti" ? "assujetti" : "franchise",
+  );
+  const [vatRate, setVatRate] = useState(
+    vatOptions.some((o) => String(o.value) === init.vatRate)
+      ? init.vatRate!
+      : String(vatOptions[0]?.value ?? 0),
+  );
   const set = (key: keyof typeof f) => (value: string) =>
     setF((prev) => ({ ...prev, [key]: value }));
 
@@ -262,6 +296,11 @@ export function PricingCalculator({ vatOptions, defaultSocialRate }: Props) {
                 <p>Augmentez le prix, réduisez les coûts ou revoyez les frais de port facturés.</p>
               </Callout>
             )}
+            <SaveSimulation
+              tool="calculateur-prix-marge"
+              inputs={{ ...f, vatRegime, vatRate }}
+              defaultTitle={`Prix de vente ${f.price} €`}
+            />
             <dl className="grid grid-cols-[1fr_auto] gap-x-4 gap-y-2 rounded-ui border border-line bg-sheet p-5 tabular-nums">
               <dt>Prix de vente minimum (TTC)</dt>
               <dd className="text-right font-semibold">

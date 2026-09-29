@@ -41,6 +41,9 @@ pnpm test:coverage # Vitest + couverture (100 % exigé sur src/lib/calc)
 pnpm e2e          # Playwright + axe (nécessite `pnpm build` avant)
 pnpm format       # Prettier
 pnpm check        # lint + typecheck + test + build
+pnpm exec supabase start  # Supabase local (Docker) ; e-mails dans Mailpit :54324
+pnpm db:test      # tests RLS (pgTAP, supabase/tests)
+pnpm db:types     # régénère src/lib/supabase/database.types.ts après une migration
 ```
 
 Sandbox avec un Chromium préinstallé différent :
@@ -77,7 +80,10 @@ docs/               design-system.md (tokens, composants), registre, sauvegardes
   à côté du fichier).
 - Services tiers derrière une interface (`src/lib/services/*`) avec un adaptateur mock pour le local.
 - `SUPABASE_SERVICE_ROLE_KEY` et `src/lib/supabase/admin.ts` : uniquement dans du code `server-only`.
-- RLS activée sur toutes les tables ; toute nouvelle table a ses politiques et un test.
+- RLS activée sur toutes les tables ; toute nouvelle table a ses politiques, ses GRANT explicites
+  (`auto_expose_new_tables = false`) et un test pgTAP. Migrations : `supabase/migrations/`.
+- Mutations d'API authentifiées : `withMember()` (`src/lib/account/api.ts`) vérifie l'origine (CSRF)
+  et la session. Les formulaires de compte sont des Server Actions (`src/app/compte/actions.ts`).
 - Droits d'accès aux formations accordés uniquement par le webhook Stripe `checkout.session.completed`.
 - Pas de `dangerouslySetInnerHTML` sur du contenu utilisateur. Pas de couleurs en dur : tokens CSS
   (`docs/design-system.md`). Réutiliser `src/components/ui/` avant de créer un composant.

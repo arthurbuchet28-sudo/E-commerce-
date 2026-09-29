@@ -9,12 +9,15 @@ import { formatEuro, parseFrNumber } from "@/lib/calc/format";
 
 import { BreakEvenChart } from "./BreakEvenChart";
 import { NumberField, num, numberError } from "./NumberField";
+import { SaveSimulation } from "./SaveSimulation";
+import { useInitialInputs } from "./useInitialInputs";
 
 /** Tool 3 — monthly break-even. */
 export function BreakEvenCalculator() {
-  const [fixed, setFixed] = useState("300");
-  const [margin, setMargin] = useState("12");
-  const [basket, setBasket] = useState("");
+  const init = useInitialInputs(["fixed", "margin", "basket"] as const);
+  const [fixed, setFixed] = useState(init.fixed ?? "300");
+  const [margin, setMargin] = useState(init.margin ?? "12");
+  const [basket, setBasket] = useState(init.basket ?? "");
 
   const invalid =
     numberError(fixed, { min: 0 }) !== null ||
@@ -96,6 +99,11 @@ export function BreakEvenCalculator() {
                   value: `${Math.ceil(r.salesNeeded / 4.33)} ventes`,
                 },
               ]}
+            />
+            <SaveSimulation
+              tool="seuil-de-rentabilite"
+              inputs={{ fixed, margin, basket }}
+              defaultTitle={`Seuil : ${r.salesNeeded} ventes par mois`}
             />
             <BreakEvenChart series={r.series} fixedCosts={num(fixed)} salesNeeded={r.salesNeeded} />
           </>

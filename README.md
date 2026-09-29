@@ -17,6 +17,18 @@ cp .env.example .env.local   # facultatif en local : sans clés, des services si
 pnpm dev                     # puis ouvrir http://localhost:3000
 ```
 
+## Lancer l'espace membre en local
+
+L'espace membre utilise Supabase, lancé en local avec Docker :
+
+```bash
+pnpm exec supabase start     # première fois : quelques minutes de téléchargement
+pnpm exec supabase status    # affiche les clés à copier dans .env.local (voir .env.example)
+```
+
+Les e-mails (confirmation d'inscription, lien de connexion, mot de passe) ne partent pas vraiment :
+ils s'affichent dans Mailpit, sur http://127.0.0.1:54324.
+
 ## Vérifier que tout fonctionne
 
 ```bash

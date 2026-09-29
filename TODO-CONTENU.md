@@ -54,17 +54,19 @@ lien exact de la page consultée, et mettre à jour `checkedAt`.
 
 ## À valider (relecture humaine)
 
-| Emplacement               | Élément                                                                                       |
-| ------------------------- | --------------------------------------------------------------------------------------------- |
-| `content/guides/**`       | Les 5 guides de démonstration sont en `draft: true` : à relire puis passer à `draft: false`   |
-| `content/glossaire/**`    | Les 20 termes sont en `draft: true`                                                           |
-| `content/veille/**`       | Les 2 entrées de veille sont en `draft: true`                                                 |
-| `content/faq.yaml`        | Réponses de la FAQ                                                                            |
-| `src/data/parcours.ts`    | Durées indicatives, objectifs, livrables et checklists des 8 étapes (estimations éditoriales) |
-| `src/data/parcours.ts`    | Titres et adresses prévus des guides « à paraître » (repris de la section 5.2)                |
-| `src/data/quiz-modele.ts` | Pondération des réponses du quiz et descriptions des 6 modèles                                |
-| `src/data/platforms.ts`   | Appréciations (difficulté, personnalisation, SEO, profils)                                    |
-| `src/data/checklist.ts`   | Les 50 points de la checklist de lancement                                                    |
+| Emplacement                           | Élément                                                                                                            |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `content/guides/**`                   | Les 5 guides de démonstration sont en `draft: true` : à relire puis passer à `draft: false`                        |
+| `content/glossaire/**`                | Les 20 termes sont en `draft: true`                                                                                |
+| `content/veille/**`                   | Les 2 entrées de veille sont en `draft: true`                                                                      |
+| `content/faq.yaml`                    | Réponses de la FAQ                                                                                                 |
+| `src/data/parcours.ts`                | Durées indicatives, objectifs, livrables et checklists des 8 étapes (estimations éditoriales)                      |
+| `src/data/parcours.ts`                | Titres et adresses prévus des guides « à paraître » (repris de la section 5.2)                                     |
+| `src/data/quiz-modele.ts`             | Pondération des réponses du quiz et descriptions des 6 modèles                                                     |
+| `src/data/platforms.ts`               | Appréciations (difficulté, personnalisation, SEO, profils)                                                         |
+| `src/data/checklist.ts`               | Les 50 points de la checklist de lancement                                                                         |
+| `src/config/legal.ts` → `CGU_VERSION` | Version des CGU enregistrée à l'inscription : à mettre à jour quand les CGU définitives seront publiées (phase 12) |
+| `supabase/templates/*.html`           | Textes des e-mails de confirmation, lien de connexion, mot de passe et changement d'adresse                        |
 
 Rappel : en production, les contenus en `draft: true` ne sont ni affichés, ni indexés, ni listés
 dans le sitemap et `llms.txt`.

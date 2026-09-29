@@ -27,10 +27,11 @@ def fix_line(line: str) -> str:
     # JSX text with expressions, e.g. `Étape suivante : {next.title}`: fix outside braces.
     if (
         not stripped.startswith(("<", "{", ")", "}", "?", ":"))
-        and not re.search(r"[=;]|=>|\breturn\b|\bconst\b", line)
+        and not re.search(r"[=;\"`]|=>|\breturn\b|\bconst\b|\s\?\s", line)
         and re.search(r"[^\W\d_]{2,}", line)
     ):
         return re.sub(r"(^|\})([^{}]*)", lambda m: m.group(1) + fix_text(m.group(2)), line)
+    line = re.sub(r"(^\s*[^\W\d_][^<>{}=\"`]*?) ([?!:;])(?=\{)", lambda m: m.group(1) + NBSP + m.group(2), line)
     line = re.sub(r'"[^"\n]*"', lambda m: fix_text(m.group(0)), line)
     line = re.sub(r"`[^`\n]*`", lambda m: fix_text(m.group(0)), line)
     line = re.sub(r">([^<>=()]*)<", lambda m: ">" + fix_text(m.group(1)) + "<", line)

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { AccountSync } from "@/components/account/AccountSync";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SkipLink } from "@/components/layout/SkipLink";
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <SiteFooter />
+        <AccountSync />
       </body>
     </html>
   );

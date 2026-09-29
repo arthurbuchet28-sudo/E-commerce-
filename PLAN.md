@@ -111,6 +111,7 @@ PLAN.md CLAUDE.md TODO-CONTENU.md README.md .env.example
 - **Recherche** : Pagefind indexe le HTML généré (`.next/server/app`) après `next build` ; index dans `public/pagefind` (non versionné). Indisponible en `pnpm dev`.
 - **Progression du parcours** : `localStorage` (clé `parcours:v1`, aucun cookie), logique pure dans `src/lib/parcours/progress.ts` ; la synchronisation avec le compte (phase 7) se branchera derrière le hook `useParcoursProgress`.
 - **Outils** : calculs purs dans `src/lib/calc/` (100 % testés) ; aucun taux inconnu n'est inventé (champ à renseigner par l'utilisateur, balisé [À VÉRIFIER]) ; tarifs des plateformes non recopiés (lien vers la page officielle) ; PDF de la checklist généré à la demande (`@react-pdf/renderer`, import dynamique) ; enregistrement des simulations dans le compte : phase 7.
+- **Espace membre** : e-mail confirmé obligatoire ; liens d'e-mail en `token_hash` vérifiés par `/auth/confirm` (fonctionnent d'un navigateur à l'autre) ; cookies de session posés uniquement sur les routes membres (le proxy ne tourne que sur `/compte`, `/auth`, `/api/compte`, `/apprendre`, `/admin`) ; progression et checklist synchronisées « dernière modification gagnante » ; stockage Supabase désactivé en local jusqu'à la phase 8.
 - **Brouillons** : visibles en local et en preview avec un badge, jamais en production.
 - **Registre des pages** `src/config/routes.ts` : source unique des titres, descriptions, fil d'Ariane, sitemap et plan du site.
 
@@ -124,4 +125,5 @@ PLAN.md CLAUDE.md TODO-CONTENU.md README.md .env.example
 | 4. Contenu éditorial                 | ✅ terminée                                                     | `feat: add editorial content pipeline`       |
 | 5. Parcours « Se lancer »            | ✅ terminée                                                     | `feat: add guided launch path with progress` |
 | 6. Outils interactifs                | ✅ terminée                                                     | `feat: add interactive tools`                |
-| 7. Authentification et espace membre | ⏳ à faire                                                      |                                              |
+| 7. Authentification et espace membre | ✅ terminée                                                     | `feat: add member area with Supabase auth`   |
+| 8. LMS                               | ⏳ à faire                                                      |                                              |

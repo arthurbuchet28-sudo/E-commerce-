@@ -10,6 +10,19 @@ import { formatEuro, formatNumber, formatPercent, parseFrNumber } from "@/lib/ca
 import { simulateMicro, type MicroThresholds } from "@/lib/calc/micro";
 
 import { NumberField, num, numberError } from "./NumberField";
+import { SaveSimulation } from "./SaveSimulation";
+import { useInitialInputs } from "./useInitialInputs";
+
+const MICRO_KEYS = [
+  "activity",
+  "period",
+  "revenue",
+  "startDate",
+  "simYear",
+  "contribution",
+  "liberatoire",
+  "liberatoireRate",
+] as const;
 
 type Activity = "vente" | "services";
 
@@ -24,15 +37,23 @@ const levelToCallout = { info: "info", attention: "attention", alerte: "legal" }
 
 /** Tool 2 — micro-entreprise simulator. Unknown rates are left for the user to fill in. */
 export function MicroSimulator({ year, thresholds, contributionRates, liberatoireRates }: Props) {
-  const [activity, setActivity] = useState<Activity>("vente");
-  const [period, setPeriod] = useState<"mois" | "an">("mois");
-  const [revenue, setRevenue] = useState("1500");
-  const [startDate, setStartDate] = useState("");
-  const [simYear, setSimYear] = useState(year);
+  const init = useInitialInputs(MICRO_KEYS);
+  const initialActivity: Activity = init.activity === "services" ? "services" : "vente";
   const rateText = (r: number | null) => (r === null ? "" : formatNumber(r * 100));
-  const [contribution, setContribution] = useState(rateText(contributionRates.vente));
-  const [liberatoire, setLiberatoire] = useState(false);
-  const [liberatoireRate, setLiberatoireRate] = useState(rateText(liberatoireRates.vente));
+  const [activity, setActivity] = useState<Activity>(initialActivity);
+  const [period, setPeriod] = useState<"mois" | "an">(init.period === "an" ? "an" : "mois");
+  const [revenue, setRevenue] = useState(init.revenue ?? "1500");
+  const [startDate, setStartDate] = useState(
+    /^\d{4}-\d{2}-\d{2}$/.test(init.startDate ?? "") ? init.startDate! : "",
+  );
+  const [simYear, setSimYear] = useState(Number(init.simYear) === year + 1 ? year + 1 : year);
+  const [contribution, setContribution] = useState(
+    init.contribution ?? rateText(contributionRates[initialActivity]),
+  );
+  const [liberatoire, setLiberatoire] = useState(init.liberatoire === "oui");
+  const [liberatoireRate, setLiberatoireRate] = useState(
+    init.liberatoireRate ?? rateText(liberatoireRates[initialActivity]),
+  );
 
   function changeActivity(a: Activity) {
     setActivity(a);
@@ -250,6 +271,20 @@ export function MicroSimulator({ year, thresholds, contributionRates, liberatoir
                 label={`Franchise de TVA : ${formatEuro(t.vatThreshold, true)} (seuil majoré ${formatEuro(t.vatThresholdIncreased, true)})`}
               />
             </div>
+            <SaveSimulation
+              tool="simulateur-micro-entreprise"
+              inputs={{
+                activity,
+                period,
+                revenue,
+                startDate,
+                simYear: String(simYear),
+                contribution,
+                liberatoire: liberatoire ? "oui" : "non",
+                liberatoireRate,
+              }}
+              defaultTitle={`Micro-entreprise ${simYear}`}
+            />
             {r.alerts.map((a) => (
               <Callout key={a.id} type={levelToCallout[a.level]} title={a.title}>
                 <p>{a.message}</p>

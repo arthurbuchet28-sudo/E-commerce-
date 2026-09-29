@@ -3,6 +3,7 @@
 import { useCallback, useMemo, useSyncExternalStore } from "react";
 
 import { PARCOURS_STORAGE_VERSION, parcoursSteps } from "@/data/parcours";
+import { writeLocal } from "@/lib/sync/localSync";
 
 import {
   overallProgress,
@@ -33,11 +34,7 @@ function readRaw(): string | null {
 }
 
 function write(progress: ParcoursProgress) {
-  try {
-    localStorage.setItem(KEY, JSON.stringify(progress));
-  } catch {
-    // ignore
-  }
+  writeLocal(KEY, JSON.stringify(progress));
   window.dispatchEvent(new Event(EVENT));
 }
 

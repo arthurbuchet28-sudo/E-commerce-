@@ -24,6 +24,17 @@ jobs:
       - run: pnpm lint
       - run: pnpm typecheck
       - run: pnpm test:coverage
+      # Local Supabase (Docker) for the member area: RLS tests, then the app and e2e use it.
+      - run: pnpm exec supabase start
+      - run: pnpm db:test
+      - name: Write local environment
+        run: |
+          eval "$(pnpm exec supabase status -o env | grep -E '^(API_URL|PUBLISHABLE_KEY|SECRET_KEY)=')"
+          {
+            echo "NEXT_PUBLIC_SUPABASE_URL=$API_URL"
+            echo "NEXT_PUBLIC_SUPABASE_ANON_KEY=$PUBLISHABLE_KEY"
+            echo "SUPABASE_SERVICE_ROLE_KEY=$SECRET_KEY"
+          } > .env.local
       - run: pnpm build
       - run: pnpm exec playwright install --with-deps chromium
       - run: pnpm e2e

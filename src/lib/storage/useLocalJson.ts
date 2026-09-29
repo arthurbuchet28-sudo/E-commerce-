@@ -2,6 +2,8 @@
 
 import { useCallback, useSyncExternalStore } from "react";
 
+import { writeLocal } from "@/lib/sync/localSync";
+
 const EVENT = "local-json-change";
 
 function subscribe(onChange: () => void) {
@@ -31,12 +33,7 @@ export function useLocalString(key: string): [string | null, (value: string | nu
   );
   const write = useCallback(
     (value: string | null) => {
-      try {
-        if (value === null) localStorage.removeItem(key);
-        else localStorage.setItem(key, value);
-      } catch {
-        // storage blocked: nothing is kept
-      }
+      writeLocal(key, value);
       window.dispatchEvent(new Event(EVENT));
     },
     [key],

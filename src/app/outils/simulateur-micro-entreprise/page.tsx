@@ -1,5 +1,8 @@
+import { Suspense } from "react";
+
 import { breadcrumbFor, Container, PageHeader } from "@/components/layout/PageHeader";
 import { MicroSimulator } from "@/components/tools/MicroSimulator";
+import { ToolLoading } from "@/components/tools/ToolLoading";
 import { ToolSections } from "@/components/tools/ToolSections";
 import { getRoute } from "@/config/routes";
 import { getRef, type RefKey } from "@/data/reference";
@@ -20,29 +23,31 @@ export default function MicroPage() {
   return (
     <Container>
       <PageHeader title={r.h1} lead={r.description} crumbs={breadcrumbFor(r.path, r.label)} />
-      <MicroSimulator
-        year={year}
-        thresholds={{
-          vente: {
-            ceiling: n("micro.plafondVente"),
-            vatThreshold: n("tva.franchiseVentes"),
-            vatThresholdIncreased: n("tva.franchiseVentesMajore"),
-          },
-          services: {
-            ceiling: n("micro.plafondServices"),
-            vatThreshold: n("tva.franchiseServices"),
-            vatThresholdIncreased: n("tva.franchiseServicesMajore"),
-          },
-        }}
-        contributionRates={{
-          vente: rate("micro.tauxCotisationsVente"),
-          services: rate("micro.tauxCotisationsServices"),
-        }}
-        liberatoireRates={{
-          vente: rate("micro.tauxVersementLiberatoireVente"),
-          services: rate("micro.tauxVersementLiberatoireServices"),
-        }}
-      />
+      <Suspense fallback={<ToolLoading />}>
+        <MicroSimulator
+          year={year}
+          thresholds={{
+            vente: {
+              ceiling: n("micro.plafondVente"),
+              vatThreshold: n("tva.franchiseVentes"),
+              vatThresholdIncreased: n("tva.franchiseVentesMajore"),
+            },
+            services: {
+              ceiling: n("micro.plafondServices"),
+              vatThreshold: n("tva.franchiseServices"),
+              vatThresholdIncreased: n("tva.franchiseServicesMajore"),
+            },
+          }}
+          contributionRates={{
+            vente: rate("micro.tauxCotisationsVente"),
+            services: rate("micro.tauxCotisationsServices"),
+          }}
+          liberatoireRates={{
+            vente: rate("micro.tauxVersementLiberatoireVente"),
+            services: rate("micro.tauxVersementLiberatoireServices"),
+          }}
+        />
+      </Suspense>
       <ToolSections
         method={
           <>

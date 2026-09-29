@@ -1,5 +1,8 @@
+import { Suspense } from "react";
+
 import { breadcrumbFor, Container, PageHeader } from "@/components/layout/PageHeader";
 import { PricingCalculator } from "@/components/tools/PricingCalculator";
+import { ToolLoading } from "@/components/tools/ToolLoading";
 import { ToolSections } from "@/components/tools/ToolSections";
 import { getRoute } from "@/config/routes";
 import { formatRef, getRef, type RefKey } from "@/data/reference";
@@ -28,7 +31,9 @@ export default function PricingPage() {
   return (
     <Container>
       <PageHeader title={r.h1} lead={r.description} crumbs={breadcrumbFor(r.path, r.label)} />
-      <PricingCalculator vatOptions={vatOptions} defaultSocialRate={social} />
+      <Suspense fallback={<ToolLoading />}>
+        <PricingCalculator vatOptions={vatOptions} defaultSocialRate={social} />
+      </Suspense>
       <ToolSections
         method={
           <>

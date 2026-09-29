@@ -256,6 +256,16 @@ export const routes = [
     phase: 7,
   },
   {
+    path: "/compte/nouveau-mot-de-passe",
+    label: "Nouveau mot de passe",
+    h1: "Choisir un nouveau mot de passe",
+    title: "Nouveau mot de passe",
+    description: "Choisissez un nouveau mot de passe pour votre compte.",
+    group: "compte",
+    indexable: false,
+    phase: 7,
+  },
+  {
     path: "/panier",
     label: "Panier",
     h1: "Mon panier",
