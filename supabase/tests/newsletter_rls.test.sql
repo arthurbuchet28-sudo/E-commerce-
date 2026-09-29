@@ -1,7 +1,7 @@
 -- Newsletter: access control and double opt-in functions (run with `supabase test db`).
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(21);
+select plan(24);
 
 set local role anon;
 select throws_ok($$ select * from public.newsletter_subscribers $$, '42501', null, 'anon cannot read subscribers');
@@ -43,6 +43,15 @@ select is(public.newsletter_unsubscribe('unknown'), null, 'unknown token does no
 update public.newsletter_subscribers set requested_at = now() - interval '31 days' where email = 'old@example.test';
 select ok((public.newsletter_purge(30, 1095) ->> 'pending')::int >= 1, 'old pending requests purged');
 select is((select count(*) from public.newsletter_subscribers where email = 'old@example.test')::int, 0, 'purged row is gone');
+
+-- Proofs of choices on trackers: service role only, purged after the retention period.
+set local role anon;
+select throws_ok($$ select * from public.cookie_consents $$, '42501', null, 'anon cannot read consent proofs');
+reset role;
+insert into public.cookie_consents (visitor_id, version, choices, created_at)
+values (gen_random_uuid(), 'v1', '{}', now() - interval '13 months'), (gen_random_uuid(), 'v1', '{}', now());
+select ok(public.purge_cookie_consents(12) >= 1, 'old proofs purged');
+select ok((select count(*) from public.cookie_consents where created_at > now() - interval '1 minute') >= 1, 'recent proofs kept');
 
 select * from finish();
 rollback;

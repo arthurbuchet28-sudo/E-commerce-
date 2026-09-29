@@ -17,7 +17,7 @@ import { RouteStepper, type RouteStep } from "@/components/ui/RouteStepper";
 import { Tabs } from "@/components/ui/Tabs";
 import { VideoPlayer } from "@/components/ui/VideoPlayer";
 
-import { ModalDemo, ThemeSwitch, ToastDemo } from "./Demos";
+import { ConsentBannerDemo, ModalDemo, ThemeSwitch, ToastDemo } from "./Demos";
 
 export const metadata: Metadata = {
   title: "Design system",
@@ -258,6 +258,14 @@ function Components() {
           <ModalDemo />
         </div>
         <ToastDemo />
+      </Section>
+
+      <Section id="consentement" title="Bandeau de consentement">
+        <p className="text-muted">
+          Inactif en v1 : il ne s’affiche que si un traceur soumis à consentement est ajouté dans
+          src/lib/consent/consent.ts. Les trois choix ont la même taille et la même visibilité.
+        </p>
+        <ConsentBannerDemo />
       </Section>
 
       <Section id="navigation" title="Fil d’Ariane et pagination">

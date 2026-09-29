@@ -30,6 +30,7 @@ export type RefValue = {
     | "percent-change"
     | "days"
     | "months"
+    | "years"
     | "date"
     | "millions"
     | "milliards"
@@ -84,6 +85,21 @@ const SOURCES = {
     name: "Directive (UE) 2019/882 (European Accessibility Act)",
     short: "Directive 2019/882",
     url: "https://eur-lex.europa.eu/eli/dir/2019/882/oj",
+  },
+  codeCommerce: {
+    name: "Code de commerce",
+    short: "Code de commerce",
+    url: "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000005634379",
+  },
+  cnilCookies: {
+    name: "CNIL, lignes directrices et recommandation « cookies et autres traceurs »",
+    short: "CNIL",
+    url: "https://www.cnil.fr/fr/cookies-et-autres-traceurs",
+  },
+  cnilPlainte: {
+    name: "CNIL, adresser une plainte",
+    short: "CNIL",
+    url: "https://www.cnil.fr/fr/plaintes",
   },
   fevad2025: {
     name: "Fevad, bilan du e-commerce 2025 (publié le 11/02/2026)",
@@ -282,6 +298,26 @@ export const reference = {
     status: "a-verifier",
   },
 
+  // --- Données personnelles et traceurs -------------------------------------------
+  "rgpd.conservationPiecesComptables": {
+    value: 10,
+    unit: "years",
+    label: "Durée de conservation des pièces comptables (factures)",
+    source: SOURCES.codeCommerce,
+    checkedAt: SPEC_CHECK,
+    note: "Art. L123-22 du Code de commerce, à reconfirmer sur Légifrance.",
+    status: "a-verifier",
+  },
+  "cnil.dureeChoixCookies": {
+    value: 6,
+    unit: "months",
+    label: "Durée au terme de laquelle le choix sur les traceurs est à nouveau demandé",
+    source: SOURCES.cnilCookies,
+    checkedAt: SPEC_CHECK,
+    note: SPEC_NOTE,
+    status: "verifie",
+  },
+
   // --- Accessibilité -----------------------------------------------------------
   "eaa.dateApplication": {
     value: "2025-06-28",
@@ -415,6 +451,8 @@ export function formatRef(ref: RefValue): string {
         return `${n}${NNBSP}jours`;
       case "months":
         return `${n}${NNBSP}mois`;
+      case "years":
+        return `${n}${NNBSP}ans`;
       case "millions":
         return `${n}${NNBSP}millions`;
       case "milliards":

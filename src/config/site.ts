@@ -11,7 +11,7 @@ export const siteConfig = {
   defaultAuthor: "La rédaction",
 
   publisher: {
-    legalName: "[À COMPLÉTER : nom et prénom ou dénomination]",
+    legalName: "[À COMPLÉTER : nom et prénom ou dénomination]",
     legalForm: "Micro-entreprise",
     siret: "[À COMPLÉTER]",
     address: "[À COMPLÉTER]",
@@ -19,6 +19,24 @@ export const siteConfig = {
     publicationDirector: "[À COMPLÉTER]",
     vatNumber: null as string | null, // null while under the VAT franchise
   },
+
+  /** Hosting provider, mandatory in the legal notice (LCEN). */
+  hosting: {
+    name: "Vercel Inc.", // [À VÉRIFIER — vercel.com/legal]
+    address: "440 N Barranca Ave #4133, Covina, CA 91723, États-Unis", // [À VÉRIFIER — vercel.com/legal]
+    phone: "[À COMPLÉTER]",
+    region: "Paris (cdg1)",
+  },
+
+  /** Consumer mediator (Code de la consommation): name and website. */
+  mediator: {
+    name: "[À COMPLÉTER : médiateur de la consommation désigné]",
+    url: "[À COMPLÉTER]",
+  },
+
+  /** Contact for personal data requests and accessibility issues. */
+  privacyContact: "[À COMPLÉTER : adresse e-mail dédiée aux données personnelles]",
+  accessibilityContact: "[À COMPLÉTER : adresse e-mail de contact accessibilité]",
 
   /** Paid courses access duration, in months. */
   courseAccessMonths: 24,

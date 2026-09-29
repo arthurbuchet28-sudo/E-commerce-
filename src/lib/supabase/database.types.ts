@@ -117,6 +117,30 @@ export type Database = {
           },
         ];
       };
+      cookie_consents: {
+        Row: {
+          choices: NonNullable<Json>;
+          created_at: string;
+          id: string;
+          version: string;
+          visitor_id: string;
+        };
+        Insert: {
+          choices: NonNullable<Json>;
+          created_at?: string;
+          id?: string;
+          version: string;
+          visitor_id: string;
+        };
+        Update: {
+          choices?: NonNullable<Json>;
+          created_at?: string;
+          id?: string;
+          version?: string;
+          visitor_id?: string;
+        };
+        Relationships: [];
+      };
       courses: {
         Row: {
           access_months: number;
@@ -973,6 +997,7 @@ export type Database = {
       newsletter_unsubscribe: { Args: { p_access_token: string }; Returns: string };
       next_invoice_number: { Args: { p_at: string; p_kind: string }; Returns: string };
       order_reference: { Args: Record<PropertyKey, never>; Returns: string };
+      purge_cookie_consents: { Args: { p_months: number }; Returns: number };
       rate_limit: {
         Args: { p_key: string; p_max: number; p_window_seconds: number };
         Returns: boolean;

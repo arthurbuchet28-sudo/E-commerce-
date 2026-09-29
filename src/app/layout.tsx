@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 
 import { AccountSync } from "@/components/account/AccountSync";
+import { Analytics } from "@/components/consent/Analytics";
+import { ConsentManager } from "@/components/consent/ConsentManager";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SkipLink } from "@/components/layout/SkipLink";
@@ -33,6 +35,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </main>
         <SiteFooter />
         <AccountSync />
+        <ConsentManager />
+        <Analytics
+          url={publicEnv.NEXT_PUBLIC_MATOMO_URL}
+          siteId={publicEnv.NEXT_PUBLIC_MATOMO_SITE_ID}
+        />
       </body>
     </html>
   );

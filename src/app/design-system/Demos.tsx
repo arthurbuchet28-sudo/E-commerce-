@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/Button";
+import { ConsentBannerView } from "@/components/consent/ConsentBannerView";
 import { Modal } from "@/components/ui/Modal";
 import { ToastProvider, useToast } from "@/components/ui/Toast";
 
@@ -83,5 +84,30 @@ export function ThemeSwitch() {
         </label>
       ))}
     </fieldset>
+  );
+}
+
+/** Consent banner as it would appear if a tracker requiring consent were added. */
+export function ConsentBannerDemo() {
+  const [result, setResult] = useState("");
+  return (
+    <div className="flex flex-col gap-3">
+      <ConsentBannerView
+        purposes={[
+          {
+            id: "exemple-publicite",
+            label: "Mesure des campagnes publicitaires",
+            description: "Exemple fictif de finalité, pour la démonstration.",
+            vendors: ["Partenaire d’exemple"],
+          },
+        ]}
+        onAcceptAll={() => setResult("Choix : tout accepté.")}
+        onRejectAll={() => setResult("Choix : tout refusé.")}
+        onSave={(c) => setResult(`Choix enregistrés : ${JSON.stringify(c)}`)}
+      />
+      <p aria-live="polite" className="text-small text-muted">
+        {result}
+      </p>
+    </div>
   );
 }

@@ -1,8 +1,8 @@
-import { PagePlaceholder } from "@/components/layout/PagePlaceholder";
+import { LegalDocument } from "@/components/legal/LegalDocument";
 import { pageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = pageMetadata("/confidentialite");
 
 export default function Page() {
-  return <PagePlaceholder path="/confidentialite" />;
+  return <LegalDocument path="/confidentialite" slug="confidentialite" />;
 }

@@ -47,7 +47,7 @@ confirme d'un clic ; la checklist offerte arrive aussitôt. Les e-mails suivants
 bienvenue (`src/data/newsletter.ts`) partent grâce à une tâche quotidienne déclarée dans
 `vercel.json` (renseigner `CRON_SECRET` sur Vercel). Tant qu'un e-mail est marqué `draft: true`, il
 n'est pas envoyé en production. En local, la tâche se lance à la main :
-`curl http://localhost:3000/api/cron/newsletter`.
+`curl http://localhost:3000/api/cron/quotidien`.
 
 ## Le back-office
 
@@ -57,6 +57,16 @@ retirer). Vous pouvez y créer et modifier les formations, les modules, les leç
 ressources PDF, suivre les ventes, les élèves et la newsletter, et exporter les commandes et les
 abonnés en CSV. Le texte d'une leçon reste un fichier `content/formations/<formation>/<leçon>.mdx` ;
 une vidéo se téléverse dans Bunny Stream, puis son identifiant se colle dans la leçon.
+
+## Les pages légales
+
+Les mentions légales, CGV, CGU, la politique de confidentialité, la page cookies et la
+déclaration d'accessibilité sont des fichiers texte dans `content/legal/`. Ce sont des **trames à
+faire valider par un professionnel du droit** : un avertissement s'affiche tant que `status: trame`.
+Les informations de l'éditeur (nom, SIRET, adresse, médiateur, contacts) se remplissent une seule
+fois dans `src/config/site.ts`. Les traitements de données et les prestataires sont décrits dans
+`src/data/privacy.ts` et repris dans `docs/registre-traitements.md`. Si vous modifiez les CGV ou
+les CGU, changez aussi leur numéro de version dans `src/config/legal.ts`.
 
 ## Vérifier que tout fonctionne
 

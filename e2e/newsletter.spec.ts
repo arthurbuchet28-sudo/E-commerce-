@@ -85,13 +85,25 @@ test("welcome sequence goes out on schedule and one click unsubscribes", async (
   await page.getByRole("button", { name: "Confirmer mon inscription" }).click();
   const welcome = await emailFor(email, /Votre checklist/);
 
+  // The welcome e-mail can arrive before step 1 is recorded: wait for it.
+  await expect
+    .poll(async () => {
+      const [row] = await (
+        await adminRest(
+          `newsletter_subscribers?email=eq.${encodeURIComponent(email)}&select=sequence_step`,
+        )
+      ).json();
+      return row?.sequence_step;
+    })
+    .toBe(1);
+
   // Time travel: e-mail 2 becomes due, then the daily job runs.
   const past = new Date(Date.now() - 60_000).toISOString();
   await adminRest(`newsletter_subscribers?email=eq.${encodeURIComponent(email)}`, {
     method: "PATCH",
     body: JSON.stringify({ next_email_at: past }),
   });
-  const job = await request.get("/api/cron/newsletter");
+  const job = await request.get("/api/cron/quotidien");
   expect(job.status()).toBe(200);
   expect((await job.json()).sent).toBeGreaterThanOrEqual(1);
   const second = await emailFor(email, /Par où commencer/);

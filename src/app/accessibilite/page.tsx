@@ -1,8 +1,8 @@
-import { PagePlaceholder } from "@/components/layout/PagePlaceholder";
+import { LegalDocument } from "@/components/legal/LegalDocument";
 import { pageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = pageMetadata("/accessibilite");
 
 export default function Page() {
-  return <PagePlaceholder path="/accessibilite" />;
+  return <LegalDocument path="/accessibilite" slug="accessibilite" />;
 }

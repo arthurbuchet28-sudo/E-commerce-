@@ -103,8 +103,10 @@ test("a member completes the free course, passes the quizzes and gets the certif
   await expect(page).toHaveURL(/quiz-module-2$/);
   await answerQuiz(page, ANSWERS["quiz-module-2"]);
   await expect(page.getByText("Formation terminée")).toBeVisible();
+  // The certificate route answers with a PDF download: wait for it before navigating away.
+  const download = page.waitForEvent("download");
   await page.getByRole("button", { name: "Obtenir mon attestation de suivi" }).click();
-  // The certificate route answers with a PDF download.
+  expect((await download).suggestedFilename()).toMatch(/^attestation-de-suivi-.+\.pdf$/);
   await page.goto("/compte");
   const link = page.getByRole("link", { name: /Attestation de suivi · Les bases du e-commerce/ });
   await expect(link).toBeVisible();

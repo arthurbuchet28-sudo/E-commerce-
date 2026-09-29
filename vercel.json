@@ -3,7 +3,7 @@
   "regions": ["cdg1"],
   "crons": [
     {
-      "path": "/api/cron/newsletter",
+      "path": "/api/cron/quotidien",
       "schedule": "0 7 * * *"
     }
   ]
