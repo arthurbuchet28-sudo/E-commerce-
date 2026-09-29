@@ -58,7 +58,7 @@ src/data/           reference.ts (chiffres sourcés), platforms.ts, parcours.ts,
 content/            guides MDX, glossaire, FAQ, veille, textes de leçons
 supabase/           migrations, seed.sql, tests RLS
 e2e/                tests Playwright
-docs/               registre des traitements, sauvegardes
+docs/               design-system.md (tokens, composants), registre, sauvegardes
 ```
 
 ## Conventions de code
@@ -74,7 +74,8 @@ docs/               registre des traitements, sauvegardes
 - `SUPABASE_SERVICE_ROLE_KEY` et `src/lib/supabase/admin.ts` : uniquement dans du code `server-only`.
 - RLS activée sur toutes les tables ; toute nouvelle table a ses politiques et un test.
 - Droits d'accès aux formations accordés uniquement par le webhook Stripe `checkout.session.completed`.
-- Pas de `dangerouslySetInnerHTML` sur du contenu utilisateur. Pas de couleurs en dur : tokens CSS.
+- Pas de `dangerouslySetInnerHTML` sur du contenu utilisateur. Pas de couleurs en dur : tokens CSS
+  (`docs/design-system.md`). Réutiliser `src/components/ui/` avant de créer un composant.
 - Accessibilité WCAG 2.2 AA : un seul `h1`, labels visibles, focus visible, `aria-live` sur les résultats.
 - Commits : Conventional Commits (`feat:`, `fix:`, `chore:`, `docs:`, `test:`, `refactor:`).
 

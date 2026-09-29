@@ -1,5 +1,8 @@
 # Design system — deux pistes (phase 2)
 
+> **Décision (29/09/2026)** : piste A « Carnet de route », avec la fiche de calcul de la piste B
+> pour les outils. Référence à jour : `docs/design-system.md`.
+
 Deux pistes pour le concept « le carnet de route de l'entrepreneur ». Contrastes calculés selon
 WCAG 2.2 (texte ≥ 4,5:1, composants ≥ 3:1). Les deux ont un mode sombre complet défini par tokens.
 Polices : toutes sous licence libre (SIL OFL), auto-hébergées via `next/font/local` (fichiers issus

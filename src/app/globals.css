@@ -1,25 +1,220 @@
 @import "tailwindcss";
 
-/* Provisional tokens: replaced by the design system in phase 2. */
+/*
+ * Design system — Piste A « Carnet de route » (+ fiche de calcul de la piste B).
+ * Every colour goes through these tokens: never hard-code a colour in a component.
+ * Contrast ratios are documented in docs/design-system.md.
+ */
+
 :root {
-  --background: #ffffff;
-  --foreground: #1f2328;
+  color-scheme: light;
+  --ink: #1c2b4b; /* structure, headings, primary action, links */
+  --paper: #f4f7fb; /* page background */
+  --sheet: #ffffff; /* surfaces */
+  --text: #262a31; /* body text */
+  --muted: #4a5363; /* secondary text */
+  --sage: #3f6b55; /* progress, validation */
+  --signal: #f2c230; /* legal attention (fill/border only, text stays --text) */
+  --line: #d3dbe6; /* decorative rules */
+  --border: #7a8699; /* form controls, >= 3:1 */
+  --danger: #a4262c; /* errors */
+  --focus: #2f6fde;
+  --on-ink: #ffffff;
+
+  --ink-soft: #e6ecf5;
+  --sage-soft: #e3eee7;
+  --signal-soft: #fdf3cf;
+  --danger-soft: #fbe9ea;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-}
-
+/* Dark theme: follows the OS unless forced; [data-theme] can also scope a subtree. */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f1419;
-    --foreground: #e6e8eb;
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --ink: #9db4e0;
+    --paper: #0f1726;
+    --sheet: #172238;
+    --text: #e3e8f0;
+    --muted: #a9b4c6;
+    --sage: #7fb597;
+    --signal: #f2c230;
+    --line: #2a3752;
+    --border: #6b7a94;
+    --danger: #f29b9b;
+    --focus: #8cb4ff;
+    --on-ink: #0f1726;
+    --ink-soft: #1d2a45;
+    --sage-soft: #1b3328;
+    --signal-soft: #3a3217;
+    --danger-soft: #3b1d22;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: system-ui, sans-serif;
+[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #9db4e0;
+  --paper: #0f1726;
+  --sheet: #172238;
+  --text: #e3e8f0;
+  --muted: #a9b4c6;
+  --sage: #7fb597;
+  --signal: #f2c230;
+  --line: #2a3752;
+  --border: #6b7a94;
+  --danger: #f29b9b;
+  --focus: #8cb4ff;
+  --on-ink: #0f1726;
+  --ink-soft: #1d2a45;
+  --sage-soft: #1b3328;
+  --signal-soft: #3a3217;
+  --danger-soft: #3b1d22;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-sheet: var(--sheet);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-sage: var(--sage);
+  --color-signal: var(--signal);
+  --color-line: var(--line);
+  --color-border: var(--border);
+  --color-danger: var(--danger);
+  --color-focus: var(--focus);
+  --color-on-ink: var(--on-ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-sage-soft: var(--sage-soft);
+  --color-signal-soft: var(--signal-soft);
+  --color-danger-soft: var(--danger-soft);
+
+  --font-serif: var(--font-literata), Georgia, serif;
+  --font-sans: var(--font-atkinson), system-ui, sans-serif;
+
+  /* Type scale (ratio 1.25): reading base 18px, UI base 16px. */
+  --text-display: 2.75rem;
+  --text-display--line-height: 1.1;
+  --text-h1: 2.25rem;
+  --text-h1--line-height: 1.15;
+  --text-h2: 1.75rem;
+  --text-h2--line-height: 1.2;
+  --text-h3: 1.375rem;
+  --text-h3--line-height: 1.3;
+  --text-lead: 1.25rem;
+  --text-lead--line-height: 1.55;
+  --text-body: 1.125rem;
+  --text-body--line-height: 1.65;
+  --text-ui: 1rem;
+  --text-ui--line-height: 1.5;
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.45;
+
+  --radius-ui: 6px;
+  --container-prose: 68ch;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-size: var(--text-ui);
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif);
+    color: var(--ink);
+    font-weight: 600;
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: var(--signal-soft);
+    color: var(--text);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Long-form reading column (guides, lessons). */
+  .prose-guide {
+    max-width: var(--container-prose);
+    font-family: var(--font-serif);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+  }
+  .prose-guide > * + * {
+    margin-top: 1em;
+  }
+  .prose-guide h2 {
+    font-size: var(--text-h2);
+    line-height: var(--text-h2--line-height);
+    margin-top: 2em;
+  }
+  .prose-guide h3 {
+    font-size: var(--text-h3);
+    line-height: var(--text-h3--line-height);
+    margin-top: 1.6em;
+  }
+  .prose-guide a,
+  .link {
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+    text-decoration-thickness: 1px;
+  }
+  .prose-guide a:hover,
+  .link:hover {
+    text-decoration-thickness: 2px;
+  }
+  .prose-guide ul {
+    list-style: disc;
+    padding-left: 1.4em;
+  }
+  .prose-guide ol {
+    list-style: decimal;
+    padding-left: 1.4em;
+  }
+}
+
+/* The one orchestrated animation: the itinerary line fills up to the current step. */
+@keyframes route-fill {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+.route-fill {
+  transform-origin: top;
+  animation: route-fill 900ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
