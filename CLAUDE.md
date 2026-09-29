@@ -83,6 +83,16 @@ docs/               design-system.md (tokens, composants), registre, sauvegardes
 - Accessibilité WCAG 2.2 AA : un seul `h1`, labels visibles, focus visible, `aria-live` sur les résultats.
 - Commits : Conventional Commits (`feat:`, `fix:`, `chore:`, `docs:`, `test:`, `refactor:`).
 
+## Contenu éditorial
+
+- Guides : `content/guides/<categorie>/<slug>.mdx` ; glossaire : `content/glossaire/<slug>.mdx` ;
+  veille : `content/veille/*.mdx` ; FAQ : `content/faq.yaml`. Frontmatter validé par Zod
+  (`src/lib/content/schemas.ts`) : une erreur fait échouer le build.
+- Composants MDX : `Encadre`, `Etapes`, `Exemple persona`, `Chiffre id`, `Terme id`, `Checklist`,
+  `AFaireAujourdhui items` (3 max), `Sources`. Chiffre dans le frontmatter : `{{cle}}`.
+- Nouveau contenu : `draft: true`, sources obligatoires, puis `scripts/fix-typography.py` et
+  `pnpm test` (rendu, typographie et références vérifiés).
+
 ## Vérification visuelle
 
 Avant de rendre la main sur une phase qui touche l'interface : lancer le serveur, captures Playwright

@@ -34,3 +34,65 @@ export function websiteJsonLd() {
     inLanguage: siteConfig.locale,
   };
 }
+
+export function breadcrumbJsonLd(items: Array<{ label: string; href?: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.label,
+      ...(item.href ? { item: absoluteUrl(item.href) } : {}),
+    })),
+  };
+}
+
+export function faqJsonLd(items: Array<{ question: string; answer: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
+}
+
+export function articleJsonLd(a: {
+  title: string;
+  description: string;
+  path: string;
+  publishedAt: string;
+  updatedAt: string;
+  author: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: a.title,
+    description: a.description,
+    mainEntityOfPage: absoluteUrl(a.path),
+    datePublished: a.publishedAt,
+    dateModified: a.updatedAt,
+    inLanguage: siteConfig.locale,
+    author: { "@type": "Organization", name: a.author, url: absoluteUrl("/a-propos") },
+    publisher: { "@type": "Organization", name: siteConfig.name, url: absoluteUrl("/") },
+  };
+}
+
+export function definedTermJsonLd(t: { term: string; definition: string; path: string }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    name: t.term,
+    description: t.definition,
+    url: absoluteUrl(t.path),
+    inDefinedTermSet: {
+      "@type": "DefinedTermSet",
+      name: `Glossaire ${siteConfig.name}`,
+      url: absoluteUrl("/glossaire"),
+    },
+  };
+}

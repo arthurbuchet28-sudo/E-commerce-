@@ -10,6 +10,8 @@ const pages = [
   ...routes.map((r) => r.path),
   `/se-lancer/${parcoursSteps[0].slug}`,
   `/guides/${guideCategories[0].slug}`,
+  "/guides/idee-et-produit/les-6-modeles-de-e-commerce",
+  "/glossaire/dropshipping",
 ];
 
 for (const path of pages) {

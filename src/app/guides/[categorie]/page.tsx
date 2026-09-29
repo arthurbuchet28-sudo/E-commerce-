@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { GuideList } from "@/components/content/GuideList";
 import { breadcrumbFor, Container, PageHeader } from "@/components/layout/PageHeader";
 import { findCategory, guideCategories } from "@/data/categories";
+import { getGuidesByCategory } from "@/lib/content/guides";
 import { buildMetadata } from "@/lib/seo/metadata";
 
 export const dynamicParams = false;
@@ -33,9 +35,10 @@ export default async function CategoryPage({ params }: PageProps<"/guides/[categ
         lead={category.description}
         crumbs={breadcrumbFor(`/guides/${category.slug}`, category.title)}
       />
-      <p className="rounded-ui border border-dashed border-border bg-sheet p-5 text-muted">
-        Les guides de cette catégorie sont en cours de rédaction.
-      </p>
+      <GuideList
+        guides={getGuidesByCategory(category.slug)}
+        empty="Les guides de cette catégorie sont en cours de rédaction."
+      />
     </Container>
   );
 }

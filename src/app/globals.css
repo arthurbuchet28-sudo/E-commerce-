@@ -218,3 +218,54 @@
   transform-origin: top;
   animation: route-fill 900ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
+
+@layer components {
+  .etapes ol {
+    counter-reset: etape;
+    list-style: none;
+    padding-left: 0;
+  }
+  .etapes ol > li {
+    counter-increment: etape;
+    position: relative;
+    padding-left: 2.75rem;
+    min-height: 2rem;
+  }
+  .etapes ol > li + li {
+    margin-top: 0.75em;
+  }
+  .etapes ol > li::before {
+    content: counter(etape);
+    position: absolute;
+    left: 0;
+    top: 0.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 9999px;
+    border: 3px solid var(--ink);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+  .mdx-table th,
+  .mdx-table td {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  .mdx-table thead th {
+    border-bottom: 2px solid var(--ink);
+  }
+  .prose-guide blockquote {
+    border-left: 3px solid var(--line);
+    padding-left: 1em;
+    color: var(--muted);
+  }
+  .prose-guide strong {
+    font-weight: 600;
+  }
+}

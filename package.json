@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && pnpm search:index",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
@@ -14,13 +14,20 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "check": "pnpm lint && pnpm typecheck && pnpm test && pnpm build",
-    "prepare": "husky"
+    "prepare": "husky",
+    "search:index": "pagefind --site .next/server/app --output-path public/pagefind"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^3.1.1",
+    "github-slugger": "^2.0.0",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^5.4.2",
     "lucide-react": "^1.48.0",
     "next": "16.3.7",
     "react": "19.2.8",
     "react-dom": "19.2.8",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.1",
     "server-only": "^0.0.1",
     "zod": "^4.6.5"
   },
@@ -30,6 +37,8 @@
     "@tailwindcss/postcss": "^4",
     "@testing-library/dom": "^10.4.2",
     "@testing-library/react": "^16.3.3",
+    "@types/js-yaml": "^4.0.9",
+    "@types/mdx": "^2.0.14",
     "@types/node": "^22.20.4",
     "@types/react": "^19",
     "@types/react-dom": "^19",
@@ -39,6 +48,7 @@
     "husky": "^9.1.7",
     "jsdom": "^30.1.1",
     "lint-staged": "^17.6.0",
+    "pagefind": "^1.5.2",
     "prettier": "^3.9.9",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4",

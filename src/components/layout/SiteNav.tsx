@@ -8,6 +8,8 @@ import { useEffect, useState } from "react";
 
 import { cn } from "@/components/ui/cn";
 
+import { SearchDialog } from "./SearchDialog";
+
 type NavItem = { href: Route; label: string };
 
 function isActive(pathname: string, href: string) {
@@ -59,6 +61,7 @@ export function SiteNav({ items, account }: { items: NavItem[]; account: NavItem
       </nav>
 
       <div className="flex items-center gap-2">
+        <SearchDialog />
         <Link
           href={account.href}
           className="hidden min-h-11 items-center rounded-ui border border-ink px-4 font-semibold text-ink hover:bg-ink-soft sm:flex"

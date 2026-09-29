@@ -1,0 +1,24 @@
+# FAQ du site. Réponses en texte simple. [À VALIDER] avant mise en ligne.
+themes:
+  - title: Le site et les contenus
+    items:
+      - question: Les guides sont-ils gratuits ?
+        answer: Oui. Les guides, les outils et le parcours « Se lancer » sont gratuits et accessibles sans compte.
+      - question: D’où viennent les chiffres et les règles cités ?
+        answer: Chaque chiffre et chaque règle renvoient à une source officielle ou reconnue, avec la date à laquelle nous l’avons vérifiée.
+      - question: Les contenus remplacent-ils un expert-comptable ou un avocat ?
+        answer: Non. Ce sont des contenus informatifs, à jour à la date indiquée. Pour une situation particulière, consultez un professionnel.
+  - title: Les formations
+    items:
+      - question: Comment accéder à la formation gratuite ?
+        answer: La formation « Les bases du e-commerce » est accessible après la création d’un compte gratuit.
+      - question: L’attestation de suivi est-elle un diplôme ?
+        answer: Non. L’attestation de suivi indique que vous avez suivi la formation. Ce n’est ni un diplôme ni une certification.
+  - title: Achats et rétractation
+    items:
+      - question: Puis-je me rétracter après un achat ?
+        answer: Oui, dans les conditions prévues par nos CGV. Pour un accès immédiat à une formation, il vous est demandé de renoncer expressément à ce droit avant le paiement. La page « Se rétracter » est accessible depuis toutes les pages.
+  - title: Vos données
+    items:
+      - question: Comment supprimer mon compte et mes données ?
+        answer: Depuis votre espace « Mon compte », vous pouvez exporter vos données et supprimer votre compte vous-même.

@@ -7,5 +7,7 @@ export default defineConfig({
   test: {
     environment: "jsdom",
     include: ["src/**/*.test.{ts,tsx}"],
+    // `server-only` throws outside React Server Components; content loaders are tested in Node.
+    alias: { "server-only": new URL("./src/test/empty.ts", import.meta.url).pathname },
   },
 });

@@ -2,6 +2,7 @@ import type { Route } from "next";
 import Link from "next/link";
 
 import { LevelBadge, type Level } from "./LevelBadge";
+import { NoBreakHyphens } from "./NoBreakHyphens";
 
 type GuideCardProps = {
   href: Route;
@@ -22,11 +23,11 @@ export function GuideCard({
   level,
 }: GuideCardProps) {
   return (
-    <article className="group relative flex flex-col gap-3 rounded-ui border border-line bg-sheet p-5 hover:border-ink">
+    <article className="group relative flex w-full flex-col gap-3 rounded-ui border border-line bg-sheet p-5 hover:border-ink">
       <p className="text-small text-muted">{category}</p>
       <h3 className="text-h3">
         <Link href={href} className="group-hover:underline after:absolute after:inset-0">
-          {title}
+          <NoBreakHyphens text={title} />
         </Link>
       </h3>
       <p className="text-muted">{description}</p>
@@ -59,10 +60,10 @@ export function CourseCard({
   progress,
 }: CourseCardProps) {
   return (
-    <article className="group relative flex flex-col gap-3 rounded-ui border border-line bg-sheet p-5 hover:border-ink">
+    <article className="group relative flex w-full flex-col gap-3 rounded-ui border border-line bg-sheet p-5 hover:border-ink">
       <h3 className="text-h3">
         <Link href={href} className="group-hover:underline after:absolute after:inset-0">
-          {title}
+          <NoBreakHyphens text={title} />
         </Link>
       </h3>
       <p className="text-muted">{summary}</p>

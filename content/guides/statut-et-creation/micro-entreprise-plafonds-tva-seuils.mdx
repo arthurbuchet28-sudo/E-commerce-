@@ -1,0 +1,83 @@
+---
+title: "Micro-entreprise : plafonds de CA, franchise de TVA et seuils à surveiller"
+description: Plafonds de chiffre d’affaires, seuils de franchise en base de TVA et conséquences d’un dépassement pour un micro-entrepreneur qui vend en ligne.
+answer: "En vente de marchandises, une micro-entreprise peut réaliser jusqu’à {{micro.plafondVente}} de chiffre d’affaires annuel, et reste en franchise de TVA tant qu’elle ne dépasse pas {{tva.franchiseVentes}}, avec un seuil majoré de {{tva.franchiseVentesMajore}}. Ce sont deux mécanismes distincts : on peut rester micro-entrepreneur tout en devenant redevable de la TVA."
+category: statut-et-creation
+level: debutant
+publishedAt: 2026-09-29
+updatedAt: 2026-09-29
+featured: true
+sources:
+  - title: Urssaf, le micro-entrepreneur
+    url: https://www.urssaf.fr
+    consultedAt: 2026-09-29
+  - title: impots.gouv.fr, franchise en base de TVA
+    url: https://www.impots.gouv.fr
+    consultedAt: 2026-09-29
+  - title: Service-public.fr, micro-entrepreneur et chiffre d’affaires
+    url: https://entreprendre.service-public.fr
+    consultedAt: 2026-09-29
+relatedTools:
+  - /outils/simulateur-micro-entreprise
+faq:
+  - question: Les plafonds s’entendent-ils HT ou TTC ?
+    answer: Les plafonds de la micro-entreprise se calculent sur le chiffre d’affaires hors taxes encaissé. En franchise de TVA, vous ne facturez pas de TVA, donc votre prix de vente et votre chiffre d’affaires se confondent.
+  - question: Que se passe-t-il la première année si je démarre en cours d’année ?
+    answer: Les plafonds de la micro-entreprise sont ajustés au prorata du temps d’activité l’année de création. Le simulateur micro-entreprise fait ce calcul pour vous.
+---
+
+<Encadre type="info" titre="Réponse rapide">
+  Deux compteurs à surveiller, pas un seul : le **plafond de la micro-entreprise** (qui décide de
+  votre régime) et le **seuil de franchise de TVA** (qui décide si vous facturez la TVA).
+</Encadre>
+
+## Les chiffres à connaître
+
+| Seuil                          | Vente de marchandises                      | Prestations de services                      |
+| ------------------------------ | ------------------------------------------ | -------------------------------------------- |
+| Plafond micro-entreprise (HT)  | <Chiffre id="micro.plafondVente" />        | <Chiffre id="micro.plafondServices" />       |
+| Franchise de TVA               | <Chiffre id="tva.franchiseVentes" />       | <Chiffre id="tva.franchiseServices" />       |
+| Franchise de TVA, seuil majoré | <Chiffre id="tva.franchiseVentesMajore" /> | <Chiffre id="tva.franchiseServicesMajore" /> |
+
+Si vous exercez les deux types d’activité, le chiffre d’affaires global ne doit pas dépasser le plafond « vente », et la part « services » ne doit pas dépasser le plafond « services ». [À VÉRIFIER — urssaf.fr]
+
+## Le plafond de la micro-entreprise
+
+Le plafond s’applique au chiffre d’affaires encaissé sur l’année civile. Un dépassement ponctuel ne fait pas perdre immédiatement le régime : c’est un dépassement deux années consécutives qui entraîne la sortie du régime, au 1er janvier suivant. [À VÉRIFIER — urssaf.fr]
+
+L’année de création, le plafond est calculé **au prorata** du temps d’activité.
+
+## La franchise en base de TVA
+
+En <Terme id="franchise-en-base-de-tva">franchise en base</Terme>, vous ne facturez pas la TVA et ne la reversez pas ; en contrepartie, vous ne récupérez pas la TVA sur vos achats.
+
+Vos factures doivent porter la mention : <Chiffre id="tva.mentionFranchise" />.
+
+<Encadre type="attention" titre="Le dépassement du seuil majoré">
+  Si votre chiffre d’affaires dépasse le seuil majoré en cours d’année, vous devenez redevable de la
+  TVA sans attendre l’année suivante. [À VÉRIFIER — date exacte de basculement sur impots.gouv.fr]
+</Encadre>
+
+Entre le seuil et le seuil majoré, la franchise est en principe maintenue pour l’année en cours, mais pas pour l’année suivante. [À VÉRIFIER — impots.gouv.fr]
+
+## Les cotisations sociales
+
+Les cotisations sont un pourcentage du chiffre d’affaires encaissé : <Chiffre id="micro.tauxCotisationsVente" /> pour la vente de marchandises. Pas de chiffre d’affaires, pas de cotisations.
+
+<Exemple persona="lea">
+  Léa vend ses bijoux en activité secondaire. Chaque mois, elle déclare le chiffre d’affaires
+  encaissé, même s’il est faible, et note dans un tableau le cumul de l’année pour voir venir les
+  seuils.
+</Exemple>
+
+## Vendre dans d’autres pays de l’Union européenne
+
+Au-delà de <Chiffre id="tva.seuilVentesDistanceUE" /> de ventes à distance par an vers des particuliers d’autres pays de l’UE, c’est la TVA du pays du client qui s’applique. Le <Terme id="guichet-unique-oss">guichet unique OSS</Terme> permet de la déclarer depuis la France.
+
+<AFaireAujourdhui
+  items={[
+    "Noter dans un tableau votre chiffre d’affaires encaissé mois par mois.",
+    "Vérifier que vos factures portent la mention de franchise de TVA si vous en bénéficiez.",
+    "Faire une simulation avec le simulateur micro-entreprise.",
+  ]}
+/>

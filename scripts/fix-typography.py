@@ -30,10 +30,43 @@ def fix_line(line: str) -> str:
     return line
 
 
+YAML_LINE = re.compile(r"^(\s*(?:- )?[A-Za-z_]+: )(.*)$")
+
+
+def fix_markdown(src: str) -> str:
+    """Markdown/MDX: fix frontmatter values (quoting them when needed) and prose."""
+    lines = src.splitlines(keepends=True)
+    out, in_front, in_fence = [], False, False
+    for i, line in enumerate(lines):
+        if line.strip() == "---" and (i == 0 or in_front):
+            in_front = i == 0
+            out.append(line)
+            continue
+        if line.strip().startswith("```"):
+            in_fence = not in_fence
+        if in_fence:
+            out.append(line)
+            continue
+        if in_front:
+            m = YAML_LINE.match(line.rstrip("\n"))
+            if m and m.group(2) and not m.group(2).startswith(('"', "'", "[", "|", ">")):
+                value = fix_text(m.group(2))
+                if ": " in value or " #" in value:
+                    value = '"' + value.replace('"', '\\"') + '"'
+                line = m.group(1) + value + "\n"
+            out.append(line)
+            continue
+        out.append(fix_text(line))
+    return "".join(out)
+
+
 for path in sys.argv[1:]:
     with open(path, encoding="utf-8") as f:
         src = f.read()
-    out = "".join(fix_line(l) for l in src.splitlines(keepends=True))
+    if path.endswith((".md", ".mdx")):
+        out = fix_markdown(src)
+    else:
+        out = "".join(fix_line(l) for l in src.splitlines(keepends=True))
     if out != src:
         with open(path, "w", encoding="utf-8") as f:
             f.write(out)

@@ -105,7 +105,11 @@ PLAN.md CLAUDE.md TODO-CONTENU.md README.md .env.example
 ## Décisions en cours de route
 
 - **CSP stricte reportée à la phase 14** : une CSP à nonce oblige Next.js à rendre toutes les pages dynamiquement (perte du SSG). On évaluera en phase 14 une CSP à empreintes (hash) compatible avec le rendu statique. Les autres en-têtes de sécurité sont actifs depuis la phase 1.
-- **Images Open Graph dynamiques** : ajoutées avec les guides (phase 4), qui en sont les principaux bénéficiaires.
+- **Images Open Graph** : générées au build pour le site et chaque guide (polices WOFF statiques dans `src/app/fonts/og/`).
+- **`<Chiffre id="…" />`** (et non `ref=`) : `ref` est réservé par React et interdit dans les Server Components.
+- **Chiffres dans le frontmatter** : syntaxe `{{cle.reference}}` remplacée au build (`interpolateRefs`).
+- **Recherche** : Pagefind indexe le HTML généré (`.next/server/app`) après `next build` ; index dans `public/pagefind` (non versionné). Indisponible en `pnpm dev`.
+- **Brouillons** : visibles en local et en preview avec un badge, jamais en production.
 - **Registre des pages** `src/config/routes.ts` : source unique des titres, descriptions, fil d'Ariane, sitemap et plan du site.
 
 ## Journal des phases

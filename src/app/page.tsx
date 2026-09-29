@@ -1,8 +1,10 @@
+import { GuideList } from "@/components/content/GuideList";
 import { Container } from "@/components/layout/PageHeader";
 import { ButtonLink } from "@/components/ui/Button";
 import { RouteStepper } from "@/components/ui/RouteStepper";
 import { siteConfig } from "@/config/site";
 import { parcoursSteps, stepHref } from "@/data/parcours";
+import { getFeaturedGuides } from "@/lib/content/guides";
 import { JsonLd, organizationJsonLd, websiteJsonLd } from "@/lib/seo/json-ld";
 
 // Home skeleton: featured guides, tools, free course and newsletter arrive with their phases.
@@ -41,6 +43,20 @@ export default function HomePage() {
           />
         </div>
       </Container>
+
+      <section aria-labelledby="guides-title" className="border-t border-line">
+        <Container className="flex flex-col gap-6 py-12">
+          <h2 id="guides-title" className="text-h2">
+            Les guides à lire en premier
+          </h2>
+          <GuideList guides={getFeaturedGuides(3)} />
+          <p>
+            <ButtonLink href="/guides" variant="secondary">
+              Voir tous les guides
+            </ButtonLink>
+          </p>
+        </Container>
+      </section>
 
       <section aria-labelledby="methode-title" className="border-t border-line">
         <Container className="py-12">
