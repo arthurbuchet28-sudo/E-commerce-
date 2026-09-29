@@ -85,6 +85,8 @@ docs/               design-system.md (tokens, composants), registre, sauvegardes
 - Mutations d'API authentifiées : `withMember()` (`src/lib/account/api.ts`) vérifie l'origine (CSRF)
   et la session. Les formulaires de compte sont des Server Actions (`src/app/compte/actions.ts`).
 - Droits d'accès aux formations accordés uniquement par le webhook Stripe `checkout.session.completed`.
+  Sans clé Stripe (local), paiement simulé sur `/paiement-simule` via le même webhook signé.
+  Textes de consentement versionnés dans `src/config/legal.ts` (changer la version si le texte change).
 - Pas de `dangerouslySetInnerHTML` sur du contenu utilisateur. Pas de couleurs en dur : tokens CSS
   (`docs/design-system.md`). Réutiliser `src/components/ui/` avant de créer un composant.
 - Accessibilité WCAG 2.2 AA : un seul `h1`, labels visibles, focus visible, `aria-live` sur les résultats.

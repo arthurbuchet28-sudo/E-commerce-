@@ -6,7 +6,8 @@ import { z } from "zod";
  * - `publicEnvSchema`: variables exposed to the browser (NEXT_PUBLIC_*).
  * - `serverEnvSchema`: secrets, only readable on the server.
  *
- * Third-party services have mock adapters (EMAIL_PROVIDER=console, VIDEO_PROVIDER=mock)
+ * Third-party services have mock adapters (EMAIL_PROVIDER=console|mailpit, VIDEO_PROVIDER=mock,
+ * payments simulated when STRIPE_SECRET_KEY is empty)
  * so the app runs locally without any account. In production, mocks are refused.
  */
 
@@ -38,7 +39,9 @@ export const serverEnvSchema = publicEnvSchema
     SUPABASE_SERVICE_ROLE_KEY: optionalString,
     STRIPE_SECRET_KEY: optionalString,
     STRIPE_WEBHOOK_SECRET: optionalString,
-    EMAIL_PROVIDER: z.enum(["console", "brevo"]).default("console"),
+    EMAIL_PROVIDER: z.enum(["console", "mailpit", "brevo"]).default("console"),
+    // Local Mailpit (started by `supabase start`), used when EMAIL_PROVIDER=mailpit.
+    MAILPIT_URL: z.url().default("http://127.0.0.1:54324"),
     BREVO_API_KEY: optionalString,
     BREVO_NEWSLETTER_LIST_ID: optionalString,
     EMAIL_FROM: z.email().default("bonjour@premiere-vente.fr"),
@@ -53,6 +56,8 @@ export const serverEnvSchema = publicEnvSchema
     };
 
     if (env.EMAIL_PROVIDER === "brevo") require("BREVO_API_KEY", "when EMAIL_PROVIDER=brevo");
+    // A real Stripe account without a webhook secret would leave webhooks unverifiable.
+    if (env.STRIPE_SECRET_KEY) require("STRIPE_WEBHOOK_SECRET", "when STRIPE_SECRET_KEY is set");
     if (env.VIDEO_PROVIDER === "bunny") {
       require("BUNNY_STREAM_LIBRARY_ID", "when VIDEO_PROVIDER=bunny");
       require("BUNNY_STREAM_TOKEN_KEY", "when VIDEO_PROVIDER=bunny");

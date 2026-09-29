@@ -34,7 +34,7 @@ export default function SeLancerPage() {
           </ol>
           <p className="text-small text-muted">
             Votre progression est enregistrée dans ce navigateur, sans compte ni cookie. Avec un
-            compte (bientôt disponible), elle vous suivra sur tous vos appareils.
+            compte gratuit, elle vous suivra sur tous vos appareils.
           </p>
           <div>
             <ResetProgress />

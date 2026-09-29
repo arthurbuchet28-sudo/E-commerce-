@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import { breadcrumbFor, Container, PageHeader } from "@/components/layout/PageHeader";
 import { StartCourseButton } from "@/components/lms/StartCourseButton";
 import { Accordion } from "@/components/ui/Accordion";
-import { Button, ButtonLink } from "@/components/ui/Button";
+import { ButtonLink } from "@/components/ui/Button";
 import { LevelBadge } from "@/components/ui/LevelBadge";
 import { getCatalogue, getCourse } from "@/lib/lms/queries";
 import { formatDuration, formatPrice } from "@/lib/lms/progress";
@@ -189,14 +189,13 @@ export default async function CoursePage({ params }: Props) {
               {course.isFree ? (
                 <StartCourseButton courseId={course.id} slug={course.slug} />
               ) : (
-                <>
-                  <Button size="lg" disabled className="w-full">
-                    Acheter la formation
-                  </Button>
-                  <p className="text-small text-muted">
-                    Le paiement en ligne sera bientôt disponible.
-                  </p>
-                </>
+                <ButtonLink
+                  href={`/panier?formation=${course.slug}` as Route}
+                  size="lg"
+                  className="w-full"
+                >
+                  Acheter la formation
+                </ButtonLink>
               )}
               {preview && (
                 <ButtonLink

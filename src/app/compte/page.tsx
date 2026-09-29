@@ -5,6 +5,7 @@ import { signOut } from "@/app/compte/actions";
 import { DeleteAccountForm, ProfileForm } from "@/components/account/AuthForms";
 import { CertificatesPanel, CoursesPanel, loadLearning } from "@/components/account/LearningPanels";
 import { ParcoursSummary } from "@/components/account/ParcoursSummary";
+import { loadPurchases, PurchasesPanel } from "@/components/account/PurchasesPanel";
 import { SimulationList, type SimulationRow } from "@/components/account/SimulationList";
 import { MemberAreaUnavailable } from "@/components/account/Unavailable";
 import { breadcrumbFor, Container, PageHeader } from "@/components/layout/PageHeader";
@@ -51,7 +52,10 @@ export default async function AccountPage({ searchParams }: PageProps<"/compte">
       .select("id, tool, title, inputs, created_at")
       .order("created_at", { ascending: false }),
   ]);
-  const learning = await loadLearning(supabase, user.id);
+  const [learning, purchases] = await Promise.all([
+    loadLearning(supabase, user.id),
+    loadPurchases(supabase),
+  ]);
   const rows: SimulationRow[] = (simulations ?? []).map((s) => {
     const route = findRoute(`/outils/${s.tool}`);
     return {
@@ -88,7 +92,7 @@ export default async function AccountPage({ searchParams }: PageProps<"/compte">
           <CoursesPanel learning={learning} />
         </Panel>
         <Panel id="achats-title" title="Mes achats et factures">
-          <p className="text-muted">Aucun achat pour l’instant. Vos factures apparaîtront ici.</p>
+          <PurchasesPanel purchases={purchases} />
         </Panel>
         <Panel id="attestations-title" title="Mes attestations de suivi">
           <CertificatesPanel learning={learning} />

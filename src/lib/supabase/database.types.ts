@@ -65,6 +65,48 @@ export type Database = {
           },
         ];
       };
+      consent_log: {
+        Row: {
+          created_at: string;
+          id: string;
+          kind: string;
+          order_id: string | null;
+          text_version: string;
+          user_id: string | null;
+        };
+        Insert: {
+          created_at?: string;
+          id?: string;
+          kind: string;
+          order_id?: string | null;
+          text_version: string;
+          user_id?: string | null;
+        };
+        Update: {
+          created_at?: string;
+          id?: string;
+          kind?: string;
+          order_id?: string | null;
+          text_version?: string;
+          user_id?: string | null;
+        };
+        Relationships: [
+          {
+            foreignKeyName: "consent_log_order_id_fkey";
+            columns: ["order_id"];
+            isOneToOne: false;
+            referencedRelation: "orders";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "consent_log_user_id_fkey";
+            columns: ["user_id"];
+            isOneToOne: false;
+            referencedRelation: "profiles";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
       courses: {
         Row: {
           access_months: number;
@@ -131,7 +173,9 @@ export type Database = {
           created_at: string;
           expires_at: string | null;
           order_id: string | null;
+          revoked_at: string | null;
           source: string;
+          starts_at: string;
           user_id: string;
         };
         Insert: {
@@ -139,7 +183,9 @@ export type Database = {
           created_at?: string;
           expires_at?: string | null;
           order_id?: string | null;
+          revoked_at?: string | null;
           source: string;
+          starts_at?: string;
           user_id: string;
         };
         Update: {
@@ -147,7 +193,9 @@ export type Database = {
           created_at?: string;
           expires_at?: string | null;
           order_id?: string | null;
+          revoked_at?: string | null;
           source?: string;
+          starts_at?: string;
           user_id?: string;
         };
         Relationships: [
@@ -159,10 +207,70 @@ export type Database = {
             referencedColumns: ["id"];
           },
           {
+            foreignKeyName: "enrollments_order_fk";
+            columns: ["order_id"];
+            isOneToOne: false;
+            referencedRelation: "orders";
+            referencedColumns: ["id"];
+          },
+          {
             foreignKeyName: "enrollments_user_id_fkey";
             columns: ["user_id"];
             isOneToOne: false;
             referencedRelation: "profiles";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
+      invoice_counters: {
+        Row: {
+          kind: string;
+          last_number: number;
+          year: number;
+        };
+        Insert: {
+          kind: string;
+          last_number?: number;
+          year: number;
+        };
+        Update: {
+          kind?: string;
+          last_number?: number;
+          year?: number;
+        };
+        Relationships: [];
+      };
+      invoices: {
+        Row: {
+          data: NonNullable<Json>;
+          id: string;
+          issued_at: string;
+          kind: string;
+          number: string;
+          order_id: string;
+        };
+        Insert: {
+          data: NonNullable<Json>;
+          id?: string;
+          issued_at?: string;
+          kind: string;
+          number: string;
+          order_id: string;
+        };
+        Update: {
+          data?: NonNullable<Json>;
+          id?: string;
+          issued_at?: string;
+          kind?: string;
+          number?: string;
+          order_id?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: "invoices_order_id_fkey";
+            columns: ["order_id"];
+            isOneToOne: false;
+            referencedRelation: "orders";
             referencedColumns: ["id"];
           },
         ];
@@ -337,6 +445,110 @@ export type Database = {
           },
         ];
       };
+      order_items: {
+        Row: {
+          course_id: string;
+          order_id: string;
+          title: string;
+          unit_price_cents: number;
+        };
+        Insert: {
+          course_id: string;
+          order_id: string;
+          title: string;
+          unit_price_cents: number;
+        };
+        Update: {
+          course_id?: string;
+          order_id?: string;
+          title?: string;
+          unit_price_cents?: number;
+        };
+        Relationships: [
+          {
+            foreignKeyName: "order_items_course_id_fkey";
+            columns: ["course_id"];
+            isOneToOne: false;
+            referencedRelation: "courses";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "order_items_order_id_fkey";
+            columns: ["order_id"];
+            isOneToOne: false;
+            referencedRelation: "orders";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
+      orders: {
+        Row: {
+          amount_cents: number;
+          cgv_accepted_at: string;
+          cgv_version: string;
+          created_at: string;
+          currency: string;
+          customer_name: string | null;
+          email: string;
+          id: string;
+          immediate_access: boolean;
+          paid_at: string | null;
+          reference: string;
+          status: string;
+          stripe_payment_intent: string | null;
+          stripe_session_id: string | null;
+          user_id: string | null;
+          waiver_at: string | null;
+          waiver_text_version: string | null;
+        };
+        Insert: {
+          amount_cents: number;
+          cgv_accepted_at: string;
+          cgv_version: string;
+          created_at?: string;
+          currency?: string;
+          customer_name?: string | null;
+          email: string;
+          id?: string;
+          immediate_access: boolean;
+          paid_at?: string | null;
+          reference?: string;
+          status?: string;
+          stripe_payment_intent?: string | null;
+          stripe_session_id?: string | null;
+          user_id?: string | null;
+          waiver_at?: string | null;
+          waiver_text_version?: string | null;
+        };
+        Update: {
+          amount_cents?: number;
+          cgv_accepted_at?: string;
+          cgv_version?: string;
+          created_at?: string;
+          currency?: string;
+          customer_name?: string | null;
+          email?: string;
+          id?: string;
+          immediate_access?: boolean;
+          paid_at?: string | null;
+          reference?: string;
+          status?: string;
+          stripe_payment_intent?: string | null;
+          stripe_session_id?: string | null;
+          user_id?: string | null;
+          waiver_at?: string | null;
+          waiver_text_version?: string | null;
+        };
+        Relationships: [
+          {
+            foreignKeyName: "orders_user_id_fkey";
+            columns: ["user_id"];
+            isOneToOne: false;
+            referencedRelation: "profiles";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
       profiles: {
         Row: {
           cgu_accepted_at: string | null;
@@ -450,6 +662,24 @@ export type Database = {
           },
         ];
       };
+      rate_limits: {
+        Row: {
+          hits: number;
+          key: string;
+          window_start: string;
+        };
+        Insert: {
+          hits?: number;
+          key: string;
+          window_start: string;
+        };
+        Update: {
+          hits?: number;
+          key?: string;
+          window_start?: string;
+        };
+        Relationships: [];
+      };
       saved_simulations: {
         Row: {
           created_at: string;
@@ -485,6 +715,24 @@ export type Database = {
           },
         ];
       };
+      stripe_events: {
+        Row: {
+          id: string;
+          received_at: string;
+          type: string;
+        };
+        Insert: {
+          id: string;
+          received_at?: string;
+          type: string;
+        };
+        Update: {
+          id?: string;
+          received_at?: string;
+          type?: string;
+        };
+        Relationships: [];
+      };
       user_progress: {
         Row: {
           client_updated_at: string;
@@ -517,17 +765,121 @@ export type Database = {
           },
         ];
       };
+      withdrawals: {
+        Row: {
+          ack_sent_at: string | null;
+          consumer_name: string;
+          email: string;
+          id: string;
+          order_id: string;
+          refund_status: string;
+          refunded_at: string | null;
+          requested_at: string;
+          stripe_refund_id: string | null;
+        };
+        Insert: {
+          ack_sent_at?: string | null;
+          consumer_name: string;
+          email: string;
+          id?: string;
+          order_id: string;
+          refund_status?: string;
+          refunded_at?: string | null;
+          requested_at?: string;
+          stripe_refund_id?: string | null;
+        };
+        Update: {
+          ack_sent_at?: string | null;
+          consumer_name?: string;
+          email?: string;
+          id?: string;
+          order_id?: string;
+          refund_status?: string;
+          refunded_at?: string | null;
+          requested_at?: string;
+          stripe_refund_id?: string | null;
+        };
+        Relationships: [
+          {
+            foreignKeyName: "withdrawals_order_id_fkey";
+            columns: ["order_id"];
+            isOneToOne: true;
+            referencedRelation: "orders";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
     };
     Views: {
       [_ in never]: never;
     };
     Functions: {
       course_completed: { Args: { p_course_id: string; p_user_id: string }; Returns: boolean };
+      create_order: {
+        Args: {
+          p_cgv_version: string;
+          p_course_slug: string;
+          p_immediate_access: boolean;
+          p_waiver_text_version: string;
+        };
+        Returns: Json;
+      };
       enroll_free: { Args: { p_course_id: string }; Returns: undefined };
+      expire_order: { Args: { p_event_id: string; p_session_id: string }; Returns: Json };
+      fulfill_order: {
+        Args: {
+          p_amount_cents: number;
+          p_currency: string;
+          p_event_id: string;
+          p_payment_intent: string;
+          p_seller: Json;
+          p_session_id: string;
+          p_withdrawal_days: number;
+        };
+        Returns: Json;
+      };
       has_access: { Args: { p_course_id: string }; Returns: boolean };
       is_admin: { Args: Record<PropertyKey, never>; Returns: boolean };
       issue_certificate: { Args: { p_course_id: string }; Returns: string };
+      issue_invoice: {
+        Args: { p_kind: string; p_order_id: string; p_seller: Json };
+        Returns: string;
+      };
+      next_invoice_number: { Args: { p_at: string; p_kind: string }; Returns: string };
+      order_reference: { Args: Record<PropertyKey, never>; Returns: string };
+      rate_limit: {
+        Args: { p_key: string; p_max: number; p_window_seconds: number };
+        Returns: boolean;
+      };
+      record_refund: {
+        Args: {
+          p_amount_refunded: number;
+          p_event_id: string;
+          p_payment_intent: string;
+          p_refund_id: string;
+          p_seller: Json;
+        };
+        Returns: Json;
+      };
+      request_withdrawal: {
+        Args: {
+          p_consumer_name: string;
+          p_email: string;
+          p_reference: string;
+          p_seller: Json;
+          p_withdrawal_days: number;
+        };
+        Returns: Json;
+      };
       submit_quiz: { Args: { p_answers: number[]; p_module_id: string }; Returns: Json };
+      withdrawal_eligibility: {
+        Args: { p_order_id: string; p_withdrawal_days: number };
+        Returns: string;
+      };
+      withdrawal_lookup: {
+        Args: { p_email: string; p_reference: string; p_withdrawal_days: number };
+        Returns: Json;
+      };
     };
     Enums: {
       [_ in never]: never;

@@ -160,7 +160,7 @@ export async function getLearnerState(
   const [enrollment, progress, attempts, certificate] = await Promise.all([
     supabase
       .from("enrollments")
-      .select("source, created_at, expires_at")
+      .select("source, created_at, starts_at, expires_at, revoked_at")
       .eq("user_id", userId)
       .eq("course_id", course.id)
       .maybeSingle(),
@@ -182,9 +182,14 @@ export async function getLearnerState(
       .eq("course_id", course.id)
       .maybeSingle(),
   ]);
+  // Mirrors public.has_access(): purchases may open later (no waiver) or be revoked.
+  const now = new Date();
+  const e = enrollment.data;
   const hasAccess =
-    !!enrollment.data &&
-    (!enrollment.data.expires_at || new Date(enrollment.data.expires_at) > new Date());
+    !!e &&
+    !e.revoked_at &&
+    new Date(e.starts_at) <= now &&
+    (!e.expires_at || new Date(e.expires_at) > now);
   const completed = new Set(
     (progress.data ?? []).filter((p) => p.completed_at).map((p) => p.lesson_id),
   );

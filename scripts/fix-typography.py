@@ -22,7 +22,9 @@ def fix_line(line: str) -> str:
     stripped = line.strip()
     if stripped.startswith(("//", "*", "/*", "import ")):
         return line
-    if PURE_TEXT.match(line) and re.search(r"[^\W\d_]", line):
+    # `) : user ? (` looks like text but is a JSX ternary: never touch such lines.
+    is_ternary = stripped.startswith((")", "?", ":")) or re.search(r"\s\?\s*\($", stripped)
+    if PURE_TEXT.match(line) and re.search(r"[^\W\d_]", line) and not is_ternary:
         return fix_text(line)
     # JSX text with expressions, e.g. `Étape suivante : {next.title}`: fix outside braces.
     if (

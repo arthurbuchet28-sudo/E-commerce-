@@ -83,3 +83,32 @@ export async function authLinkFor(to: string): Promise<string> {
     .toBe(true);
   return link!;
 }
+
+/** Waits for an e-mail sent to `to` whose subject matches, and returns its plain text. */
+export async function emailFor(
+  to: string,
+  subject: RegExp,
+): Promise<{ subject: string; text: string }> {
+  let found: { subject: string; text: string } | undefined;
+  await expect
+    .poll(
+      async () => {
+        const search = await fetch(
+          `${MAILPIT}/api/v1/search?query=${encodeURIComponent(`to:"${to}"`)}`,
+        );
+        const { messages } = (await search.json()) as {
+          messages: Array<{ ID: string; Subject: string }>;
+        };
+        const match = messages?.find((m) => subject.test(m.Subject));
+        if (!match) return false;
+        const msg = (await (await fetch(`${MAILPIT}/api/v1/message/${match.ID}`)).json()) as {
+          Text: string;
+        };
+        found = { subject: match.Subject, text: msg.Text };
+        return true;
+      },
+      { timeout: 15_000 },
+    )
+    .toBe(true);
+  return found!;
+}

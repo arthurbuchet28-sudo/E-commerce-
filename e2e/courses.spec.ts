@@ -33,7 +33,10 @@ test("catalogue and course page present the offer honestly", async ({ page }) =>
   await page.goto(`/formations/${PAID}`);
   await expect(page.getByRole("heading", { name: "Programme" })).toBeVisible();
   await expect(page.getByText("Aperçu gratuit")).toBeVisible();
-  await expect(page.getByRole("button", { name: "Acheter la formation" })).toBeDisabled();
+  await expect(page.getByRole("link", { name: "Acheter la formation" })).toHaveAttribute(
+    "href",
+    `/panier?formation=${PAID}`,
+  );
   const types = (await page.locator('script[type="application/ld+json"]').allTextContents()).map(
     (t) => JSON.parse(t)["@type"],
   );

@@ -29,6 +29,17 @@ pnpm exec supabase status    # affiche les clés à copier dans .env.local (voir
 Les e-mails (confirmation d'inscription, lien de connexion, mot de passe) ne partent pas vraiment :
 ils s'affichent dans Mailpit, sur http://127.0.0.1:54324.
 
+## Tester les paiements en local
+
+Sans clé Stripe, le paiement est simulé : après « Continuer vers le paiement sécurisé », une page
+« Paiement simulé » remplace Stripe (aucune carte demandée). Les e-mails de confirmation et
+d'accusé de réception de rétractation s'affichent dans Mailpit si `EMAIL_PROVIDER=mailpit`.
+
+Avec un compte Stripe en mode test : renseigner `STRIPE_SECRET_KEY` et lancer
+`stripe listen --forward-to localhost:3000/api/stripe/webhook`, puis copier le secret affiché dans
+`STRIPE_WEBHOOK_SECRET`. En production, déclarer le webhook dans le tableau de bord Stripe avec les
+événements `checkout.session.completed`, `checkout.session.expired` et `charge.refunded`.
+
 ## Vérifier que tout fonctionne
 
 ```bash

@@ -53,6 +53,10 @@ lien exact de la page consultée, et mettre à jour `checkedAt`.
 | `src/lib/calc/micro.ts`                                                          | Messages d'alerte : sortie du régime après deux ans, bascule TVA, maintien de la franchise | urssaf.fr, impots.gouv.fr      |
 | `src/app/outils/simulateur-micro-entreprise/page.tsx`                            | Absence de prorata des seuils de TVA l'année de création                                   | impots.gouv.fr                 |
 | `src/lib/services/video.ts`                                                      | Format du jeton de sécurité Bunny Stream (sha256 clé + vidéo + expiration)                 | docs.bunny.net                 |
+| `src/config/legal.ts` → `waiverText()`                                           | Texte de l'accord exprès et de la renonciation au droit de rétractation (art. L221-28 13°) | legifrance.gouv.fr             |
+| `supabase/migrations/…_payments.sql` → `withdrawal_eligibility`                  | Moment où l'exécution « a commencé » (retenu : ouverture d'une première leçon)             | legifrance.gouv.fr             |
+| `src/lib/pdf/InvoiceDocument.tsx`                                                | Mentions obligatoires des factures (mention « EI », adresse, date de la vente)             | entreprendre.service-public.fr |
+| `src/components/commerce/WithdrawalForm.tsx`                                     | Informations demandées et libellés de la fonction de rétractation (nom, e-mail, commande)  | legifrance.gouv.fr             |
 | `src/data/platforms.ts`                                                          | Tarifs et commissions de chaque plateforme (non recopiés, lien vers la page officielle)    | Sites officiels                |
 
 ## À valider (relecture humaine)
@@ -68,6 +72,7 @@ lien exact de la page consultée, et mettre à jour `checkedAt`.
 | `src/data/quiz-modele.ts`             | Pondération des réponses du quiz et descriptions des 6 modèles                                                               |
 | `src/data/platforms.ts`               | Appréciations (difficulté, personnalisation, SEO, profils)                                                                   |
 | `src/data/checklist.ts`               | Les 50 points de la checklist de lancement                                                                                   |
+| `src/config/legal.ts` → `CGV_VERSION` | Version des CGV acceptée à la commande : à mettre à jour avec les CGV définitives (phase 12)                                 |
 | `src/config/legal.ts` → `CGU_VERSION` | Version des CGU enregistrée à l'inscription : à mettre à jour quand les CGU définitives seront publiées (phase 12)           |
 | `supabase/templates/*.html`           | Textes des e-mails de confirmation, lien de connexion, mot de passe et changement d'adresse                                  |
 | `supabase/seed.sql`                   | Formations de démonstration : prix (F1 à 49 € TTC), durées, questions de quiz et explications ; F1 ne contient que 2 modules |

@@ -297,6 +297,17 @@ export const routes = [
     phase: 9,
   },
   {
+    path: "/paiement-simule",
+    label: "Paiement simulé",
+    h1: "Paiement simulé",
+    title: "Paiement simulé",
+    description:
+      "Page de démonstration du paiement, disponible uniquement sans compte Stripe : aucune carte n’est débitée.",
+    group: "commande",
+    indexable: false,
+    phase: 9,
+  },
+  {
     path: "/retractation",
     label: "Se rétracter",
     h1: "Exercer mon droit de rétractation",
