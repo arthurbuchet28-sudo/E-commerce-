@@ -872,6 +872,44 @@ export type Database = {
       [_ in never]: never;
     };
     Functions: {
+      admin_dashboard: { Args: { p_inactive_days: number }; Returns: Json };
+      admin_move: {
+        Args: { p_direction: number; p_id: string; p_kind: string };
+        Returns: undefined;
+      };
+      admin_quiz_questions: {
+        Args: { p_module_id: string };
+        Returns: {
+          choices: string[];
+          correct_index: number;
+          explanation: string;
+          id: string;
+          module_id: string;
+          position: number;
+          prompt: string;
+        }[];
+        SetofOptions: {
+          from: "*";
+          to: "quiz_questions";
+          isOneToOne: false;
+          isSetofReturn: true;
+        };
+      };
+      admin_students: {
+        Args: { p_limit: number; p_offset: number; p_search: string };
+        Returns: {
+          courses: number;
+          created_at: string;
+          display_name: string;
+          email: string;
+          id: string;
+          last_activity: string;
+          paid_orders: number;
+          role: string;
+          total: number;
+        }[];
+      };
+      assert_admin: { Args: Record<PropertyKey, never>; Returns: undefined };
       course_completed: { Args: { p_course_id: string; p_user_id: string }; Returns: boolean };
       create_order: {
         Args: {

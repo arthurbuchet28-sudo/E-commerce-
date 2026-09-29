@@ -49,6 +49,15 @@ bienvenue (`src/data/newsletter.ts`) partent grâce à une tâche quotidienne d�
 n'est pas envoyé en production. En local, la tâche se lance à la main :
 `curl http://localhost:3000/api/cron/newsletter`.
 
+## Le back-office
+
+L'espace d'administration est sur `/admin`. Pour donner le rôle d'administrateur à un compte
+existant (créé d'abord sur le site) : `pnpm admin:grant votre@email.fr` (et `--remove` pour le
+retirer). Vous pouvez y créer et modifier les formations, les modules, les leçons, les quiz et les
+ressources PDF, suivre les ventes, les élèves et la newsletter, et exporter les commandes et les
+abonnés en CSV. Le texte d'une leçon reste un fichier `content/formations/<formation>/<leçon>.mdx` ;
+une vidéo se téléverse dans Bunny Stream, puis son identifiant se colle dans la leçon.
+
 ## Vérifier que tout fonctionne
 
 ```bash
@@ -69,8 +78,8 @@ pnpm e2e     # tests de bout en bout et d'accessibilité (après pnpm build)
 ## Modifier une leçon de formation
 
 Le texte de chaque leçon est dans `content/formations/<formation>/<leçon>.mdx` (même syntaxe que
-les guides). Le titre, l'ordre, la durée, le prix et les questions de quiz sont dans
-`supabase/seed.sql` (le back-office de la phase 11 permettra de les modifier sans code).
+les guides). Le titre, l'ordre, la durée, le prix et les questions de quiz se modifient dans le
+back-office (`/admin`), sans code.
 
 ## Mettre à jour un chiffre ou une règle
 

@@ -33,5 +33,6 @@ export const config = {
     "/api/compte/:path*",
     "/apprendre/:path*",
     "/admin/:path*",
+    "/api/admin/:path*",
   ],
 };

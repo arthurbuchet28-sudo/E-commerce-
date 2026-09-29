@@ -44,6 +44,7 @@ pnpm check        # lint + typecheck + test + build
 pnpm exec supabase start  # Supabase local (Docker) ; e-mails dans Mailpit :54324
 pnpm db:test      # tests RLS (pgTAP, supabase/tests)
 pnpm db:types     # régénère src/lib/supabase/database.types.ts après une migration
+pnpm admin:grant EMAIL  # donne le rôle admin (/admin) à un compte existant
 ```
 
 Sandbox avec un Chromium préinstallé différent :

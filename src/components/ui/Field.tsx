@@ -54,6 +54,33 @@ export function TextField({ id, label, hint, error, className, ...props }: TextF
   );
 }
 
+type TextAreaFieldProps = ComponentPropsWithoutRef<"textarea"> & {
+  id: string;
+  label: ReactNode;
+  hint?: ReactNode;
+  error?: ReactNode;
+};
+
+export function TextAreaField({ id, label, hint, error, className, ...props }: TextAreaFieldProps) {
+  return (
+    <div className={cn("flex flex-col gap-1", className)}>
+      <label htmlFor={id} className="font-semibold">
+        {label}
+        {props.required && <span className="font-normal text-muted"> (obligatoire)</span>}
+      </label>
+      <Hint id={id}>{hint}</Hint>
+      <textarea
+        id={id}
+        className={cn(control, "min-h-24")}
+        aria-invalid={error ? true : undefined}
+        aria-describedby={describedBy(id, hint, error)}
+        {...props}
+      />
+      <ErrorMessage id={id}>{error}</ErrorMessage>
+    </div>
+  );
+}
+
 type SelectFieldProps = ComponentPropsWithoutRef<"select"> & {
   id: string;
   label: ReactNode;

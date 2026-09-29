@@ -140,3 +140,14 @@ export async function adminRest(path: string, init: RequestInit = {}) {
     },
   });
 }
+
+/** Auth user id of an e-mail (Auth admin API, local test data only). */
+export async function userIdFor(email: string): Promise<string> {
+  const res = await fetch(`${SUPABASE_URL}/auth/v1/admin/users?per_page=1000`, {
+    headers: { apikey: SECRET, Authorization: `Bearer ${SECRET}` },
+  });
+  const { users } = (await res.json()) as { users: Array<{ id: string; email: string }> };
+  const user = users.find((u) => u.email === email.toLowerCase());
+  expect(user, email).toBeTruthy();
+  return user!.id;
+}
