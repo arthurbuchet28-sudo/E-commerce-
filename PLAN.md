@@ -109,6 +109,7 @@ PLAN.md CLAUDE.md TODO-CONTENU.md README.md .env.example
 - **`<Chiffre id="…" />`** (et non `ref=`) : `ref` est réservé par React et interdit dans les Server Components.
 - **Chiffres dans le frontmatter** : syntaxe `{{cle.reference}}` remplacée au build (`interpolateRefs`).
 - **Recherche** : Pagefind indexe le HTML généré (`.next/server/app`) après `next build` ; index dans `public/pagefind` (non versionné). Indisponible en `pnpm dev`.
+- **Progression du parcours** : `localStorage` (clé `parcours:v1`, aucun cookie), logique pure dans `src/lib/parcours/progress.ts` ; la synchronisation avec le compte (phase 7) se branchera derrière le hook `useParcoursProgress`.
 - **Brouillons** : visibles en local et en preview avec un badge, jamais en production.
 - **Registre des pages** `src/config/routes.ts` : source unique des titres, descriptions, fil d'Ariane, sitemap et plan du site.
 

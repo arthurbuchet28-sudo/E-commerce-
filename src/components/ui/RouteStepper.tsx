@@ -3,9 +3,15 @@ import Link from "next/link";
 
 import { cn } from "./cn";
 
-export type RouteStep = { title: string; href?: Route; status: "done" | "current" | "todo" };
+export type RouteStep = {
+  title: string;
+  href?: Route;
+  status: "done" | "current" | "todo";
+  /** Extra detail shown after the status, e.g. "2 points sur 5". */
+  detail?: string;
+};
 
-const statusLabel = { done: "terminée", current: "en cours", todo: "à faire" } as const;
+const statusLabel = { done: "terminée", current: "prochaine étape", todo: "à faire" } as const;
 
 /**
  * « Ligne d'itinéraire » — the signature element. A continuous vertical line with milestones;
@@ -66,6 +72,7 @@ export function RouteStepper({ steps, label }: { steps: RouteStep[]; label: stri
                 )}
                 <span className="text-small text-muted">
                   Étape {i + 1} · {statusLabel[step.status]}
+                  {step.detail && ` · ${step.detail}`}
                 </span>
               </span>
             </li>

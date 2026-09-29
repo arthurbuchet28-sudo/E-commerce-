@@ -1,9 +1,8 @@
 import { GuideList } from "@/components/content/GuideList";
 import { Container } from "@/components/layout/PageHeader";
+import { ParcoursOverview } from "@/components/parcours/ParcoursOverview";
 import { ButtonLink } from "@/components/ui/Button";
-import { RouteStepper } from "@/components/ui/RouteStepper";
 import { siteConfig } from "@/config/site";
-import { parcoursSteps, stepHref } from "@/data/parcours";
 import { getFeaturedGuides } from "@/lib/content/guides";
 import { JsonLd, organizationJsonLd, websiteJsonLd } from "@/lib/seo/json-ld";
 
@@ -33,14 +32,7 @@ export default function HomePage() {
         </div>
         <div className="rounded-ui border border-line bg-sheet p-6">
           <h2 className="mb-5 text-h3">Le parcours « Se lancer »</h2>
-          <RouteStepper
-            label="Aperçu du parcours en 8 étapes"
-            steps={parcoursSteps.map((s) => ({
-              title: s.title,
-              href: stepHref(s.slug),
-              status: "todo",
-            }))}
-          />
+          <ParcoursOverview label="Aperçu du parcours en 8 étapes" showBar={false} />
         </div>
       </Container>
 
