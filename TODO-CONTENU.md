@@ -50,12 +50,14 @@ lien exact de la page consultée, et mettre à jour `checkedAt`.
 
 ## À valider (relecture humaine)
 
-| Emplacement            | Élément                                                                                     |
-| ---------------------- | ------------------------------------------------------------------------------------------- |
-| `content/guides/**`    | Les 5 guides de démonstration sont en `draft: true` : à relire puis passer à `draft: false` |
-| `content/glossaire/**` | Les 20 termes sont en `draft: true`                                                         |
-| `content/veille/**`    | Les 2 entrées de veille sont en `draft: true`                                               |
-| `content/faq.yaml`     | Réponses de la FAQ                                                                          |
+| Emplacement            | Élément                                                                                       |
+| ---------------------- | --------------------------------------------------------------------------------------------- |
+| `content/guides/**`    | Les 5 guides de démonstration sont en `draft: true` : à relire puis passer à `draft: false`   |
+| `content/glossaire/**` | Les 20 termes sont en `draft: true`                                                           |
+| `content/veille/**`    | Les 2 entrées de veille sont en `draft: true`                                                 |
+| `content/faq.yaml`     | Réponses de la FAQ                                                                            |
+| `src/data/parcours.ts` | Durées indicatives, objectifs, livrables et checklists des 8 étapes (estimations éditoriales) |
+| `src/data/parcours.ts` | Titres et adresses prévus des guides « à paraître » (repris de la section 5.2)                |
 
 Rappel : en production, les contenus en `draft: true` ne sont ni affichés, ni indexés, ni listés
 dans le sitemap et `llms.txt`.
