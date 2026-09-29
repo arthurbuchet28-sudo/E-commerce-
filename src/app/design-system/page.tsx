@@ -105,7 +105,7 @@ function Components() {
           </SelectField>
           <RadioGroup
             name="ds-tva"
-            legend="Êtes-vous en franchise en base de TVA ?"
+            legend="Êtes-vous en franchise en base de TVA ?"
             defaultValue="oui"
             options={[
               { value: "oui", label: "Oui" },
@@ -129,7 +129,7 @@ function Components() {
             </p>
           </Callout>
           <Callout type="attention">
-            <p>Vérifiez les seuils chaque année : leur dépassement change vos obligations.</p>
+            <p>Vérifiez les seuils chaque année : leur dépassement change vos obligations.</p>
           </Callout>
           <Callout type="legal">
             <p>
@@ -148,7 +148,7 @@ function Components() {
           <GuideCard
             href="/design-system#cartes"
             category="Statut et création"
-            title="Micro-entreprise, EI, EURL, SASU : quel statut pour vendre en ligne"
+            title="Micro-entreprise, EI, EURL, SASU : quel statut pour vendre en ligne"
             description="Comparer les statuts selon votre situation, votre budget et vos projets."
             readingMinutes={12}
             level="debutant"
@@ -156,7 +156,7 @@ function Components() {
           <GuideCard
             href="/design-system#cartes"
             category="Marketing et acquisition"
-            title="GEO : être recommandé par les assistants IA"
+            title="GEO : être recommandé par les assistants IA"
             description="Rendre vos pages compréhensibles et citables par les moteurs de réponse."
             readingMinutes={10}
             level="intermediaire"
@@ -179,9 +179,9 @@ function Components() {
 
       <Section id="progression" title="Progression et ligne d’itinéraire">
         <div className="grid gap-8 md:grid-cols-2">
-          <RouteStepper steps={steps} label="Parcours « Se lancer »" />
+          <RouteStepper steps={steps} label="Parcours « Se lancer »" />
           <div className="flex flex-col gap-6">
-            <ProgressBar value={2} max={8} label="Parcours « Se lancer »" />
+            <ProgressBar value={2} max={8} label="Parcours « Se lancer »" />
             <ProgressBar value={3} max={6} label="Les bases du e-commerce" />
           </div>
         </div>
@@ -210,15 +210,15 @@ function Components() {
         <Accordion
           items={[
             {
-              title: "Faut-il créer une entreprise avant de vendre ?",
+              title: "Faut-il créer une entreprise avant de vendre ?",
               content: (
                 <p>Oui, dès que l’activité est habituelle. Le guide détaille les démarches.</p>
               ),
             },
             {
-              title: "Puis-je tester sans stock ?",
+              title: "Puis-je tester sans stock ?",
               content: (
-                <p>Oui : pré-vente, print-on-demand ou dropshipping, chacun avec ses risques.</p>
+                <p>Oui : pré-vente, print-on-demand ou dropshipping, chacun avec ses risques.</p>
               ),
             },
           ]}
@@ -245,7 +245,7 @@ function Components() {
           Le{" "}
           <GlossaryTerm
             href="/design-system#infobulle"
-            definition="Modèle de vente où le vendeur ne stocke pas les produits : le fournisseur les expédie directement au client."
+            definition="Modèle de vente où le vendeur ne stocke pas les produits : le fournisseur les expédie directement au client."
           >
             dropshipping
           </GlossaryTerm>{" "}
@@ -313,11 +313,11 @@ function Components() {
 
 export default function DesignSystemPage() {
   return (
-    <main id="contenu" className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6">
+    <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6">
       <div className="flex flex-col gap-4 pb-8">
         <h1 className="text-h1">Design system</h1>
         <p className="max-w-prose text-lead text-muted">
-          Piste « Carnet de route » avec la fiche de calcul. Page interne, non indexée.
+          Piste « Carnet de route » avec la fiche de calcul. Page interne, non indexée.
         </p>
         <ThemeSwitch />
       </div>
@@ -353,8 +353,8 @@ export default function DesignSystemPage() {
           </p>
           <p className="prose-guide">
             Corps de lecture · Literata 18, interligne 1,65, 68 caractères maximum. Les guides se
-            lisent comme un carnet : des phrases courtes, des sources datées, et « ce que vous
-            pouvez faire aujourd’hui » à la fin de chaque article.
+            lisent comme un carnet : des phrases courtes, des sources datées, et « ce que vous
+            pouvez faire aujourd’hui » à la fin de chaque article.
           </p>
           <p className="text-ui">
             Interface · Atkinson Hyperlegible Next 16 — boutons, formulaires, outils.
@@ -362,7 +362,7 @@ export default function DesignSystemPage() {
           <p className="text-small text-muted">
             Petit · 14 — métadonnées, sources, dates de vérification.
           </p>
-          <p className="tabular-nums">Chiffres tabulaires : 1 234,56 € · 89,00 € · 12,50 €</p>
+          <p className="tabular-nums">Chiffres tabulaires : 1 234,56 € · 89,00 € · 12,50 €</p>
         </div>
       </Section>
 
@@ -389,6 +389,6 @@ export default function DesignSystemPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

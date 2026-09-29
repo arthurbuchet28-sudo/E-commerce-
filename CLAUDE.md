@@ -54,6 +54,7 @@ src/lib/            calc/ (fonctions pures des outils), content/ (MDX+Zod), serv
                     (adaptateurs email/video/payments), supabase/, seo/, security/
 src/lib/env.ts      validation Zod des variables ; env.server.ts pour le serveur uniquement
 src/config/site.ts  nom, domaine, éditeur, flags formation (NDA/Qualiopi/CPF)
+src/config/routes.ts registre des pages statiques (titres ≤ 60, descriptions ≤ 155, nav, sitemap)
 src/data/           reference.ts (chiffres sourcés), platforms.ts, parcours.ts, checklist.ts
 content/            guides MDX, glossaire, FAQ, veille, textes de leçons
 supabase/           migrations, seed.sql, tests RLS
@@ -65,7 +66,10 @@ docs/               design-system.md (tokens, composants), registre, sauvegardes
 
 - Code, identifiants et commentaires en **anglais** ; interface et contenus en **français (fr-FR)**.
 - Typographie française dans les textes : espace insécable (U+00A0 ou U+202F) avant `: ; ! ?`,
-  guillemets « », vouvoiement, phrases courtes.
+  guillemets « », vouvoiement, phrases courtes. `scripts/fix-typography.py FICHIER…` corrige les
+  chaînes ; un test e2e vérifie le texte rendu de chaque page.
+- Nouvelle page statique : l'ajouter à `src/config/routes.ts` et utiliser `pageMetadata(path)`.
+  Le layout fournit `<main id="contenu">` : une page ne rend jamais son propre `<main>`.
 - Server components par défaut ; `"use client"` seulement pour les îlots interactifs.
 - Toute entrée externe (formulaire, route handler, frontmatter, env) est validée avec Zod côté serveur.
 - Fonctions de calcul pures dans `src/lib/calc/`, 100 % couvertes par des tests Vitest (`*.test.ts`

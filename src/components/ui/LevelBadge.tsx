@@ -16,7 +16,7 @@ export function LevelBadge({ level }: { level: Level }) {
         />
       </span>
       <span>
-        <span className="sr-only">Niveau : </span>
+        <span className="sr-only">Niveau : </span>
         {labels[level]}
       </span>
     </span>

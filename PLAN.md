@@ -102,6 +102,12 @@ PLAN.md CLAUDE.md TODO-CONTENU.md README.md .env.example
 
 `pnpm lint && pnpm typecheck && pnpm test && pnpm build` ; à partir de la phase 3 : `pnpm e2e` (Playwright + axe sur toutes les routes publiques) ; captures Playwright 1440 px et 390 px des pages clés (clair + sombre) relues et corrigées ; à partir de la phase 7 : `supabase start` + `supabase test db` (RLS) ; phase 9 : `stripe listen` / webhook signé en test ; mise à jour de `TODO-CONTENU.md`.
 
+## Décisions en cours de route
+
+- **CSP stricte reportée à la phase 14** : une CSP à nonce oblige Next.js à rendre toutes les pages dynamiquement (perte du SSG). On évaluera en phase 14 une CSP à empreintes (hash) compatible avec le rendu statique. Les autres en-têtes de sécurité sont actifs depuis la phase 1.
+- **Images Open Graph dynamiques** : ajoutées avec les guides (phase 4), qui en sont les principaux bénéficiaires.
+- **Registre des pages** `src/config/routes.ts` : source unique des titres, descriptions, fil d'Ariane, sitemap et plan du site.
+
 ## Journal des phases
 
 | Phase            | État                                     | Commit                                 |

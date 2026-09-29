@@ -16,7 +16,7 @@ export function ModalDemo() {
       <Modal
         open={open}
         onClose={() => setOpen(false)}
-        title="Supprimer ma simulation ?"
+        title="Supprimer ma simulation ?"
         footer={
           <>
             <Button variant="secondary" onClick={() => setOpen(false)}>
