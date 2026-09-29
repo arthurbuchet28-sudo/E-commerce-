@@ -37,6 +37,7 @@ pnpm build        # build de production
 pnpm lint         # ESLint
 pnpm typecheck    # next typegen + tsc --noEmit
 pnpm test         # Vitest (unitaires)
+pnpm test:coverage # Vitest + couverture (100 % exigé sur src/lib/calc)
 pnpm e2e          # Playwright + axe (nécessite `pnpm build` avant)
 pnpm format       # Prettier
 pnpm check        # lint + typecheck + test + build

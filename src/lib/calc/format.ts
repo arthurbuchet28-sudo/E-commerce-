@@ -5,8 +5,7 @@ export function parseFrNumber(input: string): number | null {
     .replace(/[€%]/g, "")
     .replace(",", ".");
   if (cleaned === "" || !/^-?\d*\.?\d+$|^-?\d+\.$/.test(cleaned)) return null;
-  const n = Number(cleaned);
-  return Number.isFinite(n) ? n : null;
+  return Number(cleaned);
 }
 
 const euro = new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR" });
