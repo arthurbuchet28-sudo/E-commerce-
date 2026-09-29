@@ -71,6 +71,7 @@ export type Database = {
           id: string;
           kind: string;
           order_id: string | null;
+          subscriber_id: string | null;
           text_version: string;
           user_id: string | null;
         };
@@ -79,6 +80,7 @@ export type Database = {
           id?: string;
           kind: string;
           order_id?: string | null;
+          subscriber_id?: string | null;
           text_version: string;
           user_id?: string | null;
         };
@@ -87,6 +89,7 @@ export type Database = {
           id?: string;
           kind?: string;
           order_id?: string | null;
+          subscriber_id?: string | null;
           text_version?: string;
           user_id?: string | null;
         };
@@ -96,6 +99,13 @@ export type Database = {
             columns: ["order_id"];
             isOneToOne: false;
             referencedRelation: "orders";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "consent_log_subscriber_id_fkey";
+            columns: ["subscriber_id"];
+            isOneToOne: false;
+            referencedRelation: "newsletter_subscribers";
             referencedColumns: ["id"];
           },
           {
@@ -444,6 +454,54 @@ export type Database = {
             referencedColumns: ["id"];
           },
         ];
+      };
+      newsletter_subscribers: {
+        Row: {
+          access_token: string;
+          confirm_expires_at: string | null;
+          confirm_token_hash: string | null;
+          confirmed_at: string | null;
+          consent_text_version: string;
+          email: string;
+          id: string;
+          next_email_at: string | null;
+          requested_at: string;
+          sequence_step: number;
+          source: string;
+          status: string;
+          unsubscribed_at: string | null;
+        };
+        Insert: {
+          access_token?: string;
+          confirm_expires_at?: string | null;
+          confirm_token_hash?: string | null;
+          confirmed_at?: string | null;
+          consent_text_version: string;
+          email: string;
+          id?: string;
+          next_email_at?: string | null;
+          requested_at?: string;
+          sequence_step?: number;
+          source?: string;
+          status?: string;
+          unsubscribed_at?: string | null;
+        };
+        Update: {
+          access_token?: string;
+          confirm_expires_at?: string | null;
+          confirm_token_hash?: string | null;
+          confirmed_at?: string | null;
+          consent_text_version?: string;
+          email?: string;
+          id?: string;
+          next_email_at?: string | null;
+          requested_at?: string;
+          sequence_step?: number;
+          source?: string;
+          status?: string;
+          unsubscribed_at?: string | null;
+        };
+        Relationships: [];
       };
       order_items: {
         Row: {
@@ -845,6 +903,36 @@ export type Database = {
         Args: { p_kind: string; p_order_id: string; p_seller: Json };
         Returns: string;
       };
+      newsletter_advance: {
+        Args: { p_id: string; p_next_at: string; p_step: number };
+        Returns: undefined;
+      };
+      newsletter_claim_due: {
+        Args: { p_limit: number; p_max_step: number };
+        Returns: {
+          access_token: string;
+          email: string;
+          id: string;
+          sequence_step: number;
+        }[];
+      };
+      newsletter_confirm: { Args: { p_token_hash: string }; Returns: Json };
+      newsletter_purge: {
+        Args: { p_pending_days: number; p_unsubscribed_days: number };
+        Returns: Json;
+      };
+      newsletter_request: {
+        Args: {
+          p_consent_version: string;
+          p_email: string;
+          p_source: string;
+          p_token_hash: string;
+          p_ttl_hours: number;
+        };
+        Returns: Json;
+      };
+      newsletter_token_status: { Args: { p_token_hash: string }; Returns: string };
+      newsletter_unsubscribe: { Args: { p_access_token: string }; Returns: string };
       next_invoice_number: { Args: { p_at: string; p_kind: string }; Returns: string };
       order_reference: { Args: Record<PropertyKey, never>; Returns: string };
       rate_limit: {

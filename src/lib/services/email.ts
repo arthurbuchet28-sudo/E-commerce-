@@ -9,6 +9,8 @@ export type EmailMessage = {
   subject: string;
   text: string;
   html: string;
+  /** Extra headers, e.g. List-Unsubscribe (RFC 2369) and List-Unsubscribe-Post (RFC 8058). */
+  headers?: Record<string, string>;
 };
 
 export interface EmailProvider {
@@ -40,6 +42,7 @@ export function mailpitEmailProvider(baseUrl: string, from: string, fetchFn: Fet
           Subject: message.subject,
           Text: message.text,
           HTML: message.html,
+          ...(message.headers && { Headers: message.headers }),
         }),
       });
       if (!res.ok) throw new Error(`Mailpit send failed: ${res.status}`);
@@ -65,6 +68,7 @@ export function brevoEmailProvider(apiKey: string, from: string, fetchFn: Fetch 
           subject: message.subject,
           textContent: message.text,
           htmlContent: message.html,
+          ...(message.headers && { headers: message.headers }),
         }),
       });
       if (!res.ok) throw new Error(`Brevo send failed: ${res.status}`);

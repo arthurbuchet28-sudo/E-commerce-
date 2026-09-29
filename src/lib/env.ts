@@ -49,6 +49,8 @@ export const serverEnvSchema = publicEnvSchema
     BUNNY_STREAM_LIBRARY_ID: optionalString,
     BUNNY_STREAM_TOKEN_KEY: optionalString,
     SENTRY_DSN: optionalUrl,
+    // Bearer secret of scheduled jobs (Vercel Cron sends it in the Authorization header).
+    CRON_SECRET: optionalString,
   })
   .superRefine((env, ctx) => {
     const require = (key: keyof typeof env, reason: string) => {
@@ -70,6 +72,7 @@ export const serverEnvSchema = publicEnvSchema
       require("SUPABASE_SERVICE_ROLE_KEY", reason);
       require("STRIPE_SECRET_KEY", reason);
       require("STRIPE_WEBHOOK_SECRET", reason);
+      require("CRON_SECRET", reason);
       if (env.EMAIL_PROVIDER !== "brevo") {
         ctx.addIssue({
           code: "custom",

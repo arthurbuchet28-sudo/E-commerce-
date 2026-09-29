@@ -88,8 +88,8 @@ export async function authLinkFor(to: string): Promise<string> {
 export async function emailFor(
   to: string,
   subject: RegExp,
-): Promise<{ subject: string; text: string }> {
-  let found: { subject: string; text: string } | undefined;
+): Promise<{ id: string; subject: string; text: string }> {
+  let found: { id: string; subject: string; text: string } | undefined;
   await expect
     .poll(
       async () => {
@@ -104,11 +104,39 @@ export async function emailFor(
         const msg = (await (await fetch(`${MAILPIT}/api/v1/message/${match.ID}`)).json()) as {
           Text: string;
         };
-        found = { subject: match.Subject, text: msg.Text };
+        found = { id: match.ID, subject: match.Subject, text: msg.Text };
         return true;
       },
       { timeout: 15_000 },
     )
     .toBe(true);
   return found!;
+}
+
+/** Headers of a Mailpit message. */
+export async function emailHeaders(id: string): Promise<Record<string, string[]>> {
+  return (await (await fetch(`${MAILPIT}/api/v1/message/${id}/headers`)).json()) as Record<
+    string,
+    string[]
+  >;
+}
+
+/** Number of e-mails received by `to` (Mailpit). */
+export async function emailCount(to: string): Promise<number> {
+  const res = await fetch(`${MAILPIT}/api/v1/search?query=${encodeURIComponent(`to:"${to}"`)}`);
+  return ((await res.json()) as { messages_count?: number; total?: number }).messages_count ?? 0;
+}
+
+/** Service-role REST access to a table (test setup only). */
+export async function adminRest(path: string, init: RequestInit = {}) {
+  return fetch(`${SUPABASE_URL}/rest/v1/${path}`, {
+    ...init,
+    headers: {
+      apikey: SECRET,
+      Authorization: `Bearer ${SECRET}`,
+      "Content-Type": "application/json",
+      Prefer: "return=representation",
+      ...(init.headers ?? {}),
+    },
+  });
 }

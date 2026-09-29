@@ -308,6 +308,27 @@ export const routes = [
     phase: 9,
   },
   {
+    path: "/newsletter/confirmer",
+    label: "Confirmer l’inscription",
+    h1: "Confirmer votre inscription",
+    title: "Confirmer votre inscription à la newsletter",
+    description:
+      "Dernière étape de l’inscription à la newsletter : confirmez votre adresse e-mail.",
+    group: "site",
+    indexable: false,
+    phase: 10,
+  },
+  {
+    path: "/newsletter/desinscription",
+    label: "Désinscription",
+    h1: "Désinscription de la newsletter",
+    title: "Désinscription de la newsletter",
+    description: "Résultat de votre désinscription de la newsletter.",
+    group: "site",
+    indexable: false,
+    phase: 10,
+  },
+  {
     path: "/retractation",
     label: "Se rétracter",
     h1: "Exercer mon droit de rétractation",

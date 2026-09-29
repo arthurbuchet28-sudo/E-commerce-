@@ -30,17 +30,21 @@ type Props = {
   checked: ReadonlySet<string>;
   siteName: string;
   date: string;
+  /** Printable blank version (lead magnet): custom title, no progress line. */
+  title?: string;
 };
 
-export function ChecklistDocument({ groups, checked, siteName, date }: Props) {
+export function ChecklistDocument({ groups, checked, siteName, date, title }: Props) {
   const total = groups.reduce((n, g) => n + g.items.length, 0);
   const done = groups.reduce((n, g) => n + g.items.filter((i) => checked.has(i.id)).length, 0);
   return (
-    <Document title="Checklist de lancement" author={siteName} language="fr-FR">
+    <Document title={title ?? "Checklist de lancement"} author={siteName} language="fr-FR">
       <Page size="A4" style={styles.page}>
-        <Text style={styles.title}>Checklist de lancement de votre boutique</Text>
+        <Text style={styles.title}>{title ?? "Checklist de lancement de votre boutique"}</Text>
         <Text style={styles.meta}>
-          {`${done} point${done > 1 ? "s" : ""} validé${done > 1 ? "s" : ""} sur ${total}, au ${date}.`}
+          {title
+            ? `${total} points à cocher. Version du ${date}.`
+            : `${done} point${done > 1 ? "s" : ""} validé${done > 1 ? "s" : ""} sur ${total}, au ${date}.`}
         </Text>
         {groups.map((g) => (
           <View key={g.id} style={styles.group} wrap={false}>

@@ -1,12 +1,13 @@
 import { GuideList } from "@/components/content/GuideList";
 import { Container } from "@/components/layout/PageHeader";
+import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
 import { ParcoursOverview } from "@/components/parcours/ParcoursOverview";
 import { ButtonLink } from "@/components/ui/Button";
 import { siteConfig } from "@/config/site";
+import { LEAD_MAGNET_TITLE } from "@/data/newsletter";
 import { getFeaturedGuides } from "@/lib/content/guides";
 import { JsonLd, organizationJsonLd, websiteJsonLd } from "@/lib/seo/json-ld";
 
-// Home skeleton: featured guides, tools, free course and newsletter arrive with their phases.
 export default function HomePage() {
   return (
     <>
@@ -77,6 +78,21 @@ export default function HomePage() {
               </p>
             </li>
           </ul>
+        </Container>
+      </section>
+
+      <section aria-labelledby="newsletter-title" className="border-t border-line bg-sheet">
+        <Container className="grid gap-8 py-12 md:grid-cols-2">
+          <div className="flex flex-col gap-3">
+            <h2 id="newsletter-title" className="text-h2">
+              {LEAD_MAGNET_TITLE}
+            </h2>
+            <p className="text-muted">
+              Offerte avec la newsletter : une page à imprimer pour ne rien oublier avant d’ouvrir.
+              Vous confirmez votre adresse d’un clic, et vous pouvez vous désinscrire à tout moment.
+            </p>
+          </div>
+          <NewsletterForm source="accueil" idPrefix="accueil" />
         </Container>
       </section>
     </>

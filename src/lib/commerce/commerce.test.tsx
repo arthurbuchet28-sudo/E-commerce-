@@ -6,7 +6,9 @@ import { describe, expect, it, vi } from "vitest";
 import { waiverText } from "@/config/legal";
 import { InvoiceDocument } from "@/lib/pdf/InvoiceDocument";
 
-import { escapeHtml, orderConfirmationEmail, withdrawalAckEmail } from "./emails";
+import { escapeHtml } from "@/lib/email/compose";
+
+import { orderConfirmationEmail, withdrawalAckEmail } from "./emails";
 import {
   addDays,
   formatDateParis,

@@ -1,37 +1,10 @@
 import { refundDays, waiverText, withdrawalDays } from "@/config/legal";
-import { siteConfig } from "@/config/site";
+import { composeEmail as message, hello, signature } from "@/lib/email/compose";
 import type { EmailMessage } from "@/lib/services/email";
 
 import { addDays, formatDateParis, formatDateTimeParis, formatEuros } from "./format";
 
-/**
- * Transactional e-mails of the purchase and withdrawal flows. Pure functions (unit-tested):
- * the plain-text version is the reference; the HTML version is the same text, escaped.
- */
-
-export function escapeHtml(s: string): string {
-  return s
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;");
-}
-
-function toHtml(paragraphs: string[]): string {
-  const body = paragraphs.map((p) => `<p>${escapeHtml(p).replaceAll("\n", "<br>")}</p>`).join("\n");
-  return `<!doctype html><html lang="fr"><body style="font-family:sans-serif;line-height:1.5;max-width:40rem">${body}</body></html>`;
-}
-
-function message(to: string, subject: string, paragraphs: string[]): EmailMessage {
-  return { to, subject, text: paragraphs.join("\n\n"), html: toHtml(paragraphs) };
-}
-
-function hello(name: string | null): string {
-  return name ? `Bonjour ${name},` : "Bonjour,";
-}
-
-const signature = `À bientôt,\n${siteConfig.name}`;
+/** Transactional e-mails of the purchase and withdrawal flows (pure, unit-tested). */
 
 export type OrderConfirmation = {
   email: string;

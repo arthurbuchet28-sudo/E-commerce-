@@ -5,6 +5,7 @@ import { signOut } from "@/app/compte/actions";
 import { DeleteAccountForm, ProfileForm } from "@/components/account/AuthForms";
 import { CertificatesPanel, CoursesPanel, loadLearning } from "@/components/account/LearningPanels";
 import { ParcoursSummary } from "@/components/account/ParcoursSummary";
+import { NewsletterPreferences } from "@/components/account/NewsletterPreferences";
 import { loadPurchases, PurchasesPanel } from "@/components/account/PurchasesPanel";
 import { SimulationList, type SimulationRow } from "@/components/account/SimulationList";
 import { MemberAreaUnavailable } from "@/components/account/Unavailable";
@@ -103,10 +104,7 @@ export default async function AccountPage({ searchParams }: PageProps<"/compte">
           </Panel>
         </div>
         <Panel id="emails-title" title="Mes préférences e-mail">
-          <p className="text-muted">
-            Vous recevez uniquement les e-mails liés à votre compte (confirmation, connexion, mot de
-            passe). Aucune newsletter sans votre accord.
-          </p>
+          <NewsletterPreferences email={user.email ?? ""} />
         </Panel>
         <Panel id="profil-title" title="Mon profil">
           <p className="text-small text-muted">

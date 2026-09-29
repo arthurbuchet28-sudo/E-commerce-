@@ -1,14 +1,12 @@
 "use server";
 
-import { createHash } from "node:crypto";
-
-import { headers } from "next/headers";
 import { z } from "zod";
 
 import { withdrawalDays } from "@/config/legal";
 import { withdrawalAckEmail } from "@/lib/commerce/emails";
 import { normalizeOrderReference } from "@/lib/commerce/format";
 import { sellerSnapshot } from "@/lib/commerce/seller";
+import { withinRateLimit } from "@/lib/security/rate-limit";
 import { emailProvider } from "@/lib/services/email";
 import { paymentProvider } from "@/lib/services/payments";
 import { createAdminClient } from "@/lib/supabase/admin";
@@ -50,30 +48,6 @@ const UNAVAILABLE = "Le service est momentanément indisponible. Réessayez dans
 const NOT_FOUND =
   "Aucune commande ne correspond à ce numéro et à cette adresse e-mail. Vérifiez l’e-mail de confirmation de votre commande.";
 
-const hash = (s: string) => createHash("sha256").update(s).digest("hex");
-
-/**
- * Per 15 minutes: 10 attempts per visitor and e-mail address (guessing order numbers),
- * 100 per visitor overall. IP addresses and e-mails are hashed, never stored in clear.
- */
-async function allowed(admin: NonNullable<ReturnType<typeof createAdminClient>>, email: string) {
-  const h = await headers();
-  const ip = h.get("x-forwarded-for")?.split(",")[0]?.trim() || h.get("x-real-ip") || "unknown";
-  const limits = [
-    { key: `retractation:${hash(`${ip}|${email.toLowerCase()}`)}`, max: 10 },
-    { key: `retractation:${hash(ip)}`, max: 100 },
-  ];
-  for (const { key, max } of limits) {
-    const { data } = await admin.rpc("rate_limit", {
-      p_key: key,
-      p_max: max,
-      p_window_seconds: 900,
-    });
-    if (data === false) return false;
-  }
-  return true;
-}
-
 /**
  * Online withdrawal function, in two steps and without login:
  * 1. identify the order (name, e-mail, order number); 2. « Confirmer la rétractation ».
@@ -98,7 +72,13 @@ export async function withdraw(_: WithdrawalState, formData: FormData): Promise<
 
   const admin = createAdminClient();
   if (!admin) return { step: "identify", message: UNAVAILABLE, values: raw };
-  if (!(await allowed(admin, email))) {
+  if (
+    !(await withinRateLimit(admin, "retractation", email, {
+      perEmail: 10,
+      perVisitor: 100,
+      windowSeconds: 900,
+    }))
+  ) {
     return {
       step: "identify",
       message: "Trop de tentatives. Patientez quelques minutes avant de réessayer.",

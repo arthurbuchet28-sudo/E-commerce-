@@ -1,6 +1,7 @@
 import type { NextRequest } from "next/server";
 
 import { json, withMember } from "@/lib/account/api";
+import { createAdminClient } from "@/lib/supabase/admin";
 
 /** RGPD right of access and portability: every piece of data stored about the member. */
 export async function GET(request: NextRequest) {
@@ -32,6 +33,16 @@ export async function GET(request: NextRequest) {
     if (profile.error || progress.error || simulations.error || learning.some((r) => r.error))
       return json({ error: "server_error" }, 500);
     const [enrollments, lessonProgress, quizAttempts, certificates, orders, consents] = learning;
+    // Newsletter subscribers are not members (service role only): matched by the verified e-mail.
+    const newsletter = email
+      ? await createAdminClient()
+          ?.from("newsletter_subscribers")
+          .select(
+            "email, status, source, consent_text_version, requested_at, confirmed_at, unsubscribed_at",
+          )
+          .eq("email", email.toLowerCase())
+          .maybeSingle()
+      : null;
 
     const body = {
       exportedAt: new Date().toISOString(),
@@ -47,6 +58,7 @@ export async function GET(request: NextRequest) {
       },
       orders: orders.data,
       consents: consents.data,
+      newsletter: newsletter?.data ?? null,
     };
     return new Response(JSON.stringify(body, null, 2), {
       headers: {

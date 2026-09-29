@@ -52,6 +52,7 @@ describe("parseServerEnv", () => {
       VIDEO_PROVIDER: "bunny",
       BUNNY_STREAM_LIBRARY_ID: "1",
       BUNNY_STREAM_TOKEN_KEY: "token",
+      CRON_SECRET: "cron",
     });
     expect(env.APP_ENV).toBe("production");
   });

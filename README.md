@@ -40,6 +40,15 @@ Avec un compte Stripe en mode test : renseigner `STRIPE_SECRET_KEY` et lancer
 `STRIPE_WEBHOOK_SECRET`. En production, déclarer le webhook dans le tableau de bord Stripe avec les
 événements `checkout.session.completed`, `checkout.session.expired` et `charge.refunded`.
 
+## La newsletter
+
+Inscription en deux temps : le visiteur coche la case de consentement, reçoit un e-mail, puis
+confirme d'un clic ; la checklist offerte arrive aussitôt. Les e-mails suivants de la séquence de
+bienvenue (`src/data/newsletter.ts`) partent grâce à une tâche quotidienne déclarée dans
+`vercel.json` (renseigner `CRON_SECRET` sur Vercel). Tant qu'un e-mail est marqué `draft: true`, il
+n'est pas envoyé en production. En local, la tâche se lance à la main :
+`curl http://localhost:3000/api/cron/newsletter`.
+
 ## Vérifier que tout fonctionne
 
 ```bash
