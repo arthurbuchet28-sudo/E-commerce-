@@ -46,6 +46,12 @@ pnpm e2e     # tests de bout en bout et d'accessibilité (après pnpm build)
 4. Lancer `pnpm test` : les erreurs indiquent le fichier et la ligne à corriger.
 5. Après relecture, passer `draft: false` pour publier.
 
+## Modifier une leçon de formation
+
+Le texte de chaque leçon est dans `content/formations/<formation>/<leçon>.mdx` (même syntaxe que
+les guides). Le titre, l'ordre, la durée, le prix et les questions de quiz sont dans
+`supabase/seed.sql` (le back-office de la phase 11 permettra de les modifier sans code).
+
 ## Mettre à jour un chiffre ou une règle
 
 Tout est dans `src/data/reference.ts` : modifier `value`, la source et `checkedAt`. Tous les guides

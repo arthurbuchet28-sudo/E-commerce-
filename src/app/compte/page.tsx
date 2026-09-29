@@ -1,9 +1,9 @@
-import Link from "next/link";
 import { redirect } from "next/navigation";
 import type { ReactNode } from "react";
 
 import { signOut } from "@/app/compte/actions";
 import { DeleteAccountForm, ProfileForm } from "@/components/account/AuthForms";
+import { CertificatesPanel, CoursesPanel, loadLearning } from "@/components/account/LearningPanels";
 import { ParcoursSummary } from "@/components/account/ParcoursSummary";
 import { SimulationList, type SimulationRow } from "@/components/account/SimulationList";
 import { MemberAreaUnavailable } from "@/components/account/Unavailable";
@@ -51,6 +51,7 @@ export default async function AccountPage({ searchParams }: PageProps<"/compte">
       .select("id, tool, title, inputs, created_at")
       .order("created_at", { ascending: false }),
   ]);
+  const learning = await loadLearning(supabase, user.id);
   const rows: SimulationRow[] = (simulations ?? []).map((s) => {
     const route = findRoute(`/outils/${s.tool}`);
     return {
@@ -84,20 +85,13 @@ export default async function AccountPage({ searchParams }: PageProps<"/compte">
           <ParcoursSummary />
         </Panel>
         <Panel id="formations-title" title="Mes formations">
-          <p className="text-muted">Vous n’avez pas encore commencé de formation.</p>
-          <p>
-            <Link href="/formations" className="link">
-              Découvrir les formations
-            </Link>
-          </p>
+          <CoursesPanel learning={learning} />
         </Panel>
         <Panel id="achats-title" title="Mes achats et factures">
           <p className="text-muted">Aucun achat pour l’instant. Vos factures apparaîtront ici.</p>
         </Panel>
         <Panel id="attestations-title" title="Mes attestations de suivi">
-          <p className="text-muted">
-            Terminez une formation pour obtenir votre attestation de suivi.
-          </p>
+          <CertificatesPanel learning={learning} />
         </Panel>
         <div className="lg:col-span-2">
           <Panel id="simulations-title" title="Mes simulations enregistrées">

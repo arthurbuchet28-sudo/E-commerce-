@@ -74,3 +74,28 @@ describe("veille and FAQ", () => {
       for (const i of t.items) expectFrenchTypography(`${i.question} ${i.answer}`, i.question);
   });
 });
+
+describe("course lessons", async () => {
+  const fs = await import("node:fs");
+  const { listFiles, CONTENT_DIR } = await import("./files");
+  const { loadLessonContent } = await import("@/lib/lms/lesson-content");
+  const files = listFiles(`${CONTENT_DIR}/formations`).map((f) => f.split("/formations/")[1]);
+
+  it("every lesson referenced by the seed has a text file", () => {
+    const seed = fs.readFileSync("supabase/seed.sql", "utf8");
+    const paths = [...seed.matchAll(/'([a-z0-9-]+\/[a-z0-9-]+\.mdx)'/g)].map((m) => m[1]);
+    expect(paths.length).toBeGreaterThanOrEqual(10);
+    for (const p of paths) expect(files, p).toContain(p);
+  });
+
+  it.each(files.map((f) => [f]))("%s renders with valid references", async (file) => {
+    const { data, body } = loadLessonContent(file);
+    const html = renderToStaticMarkup(await renderMdx(body, mdxComponents(data.sources)));
+    expect(html.length).toBeGreaterThan(300);
+    expectFrenchTypography(html, file);
+  });
+
+  it("refuses paths outside content/formations", () => {
+    expect(() => loadLessonContent("../../etc/passwd")).toThrow(/Invalid lesson path/);
+  });
+});

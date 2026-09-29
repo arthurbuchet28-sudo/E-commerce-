@@ -34,7 +34,9 @@ def fix_line(line: str) -> str:
     line = re.sub(r"(^\s*[^\W\d_][^<>{}=\"`]*?) ([?!:;])(?=\{)", lambda m: m.group(1) + NBSP + m.group(2), line)
     line = re.sub(r'"[^"\n]*"', lambda m: fix_text(m.group(0)), line)
     line = re.sub(r"`[^`\n]*`", lambda m: fix_text(m.group(0)), line)
-    line = re.sub(r">([^<>=()]*)<", lambda m: ">" + fix_text(m.group(1)) + "<", line)
+    # JSX text between tags, only when it contains no expression (braces may hold code).
+    if "{" not in line and "}" not in line:
+        line = re.sub(r">([^<>=()]*)<", lambda m: ">" + fix_text(m.group(1)) + "<", line)
     return line
 
 

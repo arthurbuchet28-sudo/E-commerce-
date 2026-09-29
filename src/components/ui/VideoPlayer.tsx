@@ -2,8 +2,10 @@ import type { ReactNode } from "react";
 
 type VideoPlayerProps = {
   title: string;
-  /** Signed, expiring URL (Bunny Stream) resolved server-side; null shows a placeholder. */
+  /** Direct video file URL; null shows a placeholder. */
   src: string | null;
+  /** Signed, expiring embed URL (Bunny Stream player), preferred over `src`. */
+  embedSrc?: string | null;
   captionsSrc?: string;
   poster?: string;
   /** Mandatory text transcript (accessibility). */
@@ -11,11 +13,27 @@ type VideoPlayerProps = {
 };
 
 /** Never autoplays. Captions (VTT) on by default; transcript always available below. */
-export function VideoPlayer({ title, src, captionsSrc, poster, transcript }: VideoPlayerProps) {
+export function VideoPlayer({
+  title,
+  src,
+  embedSrc,
+  captionsSrc,
+  poster,
+  transcript,
+}: VideoPlayerProps) {
   return (
     <figure className="flex flex-col gap-3">
       <div className="aspect-video overflow-hidden rounded-ui border border-line bg-ink-soft">
-        {src ? (
+        {embedSrc ? (
+          <iframe
+            src={embedSrc}
+            title={title}
+            className="size-full border-0"
+            loading="lazy"
+            allow="encrypted-media; picture-in-picture; fullscreen"
+            allowFullScreen
+          />
+        ) : src ? (
           <video controls preload="none" poster={poster} className="size-full" aria-label={title}>
             <source src={src} />
             {captionsSrc && (

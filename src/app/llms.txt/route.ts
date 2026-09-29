@@ -2,12 +2,14 @@ import { routes } from "@/config/routes";
 import { siteConfig } from "@/config/site";
 import { getGlossary } from "@/lib/content/glossary";
 import { getGuides } from "@/lib/content/guides";
+import { getCatalogue } from "@/lib/lms/queries";
 import { absoluteUrl } from "@/lib/seo/json-ld";
 
 export const dynamic = "force-static";
 
 /** llms.txt (https://llmstxt.org): a map of the site's best resources for AI assistants. */
-export function GET() {
+export async function GET() {
+  const courses = await getCatalogue();
   const guides = getGuides().filter((g) => !g.draft);
   const terms = getGlossary().filter((t) => !t.draft);
   const tools = routes.filter((r) => r.group === "outils" && r.path !== "/outils");
@@ -28,6 +30,12 @@ export function GET() {
     ...(guides.length > 0
       ? guides.map((g) => `- [${g.title}](${absoluteUrl(g.href)}) : ${g.description}`)
       : ["- Guides en cours de relecture."]),
+    "",
+    "## Formations",
+    "",
+    ...(courses.length > 0
+      ? courses.map((c) => `- [${c.title}](${absoluteUrl(`/formations/${c.slug}`)}) : ${c.summary}`)
+      : ["- Formations bientôt disponibles."]),
     "",
     "## Outils",
     "",
