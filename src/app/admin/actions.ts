@@ -469,3 +469,16 @@ export async function retryRefund(_: FormState, fd: FormData): Promise<FormState
     };
   }
 }
+
+// --- Contact messages ------------------------------------------------------------------
+
+export async function markMessageHandled(fd: FormData) {
+  const { supabase } = await requireAdmin();
+  const id = uuid.parse(fd.get("id"));
+  const handled = fd.get("handled") === "on";
+  await supabase
+    .from("contact_messages")
+    .update({ handled_at: handled ? new Date().toISOString() : null })
+    .eq("id", id);
+  revalidatePath("/admin/messages");
+}

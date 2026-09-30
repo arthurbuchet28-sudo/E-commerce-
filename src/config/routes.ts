@@ -445,6 +445,16 @@ export const routes = [
     phase: 11,
   },
   {
+    path: "/admin/messages",
+    label: "Messages",
+    h1: "Messages reçus",
+    title: "Messages reçus",
+    description: "Messages envoyés par le formulaire de contact.",
+    group: "interne",
+    indexable: false,
+    phase: 13,
+  },
+  {
     path: "/admin/newsletter",
     label: "Newsletter",
     h1: "Inscrits à la newsletter",

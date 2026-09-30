@@ -101,6 +101,21 @@ const SOURCES = {
     short: "CNIL",
     url: "https://www.cnil.fr/fr/plaintes",
   },
+  gpsr: {
+    name: "Règlement (UE) 2023/988 relatif à la sécurité générale des produits (GPSR)",
+    short: "Règlement GPSR",
+    url: "https://eur-lex.europa.eu/eli/reg/2023/988/oj",
+  },
+  impotsFacturation: {
+    name: "impots.gouv.fr, facturation électronique et e-reporting",
+    short: "impots.gouv.fr",
+    url: "https://www.impots.gouv.fr/professionnel/facturation-electronique",
+  },
+  loiInfluence: {
+    name: "Loi n° 2023-451 du 9 juin 2023 (influence commerciale)",
+    short: "Loi influence",
+    url: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047663185",
+  },
   fevad2025: {
     name: "Fevad, bilan du e-commerce 2025 (publié le 11/02/2026)",
     short: "Fevad",
@@ -295,6 +310,46 @@ export const reference = {
     source: SOURCES.ordonnance2026,
     checkedAt: SPEC_CHECK,
     note: "Transposition de la directive (UE) 2023/2673. Référence de l’ordonnance et de l’article à confirmer sur Légifrance.",
+    status: "a-verifier",
+  },
+
+  // --- Sécurité des produits, facturation, influence ---------------------------------
+  "gpsr.dateApplication": {
+    value: "2024-12-13",
+    unit: "date",
+    label: "Application du règlement sur la sécurité générale des produits (GPSR)",
+    source: SOURCES.gpsr,
+    checkedAt: SPEC_CHECK,
+    note: "À reconfirmer sur EUR-Lex.",
+    status: "a-verifier",
+  },
+  "factureElec.receptionDate": {
+    value: "2026-09-01",
+    unit: "date",
+    label:
+      "Obligation de pouvoir recevoir des factures électroniques, pour toutes les entreprises assujetties à la TVA",
+    source: SOURCES.impotsFacturation,
+    checkedAt: SPEC_CHECK,
+    note: "Calendrier marqué [À VÉRIFIER] dans le cahier des charges.",
+    status: "a-verifier",
+  },
+  "factureElec.emissionPmeDate": {
+    value: "2027-09-01",
+    unit: "date",
+    label:
+      "Obligation d’émettre des factures électroniques et de transmettre les données (e-reporting) pour les PME et micro-entreprises",
+    source: SOURCES.impotsFacturation,
+    checkedAt: SPEC_CHECK,
+    note: "Calendrier marqué [À VÉRIFIER] dans le cahier des charges.",
+    status: "a-verifier",
+  },
+  "influence.loi": {
+    value: "Loi n° 2023-451 du 9 juin 2023",
+    unit: "text",
+    label: "Loi encadrant l’influence commerciale et les influenceurs",
+    source: SOURCES.loiInfluence,
+    checkedAt: SPEC_CHECK,
+    note: "Référence et lien à reconfirmer sur Légifrance.",
     status: "a-verifier",
   },
 

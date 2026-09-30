@@ -77,8 +77,10 @@ test("glossary term shows its definition on focus", async ({ page }) => {
 test("guides can be filtered", async ({ page }) => {
   await page.goto("/guides");
   await page.getByLabel("Catégorie", { exact: true }).selectOption("legal-et-conformite");
-  await expect(page.locator("p[aria-live=polite]", { hasText: /^2 guides$/ })).toBeVisible();
+  await expect(page.locator("p[aria-live=polite]", { hasText: /^8 guides$/ })).toBeVisible();
   await page.getByLabel("Niveau", { exact: true }).selectOption("intermediaire");
+  await expect(page.locator("p[aria-live=polite]", { hasText: /^3 guides$/ })).toBeVisible();
+  await page.getByLabel("Catégorie", { exact: true }).selectOption("outils-et-ia");
   await expect(page.getByText("Aucun guide ne correspond à ces filtres.")).toBeVisible();
 });
 

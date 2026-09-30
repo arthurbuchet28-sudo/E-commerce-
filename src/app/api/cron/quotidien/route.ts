@@ -4,6 +4,7 @@ import { NextResponse, type NextRequest } from "next/server";
 
 import { serverEnv } from "@/lib/env.server";
 import { CONSENT_PROOF_MONTHS } from "@/lib/consent/consent";
+import { CONTACT_RETENTION_MONTHS } from "@/lib/contact/topics";
 import { runNewsletterJob } from "@/lib/newsletter/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 
@@ -25,5 +26,8 @@ export async function GET(request: NextRequest) {
   const { data: consentProofsPurged } = await admin.rpc("purge_cookie_consents", {
     p_months: CONSENT_PROOF_MONTHS,
   });
-  return NextResponse.json({ ...newsletter, consentProofsPurged });
+  const { data: contactMessagesPurged } = await admin.rpc("purge_contact_messages", {
+    p_months: CONTACT_RETENTION_MONTHS,
+  });
+  return NextResponse.json({ ...newsletter, consentProofsPurged, contactMessagesPurged });
 }

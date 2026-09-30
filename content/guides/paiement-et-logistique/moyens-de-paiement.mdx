@@ -1,0 +1,85 @@
+---
+title: "Moyens de paiement : Stripe, PayPal, paiement fractionné, frais réels"
+description: "Choisir ses moyens de paiement en ligne : carte bancaire, portefeuilles, paiement fractionné ; comment calculer les frais réels et sécuriser les paiements."
+answer: "Pour une petite boutique, la carte bancaire via un prestataire de paiement (Stripe, PayPal ou celui de votre plateforme) est indispensable ; un portefeuille comme PayPal ou Apple Pay rassure certains clients ; le paiement fractionné peut aider sur les paniers élevés mais a un coût et des règles d’information. Comparez les frais réels sur les grilles officielles, y compris pour les cartes étrangères et les remboursements."
+category: paiement-et-logistique
+level: debutant
+publishedAt: 2026-09-29
+updatedAt: 2026-09-29
+sources:
+  - title: Stripe, tarifs officiels
+    url: https://stripe.com/fr/pricing
+    consultedAt: 2026-09-29
+  - title: PayPal, frais pour les professionnels
+    url: https://www.paypal.com/fr/webapps/mpp/merchant-fees
+    consultedAt: 2026-09-29
+  - title: Banque de France, authentification forte des paiements
+    url: https://www.banque-france.fr
+    consultedAt: 2026-09-29
+relatedTools:
+  - /outils/calculateur-prix-marge
+faq:
+  - question: Les frais de paiement sont-ils remboursés en cas de remboursement client ?
+    answer: "Cela dépend du prestataire. Vérifiez ses conditions : les frais non remboursés sont une perte à intégrer dans votre calcul de marge."
+  - question: Faut-il proposer le virement ?
+    answer: Il évite les frais de carte mais ralentit la commande et demande un suivi manuel. Il reste utile pour les clients professionnels.
+---
+
+## Les options
+
+| Moyen | Avantage | Point de vigilance |
+| --- | --- | --- |
+| Carte bancaire via un prestataire | Attendu par tous les clients | Frais par transaction |
+| Portefeuille (PayPal, Apple Pay, Google Pay) | Rapide, rassurant | Frais parfois différents |
+| Paiement fractionné | Peut aider sur les paniers élevés | Coût plus élevé, obligations d’information |
+| Virement | Pas de frais de carte | Plus lent, suivi manuel |
+
+## Les prestataires
+
+- **Stripe** : très utilisé, bien intégré à la plupart des plateformes, nombreux moyens de paiement.
+- **PayPal** : connu des acheteurs, utile en complément de la carte.
+- **Le module de paiement de votre plateforme** : souvent le plus simple à activer, parfois avec des conditions tarifaires liées à l’abonnement.
+
+<Encadre type="info" titre="Des frais qui changent">
+  Nous ne recopions pas les grilles tarifaires : elles varient selon le pays de la carte, le moyen de
+  paiement et le volume. Consultez les pages officielles (voir les sources) et reportez les frais
+  dans le calculateur de marge.
+</Encadre>
+
+## Calculer les frais réels
+
+Les frais ne se limitent pas au pourcentage affiché :
+
+- part fixe par transaction, qui pèse lourd sur les petits paniers ;
+- frais plus élevés pour certaines cartes (étrangères, professionnelles) ;
+- frais de conversion de devises ;
+- frais conservés en cas de remboursement, selon le prestataire ;
+- frais de litige (contestation d’un paiement par le client).
+
+Intégrez-les dans le [calculateur de prix et de marge](/outils/calculateur-prix-marge).
+
+<Exemple persona="tom">
+  Tom vend des accessoires à petit prix. En calculant, il s’aperçoit que la part fixe des frais
+  représente une part importante de sa marge. Il décide de proposer des lots pour augmenter le
+  panier moyen.
+</Exemple>
+
+## Le paiement fractionné
+
+Payer en plusieurs fois peut lever un frein sur un produit cher. Mais il coûte plus cher au vendeur, et le crédit à la consommation est encadré : informations obligatoires, mentions sur le coût. [À VÉRIFIER — règles d’information sur le paiement fractionné et le crédit à la consommation]
+
+## Sécurité et authentification
+
+Les paiements en ligne font l’objet d’une **authentification forte** (validation dans l’application bancaire) : votre prestataire la gère. De votre côté :
+
+- ne stockez **jamais** les numéros de carte ;
+- surveillez les commandes inhabituelles (adresse de livraison différente, montants élevés, plusieurs cartes) ;
+- conservez les preuves de livraison en cas de contestation.
+
+<AFaireAujourdhui
+  items={[
+    "Relever les frais réels de deux prestataires sur leurs pages officielles.",
+    "Intégrer ces frais dans le calcul de votre marge.",
+    "Vérifier la politique de remboursement des frais de votre prestataire.",
+  ]}
+/>

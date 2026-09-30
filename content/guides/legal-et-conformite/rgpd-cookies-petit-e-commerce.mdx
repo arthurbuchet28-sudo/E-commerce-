@@ -1,0 +1,99 @@
+---
+title: "RGPD et cookies pour un petit e-commerce : l’essentiel"
+description: "Les obligations RGPD d’une petite boutique en ligne : données utiles, politique de confidentialité, droits des clients, cookies et consentement."
+answer: "Pour être en règle, une petite boutique en ligne collecte seulement les données utiles à la commande, explique dans une politique de confidentialité ce qu’elle en fait et combien de temps elle les garde, permet aux clients d’exercer leurs droits, et ne dépose aucun cookie publicitaire ou de mesure non exemptée sans consentement préalable, donné via un bandeau où refuser est aussi simple qu’accepter."
+category: legal-et-conformite
+level: debutant
+publishedAt: 2026-09-29
+updatedAt: 2026-09-29
+sources:
+  - title: CNIL, le RGPD pour les TPE et PME
+    url: https://www.cnil.fr
+    consultedAt: 2026-09-29
+  - title: CNIL, cookies et autres traceurs
+    url: https://www.cnil.fr/fr/cookies-et-autres-traceurs
+    consultedAt: 2026-09-29
+relatedTools:
+  - /outils/checklist-lancement
+faq:
+  - question: Ai-je besoin d’un délégué à la protection des données ?
+    answer: Ce n’est obligatoire que dans certains cas, rarement pour une petite boutique. Vérifiez votre situation sur le site de la CNIL.
+  - question: Une mesure d’audience nécessite-t-elle un consentement ?
+    answer: Certaines solutions configurées de façon stricte en sont exemptées. Les autres, et tous les traceurs publicitaires, nécessitent un consentement préalable.
+---
+
+## Le principe : ne collecter que le nécessaire
+
+Le <Terme id="rgpd">RGPD</Terme> s’applique dès que vous traitez des données personnelles : nom, adresse, e-mail, historique de commandes… Pour chaque donnée, posez-vous la question : en ai-je vraiment besoin pour livrer, facturer ou répondre au client ?
+
+## Ce que votre boutique doit prévoir
+
+### Une politique de confidentialité
+
+Accessible depuis toutes les pages, elle explique :
+
+- qui est responsable des données (vous) ;
+- ce que vous collectez et **pourquoi** (commande, facturation, newsletter…) ;
+- sur quelle **base légale** (contrat, obligation légale, consentement, intérêt légitime) ;
+- **combien de temps** vous gardez les données ;
+- à qui vous les transmettez (plateforme, paiement, transporteur, e-mailing) ;
+- comment exercer ses **droits** et le droit de réclamation auprès de la CNIL.
+
+### Les droits des clients
+
+Accès, rectification, effacement, opposition, portabilité : prévoyez une adresse e-mail pour ces demandes et répondez dans les délais. [À VÉRIFIER — délai de réponse sur cnil.fr]
+
+### Un registre des traitements
+
+Même simple, un tableau qui liste vos traitements (commandes, newsletter, comptes clients…) avec leurs finalités et durées vous aide à rester en règle. La CNIL propose un modèle.
+
+### Des prestataires sérieux
+
+Plateforme, e-mailing, paiement : ce sont vos sous-traitants. Vérifiez qu’ils proposent un contrat de traitement des données et où les données sont hébergées.
+
+## Les cookies et le bandeau
+
+<Encadre type="legal" titre="La règle">
+  Les traceurs non indispensables (publicité, réseaux sociaux, la plupart des outils de mesure
+  d’audience) ne peuvent être déposés qu’après un consentement libre et éclairé. Refuser doit être
+  aussi simple qu’accepter, et le choix doit pouvoir être modifié à tout moment.
+</Encadre>
+
+Un bandeau conforme :
+
+- ne dépose rien avant le choix ;
+- propose « Tout accepter » et « Tout refuser » avec la même visibilité ;
+- permet de choisir par finalité ;
+- redemande le choix après <Chiffre id="cnil.dureeChoixCookies" /> ;
+- reste accessible via un lien permanent « Gérer mes cookies ».
+
+Le plus simple est de **ne pas avoir besoin de bandeau** : n’installez que des outils strictement nécessaires ou une mesure d’audience exemptée de consentement.
+
+<Exemple persona="tom">
+  Tom voulait ajouter un pixel publicitaire « au cas où ». Il y renonce tant qu’il ne fait pas de
+  publicité : sa boutique n’a alors pas besoin de bandeau de consentement.
+</Exemple>
+
+## La newsletter
+
+Pour envoyer une newsletter à des particuliers, il faut leur accord explicite (case non cochée d’avance), une finalité claire et un lien de désinscription dans chaque e-mail.
+
+<Checklist
+  id="guide-rgpd"
+  title="Ma boutique respecte-t-elle l’essentiel ?"
+  items={[
+    "Politique de confidentialité en ligne et à jour.",
+    "Adresse de contact pour les demandes de données.",
+    "Aucun traceur non exempté avant consentement.",
+    "Lien « Gérer mes cookies » permanent si j’ai un bandeau.",
+    "Newsletter avec consentement explicite et désinscription en un clic.",
+  ]}
+/>
+
+<AFaireAujourdhui
+  items={[
+    "Lister les données que vous collectez et pourquoi.",
+    "Faire l’inventaire des outils et traceurs installés sur votre boutique.",
+    "Rédiger la liste de vos traitements.",
+  ]}
+/>

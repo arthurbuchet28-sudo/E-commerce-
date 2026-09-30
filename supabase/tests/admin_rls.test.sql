@@ -1,13 +1,14 @@
 -- Back-office: admin rights and refusals for members (run with `supabase test db`).
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(18);
+select plan(21);
 
 insert into auth.users (id, email, raw_user_meta_data) values
   ('66666666-6666-6666-6666-666666666666', 'admin@example.test', '{"display_name":"Admin"}'),
   ('77777777-7777-7777-7777-777777777777', 'membre@example.test', '{"display_name":"Membre"}');
 update public.profiles set role = 'admin' where id = '66666666-6666-6666-6666-666666666666';
 insert into public.newsletter_subscribers (email, consent_text_version) values ('abonne@example.test', 'v1');
+insert into public.contact_messages (name, email, topic, message) values ('Léa', 'lea@example.test', 'question', 'Bonjour, une question.');
 
 -- A member cannot use any admin capability.
 set local role authenticated;
@@ -20,6 +21,7 @@ select throws_ok($$ select * from public.admin_quiz_questions('00000000-0000-400
 select throws_ok($$ select * from public.admin_students('', 10, 0) $$, '42501', 'admin_only', 'member cannot list students');
 select throws_ok($$ select public.admin_dashboard(14) $$, '42501', 'admin_only', 'member cannot read the dashboard');
 select is((select count(*) from public.newsletter_subscribers)::int, 0, 'member cannot read subscribers');
+select is((select count(*) from public.contact_messages)::int, 0, 'member cannot read contact messages');
 
 -- The admin.
 select set_config('request.jwt.claims', '{"sub":"66666666-6666-6666-6666-666666666666","role":"authenticated"}', true);
@@ -33,6 +35,8 @@ select ok((select count(*) from public.admin_students('example.test', 50, 0)) >=
 select ok(public.admin_dashboard(14) ? 'sales', 'admin reads the dashboard');
 select is((select count(*) from public.newsletter_subscribers where email = 'abonne@example.test')::int, 1, 'admin reads subscribers');
 select throws_ok($$ select access_token from public.newsletter_subscribers $$, '42501', null, 'unsubscribe tokens stay private');
+select ok((select count(*) from public.contact_messages) >= 1, 'admin reads contact messages');
+select throws_ok($$ update public.contact_messages set message = 'x' $$, '42501', null, 'admin can only mark messages as handled');
 select throws_ok($$ update public.profiles set role = 'member' where id = '77777777-7777-7777-7777-777777777777' $$, '42501', null, 'roles are changed only by the service role');
 
 select * from finish();

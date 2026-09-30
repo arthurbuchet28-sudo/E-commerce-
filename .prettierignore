@@ -7,3 +7,6 @@ test-results
 next-env.d.ts
 public/pagefind
 coverage
+
+# MDX prose: Prettier splits paragraphs at lines starting with an inline component.
+content/**/*.mdx

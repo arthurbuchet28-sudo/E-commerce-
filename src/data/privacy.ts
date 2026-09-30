@@ -1,4 +1,5 @@
 import { CONSENT_PROOF_MONTHS } from "@/lib/consent/consent";
+import { CONTACT_RETENTION_MONTHS } from "@/lib/contact/topics";
 
 import { NEWSLETTER_RETENTION } from "./newsletter";
 import { formatRef, getRef } from "./reference";
@@ -142,6 +143,14 @@ export const treatments: Treatment[] = [
       "version du texte de consentement",
     ],
     retention: `${NEWSLETTER_RETENTION.pendingDays} jours sans confirmation ; après une désinscription, ${Math.round(NEWSLETTER_RETENTION.unsubscribedDays / 365)} ans pour prouver le consentement passé [À VALIDER]`,
+    processors: ["supabase", "vercel", "brevo"],
+  },
+  {
+    id: "contact",
+    purpose: "Répondre à vos messages envoyés par le formulaire de contact",
+    legalBasis: "Intérêt légitime (répondre aux demandes)",
+    data: ["nom", "adresse e-mail", "sujet et contenu du message"],
+    retention: `${CONTACT_RETENTION_MONTHS / 12}\u00a0ans au plus [À VALIDER]`,
     processors: ["supabase", "vercel", "brevo"],
   },
   {

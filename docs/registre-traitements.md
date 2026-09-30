@@ -78,6 +78,16 @@
 - **Mesures :** jetons de confirmation hachés à usage unique, désinscription en un clic
   (RFC 8058), purge quotidienne.
 
+### `contact` — Formulaire de contact
+
+- **Finalité :** répondre aux questions, signalements d'erreur et demandes (données, accessibilité).
+- **Base légale :** intérêt légitime.
+- **Données :** nom, e-mail, sujet, message.
+- **Destinataires :** éditeur (back-office `/admin/messages`, e-mail de notification) ; Supabase,
+  Vercel, Brevo.
+- **Durée :** 3 ans au plus, purge quotidienne [À VALIDER].
+- **Mesures :** champ piège, limitation des envois.
+
 ### `audience` — Mesure d'audience
 
 - **Finalité :** statistiques de fréquentation pour améliorer le site.

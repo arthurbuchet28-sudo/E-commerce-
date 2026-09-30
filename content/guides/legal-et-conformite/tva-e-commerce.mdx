@@ -1,0 +1,82 @@
+---
+title: "TVA en e-commerce : franchise, taux, ventes à distance dans l’UE et guichet unique OSS"
+description: "Quand facturer la TVA, quels taux appliquer, que faire quand vous vendez à des particuliers d’autres pays de l’Union, et comment fonctionne le guichet OSS."
+answer: "Tant que votre chiffre d’affaires reste sous le seuil de la franchise en base, vous ne facturez pas la TVA et portez une mention obligatoire sur vos factures. Au-delà, vous facturez la TVA au taux du produit. Pour les ventes à des particuliers d’autres pays de l’Union, au-delà d’un seuil annuel commun, la TVA du pays du client s’applique, déclarée via le guichet unique OSS."
+category: legal-et-conformite
+level: intermediaire
+publishedAt: 2026-09-29
+updatedAt: 2026-09-29
+sources:
+  - title: impots.gouv.fr, la franchise en base de TVA
+    url: https://www.impots.gouv.fr
+    consultedAt: 2026-09-29
+  - title: impots.gouv.fr, le guichet unique OSS
+    url: https://www.impots.gouv.fr
+    consultedAt: 2026-09-29
+  - title: Code général des impôts, art. 293 B (Légifrance)
+    url: https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006069577
+    consultedAt: 2026-09-29
+relatedTools:
+  - /outils/simulateur-micro-entreprise
+  - /outils/calculateur-prix-marge
+faq:
+  - question: Si je suis en franchise, mes prix sont-ils HT ou TTC ?
+    answer: Vous ne facturez pas de TVA, donc le prix affiché est le prix payé par le client. Vous ne récupérez pas non plus la TVA sur vos achats.
+  - question: Le seuil OSS concerne-t-il les ventes en France ?
+    answer: Non. Il concerne les ventes à distance à des particuliers situés dans d’autres pays de l’Union, toutes destinations confondues.
+---
+
+## 1. La franchise en base : pas de TVA facturée
+
+Sous un certain chiffre d’affaires annuel, vous bénéficiez de la <Terme id="franchise-en-base-de-tva">franchise en base de TVA</Terme> :
+
+- seuil pour les ventes de marchandises : <Chiffre id="tva.franchiseVentes" /> (seuil majoré : <Chiffre id="tva.franchiseVentesMajore" />) ;
+- seuil pour les prestations de services : <Chiffre id="tva.franchiseServices" /> (seuil majoré : <Chiffre id="tva.franchiseServicesMajore" />).
+
+Vos factures portent la mention « <Chiffre id="tva.mentionFranchise" /> ». Vous ne récupérez pas la TVA payée sur vos achats.
+
+Les règles de dépassement (seuil simple, seuil majoré, date de basculement) sont détaillées dans le guide sur les plafonds de la micro-entreprise. [À VÉRIFIER — règles de sortie de la franchise sur impots.gouv.fr]
+
+## 2. Au-delà : facturer la TVA au bon taux
+
+Une fois redevable, vous ajoutez la TVA à vos prix et la reversez, déduction faite de la TVA payée sur vos achats. Les taux en France :
+
+| Taux | Valeur | Exemples de produits |
+| --- | --- | --- |
+| Normal | <Chiffre id="tva.tauxNormal" /> | La plupart des produits |
+| Intermédiaire | <Chiffre id="tva.tauxIntermediaire" /> | Certains services, restauration |
+| Réduit | <Chiffre id="tva.tauxReduit" /> | Certains produits alimentaires, livres |
+| Particulier | <Chiffre id="tva.tauxParticulier" /> | Certains médicaments, presse |
+
+Le taux dépend du produit, pas du vendeur : vérifiez-le pour chacun. [À VÉRIFIER — liste des produits par taux sur impots.gouv.fr]
+
+<Encadre type="attention" titre="Anticiper la bascule">
+  Le jour où vous devez facturer la TVA, soit vos prix TTC augmentent, soit votre marge baisse.
+  Faites le calcul à l’avance avec le calculateur de prix et de marge.
+</Encadre>
+
+## 3. Les ventes à des particuliers dans l’Union européenne
+
+Quand vous vendez à distance à des particuliers situés dans d’autres pays de l’Union :
+
+- sous un seuil annuel commun à tous ces pays, <Chiffre id="tva.seuilVentesDistanceUE" />, vous pouvez appliquer la TVA française (ou rester en franchise si vous y êtes) ;
+- au-delà, la **TVA du pays du client** s’applique, à son taux.
+
+Pour éviter de s’immatriculer dans chaque pays, le <Terme id="guichet-unique-oss">guichet unique OSS</Terme> permet de déclarer et payer en France la TVA due dans les autres pays, via une déclaration trimestrielle. [À VÉRIFIER — conditions d’inscription et articulation avec la franchise sur impots.gouv.fr]
+
+<Exemple persona="lea">
+  Léa commence à recevoir des commandes de Belgique et d’Allemagne. Elle suit le total de ses ventes
+  vers les autres pays de l’Union dans un tableau, pour savoir quand le seuil commun approche.
+</Exemple>
+
+## 4. Et hors de l’Union ?
+
+Les ventes vers des pays hors de l’Union relèvent des règles d’exportation et des règles du pays de destination (droits de douane, TVA à l’importation). Renseignez-vous avant d’ouvrir ces pays à la livraison. [À VÉRIFIER — douane.gouv.fr]
+
+<AFaireAujourdhui
+  items={[
+    "Vérifier le taux de TVA applicable à chacun de vos produits.",
+    "Mettre en place un suivi mensuel de votre chiffre d’affaires, par pays.",
+    "Calculer l’effet d’un passage à la TVA sur vos prix.",
+  ]}
+/>

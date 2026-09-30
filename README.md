@@ -58,6 +58,11 @@ ressources PDF, suivre les ventes, les élèves et la newsletter, et exporter le
 abonnés en CSV. Le texte d'une leçon reste un fichier `content/formations/<formation>/<leçon>.mdx` ;
 une vidéo se téléverse dans Bunny Stream, puis son identifiant se colle dans la leçon.
 
+## Les messages de contact
+
+Les messages envoyés depuis la page Contact sont enregistrés et visibles dans `/admin/messages`.
+Pour les recevoir aussi par e-mail, renseignez `CONTACT_EMAIL`.
+
 ## Les pages légales
 
 Les mentions légales, CGV, CGU, la politique de confidentialité, la page cookies et la

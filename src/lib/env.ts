@@ -45,6 +45,13 @@ export const serverEnvSchema = publicEnvSchema
     BREVO_API_KEY: optionalString,
     BREVO_NEWSLETTER_LIST_ID: optionalString,
     EMAIL_FROM: z.email().default("bonjour@premiere-vente.fr"),
+    // Inbox receiving contact form messages (they are also listed in /admin/messages).
+    CONTACT_EMAIL: z
+      .string()
+      .trim()
+      .transform((v) => (v === "" ? undefined : v))
+      .pipe(z.email().optional())
+      .optional(),
     VIDEO_PROVIDER: z.enum(["mock", "bunny"]).default("mock"),
     BUNNY_STREAM_LIBRARY_ID: optionalString,
     BUNNY_STREAM_TOKEN_KEY: optionalString,

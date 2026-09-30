@@ -12,6 +12,7 @@ const items: Array<{ href: Route; label: string }> = [
   { href: "/admin/eleves", label: "Élèves" },
   { href: "/admin/achats", label: "Achats" },
   { href: "/admin/newsletter", label: "Newsletter" },
+  { href: "/admin/messages", label: "Messages" },
 ];
 
 export function AdminNav() {

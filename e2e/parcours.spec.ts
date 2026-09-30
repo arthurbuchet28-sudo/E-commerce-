@@ -8,7 +8,9 @@ test("a step shows its objective, duration, deliverables, guides and tool", asyn
   await expect(page.getByText("Durée indicative")).toBeVisible();
   await expect(page.getByRole("heading", { name: "À la fin, vous aurez…" })).toBeVisible();
   await expect(page.getByRole("link", { name: /Les 6 modèles de e-commerce/ })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "À paraître" })).toBeVisible();
+  // Every planned guide of the first step is written: nothing is announced « à paraître ».
+  await expect(page.getByRole("link", { name: /Dropshipping/ })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "À paraître" })).toHaveCount(0);
   await expect(page.getByText("Outil lié")).toBeVisible();
   await expect(page.getByRole("link", { name: /Étape suivante/ })).toHaveAttribute(
     "href",
