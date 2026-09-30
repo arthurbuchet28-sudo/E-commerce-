@@ -1,0 +1,52 @@
+name: Sauvegarde
+
+# Weekly encrypted backup of the production database and course files (docs/sauvegardes.md).
+# The archive is encrypted with an age public key: GitHub only ever stores ciphertext, the
+# private key stays offline. Does nothing until the secrets below are set.
+on:
+  schedule:
+    - cron: "41 2 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+      BACKUP_AGE_RECIPIENT: ${{ secrets.BACKUP_AGE_RECIPIENT }}
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      BACKUP_INCLUDE_FILES: "1"
+    steps:
+      - name: Check configuration
+        id: config
+        run: |
+          if [ -z "$SUPABASE_DB_URL" ] || [ -z "$BACKUP_AGE_RECIPIENT" ]; then
+            echo "::notice::Backup secrets not set: nothing to do (see docs/sauvegardes.md)."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.config.outputs.ready == 'true'
+        uses: actions/checkout@v4
+      - if: steps.config.outputs.ready == 'true'
+        uses: pnpm/action-setup@v4
+      - if: steps.config.outputs.ready == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - if: steps.config.outputs.ready == 'true'
+        run: pnpm install --frozen-lockfile && sudo apt-get install -y age
+      - if: steps.config.outputs.ready == 'true'
+        run: scripts/backup-db.sh backups
+      - if: steps.config.outputs.ready == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: sauvegarde-${{ github.run_id }}
+          path: backups/*.tar.age
+          retention-days: 90

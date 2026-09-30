@@ -339,6 +339,27 @@ export type Database = {
           },
         ];
       };
+      job_runs: {
+        Row: {
+          job: string;
+          last_run_at: string;
+          ok: boolean;
+          summary: NonNullable<Json>;
+        };
+        Insert: {
+          job: string;
+          last_run_at?: string;
+          ok: boolean;
+          summary?: NonNullable<Json>;
+        };
+        Update: {
+          job?: string;
+          last_run_at?: string;
+          ok?: boolean;
+          summary?: NonNullable<Json>;
+        };
+        Relationships: [];
+      };
       lesson_progress: {
         Row: {
           completed_at: string | null;

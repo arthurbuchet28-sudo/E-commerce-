@@ -55,7 +55,10 @@ export const serverEnvSchema = publicEnvSchema
     VIDEO_PROVIDER: z.enum(["mock", "bunny"]).default("mock"),
     BUNNY_STREAM_LIBRARY_ID: optionalString,
     BUNNY_STREAM_TOKEN_KEY: optionalString,
-    SENTRY_DSN: optionalUrl,
+    // Error monitoring: EU data region only (DSN host ending in .de.sentry.io).
+    SENTRY_DSN: optionalUrl.refine((v) => !v || new URL(v).hostname.endsWith(".de.sentry.io"), {
+      message: "Sentry DSN must use the EU data region (host ending in .de.sentry.io)",
+    }),
     // Bearer secret of scheduled jobs (Vercel Cron sends it in the Authorization header).
     CRON_SECRET: optionalString,
   })
@@ -80,6 +83,7 @@ export const serverEnvSchema = publicEnvSchema
       require("STRIPE_SECRET_KEY", reason);
       require("STRIPE_WEBHOOK_SECRET", reason);
       require("CRON_SECRET", reason);
+      require("SENTRY_DSN", reason);
       if (env.EMAIL_PROVIDER !== "brevo") {
         ctx.addIssue({
           code: "custom",

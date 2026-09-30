@@ -5,6 +5,7 @@ import { useEffect } from "react";
 
 import { Container } from "@/components/layout/PageHeader";
 import { Button } from "@/components/ui/Button";
+import { sendClientError } from "@/lib/monitoring/send-client-error";
 
 export default function ErrorPage({
   error,
@@ -14,8 +15,8 @@ export default function ErrorPage({
   retry: () => void;
 }) {
   useEffect(() => {
-    // Reported to Sentry once monitoring is wired (phase 15).
     console.error(error);
+    sendClientError(error);
   }, [error]);
 
   return (

@@ -36,6 +36,16 @@ describe("parseServerEnv", () => {
     expect(message).toMatch(/STRIPE_WEBHOOK_SECRET/);
     expect(message).toMatch(/EMAIL_PROVIDER/);
     expect(message).toMatch(/VIDEO_PROVIDER/);
+    expect(message).toMatch(/SENTRY_DSN/);
+  });
+
+  it("accepts only an EU Sentry DSN", () => {
+    expect(() => parseServerEnv({ SENTRY_DSN: "https://key@o1.ingest.us.sentry.io/2" })).toThrow(
+      /EU data region/,
+    );
+    expect(parseServerEnv({ SENTRY_DSN: "https://key@o1.ingest.de.sentry.io/2" }).SENTRY_DSN).toBe(
+      "https://key@o1.ingest.de.sentry.io/2",
+    );
   });
 
   it("accepts a complete production configuration", () => {
@@ -53,6 +63,7 @@ describe("parseServerEnv", () => {
       BUNNY_STREAM_LIBRARY_ID: "1",
       BUNNY_STREAM_TOKEN_KEY: "token",
       CRON_SECRET: "cron",
+      SENTRY_DSN: "https://key@o1.ingest.de.sentry.io/2",
     });
     expect(env.APP_ENV).toBe("production");
   });

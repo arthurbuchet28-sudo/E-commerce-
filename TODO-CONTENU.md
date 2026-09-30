@@ -72,6 +72,8 @@ lien exact de la page consultée, et mettre à jour `checkedAt`.
 | `src/data/privacy.ts` → `processors`                                                             | Entités contractantes, lieux d'hébergement et garanties de transfert de chaque prestataire                         | Contrats (DPA) des prestataires                        |
 | `src/data/privacy.ts` → `treatments`                                                             | Durée de conservation de la mesure d'audience exemptée ; journaux de l'hébergeur                                   | cnil.fr, vercel.com                                    |
 | `src/data/privacy.ts` → `essentialStorage`                                                       | Durée du cookie de session Supabase                                                                                | supabase.com/docs                                      |
+| `src/data/privacy.ts` → `sentry`, traitement `erreurs`                                           | Entité contractante et garanties de Sentry ; durée de conservation des erreurs paramétrée                          | Contrat (DPA) Sentry, réglages du projet               |
+| `docs/mise-en-production.md` → Matomo                                                            | Réglages recommandés par la CNIL pour l'exemption de consentement                                                  | cnil.fr                                                |
 | `src/data/reference.ts` → `rgpd.conservationPiecesComptables`                                    | Durée de conservation des pièces comptables (art. L123-22 C. com.)                                                 | legifrance.gouv.fr                                     |
 | `content/legal/cgv.mdx`                                                                          | Articles L221-28 (exception), garantie légale de conformité, juridiction, mention TVA                              | legifrance.gouv.fr                                     |
 | `content/legal/confidentialite.mdx`                                                              | Délai de réponse aux demandes d'exercice des droits                                                                | cnil.fr                                                |
@@ -113,6 +115,7 @@ lien exact de la page consultée, et mettre à jour `checkedAt`.
 | `content/glossaire/**`                            | Les 82 termes (dont 62 nouveaux) sont en `draft: true`                                                                                                           |
 | `supabase/seed.sql` → F2 à F7                     | Programmes, objectifs, durées et prix provisoires (39 à 89 € TTC)                                                                                                |
 | `src/lib/contact/topics.ts`                       | Durée de conservation des messages de contact (3 ans)                                                                                                            |
+| `docs/sauvegardes.md` → conservation              | Durée de conservation des sauvegardes (proposition : 90 jours pour les archives chiffrées), à reporter au registre                                               |
 
 Rappel : en production, les contenus en `draft: true` ne sont ni affichés, ni indexés, ni listés
 dans le sitemap et `llms.txt`.

@@ -46,6 +46,8 @@ pnpm exec supabase start  # Supabase local (Docker) ; e-mails dans Mailpit :5432
 pnpm db:test      # tests RLS (pgTAP, supabase/tests)
 pnpm db:types     # régénère src/lib/supabase/database.types.ts après une migration
 pnpm admin:grant EMAIL  # donne le rôle admin (/admin) à un compte existant
+pnpm prelaunch    # audit avant mise en production (--env FICHIER pour la configuration)
+pnpm backup:db    # sauvegarde chiffrée (docs/sauvegardes.md) ; restauration : scripts/restore-db.sh
 ```
 
 Sandbox avec un Chromium préinstallé différent :
@@ -92,6 +94,9 @@ docs/               design-system.md (tokens, composants), registre, sauvegardes
 - CSP (`src/lib/security/csp.ts`) : nonce sur les pages privées (proxy), statique sur les pages
   publiques. Nouveau service externe → l'ajouter à la CSP. Budget : 150 Ko de JS au premier
   chargement (e2e) ; pas de Zod ni de gros fichier de `src/data/` dans un composant client commun.
+- Erreurs : `reportError()` (`src/lib/monitoring/report.ts`, Sentry UE côté serveur, données
+  nettoyées par `scrub.ts`) ; pas de SDK Sentry dans le navigateur. Nouvelle tâche planifiée :
+  `recordJobRun()` pour qu'elle apparaisse sur `/statut`.
 - Pas de `dangerouslySetInnerHTML` sur du contenu utilisateur. Pas de couleurs en dur : tokens CSS
   (`docs/design-system.md`). Réutiliser `src/components/ui/` avant de créer un composant.
 - Accessibilité WCAG 2.2 AA : un seul `h1`, labels visibles, focus visible, `aria-live` sur les résultats.

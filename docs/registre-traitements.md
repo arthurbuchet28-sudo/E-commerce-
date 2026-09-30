@@ -8,7 +8,7 @@
 - **Responsable du traitement :** [À COMPLÉTER — nom, adresse, contact] (voir `src/config/site.ts`)
 - **Délégué à la protection des données :** non désigné [À VÉRIFIER — obligation au regard de
   l'activité]
-- **Date de création :** 29/09/2026 — **Dernière mise à jour :** 29/09/2026
+- **Date de création :** 29/09/2026 — **Dernière mise à jour :** 30/09/2026
 
 ## Sous-traitants
 
@@ -20,6 +20,7 @@
 | Brevo        | E-mails transactionnels et newsletter       | UE [À VÉRIFIER]                       | [À VÉRIFIER — DPA]             |
 | Bunny Stream | Vidéos des formations                       | UE [À VÉRIFIER]                       | [À VÉRIFIER — DPA]             |
 | Matomo Cloud | Mesure d'audience exemptée                  | UE [À VÉRIFIER]                       | [À VÉRIFIER — DPA]             |
+| Sentry       | Surveillance des erreurs techniques         | Région de données UE [À VÉRIFIER]     | [À VÉRIFIER — DPA, transferts] |
 
 ## Traitements
 
@@ -103,6 +104,16 @@
 - **Données :** empreintes SHA-256 de l'adresse IP et de l'e-mail saisi.
 - **Durée :** 24 heures (purge automatique) ; journaux de l'hébergeur [À VÉRIFIER].
 
+### `erreurs` — Surveillance des erreurs techniques
+
+- **Finalité :** détecter et corriger les erreurs du site (serveur et navigateur).
+- **Base légale :** intérêt légitime.
+- **Données :** adresse de la page sans paramètres, message d'erreur (adresses e-mail et jetons
+  masqués avant envoi), date, environnement technique. Aucun cookie, en-tête, contenu de
+  formulaire ni utilisateur (`src/lib/monitoring/scrub.ts`). Rien n'est chargé dans le
+  navigateur : les erreurs passent par le serveur du site.
+- **Durée :** [À VÉRIFIER — durée paramétrée dans Sentry].
+
 ### `traceurs` — Preuve des choix sur les traceurs
 
 - **Finalité :** prouver les choix des visiteurs si des traceurs soumis à consentement sont un
@@ -110,6 +121,14 @@
 - **Base légale :** obligation légale.
 - **Données :** identifiant aléatoire, choix par finalité, version, date ; pas d'adresse IP.
 - **Durée :** 12 mois (purge quotidienne) [À VALIDER].
+
+## Sauvegardes
+
+Les données des traitements ci-dessus sont copiées dans les sauvegardes (`docs/sauvegardes.md`) :
+sauvegardes quotidiennes Supabase (UE, 7 jours sur l'offre Pro) et archive hebdomadaire chiffrée
+(clé privée conservée hors ligne par le responsable), conservée 90 jours
+[À VALIDER — durée de conservation des sauvegardes]. Un compte supprimé disparaît des
+sauvegardes à leur expiration.
 
 ## Violations de données
 

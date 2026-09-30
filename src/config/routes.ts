@@ -213,6 +213,17 @@ export const routes = [
     phase: 3,
   },
   {
+    path: "/statut",
+    label: "État du site",
+    h1: "État du site",
+    title: "État du site",
+    description:
+      "Fonctionnement des services de Première Vente : comptes, paiements, e-mails, vidéos et tâches automatiques.",
+    group: "site",
+    indexable: false,
+    phase: 15,
+  },
+  {
     path: "/compte",
     label: "Mon compte",
     h1: "Mon compte",
@@ -501,7 +512,10 @@ export const footerNav: Array<{ title: string; paths: StaticPath[] }> = [
       "/veille-reglementaire",
     ],
   },
-  { title: "Le site", paths: ["/a-propos", "/faq", "/contact", "/plan-du-site", "/accessibilite"] },
+  {
+    title: "Le site",
+    paths: ["/a-propos", "/faq", "/contact", "/plan-du-site", "/accessibilite", "/statut"],
+  },
   {
     title: "Informations légales",
     paths: ["/mentions-legales", "/cgv", "/cgu", "/confidentialite", "/cookies"],

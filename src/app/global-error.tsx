@@ -1,14 +1,20 @@
 "use client";
 
+import { useEffect } from "react";
+
+import { sendClientError } from "@/lib/monitoring/send-client-error";
+
 import "./globals.css";
 
 /** Last-resort boundary (errors in the root layout): must render its own <html>. */
 export default function GlobalError({
+  error,
   retry,
 }: {
   error: Error & { digest?: string };
   retry: () => void;
 }) {
+  useEffect(() => sendClientError(error), [error]);
   return (
     <html lang="fr">
       <body className="flex min-h-screen items-center justify-center p-6">

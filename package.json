@@ -20,11 +20,15 @@
     "db:types": "supabase gen types typescript --local > src/lib/supabase/database.types.ts && prettier --write src/lib/supabase/database.types.ts",
     "db:test": "supabase test db",
     "admin:grant": "node scripts/grant-admin.mjs",
-    "lighthouse": "pnpm dlx @lhci/cli@0.15.1 autorun"
+    "lighthouse": "pnpm dlx @lhci/cli@0.15.1 autorun",
+    "prelaunch": "node --no-warnings scripts/prelaunch.mjs",
+    "backup:db": "scripts/backup-db.sh",
+    "backup:files": "node scripts/storage-files.mjs download"
   },
   "dependencies": {
     "@mdx-js/mdx": "^3.1.1",
     "@react-pdf/renderer": "^4.9.0",
+    "@sentry/nextjs": "11.1.0",
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.117.2",
     "github-slugger": "^2.0.0",

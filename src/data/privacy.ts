@@ -63,6 +63,13 @@ export const processors: Processor[] = [
     location: "Union européenne [À VÉRIFIER — lieu d’hébergement choisi]",
     transfer: null,
   },
+  {
+    id: "sentry",
+    name: "Sentry (Functional Software) [À VÉRIFIER — entité contractante]",
+    role: "Surveillance des erreurs techniques du site",
+    location: "Union européenne (région de données UE, Francfort) [À VÉRIFIER]",
+    transfer: "Société établie aux États-Unis [À VÉRIFIER — accord de traitement et garanties]",
+  },
 ];
 
 export type Treatment = {
@@ -168,6 +175,18 @@ export const treatments: Treatment[] = [
     data: ["empreinte non réversible de l’adresse IP et de l’adresse e-mail saisie"],
     retention: "24 heures ; journaux techniques de l’hébergeur : [À VÉRIFIER]",
     processors: ["supabase", "vercel"],
+  },
+  {
+    id: "erreurs",
+    purpose: "Détecter et corriger les erreurs techniques du site",
+    legalBasis: "Intérêt légitime (bon fonctionnement du service)",
+    data: [
+      "adresse de la page sans ses paramètres",
+      "message d’erreur, adresses e-mail et jetons masqués",
+      "date et environnement technique",
+    ],
+    retention: "[À VÉRIFIER — durée de conservation paramétrée dans Sentry]",
+    processors: ["sentry", "vercel"],
   },
   {
     id: "traceurs",
