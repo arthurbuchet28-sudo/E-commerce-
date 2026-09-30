@@ -10,3 +10,4 @@ coverage
 
 # MDX prose: Prettier splits paragraphs at lines starting with an inline component.
 content/**/*.mdx
+.lighthouseci

@@ -1,5 +1,3 @@
-import { z } from "zod";
-
 /**
  * Consent for trackers (CNIL guidelines). Pure logic, unit-tested.
  * v1 sets no tracker requiring consent: CONSENT_PURPOSES is empty, so the banner never shows.
@@ -22,25 +20,47 @@ export const CONSENT_STORAGE_KEY = "pv-consentement";
 /** Proofs of choices kept server-side, in months. [À VALIDER] */
 export const CONSENT_PROOF_MONTHS = 12;
 
-const recordSchema = z.object({
-  visitorId: z.uuid(),
-  version: z.string(),
-  choices: z.record(z.string(), z.boolean()),
+export type ConsentRecord = {
+  visitorId: string;
+  version: string;
+  choices: Record<string, boolean>;
   /** Opposition to the consent-exempt audience measurement (Matomo). */
-  audienceOptOut: z.boolean(),
-  decidedAt: z.iso.datetime().nullable(),
-});
+  audienceOptOut: boolean;
+  decidedAt: string | null;
+};
 
-export type ConsentRecord = z.infer<typeof recordSchema>;
+// Hand-written validation: this module runs on every page, and Zod would add ~90 KB of
+// JavaScript to the shared bundle (phase 14 budget).
+const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+const ISO_DATETIME = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z$/;
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
 
 export function parseRecord(raw: string | null): ConsentRecord | null {
   if (!raw) return null;
+  let v: unknown;
   try {
-    const parsed = recordSchema.safeParse(JSON.parse(raw));
-    return parsed.success ? parsed.data : null;
+    v = JSON.parse(raw);
   } catch {
     return null;
   }
+  if (!isRecord(v) || !isRecord(v.choices)) return null;
+  const { visitorId, version, choices, audienceOptOut, decidedAt } = v;
+  if (typeof visitorId !== "string" || !UUID.test(visitorId)) return null;
+  if (typeof version !== "string" || typeof audienceOptOut !== "boolean") return null;
+  if (!Object.values(choices).every((c) => typeof c === "boolean")) return null;
+  if (decidedAt !== null && (typeof decidedAt !== "string" || !ISO_DATETIME.test(decidedAt))) {
+    return null;
+  }
+  return {
+    visitorId,
+    version,
+    choices: choices as Record<string, boolean>,
+    audienceOptOut,
+    decidedAt,
+  };
 }
 
 export function emptyRecord(visitorId: string): ConsentRecord {

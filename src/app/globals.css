@@ -1,6 +1,58 @@
 @import "tailwindcss";
 
 /*
+ * Self-hosted fonts (SIL OFL, public/fonts/LICENSE-*.txt), no third-party CDN.
+ * Only the two regular faces are preloaded (layout.tsx); italics load when a page uses them.
+ * The « Fallback » faces are metric-adjusted local fonts (Times New Roman / Arial, or their
+ * metric-compatible Liberation clones on Linux), so the swap barely moves the text.
+ * Renaming a file is required when its content changes (served as immutable, next.config.ts).
+ */
+@font-face {
+  font-family: "Literata";
+  src: url("/fonts/literata-latin-wght-normal.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Literata";
+  src: url("/fonts/literata-latin-wght-italic.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Literata Fallback";
+  src: local("Times New Roman"), local("Liberation Serif");
+  ascent-override: 99.69%;
+  descent-override: 26.09%;
+  line-gap-override: 0%;
+  size-adjust: 118.07%;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  src: url("/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  src: url("/fonts/atkinson-hyperlegible-next-latin-wght-italic.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Fallback";
+  src: local("Arial"), local("Liberation Sans");
+  ascent-override: 99.04%;
+  descent-override: 31.8%;
+  line-gap-override: 0%;
+  size-adjust: 99.36%;
+}
+
+/*
  * Design system — Piste A « Carnet de route » (+ fiche de calcul de la piste B).
  * Every colour goes through these tokens: never hard-code a colour in a component.
  * Contrast ratios are documented in docs/design-system.md.
@@ -92,8 +144,8 @@
   --color-signal-soft: var(--signal-soft);
   --color-danger-soft: var(--danger-soft);
 
-  --font-serif: var(--font-literata), Georgia, serif;
-  --font-sans: var(--font-atkinson), system-ui, sans-serif;
+  --font-serif: "Literata", "Literata Fallback", Georgia, serif;
+  --font-sans: "Atkinson Hyperlegible Next", "Atkinson Fallback", system-ui, sans-serif;
 
   /* Type scale (ratio 1.25): reading base 18px, UI base 16px. */
   --text-display: 2.75rem;

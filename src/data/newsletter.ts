@@ -5,10 +5,7 @@ import { launchChecklist, type ChecklistGroup } from "./checklist";
  * TODO-CONTENU.md): a draft e-mail of the welcome sequence is never sent in production.
  */
 
-/** Consent text shown next to the (unchecked) newsletter checkbox. Versioned. */
-export const NEWSLETTER_CONSENT_VERSION = "2026-09-v1";
-export const NEWSLETTER_CONSENT_TEXT =
-  "J’accepte de recevoir la newsletter de Première Vente : des conseils pour lancer ma boutique en ligne, avec 5 e-mails de bienvenue sur deux semaines, puis au plus un e-mail par semaine. Désinscription en un clic dans chaque e-mail.";
+export { NEWSLETTER_CONSENT_TEXT, NEWSLETTER_CONSENT_VERSION } from "./newsletter-consent";
 
 /**
  * Lead magnet: 25 points chosen among the 50 of the launch checklist (tool 6).

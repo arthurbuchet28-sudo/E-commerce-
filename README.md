@@ -78,7 +78,19 @@ les CGU, changez aussi leur numéro de version dans `src/config/legal.ts`.
 ```bash
 pnpm check   # lint + vérification des types + tests + build
 pnpm e2e     # tests de bout en bout et d'accessibilité (après pnpm build)
+pnpm lighthouse  # notes Lighthouse ≥ 95 sur les pages clés (après pnpm build)
 ```
+
+Ce que vérifient ces commandes, à chaque modification (et dans GitHub Actions) :
+
+- **Accessibilité** : chaque page, chaque guide et chaque terme du glossaire est contrôlé
+  (normes WCAG 2.2 AA), y compris en mode sombre.
+- **Liens** : aucun lien interne cassé. Les liens vers les sites externes (sources officielles)
+  sont vérifiés chaque lundi ; un lien cassé ouvre un ticket « Liens externes cassés » sur GitHub.
+- **Sécurité** : en-têtes de sécurité et politique de contenu (CSP), qui empêche d'exécuter un
+  script venant d'un autre site. Si vous ajoutez un service externe (outil de chat, vidéo
+  YouTube…), son adresse doit être ajoutée dans `src/lib/security/csp.ts`, sinon il sera bloqué.
+- **Poids des pages** : moins de 150 Ko de JavaScript au premier chargement.
 
 ## Ajouter un guide
 

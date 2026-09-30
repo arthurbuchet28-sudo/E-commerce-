@@ -39,6 +39,7 @@ pnpm typecheck    # next typegen + tsc --noEmit
 pnpm test         # Vitest (unitaires)
 pnpm test:coverage # Vitest + couverture (100 % exigé sur src/lib/calc)
 pnpm e2e          # Playwright + axe (nécessite `pnpm build` avant)
+pnpm lighthouse   # Lighthouse CI ≥ 95 (lighthouserc.json ; CHROME_PATH=/opt/pw-browsers/chromium en sandbox)
 pnpm format       # Prettier
 pnpm check        # lint + typecheck + test + build
 pnpm exec supabase start  # Supabase local (Docker) ; e-mails dans Mailpit :54324
@@ -88,6 +89,9 @@ docs/               design-system.md (tokens, composants), registre, sauvegardes
 - Droits d'accès aux formations accordés uniquement par le webhook Stripe `checkout.session.completed`.
   Sans clé Stripe (local), paiement simulé sur `/paiement-simule` via le même webhook signé.
   Textes de consentement versionnés dans `src/config/legal.ts` (changer la version si le texte change).
+- CSP (`src/lib/security/csp.ts`) : nonce sur les pages privées (proxy), statique sur les pages
+  publiques. Nouveau service externe → l'ajouter à la CSP. Budget : 150 Ko de JS au premier
+  chargement (e2e) ; pas de Zod ni de gros fichier de `src/data/` dans un composant client commun.
 - Pas de `dangerouslySetInnerHTML` sur du contenu utilisateur. Pas de couleurs en dur : tokens CSS
   (`docs/design-system.md`). Réutiliser `src/components/ui/` avant de créer un composant.
 - Accessibilité WCAG 2.2 AA : un seul `h1`, labels visibles, focus visible, `aria-live` sur les résultats.

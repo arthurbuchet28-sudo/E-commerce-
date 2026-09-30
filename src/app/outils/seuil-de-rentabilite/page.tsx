@@ -1,8 +1,6 @@
-import { Suspense } from "react";
-
 import { breadcrumbFor, Container, PageHeader } from "@/components/layout/PageHeader";
 import { BreakEvenCalculator } from "@/components/tools/BreakEvenCalculator";
-import { ToolLoading } from "@/components/tools/ToolLoading";
+import { UrlKeyed } from "@/components/tools/UrlKeyed";
 import { ToolSections } from "@/components/tools/ToolSections";
 import { getRoute } from "@/config/routes";
 import { pageMetadata } from "@/lib/seo/metadata";
@@ -14,9 +12,9 @@ export default function BreakEvenPage() {
   return (
     <Container>
       <PageHeader title={r.h1} lead={r.description} crumbs={breadcrumbFor(r.path, r.label)} />
-      <Suspense fallback={<ToolLoading />}>
+      <UrlKeyed>
         <BreakEvenCalculator />
-      </Suspense>
+      </UrlKeyed>
       <ToolSections
         method={
           <>

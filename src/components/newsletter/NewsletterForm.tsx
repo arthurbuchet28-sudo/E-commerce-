@@ -8,7 +8,7 @@ import { subscribeNewsletter } from "@/app/newsletter/actions";
 import { FormMessage } from "@/components/account/FormMessage";
 import { Button } from "@/components/ui/Button";
 import { Checkbox, TextField } from "@/components/ui/Field";
-import { NEWSLETTER_CONSENT_TEXT } from "@/data/newsletter";
+import { NEWSLETTER_CONSENT_TEXT } from "@/data/newsletter-consent";
 
 const idle: FormState = { status: "idle" };
 

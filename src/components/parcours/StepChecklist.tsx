@@ -3,19 +3,27 @@
 import Link from "next/link";
 import { useId } from "react";
 
-import { parcoursSteps, stepHref } from "@/data/parcours";
+import type { ParcoursOutline } from "@/data/parcours";
 import { useParcoursProgress } from "@/lib/parcours/useParcoursProgress";
 
 /** Checklist of one step, saved with the path progress. Items are never pre-checked. */
-export function StepChecklist({ slug }: { slug: string }) {
-  const { progress, toggle } = useParcoursProgress();
+export function StepChecklist({
+  outline,
+  slug,
+  items,
+}: {
+  outline: ParcoursOutline;
+  slug: string;
+  /** Checklist texts of this step only. */
+  items: string[];
+}) {
+  const { progress, toggle } = useParcoursProgress(outline);
   const base = useId();
-  const index = parcoursSteps.findIndex((s) => s.slug === slug);
-  const step = parcoursSteps[index];
-  const next = parcoursSteps[index + 1];
-  const checked = progress[slug] ?? step.checklist.map(() => false);
+  const index = outline.steps.findIndex((s) => s.slug === slug);
+  const next = outline.steps[index + 1];
+  const checked = progress[slug] ?? items.map(() => false);
   const done = checked.filter(Boolean).length;
-  const complete = done === step.checklist.length;
+  const complete = done === items.length;
 
   return (
     <fieldset className="rounded-ui border border-line bg-sheet p-5">
@@ -23,10 +31,10 @@ export function StepChecklist({ slug }: { slug: string }) {
       <p className="mb-3 text-small text-muted" aria-live="polite">
         {complete
           ? "Étape terminée. Bravo."
-          : `${done} point${done > 1 ? "s" : ""} validé${done > 1 ? "s" : ""} sur ${step.checklist.length}`}
+          : `${done} point${done > 1 ? "s" : ""} validé${done > 1 ? "s" : ""} sur ${items.length}`}
       </p>
       <ul className="flex flex-col gap-3">
-        {step.checklist.map((item, i) => (
+        {items.map((item, i) => (
           <li key={item} className="flex items-start gap-3">
             <input
               id={`${base}-${i}`}
@@ -46,7 +54,7 @@ export function StepChecklist({ slug }: { slug: string }) {
       </ul>
       {complete && next && (
         <p className="mt-4">
-          <Link href={stepHref(next.slug)} className="link font-semibold">
+          <Link href={next.href} className="link font-semibold">
             Passer à l’étape suivante : {next.title}
           </Link>
         </p>

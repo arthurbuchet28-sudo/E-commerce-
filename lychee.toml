@@ -1,0 +1,12 @@
+# External link check (phase 14). Run weekly by .github/workflows/liens.yml; locally:
+# `lychee content src/data src/config` (https://lychee.cli.rs).
+# Internal links are checked by the e2e suite (e2e/hardening.spec.ts).
+
+# 403/429: official sites (Légifrance, economie.gouv.fr…) answer robots with an anti-bot
+# challenge; those pages are checked by hand when their guide is reviewed.
+accept = ["200..=299", "403", "429"]
+max_retries = 2
+timeout = 30
+user_agent = "Mozilla/5.0 (compatible; PremiereVente-LinkCheck/1.0)"
+exclude = ["^https?://localhost", "^https?://127\\.0\\.0\\.1", "example\\.(com|fr)", "^mailto:"]
+exclude_path = ["node_modules", ".next"]

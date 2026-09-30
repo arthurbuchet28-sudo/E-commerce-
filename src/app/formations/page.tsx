@@ -22,20 +22,26 @@ export default async function CoursesPage() {
           Les formations seront bientôt disponibles.
         </p>
       ) : (
-        <ul className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {courses.map((c) => (
-            <li key={c.id} className="flex">
-              <CourseCard
-                href={`/formations/${c.slug}` as Route}
-                title={c.title}
-                summary={c.summary}
-                lessons={c.modules.reduce((n, m) => n + m.lessons.length, 0)}
-                duration={formatDuration(c.totalMinutes)}
-                price={formatPrice(c.priceCents)}
-              />
-            </li>
-          ))}
-        </ul>
+        <section aria-labelledby="catalogue-titre">
+          {/* Cards use h3: keep the heading order h1 → h2 → h3. */}
+          <h2 id="catalogue-titre" className="sr-only">
+            Catalogue des formations
+          </h2>
+          <ul className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {courses.map((c) => (
+              <li key={c.id} className="flex">
+                <CourseCard
+                  href={`/formations/${c.slug}` as Route}
+                  title={c.title}
+                  summary={c.summary}
+                  lessons={c.modules.reduce((n, m) => n + m.lessons.length, 0)}
+                  duration={formatDuration(c.totalMinutes)}
+                  price={formatPrice(c.priceCents)}
+                />
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
       <p className="mt-8 max-w-prose text-small text-muted">
         À la fin de chaque formation, vous obtenez une attestation de suivi. Ce n’est ni un diplôme

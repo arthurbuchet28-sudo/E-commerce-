@@ -3,23 +3,23 @@
 import Link from "next/link";
 
 import { ProgressBar } from "@/components/ui/ProgressBar";
-import { parcoursSteps, stepHref } from "@/data/parcours";
+import type { ParcoursOutline } from "@/data/parcours";
 import { useParcoursProgress } from "@/lib/parcours/useParcoursProgress";
 
-export function ParcoursSummary() {
-  const { overall, steps } = useParcoursProgress();
-  const next = parcoursSteps[steps.findIndex((s) => s.status === "current")];
+export function ParcoursSummary({ outline }: { outline: ParcoursOutline }) {
+  const { overall, steps } = useParcoursProgress(outline);
+  const next = outline.steps[steps.findIndex((s) => s.status === "current")];
   return (
     <div className="flex flex-col gap-4">
       <ProgressBar
         value={overall.checked}
         max={overall.total}
-        label={`${overall.stepsDone} étape${overall.stepsDone > 1 ? "s" : ""} terminée${overall.stepsDone > 1 ? "s" : ""} sur ${parcoursSteps.length}`}
+        label={`${overall.stepsDone} étape${overall.stepsDone > 1 ? "s" : ""} terminée${overall.stepsDone > 1 ? "s" : ""} sur ${outline.steps.length}`}
       />
       {next ? (
         <p>
           Prochaine étape{" "}:{" "}
-          <Link href={stepHref(next.slug)} className="link font-semibold">
+          <Link href={next.href} className="link font-semibold">
             {next.title}
           </Link>
         </p>

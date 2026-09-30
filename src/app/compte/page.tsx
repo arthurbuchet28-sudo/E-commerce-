@@ -13,6 +13,7 @@ import { breadcrumbFor, Container, PageHeader } from "@/components/layout/PageHe
 import { Button } from "@/components/ui/Button";
 import { Callout } from "@/components/ui/Callout";
 import { findRoute, getRoute } from "@/config/routes";
+import { parcoursOutline } from "@/data/parcours";
 import { pageMetadata } from "@/lib/seo/metadata";
 import { getUser } from "@/lib/supabase/server";
 
@@ -87,7 +88,7 @@ export default async function AccountPage({ searchParams }: PageProps<"/compte">
       )}
       <div className="grid gap-6 lg:grid-cols-2">
         <Panel id="parcours-title" title="Mon parcours « Se lancer »">
-          <ParcoursSummary />
+          <ParcoursSummary outline={parcoursOutline()} />
         </Panel>
         <Panel id="formations-title" title="Mes formations">
           <CoursesPanel learning={learning} />

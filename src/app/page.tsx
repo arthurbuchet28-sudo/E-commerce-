@@ -5,6 +5,7 @@ import { ParcoursOverview } from "@/components/parcours/ParcoursOverview";
 import { ButtonLink } from "@/components/ui/Button";
 import { siteConfig } from "@/config/site";
 import { LEAD_MAGNET_TITLE } from "@/data/newsletter";
+import { parcoursOutline } from "@/data/parcours";
 import { getFeaturedGuides } from "@/lib/content/guides";
 import { JsonLd, organizationJsonLd, websiteJsonLd } from "@/lib/seo/json-ld";
 
@@ -33,7 +34,11 @@ export default function HomePage() {
         </div>
         <div className="rounded-ui border border-line bg-sheet p-6">
           <h2 className="mb-5 text-h3">Le parcours « Se lancer »</h2>
-          <ParcoursOverview label="Aperçu du parcours en 8 étapes" showBar={false} />
+          <ParcoursOverview
+            outline={parcoursOutline()}
+            label="Aperçu du parcours en 8 étapes"
+            showBar={false}
+          />
         </div>
       </Container>
 

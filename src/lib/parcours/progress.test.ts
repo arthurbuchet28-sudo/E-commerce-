@@ -11,9 +11,9 @@ import {
 } from "./progress";
 
 const steps = [
-  { slug: "a", checklist: [1, 2] },
-  { slug: "b", checklist: [1, 2, 3] },
-  { slug: "c", checklist: [1] },
+  { slug: "a", size: 2 },
+  { slug: "b", size: 3 },
+  { slug: "c", size: 1 },
 ];
 
 describe("parcours progress", () => {

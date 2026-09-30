@@ -2,7 +2,7 @@ import { breadcrumbFor, Container, PageHeader } from "@/components/layout/PageHe
 import { ParcoursOverview } from "@/components/parcours/ParcoursOverview";
 import { ResetProgress } from "@/components/parcours/ResetProgress";
 import { getRoute } from "@/config/routes";
-import { parcoursSteps } from "@/data/parcours";
+import { parcoursOutline, parcoursSteps } from "@/data/parcours";
 import { pageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = pageMetadata("/se-lancer");
@@ -20,7 +20,7 @@ export default function SeLancerPage() {
           <h2 id="etapes-title" className="mb-5 text-h3">
             Les {parcoursSteps.length} étapes
           </h2>
-          <ParcoursOverview label="Les 8 étapes du parcours" />
+          <ParcoursOverview outline={parcoursOutline()} label="Les 8 étapes du parcours" />
         </section>
         <aside className="flex flex-col gap-4">
           <h2 className="text-h3">Comment ça marche</h2>
@@ -37,7 +37,7 @@ export default function SeLancerPage() {
             compte gratuit, elle vous suivra sur tous vos appareils.
           </p>
           <div>
-            <ResetProgress />
+            <ResetProgress outline={parcoursOutline()} />
           </div>
         </aside>
       </div>

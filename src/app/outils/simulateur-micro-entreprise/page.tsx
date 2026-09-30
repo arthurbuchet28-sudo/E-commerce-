@@ -1,8 +1,6 @@
-import { Suspense } from "react";
-
 import { breadcrumbFor, Container, PageHeader } from "@/components/layout/PageHeader";
 import { MicroSimulator } from "@/components/tools/MicroSimulator";
-import { ToolLoading } from "@/components/tools/ToolLoading";
+import { UrlKeyed } from "@/components/tools/UrlKeyed";
 import { ToolSections } from "@/components/tools/ToolSections";
 import { getRoute } from "@/config/routes";
 import { getRef, type RefKey } from "@/data/reference";
@@ -23,7 +21,7 @@ export default function MicroPage() {
   return (
     <Container>
       <PageHeader title={r.h1} lead={r.description} crumbs={breadcrumbFor(r.path, r.label)} />
-      <Suspense fallback={<ToolLoading />}>
+      <UrlKeyed>
         <MicroSimulator
           year={year}
           thresholds={{
@@ -47,7 +45,7 @@ export default function MicroPage() {
             services: rate("micro.tauxVersementLiberatoireServices"),
           }}
         />
-      </Suspense>
+      </UrlKeyed>
       <ToolSections
         method={
           <>

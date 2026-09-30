@@ -1,5 +1,7 @@
 "use client";
 
+import dynamic from "next/dynamic";
+
 import {
   allChoices,
   CONSENT_PURPOSES,
@@ -7,18 +9,21 @@ import {
   decide,
   needsChoice,
 } from "@/lib/consent/consent";
-import { getRef } from "@/data/reference";
 import { currentOrNewRecord, saveConsent, useConsentRecord } from "@/lib/consent/store";
 
-import { ConsentBannerView } from "./ConsentBannerView";
+// Loaded only when a choice is needed (never in v1): keeps it off every page's bundle.
+const ConsentBannerView = dynamic(() =>
+  import("./ConsentBannerView").then((m) => m.ConsentBannerView),
+);
 
-const VALIDITY = getRef("cnil.dureeChoixCookies").value as number;
-
-/** Shows the banner only when a purpose requires consent and no valid choice exists. */
-export function ConsentManager() {
+/**
+ * Shows the banner only when a purpose requires consent and no valid choice exists.
+ * `validityMonths` comes from reference.ts through the (server) layout, keeping it off the bundle.
+ */
+export function ConsentManager({ validityMonths }: { validityMonths: number }) {
   const record = useConsentRecord();
   if (record === undefined) return null;
-  if (!needsChoice(record, CONSENT_PURPOSES, CONSENT_VERSION, VALIDITY)) return null;
+  if (!needsChoice(record, CONSENT_PURPOSES, CONSENT_VERSION, validityMonths)) return null;
   const save = (choices: Record<string, boolean>) =>
     saveConsent(decide(currentOrNewRecord(), choices, CONSENT_PURPOSES, CONSENT_VERSION), true);
   return (

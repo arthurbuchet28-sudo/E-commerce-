@@ -25,7 +25,12 @@ Utilisation dans Tailwind : `bg-ink`, `text-muted`, `border-line`, etc. Jamais d
 Mode sombre : suit le système (`prefers-color-scheme`) ; `data-theme="light|dark"` force un
 thème sur `<html>` ou sur une section.
 
-## Typographie (auto-hébergée, SIL OFL, `src/app/fonts/`)
+## Typographie (auto-hébergée, SIL OFL, `public/fonts/`)
+
+Déclarée dans `src/app/globals.css` (`@font-face`). Seules les deux graisses droites sont
+préchargées ; les italiques se chargent quand une page en contient. Des polices de secours aux
+métriques ajustées limitent le décalage au chargement. Les fichiers sont servis avec un cache
+d'un an : changez le nom du fichier si son contenu change.
 
 - **Literata** (`font-serif`) : titres, corps des guides et leçons (classe `.prose-guide`,
   18 px, interligne 1,65, 68 caractères max).

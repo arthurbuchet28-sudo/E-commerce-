@@ -1,3 +1,5 @@
+import { connection } from "next/server";
+
 import { ResetRequestForm } from "@/components/account/AuthForms";
 import { MemberAreaUnavailable } from "@/components/account/Unavailable";
 import { breadcrumbFor, Container, PageHeader } from "@/components/layout/PageHeader";
@@ -7,7 +9,9 @@ import { supabaseConfig } from "@/lib/supabase/config";
 
 export const metadata = pageMetadata("/compte/mot-de-passe");
 
-export default function ResetPage() {
+export default async function ResetPage() {
+  // Private pages use the nonce CSP (src/proxy.ts), which needs per-request rendering.
+  await connection();
   const r = getRoute("/compte/mot-de-passe");
   return (
     <Container className="max-w-3xl">

@@ -4,10 +4,11 @@ import { useState } from "react";
 
 import { Button } from "@/components/ui/Button";
 import { Modal } from "@/components/ui/Modal";
+import type { ParcoursOutline } from "@/data/parcours";
 import { useParcoursProgress } from "@/lib/parcours/useParcoursProgress";
 
-export function ResetProgress() {
-  const { reset, overall } = useParcoursProgress();
+export function ResetProgress({ outline }: { outline: ParcoursOutline }) {
+  const { reset, overall } = useParcoursProgress(outline);
   const [open, setOpen] = useState(false);
   if (overall.checked === 0) return null;
   return (

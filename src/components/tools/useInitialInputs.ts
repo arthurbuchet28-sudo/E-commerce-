@@ -1,10 +1,28 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useSyncExternalStore } from "react";
+
+function subscribe(onChange: () => void) {
+  window.addEventListener("popstate", onChange);
+  return () => window.removeEventListener("popstate", onChange);
+}
+
+/**
+ * The page's query string, "" on the server and during hydration. Unlike `useSearchParams`, it
+ * lets the tools be prerendered with their default values (no client-only placeholder, no
+ * layout shift); `<UrlKeyed>` then remounts the tool when the URL carries a simulation.
+ */
+export function useSearch(): string {
+  return useSyncExternalStore(
+    subscribe,
+    () => window.location.search,
+    () => "",
+  );
+}
 
 /** Values of a reopened simulation, passed in the URL (?price=39&…). Only known keys are kept. */
 export function useInitialInputs<K extends string>(keys: readonly K[]): Partial<Record<K, string>> {
-  const params = useSearchParams();
+  const params = new URLSearchParams(useSearch());
   const out: Partial<Record<K, string>> = {};
   for (const k of keys) {
     const v = params.get(k);

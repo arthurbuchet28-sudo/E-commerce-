@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { preload } from "react-dom";
 
 import { AccountSync } from "@/components/account/AccountSync";
 import { Analytics } from "@/components/consent/Analytics";
@@ -7,9 +8,9 @@ import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SkipLink } from "@/components/layout/SkipLink";
 import { siteConfig } from "@/config/site";
+import { getRef } from "@/data/reference";
 import { publicEnv } from "@/lib/env";
 
-import { fontSans, fontSerif } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -24,9 +25,18 @@ export const metadata: Metadata = {
   formatDetection: { telephone: false },
 };
 
+/** Regular faces only: they render the first screen. Italics are fetched on demand. */
+const PRELOADED_FONTS = [
+  "/fonts/literata-latin-wght-normal.woff2",
+  "/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2",
+];
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
+  for (const href of PRELOADED_FONTS) {
+    preload(href, { as: "font", type: "font/woff2", crossOrigin: "anonymous" });
+  }
   return (
-    <html lang="fr" className={`${fontSerif.variable} ${fontSans.variable} h-full antialiased`}>
+    <html lang="fr" className="h-full antialiased">
       <body className="flex min-h-full flex-col">
         <SkipLink />
         <SiteHeader />
@@ -35,7 +45,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </main>
         <SiteFooter />
         <AccountSync />
-        <ConsentManager />
+        <ConsentManager validityMonths={getRef("cnil.dureeChoixCookies").value as number} />
         <Analytics
           url={publicEnv.NEXT_PUBLIC_MATOMO_URL}
           siteId={publicEnv.NEXT_PUBLIC_MATOMO_SITE_ID}

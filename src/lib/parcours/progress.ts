@@ -3,7 +3,8 @@
  * (localStorage now, the member account from phase 7).
  */
 
-export type StepDefinition = { slug: string; checklist: readonly unknown[] };
+/** A step as the progress logic sees it: its slug and the number of checklist items. */
+export type StepDefinition = { slug: string; size: number };
 
 /** Checked items per step slug, by checklist index. */
 export type ParcoursProgress = Record<string, boolean[]>;
@@ -22,7 +23,7 @@ export function normalizeProgress(
   return Object.fromEntries(
     steps.map((s) => {
       const saved = Array.isArray(source[s.slug]) ? (source[s.slug] as unknown[]) : [];
-      return [s.slug, s.checklist.map((_, i) => saved[i] === true)];
+      return [s.slug, Array.from({ length: s.size }, (_, i) => saved[i] === true)];
     }),
   );
 }
@@ -50,7 +51,7 @@ export function stepsProgress(
   return steps.map((s) => {
     const items = progress[s.slug] ?? [];
     const checked = items.filter(Boolean).length;
-    const total = s.checklist.length;
+    const total = s.size;
     let status: StepStatus = "todo";
     if (total > 0 && checked === total) status = "done";
     else if (!currentAssigned) {

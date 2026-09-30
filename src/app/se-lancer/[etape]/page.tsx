@@ -6,7 +6,7 @@ import { GuideList } from "@/components/content/GuideList";
 import { breadcrumbFor, Container, PageHeader } from "@/components/layout/PageHeader";
 import { StepChecklist } from "@/components/parcours/StepChecklist";
 import { findRoute } from "@/config/routes";
-import { findStep, parcoursSteps, stepHref } from "@/data/parcours";
+import { findStep, parcoursOutline, parcoursSteps, stepHref } from "@/data/parcours";
 import { getGuide } from "@/lib/content/guides";
 import { breadcrumbJsonLd, JsonLd } from "@/lib/seo/json-ld";
 import { buildMetadata } from "@/lib/seo/metadata";
@@ -98,7 +98,7 @@ export default async function StepPage({ params }: Props) {
         </div>
 
         <aside className="flex flex-col gap-6">
-          <StepChecklist slug={step.slug} />
+          <StepChecklist outline={parcoursOutline()} slug={step.slug} items={step.checklist} />
           {tool && (
             <div className="rounded-ui border border-line bg-sheet p-5">
               <p className="mb-1 text-small text-muted">Outil lié</p>

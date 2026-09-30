@@ -35,10 +35,16 @@ export default async function CategoryPage({ params }: PageProps<"/guides/[categ
         lead={category.description}
         crumbs={breadcrumbFor(`/guides/${category.slug}`, category.title)}
       />
-      <GuideList
-        guides={getGuidesByCategory(category.slug)}
-        empty="Les guides de cette catégorie sont en cours de rédaction."
-      />
+      <section aria-labelledby="guides-titre">
+        {/* Guide cards use h3: keep the heading order h1 → h2 → h3. */}
+        <h2 id="guides-titre" className="sr-only">
+          Les guides de cette catégorie
+        </h2>
+        <GuideList
+          guides={getGuidesByCategory(category.slug)}
+          empty="Les guides de cette catégorie sont en cours de rédaction."
+        />
+      </section>
     </Container>
   );
 }

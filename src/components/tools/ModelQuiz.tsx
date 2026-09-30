@@ -6,7 +6,7 @@ import { useRef, useState } from "react";
 
 import { Button, ButtonLink } from "@/components/ui/Button";
 import { Callout } from "@/components/ui/Callout";
-import { stepHref } from "@/data/parcours";
+import { stepHref } from "@/lib/parcours/href";
 import { models, quizQuestions } from "@/data/quiz-modele";
 import { isComplete, rankModels, type QuizAnswers } from "@/lib/calc/quiz";
 

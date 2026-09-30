@@ -1,0 +1,43 @@
+{
+  "ci": {
+    "collect": {
+      "startServerCommand": "pnpm start --port 3100",
+      "startServerReadyPattern": "Ready",
+      "numberOfRuns": 3,
+      "url": [
+        "http://localhost:3100/",
+        "http://localhost:3100/guides",
+        "http://localhost:3100/guides/statut-et-creation/statut-pour-vendre-en-ligne",
+        "http://localhost:3100/se-lancer",
+        "http://localhost:3100/outils/calculateur-prix-marge",
+        "http://localhost:3100/outils/simulateur-micro-entreprise",
+        "http://localhost:3100/formations",
+        "http://localhost:3100/glossaire/dropshipping",
+        "http://localhost:3100/compte/connexion"
+      ],
+      "settings": {
+        "onlyCategories": ["performance", "accessibility", "best-practices", "seo"],
+        "skipAudits": ["is-crawlable"],
+        "chromeFlags": "--headless=new --no-sandbox"
+      }
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": [
+          "error",
+          { "minScore": 0.95, "aggregationMethod": "median-run" }
+        ],
+        "categories:accessibility": [
+          "error",
+          { "minScore": 0.95, "aggregationMethod": "median-run" }
+        ],
+        "categories:best-practices": [
+          "error",
+          { "minScore": 0.95, "aggregationMethod": "median-run" }
+        ],
+        "categories:seo": ["error", { "minScore": 0.95, "aggregationMethod": "median-run" }]
+      }
+    },
+    "upload": { "target": "filesystem", "outputDir": ".lighthouseci/rapports" }
+  }
+}

@@ -2,7 +2,7 @@
 
 import { useCallback, useMemo, useSyncExternalStore } from "react";
 
-import { PARCOURS_STORAGE_VERSION, parcoursSteps } from "@/data/parcours";
+import type { ParcoursOutline } from "@/data/parcours";
 import { writeLocal } from "@/lib/sync/localSync";
 
 import {
@@ -13,7 +13,6 @@ import {
   type ParcoursProgress,
 } from "./progress";
 
-const KEY = `parcours:v${PARCOURS_STORAGE_VERSION}`;
 const EVENT = "parcours-change";
 
 function subscribe(onChange: () => void) {
@@ -25,16 +24,16 @@ function subscribe(onChange: () => void) {
   };
 }
 
-function readRaw(): string | null {
+function readRaw(key: string): string | null {
   try {
-    return localStorage.getItem(KEY);
+    return localStorage.getItem(key);
   } catch {
     return null; // storage blocked: progress lives for this page only
   }
 }
 
-function write(progress: ParcoursProgress) {
-  writeLocal(KEY, JSON.stringify(progress));
+function write(key: string, progress: ParcoursProgress) {
+  writeLocal(key, JSON.stringify(progress));
   window.dispatchEvent(new Event(EVENT));
 }
 
@@ -43,22 +42,29 @@ function write(progress: ParcoursProgress) {
  * empty path (`hydrated: false`); the saved state appears right after hydration.
  * Phase 7 adds a sync with the member account behind the same interface.
  */
-export function useParcoursProgress() {
-  const raw = useSyncExternalStore(subscribe, readRaw, () => null);
+export function useParcoursProgress({ storageKey, steps: outline }: ParcoursOutline) {
+  const raw = useSyncExternalStore(
+    subscribe,
+    () => readRaw(storageKey),
+    () => null,
+  );
   const hydrated = useSyncExternalStore(
     subscribe,
     () => true,
     () => false,
   );
-  const progress = useMemo(() => parseProgress(raw, parcoursSteps), [raw]);
-  const steps = useMemo(() => stepsProgress(progress, parcoursSteps), [progress]);
-  const overall = useMemo(() => overallProgress(progress, parcoursSteps), [progress]);
+  const progress = useMemo(() => parseProgress(raw, outline), [raw, outline]);
+  const steps = useMemo(() => stepsProgress(progress, outline), [progress, outline]);
+  const overall = useMemo(() => overallProgress(progress, outline), [progress, outline]);
 
   const toggle = useCallback(
-    (slug: string, index: number) => write(toggleItem(progress, slug, index)),
-    [progress],
+    (slug: string, index: number) => write(storageKey, toggleItem(progress, slug, index)),
+    [progress, storageKey],
   );
-  const reset = useCallback(() => write(parseProgress(null, parcoursSteps)), []);
+  const reset = useCallback(
+    () => write(storageKey, parseProgress(null, outline)),
+    [storageKey, outline],
+  );
 
   return { progress, steps, overall, toggle, reset, hydrated };
 }

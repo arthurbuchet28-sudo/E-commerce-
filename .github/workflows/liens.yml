@@ -1,0 +1,29 @@
+name: Liens externes
+
+# Weekly check of the external links cited in guides, glossary and reference data. A broken
+# link opens (or updates) an issue instead of failing a pull request.
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --config lychee.toml "content/**/*.mdx" "content/**/*.yaml" "src/data/*.ts" "src/config/*.ts"
+          fail: false
+      - if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Liens externes cassés
+          content-filepath: ./lychee/out.md
+          labels: contenu

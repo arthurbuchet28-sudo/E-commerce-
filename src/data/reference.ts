@@ -109,7 +109,7 @@ const SOURCES = {
   impotsFacturation: {
     name: "impots.gouv.fr, facturation électronique et e-reporting",
     short: "impots.gouv.fr",
-    url: "https://www.impots.gouv.fr/professionnel/facturation-electronique",
+    url: "https://www.impots.gouv.fr/professionnel/je-passe-la-facturation-electronique",
   },
   loiInfluence: {
     name: "Loi n° 2023-451 du 9 juin 2023 (influence commerciale)",

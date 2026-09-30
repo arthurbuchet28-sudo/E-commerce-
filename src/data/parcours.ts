@@ -1,5 +1,7 @@
 import type { Route } from "next";
 
+import { stepHref } from "@/lib/parcours/href";
+
 /**
  * The 8 steps of the « Se lancer » path (section 4.2).
  *
@@ -366,6 +368,24 @@ export function findStep(slug: string) {
   return index === -1 ? null : { ...parcoursSteps[index], number: index + 1 };
 }
 
-export function stepHref(slug: string): Route {
-  return `/se-lancer/${slug}` as Route;
+export { stepHref };
+
+/** What client components need to show progress: no checklist texts, no guides. */
+export type StepOutline = { slug: string; title: string; href: Route; size: number };
+export type ParcoursOutline = { storageKey: string; steps: StepOutline[] };
+
+/**
+ * Built on the server and passed as props, so that the full path data (checklists, guides)
+ * stays out of the JavaScript sent to every page (phase 14 budget).
+ */
+export function parcoursOutline(): ParcoursOutline {
+  return {
+    storageKey: `parcours:v${PARCOURS_STORAGE_VERSION}`,
+    steps: parcoursSteps.map((s) => ({
+      slug: s.slug,
+      title: s.title,
+      href: stepHref(s.slug),
+      size: s.checklist.length,
+    })),
+  };
 }
