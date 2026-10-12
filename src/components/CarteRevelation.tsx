@@ -10,12 +10,14 @@ type Props = {
   anecdote?: string;
   titre: string;
   derniere: boolean;
+  /** Afficher les points gagnés (pas en entraînement). */
+  avecPoints?: boolean;
   onSuivante: () => void;
 };
 
 /** Retour après la réponse : bravo / raté, bonne réponse et anecdote « Le saviez-vous ? ». */
 export const CarteRevelation = forwardRef<HTMLButtonElement, Props>(function CarteRevelation(
-  { resultat, bonne, anecdote, titre, derniere, onSuivante },
+  { resultat, bonne, anecdote, titre, derniere, avecPoints = true, onSuivante },
   ref,
 ) {
   const couleur = resultat.correct
@@ -35,7 +37,7 @@ export const CarteRevelation = forwardRef<HTMLButtonElement, Props>(function Car
     >
       <div className="flex items-baseline justify-between gap-3">
         <h2 className="font-display text-2xl font-extrabold">{titre}</h2>
-        {resultat.points.total > 0 && (
+        {avecPoints && resultat.points.total > 0 && (
           <span className="font-display text-xl font-extrabold text-emerald-700 dark:text-emerald-300">
             {T.jeu.pointsGagnes(resultat.points.total)}
           </span>

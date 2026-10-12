@@ -2,7 +2,21 @@
 
 Plateforme de quiz ludique en français : thèmes variés, difficulté réglable, animations gratifiantes et rejouable à l'infini. Fonctionne sur ordinateur comme sur mobile, sans backend.
 
-> État : **phase 2 (contenu)** — mode Classique, 408 questions locales, questions générées depuis Wikidata, les pays du monde, les départements français et le blind test Deezer ; types QCM, vrai/faux, image, audio, saisie libre, chronologie et estimation.
+> État : **phase 3 (modes)** — 7 modes de jeu, difficulté adaptative, 408 questions locales, questions générées depuis Wikidata, les pays du monde, les départements français et le blind test Deezer ; types QCM, vrai/faux, image, audio, saisie libre, chronologie et estimation.
+
+## Modes de jeu
+
+| Mode | Règle |
+|---|---|
+| Classique | 10 ou 20 questions, un thème, une difficulté (ou adaptative) |
+| Contre-la-montre | un maximum de bonnes réponses en 60 s ; enchaînement automatique |
+| Survie | 3 vies ; la difficulté monte d'un cran toutes les 5 questions |
+| Blind test | 10 extraits Deezer, par époque ou par style ; bonus de rapidité doublé |
+| Défi du jour | 10 questions tirées avec une graine basée sur la date : identiques pour tout le monde, une fois par jour, avec série de jours consécutifs |
+| Duel local | 2 à 4 joueurs sur le même appareil, chacun son tour, écran de passage de relais et podium |
+| Entraînement | sans chrono ni score, anecdotes à revoir en fin de partie |
+
+**Difficulté adaptative** : la difficulté monte après 3 bonnes réponses d'affilée et baisse après 2 erreurs (réglages dans `src/config/difficulte.ts`). Les réglages des modes sont dans `src/config/modes.ts`.
 
 ## Installation
 

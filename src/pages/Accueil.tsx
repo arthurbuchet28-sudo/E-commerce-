@@ -1,13 +1,26 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { LISTE_CATEGORIES_JEU } from '@/config/categories';
+import { DEFI, MODES, ORDRE_MODES } from '@/config/modes';
+import { cleJour, serieDeJours } from '@/engine/defi';
 import { T } from '@/i18n/fr';
 import { banqueLocale } from '@/providers/local';
 import { Logo } from '@/components/Layout';
-
-const ICONES_MODES = ['⏱️', '❤️', '🎧', '📅', '👥', '🎓'];
+import { usePartie } from '@/store/partie';
+import { useRecords } from '@/store/records';
 
 export function Accueil() {
+  const navigate = useNavigate();
+  const defis = useRecords((s) => s.defis);
+  const { lancer, chargement } = usePartie();
+  const jour = cleJour();
+  const defiDuJour = defis[jour];
+  const serie = serieDeJours(Object.keys(defis), jour);
+
+  const jouerDefi = async () => {
+    if (await lancer({ mode: 'defi', categorie: 'mix', difficulte: DEFI.difficulte, nombreQuestions: DEFI.nombre, jour })) navigate('/partie');
+  };
+
   return (
     <div className="space-y-10">
       <section className="pt-6 text-center">
@@ -17,7 +30,7 @@ export function Accueil() {
         <p className="mx-auto mt-3 max-w-md text-lg text-slate-700 dark:text-slate-300">{T.accueil.sousTitre}</p>
         <motion.div className="mt-8" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
           <Link
-            to="/jouer"
+            to="/jouer/classique"
             className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-violet-700 to-fuchsia-600 px-10 py-5 font-display text-3xl font-extrabold text-white shadow-xl shadow-fuchsia-600/30"
           >
             <span aria-hidden>▶</span> {T.accueil.jouer}
@@ -26,30 +39,48 @@ export function Accueil() {
         <p className="mt-4 text-sm text-slate-600 dark:text-slate-400">{T.accueil.stats(banqueLocale().length)}</p>
       </section>
 
+      <section aria-labelledby="titre-defi" className="overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-500 to-teal-700 p-5 text-white shadow-lg">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 id="titre-defi" className="flex items-center gap-2 font-display text-2xl font-extrabold">
+              <span aria-hidden>📅</span> {T.accueil.defiTitre}
+            </h2>
+            <p className="mt-1 font-semibold">{defiDuJour ? T.accueil.defiFait(defiDuJour.bonnes, defiDuJour.total) : T.accueil.defiAJouer}</p>
+            <p className="mt-1 text-sm font-bold text-emerald-50">{T.accueil.serieJours(serie)}</p>
+            {defiDuJour && <p className="mt-2 text-xl tracking-widest" aria-label="Grille du défi">{defiDuJour.grille}</p>}
+          </div>
+          {!defiDuJour && (
+            <button
+              type="button"
+              onClick={() => void jouerDefi()}
+              disabled={chargement}
+              className="shrink-0 rounded-full bg-white px-5 py-3 font-display text-lg font-extrabold text-emerald-800 shadow-lg transition hover:-translate-y-0.5"
+            >
+              {T.accueil.jouerDefi}
+            </button>
+          )}
+        </div>
+      </section>
+
       <section aria-labelledby="titre-modes">
         <h2 id="titre-modes" className="font-display text-2xl font-extrabold">
           {T.accueil.modes}
         </h2>
-        <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
-          <Link
-            to="/jouer"
-            className="col-span-2 rounded-3xl bg-gradient-to-br from-amber-400 to-orange-500 p-4 text-slate-950 shadow-lg transition hover:-translate-y-1"
-          >
-            <span className="text-3xl" aria-hidden>
-              🎯
-            </span>
-            <p className="font-display text-xl font-extrabold">{T.accueil.modeClassique}</p>
-            <p className="text-sm font-semibold">{T.accueil.modeClassiqueDesc}</p>
-          </Link>
-          {T.accueil.autresModes.map((m, i) => (
-            <div key={m} className="rounded-3xl border-2 border-dashed border-violet-200 p-4 text-slate-600 dark:border-slate-700 dark:text-slate-400" aria-disabled>
-              <span className="text-2xl grayscale" aria-hidden>
-                {ICONES_MODES[i]}
-              </span>
-              <p className="font-bold">{m}</p>
-              <p className="text-xs font-semibold uppercase tracking-wide">{T.accueil.bientot}</p>
-            </div>
-          ))}
+        <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3">
+          {ORDRE_MODES.filter((m) => m !== 'defi').map((id, i) => {
+            const m = MODES[id];
+            return (
+              <motion.div key={id} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }} className={id === 'classique' ? 'col-span-2 sm:col-span-1' : ''}>
+                <Link to={`/jouer/${id}`} className={`flex h-full flex-col rounded-3xl bg-gradient-to-br p-4 text-slate-950 shadow-lg transition hover:-translate-y-1 ${m.degrade}`}>
+                  <span className="text-3xl" aria-hidden>
+                    {m.icone}
+                  </span>
+                  <span className="font-display text-xl font-extrabold">{m.nom}</span>
+                  <span className="text-sm font-semibold">{m.description}</span>
+                </Link>
+              </motion.div>
+            );
+          })}
         </div>
       </section>
 

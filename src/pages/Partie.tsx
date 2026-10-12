@@ -12,9 +12,11 @@ import { ZoneChoix } from '@/components/zones/ZoneChoix';
 import { ZoneChronologie } from '@/components/zones/ZoneChronologie';
 import { ZoneEstimation } from '@/components/zones/ZoneEstimation';
 import { ZoneSaisie } from '@/components/zones/ZoneSaisie';
+import { AnnonceNiveau, BadgeNiveau, Coeurs, EcranRelais, TableauDuel } from '@/components/IndicateursMode';
 import { infoCategorie } from '@/config/categories';
+import { CONTRE_LA_MONTRE, DUEL, MODES } from '@/config/modes';
 import type { Reponse } from '@/engine/evaluation';
-import { jokerApplicable, questionCourante, tempsQuestion } from '@/engine/partie';
+import { estDynamique, jokerApplicable, questionCourante, tempsQuestion } from '@/engine/partie';
 import { auHasard, T } from '@/i18n/fr';
 import { celebrerBonneReponse, vibrer } from '@/lib/effets';
 import { useAnimationsReduites } from '@/lib/hooks';
@@ -28,7 +30,7 @@ function centre(el: Element | null | undefined) {
 
 export function Partie() {
   const navigate = useNavigate();
-  const { partie, debutQuestion, repondre, joker, suivante, quitter } = usePartie();
+  const { partie, debutQuestion, finChrono, pret, repondre, joker, suivante, quitter, commencerTour, tempsEcoule } = usePartie();
   const reduit = useAnimationsReduites();
   const vibrations = useReglages((s) => s.vibrations);
 
@@ -46,9 +48,12 @@ export function Partie() {
   const enQuestion = phase === 'question';
   const total = partie ? tempsQuestion(partie) : 0;
 
-  // Chrono : décompte et temps écoulé.
+  const info = partie ? MODES[partie.config.mode] : undefined;
+  const [restantGlobal, setRestantGlobal] = useState(CONTRE_LA_MONTRE.duree);
+
+  // Chrono par question : décompte et temps écoulé (en duel, seulement une fois le joueur prêt).
   useEffect(() => {
-    if (phase !== 'question') return;
+    if (phase !== 'question' || total === null || !pret) return;
     const tick = () => {
       const r = total - (performance.now() - debutQuestion) / 1000;
       setRestant(Math.max(0, r));
@@ -57,7 +62,23 @@ export function Partie() {
     tick();
     const id = window.setInterval(tick, 100);
     return () => window.clearInterval(id);
-  }, [phase, total, debutQuestion, repondre]);
+  }, [phase, total, debutQuestion, repondre, pret]);
+
+  // Contre-la-montre : chrono global de la partie.
+  useEffect(() => {
+    if (finChrono === null) return;
+    const tick = () => {
+      const r = (finChrono - performance.now()) / 1000;
+      setRestantGlobal(Math.max(0, r));
+      if (r <= 0) {
+        tempsEcoule();
+        navigate('/resultats');
+      }
+    };
+    tick();
+    const id = window.setInterval(tick, 100);
+    return () => window.clearInterval(id);
+  }, [finChrono, tempsEcoule, navigate]);
 
   // Réinitialise la réponse à chaque nouvelle question.
   useEffect(() => {
@@ -85,7 +106,7 @@ export function Partie() {
         celebrerBonneReponse({
           origine: { x: de.x / window.innerWidth, y: de.y / window.innerHeight },
           serie: dernierResultat.serie,
-          rapidite: total > 0 ? 1 - dernierResultat.tempsMis / total : 0,
+          rapidite: total ? 1 - dernierResultat.tempsMis / total : 0.5,
           reduit,
         });
         vibrer(30, vibrations);
@@ -120,6 +141,14 @@ export function Partie() {
     if (usePartie.getState().partie?.phase === 'terminee') navigate('/resultats');
   }, [suivante, navigate]);
 
+  // Contre-la-montre : on enchaîne automatiquement, sans s'arrêter sur l'anecdote.
+  const enchainementAuto = partie?.config.mode === 'contre_la_montre';
+  useEffect(() => {
+    if (!enchainementAuto || !dernierResultat) return;
+    const id = window.setTimeout(continuer, dernierResultat.correct ? CONTRE_LA_MONTRE.delaiBonne : CONTRE_LA_MONTRE.delaiMauvaise);
+    return () => window.clearTimeout(id);
+  }, [enchainementAuto, dernierResultat, continuer]);
+
   // Clavier : 1 à 6 pour répondre (QCM), Entrée pour continuer.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -138,9 +167,15 @@ export function Partie() {
     return () => window.removeEventListener('keydown', onKey);
   }, [courante, phase, choisir, continuer]);
 
-  if (!partie) return <Navigate to="/jouer" replace />;
+  if (!partie || !info) return <Navigate to="/jouer" replace />;
   if (partie.phase === 'terminee') return <Navigate to="/resultats" replace />;
   if (!courante) return null;
+  if (!pret && partie.joueurs) {
+    const j = partie.joueurCourant;
+    return <EcranRelais nom={partie.joueurs[j]!.nom} couleur={DUEL.couleurs[j]!} onPret={commencerTour} />;
+  }
+  const dynamique = estDynamique(partie.config) && partie.config.mode !== 'classique' && partie.config.mode !== 'entrainement';
+  const adaptatif = partie.config.difficulte === 'adaptatif' || partie.config.mode === 'survie';
 
   const q = courante.question;
   const cat = infoCategorie(q.categorie);
@@ -157,16 +192,25 @@ export function Partie() {
     <div className="space-y-5">
       <PointsVolants envols={envols} onFini={(id) => setEnvols((e) => e.filter((x) => x.id !== id))} />
 
+      {partie.joueurs && <TableauDuel joueurs={partie.joueurs} courant={partie.joueurCourant} scoreCourant={partie.score} />}
+
       {/* Barre du haut : chrono, progression, combo, score */}
       <div className="flex items-center gap-4">
-        <Chrono restant={restant} total={total} actif={enQuestion} />
+        {info.chrono === 'question' && total !== null && <Chrono restant={restant} total={total} actif={enQuestion} />}
+        {info.chrono === 'global' && <Chrono restant={restantGlobal} total={CONTRE_LA_MONTRE.duree} actif libelle={T.jeu.tempsGlobal(Math.ceil(restantGlobal))} />}
         <div className="min-w-0 flex-1">
-          <div className="flex items-center justify-between gap-2 text-sm font-bold text-slate-600 dark:text-slate-300">
-            <span>{T.jeu.question(partie.index + 1, n)}</span>
-            <BadgeCombo serie={partie.serie} />
+          <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-bold text-slate-600 dark:text-slate-300">
+            <span className="flex items-center gap-2">
+              {dynamique ? T.jeu.questionSeule(partie.index + 1) : T.jeu.question(partie.index + 1, partie.config.difficulte === 'adaptatif' ? partie.config.nombreQuestions : n)}
+              {adaptatif && <BadgeNiveau niveau={partie.niveau} />}
+            </span>
+            {partie.vies !== null && <Coeurs vies={partie.vies} />}
+            {info.score && <BadgeCombo serie={partie.serie} />}
           </div>
+          {!dynamique && (
           <div className="mt-2 flex gap-1" role="progressbar" aria-valuemin={0} aria-valuemax={n} aria-valuenow={partie.resultats.length} aria-label="Progression">
-            {partie.questions.map((x, i) => {
+            {Array.from({ length: Math.max(n, partie.config.difficulte === 'adaptatif' ? partie.config.nombreQuestions : 0) }, (_, i) => {
+              const x = partie.questions[i];
               const r = partie.resultats[i];
               const couleur = r
                 ? r.correct
@@ -179,12 +223,15 @@ export function Partie() {
                 : i === partie.index
                   ? 'bg-violet-500'
                   : 'bg-slate-200 dark:bg-slate-700';
-              return <span key={x.question.id} className={`h-2 flex-1 rounded-full transition-colors ${couleur}`} />;
+              return <span key={x?.question.id ?? `a-venir-${i}`} className={`h-2 flex-1 rounded-full transition-colors ${couleur}`} />;
             })}
           </div>
+          )}
         </div>
-        <CompteurScore ref={scoreRef} score={partie.score} reduit={reduit} />
+        {info.score && <CompteurScore ref={scoreRef} score={partie.score} reduit={reduit} />}
       </div>
+
+      <AnnonceNiveau changement={dernierResultat?.changementNiveau} niveau={partie.niveau} />
 
       {/* Transition d'entrée uniquement : la question affichée est toujours celle à laquelle on répond. */}
       <motion.div key={q.id} initial={{ opacity: 0, x: 60 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.3, ease: 'easeOut' }} className="space-y-4">
@@ -227,7 +274,7 @@ export function Partie() {
           <BarreJokers restants={partie.jokersRestants} utilises={partie.jokersUtilises} inapplicables={jokersInapplicables} actif onJoker={joker} />
           {courante.mode === 'choix' && <p className="hidden text-xs text-slate-500 sm:block dark:text-slate-400">{T.jeu.raccourcis}</p>}
         </div>
-      ) : (
+      ) : enchainementAuto ? null : (
         dernierResultat && (
           <CarteRevelation
             ref={suivanteRef}
@@ -235,7 +282,12 @@ export function Partie() {
             bonne={courante.mode === 'chronologie' ? null : courante.bonne}
             anecdote={q.anecdote}
             titre={titreRevelation}
-            derniere={partie.index + 1 >= n}
+            derniere={
+              partie.vies === 0 ||
+              (!estDynamique(partie.config) && partie.index + 1 >= n) ||
+              (partie.config.difficulte === 'adaptatif' && !dynamique && partie.index + 1 >= partie.config.nombreQuestions)
+            }
+            avecPoints={info.score}
             onSuivante={continuer}
           />
         )

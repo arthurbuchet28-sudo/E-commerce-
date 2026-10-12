@@ -5,18 +5,24 @@ import { stockageJSON } from '@/lib/stockage';
 /** Nombre de questions mémorisées pour éviter les répétitions. */
 const MEMOIRE_QUESTIONS_VUES = 300;
 
+export type ResultatDefi = { score: number; bonnes: number; total: number; grille: string };
+
 type EtatRecords = {
-  /** Meilleur score par clé « mode:categorie:difficulte:nombre ». */
+  /** Meilleur score par clé (voir `cleRecord`). */
   records: Record<string, number>;
   /** Ids des questions vues récemment (les plus récentes à la fin). */
   vues: string[];
+  /** Défis du jour joués, par date AAAA-MM-JJ. */
+  defis: Record<string, ResultatDefi>;
   /** Enregistre un score ; renvoie true s'il bat le record précédent. */
   enregistrerScore: (cle: string, score: number) => boolean;
   marquerVues: (ids: string[]) => void;
+  enregistrerDefi: (jour: string, r: ResultatDefi) => void;
 };
 
-export function cleRecord(mode: string, categorie: string, difficulte: string, nombre: number): string {
-  return `${mode}:${categorie}:${difficulte}:${nombre}`;
+/** Clé de record : par mode, catégorie (ou filtre), difficulté et nombre de questions. */
+export function cleRecord(...parties: (string | number | undefined)[]): string {
+  return parties.filter((p) => p !== undefined && p !== '').join(':');
 }
 
 export const useRecords = create<EtatRecords>()(
@@ -24,6 +30,7 @@ export const useRecords = create<EtatRecords>()(
     (set, get) => ({
       records: {},
       vues: [],
+      defis: {},
       enregistrerScore: (cle, score) => {
         const precedent = get().records[cle];
         const record = score > 0 && (precedent === undefined || score > precedent);
@@ -34,7 +41,12 @@ export const useRecords = create<EtatRecords>()(
         const deja = new Set(ids);
         set({ vues: [...get().vues.filter((id) => !deja.has(id)), ...ids].slice(-MEMOIRE_QUESTIONS_VUES) });
       },
+      enregistrerDefi: (jour, r) => {
+        // Un seul essai par jour : le premier résultat est conservé.
+        if (get().defis[jour]) return;
+        set({ defis: { ...get().defis, [jour]: r } });
+      },
     }),
-    { name: 'quizmania-records', storage: stockageJSON, version: 1 },
+    { name: 'quizmania-records', storage: stockageJSON, version: 2, migrate: (etat) => ({ defis: {}, ...(etat as object) }) as EtatRecords },
   ),
 );

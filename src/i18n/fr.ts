@@ -1,7 +1,7 @@
 /**
  * Tous les textes de l'interface, regroupés ici pour faciliter les modifications.
  */
-import type { Joker, NiveauDifficulte } from '@/config/difficulte';
+import type { ChoixDifficulte, Joker } from '@/config/difficulte';
 
 export const T = {
   appNom: 'QuizMania',
@@ -11,13 +11,29 @@ export const T = {
     sousTitre: 'Choisis un thème, règle la difficulté… et enchaîne les bonnes réponses !',
     bientot: 'Bientôt',
     modes: 'Modes de jeu',
-    modeClassique: 'Classique',
-    modeClassiqueDesc: '10 ou 20 questions sur le thème de ton choix',
-    autresModes: ['Contre-la-montre', 'Survie', 'Blind test', 'Défi du jour', 'Duel local', 'Entraînement'],
+    defiTitre: 'Défi du jour',
+    defiAJouer: 'Le défi du jour t’attend !',
+    defiFait: (bonnes: number, total: number) => `Défi réussi à ${bonnes}/${total} — reviens demain !`,
+    serieJours: (n: number) => (n > 0 ? `🔥 ${n} jour${n > 1 ? 's' : ''} de suite` : 'Commence ta série aujourd’hui'),
+    jouerDefi: 'Relever le défi',
     stats: (n: number) => `${n} questions dans la banque locale`,
   },
   config: {
     titre: 'Prépare ta partie',
+    joueurs: 'Joueurs',
+    nomJoueur: (i: number) => `Joueur ${i}`,
+    ajouterJoueur: '+ Ajouter un joueur',
+    retirerJoueur: (nom: string) => `Retirer ${nom}`,
+    parJoueur: 'Questions par joueur',
+    musique: 'Playlist',
+    toutes: 'Toutes',
+    parEpoque: 'Par époque',
+    parStyle: 'Par style',
+    blindTestIndisponible: 'Le blind test a besoin d’une connexion Internet pour charger les extraits. Réessaie une fois connecté.',
+    survieDepart: 'Difficulté de départ',
+    adaptatifAide: 'La difficulté monte après 3 bonnes réponses d’affilée et baisse après 2 erreurs.',
+    chronoAide: (s: number) => `${s} secondes pour enchaîner un maximum de bonnes réponses.`,
+    entrainementAide: 'Pas de chrono, pas de score : prends le temps de lire les anecdotes.',
     categorie: 'Thème',
     difficulte: 'Difficulté',
     nombre: 'Nombre de questions',
@@ -33,9 +49,19 @@ export const T = {
     moyen: 'Moyen',
     difficile: 'Difficile',
     expert: 'Expert',
-  } satisfies Record<NiveauDifficulte, string>,
+    adaptatif: 'Adaptatif',
+  } satisfies Record<ChoixDifficulte, string>,
   jeu: {
     question: (i: number, n: number) => `Question ${i} / ${n}`,
+    questionSeule: (i: number) => `Question ${i}`,
+    vies: (n: number) => `${n} vie${n > 1 ? 's' : ''} restante${n > 1 ? 's' : ''}`,
+    niveauHausse: (n: string) => `Niveau supérieur : ${n} !`,
+    niveauBaisse: (n: string) => `On souffle un peu : ${n}`,
+    tempsGlobal: (s: number) => `${s} secondes restantes pour la partie`,
+    tourDe: (nom: string) => `Au tour de ${nom} !`,
+    passeAppareil: 'Passe l’appareil, puis appuie quand tu es prêt·e.',
+    jePrends: 'C’est parti !',
+    bonnesReponses: (n: number) => `${n} bonne${n > 1 ? 's' : ''}`,
     score: 'Score',
     suivante: 'Question suivante',
     resultats: 'Voir les résultats',
@@ -75,6 +101,15 @@ export const T = {
   jokersRestants: (n: number) => (n === 0 ? 'Aucun joker' : `${n} joker${n > 1 ? 's' : ''}`),
   resultats: {
     titre: 'Partie terminée !',
+    chrono: (n: number, s: number) => `${n} bonne${n > 1 ? 's' : ''} réponse${n > 1 ? 's' : ''} en ${s} secondes`,
+    survie: (n: number) => `Tu as tenu ${n} question${n > 1 ? 's' : ''} !`,
+    podium: 'Podium',
+    vainqueur: (nom: string) => `${nom} remporte le duel !`,
+    egalite: 'Égalité parfaite !',
+    defiTermine: 'Défi du jour terminé',
+    revenirDemain: 'Un nouveau défi t’attend demain.',
+    anecdotes: 'Ce que tu as appris',
+    entrainementTitre: 'Entraînement terminé',
     nouveauRecord: 'Nouveau record !',
     score: 'Score',
     precision: 'Précision',
@@ -92,8 +127,8 @@ export const T = {
       2: 'Belle partie ! Encore un petit effort pour les 3 étoiles.',
       3: 'Magistral ! Tu es une véritable encyclopédie.',
     } as Record<1 | 2 | 3, string>,
-    partage: (score: number, bonnes: number, total: number, grille: string, theme: string, difficulte: string) =>
-      `QuizMania 🎯 ${theme} (${difficulte})\n${grille}\n${bonnes}/${total} · ${score} points\nSauras-tu faire mieux ?`,
+    partage: (mode: string, score: number, bonnes: number, total: number, grille: string, theme: string, difficulte: string) =>
+      `QuizMania ${mode} 🎯 ${theme} (${difficulte})\n${grille}\n${bonnes}/${total} · ${score} points\nSauras-tu faire mieux ?`,
   },
   reglages: {
     titre: 'Réglages',

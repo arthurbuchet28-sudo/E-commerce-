@@ -17,6 +17,8 @@ describe('ZoneChronologie', () => {
       choix: ['B', 'A', 'C'],
       bonne: 'A → B → C',
       marge: 0,
+      niveau: 'moyen',
+      joueur: 0,
     };
     render(<ZoneChronologie courante={courante} enQuestion ordreJoueur={null} onValider={onValider} />);
     await userEvent.click(screen.getByRole('button', { name: 'Descendre « B »' }));
@@ -45,6 +47,8 @@ describe('ZoneEstimation', () => {
       choix: [],
       bonne: '6,56 francs',
       marge: 2,
+      niveau: 'moyen',
+      joueur: 0,
     };
     render(<ZoneEstimation courante={courante} enQuestion onValider={onValider} />);
     await userEvent.type(screen.getByRole('textbox', { name: 'Ton estimation' }), '6,5');

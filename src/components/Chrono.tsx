@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { T } from '@/i18n/fr';
 
-type Props = { restant: number; total: number; actif: boolean };
+type Props = { restant: number; total: number; actif: boolean; libelle?: string };
 
 /** Chrono circulaire : vert → orange → rouge, pulse dans les 5 dernières secondes. */
-export function Chrono({ restant, total, actif }: Props) {
+export function Chrono({ restant, total, actif, libelle }: Props) {
   const ratio = total > 0 ? Math.max(0, Math.min(1, restant / total)) : 0;
   const rayon = 26;
   const circonference = 2 * Math.PI * rayon;
@@ -17,7 +17,7 @@ export function Chrono({ restant, total, actif }: Props) {
       animate={urgent ? { scale: [1, 1.12, 1] } : { scale: 1 }}
       transition={urgent ? { duration: 0.8, repeat: Infinity } : undefined}
       role="timer"
-      aria-label={T.jeu.secondes(secondes)}
+      aria-label={libelle ?? T.jeu.secondes(secondes)}
     >
       <svg viewBox="0 0 64 64" className="h-full w-full -rotate-90">
         <circle cx="32" cy="32" r={rayon} fill="none" strokeWidth="7" className="stroke-slate-200 dark:stroke-slate-700" />

@@ -1,4 +1,4 @@
-import { HashRouter, Link, Route, Routes } from 'react-router-dom';
+import { HashRouter, Link, Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from '@/components/Layout';
 import { T } from '@/i18n/fr';
 import { Accueil } from '@/pages/Accueil';
@@ -26,7 +26,8 @@ export function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Accueil />} />
-          <Route path="/jouer" element={<Configuration />} />
+          <Route path="/jouer" element={<Navigate to="/jouer/classique" replace />} />
+          <Route path="/jouer/:mode" element={<Configuration />} />
           <Route path="/partie" element={<Partie />} />
           <Route path="/resultats" element={<Resultats />} />
           <Route path="*" element={<Introuvable />} />

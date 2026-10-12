@@ -18,6 +18,8 @@ export type CalculPoints = {
   /** Secondes restantes au moment de répondre (null = pas de chrono). */
   tempsRestant: number | null;
   tempsTotal: number | null;
+  /** Bonus de rapidité maximal (fraction de la base), si le mode le modifie (blind test). */
+  bonusRapiditeMax?: number;
 };
 
 export type DetailPoints = {
@@ -42,7 +44,7 @@ export function calculerPoints(p: CalculPoints): DetailPoints {
   let bonusRapidite = 0;
   if (p.tempsRestant !== null && p.tempsTotal !== null && p.tempsTotal > 0) {
     const ratio = Math.min(1, Math.max(0, p.tempsRestant / p.tempsTotal));
-    bonusRapidite = Math.round(base * POINTS.bonusRapiditeMax * ratio);
+    bonusRapidite = Math.round(base * (p.bonusRapiditeMax ?? POINTS.bonusRapiditeMax) * ratio);
   }
   // Le combo ne s'applique qu'aux réponses justes.
   const combo = p.correct ? multiplicateurCombo(p.serie) : 1;
