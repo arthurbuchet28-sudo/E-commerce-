@@ -183,6 +183,11 @@ export function Salon() {
       <div className="space-y-4">
         <h1 className="font-display text-3xl font-extrabold">{T.multi.titre}</h1>
         <Message alerte>{T.multi.indisponible}</Message>
+        {import.meta.env.VITE_LIEN_MULTI && (
+          <a href={import.meta.env.VITE_LIEN_MULTI} className="block rounded-full bg-cyan-300 px-6 py-4 text-center font-display text-xl font-extrabold text-slate-950 shadow-lg">
+            📱 {T.multi.ouvrirVersionAmis}
+          </a>
+        )}
         <Link to="/" className="inline-block font-bold text-violet-700 underline dark:text-violet-300">
           {T.erreurs.retourAccueil}
         </Link>

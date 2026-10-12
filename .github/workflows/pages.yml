@@ -1,0 +1,39 @@
+# Publie QuizMania sur GitHub Pages (branche gh-pages) à chaque push sur la branche de travail ou main.
+name: Déploiement GitHub Pages
+
+on:
+  push:
+    branches: [main, claude/gallant-wozniak-kb8g09]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploiement:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+        env:
+          VITE_LIEN_MULTI: https://claude.ai/artifact/GR6oHvReGiZ2W1jJckQRgC
+      - name: Publication sur la branche gh-pages
+        run: |
+          touch dist/.nojekyll
+          cd dist
+          git init -q -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "Déploiement de ${GITHUB_SHA}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" gh-pages

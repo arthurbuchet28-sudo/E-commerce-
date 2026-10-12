@@ -295,6 +295,7 @@ export const T = {
     indisponible:
       'Le jeu entre amis a besoin d’un salon en ligne : ouvre QuizMania depuis son lien de partage Claude (tes amis doivent y avoir accès), connecté à ton compte.',
     erreur: 'Impossible de rejoindre le salon. Vérifie ta connexion et réessaie.',
+    ouvrirVersionAmis: 'Ouvrir la version « entre amis »',
     quitter: 'Quitter le salon',
     classement: 'Classement en direct',
     classementFinal: 'Classement final',
