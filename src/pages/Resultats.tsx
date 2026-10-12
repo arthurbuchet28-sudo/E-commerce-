@@ -1,0 +1,179 @@
+import { animate, motion, useMotionValue, useTransform } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Etoiles } from '@/components/Etoiles';
+import { infoCategorie } from '@/config/categories';
+import { grilleEmojis, resumerPartie } from '@/engine/partie';
+import { T } from '@/i18n/fr';
+import { celebrerFinDePartie } from '@/lib/effets';
+import { useAnimationsReduites } from '@/lib/hooks';
+import { usePartie } from '@/store/partie';
+
+function formaterPourcent(x: number) {
+  return `${Math.round(x * 100)} %`;
+}
+function formaterSecondes(x: number) {
+  return `${x.toLocaleString('fr-FR', { maximumFractionDigits: 1 })} s`;
+}
+
+export function Resultats() {
+  const navigate = useNavigate();
+  const { partie, resultat, rejouer } = usePartie();
+  const reduit = useAnimationsReduites();
+  const [copie, setCopie] = useState(false);
+
+  const fini = partie?.phase === 'terminee';
+  const record = resultat?.nouveauRecord ?? false;
+  useEffect(() => {
+    if (!fini) return;
+    return celebrerFinDePartie(record, reduit);
+  }, [fini, record, reduit]);
+
+  const score = useMotionValue(0);
+  const scoreAffiche = useTransform(score, (v) => Math.round(v).toLocaleString('fr-FR'));
+  useEffect(() => {
+    if (!partie) return;
+    if (reduit) return score.set(partie.score);
+    const c = animate(score, partie.score, { duration: 1.6, ease: 'easeOut', delay: 0.3 });
+    return () => c.stop();
+  }, [partie, reduit, score]);
+
+  if (!partie || !fini) return <Navigate to="/jouer" replace />;
+
+  const r = resumerPartie(partie);
+  const cat = infoCategorie(partie.config.categorie);
+  const texteDifficulte = T.difficultes[partie.config.difficulte];
+
+  const partager = async () => {
+    const texte = T.resultats.partage(r.score, r.bonnes, r.total, grilleEmojis(partie.resultats), cat.nom, texteDifficulte);
+    try {
+      if (navigator.share && window.matchMedia('(pointer: coarse)').matches) {
+        await navigator.share({ text: texte });
+        return;
+      }
+      await navigator.clipboard.writeText(texte);
+      setCopie(true);
+      window.setTimeout(() => setCopie(false), 2500);
+    } catch {
+      /* partage annulé */
+    }
+  };
+
+  const relancer = async () => {
+    if (await rejouer()) navigate('/partie');
+  };
+
+  const stats = [
+    { libelle: T.resultats.precision, valeur: formaterPourcent(r.precision), icone: '🎯' },
+    { libelle: T.resultats.tempsMoyen, valeur: formaterSecondes(r.tempsMoyen), icone: '⏱️' },
+    { libelle: T.resultats.meilleureSerie, valeur: String(r.meilleureSerie), icone: '🔥' },
+    {
+      libelle: T.resultats.record,
+      valeur: (record ? r.score : Math.max(resultat?.ancienRecord ?? 0, r.score)).toLocaleString('fr-FR'),
+      icone: '🏆',
+    },
+  ];
+
+  return (
+    <div className="space-y-6 text-center">
+      <motion.div initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ type: 'spring', stiffness: 220, damping: 14 }}>
+        <p className="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400">
+          {cat.icone} {cat.nom} · {texteDifficulte}
+        </p>
+        <h1 className="mt-1 font-display text-4xl font-extrabold">{T.resultats.titre}</h1>
+      </motion.div>
+
+      {record && (
+        <motion.p
+          initial={{ scale: 0, rotate: -8 }}
+          animate={{ scale: [0, 1.2, 1], rotate: [-8, 4, 0] }}
+          transition={{ delay: 0.8, duration: 0.6 }}
+          className="mx-auto inline-block rounded-full bg-gradient-to-r from-amber-300 to-orange-500 px-5 py-2 font-display text-xl font-extrabold text-slate-950 shadow-lg"
+        >
+          🏆 {T.resultats.nouveauRecord}
+        </motion.p>
+      )}
+
+      <Etoiles nombre={r.etoiles} />
+
+      <div>
+        <p className="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400">{T.resultats.score}</p>
+        <motion.p className="font-display text-6xl font-extrabold tabular-nums text-violet-700 dark:text-amber-300" aria-label={`${r.score} points`}>
+          {scoreAffiche}
+        </motion.p>
+        <p className="mt-1 font-bold">
+          {r.bonnes} / {r.total} bonnes réponses
+        </p>
+        <p className="mx-auto mt-2 max-w-sm text-slate-700 dark:text-slate-300">{T.resultats.messages[r.etoiles]}</p>
+      </div>
+
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        {stats.map((s, i) => (
+          <motion.div
+            key={s.libelle}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1 + i * 0.1 }}
+            className="rounded-2xl bg-white p-3 shadow-md dark:bg-slate-800"
+          >
+            <span className="text-2xl" aria-hidden>
+              {s.icone}
+            </span>
+            <p className="font-display text-2xl font-extrabold tabular-nums">{s.valeur}</p>
+            <p className="text-xs font-bold text-slate-600 dark:text-slate-400">{s.libelle}</p>
+          </motion.div>
+        ))}
+      </div>
+
+      <p className="text-2xl tracking-widest" aria-label="Grille des réponses">
+        {grilleEmojis(partie.resultats)}
+      </p>
+
+      <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
+        <button
+          type="button"
+          onClick={() => void relancer()}
+          className="rounded-full bg-gradient-to-r from-violet-700 to-fuchsia-600 px-8 py-4 font-display text-xl font-extrabold text-white shadow-lg"
+        >
+          🔁 {T.resultats.rejouer}
+        </button>
+        <button type="button" onClick={() => void partager()} className="rounded-full bg-amber-400 px-8 py-4 font-display text-xl font-extrabold text-slate-950 shadow-lg">
+          {copie ? `✓ ${T.resultats.copie}` : `📤 ${T.resultats.partager}`}
+        </button>
+      </div>
+      <div className="flex justify-center gap-6 font-bold">
+        <Link to="/jouer" className="text-violet-700 underline-offset-4 hover:underline dark:text-violet-300">
+          {T.resultats.changer}
+        </Link>
+        <Link to="/" className="text-violet-700 underline-offset-4 hover:underline dark:text-violet-300">
+          {T.resultats.accueil}
+        </Link>
+      </div>
+
+      <section className="text-left" aria-labelledby="titre-recap">
+        <h2 id="titre-recap" className="font-display text-2xl font-extrabold">
+          {T.resultats.recap}
+        </h2>
+        <ol className="mt-3 space-y-2">
+          {partie.questions.map((q, i) => {
+            const res = partie.resultats[i];
+            return (
+              <li key={q.question.id} className="flex gap-3 rounded-2xl bg-white p-3 shadow-sm dark:bg-slate-800">
+                <span className="text-xl" aria-label={res?.correct ? 'Bonne réponse' : res?.passee ? 'Passée' : 'Mauvaise réponse'}>
+                  {res?.correct ? '✅' : res?.passee ? '⏭️' : '❌'}
+                </span>
+                <div className="min-w-0">
+                  <p className="font-bold">{q.question.enonce}</p>
+                  <p className="text-sm text-slate-700 dark:text-slate-300">
+                    <span className="font-semibold text-emerald-800 dark:text-emerald-300">{q.bonne}</span>
+                    {res && !res.correct && res.reponse && <span> · ta réponse : {res.reponse}</span>}
+                  </p>
+                </div>
+              </li>
+            );
+          })}
+        </ol>
+      </section>
+    </div>
+  );
+}

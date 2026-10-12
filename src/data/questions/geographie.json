@@ -1,0 +1,197 @@
+{
+  "categorie": "geographie",
+  "questions": [
+    {
+      "id": "loc-ge-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quelle est la capitale de l'Espagne ?",
+      "choix": [
+        "Madrid",
+        "Barcelone",
+        "Séville",
+        "Lisbonne"
+      ],
+      "bonneReponse": "Madrid",
+      "anecdote": "Perchée à environ 650 mètres d'altitude, Madrid est la plus haute capitale de l'Union européenne."
+    },
+    {
+      "id": "loc-ge-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel est le plus long fleuve de France ?",
+      "choix": [
+        "La Loire",
+        "La Seine",
+        "Le Rhône",
+        "La Garonne"
+      ],
+      "bonneReponse": "La Loire",
+      "anecdote": "Avec environ 1 000 km, la Loire coule entièrement en France."
+    },
+    {
+      "id": "loc-ge-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Sur quel continent se trouve l'Égypte ?",
+      "choix": [
+        "L'Afrique",
+        "L'Asie",
+        "L'Europe",
+        "L'Océanie"
+      ],
+      "bonneReponse": "L'Afrique",
+      "anecdote": "Grâce à la péninsule du Sinaï, une petite partie de l'Égypte se trouve aussi en Asie."
+    },
+    {
+      "id": "loc-ge-004",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quelle est la capitale de l'Australie ?",
+      "choix": [
+        "Canberra",
+        "Sydney",
+        "Melbourne",
+        "Perth"
+      ],
+      "bonneReponse": "Canberra",
+      "anecdote": "Canberra a été construite de toutes pièces, comme compromis entre Sydney et Melbourne."
+    },
+    {
+      "id": "loc-ge-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Combien de régions compte la France métropolitaine depuis 2016 ?",
+      "choix": [
+        "13",
+        "12",
+        "18",
+        "22"
+      ],
+      "bonneReponse": "13",
+      "anecdote": "Avant la réforme de 2016, il y en avait 22. Avec l'outre-mer, la France compte 18 régions."
+    },
+    {
+      "id": "loc-ge-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel est le plus haut sommet des Alpes ?",
+      "choix": [
+        "Le mont Blanc",
+        "Le Cervin",
+        "Le mont Rose",
+        "La barre des Écrins"
+      ],
+      "bonneReponse": "Le mont Blanc",
+      "anecdote": "Son altitude, autour de 4 805 m, varie de quelques mètres selon l'épaisseur de neige au sommet."
+    },
+    {
+      "id": "loc-ge-007",
+      "type": "vrai_faux",
+      "difficulte": 2,
+      "enonce": "La France partage une frontière terrestre avec le Brésil.",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Grâce à la Guyane ! C'est même la plus longue frontière terrestre de la France, environ 730 km."
+    },
+    {
+      "id": "loc-ge-008",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel pays possède le plus de fuseaux horaires, territoires d'outre-mer compris ?",
+      "choix": [
+        "La France",
+        "La Russie",
+        "Les États-Unis",
+        "Le Royaume-Uni",
+        "La Chine",
+        "L'Australie"
+      ],
+      "bonneReponse": "La France",
+      "anecdote": "Grâce à ses territoires d'outre-mer, la France s'étend sur 12 fuseaux horaires."
+    },
+    {
+      "id": "loc-ge-009",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel département porte le numéro 69 ?",
+      "choix": [
+        "Le Rhône",
+        "La Loire",
+        "L'Isère",
+        "L'Ain",
+        "La Savoie",
+        "Le Puy-de-Dôme"
+      ],
+      "bonneReponse": "Le Rhône",
+      "anecdote": "Depuis 2015, la Métropole de Lyon est une collectivité distincte du département du Rhône."
+    },
+    {
+      "id": "loc-ge-010",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quelle est la capitale de la Nouvelle-Zélande ?",
+      "choix": [
+        "Wellington",
+        "Auckland",
+        "Christchurch",
+        "Hamilton",
+        "Dunedin",
+        "Queenstown"
+      ],
+      "bonneReponse": "Wellington",
+      "anecdote": "C'est la capitale d'État souverain la plus australe du monde."
+    },
+    {
+      "id": "loc-ge-011",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel est le plus grand désert chaud du monde ?",
+      "choix": [
+        "Le Sahara",
+        "Le désert de Gobi",
+        "Le Kalahari",
+        "L'Atacama",
+        "Le désert d'Arabie",
+        "Le Namib"
+      ],
+      "bonneReponse": "Le Sahara",
+      "anecdote": "Si l'on compte les déserts froids, c'est l'Antarctique qui l'emporte."
+    },
+    {
+      "id": "loc-ge-012",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Quelle est la préfecture du département de l'Aveyron ?",
+      "choix": [
+        "Rodez",
+        "Millau",
+        "Albi",
+        "Cahors",
+        "Aurillac",
+        "Villefranche-de-Rouergue"
+      ],
+      "bonneReponse": "Rodez",
+      "anecdote": "Rodez abrite le musée consacré au peintre Pierre Soulages, natif de la ville."
+    },
+    {
+      "id": "loc-ge-013",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Quel pays a pour capitale Ouagadougou ?",
+      "choix": [
+        "Le Burkina Faso",
+        "Le Mali",
+        "Le Niger",
+        "Le Togo",
+        "Le Bénin",
+        "Le Sénégal"
+      ],
+      "bonneReponse": "Le Burkina Faso",
+      "anecdote": "Anciennement Haute-Volta, il a été renommé en 1984 : « Burkina Faso » signifie « pays des hommes intègres »."
+    }
+  ]
+}

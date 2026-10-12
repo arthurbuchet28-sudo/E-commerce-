@@ -1,0 +1,199 @@
+{
+  "categorie": "jeux_video_pop",
+  "questions": [
+    {
+      "id": "loc-jv-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel est le métier de Mario ?",
+      "choix": [
+        "Plombier",
+        "Électricien",
+        "Boulanger",
+        "Pompier"
+      ],
+      "bonneReponse": "Plombier",
+      "anecdote": "Dans « Donkey Kong » (1981), il était charpentier et s'appelait « Jumpman »."
+    },
+    {
+      "id": "loc-jv-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Comment s'appelle le petit chien d'Obélix ?",
+      "choix": [
+        "Idéfix",
+        "Rantanplan",
+        "Milou",
+        "Pif"
+      ],
+      "bonneReponse": "Idéfix",
+      "anecdote": "Il apparaît pour la première fois dans « Le Tour de Gaule d'Astérix »."
+    },
+    {
+      "id": "loc-jv-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Dans quel jeu construit-on avec des blocs dans un monde tout en cubes ?",
+      "choix": [
+        "Minecraft",
+        "Fortnite",
+        "Roblox",
+        "Tetris"
+      ],
+      "bonneReponse": "Minecraft",
+      "anecdote": "C'est le jeu vidéo le plus vendu de l'histoire, avec plus de 300 millions d'exemplaires."
+    },
+    {
+      "id": "loc-jv-004",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Comment s'appelle la princesse que Mario doit souvent sauver ?",
+      "choix": [
+        "Peach",
+        "Zelda",
+        "Daisy",
+        "Harmonie"
+      ],
+      "bonneReponse": "Peach",
+      "anecdote": "Dans les premières versions américaines, elle s'appelait « Princess Toadstool »."
+    },
+    {
+      "id": "loc-jv-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel héros de jeu vidéo est un hérisson bleu ultra-rapide ?",
+      "choix": [
+        "Sonic",
+        "Crash",
+        "Spyro",
+        "Knuckles"
+      ],
+      "bonneReponse": "Sonic",
+      "anecdote": "Sonic a été créé par SEGA en 1991 pour concurrencer Mario."
+    },
+    {
+      "id": "loc-jv-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Comment s'appelle le héros de la série « The Legend of Zelda » ?",
+      "choix": [
+        "Link",
+        "Zelda",
+        "Ganon",
+        "Navi"
+      ],
+      "bonneReponse": "Link",
+      "anecdote": "On le confond souvent avec Zelda, qui est en fait la princesse."
+    },
+    {
+      "id": "loc-jv-007",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel éditeur français a créé la série « Rayman » ?",
+      "choix": [
+        "Ubisoft",
+        "Gameloft",
+        "Quantic Dream",
+        "Arkane"
+      ],
+      "bonneReponse": "Ubisoft",
+      "anecdote": "Le personnage a été imaginé par Michel Ancel ; le premier jeu est sorti en 1995."
+    },
+    {
+      "id": "loc-jv-008",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Dans « Tetris », combien de carrés composent chaque pièce ?",
+      "choix": [
+        "4",
+        "3",
+        "5",
+        "6",
+        "2",
+        "8"
+      ],
+      "bonneReponse": "4",
+      "anecdote": "Ces pièces s'appellent des tétrominos. Le jeu a été créé par Alexeï Pajitnov en 1984, en URSS."
+    },
+    {
+      "id": "loc-jv-009",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel jeu de Quantic Dream sorti en 2018 met en scène des androïdes ?",
+      "choix": [
+        "Detroit: Become Human",
+        "Heavy Rain",
+        "Beyond: Two Souls",
+        "Fahrenheit",
+        "Life is Strange",
+        "Remember Me"
+      ],
+      "bonneReponse": "Detroit: Become Human",
+      "anecdote": "Quantic Dream est un studio parisien fondé par David Cage en 1997."
+    },
+    {
+      "id": "loc-jv-010",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quelle équipe de super-héros Marvel réunit Iron Man, Thor et Hulk ?",
+      "choix": [
+        "Les Avengers",
+        "Les X-Men",
+        "La Justice League",
+        "Les Gardiens de la Galaxie",
+        "Les Quatre Fantastiques",
+        "Les Defenders"
+      ],
+      "bonneReponse": "Les Avengers",
+      "anecdote": "En 2019, « Avengers: Endgame » est brièvement devenu le plus gros succès de l'histoire du box-office."
+    },
+    {
+      "id": "loc-jv-011",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel jeu Nintendo, sorti avec la Switch en 2017, propose d'explorer Hyrule en monde ouvert ?",
+      "choix": [
+        "Zelda: Breath of the Wild",
+        "Super Mario Odyssey",
+        "Xenoblade Chronicles 2",
+        "Splatoon 2",
+        "Metroid Prime",
+        "Kirby Star Allies"
+      ],
+      "bonneReponse": "Zelda: Breath of the Wild",
+      "anecdote": "Il est sorti le 3 mars 2017, le jour du lancement de la console."
+    },
+    {
+      "id": "loc-jv-012",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Quelle fut la dernière console de salon de SEGA, sortie en 1998 au Japon ?",
+      "choix": [
+        "La Dreamcast",
+        "La Saturn",
+        "La Mega Drive",
+        "La Master System",
+        "La Game Gear",
+        "Le Mega-CD"
+      ],
+      "bonneReponse": "La Dreamcast",
+      "anecdote": "Arrêtée en 2001, elle marque la sortie de SEGA du marché des consoles."
+    },
+    {
+      "id": "loc-jv-013",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Qui est le créateur de la série « Metal Gear » ?",
+      "choix": [
+        "Hideo Kojima",
+        "Shigeru Miyamoto",
+        "Hironobu Sakaguchi",
+        "Yū Suzuki",
+        "Shinji Mikami",
+        "Fumito Ueda"
+      ],
+      "bonneReponse": "Hideo Kojima",
+      "anecdote": "Il a ensuite fondé Kojima Productions, à qui l'on doit « Death Stranding » (2019)."
+    }
+  ]
+}

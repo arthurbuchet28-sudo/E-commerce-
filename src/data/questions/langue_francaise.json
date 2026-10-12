@@ -1,0 +1,199 @@
+{
+  "categorie": "langue_francaise",
+  "questions": [
+    {
+      "id": "loc-la-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Que signifie l'expression « poser un lapin » ?",
+      "choix": [
+        "Ne pas venir à un rendez-vous",
+        "Faire une blague",
+        "Partir en courant",
+        "Offrir un cadeau"
+      ],
+      "bonneReponse": "Ne pas venir à un rendez-vous",
+      "anecdote": "Au XIXe siècle, « faire un lapin » voulait dire ne pas payer ce que l'on devait."
+    },
+    {
+      "id": "loc-la-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Que signifie « avoir le cafard » ?",
+      "choix": [
+        "Être déprimé",
+        "Avoir peur",
+        "Avoir faim",
+        "Être sale"
+      ],
+      "bonneReponse": "Être déprimé",
+      "anecdote": "Baudelaire a popularisé ce sens de mélancolie dans « Les Fleurs du mal »."
+    },
+    {
+      "id": "loc-la-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Combien de lettres compte l'alphabet français ?",
+      "choix": [
+        "26",
+        "24",
+        "25",
+        "28"
+      ],
+      "bonneReponse": "26",
+      "anecdote": "La lettre la plus utilisée en français est le E."
+    },
+    {
+      "id": "loc-la-004",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Que signifie « tomber dans les pommes » ?",
+      "choix": [
+        "S'évanouir",
+        "Tomber amoureux",
+        "Être ruiné",
+        "Faire une chute"
+      ],
+      "bonneReponse": "S'évanouir",
+      "anecdote": "Une hypothèse la rattache à George Sand, qui écrivait être « dans les pommes cuites » pour dire qu'elle était épuisée."
+    },
+    {
+      "id": "loc-la-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel est le pluriel de « cheval » ?",
+      "choix": [
+        "Chevaux",
+        "Chevals",
+        "Chevaus",
+        "Chevales"
+      ],
+      "bonneReponse": "Chevaux",
+      "anecdote": "Attention : « bal », « carnaval » ou « festival » prennent un simple -s au pluriel."
+    },
+    {
+      "id": "loc-la-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Que veut dire « coûter les yeux de la tête » ?",
+      "choix": [
+        "Être très cher",
+        "Faire très mal",
+        "Être très beau",
+        "Être introuvable"
+      ],
+      "bonneReponse": "Être très cher",
+      "anecdote": "Une expression cousine, venue de l'anglais, est « coûter un bras »."
+    },
+    {
+      "id": "loc-la-007",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Lequel de ces mots est un palindrome ?",
+      "choix": [
+        "Kayak",
+        "Bateau",
+        "Canoë",
+        "Radeau"
+      ],
+      "bonneReponse": "Kayak",
+      "anecdote": "« Ésope reste ici et se repose » est une célèbre phrase palindrome."
+    },
+    {
+      "id": "loc-la-008",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Que signifie « être chocolat » ?",
+      "choix": [
+        "Être privé de ce qu'on espérait",
+        "Être gourmand",
+        "Être bronzé",
+        "Être très heureux",
+        "Être en colère",
+        "Être épuisé"
+      ],
+      "bonneReponse": "Être privé de ce qu'on espérait",
+      "anecdote": "L'expression viendrait du clown Chocolat, partenaire de Footit, souvent victime de ses farces."
+    },
+    {
+      "id": "loc-la-009",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Selon la légende populaire, de quelle langue viendrait le mot « bistro » ?",
+      "choix": [
+        "Du russe",
+        "De l'italien",
+        "De l'anglais",
+        "De l'allemand",
+        "De l'arabe",
+        "Du breton"
+      ],
+      "bonneReponse": "Du russe",
+      "anecdote": "Les cosaques de 1814 auraient crié « bystro » (vite !). Les linguistes en doutent : le mot n'apparaît qu'à la fin du XIXe siècle."
+    },
+    {
+      "id": "loc-la-010",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Combien de membres compte l'Académie française ?",
+      "choix": [
+        "40",
+        "30",
+        "50",
+        "36",
+        "45",
+        "60"
+      ],
+      "bonneReponse": "40",
+      "anecdote": "Surnommés « les Immortels », ils siègent dans une institution fondée par Richelieu en 1635."
+    },
+    {
+      "id": "loc-la-011",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Qu'est-ce qu'un oxymore ?",
+      "choix": [
+        "L'association de deux mots de sens contraires",
+        "La répétition d'un même son",
+        "Une exagération volontaire",
+        "Un mot qui se lit dans les deux sens",
+        "Une comparaison sans outil",
+        "Une atténuation de la pensée"
+      ],
+      "bonneReponse": "L'association de deux mots de sens contraires",
+      "anecdote": "Exemple célèbre : « Cette obscure clarté qui tombe des étoiles » (Corneille, « Le Cid »)."
+    },
+    {
+      "id": "loc-la-012",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Qu'est-ce qu'un « hapax » ?",
+      "choix": [
+        "Un mot qui n'apparaît qu'une seule fois dans un corpus",
+        "Une figure de style",
+        "Un mot inventé",
+        "Un mot d'origine grecque",
+        "Une faute d'accord",
+        "Un mot tombé en désuétude"
+      ],
+      "bonneReponse": "Un mot qui n'apparaît qu'une seule fois dans un corpus",
+      "anecdote": "Il vient du grec « hapax legomenon » : « dit une seule fois »."
+    },
+    {
+      "id": "loc-la-013",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "De quelle activité vient l'expression « faire chou blanc » ?",
+      "choix": [
+        "Le jeu de quilles",
+        "La cuisine",
+        "Le jardinage",
+        "Les jeux de cartes",
+        "L'escrime",
+        "La pêche"
+      ],
+      "bonneReponse": "Le jeu de quilles",
+      "anecdote": "En berrichon, « coup » se prononçait « choup » : faire un « coup blanc », c'était ne renverser aucune quille."
+    }
+  ]
+}

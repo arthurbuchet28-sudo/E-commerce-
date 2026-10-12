@@ -1,0 +1,197 @@
+{
+  "categorie": "sciences_nature",
+  "questions": [
+    {
+      "id": "loc-sc-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quelle planète est surnommée la « planète rouge » ?",
+      "choix": [
+        "Mars",
+        "Jupiter",
+        "Vénus",
+        "Saturne"
+      ],
+      "bonneReponse": "Mars",
+      "anecdote": "Sa couleur vient de l'oxyde de fer, autrement dit de la rouille, présent dans son sol."
+    },
+    {
+      "id": "loc-sc-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel gaz les plantes absorbent-elles pour réaliser la photosynthèse ?",
+      "choix": [
+        "Le dioxyde de carbone",
+        "L'oxygène",
+        "L'azote",
+        "L'hélium"
+      ],
+      "bonneReponse": "Le dioxyde de carbone",
+      "anecdote": "En échange, elles rejettent de l'oxygène."
+    },
+    {
+      "id": "loc-sc-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel est le plus grand animal du monde ?",
+      "choix": [
+        "La baleine bleue",
+        "L'éléphant d'Afrique",
+        "Le cachalot",
+        "La girafe"
+      ],
+      "bonneReponse": "La baleine bleue",
+      "anecdote": "Elle peut dépasser 30 mètres : c'est le plus grand animal connu ayant jamais existé."
+    },
+    {
+      "id": "loc-sc-004",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel est le symbole chimique de l'or ?",
+      "choix": [
+        "Au",
+        "Or",
+        "Ag",
+        "Go"
+      ],
+      "bonneReponse": "Au",
+      "anecdote": "Il vient du latin « aurum ». Ag, c'est l'argent (« argentum »)."
+    },
+    {
+      "id": "loc-sc-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Combien d'os compte le squelette d'un adulte ?",
+      "choix": [
+        "206",
+        "186",
+        "226",
+        "300"
+      ],
+      "bonneReponse": "206",
+      "anecdote": "Un nouveau-né en a environ 300 : certains fusionnent en grandissant."
+    },
+    {
+      "id": "loc-sc-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quelle est la vitesse approximative de la lumière dans le vide ?",
+      "choix": [
+        "300 000 km/s",
+        "30 000 km/s",
+        "3 000 km/s",
+        "3 millions de km/s"
+      ],
+      "bonneReponse": "300 000 km/s",
+      "anecdote": "La lumière du Soleil met environ 8 minutes et 20 secondes pour nous parvenir."
+    },
+    {
+      "id": "loc-sc-007",
+      "type": "vrai_faux",
+      "difficulte": 2,
+      "enonce": "Le dauphin est un poisson.",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Faux",
+      "anecdote": "Le dauphin est un mammifère : il respire de l'air et allaite ses petits."
+    },
+    {
+      "id": "loc-sc-008",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel scientifique a découvert la pénicilline en 1928 ?",
+      "choix": [
+        "Alexander Fleming",
+        "Louis Pasteur",
+        "Robert Koch",
+        "Edward Jenner",
+        "Claude Bernard",
+        "Ernest Duchesne"
+      ],
+      "bonneReponse": "Alexander Fleming",
+      "anecdote": "Il l'a découverte par hasard, en remarquant qu'une moisissure empêchait ses bactéries de se développer."
+    },
+    {
+      "id": "loc-sc-009",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quelle est la planète la plus chaude du Système solaire ?",
+      "choix": [
+        "Vénus",
+        "Mercure",
+        "Mars",
+        "Jupiter",
+        "Saturne",
+        "Neptune"
+      ],
+      "bonneReponse": "Vénus",
+      "anecdote": "Grâce à un effet de serre extrême, sa surface atteint environ 460 °C, plus que Mercure pourtant plus proche du Soleil."
+    },
+    {
+      "id": "loc-sc-010",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel élément chimique a pour numéro atomique 1 ?",
+      "choix": [
+        "L'hydrogène",
+        "L'hélium",
+        "L'oxygène",
+        "Le carbone",
+        "Le lithium",
+        "L'azote"
+      ],
+      "bonneReponse": "L'hydrogène",
+      "anecdote": "C'est l'élément le plus abondant de l'Univers."
+    },
+    {
+      "id": "loc-sc-011",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Combien de cœurs possède une pieuvre ?",
+      "choix": [
+        "3",
+        "1",
+        "2",
+        "4",
+        "5",
+        "8"
+      ],
+      "bonneReponse": "3",
+      "anecdote": "Son sang est bleu, à cause d'une protéine à base de cuivre : l'hémocyanine."
+    },
+    {
+      "id": "loc-sc-012",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Quelle est l'unité du Système international pour la quantité de matière ?",
+      "choix": [
+        "La mole",
+        "Le kelvin",
+        "La candela",
+        "L'ampère",
+        "Le newton",
+        "Le joule"
+      ],
+      "bonneReponse": "La mole",
+      "anecdote": "Une mole contient environ 6,022 × 10²³ entités : c'est le nombre d'Avogadro."
+    },
+    {
+      "id": "loc-sc-013",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Quel est l'organe interne le plus lourd du corps humain ?",
+      "choix": [
+        "Le foie",
+        "Le cerveau",
+        "Les poumons",
+        "Le cœur",
+        "Les reins",
+        "L'intestin grêle"
+      ],
+      "bonneReponse": "Le foie",
+      "anecdote": "Il pèse environ 1,5 kg et peut se régénérer. Si l'on compte la peau comme un organe, c'est elle la plus lourde."
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "categorie": "nostalgie",
+  "questions": [
+    {
+      "id": "loc-no-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel casse-tête coloré inventé en 1974 est devenu un phénomène dans les années 80 ?",
+      "choix": [
+        "Le Rubik's Cube",
+        "Le Tamagotchi",
+        "Le yo-yo",
+        "Le Simon"
+      ],
+      "bonneReponse": "Le Rubik's Cube",
+      "anecdote": "Il offre plus de 43 milliards de milliards de combinaisons possibles."
+    },
+    {
+      "id": "loc-no-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel animal virtuel japonais fallait-il nourrir sur un petit écran à la fin des années 90 ?",
+      "choix": [
+        "Le Tamagotchi",
+        "Le Furby",
+        "Le Pokémon",
+        "Le Game Boy"
+      ],
+      "bonneReponse": "Le Tamagotchi",
+      "anecdote": "Il a été commercialisé par Bandai en 1996."
+    },
+    {
+      "id": "loc-no-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel dessin animé met en scène Sacha et son fidèle Pikachu ?",
+      "choix": [
+        "Pokémon",
+        "Digimon",
+        "Dragon Ball",
+        "Beyblade"
+      ],
+      "bonneReponse": "Pokémon",
+      "anecdote": "La série est arrivée à la télévision française en 1999."
+    },
+    {
+      "id": "loc-no-004",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quelle émission jeunesse Dorothée a-t-elle présentée sur TF1 de 1987 à 1997 ?",
+      "choix": [
+        "Le Club Dorothée",
+        "Récré A2",
+        "Les Minikeums",
+        "Ça cartoon"
+      ],
+      "bonneReponse": "Le Club Dorothée",
+      "anecdote": "Avant cela, Dorothée animait « Récré A2 » sur Antenne 2."
+    },
+    {
+      "id": "loc-no-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quelle console portable Nintendo est sortie en 1989 ?",
+      "choix": [
+        "Le Game Boy",
+        "La Game Gear",
+        "La Nintendo DS",
+        "La Lynx"
+      ],
+      "bonneReponse": "Le Game Boy",
+      "anecdote": "Il était souvent vendu avec le jeu Tetris."
+    },
+    {
+      "id": "loc-no-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel service télématique français des années 80 a précédé Internet dans les foyers ?",
+      "choix": [
+        "Le Minitel",
+        "Le télex",
+        "Le Bi-Bop",
+        "Le Tatoo"
+      ],
+      "bonneReponse": "Le Minitel",
+      "anecdote": "Le Minitel a été définitivement débranché en 2012."
+    },
+    {
+      "id": "loc-no-007",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "En quelle année les pièces et billets en euros sont-ils entrés en circulation en France ?",
+      "choix": [
+        "2002",
+        "1999",
+        "2000",
+        "2001"
+      ],
+      "bonneReponse": "2002",
+      "anecdote": "Un euro valait exactement 6,55957 francs."
+    },
+    {
+      "id": "loc-no-008",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel groupe a chanté « Wannabe » en 1996 ?",
+      "choix": [
+        "Les Spice Girls",
+        "All Saints",
+        "Destiny's Child",
+        "TLC",
+        "Bananarama",
+        "Les Pussycat Dolls"
+      ],
+      "bonneReponse": "Les Spice Girls",
+      "anecdote": "Leurs surnoms : Scary, Sporty, Baby, Ginger et Posh."
+    },
+    {
+      "id": "loc-no-009",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel téléphone Nokia sorti en 2000 était réputé indestructible ?",
+      "choix": [
+        "Le Nokia 3310",
+        "Le Nokia 3210",
+        "Le Nokia 8210",
+        "Le Nokia 6600",
+        "Le Nokia 5110",
+        "Le Nokia N95"
+      ],
+      "bonneReponse": "Le Nokia 3310",
+      "anecdote": "On y jouait au jeu Snake II."
+    },
+    {
+      "id": "loc-no-010",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quelle série des années 90 suit des sauveteurs sur les plages de Californie ?",
+      "choix": [
+        "Alerte à Malibu",
+        "Sauvés par le gong",
+        "Beverly Hills",
+        "Melrose Place",
+        "Le Rebelle",
+        "Les Dessous de Palm Beach"
+      ],
+      "bonneReponse": "Alerte à Malibu",
+      "anecdote": "Avec David Hasselhoff, elle a été l'une des séries les plus regardées au monde."
+    },
+    {
+      "id": "loc-no-011",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quelle sitcom d'AB Productions mettait en vedette Hélène Rollès ?",
+      "choix": [
+        "Hélène et les Garçons",
+        "Premiers Baisers",
+        "Le Miel et les Abeilles",
+        "Les Filles d'à côté",
+        "Salut les Musclés",
+        "Classe mannequin"
+      ],
+      "bonneReponse": "Hélène et les Garçons",
+      "anecdote": "La série compte 280 épisodes, diffusés sur TF1 de 1992 à 1994."
+    },
+    {
+      "id": "loc-no-012",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "En quelle année « Les Simpson » sont-ils devenus une série à part entière ?",
+      "choix": [
+        "1989",
+        "1987",
+        "1990",
+        "1991",
+        "1993",
+        "1985"
+      ],
+      "bonneReponse": "1989",
+      "anecdote": "La famille était apparue dès 1987 sous forme de courts sketches dans le « Tracey Ullman Show »."
+    },
+    {
+      "id": "loc-no-013",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Quel ordinateur Apple aux couleurs translucides a été lancé en 1998 ?",
+      "choix": [
+        "L'iMac G3",
+        "Le Macintosh 128K",
+        "Le PowerBook",
+        "L'Apple II",
+        "Le Lisa",
+        "Le Power Mac G4 Cube"
+      ],
+      "bonneReponse": "L'iMac G3",
+      "anecdote": "Dessiné par Jonathan Ive, son premier coloris s'appelait « Bondi Blue »."
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "categorie": "culture_generale",
+  "questions": [
+    {
+      "id": "loc-cg-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Combien de jours compte une année bissextile ?",
+      "choix": [
+        "366",
+        "365",
+        "364",
+        "367"
+      ],
+      "bonneReponse": "366",
+      "anecdote": "Une année est bissextile tous les 4 ans, sauf les années séculaires non divisibles par 400 : 1900 ne l'était pas, 2000 l'était."
+    },
+    {
+      "id": "loc-cg-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quelle couleur obtient-on en mélangeant de la peinture bleue et de la peinture jaune ?",
+      "choix": [
+        "Vert",
+        "Violet",
+        "Orange",
+        "Marron"
+      ],
+      "bonneReponse": "Vert",
+      "anecdote": "En peinture, les couleurs se mélangent par synthèse soustractive. Avec de la lumière, le bleu et le jaune donnent… du blanc !"
+    },
+    {
+      "id": "loc-cg-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Combien de pattes a une araignée ?",
+      "choix": [
+        "8",
+        "6",
+        "10",
+        "4"
+      ],
+      "bonneReponse": "8",
+      "anecdote": "Les araignées ne sont pas des insectes mais des arachnides. Les insectes, eux, ont 6 pattes."
+    },
+    {
+      "id": "loc-cg-004",
+      "type": "vrai_faux",
+      "difficulte": 1,
+      "enonce": "La tour Eiffel a été construite pour l'Exposition universelle de 1889.",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Elle devait être démontée au bout de 20 ans. Son utilité pour la radiotélégraphie l'a sauvée."
+    },
+    {
+      "id": "loc-cg-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Combien de cordes possède une guitare classique ?",
+      "choix": [
+        "6",
+        "4",
+        "7",
+        "12"
+      ],
+      "bonneReponse": "6",
+      "anecdote": "La guitare basse, elle, en possède généralement 4."
+    },
+    {
+      "id": "loc-cg-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel est le plus grand océan du monde ?",
+      "choix": [
+        "Océan Pacifique",
+        "Océan Atlantique",
+        "Océan Indien",
+        "Océan Arctique"
+      ],
+      "bonneReponse": "Océan Pacifique",
+      "anecdote": "Le Pacifique est plus vaste que l'ensemble des terres émergées. Magellan l'a baptisé ainsi car il l'avait trouvé calme."
+    },
+    {
+      "id": "loc-cg-007",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Qui a peint « La Joconde » ?",
+      "choix": [
+        "Léonard de Vinci",
+        "Michel-Ange",
+        "Raphaël",
+        "Botticelli"
+      ],
+      "bonneReponse": "Léonard de Vinci",
+      "anecdote": "Elle a été volée au Louvre en 1911 par Vincenzo Peruggia et retrouvée seulement en 1913."
+    },
+    {
+      "id": "loc-cg-008",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Dans quelle ville se trouve la statue du Manneken-Pis ?",
+      "choix": [
+        "Bruxelles",
+        "Amsterdam",
+        "Anvers",
+        "Liège"
+      ],
+      "bonneReponse": "Bruxelles",
+      "anecdote": "La petite statue possède une garde-robe de plus de 1 000 costumes, exposés dans un musée dédié."
+    },
+    {
+      "id": "loc-cg-009",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quelle langue compte le plus de locuteurs natifs au monde ?",
+      "choix": [
+        "Le mandarin",
+        "L'anglais",
+        "L'espagnol",
+        "L'hindi",
+        "L'arabe",
+        "Le bengali"
+      ],
+      "bonneReponse": "Le mandarin",
+      "anecdote": "Si l'on compte aussi les personnes qui l'ont apprise, c'est l'anglais qui passe en tête."
+    },
+    {
+      "id": "loc-cg-010",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Combien de touches compte un piano standard ?",
+      "choix": [
+        "88",
+        "76",
+        "72",
+        "85",
+        "92",
+        "100"
+      ],
+      "bonneReponse": "88",
+      "anecdote": "52 touches blanches et 36 touches noires, soit un peu plus de sept octaves."
+    },
+    {
+      "id": "loc-cg-011",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Combien de cartes compte un jeu de tarot ?",
+      "choix": [
+        "78",
+        "52",
+        "32",
+        "54",
+        "64",
+        "81"
+      ],
+      "bonneReponse": "78",
+      "anecdote": "56 cartes de couleurs, 21 atouts et l'Excuse."
+    },
+    {
+      "id": "loc-cg-012",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "En quelle année les premiers prix Nobel ont-ils été décernés ?",
+      "choix": [
+        "1901",
+        "1895",
+        "1899",
+        "1905",
+        "1910",
+        "1921"
+      ],
+      "bonneReponse": "1901",
+      "anecdote": "Alfred Nobel, l'inventeur de la dynamite, a créé ces prix par testament en 1895."
+    },
+    {
+      "id": "loc-cg-013",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Combien d'États sont membres de l'ONU ?",
+      "choix": [
+        "193",
+        "185",
+        "190",
+        "195",
+        "197",
+        "201"
+      ],
+      "bonneReponse": "193",
+      "anecdote": "Le dernier à l'avoir rejoint est le Soudan du Sud, en 2011. Le Vatican et la Palestine y sont observateurs."
+    }
+  ]
+}

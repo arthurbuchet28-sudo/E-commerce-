@@ -1,0 +1,199 @@
+{
+  "categorie": "personnalites",
+  "questions": [
+    {
+      "id": "loc-pe-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel scientifique est célèbre pour la formule E = mc² ?",
+      "choix": [
+        "Albert Einstein",
+        "Isaac Newton",
+        "Marie Curie",
+        "Galilée"
+      ],
+      "bonneReponse": "Albert Einstein",
+      "anecdote": "Il a reçu le prix Nobel de physique en 1921 pour l'effet photoélectrique, et non pour la relativité."
+    },
+    {
+      "id": "loc-pe-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quelle chanteuse était surnommée « la Môme » ?",
+      "choix": [
+        "Édith Piaf",
+        "Dalida",
+        "Barbara",
+        "Mireille Mathieu"
+      ],
+      "bonneReponse": "Édith Piaf",
+      "anecdote": "De son vrai nom Édith Giovanna Gassion ; « piaf » signifie « moineau » en argot."
+    },
+    {
+      "id": "loc-pe-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Qui fut le premier homme à marcher sur la Lune ?",
+      "choix": [
+        "Neil Armstrong",
+        "Buzz Aldrin",
+        "Youri Gagarine",
+        "John Glenn"
+      ],
+      "bonneReponse": "Neil Armstrong",
+      "anecdote": "C'était en juillet 1969, lors de la mission Apollo 11. Buzz Aldrin l'a suivi quelques minutes plus tard."
+    },
+    {
+      "id": "loc-pe-004",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel empereur des Français est né en Corse en 1769 ?",
+      "choix": [
+        "Napoléon Bonaparte",
+        "Napoléon III",
+        "Charlemagne",
+        "Louis XIV"
+      ],
+      "bonneReponse": "Napoléon Bonaparte",
+      "anecdote": "Il est né à Ajaccio, un an seulement après que la Corse est devenue française (1768)."
+    },
+    {
+      "id": "loc-pe-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quelle scientifique a reçu deux prix Nobel, en physique puis en chimie ?",
+      "choix": [
+        "Marie Curie",
+        "Irène Joliot-Curie",
+        "Rosalind Franklin",
+        "Ada Lovelace"
+      ],
+      "bonneReponse": "Marie Curie",
+      "anecdote": "Elle reste la seule personne récompensée dans deux disciplines scientifiques différentes."
+    },
+    {
+      "id": "loc-pe-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel navigateur a lancé la première expédition autour du monde (1519-1522) ?",
+      "choix": [
+        "Fernand de Magellan",
+        "Christophe Colomb",
+        "Vasco de Gama",
+        "Jacques Cartier"
+      ],
+      "bonneReponse": "Fernand de Magellan",
+      "anecdote": "Magellan est mort aux Philippines en 1521 : c'est Juan Sebastián Elcano qui a ramené l'expédition."
+    },
+    {
+      "id": "loc-pe-007",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel peintre s'est coupé une partie de l'oreille en 1888 ?",
+      "choix": [
+        "Vincent van Gogh",
+        "Paul Gauguin",
+        "Claude Monet",
+        "Pablo Picasso"
+      ],
+      "bonneReponse": "Vincent van Gogh",
+      "anecdote": "Cela s'est passé à Arles, après une violente dispute avec son ami Paul Gauguin."
+    },
+    {
+      "id": "loc-pe-008",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel garde des Sceaux a porté l'abolition de la peine de mort en France en 1981 ?",
+      "choix": [
+        "Robert Badinter",
+        "Simone Veil",
+        "Pierre Mendès France",
+        "Jack Lang",
+        "Michel Rocard",
+        "Gaston Defferre"
+      ],
+      "bonneReponse": "Robert Badinter",
+      "anecdote": "La dernière exécution en France, à la guillotine, remonte à 1977."
+    },
+    {
+      "id": "loc-pe-009",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel écrivain a refusé le prix Nobel de littérature en 1964 ?",
+      "choix": [
+        "Jean-Paul Sartre",
+        "Albert Camus",
+        "André Malraux",
+        "Louis Aragon",
+        "François Mauriac",
+        "Samuel Beckett"
+      ],
+      "bonneReponse": "Jean-Paul Sartre",
+      "anecdote": "Il refusait par principe toutes les distinctions officielles. Camus, lui, l'avait accepté en 1957."
+    },
+    {
+      "id": "loc-pe-010",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quelle aviatrice fut la première femme à traverser l'Atlantique en solitaire ?",
+      "choix": [
+        "Amelia Earhart",
+        "Hélène Boucher",
+        "Maryse Bastié",
+        "Adrienne Bolland",
+        "Jacqueline Auriol",
+        "Bessie Coleman"
+      ],
+      "bonneReponse": "Amelia Earhart",
+      "anecdote": "Elle a réussi l'exploit en 1932, puis a disparu en 1937 au-dessus du Pacifique."
+    },
+    {
+      "id": "loc-pe-011",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Qui a fondé la Croix-Rouge ?",
+      "choix": [
+        "Henri Dunant",
+        "Florence Nightingale",
+        "Louis Pasteur",
+        "Clara Barton",
+        "Albert Schweitzer",
+        "Jean Jaurès"
+      ],
+      "bonneReponse": "Henri Dunant",
+      "anecdote": "Il a reçu le tout premier prix Nobel de la paix en 1901, partagé avec Frédéric Passy."
+    },
+    {
+      "id": "loc-pe-012",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Quel mathématicien français, mort en duel à 20 ans, a donné son nom à une théorie célèbre ?",
+      "choix": [
+        "Évariste Galois",
+        "Blaise Pascal",
+        "Pierre de Fermat",
+        "Henri Poincaré",
+        "Joseph Fourier",
+        "Augustin Cauchy"
+      ],
+      "bonneReponse": "Évariste Galois",
+      "anecdote": "La légende raconte qu'il a rédigé une partie de ses travaux la nuit précédant son duel, en 1832."
+    },
+    {
+      "id": "loc-pe-013",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Quelle physicienne autrichienne a co-découvert la fission nucléaire sans recevoir le Nobel ?",
+      "choix": [
+        "Lise Meitner",
+        "Emmy Noether",
+        "Hedy Lamarr",
+        "Chien-Shiung Wu",
+        "Irène Joliot-Curie",
+        "Marie Curie"
+      ],
+      "bonneReponse": "Lise Meitner",
+      "anecdote": "Le Nobel de chimie 1944 a été attribué à Otto Hahn seul. L'élément 109, le meitnérium, porte son nom."
+    }
+  ]
+}

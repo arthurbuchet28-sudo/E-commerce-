@@ -1,0 +1,199 @@
+{
+  "categorie": "sport",
+  "questions": [
+    {
+      "id": "loc-sp-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Combien de joueurs une équipe de football aligne-t-elle sur le terrain ?",
+      "choix": [
+        "11",
+        "10",
+        "9",
+        "12"
+      ],
+      "bonneReponse": "11",
+      "anecdote": "Un match doit être arrêté si une équipe compte moins de 7 joueurs sur le terrain."
+    },
+    {
+      "id": "loc-sp-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "En quelle année la France a-t-elle remporté sa première Coupe du monde de football ?",
+      "choix": [
+        "1998",
+        "2002",
+        "1994",
+        "2006"
+      ],
+      "bonneReponse": "1998",
+      "anecdote": "Victoire 3-0 contre le Brésil au Stade de France, avec un doublé de Zinédine Zidane."
+    },
+    {
+      "id": "loc-sp-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel est le sport de Teddy Riner ?",
+      "choix": [
+        "Le judo",
+        "La lutte",
+        "La boxe",
+        "Le karaté"
+      ],
+      "bonneReponse": "Le judo",
+      "anecdote": "Il est triple champion olympique en individuel : 2012, 2016 et 2024."
+    },
+    {
+      "id": "loc-sp-004",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quelle course cycliste se termine traditionnellement sur les Champs-Élysées ?",
+      "choix": [
+        "Le Tour de France",
+        "Paris-Roubaix",
+        "Le Tour d'Italie",
+        "Paris-Nice"
+      ],
+      "bonneReponse": "Le Tour de France",
+      "anecdote": "La première édition a eu lieu en 1903. En 2024, à cause des JO, l'arrivée s'est faite à Nice."
+    },
+    {
+      "id": "loc-sp-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Sur quelle surface se joue le tournoi de Roland-Garros ?",
+      "choix": [
+        "La terre battue",
+        "Le gazon",
+        "Le dur",
+        "La moquette"
+      ],
+      "bonneReponse": "La terre battue",
+      "anecdote": "Rafael Nadal y détient le record absolu avec 14 titres."
+    },
+    {
+      "id": "loc-sp-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Combien de points vaut un essai au rugby à XV ?",
+      "choix": [
+        "5",
+        "3",
+        "4",
+        "7"
+      ],
+      "bonneReponse": "5",
+      "anecdote": "Jusqu'en 1992, un essai ne valait que 4 points."
+    },
+    {
+      "id": "loc-sp-007",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quelle ville a accueilli les Jeux olympiques d'été de 2024 ?",
+      "choix": [
+        "Paris",
+        "Los Angeles",
+        "Tokyo",
+        "Londres"
+      ],
+      "bonneReponse": "Paris",
+      "anecdote": "Paris les accueillait cent ans après ceux de 1924. La cérémonie d'ouverture s'est déroulée sur la Seine."
+    },
+    {
+      "id": "loc-sp-008",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel nageur français a remporté quatre titres olympiques individuels aux JO de Paris 2024 ?",
+      "choix": [
+        "Léon Marchand",
+        "Florent Manaudou",
+        "Maxime Grousset",
+        "Yannick Agnel",
+        "Alain Bernard",
+        "Camille Lacourt"
+      ],
+      "bonneReponse": "Léon Marchand",
+      "anecdote": "Léon Marchand est originaire de Toulouse."
+    },
+    {
+      "id": "loc-sp-009",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel pilote français a été quatre fois champion du monde de Formule 1 ?",
+      "choix": [
+        "Alain Prost",
+        "Jean Alesi",
+        "René Arnoux",
+        "Pierre Gasly",
+        "Didier Pironi",
+        "Jacques Laffite"
+      ],
+      "bonneReponse": "Alain Prost",
+      "anecdote": "Surnommé « le Professeur », il a été sacré en 1985, 1986, 1989 et 1993."
+    },
+    {
+      "id": "loc-sp-010",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Combien de temps dure un match de handball, hors prolongations ?",
+      "choix": [
+        "60 minutes",
+        "40 minutes",
+        "48 minutes",
+        "70 minutes",
+        "80 minutes",
+        "90 minutes"
+      ],
+      "bonneReponse": "60 minutes",
+      "anecdote": "Deux mi-temps de 30 minutes. L'équipe de France masculine a été six fois championne du monde."
+    },
+    {
+      "id": "loc-sp-011",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel basketteur français a été choisi en premier à la draft NBA 2023 ?",
+      "choix": [
+        "Victor Wembanyama",
+        "Rudy Gobert",
+        "Tony Parker",
+        "Evan Fournier",
+        "Nicolas Batum",
+        "Zaccharie Risacher"
+      ],
+      "bonneReponse": "Victor Wembanyama",
+      "anecdote": "Il a été élu meilleur débutant (rookie de l'année) en 2024 avec les San Antonio Spurs."
+    },
+    {
+      "id": "loc-sp-012",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "En quelle année ont eu lieu les premiers Jeux olympiques modernes ?",
+      "choix": [
+        "1896",
+        "1900",
+        "1888",
+        "1892",
+        "1904",
+        "1912"
+      ],
+      "bonneReponse": "1896",
+      "anecdote": "Ils se sont tenus à Athènes, à l'initiative du Français Pierre de Coubertin."
+    },
+    {
+      "id": "loc-sp-013",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Quelle nation a remporté le plus de Coupes du monde de rugby (jusqu'en 2023) ?",
+      "choix": [
+        "L'Afrique du Sud",
+        "La Nouvelle-Zélande",
+        "L'Australie",
+        "L'Angleterre",
+        "La France",
+        "L'Irlande"
+      ],
+      "bonneReponse": "L'Afrique du Sud",
+      "anecdote": "Les Springboks ont gagné en 1995, 2007, 2019 et 2023."
+    }
+  ]
+}

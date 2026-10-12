@@ -1,0 +1,199 @@
+{
+  "categorie": "histoire",
+  "questions": [
+    {
+      "id": "loc-hi-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "En quelle année a eu lieu la prise de la Bastille ?",
+      "choix": [
+        "1789",
+        "1792",
+        "1776",
+        "1815"
+      ],
+      "bonneReponse": "1789",
+      "anecdote": "Le 14 juillet 1789, la forteresse ne comptait que sept prisonniers."
+    },
+    {
+      "id": "loc-hi-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel roi de France était surnommé le « Roi-Soleil » ?",
+      "choix": [
+        "Louis XIV",
+        "Louis XVI",
+        "François Ier",
+        "Henri IV"
+      ],
+      "bonneReponse": "Louis XIV",
+      "anecdote": "Son règne de 72 ans (1643-1715) est le plus long de l'histoire de France."
+    },
+    {
+      "id": "loc-hi-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "En quelle année l'homme a-t-il marché sur la Lune pour la première fois ?",
+      "choix": [
+        "1969",
+        "1965",
+        "1972",
+        "1961"
+      ],
+      "bonneReponse": "1969",
+      "anecdote": "Au total, douze astronautes ont marché sur la Lune, tous entre 1969 et 1972."
+    },
+    {
+      "id": "loc-hi-004",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quelle guerre a opposé la France et l'Angleterre de 1337 à 1453 ?",
+      "choix": [
+        "La guerre de Cent Ans",
+        "La guerre de Trente Ans",
+        "La guerre de Sept Ans",
+        "Les guerres de Religion"
+      ],
+      "bonneReponse": "La guerre de Cent Ans",
+      "anecdote": "Malgré son nom, elle a duré 116 ans, entrecoupés de longues trêves."
+    },
+    {
+      "id": "loc-hi-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Qui fut le premier président de la Ve République ?",
+      "choix": [
+        "Charles de Gaulle",
+        "Georges Pompidou",
+        "René Coty",
+        "Vincent Auriol"
+      ],
+      "bonneReponse": "Charles de Gaulle",
+      "anecdote": "René Coty avait été le dernier président de la IVe République."
+    },
+    {
+      "id": "loc-hi-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "En quelle année est tombé le mur de Berlin ?",
+      "choix": [
+        "1989",
+        "1991",
+        "1985",
+        "1990"
+      ],
+      "bonneReponse": "1989",
+      "anecdote": "Le mur tombe le 9 novembre 1989 ; l'Allemagne est réunifiée le 3 octobre 1990."
+    },
+    {
+      "id": "loc-hi-007",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quelle civilisation a bâti le Machu Picchu ?",
+      "choix": [
+        "Les Incas",
+        "Les Aztèques",
+        "Les Mayas",
+        "Les Olmèques"
+      ],
+      "bonneReponse": "Les Incas",
+      "anecdote": "Construite au XVe siècle, la cité a été révélée au monde par l'explorateur Hiram Bingham en 1911."
+    },
+    {
+      "id": "loc-hi-008",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel traité a mis fin à la Première Guerre mondiale avec l'Allemagne ?",
+      "choix": [
+        "Le traité de Versailles",
+        "Le traité de Paris",
+        "Le traité de Rome",
+        "Le traité de Vienne",
+        "Le traité de Westphalie",
+        "Le traité de Brest-Litovsk"
+      ],
+      "bonneReponse": "Le traité de Versailles",
+      "anecdote": "Signé le 28 juin 1919 dans la galerie des Glaces, cinq ans jour pour jour après l'attentat de Sarajevo."
+    },
+    {
+      "id": "loc-hi-009",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "En quelle année les femmes ont-elles voté pour la première fois en France ?",
+      "choix": [
+        "1945",
+        "1936",
+        "1944",
+        "1946",
+        "1958",
+        "1920"
+      ],
+      "bonneReponse": "1945",
+      "anecdote": "Le droit de vote leur est accordé par l'ordonnance du 21 avril 1944 ; elles l'exercent pour la première fois aux municipales d'avril 1945."
+    },
+    {
+      "id": "loc-hi-010",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Qui fut la dernière souveraine de l'Égypte ptolémaïque ?",
+      "choix": [
+        "Cléopâtre VII",
+        "Néfertiti",
+        "Hatchepsout",
+        "Néfertari",
+        "Arsinoé II",
+        "Bérénice IV"
+      ],
+      "bonneReponse": "Cléopâtre VII",
+      "anecdote": "Cléopâtre a vécu plus près de nous dans le temps que de la construction de la grande pyramide de Gizeh."
+    },
+    {
+      "id": "loc-hi-011",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel édit, signé par Henri IV en 1598, accorde des droits aux protestants ?",
+      "choix": [
+        "L'édit de Nantes",
+        "L'édit de Fontainebleau",
+        "L'ordonnance de Villers-Cotterêts",
+        "L'édit de Saint-Germain",
+        "L'édit de Poitiers",
+        "L'édit de Paris"
+      ],
+      "bonneReponse": "L'édit de Nantes",
+      "anecdote": "Louis XIV l'a révoqué en 1685 par l'édit de Fontainebleau."
+    },
+    {
+      "id": "loc-hi-012",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "En quelle année a eu lieu la bataille de Marignan ?",
+      "choix": [
+        "1515",
+        "1415",
+        "1525",
+        "1494",
+        "1559",
+        "1453"
+      ],
+      "bonneReponse": "1515",
+      "anecdote": "Selon la tradition, François Ier y aurait été fait chevalier par Bayard sur le champ de bataille."
+    },
+    {
+      "id": "loc-hi-013",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Quel empire était dirigé par Soliman le Magnifique ?",
+      "choix": [
+        "L'Empire ottoman",
+        "L'Empire safavide",
+        "L'Empire moghol",
+        "L'Empire byzantin",
+        "Le sultanat mamelouk",
+        "L'Empire seldjoukide"
+      ],
+      "bonneReponse": "L'Empire ottoman",
+      "anecdote": "Il a conclu une alliance avec François Ier contre Charles Quint."
+    }
+  ]
+}

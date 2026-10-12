@@ -1,0 +1,199 @@
+{
+  "categorie": "gastronomie",
+  "questions": [
+    {
+      "id": "loc-ga-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "De quelle région la choucroute est-elle une spécialité ?",
+      "choix": [
+        "L'Alsace",
+        "La Bretagne",
+        "La Provence",
+        "La Normandie"
+      ],
+      "bonneReponse": "L'Alsace",
+      "anecdote": "La choucroute est du chou finement émincé puis fermenté dans de la saumure."
+    },
+    {
+      "id": "loc-ga-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Avec quelle farine prépare-t-on les galettes bretonnes ?",
+      "choix": [
+        "La farine de sarrasin",
+        "La farine de blé",
+        "La farine de maïs",
+        "La farine de riz"
+      ],
+      "bonneReponse": "La farine de sarrasin",
+      "anecdote": "Le sarrasin, appelé « blé noir », n'est pas une céréale : il est de la même famille que l'oseille."
+    },
+    {
+      "id": "loc-ga-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel fromage normand a la forme d'un disque et une croûte fleurie ?",
+      "choix": [
+        "Le camembert",
+        "Le roquefort",
+        "Le comté",
+        "Le reblochon"
+      ],
+      "bonneReponse": "Le camembert",
+      "anecdote": "La légende attribue sa création à Marie Harel, vers 1791."
+    },
+    {
+      "id": "loc-ga-004",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel fromage est affiné dans les caves de Roquefort-sur-Soulzon ?",
+      "choix": [
+        "Le roquefort",
+        "Le bleu d'Auvergne",
+        "La fourme d'Ambert",
+        "Le saint-agur"
+      ],
+      "bonneReponse": "Le roquefort",
+      "anecdote": "Fait au lait de brebis, il a été le premier fromage à obtenir une appellation d'origine, en 1925."
+    },
+    {
+      "id": "loc-ga-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quelle ville est célèbre pour sa moutarde ?",
+      "choix": [
+        "Dijon",
+        "Lyon",
+        "Reims",
+        "Bordeaux"
+      ],
+      "bonneReponse": "Dijon",
+      "anecdote": "La « moutarde de Dijon » est une recette, pas une appellation : elle peut être fabriquée ailleurs."
+    },
+    {
+      "id": "loc-ga-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quelle pâtisserie en forme de couronne rend hommage à une course cycliste ?",
+      "choix": [
+        "Le paris-brest",
+        "Le saint-honoré",
+        "L'opéra",
+        "Le mille-feuille"
+      ],
+      "bonneReponse": "Le paris-brest",
+      "anecdote": "Elle a été créée en 1910 par le pâtissier Louis Durand, en hommage à la course Paris-Brest-Paris."
+    },
+    {
+      "id": "loc-ga-007",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel cépage règne sur les vins rouges de Bourgogne ?",
+      "choix": [
+        "Le pinot noir",
+        "Le merlot",
+        "Le cabernet-sauvignon",
+        "La syrah"
+      ],
+      "bonneReponse": "Le pinot noir",
+      "anecdote": "C'est le cépage du célèbre domaine de la Romanée-Conti."
+    },
+    {
+      "id": "loc-ga-008",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quelle ville se proclame « capitale mondiale du cassoulet » ?",
+      "choix": [
+        "Castelnaudary",
+        "Toulouse",
+        "Carcassonne",
+        "Albi",
+        "Montauban",
+        "Narbonne"
+      ],
+      "bonneReponse": "Castelnaudary",
+      "anecdote": "Le cassoulet tire son nom de la « cassole », le plat en terre dans lequel il cuit."
+    },
+    {
+      "id": "loc-ga-009",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel est l'ingrédient principal de la tapenade ?",
+      "choix": [
+        "Les olives",
+        "Les anchois",
+        "Les câpres",
+        "Les tomates séchées",
+        "L'ail",
+        "Les poivrons"
+      ],
+      "bonneReponse": "Les olives",
+      "anecdote": "Son nom vient pourtant de « tapena », qui signifie « câpre » en provençal."
+    },
+    {
+      "id": "loc-ga-010",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel est le fromage AOP le plus produit en France ?",
+      "choix": [
+        "Le comté",
+        "Le roquefort",
+        "Le reblochon",
+        "Le camembert de Normandie",
+        "Le cantal",
+        "Le brie de Meaux"
+      ],
+      "bonneReponse": "Le comté",
+      "anecdote": "Il faut plus de 400 litres de lait pour fabriquer une meule d'environ 40 kg."
+    },
+    {
+      "id": "loc-ga-011",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "De quelle région vient le piment d'Espelette ?",
+      "choix": [
+        "Le Pays basque",
+        "La Provence",
+        "La Corse",
+        "Le Roussillon",
+        "Les Landes",
+        "Le Béarn"
+      ],
+      "bonneReponse": "Le Pays basque",
+      "anecdote": "Il bénéficie d'une appellation d'origine contrôlée depuis 2000."
+    },
+    {
+      "id": "loc-ga-012",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Quel chef lyonnais a été sacré « cuisinier du siècle » par le Gault et Millau en 1989 ?",
+      "choix": [
+        "Paul Bocuse",
+        "Georges Blanc",
+        "Alain Ducasse",
+        "Michel Guérard",
+        "Pierre Troisgros",
+        "Bernard Loiseau"
+      ],
+      "bonneReponse": "Paul Bocuse",
+      "anecdote": "Il a créé en 1987 le Bocuse d'Or, un concours mondial de cuisine."
+    },
+    {
+      "id": "loc-ga-013",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Sur quelle sauce mère repose la sauce Mornay ?",
+      "choix": [
+        "La béchamel",
+        "Le velouté",
+        "La sauce espagnole",
+        "La hollandaise",
+        "La béarnaise",
+        "La sauce tomate"
+      ],
+      "bonneReponse": "La béchamel",
+      "anecdote": "C'est une béchamel enrichie de fromage râpé et parfois de jaune d'œuf."
+    }
+  ]
+}

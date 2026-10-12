@@ -1,0 +1,199 @@
+{
+  "categorie": "cinema_series",
+  "questions": [
+    {
+      "id": "loc-ci-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel film Pixar met en scène un rat cuisinier à Paris ?",
+      "choix": [
+        "Ratatouille",
+        "Cars",
+        "Là-haut",
+        "Coco"
+      ],
+      "bonneReponse": "Ratatouille",
+      "anecdote": "Le film a remporté l'Oscar du meilleur film d'animation en 2008."
+    },
+    {
+      "id": "loc-ci-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Qui joue Amélie dans « Le Fabuleux Destin d'Amélie Poulain » ?",
+      "choix": [
+        "Audrey Tautou",
+        "Marion Cotillard",
+        "Sophie Marceau",
+        "Juliette Binoche"
+      ],
+      "bonneReponse": "Audrey Tautou",
+      "anecdote": "Réalisé par Jean-Pierre Jeunet en 2001, le film a été tourné en grande partie à Montmartre."
+    },
+    {
+      "id": "loc-ci-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Comment s'appelle le jeune sorcier à lunettes créé par J. K. Rowling ?",
+      "choix": [
+        "Harry Potter",
+        "Merlin",
+        "Gandalf",
+        "Ron Weasley"
+      ],
+      "bonneReponse": "Harry Potter",
+      "anecdote": "Le premier film de la saga est sorti en 2001."
+    },
+    {
+      "id": "loc-ci-004",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel réalisateur a signé « Les Dents de la mer » et « E.T. » ?",
+      "choix": [
+        "Steven Spielberg",
+        "George Lucas",
+        "James Cameron",
+        "Martin Scorsese"
+      ],
+      "bonneReponse": "Steven Spielberg",
+      "anecdote": "Le requin mécanique, surnommé « Bruce », tombait si souvent en panne que Spielberg a dû le montrer moins… ce qui a renforcé le suspense."
+    },
+    {
+      "id": "loc-ci-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "De quel personnage de roman s'inspire Assane Diop, le héros de la série « Lupin » ?",
+      "choix": [
+        "Arsène Lupin",
+        "Fantômas",
+        "Rocambole",
+        "Sherlock Holmes"
+      ],
+      "bonneReponse": "Arsène Lupin",
+      "anecdote": "Le gentleman cambrioleur a été créé par Maurice Leblanc en 1905."
+    },
+    {
+      "id": "loc-ci-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel film de 2011 avec Omar Sy et François Cluzet a attiré plus de 19 millions de spectateurs en France ?",
+      "choix": [
+        "Intouchables",
+        "Bienvenue chez les Ch'tis",
+        "Le Dîner de cons",
+        "Qu'est-ce qu'on a fait au Bon Dieu ?"
+      ],
+      "bonneReponse": "Intouchables",
+      "anecdote": "Il est inspiré de l'histoire vraie de Philippe Pozzo di Borgo et d'Abdel Sellou."
+    },
+    {
+      "id": "loc-ci-007",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Dans quelle série Daenerys Targaryen élève-t-elle des dragons ?",
+      "choix": [
+        "Game of Thrones",
+        "The Witcher",
+        "Vikings",
+        "The Crown"
+      ],
+      "bonneReponse": "Game of Thrones",
+      "anecdote": "La série adapte les romans « Le Trône de fer » de George R. R. Martin."
+    },
+    {
+      "id": "loc-ci-008",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Qui a réalisé « Le Grand Bleu » (1988) ?",
+      "choix": [
+        "Luc Besson",
+        "Jean-Jacques Beineix",
+        "Jacques Audiard",
+        "Jean-Pierre Jeunet",
+        "Claude Lelouch",
+        "Mathieu Kassovitz"
+      ],
+      "bonneReponse": "Luc Besson",
+      "anecdote": "Le film s'inspire des apnéistes Jacques Mayol et Enzo Maiorca."
+    },
+    {
+      "id": "loc-ci-009",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Combien d'Oscars a remporté « Titanic » (1997) ?",
+      "choix": [
+        "11",
+        "8",
+        "9",
+        "10",
+        "12",
+        "14"
+      ],
+      "bonneReponse": "11",
+      "anecdote": "Un record partagé avec « Ben-Hur » et « Le Seigneur des anneaux : Le Retour du roi »."
+    },
+    {
+      "id": "loc-ci-010",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Qui a réalisé « La Haine » (1995) ?",
+      "choix": [
+        "Mathieu Kassovitz",
+        "Luc Besson",
+        "Jacques Audiard",
+        "Cédric Klapisch",
+        "Leos Carax",
+        "Gaspar Noé"
+      ],
+      "bonneReponse": "Mathieu Kassovitz",
+      "anecdote": "Tourné en noir et blanc, le film a reçu le prix de la mise en scène à Cannes."
+    },
+    {
+      "id": "loc-ci-011",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quelle actrice française a remporté l'Oscar de la meilleure actrice pour « La Môme » ?",
+      "choix": [
+        "Marion Cotillard",
+        "Juliette Binoche",
+        "Isabelle Huppert",
+        "Audrey Tautou",
+        "Catherine Deneuve",
+        "Léa Seydoux"
+      ],
+      "bonneReponse": "Marion Cotillard",
+      "anecdote": "Aucune Française n'avait remporté cet Oscar depuis Simone Signoret, en 1960."
+    },
+    {
+      "id": "loc-ci-012",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Quel film de Jacques Demy, sorti en 1964, est entièrement chanté ?",
+      "choix": [
+        "Les Parapluies de Cherbourg",
+        "Les Demoiselles de Rochefort",
+        "Peau d'âne",
+        "Lola",
+        "Jules et Jim",
+        "Model Shop"
+      ],
+      "bonneReponse": "Les Parapluies de Cherbourg",
+      "anecdote": "Palme d'or 1964, sur une musique de Michel Legrand, avec Catherine Deneuve."
+    },
+    {
+      "id": "loc-ci-013",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Quelle réalisatrice a reçu la Palme d'or pour « Titane » en 2021 ?",
+      "choix": [
+        "Julia Ducournau",
+        "Céline Sciamma",
+        "Justine Triet",
+        "Mati Diop",
+        "Claire Denis",
+        "Alice Diop"
+      ],
+      "bonneReponse": "Julia Ducournau",
+      "anecdote": "Elle est la deuxième femme Palme d'or, après Jane Campion en 1993."
+    }
+  ]
+}

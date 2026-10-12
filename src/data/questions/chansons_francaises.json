@@ -1,0 +1,199 @@
+{
+  "categorie": "chansons_francaises",
+  "questions": [
+    {
+      "id": "loc-ch-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel chanteur était surnommé « le Taulier » ?",
+      "choix": [
+        "Johnny Hallyday",
+        "Eddy Mitchell",
+        "Michel Sardou",
+        "Claude François"
+      ],
+      "bonneReponse": "Johnny Hallyday",
+      "anecdote": "Son vrai nom était Jean-Philippe Smet ; il est né à Paris en 1943."
+    },
+    {
+      "id": "loc-ch-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Qui chante « Alors on danse » (2009) ?",
+      "choix": [
+        "Stromae",
+        "Gims",
+        "Christophe Maé",
+        "Bigflo & Oli"
+      ],
+      "bonneReponse": "Stromae",
+      "anecdote": "« Stromae » est le verlan de « maestro »."
+    },
+    {
+      "id": "loc-ch-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel chanteur interprète « Les Champs-Élysées » (1969) ?",
+      "choix": [
+        "Joe Dassin",
+        "Charles Aznavour",
+        "Serge Gainsbourg",
+        "Claude François"
+      ],
+      "bonneReponse": "Joe Dassin",
+      "anecdote": "Joe Dassin est né à New York ; il était le fils du réalisateur Jules Dassin."
+    },
+    {
+      "id": "loc-ch-004",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel chanteur a créé « Comme d'habitude » en 1967, avant qu'elle ne devienne « My Way » ?",
+      "choix": [
+        "Claude François",
+        "Jacques Brel",
+        "Gilbert Bécaud",
+        "Michel Sardou"
+      ],
+      "bonneReponse": "Claude François",
+      "anecdote": "Paul Anka en a écrit l'adaptation anglaise pour Frank Sinatra en 1969."
+    },
+    {
+      "id": "loc-ch-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Dans quel pays est né Jacques Brel ?",
+      "choix": [
+        "Belgique",
+        "France",
+        "Suisse",
+        "Canada"
+      ],
+      "bonneReponse": "Belgique",
+      "anecdote": "Il repose aux îles Marquises, non loin du peintre Paul Gauguin."
+    },
+    {
+      "id": "loc-ch-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel duo français a sorti l'album « Random Access Memories » en 2013 ?",
+      "choix": [
+        "Daft Punk",
+        "Air",
+        "Justice",
+        "Cassius"
+      ],
+      "bonneReponse": "Daft Punk",
+      "anecdote": "L'album a remporté le Grammy Award de l'album de l'année en 2014."
+    },
+    {
+      "id": "loc-ch-007",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Qui a remporté l'Eurovision pour la France en 1977 avec « L'oiseau et l'enfant » ?",
+      "choix": [
+        "Marie Myriam",
+        "Patricia Kaas",
+        "Mireille Mathieu",
+        "Sylvie Vartan"
+      ],
+      "bonneReponse": "Marie Myriam",
+      "anecdote": "C'était la cinquième victoire de la France au concours."
+    },
+    {
+      "id": "loc-ch-008",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "En quelle année Charles Aznavour a-t-il sorti « La Bohème » ?",
+      "choix": [
+        "1965",
+        "1958",
+        "1962",
+        "1968",
+        "1971",
+        "1974"
+      ],
+      "bonneReponse": "1965",
+      "anecdote": "Aznavour est né Shahnour Varinag Aznavourian, à Paris, en 1924."
+    },
+    {
+      "id": "loc-ch-009",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel artiste a sorti l'album « Histoire de Melody Nelson » en 1971 ?",
+      "choix": [
+        "Serge Gainsbourg",
+        "Alain Bashung",
+        "Jacques Dutronc",
+        "Michel Polnareff",
+        "Christophe",
+        "Léo Ferré"
+      ],
+      "bonneReponse": "Serge Gainsbourg",
+      "anecdote": "C'est Jane Birkin qui incarne Melody sur la pochette."
+    },
+    {
+      "id": "loc-ch-010",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel rappeur a sorti l'album « La fête est finie » en 2017 ?",
+      "choix": [
+        "Orelsan",
+        "Nekfeu",
+        "Booba",
+        "Damso",
+        "Lomepal",
+        "Vald"
+      ],
+      "bonneReponse": "Orelsan",
+      "anecdote": "Orelsan a grandi à Caen, une ville souvent évoquée dans ses chansons."
+    },
+    {
+      "id": "loc-ch-011",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel duo a enregistré « Je t'aime… moi non plus » en 1969 ?",
+      "choix": [
+        "Serge Gainsbourg et Jane Birkin",
+        "Johnny Hallyday et Sylvie Vartan",
+        "Jacques Dutronc et Françoise Hardy",
+        "France Gall et Michel Berger",
+        "Stone et Charden",
+        "Brigitte Bardot et Sacha Distel"
+      ],
+      "bonneReponse": "Serge Gainsbourg et Jane Birkin",
+      "anecdote": "La chanson avait d'abord été enregistrée avec Brigitte Bardot en 1967, qui a demandé qu'elle ne sorte pas."
+    },
+    {
+      "id": "loc-ch-012",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Quel chanteur a sorti l'album « Osez Joséphine » en 1991 ?",
+      "choix": [
+        "Alain Bashung",
+        "Jean-Louis Aubert",
+        "Hubert-Félix Thiéfaine",
+        "Étienne Daho",
+        "Daniel Darc",
+        "Christophe"
+      ],
+      "bonneReponse": "Alain Bashung",
+      "anecdote": "La chanson-titre a été coécrite avec Jean Fauque, son parolier fidèle."
+    },
+    {
+      "id": "loc-ch-013",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "En quelle année Édith Piaf a-t-elle enregistré « Non, je ne regrette rien » ?",
+      "choix": [
+        "1960",
+        "1952",
+        "1956",
+        "1958",
+        "1962",
+        "1963"
+      ],
+      "bonneReponse": "1960",
+      "anecdote": "Composée par Charles Dumont sur un texte de Michel Vaucaire, Piaf l'a dédiée à la Légion étrangère."
+    }
+  ]
+}
