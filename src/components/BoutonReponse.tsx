@@ -41,7 +41,6 @@ export const BoutonReponse = forwardRef<HTMLButtonElement, Props>(function Bouto
       disabled={desactive || masque}
       aria-hidden={masque}
       tabIndex={masque ? -1 : undefined}
-      aria-label={masque ? undefined : `Réponse ${index + 1} : ${texte}`}
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: masque ? 0.35 : 1, y: 0, ...(ANIMATIONS[etat] ?? {}) }}
       transition={{ delay: index * 0.05 }}
@@ -60,7 +59,9 @@ export const BoutonReponse = forwardRef<HTMLButtonElement, Props>(function Bouto
       >
         {index + 1}
       </span>
-      <span className="flex-1">{texte}</span>
+      <span className="flex-1">
+        <span className="sr-only">{`Réponse ${index + 1} :`}</span> {texte}
+      </span>
       {(etat === 'correct' || etat === 'revele') && <Coche />}
       {etat === 'faux' && <Croix />}
     </motion.button>

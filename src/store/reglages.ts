@@ -10,6 +10,9 @@ type EtatReglages = {
   theme: Theme;
   animationsReduites: boolean;
   vibrations: boolean;
+  son: boolean;
+  /** Volume des effets sonores, de 0 à 1. */
+  volume: number;
   derniereCategorie: CategorieJeu;
   derniereDifficulte: ChoixDifficulte;
   dernierNombre: number;
@@ -26,6 +29,8 @@ export const useReglages = create<EtatReglages>()(
       theme: 'systeme',
       animationsReduites: false,
       vibrations: true,
+      son: true,
+      volume: 0.7,
       derniereCategorie: 'mix',
       derniereDifficulte: 'moyen',
       dernierNombre: 10,
@@ -37,8 +42,8 @@ export const useReglages = create<EtatReglages>()(
     {
       name: 'quizmania-reglages',
       storage: stockageJSON,
-      version: 2,
-      migrate: (etat) => ({ derniersJoueurs: ['Joueur 1', 'Joueur 2'], dernierParJoueur: 5, dernierFiltre: '', ...(etat as object) }) as EtatReglages,
+      version: 3,
+      migrate: (etat) => ({ derniersJoueurs: ['Joueur 1', 'Joueur 2'], dernierParJoueur: 5, dernierFiltre: '', son: true, volume: 0.7, ...(etat as object) }) as EtatReglages,
     },
   ),
 );

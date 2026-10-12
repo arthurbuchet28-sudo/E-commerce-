@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
+
+// L'animation porte sur le lien lui-même : un conteneur animé avec whileTap deviendrait un arrêt de tabulation vide.
+const LienAnime = motion.create(Link);
 import { LISTE_CATEGORIES_JEU } from '@/config/categories';
 import { DEFI, MODES, ORDRE_MODES } from '@/config/modes';
 import { cleJour, serieDeJours } from '@/engine/defi';
@@ -36,17 +39,21 @@ export function Accueil() {
     <div className="space-y-10">
       <section className="pt-6 text-center">
         <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ type: 'spring', stiffness: 200, damping: 14 }}>
-          <Logo grand />
+          <h1>
+            <Logo grand />
+          </h1>
         </motion.div>
         <p className="mx-auto mt-3 max-w-md text-lg text-slate-700 dark:text-slate-300">{T.accueil.sousTitre}</p>
-        <motion.div className="mt-8" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
-          <Link
+        <div className="mt-8">
+          <LienAnime
             to="/jouer/classique"
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.97 }}
             className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-violet-700 to-fuchsia-600 px-10 py-5 font-display text-3xl font-extrabold text-white shadow-xl shadow-fuchsia-600/30"
           >
             <span aria-hidden>▶</span> {T.accueil.jouer}
-          </Link>
-        </motion.div>
+          </LienAnime>
+        </div>
         <p className="mt-4 text-sm text-slate-600 dark:text-slate-400">{T.accueil.stats(banqueLocale().length)}</p>
       </section>
 

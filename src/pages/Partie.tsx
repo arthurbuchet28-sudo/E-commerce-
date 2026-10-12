@@ -19,6 +19,7 @@ import type { Reponse } from '@/engine/evaluation';
 import { estDynamique, jokerApplicable, questionCourante, tempsQuestion } from '@/engine/partie';
 import { auHasard, T } from '@/i18n/fr';
 import { celebrerBonneReponse, vibrer } from '@/lib/effets';
+import { jouerSon, prechargerSons } from '@/lib/sons';
 import { useAnimationsReduites } from '@/lib/hooks';
 import { usePartie } from '@/store/partie';
 import { useReglages } from '@/store/reglages';
@@ -49,6 +50,7 @@ export function Partie() {
   const total = partie ? tempsQuestion(partie) : 0;
 
   const info = partie ? MODES[partie.config.mode] : undefined;
+  useEffect(prechargerSons, []);
   const [restantGlobal, setRestantGlobal] = useState(CONTRE_LA_MONTRE.duree);
 
   // Chrono par question : décompte et temps écoulé (en duel, seulement une fois le joueur prêt).
@@ -63,6 +65,14 @@ export function Partie() {
     const id = window.setInterval(tick, 100);
     return () => window.clearInterval(id);
   }, [phase, total, debutQuestion, repondre, pret]);
+
+  // Tic-tac dans les 5 dernières secondes (une fois par seconde).
+  const secondeTic = Math.ceil(partie?.config.mode === 'contre_la_montre' ? restantGlobal : restant);
+  const modeJeu = partie?.config.mode;
+  useEffect(() => {
+    if (!modeJeu || phase !== 'question' || MODES[modeJeu].chrono === 'aucun' || !pret) return;
+    if (secondeTic > 0 && secondeTic <= 5) jouerSon('tic');
+  }, [secondeTic, phase, pret, modeJeu]);
 
   // Contre-la-montre : chrono global de la partie.
   useEffect(() => {
@@ -116,6 +126,8 @@ export function Partie() {
       }
     }
     if (!dernierResultat.correct && !dernierResultat.passee) vibrer([60, 40, 60], vibrations);
+    if (dernierResultat.correct) jouerSon(dernierResultat.serie >= 3 ? 'combo' : 'bonne');
+    else if (!dernierResultat.passee) jouerSon('mauvaise');
     // Focus sur « Question suivante » pour enchaîner au clavier.
     window.setTimeout(() => suivanteRef.current?.focus({ preventScroll: true }), 350);
   }, [dernierResultat, courante, total, reduit, vibrations]);
@@ -236,9 +248,10 @@ export function Partie() {
       {/* Transition d'entrée uniquement : la question affichée est toujours celle à laquelle on répond. */}
       <motion.div key={q.id} initial={{ opacity: 0, x: 60 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.3, ease: 'easeOut' }} className="space-y-4">
         <div className="rounded-3xl bg-white p-5 shadow-lg shadow-violet-900/5 dark:bg-slate-800/80">
-          <span className="inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-extrabold uppercase tracking-wide text-white" style={{ backgroundColor: cat.couleur }}>
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-100 px-3 py-1 text-xs font-extrabold uppercase tracking-wide text-slate-800 dark:bg-slate-700 dark:text-slate-100">
+            <span className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: cat.couleur }} aria-hidden />
             <span aria-hidden>{cat.icone}</span>
-            <span className="[text-shadow:0_1px_2px_rgb(0_0_0/0.5)]">{cat.nom}</span>
+            <span>{cat.nom}</span>
           </span>
           <h1 className="mt-3 font-display text-2xl font-extrabold leading-snug sm:text-3xl">{q.enonce}</h1>
           {q.media?.image && <ImageQuestion question={q} />}
@@ -271,7 +284,10 @@ export function Partie() {
 
       {enQuestion ? (
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <BarreJokers restants={partie.jokersRestants} utilises={partie.jokersUtilises} inapplicables={jokersInapplicables} actif onJoker={joker} />
+          <BarreJokers restants={partie.jokersRestants} utilises={partie.jokersUtilises} inapplicables={jokersInapplicables} actif onJoker={(j) => {
+              jouerSon('joker');
+              joker(j);
+            }} />
           {courante.mode === 'choix' && <p className="hidden text-xs text-slate-500 sm:block dark:text-slate-400">{T.jeu.raccourcis}</p>}
         </div>
       ) : enchainementAuto ? null : (
@@ -288,6 +304,7 @@ export function Partie() {
               (partie.config.difficulte === 'adaptatif' && !dynamique && partie.index + 1 >= partie.config.nombreQuestions)
             }
             avecPoints={info.score}
+            question={q}
             onSuivante={continuer}
           />
         )

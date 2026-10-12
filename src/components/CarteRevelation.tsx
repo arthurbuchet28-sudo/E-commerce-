@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { forwardRef } from 'react';
 import type { ResultatReponse } from '@/engine/partie';
+import type { Question } from '@/types/question';
+import { SignalerQuestion } from './SignalerQuestion';
 import { T } from '@/i18n/fr';
 
 type Props = {
@@ -12,12 +14,14 @@ type Props = {
   derniere: boolean;
   /** Afficher les points gagnés (pas en entraînement). */
   avecPoints?: boolean;
+  /** Question affichée, pour pouvoir la signaler. */
+  question?: Question;
   onSuivante: () => void;
 };
 
 /** Retour après la réponse : bravo / raté, bonne réponse et anecdote « Le saviez-vous ? ». */
 export const CarteRevelation = forwardRef<HTMLButtonElement, Props>(function CarteRevelation(
-  { resultat, bonne, anecdote, titre, derniere, avecPoints = true, onSuivante },
+  { resultat, bonne, anecdote, titre, derniere, avecPoints = true, question, onSuivante },
   ref,
 ) {
   const couleur = resultat.correct
@@ -64,6 +68,7 @@ export const CarteRevelation = forwardRef<HTMLButtonElement, Props>(function Car
       >
         {derniere ? T.jeu.resultats : T.jeu.suivante} →
       </button>
+      {question && <SignalerQuestion key={question.id} question={question} />}
     </motion.section>
   );
 });

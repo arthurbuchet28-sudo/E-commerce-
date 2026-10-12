@@ -27,7 +27,7 @@ export function Badges() {
               </span>
               <p className="mt-1 font-display font-extrabold">{b.nom}</p>
               <p className="text-xs text-slate-600 dark:text-slate-400">{b.description}</p>
-              <p className={`mt-auto pt-2 text-xs font-bold ${date ? 'text-emerald-800 dark:text-emerald-300' : 'text-slate-500 dark:text-slate-400'}`}>
+              <p className={`mt-auto pt-2 text-xs font-bold ${date ? 'text-emerald-800 dark:text-emerald-300' : 'text-slate-700 dark:text-slate-300'}`}>
                 {date ? `✓ ${T.profil.obtenuLe(formaterDate(date))}` : `🔒 ${T.profil.verrouille}`}
               </p>
             </motion.li>

@@ -1,13 +1,16 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import { T } from '@/i18n/fr';
+import { useInstallation } from '@/lib/installation';
+import { jouerSon } from '@/lib/sons';
 import { useReglages, type Theme } from '@/store/reglages';
 
 type Props = { ouvert: boolean; onFermer: () => void };
 
 export function PanneauReglages({ ouvert, onFermer }: Props) {
-  const { theme, animationsReduites, vibrations, modifier } = useReglages();
+  const { theme, animationsReduites, vibrations, son, volume, modifier } = useReglages();
   const fermerRef = useRef<HTMLButtonElement>(null);
+  const installation = useInstallation();
   useEffect(() => {
     if (!ouvert) return;
     fermerRef.current?.focus();
@@ -57,8 +60,29 @@ export function PanneauReglages({ ouvert, onFermer }: Props) {
                 ))}
               </div>
             </fieldset>
+            <Interrupteur libelle={T.reglages.son} actif={son} onChange={(v) => modifier({ son: v })} />
+            <label className="mt-3 block font-bold">
+              {T.reglages.volume} <span className="text-sm font-semibold text-slate-600 dark:text-slate-400">({Math.round(volume * 100)} %)</span>
+              <input
+                type="range"
+                min={0}
+                max={1}
+                step={0.05}
+                value={volume}
+                disabled={!son}
+                onChange={(e) => modifier({ volume: Number(e.target.value) })}
+                onPointerUp={() => jouerSon('bonne')}
+                onKeyUp={() => jouerSon('bonne')}
+                className="mt-1 w-full accent-violet-700 disabled:opacity-40"
+              />
+            </label>
             <Interrupteur libelle={T.reglages.animations} actif={animationsReduites} onChange={(v) => modifier({ animationsReduites: v })} />
             <Interrupteur libelle={T.reglages.vibrations} actif={vibrations} onChange={(v) => modifier({ vibrations: v })} />
+            {installation.possible && (
+              <button type="button" onClick={() => void installation.installer()} className="mt-6 w-full rounded-2xl border-2 border-violet-700 py-3 font-bold text-violet-800 dark:border-violet-300 dark:text-violet-200">
+                📲 {T.reglages.installer}
+              </button>
+            )}
             <button
               ref={fermerRef}
               type="button"

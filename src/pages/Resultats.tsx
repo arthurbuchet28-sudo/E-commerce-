@@ -10,6 +10,7 @@ import { cleJour, serieDeJours } from '@/engine/defi';
 import { grilleEmojis, resumerPartie } from '@/engine/partie';
 import { T } from '@/i18n/fr';
 import { celebrerFinDePartie } from '@/lib/effets';
+import { jouerSon } from '@/lib/sons';
 import { useAnimationsReduites } from '@/lib/hooks';
 import { LIBELLES_EPOQUES, LIBELLES_STYLES } from '@/providers/generateurs/blindtest';
 import { usePartie } from '@/store/partie';
@@ -49,6 +50,16 @@ export function Resultats() {
     if (!fini) return;
     return celebrerFinDePartie(record || partie?.config.mode === 'duel', reduit);
   }, [fini, record, reduit, partie?.config.mode]);
+
+  // Fanfare de fin (plus longue en cas de record), puis scintillement si un badge est débloqué.
+  const nbBadges = bilan?.badges.length ?? 0;
+  useEffect(() => {
+    if (!fini) return;
+    jouerSon(record ? 'record' : 'fin');
+    if (!nbBadges) return;
+    const id = window.setTimeout(() => jouerSon('badge'), 1900);
+    return () => window.clearTimeout(id);
+  }, [fini, record, nbBadges]);
 
   const score = useMotionValue(0);
   const scoreAffiche = useTransform(score, (v) => Math.round(v).toLocaleString('fr-FR'));

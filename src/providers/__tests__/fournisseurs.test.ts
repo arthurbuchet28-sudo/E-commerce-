@@ -91,3 +91,22 @@ describe('quota des sources générées', () => {
     expect(qs.every((q) => q.difficulte === 1 || q.difficulte === 2)).toBe(true);
   });
 });
+
+describe('calque de l’espace admin', () => {
+  it('applique ajouts, modifications et suppressions sans toucher aux fichiers', async () => {
+    const { appliquerCalque, banqueFichiers } = await import('../local');
+    const base = banqueFichiers();
+    const [a, b] = base;
+    const ajout = { ...a!, id: 'adm-test', enonce: 'Question ajoutée ?' };
+    const resultat = appliquerCalque(base, {
+      ajoutees: [ajout],
+      modifiees: { [a!.id]: { ...a!, anecdote: 'Anecdote corrigée.' } },
+      supprimees: [b!.id],
+    });
+    expect(resultat).toHaveLength(base.length);
+    expect(resultat.find((q) => q.id === a!.id)?.anecdote).toBe('Anecdote corrigée.');
+    expect(resultat.some((q) => q.id === b!.id)).toBe(false);
+    expect(resultat.at(-1)?.id).toBe('adm-test');
+    expect(base.find((q) => q.id === a!.id)?.anecdote).not.toBe('Anecdote corrigée.');
+  });
+});

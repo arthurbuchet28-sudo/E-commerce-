@@ -1,15 +1,22 @@
+import { lazy, Suspense } from 'react';
 import { HashRouter, Link, Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from '@/components/Layout';
+import { SqueletteQuestion } from '@/components/Squelette';
 import { T } from '@/i18n/fr';
 import { Accueil } from '@/pages/Accueil';
-import { Configuration } from '@/pages/Configuration';
 import { Partie } from '@/pages/Partie';
-import { Resultats } from '@/pages/Resultats';
-import { Badges } from '@/pages/progression/Badges';
-import { Classement } from '@/pages/progression/Classement';
-import { Historique } from '@/pages/progression/Historique';
-import { Profil } from '@/pages/progression/Profil';
-import { Statistiques } from '@/pages/progression/Statistiques';
+
+// Pages secondaires chargées à la demande (code séparé du chargement initial).
+const charger = <K extends string>(importer: () => Promise<Record<K, React.ComponentType>>, nom: K) =>
+  lazy(() => importer().then((m) => ({ default: m[nom] })));
+const Configuration = charger(() => import('@/pages/Configuration'), 'Configuration');
+const Resultats = charger(() => import('@/pages/Resultats'), 'Resultats');
+const Profil = charger(() => import('@/pages/progression/Profil'), 'Profil');
+const Badges = charger(() => import('@/pages/progression/Badges'), 'Badges');
+const Statistiques = charger(() => import('@/pages/progression/Statistiques'), 'Statistiques');
+const Historique = charger(() => import('@/pages/progression/Historique'), 'Historique');
+const Classement = charger(() => import('@/pages/progression/Classement'), 'Classement');
+const Admin = charger(() => import('@/pages/admin/Admin'), 'Admin');
 
 function Introuvable() {
   return (
@@ -29,19 +36,22 @@ export function App() {
   return (
     <HashRouter>
       <Layout>
-        <Routes>
-          <Route path="/" element={<Accueil />} />
-          <Route path="/jouer" element={<Navigate to="/jouer/classique" replace />} />
-          <Route path="/jouer/:mode" element={<Configuration />} />
-          <Route path="/partie" element={<Partie />} />
-          <Route path="/resultats" element={<Resultats />} />
-          <Route path="/profil" element={<Profil />} />
-          <Route path="/badges" element={<Badges />} />
-          <Route path="/statistiques" element={<Statistiques />} />
-          <Route path="/historique" element={<Historique />} />
-          <Route path="/classement" element={<Classement />} />
-          <Route path="*" element={<Introuvable />} />
-        </Routes>
+        <Suspense fallback={<SqueletteQuestion />}>
+          <Routes>
+            <Route path="/" element={<Accueil />} />
+            <Route path="/jouer" element={<Navigate to="/jouer/classique" replace />} />
+            <Route path="/jouer/:mode" element={<Configuration />} />
+            <Route path="/partie" element={<Partie />} />
+            <Route path="/resultats" element={<Resultats />} />
+            <Route path="/profil" element={<Profil />} />
+            <Route path="/badges" element={<Badges />} />
+            <Route path="/statistiques" element={<Statistiques />} />
+            <Route path="/historique" element={<Historique />} />
+            <Route path="/classement" element={<Classement />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="*" element={<Introuvable />} />
+          </Routes>
+        </Suspense>
       </Layout>
     </HashRouter>
   );

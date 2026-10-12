@@ -16,7 +16,7 @@ export function Podium({ classement, noms }: { classement: ScoreJoueur[]; noms: 
         {T.resultats.podium}
       </h2>
       <p className="font-display text-xl font-extrabold text-violet-700 dark:text-amber-300">
-        {premiers.length > 1 && premiers.length === classement.length ? T.resultats.egalite : T.resultats.vainqueur(premiers.map((j) => j.nom).join(' et '))}
+        {premiers.length > 1 && premiers.length === classement.length ? T.resultats.egalite : T.resultats.vainqueurs(premiers.map((j) => j.nom))}
       </p>
       <ol className="flex items-end justify-center gap-3">
         {ordreAffichage.map((j) => {
