@@ -47,6 +47,7 @@ Copier `.env.example` en `.env`. Toutes sont facultatives : sans elles, le jeu f
 | `VITE_OPENQUIZZDB_KEY` | Clé OpenQuizzDB ; sans clé, cette source reste inactive. |
 | `VITE_RESTCOUNTRIES_KEY` | Clé REST Countries v5 ; met à jour les populations (les noms français viennent de Wikidata). |
 | `VITE_URL_PARTAGE` | Adresse publique de l'application, utilisée dans le QR code des parties entre amis quand la page est affichée dans un cadre (sinon : l'adresse courante). |
+| `VITE_LIEN_MULTI` | Lien vers une version où le jeu entre amis est disponible, proposé quand il ne l'est pas ici. |
 | `VITE_MULTI_LOCAL` | `1` pour activer le transport « entre onglets » (BroadcastChannel) hors développement, pour tester le multijoueur sur un seul navigateur. |
 
 ## Fonctionnalités
@@ -212,6 +213,8 @@ Les tests couvrent le calcul des points, la tolérance aux fautes, le mode adapt
 ## Déploiement
 
 Le build est statique (`dist/`) et utilise des chemins relatifs et un routage par ancre (`#/…`) : il fonctionne sur n'importe quel hébergement statique (GitHub Pages, Netlify, Vercel…) et dans un sous-dossier, sans configuration de réécriture d'URL.
+
+**GitHub Pages** : le workflow `.github/workflows/pages.yml` teste, construit et publie le site sur la branche `gh-pages` à chaque push (adresse : https://arthurbuchet28-sudo.github.io/E-commerce-/). Le blind test y fonctionne ; le jeu entre amis renvoie vers la version hébergée sur Claude (`VITE_LIEN_MULTI`).
 
 ## Crédits et licences
 
