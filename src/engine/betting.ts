@@ -24,9 +24,9 @@ export function betForTc(ramp: BetRamp, tc: number): number {
 export function defaultRamp(spread = 8): BetRamp {
   const r: BetRamp = {};
   for (let tc = TC_MIN; tc <= TC_MAX; tc++) {
-    let units = 1;
-    if (tc >= 2) units = Math.min(spread, (tc - 1) * 2);
-    r[tc] = Math.max(1, units);
+    // Montée linéaire de TC +2 à TC +5 jusqu'à l'écart maximal.
+    const units = tc >= 2 ? Math.round(((tc - 1) * spread) / 4) : 1;
+    r[tc] = Math.max(1, Math.min(spread, units));
   }
   return r;
 }
@@ -89,7 +89,7 @@ export interface RampEvaluation {
 
 /**
  * Évalue une rampe : E = Σ f(tc)·mise(tc)·avantage(tc), Var = Σ f(tc)·mise(tc)²·1,32.
- * Avantage(tc) ≈ −avantage maison + 0,5 % × tc. Une mise de 0 signifie qu'on ne joue pas (Wonging).
+ * Avantage(tc) ≈ −avantage maison + 0,5 % × (tc + 0,5), le +0,5 corrigeant l'arrondi plancher. Une mise de 0 signifie qu'on ne joue pas (Wonging).
  */
 export function evaluateRamp(ramp: BetRamp, freqs: Record<number, number>, houseEdgePct: number): RampEvaluation {
   let ev = 0;
@@ -100,7 +100,8 @@ export function evaluateRamp(ramp: BetRamp, freqs: Record<number, number>, house
     const f = freqs[tc] ?? 0;
     const bet = betForTc(ramp, tc);
     if (bet <= 0) continue;
-    const edge = playerEdgeAtTrueCount(tc, houseEdgePct) / 100;
+    // Le TC étant arrondi à l'entier inférieur, la valeur moyenne d'une classe « k » est ≈ k + 0,5.
+    const edge = playerEdgeAtTrueCount(tc + 0.5, houseEdgePct) / 100;
     ev += f * bet * edge;
     variance += f * bet * bet * HAND_VARIANCE;
     betSum += f * bet;

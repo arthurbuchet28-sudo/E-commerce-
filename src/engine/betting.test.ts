@@ -20,6 +20,8 @@ describe('gestion de la mise', () => {
     expect(betForTc(r, 1)).toBe(1);
     expect(betForTc(r, 2)).toBe(2);
     expect(betForTc(r, 3)).toBe(4);
+    expect(betForTc(r, 4)).toBe(6);
+    expect(betForTc(r, 5)).toBe(8);
     expect(betForTc(r, 10)).toBe(8);
     expect(rampSpread(r)).toBe(8);
   });

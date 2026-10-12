@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-felt-950: #04140f;
+  --color-felt-900: #062219;
+  --color-felt-800: #0a3326;
+  --color-felt-700: #0f4a37;
+  --color-felt-600: #146046;
+  --font-display: Georgia, 'Times New Roman', serif;
+}
+
+html,
+body {
+  background: #020617;
+  color: #e2e8f0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.felt {
+  background: radial-gradient(ellipse at 50% 0%, #146046 0%, #0a3326 55%, #04140f 100%);
+}
+
+@keyframes deal-in {
+  from {
+    opacity: 0;
+    transform: translateY(-14px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.deal-in {
+  animation: deal-in 0.18s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .deal-in {
+    animation: none;
+  }
+}
