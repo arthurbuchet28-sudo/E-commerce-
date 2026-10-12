@@ -4,6 +4,8 @@ import { Navigate, useNavigate } from 'react-router-dom';
 import { BadgeCombo } from '@/components/BadgeCombo';
 import { BarreJokers } from '@/components/BarreJokers';
 import { BoutonConfirmation } from '@/components/BoutonConfirmation';
+import { ClassementEnDirect } from '@/components/SalonDirect';
+import { useMulti } from '@/store/multi';
 import { CarteRevelation } from '@/components/CarteRevelation';
 import { Chrono } from '@/components/Chrono';
 import { CompteurScore } from '@/components/CompteurScore';
@@ -198,6 +200,7 @@ export function Partie() {
     // On note qu'on la quitte pour qu'elle ne redirige pas alors vers la configuration.
     quitteRef.current = true;
     navigate('/');
+    if (partie.config.mode === 'multi') useMulti.getState().quitter();
     quitter();
   };
   const n = partie.questions.length;
@@ -312,6 +315,8 @@ export function Partie() {
           />
         )
       )}
+
+      {partie.config.mode === 'multi' && <ClassementEnDirect graine={partie.config.salon ?? ''} />}
 
       <div className="pt-2 text-center">
         <BoutonConfirmation question={T.jeu.confirmerAbandon} onConfirmer={abandonner} className="text-sm font-semibold text-slate-600 underline-offset-4 hover:underline dark:text-slate-400">

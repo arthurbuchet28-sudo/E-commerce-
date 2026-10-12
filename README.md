@@ -46,6 +46,8 @@ Copier `.env.example` en `.env`. Toutes sont facultatives : sans elles, le jeu f
 | `VITE_ADMIN_CODE` | Code d'accès à l'espace admin. Sans code, l'espace admin est désactivé. ⚠️ C'est un simple verrou : la valeur est lisible dans le code envoyé au navigateur. |
 | `VITE_OPENQUIZZDB_KEY` | Clé OpenQuizzDB ; sans clé, cette source reste inactive. |
 | `VITE_RESTCOUNTRIES_KEY` | Clé REST Countries v5 ; met à jour les populations (les noms français viennent de Wikidata). |
+| `VITE_URL_PARTAGE` | Adresse publique de l'application, utilisée dans le QR code des parties entre amis quand la page est affichée dans un cadre (sinon : l'adresse courante). |
+| `VITE_MULTI_LOCAL` | `1` pour activer le transport « entre onglets » (BroadcastChannel) hors développement, pour tester le multijoueur sur un seul navigateur. |
 
 ## Fonctionnalités
 
@@ -61,6 +63,16 @@ Copier `.env.example` en `.env`. Toutes sont facultatives : sans elles, le jeu f
 | Duel local | 2 à 4 joueurs sur le même appareil, chacun son tour, écran de passage de relais et podium |
 | Entraînement | sans chrono ni score, anecdotes à revoir en fin de partie |
 | Révision | les questions ratées sont reposées ; une question réussie sort de la liste |
+| Entre amis | chacun sur son téléphone : l'hôte crée un salon, les amis scannent le QR code (ou tapent le code à 4 caractères), l'hôte lance quand tout le monde est là ; mêmes questions et mêmes choix pour tous, classement en direct, nouvelle manche en un clic |
+
+### Jouer entre amis
+
+1. **Accueil → Jouer avec des amis → Créer le salon** : choisir le thème, la difficulté, le nombre de questions et son pseudo.
+2. Le salon affiche un **QR code** (généré sur l'appareil) et le code du salon. Les amis le scannent, entrent leur pseudo et apparaissent dans la liste.
+3. L'hôte appuie sur **« Tout le monde est là, on lance ! »** : tous les appareils passent à la partie en même temps.
+4. Le classement se met à jour à chaque réponse, pendant la partie et sur l'écran de fin ; l'hôte peut enchaîner une **nouvelle manche**.
+
+Fonctionnement : chaque appareil publie sa présence (pseudo, avatar, score, progression) dans un salon temps réel ; l'hôte y ajoute la configuration de la manche et une graine. Les questions sont tirées de la banque locale d'origine avec cette graine (`src/engine/salon.ts`), donc identiques partout sans serveur de jeu. Le transport est abstrait (`src/multi/transport.ts`) : salons temps réel de l'hébergement Claude aujourd'hui, BroadcastChannel entre onglets en développement, Supabase Realtime facile à ajouter.
 
 ### Difficulté
 
@@ -105,7 +117,8 @@ src/
     wikidata/      requêtes SPARQL et normalisation
   data/         banque locale (questions/*.json), instantanés générés (generes/), départements, blind test
   config/       difficulte.ts, modes.ts, progression.ts (titres, badges), categories.ts
-  store/        état Zustand : partie, réglages, records, profil, révision, admin
+  store/        état Zustand : partie, réglages, records, profil, révision, admin, multi (salon entre amis)
+  multi/        transports temps réel du jeu entre amis
   components/   composants d'interface (zones de réponse, chrono, combo, podium…)
   pages/        écrans (accueil, configuration, partie, résultats, progression/, admin/)
   i18n/fr.ts    tous les textes de l'interface
@@ -212,6 +225,7 @@ Le build est statique (`dist/`) et utilise des chemins relatifs et un routage pa
 ## Limites connues et évolutions
 
 - Profil, progression, records et modifications admin sont stockés dans le navigateur : vider ses données les efface. L'architecture (fournisseurs, stores séparés, moteur pur) est prête pour **Supabase** : comptes, classement en ligne, banque partagée et multijoueur.
+- Jeu entre amis : il faut un transport temps réel. Hébergé sur Claude, les amis doivent avoir accès à la page (partage par e-mail depuis le menu Partager) et être connectés ; sur un hébergement statique classique, brancher un transport Supabase Realtime dans `src/multi/transport.ts`. Le score affiché par chaque joueur est celui que calcule son appareil (pas d'arbitre serveur).
 - Le code admin n'est qu'un verrou côté client (pas de sécurité réelle sans backend).
 - OpenQuizzDB n'a pas pu être testée sans clé : l'adaptateur suit le format documenté.
 - Une partie des photos de l'instantané n'a qu'un crédit provisoire (complété à l'affichage) : relancer `npm run data:wikidata` pour l'enregistrer.

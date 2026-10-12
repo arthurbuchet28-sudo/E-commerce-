@@ -23,7 +23,8 @@ import { DIFFICULTES } from '@/config/difficulte';
 import type { Question } from '@/types/question';
 import { garderQuestionsJouables, prechargerImage } from '@/lib/prechargement';
 import { recupererQuestions } from '@/providers';
-import { banqueLocale } from '@/providers/local';
+import { banqueFichiers, banqueLocale } from '@/providers/local';
+import { questionsDuSalon, rngDuSalon } from '@/engine/salon';
 import { useProfil, type BilanProgression } from './profil';
 import { cleRecord, useRecords } from './records';
 import { useRevision } from './revision';
@@ -70,6 +71,8 @@ async function questionsPour(config: ConfigPartie): Promise<Question[]> {
   switch (config.mode) {
     case 'defi':
       return questionsDuDefi(banqueLocale(), config.jour ?? cleJour());
+    case 'multi':
+      return questionsDuSalon(banqueFichiers(), config);
     case 'revision': {
       // Les plus anciennes questions ratées d'abord, dans un ordre mélangé.
       const aRevoir = useRevision.getState().questions.slice(0, REVISION.nombre);
@@ -135,8 +138,8 @@ export const usePartie = create<EtatStorePartie>()((set, get) => ({
     try {
       const questions = await questionsPour(config);
       if (questions.length === 0) throw new Error('Aucune question disponible');
-      // Défi du jour : même tirage pour tout le monde (choix compris).
-      const alea = config.mode === 'defi' ? rngDuJour(config.jour ?? cleJour()) : rng;
+      // Défi du jour et parties entre amis : même tirage pour tout le monde (choix compris).
+      const alea = config.mode === 'defi' ? rngDuJour(config.jour ?? cleJour()) : config.mode === 'multi' ? rngDuSalon(config.salon ?? '') : rng;
       const partie = creerPartie(config, questions, alea);
       const maintenant = performance.now();
       set({
@@ -155,7 +158,7 @@ export const usePartie = create<EtatStorePartie>()((set, get) => ({
 
   rejouer: async () => {
     const partie = get().partie;
-    return partie && partie.config.mode !== 'defi' ? get().lancer(partie.config) : false;
+    return partie && partie.config.mode !== 'defi' && partie.config.mode !== 'multi' ? get().lancer(partie.config) : false;
   },
 
   repondre: (reponse) => {
@@ -203,7 +206,7 @@ function finir(partie: EtatPartie) {
     const r = resumerPartie(partie);
     records.enregistrerDefi(c.jour ?? cleJour(), { score: r.score, bonnes: r.bonnes, total: r.total, grille: grilleEmojis(partie.resultats) });
   }
-  if (c.mode !== 'defi') records.marquerVues(partie.questions.map((q) => q.question.id));
+  if (c.mode !== 'defi' && c.mode !== 'multi') records.marquerVues(partie.questions.map((q) => q.question.id));
   // Révision : les questions ratées s'ajoutent à la liste, celles corrigées en révision en sortent.
   const revision = useRevision.getState();
   if (c.mode === 'revision') revision.retirer(questionsCorrigees(partie));

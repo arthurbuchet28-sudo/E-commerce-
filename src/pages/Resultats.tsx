@@ -4,6 +4,7 @@ import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { BilanProgression } from '@/components/BilanProgression';
 import { Etoiles } from '@/components/Etoiles';
 import { Podium } from '@/components/Podium';
+import { ResultatsSalon } from '@/components/SalonDirect';
 import { infoCategorie } from '@/config/categories';
 import { CONTRE_LA_MONTRE, MODES } from '@/config/modes';
 import { cleJour, serieDeJours } from '@/engine/defi';
@@ -148,6 +149,8 @@ export function Resultats() {
         </motion.p>
       )}
 
+      {c.mode === 'multi' && <ResultatsSalon graine={c.salon ?? ''} />}
+
       {r.classement ? (
         <Podium classement={r.classement} noms={partie.joueurs!.map((j) => j.nom)} />
       ) : (
@@ -188,7 +191,7 @@ export function Resultats() {
       </p>
 
       <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-        {c.mode !== 'defi' && !(c.mode === 'revision' && resteARevoir === 0) && (
+        {c.mode !== 'defi' && c.mode !== 'multi' && !(c.mode === 'revision' && resteARevoir === 0) && (
           <button type="button" onClick={() => void relancer()} className="rounded-full bg-gradient-to-r from-violet-700 to-fuchsia-600 px-8 py-4 font-display text-xl font-extrabold text-white shadow-lg">
             🔁 {T.resultats.rejouer}
           </button>
@@ -203,7 +206,7 @@ export function Resultats() {
         <textarea readOnly value={texteAPartager} rows={5} onFocus={(e) => e.target.select()} aria-label={T.resultats.partager} className="w-full rounded-2xl border-2 border-violet-300 bg-white p-3 text-sm dark:border-slate-600 dark:bg-slate-800" />
       )}
       <div className="flex justify-center gap-6 font-bold">
-        {c.mode !== 'defi' && c.mode !== 'revision' && (
+        {c.mode !== 'defi' && c.mode !== 'revision' && c.mode !== 'multi' && (
           <Link to={`/jouer/${c.mode}`} className="text-violet-700 underline-offset-4 hover:underline dark:text-violet-300">
             {T.resultats.changer}
           </Link>

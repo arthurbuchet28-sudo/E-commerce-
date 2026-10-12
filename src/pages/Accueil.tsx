@@ -57,6 +57,21 @@ export function Accueil() {
         <p className="mt-4 text-sm text-slate-600 dark:text-slate-400">{T.accueil.stats(banqueLocale().length)}</p>
       </section>
 
+      <section aria-labelledby="titre-amis" className="rounded-3xl bg-gradient-to-br from-cyan-300 to-sky-400 p-5 text-slate-950 shadow-lg">
+        <h2 id="titre-amis" className="flex items-center gap-2 font-display text-2xl font-extrabold">
+          <span aria-hidden>📱</span> {T.multi.titre}
+        </h2>
+        <p className="mt-1 font-semibold">{T.multi.accroche}</p>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <Link to="/jouer/multi" className="rounded-full bg-slate-950 px-6 py-3 font-display text-lg font-extrabold text-cyan-200 shadow-lg transition hover:-translate-y-0.5">
+            {T.multi.creer}
+          </Link>
+          <Link to="/salon" className="rounded-full bg-white px-6 py-3 font-display text-lg font-extrabold text-sky-900 shadow-lg transition hover:-translate-y-0.5">
+            {T.multi.rejoindreTitre}
+          </Link>
+        </div>
+      </section>
+
       {stats.parties > 0 && (
         <Link to="/profil" className="flex items-center gap-4 rounded-3xl bg-white p-4 shadow-md transition hover:-translate-y-0.5 dark:bg-slate-800">
           <Avatar avatar={avatar} taille={56} />

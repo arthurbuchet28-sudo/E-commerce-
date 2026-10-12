@@ -1,6 +1,6 @@
 import type { NiveauDifficulte } from './difficulte';
 
-export type ModeJeu = 'classique' | 'contre_la_montre' | 'survie' | 'blind_test' | 'defi' | 'duel' | 'entrainement' | 'revision';
+export type ModeJeu = 'classique' | 'contre_la_montre' | 'survie' | 'blind_test' | 'defi' | 'duel' | 'entrainement' | 'revision' | 'multi';
 
 export type InfoMode = {
   id: ModeJeu;
@@ -22,6 +22,7 @@ export const MODES: Record<ModeJeu, InfoMode> = {
   blind_test: { id: 'blind_test', nom: 'Blind test', icone: '🎧', description: 'Extraits musicaux : réponds le plus vite possible', chrono: 'question', score: true, degrade: 'from-pink-300 to-fuchsia-400' },
   defi: { id: 'defi', nom: 'Défi du jour', icone: '📅', description: '10 questions identiques pour tout le monde, une fois par jour', chrono: 'question', score: true, degrade: 'from-emerald-300 to-teal-400' },
   duel: { id: 'duel', nom: 'Duel local', icone: '👥', description: '2 à 4 joueurs sur le même appareil, chacun son tour', chrono: 'question', score: true, degrade: 'from-violet-300 to-indigo-300' },
+  multi: { id: 'multi', nom: 'Entre amis', icone: '📱', description: 'Chacun sur son téléphone, mêmes questions, classement en direct', chrono: 'question', score: true, degrade: 'from-cyan-300 to-sky-400' },
   revision: { id: 'revision', nom: 'Révision', icone: '🔁', description: 'Les questions que tu as ratées, pour ne plus te tromper', chrono: 'aucun', score: false, degrade: 'from-yellow-200 to-amber-300' },
   entrainement: { id: 'entrainement', nom: 'Entraînement', icone: '🎓', description: 'Sans chrono ni score : on apprend à son rythme', chrono: 'aucun', score: false, degrade: 'from-lime-300 to-green-400' },
 };
@@ -72,3 +73,9 @@ export const DUEL = {
 
 /** Taille du stock de questions pour le mode adaptatif. */
 export const STOCK_ADAPTATIF = 80;
+
+export const MULTI = {
+  /** Longueur du code de salon (lettres et chiffres sans ambiguïté). */
+  longueurCode: 4,
+  nombres: [5, 10, 15] as const,
+};

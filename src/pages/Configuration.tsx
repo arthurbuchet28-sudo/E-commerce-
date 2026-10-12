@@ -3,14 +3,16 @@ import type { ReactNode } from 'react';
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { LISTE_CATEGORIES_JEU } from '@/config/categories';
 import { NOMBRES_QUESTIONS } from '@/config/difficulte';
-import { BLIND_TEST, CONTRE_LA_MONTRE, DUEL, MODES, type ModeJeu } from '@/config/modes';
+import { BLIND_TEST, CONTRE_LA_MONTRE, DUEL, MODES, MULTI, type ModeJeu } from '@/config/modes';
+import { useMulti } from '@/store/multi';
+import { useProfil } from '@/store/profil';
 import { T } from '@/i18n/fr';
 import { LIBELLES_EPOQUES, LIBELLES_STYLES } from '@/providers/generateurs/blindtest';
 import { usePartie } from '@/store/partie';
 import { useReglages } from '@/store/reglages';
 import { SelecteurDifficulte } from '@/components/SelecteurDifficulte';
 
-const MODES_CONFIGURABLES: ModeJeu[] = ['classique', 'contre_la_montre', 'survie', 'blind_test', 'duel', 'entrainement'];
+const MODES_CONFIGURABLES: ModeJeu[] = ['classique', 'contre_la_montre', 'survie', 'blind_test', 'duel', 'entrainement', 'multi'];
 
 function Pastille({ nom, valeur, choisi, onChange, children }: { nom: string; valeur: string; choisi: boolean; onChange: () => void; children: ReactNode }) {
   return (
@@ -143,12 +145,22 @@ export function Configuration() {
   const { mode: modeParam } = useParams();
   const reglages = useReglages();
   const { lancer, chargement, erreur } = usePartie();
+  const { creer, statut: statutSalon } = useMulti();
+  const { pseudo, modifier: modifierProfil } = useProfil();
   const mode = modeParam as ModeJeu;
   if (!MODES_CONFIGURABLES.includes(mode)) return <Navigate to="/jouer/classique" replace />;
   const info = MODES[mode];
 
-  const difficulte = mode === 'survie' && reglages.derniereDifficulte === 'adaptatif' ? 'facile' : reglages.derniereDifficulte;
+  const difficulte =
+    reglages.derniereDifficulte === 'adaptatif' && (mode === 'survie' || mode === 'multi') ? (mode === 'survie' ? 'facile' : 'moyen') : reglages.derniereDifficulte;
+  const nombreMulti = (MULTI.nombres as readonly number[]).includes(reglages.dernierNombre) ? reglages.dernierNombre : 10;
+  const creationSalon = statutSalon === 'connexion';
   const joueurs = reglages.derniersJoueurs.map((n, i) => n.trim() || T.config.nomJoueur(i + 1));
+
+  const creerSalon = async () => {
+    const code = await creer({ categorie: reglages.derniereCategorie, difficulte, nombreQuestions: nombreMulti });
+    navigate(code ? `/salon/${code}` : '/salon');
+  };
 
   const demarrer = async () => {
     const nombre =
@@ -172,17 +184,30 @@ export function Configuration() {
         </p>
         <h1 className="font-display text-3xl font-extrabold">{info.nom}</h1>
         <p className="font-semibold">
-          {mode === 'contre_la_montre' ? T.config.chronoAide(CONTRE_LA_MONTRE.duree) : mode === 'entrainement' ? T.config.entrainementAide : info.description}
+          {mode === 'contre_la_montre' ? T.config.chronoAide(CONTRE_LA_MONTRE.duree) : mode === 'multi' ? T.multi.accroche : mode === 'entrainement' ? T.config.entrainementAide : info.description}
         </p>
       </div>
 
       {mode === 'duel' && <ChoixJoueurs />}
+      {mode === 'multi' && (
+        <label className="block font-display text-xl font-extrabold">
+          {T.multi.tonPseudo}
+          <input
+            defaultValue={pseudo === 'Joueur' ? '' : pseudo}
+            onChange={(e) => modifierProfil({ pseudo: e.target.value.trim().slice(0, 24) || 'Joueur' })}
+            maxLength={24}
+            autoComplete="nickname"
+            placeholder="Joueur"
+            className="mt-2 block min-h-12 w-full rounded-2xl border-2 border-slate-200 bg-white px-4 font-sans text-lg font-bold dark:border-slate-700 dark:bg-slate-800"
+          />
+        </label>
+      )}
       {mode === 'blind_test' ? <ChoixPlaylist /> : <ChoixCategorie />}
       {mode !== 'blind_test' && (
         <SelecteurDifficulte
           valeur={difficulte}
           onChange={(d) => reglages.modifier({ derniereDifficulte: d })}
-          avecAdaptatif={mode !== 'survie' && mode !== 'duel'}
+          avecAdaptatif={mode !== 'survie' && mode !== 'duel' && mode !== 'multi'}
           titre={mode === 'survie' ? T.config.survieDepart : T.config.difficulte}
         />
       )}
@@ -191,6 +216,9 @@ export function Configuration() {
       )}
       {(mode === 'classique' || mode === 'entrainement') && (
         <ChoixNombre titre={T.config.nombre} valeurs={NOMBRES_QUESTIONS} valeur={reglages.dernierNombre} onChange={(n) => reglages.modifier({ dernierNombre: n })} />
+      )}
+      {mode === 'multi' && (
+        <ChoixNombre titre={T.config.nombre} valeurs={MULTI.nombres} valeur={nombreMulti} onChange={(n) => reglages.modifier({ dernierNombre: n })} />
       )}
       {mode === 'duel' && (
         <ChoixNombre titre={T.config.parJoueur} valeurs={DUEL.questionsParJoueur} valeur={reglages.dernierParJoueur} onChange={(n) => reglages.modifier({ dernierParJoueur: n })} />
@@ -205,13 +233,13 @@ export function Configuration() {
       <div className="sticky bottom-4">
         <motion.button
           type="button"
-          onClick={() => void demarrer()}
-          disabled={chargement}
+          onClick={() => void (mode === 'multi' ? creerSalon() : demarrer())}
+          disabled={chargement || creationSalon}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           className="w-full rounded-full bg-gradient-to-r from-violet-700 to-fuchsia-600 py-5 font-display text-2xl font-extrabold text-white shadow-xl shadow-fuchsia-600/30 disabled:opacity-70"
         >
-          {chargement ? T.config.chargement : `${T.config.lancer} 🚀`}
+          {mode === 'multi' ? (creationSalon ? T.multi.creation : `${T.multi.creer} 📱`) : chargement ? T.config.chargement : `${T.config.lancer} 🚀`}
         </motion.button>
       </div>
     </div>

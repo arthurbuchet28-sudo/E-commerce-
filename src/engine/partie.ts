@@ -38,6 +38,8 @@ export type ConfigPartie = {
   jour?: string;
   /** Libellé du filtre (blind test : époque ou style), pour l'affichage. */
   filtre?: string;
+  /** Entre amis : graine du salon (mêmes questions et mêmes choix pour tous les joueurs). */
+  salon?: string;
 };
 
 export type QuestionPreparee = {

@@ -5,6 +5,8 @@ import { SqueletteQuestion } from '@/components/Squelette';
 import { T } from '@/i18n/fr';
 import { Accueil } from '@/pages/Accueil';
 import { Partie } from '@/pages/Partie';
+import { codeDepuisAncre } from '@/engine/salon';
+import { SuiviSalon } from '@/components/SuiviSalon';
 
 // Pages secondaires chargées à la demande (code séparé du chargement initial).
 const charger = <K extends string>(importer: () => Promise<Record<K, React.ComponentType>>, nom: K) =>
@@ -16,6 +18,7 @@ const Badges = charger(() => import('@/pages/progression/Badges'), 'Badges');
 const Statistiques = charger(() => import('@/pages/progression/Statistiques'), 'Statistiques');
 const Historique = charger(() => import('@/pages/progression/Historique'), 'Historique');
 const Classement = charger(() => import('@/pages/progression/Classement'), 'Classement');
+const Salon = charger(() => import('@/pages/Salon'), 'Salon');
 const Admin = charger(() => import('@/pages/admin/Admin'), 'Admin');
 
 function Introuvable() {
@@ -33,11 +36,24 @@ function Introuvable() {
 }
 
 /** Routeur par ancre (#/…) ; en mémoire si VITE_ROUTEUR=memoire (hébergement intégré qui contrôle l'URL). */
-const Routeur = import.meta.env.VITE_ROUTEUR === 'memoire' ? MemoryRouter : HashRouter;
+const memoire = import.meta.env.VITE_ROUTEUR === 'memoire';
+
+/** Lien d'invitation (#salon-K7QF) : on ouvre directement le salon. */
+const codeInvitation = codeDepuisAncre(window.location.hash);
+if (codeInvitation && !memoire) window.history.replaceState(null, '', `#/salon/${codeInvitation}`);
+
+function Routeur({ children }: { children: React.ReactNode }) {
+  return memoire ? (
+    <MemoryRouter initialEntries={[codeInvitation ? `/salon/${codeInvitation}` : '/']}>{children}</MemoryRouter>
+  ) : (
+    <HashRouter>{children}</HashRouter>
+  );
+}
 
 export function App() {
   return (
     <Routeur>
+      <SuiviSalon />
       <Layout>
         <Suspense fallback={<SqueletteQuestion />}>
           <Routes>
@@ -51,6 +67,8 @@ export function App() {
             <Route path="/statistiques" element={<Statistiques />} />
             <Route path="/historique" element={<Historique />} />
             <Route path="/classement" element={<Classement />} />
+            <Route path="/salon" element={<Salon />} />
+            <Route path="/salon/:code" element={<Salon />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="*" element={<Introuvable />} />
           </Routes>
