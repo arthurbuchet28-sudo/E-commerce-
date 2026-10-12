@@ -2,7 +2,7 @@
 
 Plateforme de quiz ludique en français : thèmes variés, difficulté réglable, animations gratifiantes et rejouable à l'infini. Fonctionne sur ordinateur comme sur mobile, sans backend.
 
-> État : **phase 3 (modes)** — 7 modes de jeu, difficulté adaptative, 408 questions locales, questions générées depuis Wikidata, les pays du monde, les départements français et le blind test Deezer ; types QCM, vrai/faux, image, audio, saisie libre, chronologie et estimation.
+> État : **phase 4 (progression)** — profil, XP et niveaux, 27 badges, statistiques, historique, classement local et révision des questions ratées ; 7 modes de jeu, difficulté adaptative, 408 questions locales, questions générées depuis Wikidata, les pays du monde, les départements français et le blind test Deezer ; types QCM, vrai/faux, image, audio, saisie libre, chronologie et estimation.
 
 ## Modes de jeu
 
@@ -55,6 +55,16 @@ src/
   i18n/fr.ts   tous les textes de l'interface
 scripts/       check-questions.ts
 ```
+
+## Progression
+
+Tout est enregistré sur l'appareil (localStorage) ; aucun compte n'est nécessaire.
+
+- **Profil** : pseudo et avatar générés localement avec DiceBear (styles thumbs, lorelei et notionists sous licence CC0 ; bottts libre d'usage).
+- **XP et niveaux** : 10 XP par bonne réponse × le multiplicateur de difficulté, 1 XP par erreur, +50 pour une partie parfaite (moitié en entraînement, révision et duel ; ×1,5 au défi du jour). Titres : Curieux, Fouineur, Futé, Érudit, Tête bien faite, Puits de science, Encyclopédie vivante, Légende de QuizMania.
+- **Badges** : 27 badges définis dans `src/config/progression.ts` (ajouter un badge = ajouter une entrée avec sa condition).
+- **Statistiques** par catégorie (taux de réussite, catégorie forte, catégorie à travailler), **historique** des 200 dernières parties, **classement local** par mode et par difficulté (joueurs de duel compris).
+- **Révision** : les questions ratées (150 au plus) sont reposées 10 par 10 ; une question réussie en révision sort de la liste.
 
 ## Sources de questions
 

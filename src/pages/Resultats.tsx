@@ -1,6 +1,7 @@
 import { animate, motion, useMotionValue, useTransform } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { BilanProgression } from '@/components/BilanProgression';
 import { Etoiles } from '@/components/Etoiles';
 import { Podium } from '@/components/Podium';
 import { infoCategorie } from '@/config/categories';
@@ -13,6 +14,7 @@ import { useAnimationsReduites } from '@/lib/hooks';
 import { LIBELLES_EPOQUES, LIBELLES_STYLES } from '@/providers/generateurs/blindtest';
 import { usePartie } from '@/store/partie';
 import { useRecords } from '@/store/records';
+import { useRevision } from '@/store/revision';
 
 function formaterPourcent(x: number) {
   return `${Math.round(x * 100)} %`;
@@ -34,7 +36,8 @@ function libelleTheme(categorie: Parameters<typeof infoCategorie>[0], filtre?: s
 
 export function Resultats() {
   const navigate = useNavigate();
-  const { partie, resultat, rejouer } = usePartie();
+  const { partie, resultat, rejouer, bilan } = usePartie();
+  const resteARevoir = useRevision((s) => s.questions.length);
   const defis = useRecords((s) => s.defis);
   const reduit = useAnimationsReduites();
   const [copie, setCopie] = useState(false);
@@ -85,7 +88,14 @@ export function Resultats() {
     if (await rejouer()) navigate('/partie');
   };
 
-  const titre = c.mode === 'entrainement' ? T.resultats.entrainementTitre : c.mode === 'defi' ? T.resultats.defiTermine : T.resultats.titre;
+  const titre =
+    c.mode === 'entrainement'
+      ? T.resultats.entrainementTitre
+      : c.mode === 'revision'
+        ? T.resultats.revisionTitre
+        : c.mode === 'defi'
+          ? T.resultats.defiTermine
+          : T.resultats.titre;
   const sousTitre =
     c.mode === 'contre_la_montre'
       ? T.resultats.chrono(r.bonnes, CONTRE_LA_MONTRE.duree)
@@ -109,7 +119,7 @@ export function Resultats() {
       <motion.div initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ type: 'spring', stiffness: 220, damping: 14 }}>
         <p className="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400">
           {mode.icone} {mode.nom} · {theme}
-          {c.mode !== 'blind_test' && c.mode !== 'defi' ? ` · ${texteDifficulte}` : ''}
+          {!['blind_test', 'defi', 'revision'].includes(c.mode) ? ` · ${texteDifficulte}` : ''}
         </p>
         <h1 className="mt-1 font-display text-4xl font-extrabold">{titre}</h1>
       </motion.div>
@@ -140,7 +150,9 @@ export function Resultats() {
               </>
             )}
             <p className="mt-1 font-bold">{sousTitre}</p>
-            <p className="mx-auto mt-2 max-w-sm text-slate-700 dark:text-slate-300">{c.mode === 'defi' ? T.resultats.revenirDemain : T.resultats.messages[r.etoiles]}</p>
+            <p className="mx-auto mt-2 max-w-sm text-slate-700 dark:text-slate-300">
+              {c.mode === 'defi' ? T.resultats.revenirDemain : c.mode === 'revision' ? T.resultats.revisionReste(resteARevoir) : T.resultats.messages[r.etoiles]}
+            </p>
           </div>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {stats.map((s, i) => (
@@ -156,12 +168,14 @@ export function Resultats() {
         </>
       )}
 
+      {bilan && <BilanProgression bilan={bilan} />}
+
       <p className="break-all text-2xl tracking-widest" aria-label="Grille des réponses">
         {grilleEmojis(partie.resultats)}
       </p>
 
       <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-        {c.mode !== 'defi' && (
+        {c.mode !== 'defi' && !(c.mode === 'revision' && resteARevoir === 0) && (
           <button type="button" onClick={() => void relancer()} className="rounded-full bg-gradient-to-r from-violet-700 to-fuchsia-600 px-8 py-4 font-display text-xl font-extrabold text-white shadow-lg">
             🔁 {T.resultats.rejouer}
           </button>
@@ -173,7 +187,7 @@ export function Resultats() {
         )}
       </div>
       <div className="flex justify-center gap-6 font-bold">
-        {c.mode !== 'defi' && (
+        {c.mode !== 'defi' && c.mode !== 'revision' && (
           <Link to={`/jouer/${c.mode}`} className="text-violet-700 underline-offset-4 hover:underline dark:text-violet-300">
             {T.resultats.changer}
           </Link>
@@ -185,7 +199,7 @@ export function Resultats() {
 
       <section className="text-left" aria-labelledby="titre-recap">
         <h2 id="titre-recap" className="font-display text-2xl font-extrabold">
-          {c.mode === 'entrainement' ? T.resultats.anecdotes : T.resultats.recap}
+          {c.mode === 'entrainement' || c.mode === 'revision' ? T.resultats.anecdotes : T.resultats.recap}
         </h2>
         <ol className="mt-3 space-y-2">
           {partie.questions.map((q, i) => {
@@ -203,7 +217,7 @@ export function Resultats() {
                     <span className="font-semibold text-emerald-800 dark:text-emerald-300">{q.bonne}</span>
                     {res && !res.correct && res.reponse && <span> · ta réponse : {res.reponse}</span>}
                   </p>
-                  {c.mode === 'entrainement' && q.question.anecdote && <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">💡 {q.question.anecdote}</p>}
+                  {(c.mode === 'entrainement' || c.mode === 'revision') && q.question.anecdote && <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">💡 {q.question.anecdote}</p>}
                 </div>
               </li>
             );

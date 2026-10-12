@@ -8,6 +8,11 @@ import { banqueLocale } from '@/providers/local';
 import { Logo } from '@/components/Layout';
 import { usePartie } from '@/store/partie';
 import { useRecords } from '@/store/records';
+import { useProfil } from '@/store/profil';
+import { useRevision } from '@/store/revision';
+import { Avatar } from '@/components/Avatar';
+import { BarreXp } from '@/components/BarreXp';
+import { niveauDepuisXp } from '@/engine/progression';
 
 export function Accueil() {
   const navigate = useNavigate();
@@ -16,6 +21,12 @@ export function Accueil() {
   const jour = cleJour();
   const defiDuJour = defis[jour];
   const serie = serieDeJours(Object.keys(defis), jour);
+  const { pseudo, avatar, xp, stats } = useProfil();
+  const aRevoir = useRevision((s) => s.questions.length);
+
+  const reviser = async () => {
+    if (await lancer({ mode: 'revision', categorie: 'mix', difficulte: 'moyen', nombreQuestions: 10 })) navigate('/partie');
+  };
 
   const jouerDefi = async () => {
     if (await lancer({ mode: 'defi', categorie: 'mix', difficulte: DEFI.difficulte, nombreQuestions: DEFI.nombre, jour })) navigate('/partie');
@@ -38,6 +49,16 @@ export function Accueil() {
         </motion.div>
         <p className="mt-4 text-sm text-slate-600 dark:text-slate-400">{T.accueil.stats(banqueLocale().length)}</p>
       </section>
+
+      {stats.parties > 0 && (
+        <Link to="/profil" className="flex items-center gap-4 rounded-3xl bg-white p-4 shadow-md transition hover:-translate-y-0.5 dark:bg-slate-800">
+          <Avatar avatar={avatar} taille={56} />
+          <div className="min-w-0 flex-1">
+            <p className="font-display text-xl font-extrabold">{T.profil.bonjour(pseudo)}</p>
+            <BarreXp info={niveauDepuisXp(xp)} xp={xp} />
+          </div>
+        </Link>
+      )}
 
       <section aria-labelledby="titre-defi" className="overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-500 to-teal-700 p-5 text-white shadow-lg">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -62,12 +83,26 @@ export function Accueil() {
         </div>
       </section>
 
+      {aRevoir > 0 && (
+        <section className="flex flex-col gap-3 rounded-3xl bg-gradient-to-br from-yellow-200 to-amber-300 p-5 text-slate-950 shadow-lg sm:flex-row sm:items-center sm:justify-between" aria-labelledby="titre-revision">
+          <div>
+            <h2 id="titre-revision" className="flex items-center gap-2 font-display text-2xl font-extrabold">
+              <span aria-hidden>🔁</span> {T.profil.revision}
+            </h2>
+            <p className="font-semibold">{T.profil.revisionCompte(aRevoir)}</p>
+          </div>
+          <button type="button" onClick={() => void reviser()} disabled={chargement} className="rounded-full bg-slate-950 px-6 py-3 font-display text-lg font-extrabold text-amber-200 shadow-lg">
+            {T.profil.reviser}
+          </button>
+        </section>
+      )}
+
       <section aria-labelledby="titre-modes">
         <h2 id="titre-modes" className="font-display text-2xl font-extrabold">
           {T.accueil.modes}
         </h2>
         <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3">
-          {ORDRE_MODES.filter((m) => m !== 'defi').map((id, i) => {
+          {ORDRE_MODES.filter((m) => m !== 'defi' && m !== 'revision').map((id, i) => {
             const m = MODES[id];
             return (
               <motion.div key={id} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }} className={id === 'classique' ? 'col-span-2 sm:col-span-1' : ''}>

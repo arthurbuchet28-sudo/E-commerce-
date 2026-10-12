@@ -1,7 +1,8 @@
 import { create } from 'zustand';
 import type { Joker } from '@/config/difficulte';
-import { CONTRE_LA_MONTRE, MODES, STOCK_ADAPTATIF, SURVIE } from '@/config/modes';
-import { cleJour, questionsDuDefi, rngDuJour } from '@/engine/defi';
+import { CONTRE_LA_MONTRE, MODES, REVISION, STOCK_ADAPTATIF, SURVIE } from '@/config/modes';
+import { cleJour, questionsDuDefi, rngDuJour, serieDeJours } from '@/engine/defi';
+import { questionsCorrigees, questionsRatees } from '@/engine/progression';
 import type { Reponse } from '@/engine/evaluation';
 import {
   creerPartie,
@@ -16,14 +17,16 @@ import {
   type ConfigPartie,
   type EtatPartie,
 } from '@/engine/partie';
-import { rngAleatoire } from '@/engine/random';
+import { melanger, rngAleatoire } from '@/engine/random';
 import { dedoublonner, selectionnerAvecReserve } from '@/engine/selection';
 import { DIFFICULTES } from '@/config/difficulte';
 import type { Question } from '@/types/question';
 import { garderQuestionsJouables, prechargerImage } from '@/lib/prechargement';
 import { recupererQuestions } from '@/providers';
 import { banqueLocale } from '@/providers/local';
+import { useProfil, type BilanProgression } from './profil';
 import { cleRecord, useRecords } from './records';
+import { useRevision } from './revision';
 
 export type ResultatEnregistre = { nouveauRecord: boolean; ancienRecord: number | undefined };
 
@@ -38,6 +41,8 @@ type EtatStorePartie = {
   chargement: boolean;
   erreur: string | null;
   resultat: ResultatEnregistre | null;
+  /** XP, niveau et badges gagnés sur la dernière partie. */
+  bilan: BilanProgression | null;
   lancer: (config: ConfigPartie) => Promise<boolean>;
   rejouer: () => Promise<boolean>;
   repondre: (reponse: Reponse) => void;
@@ -65,6 +70,12 @@ async function questionsPour(config: ConfigPartie): Promise<Question[]> {
   switch (config.mode) {
     case 'defi':
       return questionsDuDefi(banqueLocale(), config.jour ?? cleJour());
+    case 'revision': {
+      // Les plus anciennes questions ratées d'abord, dans un ordre mélangé.
+      const aRevoir = useRevision.getState().questions.slice(0, REVISION.nombre);
+      if (!aRevoir.length) throw new Error('revision-vide');
+      return sansImagesCassees(melanger(aRevoir, rng));
+    }
     case 'blind_test': {
       const { questionsBlindTest } = await import('@/providers/deezer');
       const [cle, valeur] = (config.filtre ?? '').split(':');
@@ -117,9 +128,10 @@ export const usePartie = create<EtatStorePartie>()((set, get) => ({
   chargement: false,
   erreur: null,
   resultat: null,
+  bilan: null,
 
   lancer: async (config) => {
-    set({ chargement: true, erreur: null, resultat: null });
+    set({ chargement: true, erreur: null, resultat: null, bilan: null });
     try {
       const questions = await questionsPour(config);
       if (questions.length === 0) throw new Error('Aucune question disponible');
@@ -192,5 +204,12 @@ function finir(partie: EtatPartie) {
     records.enregistrerDefi(c.jour ?? cleJour(), { score: r.score, bonnes: r.bonnes, total: r.total, grille: grilleEmojis(partie.resultats) });
   }
   if (c.mode !== 'defi') records.marquerVues(partie.questions.map((q) => q.question.id));
-  usePartie.setState({ partie, resultat, finChrono: null, pret: true });
+  // Révision : les questions ratées s'ajoutent à la liste, celles corrigées en révision en sortent.
+  const revision = useRevision.getState();
+  if (c.mode === 'revision') revision.retirer(questionsCorrigees(partie));
+  else revision.ajouter(questionsRatees(partie));
+  // Progression : XP, statistiques, badges, historique.
+  const jour = cleJour();
+  const bilan = useProfil.getState().enregistrerPartie(partie, serieDeJours(Object.keys(useRecords.getState().defis), jour));
+  usePartie.setState({ partie, resultat, bilan, finChrono: null, pret: true });
 }
