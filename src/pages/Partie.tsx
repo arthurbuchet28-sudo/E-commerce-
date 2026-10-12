@@ -3,6 +3,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { BadgeCombo } from '@/components/BadgeCombo';
 import { BarreJokers } from '@/components/BarreJokers';
+import { BoutonConfirmation } from '@/components/BoutonConfirmation';
 import { CarteRevelation } from '@/components/CarteRevelation';
 import { Chrono } from '@/components/Chrono';
 import { CompteurScore } from '@/components/CompteurScore';
@@ -43,6 +44,7 @@ export function Partie() {
   const scoreRef = useRef<HTMLDivElement>(null);
   const suivanteRef = useRef<HTMLButtonElement>(null);
   const idEnvol = useRef(0);
+  const quitteRef = useRef(false);
 
   const courante = partie ? questionCourante(partie) : undefined;
   const phase = partie?.phase;
@@ -179,7 +181,7 @@ export function Partie() {
     return () => window.removeEventListener('keydown', onKey);
   }, [courante, phase, choisir, continuer]);
 
-  if (!partie || !info) return <Navigate to="/jouer" replace />;
+  if (!partie || !info) return quitteRef.current ? null : <Navigate to="/jouer" replace />;
   if (partie.phase === 'terminee') return <Navigate to="/resultats" replace />;
   if (!courante) return null;
   if (!pret && partie.joueurs) {
@@ -192,10 +194,11 @@ export function Partie() {
   const q = courante.question;
   const cat = infoCategorie(q.categorie);
   const abandonner = () => {
-    if (window.confirm(T.jeu.confirmerAbandon)) {
-      quitter();
-      navigate('/');
-    }
+    // La navigation est une transition React : la page de jeu se redessine d'abord avec une partie vide.
+    // On note qu'on la quitte pour qu'elle ne redirige pas alors vers la configuration.
+    quitteRef.current = true;
+    navigate('/');
+    quitter();
   };
   const n = partie.questions.length;
   const jokersInapplicables = (['cinquante', 'indice', 'passer', 'temps'] as const).filter((j) => !jokerApplicable(courante, j));
@@ -311,9 +314,9 @@ export function Partie() {
       )}
 
       <div className="pt-2 text-center">
-        <button type="button" onClick={abandonner} className="text-sm font-semibold text-slate-500 underline-offset-4 hover:underline dark:text-slate-400">
+        <BoutonConfirmation question={T.jeu.confirmerAbandon} onConfirmer={abandonner} className="text-sm font-semibold text-slate-600 underline-offset-4 hover:underline dark:text-slate-400">
           {T.jeu.abandonner}
-        </button>
+        </BoutonConfirmation>
       </div>
     </div>
   );

@@ -11,6 +11,8 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
+      // SANS_PWA=1 : build sans service worker (hébergements qui ne les autorisent pas).
+      disable: process.env.SANS_PWA === '1',
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'icones/apple-touch-icon.png'],
       manifest: {

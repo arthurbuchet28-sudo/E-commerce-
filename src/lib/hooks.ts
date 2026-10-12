@@ -23,7 +23,10 @@ export function useAppliquerTheme() {
   useEffect(() => {
     const mq = window.matchMedia?.('(prefers-color-scheme: dark)');
     const appliquer = () => {
-      const sombre = theme === 'sombre' || (theme === 'systeme' && mq?.matches === true);
+      // En mode Auto, un thème imposé par la page hôte (data-theme) l'emporte sur celui du système.
+      const impose = document.documentElement.getAttribute('data-theme');
+      const auto = impose === 'dark' ? true : impose === 'light' ? false : mq?.matches === true;
+      const sombre = theme === 'sombre' || (theme === 'systeme' && auto);
       document.documentElement.classList.toggle('dark', sombre);
       document.querySelector('meta[name="theme-color"]')?.setAttribute('content', sombre ? '#140c2e' : '#4c1d95');
     };

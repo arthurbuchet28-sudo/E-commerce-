@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { HashRouter, Link, Navigate, Route, Routes } from 'react-router-dom';
+import { HashRouter, Link, MemoryRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from '@/components/Layout';
 import { SqueletteQuestion } from '@/components/Squelette';
 import { T } from '@/i18n/fr';
@@ -32,9 +32,12 @@ function Introuvable() {
   );
 }
 
+/** Routeur par ancre (#/…) ; en mémoire si VITE_ROUTEUR=memoire (hébergement intégré qui contrôle l'URL). */
+const Routeur = import.meta.env.VITE_ROUTEUR === 'memoire' ? MemoryRouter : HashRouter;
+
 export function App() {
   return (
-    <HashRouter>
+    <Routeur>
       <Layout>
         <Suspense fallback={<SqueletteQuestion />}>
           <Routes>
@@ -53,6 +56,6 @@ export function App() {
           </Routes>
         </Suspense>
       </Layout>
-    </HashRouter>
+    </Routeur>
   );
 }

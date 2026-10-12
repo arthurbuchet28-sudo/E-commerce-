@@ -268,6 +268,7 @@ export const T = {
     vibrations: 'Vibrations',
     fermer: 'Fermer',
   },
+  confirmation: { oui: 'Confirmer', non: 'Annuler' },
   pied: {
     credits: 'Photos : Wikimedia Commons · Extraits : Deezer · Données : Wikidata · Drapeaux : flag-icons · Avatars : DiceBear',
     admin: 'Espace admin',

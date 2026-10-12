@@ -6,6 +6,7 @@ import { T } from '@/i18n/fr';
 import { banqueFichiers, banqueLocale } from '@/providers/local';
 import { useAdmin } from '@/store/admin';
 import type { Categorie, Question, TypeQuestion } from '@/types/question';
+import { BoutonConfirmation } from '@/components/BoutonConfirmation';
 import { FormulaireQuestion } from './FormulaireQuestion';
 
 const CODE = (import.meta.env.VITE_ADMIN_CODE as string | undefined)?.trim();
@@ -217,9 +218,9 @@ function ListeQuestions({ onModifier, onNouvelle }: { onModifier: (q: Question) 
                 </button>
               ) : null}
               {s !== 'supprimee' && (
-                <button type="button" onClick={() => window.confirm(T.admin.confirmerSuppression) && supprimer(q.id)} className="rounded-full bg-red-50 px-3 py-1 text-red-800 dark:bg-red-950 dark:text-red-200">
+                <BoutonConfirmation question={T.admin.confirmerSuppression} onConfirmer={() => supprimer(q.id)} className="rounded-full bg-red-50 px-3 py-1 text-red-800 dark:bg-red-950 dark:text-red-200">
                   {T.admin.supprimer}
-                </button>
+                </BoutonConfirmation>
               )}
             </div>
           </li>
@@ -327,9 +328,11 @@ function Echanges({ onMessage }: { onMessage: (m: string) => void }) {
         >
           ⬇️ {T.admin.exporterModifs}
         </button>
-        <button type="button" onClick={() => window.confirm(T.admin.confirmerToutAnnuler) && admin.toutAnnuler()} className="rounded-2xl bg-red-50 p-4 text-left font-bold text-red-900 shadow-sm dark:bg-red-950 dark:text-red-100">
-          ↩️ {T.admin.toutAnnuler}
-        </button>
+        <div className="rounded-2xl bg-red-50 p-4 text-left font-bold text-red-900 shadow-sm dark:bg-red-950 dark:text-red-100">
+          <BoutonConfirmation question={T.admin.confirmerToutAnnuler} onConfirmer={admin.toutAnnuler} className="text-left font-bold">
+            ↩️ {T.admin.toutAnnuler}
+          </BoutonConfirmation>
+        </div>
       </div>
     </section>
   );

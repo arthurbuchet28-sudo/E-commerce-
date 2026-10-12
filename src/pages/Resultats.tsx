@@ -42,6 +42,8 @@ export function Resultats() {
   const defis = useRecords((s) => s.defis);
   const reduit = useAnimationsReduites();
   const [copie, setCopie] = useState(false);
+  /** Presse-papiers refusé : le texte s'affiche, prêt à être sélectionné et copié. */
+  const [texteAPartager, setTexteAPartager] = useState<string | null>(null);
 
   const fini = partie?.phase === 'terminee';
   const record = resultat?.nouveauRecord ?? false;
@@ -82,16 +84,16 @@ export function Resultats() {
 
   const partager = async () => {
     const texte = T.resultats.partage(mode.nom, r.score, r.bonnes, r.total, grilleEmojis(partie.resultats), theme, texteDifficulte);
+    // Le presse-papiers d'abord (dans le geste du clic) ; le partage natif du mobile en complément.
     try {
-      if (navigator.share && window.matchMedia('(pointer: coarse)').matches) {
-        await navigator.share({ text: texte });
-        return;
-      }
       await navigator.clipboard.writeText(texte);
       setCopie(true);
       window.setTimeout(() => setCopie(false), 2500);
     } catch {
-      /* partage annulé */
+      setTexteAPartager(texte);
+    }
+    if (navigator.share && window.matchMedia('(pointer: coarse)').matches) {
+      await navigator.share({ text: texte }).catch(() => {});
     }
   };
 
@@ -197,6 +199,9 @@ export function Resultats() {
           </button>
         )}
       </div>
+      {texteAPartager && (
+        <textarea readOnly value={texteAPartager} rows={5} onFocus={(e) => e.target.select()} aria-label={T.resultats.partager} className="w-full rounded-2xl border-2 border-violet-300 bg-white p-3 text-sm dark:border-slate-600 dark:bg-slate-800" />
+      )}
       <div className="flex justify-center gap-6 font-bold">
         {c.mode !== 'defi' && c.mode !== 'revision' && (
           <Link to={`/jouer/${c.mode}`} className="text-violet-700 underline-offset-4 hover:underline dark:text-violet-300">
