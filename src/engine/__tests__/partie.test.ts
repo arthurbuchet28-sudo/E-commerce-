@@ -137,3 +137,12 @@ describe('sélection des questions', () => {
     expect(dedoublonner([q('x', { enonce: 'La capitale ?' }), q('y', { enonce: 'capitale' })])).toHaveLength(1);
   });
 });
+
+describe('dédoublonnage des chronologies', () => {
+  it('deux chronologies de même consigne mais d’éléments différents sont conservées', () => {
+    const c1 = q('c1', { type: 'chronologie', enonce: 'Remettez dans l’ordre.', bonneReponse: ['A', 'B', 'C'] });
+    const c2 = q('c2', { type: 'chronologie', enonce: 'Remettez dans l’ordre.', bonneReponse: ['D', 'E', 'F'] });
+    const c3 = q('c3', { type: 'chronologie', enonce: 'Remettez dans l’ordre.', bonneReponse: ['C', 'A', 'B'] });
+    expect(dedoublonner([c1, c2, c3]).map((x) => x.id)).toEqual(['c1', 'c2']);
+  });
+});

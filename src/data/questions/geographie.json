@@ -192,6 +192,301 @@
       ],
       "bonneReponse": "Le Burkina Faso",
       "anecdote": "Anciennement Haute-Volta, il a été renommé en 1984 : « Burkina Faso » signifie « pays des hommes intègres »."
+    },
+    {
+      "id": "loc-ge-014",
+      "difficulte": 1,
+      "enonce": "Quelle est la capitale du Royaume-Uni ?",
+      "type": "qcm",
+      "choix": [
+        "Londres",
+        "Manchester",
+        "Édimbourg",
+        "Liverpool"
+      ],
+      "bonneReponse": "Londres",
+      "anecdote": "Big Ben est en réalité le nom de la grosse cloche, pas de la tour."
+    },
+    {
+      "id": "loc-ge-015",
+      "difficulte": 1,
+      "enonce": "Quel océan borde la côte ouest de la France ?",
+      "type": "qcm",
+      "choix": [
+        "L'océan Atlantique",
+        "L'océan Pacifique",
+        "L'océan Indien",
+        "L'océan Arctique"
+      ],
+      "bonneReponse": "L'océan Atlantique",
+      "anecdote": "Au sud-ouest, il forme le golfe de Gascogne."
+    },
+    {
+      "id": "loc-ge-016",
+      "difficulte": 2,
+      "enonce": "Quel est le plus grand pays du monde par sa superficie ?",
+      "type": "qcm",
+      "choix": [
+        "La Russie",
+        "Le Canada",
+        "La Chine",
+        "Les États-Unis"
+      ],
+      "bonneReponse": "La Russie",
+      "anecdote": "La Russie s'étend sur 11 fuseaux horaires."
+    },
+    {
+      "id": "loc-ge-017",
+      "difficulte": 2,
+      "enonce": "Quelle ville française est surnommée « la Ville rose » ?",
+      "type": "qcm",
+      "choix": [
+        "Toulouse",
+        "Lyon",
+        "Albi",
+        "Bordeaux"
+      ],
+      "bonneReponse": "Toulouse",
+      "anecdote": "Elle doit ce surnom à la couleur de ses briques en terre cuite."
+    },
+    {
+      "id": "loc-ge-018",
+      "difficulte": 2,
+      "enonce": "Quel pays a pour capitale Lisbonne ?",
+      "type": "qcm",
+      "choix": [
+        "Le Portugal",
+        "L'Espagne",
+        "Le Brésil",
+        "L'Italie"
+      ],
+      "bonneReponse": "Le Portugal",
+      "anecdote": "Lisbonne est la capitale la plus à l'ouest de l'Europe continentale."
+    },
+    {
+      "id": "loc-ge-019",
+      "difficulte": 3,
+      "enonce": "Quel est le plus haut sommet d'Afrique ?",
+      "type": "qcm",
+      "choix": [
+        "Le Kilimandjaro",
+        "Le mont Kenya",
+        "Le Toubkal",
+        "Le Ras Dashen",
+        "Le mont Stanley",
+        "Le mont Cameroun"
+      ],
+      "bonneReponse": "Le Kilimandjaro",
+      "reponsesAcceptees": [
+        "Kilimandjaro"
+      ],
+      "anecdote": "Il culmine à environ 5 895 mètres, en Tanzanie."
+    },
+    {
+      "id": "loc-ge-020",
+      "difficulte": 3,
+      "enonce": "Quel détroit sépare l'Europe de l'Afrique ?",
+      "type": "qcm",
+      "choix": [
+        "Le détroit de Gibraltar",
+        "Le Bosphore",
+        "Le détroit de Béring",
+        "Le détroit d'Ormuz",
+        "Le détroit de Magellan",
+        "Le pas de Calais"
+      ],
+      "bonneReponse": "Le détroit de Gibraltar",
+      "reponsesAcceptees": [
+        "Gibraltar"
+      ],
+      "anecdote": "Il ne mesure qu'environ 14 km à son point le plus étroit."
+    },
+    {
+      "id": "loc-ge-021",
+      "difficulte": 3,
+      "enonce": "Quelle est la plus grande île de la Méditerranée ?",
+      "type": "qcm",
+      "choix": [
+        "La Sicile",
+        "La Sardaigne",
+        "Chypre",
+        "La Corse",
+        "La Crète",
+        "Majorque"
+      ],
+      "bonneReponse": "La Sicile",
+      "reponsesAcceptees": [
+        "Sicile"
+      ],
+      "anecdote": "La Sicile abrite l'Etna, le plus haut volcan actif d'Europe."
+    },
+    {
+      "id": "loc-ge-022",
+      "difficulte": 4,
+      "enonce": "Quelle est la capitale du Kazakhstan ?",
+      "type": "qcm",
+      "choix": [
+        "Astana",
+        "Almaty",
+        "Tachkent",
+        "Bichkek",
+        "Douchanbé",
+        "Achgabat"
+      ],
+      "bonneReponse": "Astana",
+      "anecdote": "Almaty a été la capitale jusqu'en 1997 ; Astana s'est appelée Noursoultan de 2019 à 2022."
+    },
+    {
+      "id": "loc-ge-023",
+      "difficulte": 4,
+      "enonce": "Quel est le plus long fleuve d'Europe ?",
+      "type": "qcm",
+      "choix": [
+        "La Volga",
+        "Le Danube",
+        "Le Rhin",
+        "Le Dniepr",
+        "La Loire",
+        "L'Oural"
+      ],
+      "bonneReponse": "La Volga",
+      "reponsesAcceptees": [
+        "Volga"
+      ],
+      "anecdote": "Longue d'environ 3 500 km, elle se jette dans la mer Caspienne."
+    },
+    {
+      "id": "loc-ge-024",
+      "difficulte": 2,
+      "enonce": "Le Danube traverse Vienne, Budapest et Belgrade.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Il traverse dix pays : un record pour un fleuve."
+    },
+    {
+      "id": "loc-ge-025",
+      "difficulte": 2,
+      "enonce": "Le Sahara est le plus grand désert du monde, tous types confondus.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Faux",
+      "anecdote": "C'est l'Antarctique, un désert froid. Le Sahara est le plus grand désert chaud."
+    },
+    {
+      "id": "loc-ge-026",
+      "difficulte": 3,
+      "enonce": "Le lac Léman est partagé entre la France et la Suisse.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Il est traversé par le Rhône."
+    },
+    {
+      "id": "loc-ge-027",
+      "difficulte": 1,
+      "enonce": "Quelle est la capitale de l'Allemagne ?",
+      "type": "saisie",
+      "bonneReponse": "Berlin",
+      "anecdote": "Avant la réunification de 1990, Bonn était la capitale de l'Allemagne de l'Ouest."
+    },
+    {
+      "id": "loc-ge-028",
+      "difficulte": 2,
+      "enonce": "Quel fleuve rejoint la Saône à Lyon ?",
+      "type": "saisie",
+      "bonneReponse": "Rhône",
+      "reponsesAcceptees": [
+        "Le Rhône"
+      ],
+      "anecdote": "Le confluent des deux cours d'eau se trouve au sud de la presqu'île de Lyon."
+    },
+    {
+      "id": "loc-ge-029",
+      "difficulte": 3,
+      "enonce": "Quelle est la capitale du Canada ?",
+      "type": "saisie",
+      "bonneReponse": "Ottawa",
+      "anecdote": "Elle a été choisie par la reine Victoria en 1857."
+    },
+    {
+      "id": "loc-ge-030",
+      "difficulte": 2,
+      "enonce": "Quelle est l'altitude du mont Blanc ?",
+      "type": "estimation",
+      "bonneReponse": 4805,
+      "estimation": {
+        "marge": 600,
+        "unite": "mètres",
+        "min": 3000,
+        "max": 6000
+      },
+      "anecdote": "Mesuré à 4 805,59 m en 2023, il perd ou gagne quelques mètres selon la neige."
+    },
+    {
+      "id": "loc-ge-031",
+      "difficulte": 2,
+      "enonce": "Combien d'habitants compte la ville de Paris (sans sa banlieue) ?",
+      "type": "estimation",
+      "bonneReponse": 2.1,
+      "estimation": {
+        "marge": 1.5,
+        "unite": "millions",
+        "min": 0,
+        "max": 10
+      },
+      "anecdote": "L'aire d'attraction de Paris dépasse 13 millions d'habitants."
+    },
+    {
+      "id": "loc-ge-032",
+      "difficulte": 3,
+      "enonce": "Combien de départements compte la France, outre-mer compris ?",
+      "type": "estimation",
+      "bonneReponse": 101,
+      "estimation": {
+        "marge": 20,
+        "unite": "départements",
+        "min": 50,
+        "max": 150
+      },
+      "anecdote": "96 en métropole et 5 en outre-mer."
+    },
+    {
+      "id": "loc-ge-033",
+      "difficulte": 3,
+      "enonce": "Quelle est la longueur de la Loire ?",
+      "type": "estimation",
+      "bonneReponse": 1006,
+      "estimation": {
+        "marge": 300,
+        "unite": "km",
+        "min": 300,
+        "max": 3000
+      },
+      "anecdote": "C'est le plus long fleuve de France."
+    },
+    {
+      "id": "loc-ge-034",
+      "difficulte": 4,
+      "enonce": "Quelle est la superficie de la France métropolitaine ?",
+      "type": "estimation",
+      "bonneReponse": 552,
+      "estimation": {
+        "marge": 150,
+        "unite": "milliers de km²",
+        "min": 100,
+        "max": 1000
+      },
+      "anecdote": "Avec l'outre-mer, la France couvre près de 633 000 km²."
     }
   ]
 }

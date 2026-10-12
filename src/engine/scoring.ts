@@ -10,6 +10,8 @@ export function multiplicateurCombo(serie: number): number {
 
 export type CalculPoints = {
   correct: boolean;
+  /** Part des points obtenue (0 → 1), pour les réponses partiellement justes. Par défaut : 1 si correct, 0 sinon. */
+  fraction?: number;
   difficulte: NiveauDifficulte;
   /** Série en cours APRÈS cette réponse (1 pour la première bonne réponse). */
   serie: number;
@@ -28,11 +30,12 @@ export type DetailPoints = {
 
 /**
  * Points d'une réponse :
- * (base + bonus de rapidité) × multiplicateur de difficulté × multiplicateur de combo, arrondi.
+ * (base + bonus de rapidité) × fraction obtenue × multiplicateur de difficulté × multiplicateur de combo, arrondi.
  */
 export function calculerPoints(p: CalculPoints): DetailPoints {
   const multiplicateurDifficulte = DIFFICULTES[p.difficulte].multiplicateur;
-  if (!p.correct) {
+  const fraction = Math.max(0, Math.min(1, p.fraction ?? (p.correct ? 1 : 0)));
+  if (fraction === 0) {
     return { total: 0, base: 0, bonusRapidite: 0, multiplicateurDifficulte, multiplicateurCombo: 1 };
   }
   const base = POINTS.base;
@@ -41,8 +44,9 @@ export function calculerPoints(p: CalculPoints): DetailPoints {
     const ratio = Math.min(1, Math.max(0, p.tempsRestant / p.tempsTotal));
     bonusRapidite = Math.round(base * POINTS.bonusRapiditeMax * ratio);
   }
-  const combo = multiplicateurCombo(p.serie);
-  const total = Math.round((base + bonusRapidite) * multiplicateurDifficulte * combo);
+  // Le combo ne s'applique qu'aux réponses justes.
+  const combo = p.correct ? multiplicateurCombo(p.serie) : 1;
+  const total = Math.round((base + bonusRapidite) * fraction * multiplicateurDifficulte * combo);
   return { total, base, bonusRapidite, multiplicateurDifficulte, multiplicateurCombo: combo };
 }
 

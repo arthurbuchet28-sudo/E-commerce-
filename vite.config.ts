@@ -7,6 +7,10 @@ import { fileURLToPath, URL } from 'node:url';
 export default defineConfig({
   base: './',
   plugins: [react(), tailwindcss()],
+  build: {
+    // Les drapeaux restent des fichiers séparés (chargés à l'affichage) au lieu d'être intégrés au code.
+    assetsInlineLimit: (fichier) => (fichier.includes('flag-icons') ? false : undefined),
+  },
   resolve: {
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
   },

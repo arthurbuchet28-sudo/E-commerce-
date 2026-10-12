@@ -9,9 +9,11 @@ import {
   type ConfigPartie,
   type EtatPartie,
 } from '@/engine/partie';
+import type { Reponse } from '@/engine/evaluation';
 import { rngAleatoire } from '@/engine/random';
-import { selectionnerQuestions } from '@/engine/selection';
-import { recupererQuestions } from '@/providers/registre';
+import { selectionnerAvecReserve } from '@/engine/selection';
+import { garderQuestionsJouables } from '@/lib/prechargement';
+import { recupererQuestions } from '@/providers';
 import { cleRecord, useRecords } from './records';
 
 export type ResultatEnregistre = { nouveauRecord: boolean; ancienRecord: number | undefined };
@@ -25,7 +27,7 @@ type EtatStorePartie = {
   resultat: ResultatEnregistre | null;
   lancer: (config: ConfigPartie) => Promise<boolean>;
   rejouer: () => Promise<boolean>;
-  repondre: (reponse: string | null) => void;
+  repondre: (reponse: Reponse) => void;
   joker: (joker: Joker) => void;
   suivante: () => void;
   quitter: () => void;
@@ -49,13 +51,12 @@ export const usePartie = create<EtatStorePartie>()((set, get) => ({
     try {
       const niveaux = DIFFICULTES[config.difficulte].niveaux;
       const banque = await recupererQuestions({ categorie: config.categorie, niveaux, nombre: config.nombreQuestions });
-      const questions = selectionnerQuestions(banque, {
-        categorie: config.categorie,
-        niveaux,
-        nombre: config.nombreQuestions,
-        rng,
-        vuesRecemment: new Set(useRecords.getState().vues),
-      });
+      const { choisies, reserve } = selectionnerAvecReserve(
+        banque,
+        { categorie: config.categorie, niveaux, nombre: config.nombreQuestions, rng, vuesRecemment: new Set(useRecords.getState().vues) },
+        8,
+      );
+      const questions = await garderQuestionsJouables(choisies, reserve);
       if (questions.length === 0) throw new Error('Aucune question disponible');
       set({ partie: creerPartie(config, questions, rng), debutQuestion: performance.now(), chargement: false });
       return true;

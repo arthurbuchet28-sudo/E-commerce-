@@ -5,7 +5,8 @@ import { T } from '@/i18n/fr';
 
 type Props = {
   resultat: ResultatReponse;
-  bonne: string;
+  /** Bonne réponse à rappeler (null si la zone de réponse l'affiche déjà). */
+  bonne: string | null;
   anecdote?: string;
   titre: string;
   derniere: boolean;
@@ -19,7 +20,9 @@ export const CarteRevelation = forwardRef<HTMLButtonElement, Props>(function Car
 ) {
   const couleur = resultat.correct
     ? 'border-emerald-400 bg-emerald-50 dark:bg-emerald-950/60'
-    : resultat.passee
+    : resultat.fraction > 0
+      ? 'border-amber-300 bg-amber-50 dark:bg-amber-950/40'
+      : resultat.passee
       ? 'border-slate-300 bg-slate-50 dark:bg-slate-800/70'
       : 'border-red-300 bg-red-50 dark:bg-red-950/50';
   return (
@@ -32,13 +35,13 @@ export const CarteRevelation = forwardRef<HTMLButtonElement, Props>(function Car
     >
       <div className="flex items-baseline justify-between gap-3">
         <h2 className="font-display text-2xl font-extrabold">{titre}</h2>
-        {resultat.correct && (
+        {resultat.points.total > 0 && (
           <span className="font-display text-xl font-extrabold text-emerald-700 dark:text-emerald-300">
             {T.jeu.pointsGagnes(resultat.points.total)}
           </span>
         )}
       </div>
-      {!resultat.correct && (
+      {!resultat.correct && bonne && (
         <p className="mt-1 text-sm">
           {T.jeu.bonneReponseEtait} <strong className="text-emerald-800 dark:text-emerald-300">{bonne}</strong>
         </p>

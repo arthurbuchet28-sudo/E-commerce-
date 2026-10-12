@@ -1,0 +1,1202 @@
+[
+ {
+  "id": "Q243",
+  "nom": "Tour Eiffel",
+  "pays": "France",
+  "notoriete": 191,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tour_Eiffel_Wikimedia_Commons.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Tour Eiffel Wikimedia Commons.jpg »"
+ },
+ {
+  "id": "Q9202",
+  "nom": "Statue de la Liberté",
+  "pays": "États-Unis",
+  "notoriete": 158,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Statue_of_Liberty_and_a_sightseeing_boat%2C_Liberty_Island%2C_New_York.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Statue of Liberty and a sightseeing boat, Liberty Island, New York.jpg »"
+ },
+ {
+  "id": "Q12506",
+  "nom": "Sainte-Sophie",
+  "pays": "Turquie",
+  "notoriete": 152,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia_Sophia_Mars_2013.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Hagia Sophia Mars 2013.jpg »"
+ },
+ {
+  "id": "Q676203",
+  "nom": "Machu Picchu",
+  "pays": "Pérou",
+  "notoriete": 150,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Machu_Picchu%2C_2023_(012).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Machu Picchu, 2023 (012).jpg »"
+ },
+ {
+  "id": "Q10285",
+  "nom": "Colisée",
+  "pays": "Italie",
+  "notoriete": 148,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Colosseo_2020.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Colosseo 2020.jpg »"
+ },
+ {
+  "id": "Q43473",
+  "nom": "Angkor Vat",
+  "pays": "Cambodge",
+  "notoriete": 137,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Angkor_wat_temple.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Angkor wat temple.jpg »"
+ },
+ {
+  "id": "Q39671",
+  "nom": "Stonehenge",
+  "pays": "Royaume-Uni",
+  "notoriete": 135,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Stonehenge_Total.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Stonehenge Total.jpg »"
+ },
+ {
+  "id": "Q5684",
+  "nom": "Babylone",
+  "pays": "Irak",
+  "notoriete": 127,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/DSC_0658-Recovered.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « DSC 0658-Recovered.jpg »"
+ },
+ {
+  "id": "Q37200",
+  "nom": "Pyramide de Khéops",
+  "pays": "Égypte",
+  "notoriete": 126,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kheops-Pyramid.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Kheops-Pyramid.jpg »"
+ },
+ {
+  "id": "Q43332",
+  "nom": "Pompéi",
+  "pays": "Italie",
+  "notoriete": 122,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pompeii_(4873744179).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Pompeii (4873744179).jpg »"
+ },
+ {
+  "id": "Q5788",
+  "nom": "Pétra",
+  "pays": "Jordanie",
+  "notoriete": 117,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Treasury%2C_Petra%2C_Jordan5.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « The Treasury, Petra, Jordan5.jpg »"
+ },
+ {
+  "id": "Q5859",
+  "nom": "Chichén Itzá",
+  "pays": "Mexique",
+  "notoriete": 110,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chichen_Itza_3.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Chichen Itza 3.jpg »"
+ },
+ {
+  "id": "Q2946",
+  "nom": "Château de Versailles",
+  "pays": "France",
+  "notoriete": 109,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_083.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Vue aérienne du domaine de Versailles par ToucanWings - Creative Commons By Sa 3 »"
+ },
+ {
+  "id": "Q428858",
+  "nom": "Mosquée al-Haram",
+  "pays": "Arabie saoudite",
+  "notoriete": 109,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Khalili_Collection_Hajj_and_Arts_of_Pilgrimage_arc.pp_0211.04_CROP.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Khalili Collection Hajj and Arts of Pilgrimage arc.pp 0211.04 CROP.jpg »"
+ },
+ {
+  "id": "Q80290",
+  "nom": "Cité interdite",
+  "pays": "Chine",
+  "notoriete": 105,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hall_of_Supreme_Harmony_(20241127120000).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Hall of Supreme Harmony (20241127120000).jpg »"
+ },
+ {
+  "id": "Q12192963",
+  "nom": "Mosquée Al-Aqsa",
+  "pays": "Palestine",
+  "notoriete": 103,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem-2013-Temple_Mount-Al-Aqsa_Mosque_(NE_exposure).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Jerusalem-2013-Temple Mount-Al-Aqsa Mosque (NE exposure).jpg »"
+ },
+ {
+  "id": "Q129072",
+  "nom": "Persépolis",
+  "pays": "Iran",
+  "notoriete": 103,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gate_of_All_Nations%2C_Persepolis.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Gate of All Nations, Persepolis.jpg »"
+ },
+ {
+  "id": "Q1143049",
+  "nom": "Château de Montsoreau",
+  "pays": "France",
+  "notoriete": 100,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chateau_de_Montsoreau_Museum_of_contemporary_art_Loire_Valley_France.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Chateau de Montsoreau Museum of contemporary art Loire Valley France.jpg »"
+ },
+ {
+  "id": "Q42798",
+  "nom": "Borobudur",
+  "pays": "Indonésie",
+  "notoriete": 99,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Borobudur-Nothwest-view.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Borobudur-Nothwest-view.jpg »"
+ },
+ {
+  "id": "Q47476",
+  "nom": "Alhambra",
+  "pays": "Espagne",
+  "notoriete": 96,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra_detail.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Alhambra detail.jpg »"
+ },
+ {
+  "id": "Q79961",
+  "nom": "Statue du Christ Rédempteur",
+  "pays": "Brésil",
+  "notoriete": 94,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Christ_the_Redeemer_-_Cristo_Redentor.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Christ the Redeemer - Cristo Redentor.jpg »"
+ },
+ {
+  "id": "Q4152",
+  "nom": "Château de Neuschwanstein",
+  "pays": "Allemagne",
+  "notoriete": 93,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Neuschwanstein_Castle_2024-02.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Neuschwanstein Castle 2024-02.jpg »"
+ },
+ {
+  "id": "Q134140",
+  "nom": "Temples d'Abou Simbel",
+  "pays": "Égypte",
+  "notoriete": 93,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gro%C3%9Fer_Tempel_(Abu_Simbel)_31.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Großer Tempel (Abu Simbel) 31.jpg »"
+ },
+ {
+  "id": "Q170047",
+  "nom": "Samarra",
+  "pays": "Irak",
+  "notoriete": 92,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The_spiral_minaret_in_Samarra.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « The spiral minaret in Samarra.jpg »"
+ },
+ {
+  "id": "Q163607",
+  "nom": "Angkor",
+  "pays": "Cambodge",
+  "notoriete": 91,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Angkor_Wat_W-Seite.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Angkor Wat W-Seite.jpg »"
+ },
+ {
+  "id": "Q47672",
+  "nom": "Armée de terre cuite",
+  "pays": "Chine",
+  "notoriete": 90,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/51714-Terracota-Army.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « 51714-Terracota-Army.jpg »"
+ },
+ {
+  "id": "Q80541",
+  "nom": "Mosquée bleue",
+  "pays": "Turquie",
+  "notoriete": 89,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Exterior_of_Sultan_Ahmed_I_Mosque_in_Istanbul%2C_Turkey_002.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Exterior of Sultan Ahmed I Mosque in Istanbul, Turkey 002.jpg »"
+ },
+ {
+  "id": "Q62378",
+  "nom": "Tour de Londres",
+  "pays": "Royaume-Uni",
+  "notoriete": 88,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tower_of_London_viewed_from_the_River_Thames.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Tower of London viewed from the River Thames.jpg »"
+ },
+ {
+  "id": "Q133423",
+  "nom": "Vallée des Rois",
+  "pays": "Égypte",
+  "notoriete": 88,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Luxor%2C_Tal_der_K%C3%B6nige_(1995%2C_860x605).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Luxor, Tal der Könige (1995, 860x605).jpg »"
+ },
+ {
+  "id": "Q172077",
+  "nom": "Dôme du Rocher",
+  "pays": "Palestine",
+  "notoriete": 87,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%D8%AE%D8%B1%D9%8A%D9%81..%D9%82%D8%A8%D8%A9_%D8%A7%D9%84%D8%B5%D8%AE%D8%B1%D8%A9.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « خريف..قبة الصخرة.jpg »"
+ },
+ {
+  "id": "Q1865480",
+  "nom": "Bastille",
+  "pays": "France",
+  "notoriete": 86,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bastille_Exterior_1790_or_1791.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Bastille Exterior 1790 or 1791.jpg »"
+ },
+ {
+  "id": "Q5699",
+  "nom": "Ur",
+  "pays": "Irak",
+  "notoriete": 86,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ur-Nassiriyah.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ur-Nassiriyah.jpg »"
+ },
+ {
+  "id": "Q5680",
+  "nom": "Ninive",
+  "pays": "Irak",
+  "notoriete": 86,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nineveh_mashki_gate_from_west.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Nineveh mashki gate from west.JPG »"
+ },
+ {
+  "id": "Q178835",
+  "nom": "Baalbek",
+  "pays": "Liban",
+  "notoriete": 86,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Bacchus.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Temple of Bacchus.jpg »"
+ },
+ {
+  "id": "Q484458",
+  "nom": "Bouddhas de Bâmiyân",
+  "pays": "Afghanistan",
+  "notoriete": 86,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Buddha_of_Bamiyan.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Buddha of Bamiyan.jpg »"
+ },
+ {
+  "id": "Q42646",
+  "nom": "Château de Windsor",
+  "pays": "Royaume-Uni",
+  "notoriete": 85,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Windsor_Castle_at_Sunset_-_Nov_2006.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Windsor Castle at Sunset - Nov 2006.jpg »"
+ },
+ {
+  "id": "Q71229",
+  "nom": "Palais du Potala",
+  "pays": "Chine",
+  "notoriete": 85,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Potala.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Potala.jpg »"
+ },
+ {
+  "id": "Q175582",
+  "nom": "Pyramides d'Égypte",
+  "pays": "Égypte",
+  "notoriete": 85,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/All_Gizah_Pyramids.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « All Gizah Pyramids.jpg »"
+ },
+ {
+  "id": "Q130958",
+  "nom": "Sphinx de Gizeh",
+  "pays": "Égypte",
+  "notoriete": 85,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Sphinx_of_Giza_May_2015.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Great Sphinx of Giza May 2015.JPG »"
+ },
+ {
+  "id": "Q134821",
+  "nom": "Mur des Lamentations",
+  "pays": "Palestine",
+  "notoriete": 84,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/16-03-30-Klagemauer_Jerusalem_RalfR-DSCF7673.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « 16-03-30-Klagemauer Jerusalem RalfR-DSCF7673.jpg »"
+ },
+ {
+  "id": "Q184427",
+  "nom": "Ajantâ",
+  "pays": "Inde",
+  "notoriete": 83,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ajanta_(63).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ajanta (63).jpg »"
+ },
+ {
+  "id": "Q173532",
+  "nom": "Byblos",
+  "pays": "Liban",
+  "notoriete": 83,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Byblos_Libanon_2003.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Byblos Libanon 2003.JPG »"
+ },
+ {
+  "id": "Q179900",
+  "nom": "David",
+  "pays": "Italie",
+  "notoriete": 82,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/'David'_by_Michelangelo_Fir_JBU004.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « 'David' by Michelangelo Fir JBU004.jpg »"
+ },
+ {
+  "id": "Q101583",
+  "nom": "Thèbes",
+  "pays": "Égypte",
+  "notoriete": 82,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Luxor_temple27.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Luxor temple27.JPG »"
+ },
+ {
+  "id": "Q5724",
+  "nom": "Anurâdhapura",
+  "pays": "Sri Lanka",
+  "notoriete": 81,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/SL_Anuradhapura_asv2020-01_img11_Ruwanwelisaya_Stupa.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « SL Anuradhapura asv2020-01 img11 Ruwanwelisaya Stupa.jpg »"
+ },
+ {
+  "id": "Q134883",
+  "nom": "Tour CN",
+  "pays": "Canada",
+  "notoriete": 80,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CN_Tower_from_Puente_de_Luz%2C_Toronto%2C_Ontario%2C_2025-08-25_01.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « CN Tower from Puente de Luz, Toronto, Ontario, 2025-08-25 01.jpg »"
+ },
+ {
+  "id": "Q170495",
+  "nom": "Palais de Topkapı",
+  "pays": "Turquie",
+  "notoriete": 79,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Seen_From_Harem.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Topkapi Palace Seen From Harem.JPG »"
+ },
+ {
+  "id": "Q172613",
+  "nom": "Teotihuacan",
+  "pays": "Mexique",
+  "notoriete": 79,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/ZA77_Teotihuac%C3%A1n_edo_de_mex_Herberto_de_la_rosa.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « ZA77 Teotihuacán edo de mex Herberto de la rosa.jpg »"
+ },
+ {
+  "id": "Q29317",
+  "nom": "Bagan",
+  "pays": "Birmanie",
+  "notoriete": 79,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bagan%2C_Myanmar%2C_Htilominlo_Temple_and_other_Buddhist_stupas_in_Bagan_plain.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Bagan, Myanmar, Htilominlo Temple and other Buddhist stupas in Bagan plain.jpg »"
+ },
+ {
+  "id": "Q180773",
+  "nom": "Suse",
+  "pays": "Iran",
+  "notoriete": 79,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Apadana%2C_a_large_hypostyle_room_of_36_columns_in_the_Palace_of_Darius%2C_Susa%2C_capital_of_Elam_and_of_the_Achaemenid_Empire%2C_Iran_(46950284624).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « The Apadana, a large hypostyle room of 36 columns in the Palace of Darius, Susa, »"
+ },
+ {
+  "id": "Q200200",
+  "nom": "Assur",
+  "pays": "Irak",
+  "notoriete": 79,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ashur_(Qal'at_Sherqat)-115188.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ashur (Qal'at Sherqat)-115188.jpg »"
+ },
+ {
+  "id": "Q18068",
+  "nom": "Dôme de Milan",
+  "pays": "Italie",
+  "notoriete": 78,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/20110724_Milan_Cathedral_5260.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « 20110724 Milan Cathedral 5260.jpg »"
+ },
+ {
+  "id": "Q183562",
+  "nom": "Grande Mosquée des Omeyyades",
+  "pays": "Syrie",
+  "notoriete": 78,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ommayyad_masjed.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ommayyad masjed.jpg »"
+ },
+ {
+  "id": "Q3906600",
+  "nom": "Temple de Jérusalem",
+  "pays": "Palestine",
+  "notoriete": 78,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Israel_Museum_17311_(14262124886).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Israel Museum 17311 (14262124886).jpg »"
+ },
+ {
+  "id": "Q20350",
+  "nom": "Moaï",
+  "pays": "Chili",
+  "notoriete": 78,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ahu_Tongariki.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ahu Tongariki.jpg »"
+ },
+ {
+  "id": "Q41150",
+  "nom": "Chemins de Saint-Jacques-de-Compostelle",
+  "pays": "Espagne",
+  "notoriete": 78,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Catedral_de_Santiago_de_Compostela_agosto_2018_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Catedral de Santiago de Compostela agosto 2018 (cropped).jpg »"
+ },
+ {
+  "id": "Q185562",
+  "nom": "Harappa",
+  "pays": "Pakistan",
+  "notoriete": 77,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/WellAndBathingPlatforms-Harappa.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « WellAndBathingPlatforms-Harappa.jpg »"
+ },
+ {
+  "id": "Q187702",
+  "nom": "Église du Saint-Sépulcre",
+  "pays": "Israël",
+  "notoriete": 76,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Church_of_the_Holy_Sepulchre-Jerusalem.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « The Church of the Holy Sepulchre-Jerusalem.JPG »"
+ },
+ {
+  "id": "Q182147",
+  "nom": "Palais d'Hiver",
+  "pays": "Russie",
+  "notoriete": 76,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Winter_Palace_Panorama_3.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Winter Palace Panorama 3.jpg »"
+ },
+ {
+  "id": "Q133575",
+  "nom": "Grotte d'Altamira",
+  "pays": "Espagne",
+  "notoriete": 76,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Techo_de_Altamira_(replica)-Museo_Arqueol%C3%B3gico_Nacional.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Techo de Altamira (replica)-Museo Arqueológico Nacional.jpg »"
+ },
+ {
+  "id": "Q71719",
+  "nom": "Walk of Fame",
+  "pays": "États-Unis",
+  "notoriete": 76,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Stan_Freberg_Walk_of_fame.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Stan Freberg Walk of fame.jpg »"
+ },
+ {
+  "id": "Q193163",
+  "nom": "Mont du Temple",
+  "pays": "Israël",
+  "notoriete": 75,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem-2013(2)-Aerial-Temple_Mount-(south_exposure).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Jerusalem-2013(2)-Aerial-Temple Mount-(south exposure).jpg »"
+ },
+ {
+  "id": "Q181172",
+  "nom": "Tikal",
+  "pays": "Guatemala",
+  "notoriete": 75,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tikal_3.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Tikal 3.jpg »"
+ },
+ {
+  "id": "Q44112",
+  "nom": "Cyrène",
+  "pays": "Libye",
+  "notoriete": 75,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Archaeological_Site_of_Cyrene-109025.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Archaeological Site of Cyrene-109025.jpg »"
+ },
+ {
+  "id": "Q192541",
+  "nom": "Ctésiphon",
+  "pays": "Irak",
+  "notoriete": 75,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ctesiphon.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ctesiphon.jpg »"
+ },
+ {
+  "id": "Q168518",
+  "nom": "Uruk",
+  "pays": "Irak",
+  "notoriete": 75,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Uruk_Archaeological_site_at_Warka.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Uruk Archaeological site at Warka.jpg »"
+ },
+ {
+  "id": "Q192981",
+  "nom": "Djâm",
+  "pays": "Afghanistan",
+  "notoriete": 75,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Minaret_of_jam_2009_ghor.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Minaret of jam 2009 ghor.jpg »"
+ },
+ {
+  "id": "Q209217",
+  "nom": "Monument national du Grand Zimbabwe",
+  "pays": "Zimbabwe",
+  "notoriete": 75,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Great-Zimbabwe-6.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Great-Zimbabwe-6.jpg »"
+ },
+ {
+  "id": "Q29962",
+  "nom": "Assiout",
+  "pays": "Égypte",
+  "notoriete": 74,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Coptic_Center_%D8%A7%D9%84%D8%B3%D9%86%D8%AA%D8%B1_-_panoramio.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « The Coptic Center السنتر - panoramio.jpg »"
+ },
+ {
+  "id": "Q189616",
+  "nom": "Ellorâ",
+  "pays": "Inde",
+  "notoriete": 74,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ellora_Caves%2C_India%2C_Kailasanatha_Temple_2.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ellora Caves, India, Kailasanatha Temple 2.jpg »"
+ },
+ {
+  "id": "Q51252",
+  "nom": "Galerie des Offices",
+  "pays": "Italie",
+  "notoriete": 73,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Florence%2C_Italy_-_panoramio_(125).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Florence, Italy - panoramio (125).jpg »"
+ },
+ {
+  "id": "Q169460",
+  "nom": "Milet",
+  "pays": "Turquie",
+  "notoriete": 73,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Theater_of_Miletus.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « The Theater of Miletus.jpg »"
+ },
+ {
+  "id": "Q156093",
+  "nom": "Taxila",
+  "pays": "Pakistan",
+  "notoriete": 73,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Double-Headed_Eagle_Stupa_at_Sirkap_08.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Double-Headed Eagle Stupa at Sirkap 08.jpg »"
+ },
+ {
+  "id": "Q151952",
+  "nom": "Vénus de Milo",
+  "pays": "France",
+  "notoriete": 72,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A9nus_de_Milo_-_Mus%C3%A9e_du_Louvre_AGER_LL_299_%3B_N_527_%3B_Ma_399.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Vénus de Milo - Musée du Louvre AGER LL 299 ; N 527 ; Ma 399.jpg »"
+ },
+ {
+  "id": "Q216243",
+  "nom": "Nâlandâ",
+  "pays": "Inde",
+  "notoriete": 72,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nalanda_The_Great_Stupa.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Nalanda The Great Stupa.jpg »"
+ },
+ {
+  "id": "Q180212",
+  "nom": "Forum Romain",
+  "pays": "Italie",
+  "notoriete": 72,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Foro_Romano_Musei_Capitolini_Roma.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Foro Romano Musei Capitolini Roma.jpg »"
+ },
+ {
+  "id": "Q178813",
+  "nom": "Herculanum",
+  "pays": "Italie",
+  "notoriete": 72,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Antigua_ciudad_de_Herculano%2C_Italia%2C_2023-03-27%2C_DD_141.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Antigua ciudad de Herculano, Italia, 2023-03-27, DD 141.jpg »"
+ },
+ {
+  "id": "Q57965",
+  "nom": "Tokyo Skytree",
+  "pays": "Japon",
+  "notoriete": 72,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo_Skytree_2023.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Tokyo Skytree 2023.jpg »"
+ },
+ {
+  "id": "Q191739",
+  "nom": "Cathédrale Santa Maria del Fiore",
+  "pays": "Italie",
+  "notoriete": 71,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Florence_Duomo_from_Michelangelo_hill.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Florence Duomo from Michelangelo hill.jpg »"
+ },
+ {
+  "id": "Q7604504",
+  "nom": "Statue de l'Unité",
+  "pays": "Inde",
+  "notoriete": 71,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Statue_of_Unity.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Statue of Unity.jpg »"
+ },
+ {
+  "id": "Q181007",
+  "nom": "Hattusa",
+  "pays": "Turquie",
+  "notoriete": 71,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lion_Gate%2C_Hattusa_13_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Lion Gate, Hattusa 13 (cropped).jpg »"
+ },
+ {
+  "id": "Q26732",
+  "nom": "Ensemble monumental de Hampi",
+  "pays": "Inde",
+  "notoriete": 70,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hampi%2C_India%2C_Granite_boulders_of_Matanga_Hill.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Hampi, India, Granite boulders of Matanga Hill.jpg »"
+ },
+ {
+  "id": "Q61750",
+  "nom": "Tiwanaku",
+  "pays": "Bolivie",
+  "notoriete": 70,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Zonnepoort_tiwanaku.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Zonnepoort tiwanaku.jpg »"
+ },
+ {
+  "id": "Q186312",
+  "nom": "Massada",
+  "pays": "Judée",
+  "notoriete": 70,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Israel-2013-Aerial_21-Masada.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Israel-2013-Aerial 21-Masada.jpg »"
+ },
+ {
+  "id": "Q193325",
+  "nom": "Merv",
+  "pays": "Turkménistan",
+  "notoriete": 70,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Merv_City_Walls_(10)_(44747325714).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Merv City Walls (10) (44747325714).jpg »"
+ },
+ {
+  "id": "Q178643",
+  "nom": "Mosquée Süleymaniye",
+  "pays": "Turquie",
+  "notoriete": 69,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%BCleymaniyeMosqueIstanbul_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « SüleymaniyeMosqueIstanbul (cropped).jpg »"
+ },
+ {
+  "id": "Q125445",
+  "nom": "Temple du ciel",
+  "pays": "Chine",
+  "notoriete": 69,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Heaven_20160323_01.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Temple of Heaven 20160323 01.jpg »"
+ },
+ {
+  "id": "Q188395",
+  "nom": "Nippur",
+  "pays": "Irak",
+  "notoriete": 69,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruins_from_a_temple_in_Naffur.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ruins from a temple in Naffur.jpg »"
+ },
+ {
+  "id": "Q193093",
+  "nom": "Académie de Platon",
+  "pays": "Grèce",
+  "notoriete": 69,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Plato's_Academy_mosaic_from_Pompeii.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Plato's Academy mosaic from Pompeii.jpg »"
+ },
+ {
+  "id": "Q190048",
+  "nom": "Tassili n'Ajjer",
+  "pays": "Algérie",
+  "notoriete": 69,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tassili_Desert_Algeria.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Tassili Desert Algeria.jpg »"
+ },
+ {
+  "id": "Q2620036",
+  "nom": "Géoglyphes de Nazca",
+  "pays": "Pérou",
+  "notoriete": 69,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_44.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Líneas de Nazca, Nazca, Perú, 2015-07-29, DD 44.JPG »"
+ },
+ {
+  "id": "Q191504",
+  "nom": "Leptis Magna",
+  "pays": "Libye",
+  "notoriete": 69,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Leptis_Magna_(29)_(8288918733).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Leptis Magna (29) (8288918733).jpg »"
+ },
+ {
+  "id": "Q183536",
+  "nom": "Tour de Tokyo",
+  "pays": "Japon",
+  "notoriete": 69,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo_Tower_2023.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Tokyo Tower 2023.jpg »"
+ },
+ {
+  "id": "Q330872",
+  "nom": "Mosquée Royale",
+  "pays": "Pakistan",
+  "notoriete": 68,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Badshahi_Mosque_July_1_2005_pic32_by_Ali_Imran_(1).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Badshahi Mosque July 1 2005 pic32 by Ali Imran (1).jpg »"
+ },
+ {
+  "id": "Q2181",
+  "nom": "Aisén",
+  "pays": "Chili",
+  "notoriete": 68,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/.00_3210_Puerto_Chacabuco_-_Chile.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « .00 3210 Puerto Chacabuco - Chile.jpg »"
+ },
+ {
+  "id": "Q184534",
+  "nom": "Mosquée Selimiye",
+  "pays": "Turquie",
+  "notoriete": 67,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Edirne_7333_Nevit.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Edirne 7333 Nevit.JPG »"
+ },
+ {
+  "id": "Q181427",
+  "nom": "Palenque",
+  "pays": "Mexique",
+  "notoriete": 67,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/055_Palenque_Pakal_Maji_(29).JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « 055 Palenque Pakal Maji (29).JPG »"
+ },
+ {
+  "id": "Q59174",
+  "nom": "Capharnaüm",
+  "pays": "Israël",
+  "notoriete": 67,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kafarnaum_BW_7.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Kafarnaum BW 7.JPG »"
+ },
+ {
+  "id": "Q193369",
+  "nom": "Château de Prague",
+  "pays": "Tchéquie",
+  "notoriete": 66,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Castillo_de_Praga%2C_Praga%2C_Rep%C3%BAblica_Checa%2C_2022-07-02%2C_DD_209.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Castillo de Praga, Praga, República Checa, 2022-07-02, DD 209.jpg »"
+ },
+ {
+  "id": "Q522862",
+  "nom": "Karnak",
+  "pays": "Égypte",
+  "notoriete": 66,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Luxor%2C_Egypt%2C_Karnak.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Luxor, Egypt, Karnak.jpg »"
+ },
+ {
+  "id": "Q4523",
+  "nom": "Tchoga Zanbil",
+  "pays": "Iran",
+  "notoriete": 66,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Choghazanbil2.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Choghazanbil2.jpg »"
+ },
+ {
+  "id": "Q230025",
+  "nom": "Pasargades",
+  "pays": "Iran",
+  "notoriete": 66,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pasargadae%2C_Marv_Dasht%2C_near_Shiraz_-_4-8-2013.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Pasargadae, Marv Dasht, near Shiraz - 4-8-2013.jpg »"
+ },
+ {
+  "id": "Q172988",
+  "nom": "Basilique Saint-Marc",
+  "pays": "Italie",
+  "notoriete": 65,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Venice_-_St._Marc's_Basilica_01.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Venice - St. Marc's Basilica 01.jpg »"
+ },
+ {
+  "id": "Q205136",
+  "nom": "Cathédrale de Saint-Jacques-de-Compostelle",
+  "pays": "Espagne",
+  "notoriete": 65,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Santiago_cathedral_2021.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Santiago cathedral 2021.jpg »"
+ },
+ {
+  "id": "Q638445",
+  "nom": "Chersonèse",
+  "pays": "Ukraine",
+  "notoriete": 65,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chersonesos_ruins.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Chersonesos ruins.jpg »"
+ },
+ {
+  "id": "Q43286",
+  "nom": "Grottes de Mogao",
+  "pays": "Chine",
+  "notoriete": 65,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dunhuang_Mogao_Ku_2013.12.31_12-30-18.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Dunhuang Mogao Ku 2013.12.31 12-30-18.jpg »"
+ },
+ {
+  "id": "Q192134",
+  "nom": "Saqqarah",
+  "pays": "Égypte",
+  "notoriete": 65,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Saqqara%2C_Ancient_Egypt.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Saqqara, Ancient Egypt.jpg »"
+ },
+ {
+  "id": "Q5908",
+  "nom": "Cathédrale d'Aix-la-Chapelle",
+  "pays": "Allemagne",
+  "notoriete": 64,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Aachen_Germany_Imperial-Cathedral-01.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Aachen Germany Imperial-Cathedral-01.jpg »"
+ },
+ {
+  "id": "Q830054",
+  "nom": "Cathédrale Sainte-Sophie de Kiev",
+  "pays": "Ukraine",
+  "notoriete": 64,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/80-391-0151_Kyiv_St.Sophia's_Cathedral_RB_18_2_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « 80-391-0151 Kyiv St.Sophia's Cathedral RB 18 2 (cropped).jpg »"
+ },
+ {
+  "id": "Q213232",
+  "nom": "Uxmal",
+  "pays": "Mexique",
+  "notoriete": 64,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Panoramica_Uxmal.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Panoramica Uxmal.jpg »"
+ },
+ {
+  "id": "Q205131",
+  "nom": "Grand Bouddha de Leshan",
+  "pays": "Chine",
+  "notoriete": 64,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Leshan_Giant_Buddha_(1).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Leshan Giant Buddha (1).jpg »"
+ },
+ {
+  "id": "Q191687",
+  "nom": "Héliopolis",
+  "pays": "Égypte",
+  "notoriete": 63,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CairoObeliskSesostris1.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « CairoObeliskSesostris1.jpg »"
+ },
+ {
+  "id": "Q9278",
+  "nom": "Abou Mena",
+  "pays": "Égypte",
+  "notoriete": 63,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Abu_Mena_Modern_Monastery_01.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Abu Mena Modern Monastery 01.JPG »"
+ },
+ {
+  "id": "Q200642",
+  "nom": "Mont Palatin",
+  "pays": "Italie",
+  "notoriete": 63,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Palatine_Hill_from_Circus_Maximus_Rome.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Palatine Hill from Circus Maximus Rome.jpg »"
+ },
+ {
+  "id": "Q4132",
+  "nom": "Palais d'Été",
+  "pays": "Chine",
+  "notoriete": 62,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Longevity_Hill_of_the_Summer_Palace.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Longevity Hill of the Summer Palace.jpg »"
+ },
+ {
+  "id": "Q272680",
+  "nom": "Bosra",
+  "pays": "Syrie",
+  "notoriete": 62,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bosra%2C_Daraa%2C_Syria%2C_Citadel_of_Bosra%2C_Walls.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Bosra, Daraa, Syria, Citadel of Bosra, Walls.jpg »"
+ },
+ {
+  "id": "Q466614",
+  "nom": "Hatra",
+  "pays": "Irak",
+  "notoriete": 62,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hatra_ruins.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Hatra ruins.jpg »"
+ },
+ {
+  "id": "Q188528",
+  "nom": "Stari Most",
+  "pays": "Bosnie-Herzégovine",
+  "notoriete": 61,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mostar_Old_Town_Panorama_2007.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Mostar Old Town Panorama 2007.jpg »"
+ },
+ {
+  "id": "Q211818",
+  "nom": "Palais du Belvédère",
+  "pays": "Autriche",
+  "notoriete": 61,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Wien_-_Schloss_Belvedere%2C_oberes_(2).JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Wien - Schloss Belvedere, oberes (2).JPG »"
+ },
+ {
+  "id": "Q188856",
+  "nom": "Panthéon",
+  "pays": "France",
+  "notoriete": 61,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Panth%C3%A9on%2C_Paris_25_March_2012.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Panthéon, Paris 25 March 2012.jpg »"
+ },
+ {
+  "id": "Q276569",
+  "nom": "Mosquée de Quba",
+  "pays": "Arabie saoudite",
+  "notoriete": 61,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Quba_Mosque_from_Afar_(2024).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Quba Mosque from Afar (2024).jpg »"
+ },
+ {
+  "id": "Q237614",
+  "nom": "Nimroud",
+  "pays": "Irak",
+  "notoriete": 61,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nimrud_081119-F-5855M-033.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Nimrud 081119-F-5855M-033.jpg »"
+ },
+ {
+  "id": "Q48472",
+  "nom": "Köneürgenç",
+  "pays": "Turkménistan",
+  "notoriete": 61,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/KonyeUrgenchMausoleum.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « KonyeUrgenchMausoleum.jpg »"
+ },
+ {
+  "id": "Q207917",
+  "nom": "Nemrut Dağı",
+  "pays": "Turquie",
+  "notoriete": 61,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nemrut_Mountain_Peak.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Nemrut Mountain Peak.JPG »"
+ },
+ {
+  "id": "Q145093",
+  "nom": "Palais du Vatican",
+  "pays": "Vatican",
+  "notoriete": 60,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2018-03-18_Apostolischer_Palast.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « 2018-03-18 Apostolischer Palast.jpg »"
+ },
+ {
+  "id": "Q189883",
+  "nom": "Palais des Doges",
+  "pays": "Italie",
+  "notoriete": 60,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/(Venice)_Doge's_Palace_facing_the_sea.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « (Venice) Doge's Palace facing the sea.jpg »"
+ },
+ {
+  "id": "Q28785",
+  "nom": "Basilique du Sacré-Cœur de Montmartre",
+  "pays": "France",
+  "notoriete": 60,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Le_sacre_coeur.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Le sacre coeur.jpg »"
+ },
+ {
+  "id": "Q233678",
+  "nom": "Jama Masjid",
+  "pays": "Inde",
+  "notoriete": 60,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jama_Masjid%2C_Delhi.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Jama Masjid, Delhi.jpg »"
+ },
+ {
+  "id": "Q237128",
+  "nom": "Parc national de Mesa Verde",
+  "pays": "États-Unis",
+  "notoriete": 60,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mesa_Verde.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Mesa Verde.jpg »"
+ },
+ {
+  "id": "Q233576",
+  "nom": "Épidaure",
+  "pays": "Grèce",
+  "notoriete": 60,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The_great_theater_of_Epidaurus%2C_designed_by_Polykleitos_the_Younger_in_the_4th_century_BC%2C_Sanctuary_of_Asklepeios_at_Epidaurus%2C_Greece_(14015010416).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « The great theater of Epidaurus, designed by Polykleitos the Younger in the 4th c »"
+ },
+ {
+  "id": "Q234364",
+  "nom": "Palais des Tuileries",
+  "pays": "France",
+  "notoriete": 59,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tuileries_jardin_1867.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Tuileries jardin 1867.jpg »"
+ },
+ {
+  "id": "Q836531",
+  "nom": "Palais des vents",
+  "pays": "Inde",
+  "notoriete": 59,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/East_facade_Hawa_Mahal_Jaipur_from_ground_level_(July_2022)_-_img_01.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « East facade Hawa Mahal Jaipur from ground level (July 2022) - img 01.jpg »"
+ },
+ {
+  "id": "Q210610",
+  "nom": "Palais du Golestan",
+  "pays": "Iran",
+  "notoriete": 59,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Milad-poorali.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Milad-poorali.jpg »"
+ },
+ {
+  "id": "Q546010",
+  "nom": "Ani",
+  "pays": "Turquie",
+  "notoriete": 59,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ani_Archeological_Site%2C_March_2020_1.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ani Archeological Site, March 2020 1.jpg »"
+ },
+ {
+  "id": "Q232615",
+  "nom": "Sardes",
+  "pays": "Turquie",
+  "notoriete": 59,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Bath-Gymnasium_complex_at_Sardis%2C_late_2nd_-_early_3rd_century_AD%2C_Sardis%2C_Turkey_(17098680002).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « The Bath-Gymnasium complex at Sardis, late 2nd - early 3rd century AD, Sardis, T »"
+ },
+ {
+  "id": "Q459629",
+  "nom": "Timgad",
+  "pays": "Algérie",
+  "notoriete": 59,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Timgad_Ruins_Panorama.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Timgad Ruins Panorama.jpg »"
+ },
+ {
+  "id": "Q331603",
+  "nom": "Bhimbetka",
+  "pays": "Inde",
+  "notoriete": 59,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bhimbetka_Cave_Paintings.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Bhimbetka Cave Paintings.jpg »"
+ },
+ {
+  "id": "Q91274",
+  "nom": "Tour de Galata",
+  "pays": "Turquie",
+  "notoriete": 58,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Istanbul_asv2020-02_img48_Galata_Tower.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Istanbul asv2020-02 img48 Galata Tower.jpg »"
+ },
+ {
+  "id": "Q212065",
+  "nom": "Château d'Édimbourg",
+  "pays": "Royaume-Uni",
+  "notoriete": 58,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Edinburgh_Castle_from_the_Grassmarket.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Edinburgh Castle from the Grassmarket.jpg »"
+ },
+ {
+  "id": "Q151545",
+  "nom": "Château de Wartbourg",
+  "pays": "Allemagne",
+  "notoriete": 58,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Thuringia_Eisenach_asv2020-07_img23_Wartburg_Castle.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Thuringia Eisenach asv2020-07 img23 Wartburg Castle.jpg »"
+ },
+ {
+  "id": "Q71279",
+  "nom": "Forteresse teutonique de Marienbourg",
+  "pays": "Pologne",
+  "notoriete": 58,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama_of_Malbork_Castle%2C_part_4.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Panorama of Malbork Castle, part 4.jpg »"
+ },
+ {
+  "id": "Q319841",
+  "nom": "Temple d'Amon",
+  "pays": "Égypte",
+  "notoriete": 58,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pylons_and_obelisk_Luxor_temple.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Pylons and obelisk Luxor temple.JPG »"
+ },
+ {
+  "id": "Q194450",
+  "nom": "Thermopyles",
+  "pays": "Grèce",
+  "notoriete": 58,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Thermopylae_04.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Thermopylae 04.jpg »"
+ },
+ {
+  "id": "Q205711",
+  "nom": "Îles Solovki",
+  "pays": "Russie",
+  "notoriete": 58,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%91%D1%83%D1%85%D1%82%D0%B0_%D0%9A%D0%B8%D1%81%D0%BB%D0%B0%D1%8F.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Бухта Кислая.jpg »"
+ },
+ {
+  "id": "Q151356",
+  "nom": "Fernsehturm de Berlin",
+  "pays": "Allemagne",
+  "notoriete": 58,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tv-turm_-_panoramio.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Tv-turm - panoramio.jpg »"
+ },
+ {
+  "id": "Q18201640",
+  "nom": "Monument à Wikipédia",
+  "pays": "Pologne",
+  "notoriete": 58,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Wikipedia_Monument_2.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Wikipedia Monument 2.JPG »"
+ },
+ {
+  "id": "Q683632",
+  "nom": "Grande Mosquée de Djenné",
+  "pays": "Mali",
+  "notoriete": 57,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_1.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Great Mosque of Djenné 1.jpg »"
+ },
+ {
+  "id": "Q5736",
+  "nom": "Amarna",
+  "pays": "Égypte",
+  "notoriete": 57,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Amarna_1_llegenda.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Amarna 1 llegenda.jpg »"
+ },
+ {
+  "id": "Q244762",
+  "nom": "Mari",
+  "pays": "Syrie",
+  "notoriete": 57,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mari-Zimri_Lim_Palace.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Mari-Zimri Lim Palace.jpg »"
+ },
+ {
+  "id": "Q62677",
+  "nom": "Karakorum",
+  "pays": "Mongolie",
+  "notoriete": 57,
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Karakorum_Silver_Tree.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Karakorum Silver Tree.jpg »"
+ }
+]

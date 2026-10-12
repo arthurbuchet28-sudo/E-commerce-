@@ -190,6 +190,292 @@
       ],
       "bonneReponse": "193",
       "anecdote": "Le dernier à l'avoir rejoint est le Soudan du Sud, en 2011. Le Vatican et la Palestine y sont observateurs."
+    },
+    {
+      "id": "loc-cg-014",
+      "difficulte": 1,
+      "enonce": "Combien de couleurs compte traditionnellement un arc-en-ciel ?",
+      "type": "qcm",
+      "choix": [
+        "7",
+        "5",
+        "6",
+        "8"
+      ],
+      "bonneReponse": "7",
+      "anecdote": "Newton aurait retenu sept couleurs par analogie avec les sept notes de la gamme."
+    },
+    {
+      "id": "loc-cg-015",
+      "difficulte": 1,
+      "enonce": "Dans quelle ville se trouve le musée du Prado ?",
+      "type": "qcm",
+      "choix": [
+        "Madrid",
+        "Barcelone",
+        "Séville",
+        "Lisbonne"
+      ],
+      "bonneReponse": "Madrid",
+      "anecdote": "Ouvert en 1819, il abrite « Les Ménines » de Velázquez."
+    },
+    {
+      "id": "loc-cg-016",
+      "difficulte": 2,
+      "enonce": "Quel détective a été créé par Arthur Conan Doyle ?",
+      "type": "qcm",
+      "choix": [
+        "Sherlock Holmes",
+        "Hercule Poirot",
+        "Arsène Lupin",
+        "Jules Maigret"
+      ],
+      "bonneReponse": "Sherlock Holmes",
+      "anecdote": "La réplique « Élémentaire, mon cher Watson » n'apparaît jamais telle quelle dans les romans."
+    },
+    {
+      "id": "loc-cg-017",
+      "difficulte": 2,
+      "enonce": "Quel peintre a réalisé la série des « Nymphéas » ?",
+      "type": "qcm",
+      "choix": [
+        "Claude Monet",
+        "Auguste Renoir",
+        "Édouard Manet",
+        "Edgar Degas"
+      ],
+      "bonneReponse": "Claude Monet",
+      "anecdote": "Monet les a peints dans son jardin de Giverny ; les plus grands sont exposés au musée de l'Orangerie."
+    },
+    {
+      "id": "loc-cg-018",
+      "difficulte": 2,
+      "enonce": "Combien de faces possède un cube ?",
+      "type": "qcm",
+      "choix": [
+        "6",
+        "4",
+        "8",
+        "12"
+      ],
+      "bonneReponse": "6",
+      "anecdote": "Un cube possède aussi 12 arêtes et 8 sommets."
+    },
+    {
+      "id": "loc-cg-019",
+      "difficulte": 3,
+      "enonce": "Qui a composé « Les Quatre Saisons » ?",
+      "type": "qcm",
+      "choix": [
+        "Antonio Vivaldi",
+        "Jean-Sébastien Bach",
+        "Wolfgang Amadeus Mozart",
+        "Georg Friedrich Haendel",
+        "Joseph Haydn",
+        "Arcangelo Corelli"
+      ],
+      "bonneReponse": "Antonio Vivaldi",
+      "reponsesAcceptees": [
+        "Vivaldi"
+      ],
+      "anecdote": "Vivaldi était prêtre : on le surnommait « le Prêtre roux »."
+    },
+    {
+      "id": "loc-cg-020",
+      "difficulte": 3,
+      "enonce": "Dans quelle ville se trouve la Sagrada Família ?",
+      "type": "qcm",
+      "choix": [
+        "Barcelone",
+        "Madrid",
+        "Valence",
+        "Séville",
+        "Bilbao",
+        "Lisbonne"
+      ],
+      "bonneReponse": "Barcelone",
+      "anecdote": "Imaginée par Antoni Gaudí, sa construction a débuté en 1882."
+    },
+    {
+      "id": "loc-cg-021",
+      "difficulte": 3,
+      "enonce": "Quel système d'écriture tactile permet aux personnes aveugles de lire ?",
+      "type": "qcm",
+      "choix": [
+        "Le braille",
+        "Le morse",
+        "Le sémaphore",
+        "L'écriture cunéiforme",
+        "Le rongorongo",
+        "La sténographie"
+      ],
+      "bonneReponse": "Le braille",
+      "reponsesAcceptees": [
+        "Braille"
+      ],
+      "anecdote": "Louis Braille, aveugle depuis l'enfance, l'a mis au point alors qu'il était adolescent."
+    },
+    {
+      "id": "loc-cg-022",
+      "difficulte": 4,
+      "enonce": "Quel architecte a conçu la pyramide du Louvre ?",
+      "type": "qcm",
+      "choix": [
+        "Ieoh Ming Pei",
+        "Jean Nouvel",
+        "Renzo Piano",
+        "Frank Gehry",
+        "Le Corbusier",
+        "Norman Foster"
+      ],
+      "bonneReponse": "Ieoh Ming Pei",
+      "reponsesAcceptees": [
+        "Pei",
+        "I. M. Pei"
+      ],
+      "anecdote": "Inaugurée en 1989, elle compte 673 losanges et triangles de verre."
+    },
+    {
+      "id": "loc-cg-023",
+      "difficulte": 1,
+      "enonce": "Le Mont-Saint-Michel est situé en Normandie.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Le Couesnon marque la limite avec la Bretagne : le mont se trouve du côté normand."
+    },
+    {
+      "id": "loc-cg-024",
+      "difficulte": 2,
+      "enonce": "La Grande Muraille de Chine est visible à l'œil nu depuis la Lune.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Faux",
+      "anecdote": "C'est une légende : même depuis l'orbite terrestre, elle est très difficile à distinguer."
+    },
+    {
+      "id": "loc-cg-025",
+      "difficulte": 3,
+      "enonce": "Un « lustre » peut désigner une période de cinq ans.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Le mot vient du latin « lustrum », une cérémonie de purification que les Romains célébraient tous les cinq ans."
+    },
+    {
+      "id": "loc-cg-026",
+      "difficulte": 1,
+      "enonce": "Comment s'appelle le reporter à la houppe créé par Hergé ?",
+      "type": "saisie",
+      "bonneReponse": "Tintin",
+      "anecdote": "Sa première aventure, « Tintin au pays des Soviets », date de 1929."
+    },
+    {
+      "id": "loc-cg-027",
+      "difficulte": 2,
+      "enonce": "Dans quelle ville se dresse la statue du Christ Rédempteur ?",
+      "type": "saisie",
+      "bonneReponse": "Rio de Janeiro",
+      "reponsesAcceptees": [
+        "Rio"
+      ],
+      "anecdote": "Haute de 30 mètres (38 avec son socle), elle a été inaugurée en 1931."
+    },
+    {
+      "id": "loc-cg-028",
+      "difficulte": 3,
+      "enonce": "Quel écrivain a créé le personnage de Jean Valjean ?",
+      "type": "saisie",
+      "bonneReponse": "Victor Hugo",
+      "reponsesAcceptees": [
+        "Hugo"
+      ],
+      "anecdote": "Jean Valjean est le héros des « Misérables », publiés en 1862."
+    },
+    {
+      "id": "loc-cg-029",
+      "difficulte": 2,
+      "enonce": "Remettez ces inventions dans l'ordre chronologique.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "L'imprimerie de Gutenberg",
+        "La machine à vapeur de Watt",
+        "Le téléphone de Bell",
+        "Le World Wide Web"
+      ],
+      "anecdote": "Gutenberg (vers 1450) → Watt (1769) → Bell (1876) → le Web (1989)."
+    },
+    {
+      "id": "loc-cg-030",
+      "difficulte": 3,
+      "enonce": "Remettez ces monuments parisiens dans l'ordre de leur achèvement.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "Notre-Dame de Paris",
+        "L'arc de triomphe de l'Étoile",
+        "La tour Eiffel",
+        "La pyramide du Louvre"
+      ],
+      "anecdote": "Notre-Dame (vers 1345) → l'Arc de triomphe (1836) → la tour Eiffel (1889) → la pyramide du Louvre (1989)."
+    },
+    {
+      "id": "loc-cg-031",
+      "difficulte": 2,
+      "enonce": "Combien de pays compte l'Union européenne ?",
+      "type": "estimation",
+      "bonneReponse": 27,
+      "estimation": {
+        "marge": 6,
+        "unite": "pays",
+        "min": 10,
+        "max": 40
+      },
+      "anecdote": "Le Royaume-Uni a quitté l'Union européenne en 2020."
+    },
+    {
+      "id": "loc-cg-032",
+      "difficulte": 3,
+      "enonce": "Quelle est la hauteur de la tour Eiffel, antennes comprises ?",
+      "type": "estimation",
+      "bonneReponse": 330,
+      "estimation": {
+        "marge": 60,
+        "unite": "mètres",
+        "min": 200,
+        "max": 500
+      },
+      "anecdote": "Avec la dilatation du métal, elle peut grandir d'une quinzaine de centimètres en été."
+    },
+    {
+      "id": "loc-cg-033",
+      "difficulte": 3,
+      "enonce": "En quelle année est paru le premier tome d'« Harry Potter » ?",
+      "type": "estimation",
+      "bonneReponse": 1997,
+      "estimation": {
+        "marge": 10
+      },
+      "anecdote": "Le manuscrit avait été refusé par une douzaine d'éditeurs."
+    },
+    {
+      "id": "loc-cg-034",
+      "difficulte": 4,
+      "enonce": "En quelle année le premier Guide Michelin est-il paru ?",
+      "type": "estimation",
+      "bonneReponse": 1900,
+      "estimation": {
+        "marge": 20
+      },
+      "anecdote": "Il était distribué gratuitement aux automobilistes ; les étoiles sont apparues en 1926."
     }
   ]
 }

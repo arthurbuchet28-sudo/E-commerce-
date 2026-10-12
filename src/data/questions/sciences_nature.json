@@ -192,6 +192,303 @@
       ],
       "bonneReponse": "Le foie",
       "anecdote": "Il pèse environ 1,5 kg et peut se régénérer. Si l'on compte la peau comme un organe, c'est elle la plus lourde."
+    },
+    {
+      "id": "loc-sc-014",
+      "difficulte": 1,
+      "enonce": "Quelle est la planète la plus proche du Soleil ?",
+      "type": "qcm",
+      "choix": [
+        "Mercure",
+        "Vénus",
+        "Mars",
+        "La Terre"
+      ],
+      "bonneReponse": "Mercure",
+      "anecdote": "Une année sur Mercure ne dure que 88 jours terrestres."
+    },
+    {
+      "id": "loc-sc-015",
+      "difficulte": 1,
+      "enonce": "Combien de pattes a un insecte ?",
+      "type": "qcm",
+      "choix": [
+        "6",
+        "4",
+        "8",
+        "10"
+      ],
+      "bonneReponse": "6",
+      "anecdote": "Le corps d'un insecte comporte trois parties : la tête, le thorax et l'abdomen."
+    },
+    {
+      "id": "loc-sc-016",
+      "difficulte": 2,
+      "enonce": "Quel est le gaz le plus abondant dans l'air ?",
+      "type": "qcm",
+      "choix": [
+        "L'azote",
+        "L'oxygène",
+        "Le dioxyde de carbone",
+        "L'argon"
+      ],
+      "bonneReponse": "L'azote",
+      "anecdote": "L'air contient environ 78 % d'azote et 21 % d'oxygène."
+    },
+    {
+      "id": "loc-sc-017",
+      "difficulte": 2,
+      "enonce": "À quelle température l'eau bout-elle au niveau de la mer ?",
+      "type": "qcm",
+      "choix": [
+        "100 °C",
+        "90 °C",
+        "80 °C",
+        "120 °C"
+      ],
+      "bonneReponse": "100 °C",
+      "anecdote": "Au sommet de l'Everest, l'eau bout vers 70 °C seulement."
+    },
+    {
+      "id": "loc-sc-018",
+      "difficulte": 2,
+      "enonce": "Quel naturaliste a formulé la théorie de l'évolution par la sélection naturelle ?",
+      "type": "qcm",
+      "choix": [
+        "Charles Darwin",
+        "Jean-Baptiste de Lamarck",
+        "Gregor Mendel",
+        "Louis Pasteur"
+      ],
+      "bonneReponse": "Charles Darwin",
+      "anecdote": "Il a publié « De l'origine des espèces » en 1859."
+    },
+    {
+      "id": "loc-sc-019",
+      "difficulte": 3,
+      "enonce": "Quelle est la plus grande planète du Système solaire ?",
+      "type": "qcm",
+      "choix": [
+        "Jupiter",
+        "Saturne",
+        "Neptune",
+        "Uranus",
+        "La Terre",
+        "Mars"
+      ],
+      "bonneReponse": "Jupiter",
+      "reponsesAcceptees": [
+        "Jupiter"
+      ],
+      "anecdote": "Plus de 1 300 Terres pourraient y tenir."
+    },
+    {
+      "id": "loc-sc-020",
+      "difficulte": 3,
+      "enonce": "Quel est l'os le plus long du corps humain ?",
+      "type": "qcm",
+      "choix": [
+        "Le fémur",
+        "Le tibia",
+        "L'humérus",
+        "Le radius",
+        "Le péroné",
+        "La clavicule"
+      ],
+      "bonneReponse": "Le fémur",
+      "reponsesAcceptees": [
+        "Fémur"
+      ],
+      "anecdote": "Le plus petit, l'étrier, se trouve dans l'oreille."
+    },
+    {
+      "id": "loc-sc-021",
+      "difficulte": 4,
+      "enonce": "Quel physicien a énoncé le principe d'incertitude en 1927 ?",
+      "type": "qcm",
+      "choix": [
+        "Werner Heisenberg",
+        "Niels Bohr",
+        "Erwin Schrödinger",
+        "Max Planck",
+        "Paul Dirac",
+        "Wolfgang Pauli"
+      ],
+      "bonneReponse": "Werner Heisenberg",
+      "reponsesAcceptees": [
+        "Heisenberg"
+      ],
+      "anecdote": "Il a reçu le prix Nobel de physique en 1932."
+    },
+    {
+      "id": "loc-sc-022",
+      "difficulte": 4,
+      "enonce": "Quelle particule a été découverte au CERN en 2012 ?",
+      "type": "qcm",
+      "choix": [
+        "Le boson de Higgs",
+        "Le neutrino",
+        "Le quark top",
+        "Le positron",
+        "Le gluon",
+        "Le graviton"
+      ],
+      "bonneReponse": "Le boson de Higgs",
+      "reponsesAcceptees": [
+        "Higgs"
+      ],
+      "anecdote": "Peter Higgs et François Englert ont reçu le prix Nobel de physique 2013."
+    },
+    {
+      "id": "loc-sc-023",
+      "difficulte": 1,
+      "enonce": "La Lune tourne autour de la Terre.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Elle nous montre toujours la même face."
+    },
+    {
+      "id": "loc-sc-024",
+      "difficulte": 2,
+      "enonce": "Les chauves-souris sont des oiseaux.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Faux",
+      "anecdote": "Ce sont des mammifères : les seuls capables de voler vraiment."
+    },
+    {
+      "id": "loc-sc-025",
+      "difficulte": 3,
+      "enonce": "Le diamant est composé de carbone.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Tout comme le graphite des mines de crayon."
+    },
+    {
+      "id": "loc-sc-026",
+      "difficulte": 1,
+      "enonce": "Quel est l'animal terrestre le plus rapide ?",
+      "type": "saisie",
+      "bonneReponse": "Guépard",
+      "reponsesAcceptees": [
+        "Le guépard"
+      ],
+      "anecdote": "Il dépasse les 100 km/h en pointe."
+    },
+    {
+      "id": "loc-sc-027",
+      "difficulte": 2,
+      "enonce": "Quelle est la formule chimique de l'eau ?",
+      "type": "saisie",
+      "bonneReponse": "H2O",
+      "reponsesAcceptees": [
+        "H₂O"
+      ],
+      "anecdote": "Deux atomes d'hydrogène et un atome d'oxygène."
+    },
+    {
+      "id": "loc-sc-028",
+      "difficulte": 3,
+      "enonce": "Quel savant anglais a formulé la loi de la gravitation universelle ?",
+      "type": "saisie",
+      "bonneReponse": "Isaac Newton",
+      "reponsesAcceptees": [
+        "Newton"
+      ],
+      "anecdote": "Selon la légende, une pomme tombée d'un arbre lui en aurait donné l'idée."
+    },
+    {
+      "id": "loc-sc-029",
+      "difficulte": 2,
+      "enonce": "Remettez ces événements dans l'ordre chronologique.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "Galilée observe les lunes de Jupiter",
+        "Newton publie sa loi de la gravitation",
+        "Darwin publie « De l'origine des espèces »",
+        "Premiers pas de l'homme sur la Lune"
+      ],
+      "anecdote": "1610 → 1687 → 1859 → 1969."
+    },
+    {
+      "id": "loc-sc-030",
+      "difficulte": 3,
+      "enonce": "Remettez ces événements dans l'ordre chronologique.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "La découverte de la pénicilline",
+        "La découverte de la structure de l'ADN",
+        "La naissance de la brebis clonée Dolly",
+        "La découverte du boson de Higgs"
+      ],
+      "anecdote": "1928 → 1953 → 1996 → 2012."
+    },
+    {
+      "id": "loc-sc-031",
+      "difficulte": 2,
+      "enonce": "Quelle est la température normale du corps humain ?",
+      "type": "estimation",
+      "bonneReponse": 37,
+      "estimation": {
+        "marge": 3,
+        "unite": "°C",
+        "min": 30,
+        "max": 45
+      },
+      "anecdote": "Elle varie légèrement au cours de la journée."
+    },
+    {
+      "id": "loc-sc-032",
+      "difficulte": 3,
+      "enonce": "Combien de chromosomes contient une cellule humaine ?",
+      "type": "estimation",
+      "bonneReponse": 46,
+      "estimation": {
+        "marge": 12,
+        "unite": "chromosomes",
+        "min": 0,
+        "max": 100
+      },
+      "anecdote": "Soit 23 paires."
+    },
+    {
+      "id": "loc-sc-033",
+      "difficulte": 3,
+      "enonce": "À quelle distance moyenne la Lune se trouve-t-elle de la Terre ?",
+      "type": "estimation",
+      "bonneReponse": 384,
+      "estimation": {
+        "marge": 120,
+        "unite": "milliers de km",
+        "min": 0,
+        "max": 1000
+      },
+      "anecdote": "La lumière met un peu plus d'une seconde pour parcourir cette distance."
+    },
+    {
+      "id": "loc-sc-034",
+      "difficulte": 4,
+      "enonce": "Combien d'éléments compte le tableau périodique ?",
+      "type": "estimation",
+      "bonneReponse": 118,
+      "estimation": {
+        "marge": 25,
+        "unite": "éléments",
+        "min": 50,
+        "max": 200
+      },
+      "anecdote": "Les derniers ont été officiellement nommés en 2016."
     }
   ]
 }

@@ -12,5 +12,5 @@
     "strict": true,
     "paths": { "@/*": ["./src/*"] }
   },
-  "include": ["vite.config.ts", "scripts"]
+  "include": ["vite.config.ts", "scripts", "src/providers/wikidata/requetes.ts"]
 }

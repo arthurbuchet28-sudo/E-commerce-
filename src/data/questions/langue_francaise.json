@@ -194,6 +194,292 @@
       ],
       "bonneReponse": "Le jeu de quilles",
       "anecdote": "En berrichon, « coup » se prononçait « choup » : faire un « coup blanc », c'était ne renverser aucune quille."
+    },
+    {
+      "id": "loc-la-014",
+      "difficulte": 1,
+      "enonce": "Que signifie « avoir un chat dans la gorge » ?",
+      "type": "qcm",
+      "choix": [
+        "Être enroué",
+        "Avoir peur",
+        "Avoir faim",
+        "Mentir"
+      ],
+      "bonneReponse": "Être enroué",
+      "anecdote": "L'expression viendrait d'un jeu de mots entre « matou » et « maton » (un grumeau)."
+    },
+    {
+      "id": "loc-la-015",
+      "difficulte": 1,
+      "enonce": "Quel est le contraire de « généreux » ?",
+      "type": "qcm",
+      "choix": [
+        "Avare",
+        "Gentil",
+        "Riche",
+        "Timide"
+      ],
+      "bonneReponse": "Avare",
+      "anecdote": "Harpagon est le célèbre avare de la comédie de Molière."
+    },
+    {
+      "id": "loc-la-016",
+      "difficulte": 2,
+      "enonce": "Que veut dire « mettre les pieds dans le plat » ?",
+      "type": "qcm",
+      "choix": [
+        "Aborder maladroitement un sujet délicat",
+        "Faire la vaisselle",
+        "Arriver en retard",
+        "Trop manger"
+      ],
+      "bonneReponse": "Aborder maladroitement un sujet délicat",
+      "anecdote": "On dit aussi « faire une gaffe »."
+    },
+    {
+      "id": "loc-la-017",
+      "difficulte": 2,
+      "enonce": "Quel est le féminin de « loup » ?",
+      "type": "qcm",
+      "choix": [
+        "Louve",
+        "Loupe",
+        "Louvette",
+        "Loupine"
+      ],
+      "bonneReponse": "Louve",
+      "anecdote": "Le petit du loup s'appelle le louveteau."
+    },
+    {
+      "id": "loc-la-018",
+      "difficulte": 2,
+      "enonce": "Comment appelle-t-on un mot qui a le même sens qu'un autre ?",
+      "type": "qcm",
+      "choix": [
+        "Un synonyme",
+        "Un antonyme",
+        "Un homonyme",
+        "Un paronyme"
+      ],
+      "bonneReponse": "Un synonyme",
+      "anecdote": "Un antonyme, lui, est un mot de sens contraire."
+    },
+    {
+      "id": "loc-la-019",
+      "difficulte": 3,
+      "enonce": "Que signifie « opposer une fin de non-recevoir » ?",
+      "type": "qcm",
+      "choix": [
+        "Refuser",
+        "Mettre fin à un contrat",
+        "Retarder un courrier",
+        "Abandonner une course",
+        "Ignorer un invité",
+        "Accepter à contrecœur"
+      ],
+      "bonneReponse": "Refuser",
+      "anecdote": "L'expression vient du vocabulaire juridique."
+    },
+    {
+      "id": "loc-la-020",
+      "difficulte": 3,
+      "enonce": "Qui a écrit « Le Petit Prince » ?",
+      "type": "qcm",
+      "choix": [
+        "Antoine de Saint-Exupéry",
+        "Jules Verne",
+        "Albert Camus",
+        "Marcel Pagnol",
+        "Jacques Prévert",
+        "Victor Hugo"
+      ],
+      "bonneReponse": "Antoine de Saint-Exupéry",
+      "reponsesAcceptees": [
+        "Saint-Exupéry",
+        "Saint Exupery"
+      ],
+      "anecdote": "Publié en 1943, c'est l'un des livres les plus traduits au monde."
+    },
+    {
+      "id": "loc-la-021",
+      "difficulte": 4,
+      "enonce": "Que signifie l'adjectif « ubuesque » ?",
+      "type": "qcm",
+      "choix": [
+        "Grotesque et absurde",
+        "Très ancien",
+        "Bavard",
+        "Plein d'humour",
+        "Très coloré",
+        "Changeant"
+      ],
+      "bonneReponse": "Grotesque et absurde",
+      "anecdote": "Il vient de la pièce « Ubu roi » d'Alfred Jarry (1896)."
+    },
+    {
+      "id": "loc-la-022",
+      "difficulte": 4,
+      "enonce": "Comment appelle-t-on la peur des araignées ?",
+      "type": "qcm",
+      "choix": [
+        "L'arachnophobie",
+        "La claustrophobie",
+        "L'agoraphobie",
+        "L'acrophobie",
+        "L'ophiophobie",
+        "L'entomophobie"
+      ],
+      "bonneReponse": "L'arachnophobie",
+      "reponsesAcceptees": [
+        "Arachnophobie"
+      ],
+      "anecdote": "Du grec « arakhnê », l'araignée. L'ophiophobie est la peur des serpents."
+    },
+    {
+      "id": "loc-la-023",
+      "difficulte": 1,
+      "enonce": "Le pluriel de « journal » est « journaux ».",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "La plupart des noms en -al font leur pluriel en -aux."
+    },
+    {
+      "id": "loc-la-024",
+      "difficulte": 2,
+      "enonce": "Le mot « oiseau » contient les cinq voyelles a, e, i, o et u.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "C'est l'un des mots les plus courts à les contenir toutes."
+    },
+    {
+      "id": "loc-la-025",
+      "difficulte": 3,
+      "enonce": "Le nom « après-midi » peut s'employer au masculin comme au féminin.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Les deux genres sont admis : un ou une après-midi."
+    },
+    {
+      "id": "loc-la-026",
+      "difficulte": 1,
+      "enonce": "Quel est le contraire de « jour » ?",
+      "type": "saisie",
+      "bonneReponse": "Nuit",
+      "reponsesAcceptees": [
+        "La nuit"
+      ],
+      "anecdote": "Le mot vient du latin « nox, noctis »."
+    },
+    {
+      "id": "loc-la-027",
+      "difficulte": 2,
+      "enonce": "Complétez l'expression : « malin comme un… »",
+      "type": "saisie",
+      "bonneReponse": "Singe",
+      "reponsesAcceptees": [
+        "Un singe"
+      ],
+      "anecdote": "On dit aussi « rusé comme un renard »."
+    },
+    {
+      "id": "loc-la-028",
+      "difficulte": 3,
+      "enonce": "Comment appelle-t-on la figure de style qui exagère volontairement ?",
+      "type": "saisie",
+      "bonneReponse": "Hyperbole",
+      "reponsesAcceptees": [
+        "Une hyperbole"
+      ],
+      "anecdote": "Exemple : « Je meurs de faim »."
+    },
+    {
+      "id": "loc-la-029",
+      "difficulte": 2,
+      "enonce": "Remettez ces œuvres dans l'ordre de leur parution.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "Les « Fables » de La Fontaine (premier recueil)",
+        "« Candide » de Voltaire",
+        "« Les Misérables » de Victor Hugo",
+        "« L'Étranger » d'Albert Camus"
+      ],
+      "anecdote": "1668 → 1759 → 1862 → 1942."
+    },
+    {
+      "id": "loc-la-030",
+      "difficulte": 3,
+      "enonce": "Remettez ces œuvres dans l'ordre de leur parution.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "« La Chanson de Roland »",
+        "« Gargantua » de Rabelais",
+        "« Le Cid » de Corneille",
+        "« Madame Bovary » de Flaubert"
+      ],
+      "anecdote": "Vers 1100 → 1534 → 1637 → 1857."
+    },
+    {
+      "id": "loc-la-031",
+      "difficulte": 2,
+      "enonce": "Combien de voyelles compte l'alphabet français, y compris le y ?",
+      "type": "estimation",
+      "bonneReponse": 6,
+      "estimation": {
+        "marge": 3,
+        "unite": "voyelles",
+        "min": 0,
+        "max": 26
+      },
+      "anecdote": "a, e, i, o, u et y."
+    },
+    {
+      "id": "loc-la-032",
+      "difficulte": 3,
+      "enonce": "En quelle année l'ordonnance de Villers-Cotterêts impose-t-elle le français dans les actes officiels ?",
+      "type": "estimation",
+      "bonneReponse": 1539,
+      "estimation": {
+        "marge": 40
+      },
+      "anecdote": "Elle a été signée par François Ier."
+    },
+    {
+      "id": "loc-la-033",
+      "difficulte": 3,
+      "enonce": "Dans combien de pays le français est-il langue officielle ?",
+      "type": "estimation",
+      "bonneReponse": 29,
+      "estimation": {
+        "marge": 10,
+        "unite": "pays",
+        "min": 0,
+        "max": 80
+      },
+      "anecdote": "C'est l'une des rares langues officielles sur cinq continents."
+    },
+    {
+      "id": "loc-la-034",
+      "difficulte": 4,
+      "enonce": "En quelle année est parue la première édition du dictionnaire de l'Académie française ?",
+      "type": "estimation",
+      "bonneReponse": 1694,
+      "estimation": {
+        "marge": 40
+      },
+      "anecdote": "La neuvième édition a été achevée en 2024."
     }
   ]
 }

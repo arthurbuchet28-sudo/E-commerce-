@@ -194,6 +194,279 @@
       ],
       "bonneReponse": "1960",
       "anecdote": "Composée par Charles Dumont sur un texte de Michel Vaucaire, Piaf l'a dédiée à la Légion étrangère."
+    },
+    {
+      "id": "loc-ch-014",
+      "difficulte": 1,
+      "enonce": "Quel chanteur était surnommé « Cloclo » ?",
+      "type": "qcm",
+      "choix": [
+        "Claude François",
+        "Claude Nougaro",
+        "Christophe",
+        "Calogero"
+      ],
+      "bonneReponse": "Claude François",
+      "anecdote": "Il est mort accidentellement en 1978, électrocuté dans sa salle de bains."
+    },
+    {
+      "id": "loc-ch-015",
+      "difficulte": 1,
+      "enonce": "Quel groupe a chanté « L'Aventurier » en 1982 ?",
+      "type": "qcm",
+      "choix": [
+        "Indochine",
+        "Téléphone",
+        "Noir Désir",
+        "Trust"
+      ],
+      "bonneReponse": "Indochine",
+      "anecdote": "La chanson rend hommage à Bob Morane, héros des romans d'Henri Vernes."
+    },
+    {
+      "id": "loc-ch-016",
+      "difficulte": 1,
+      "enonce": "À quelle ville le groupe de rap IAM est-il associé ?",
+      "type": "qcm",
+      "choix": [
+        "Marseille",
+        "Paris",
+        "Lyon",
+        "Toulouse"
+      ],
+      "bonneReponse": "Marseille",
+      "anecdote": "Akhenaton et Shurik'n en sont les deux rappeurs principaux."
+    },
+    {
+      "id": "loc-ch-017",
+      "difficulte": 2,
+      "enonce": "Quelle chanteuse a enregistré l'album « D'eux », écrit par Jean-Jacques Goldman ?",
+      "type": "qcm",
+      "choix": [
+        "Céline Dion",
+        "Lara Fabian",
+        "Isabelle Boulay",
+        "Lynda Lemay"
+      ],
+      "bonneReponse": "Céline Dion",
+      "anecdote": "Sorti en 1995, c'est l'un des albums francophones les plus vendus de l'histoire."
+    },
+    {
+      "id": "loc-ch-018",
+      "difficulte": 2,
+      "enonce": "Quel artiste belge a sorti l'album « Racine carrée » en 2013 ?",
+      "type": "qcm",
+      "choix": [
+        "Stromae",
+        "Angèle",
+        "Arno",
+        "Damso"
+      ],
+      "bonneReponse": "Stromae",
+      "anecdote": "On y trouve notamment « Papaoutai » et « Formidable »."
+    },
+    {
+      "id": "loc-ch-019",
+      "difficulte": 3,
+      "enonce": "Qui a écrit « Poupée de cire, poupée de son » pour France Gall ?",
+      "type": "qcm",
+      "choix": [
+        "Serge Gainsbourg",
+        "Michel Berger",
+        "Jacques Brel",
+        "Claude François",
+        "Jean-Jacques Goldman",
+        "Michel Polnareff"
+      ],
+      "bonneReponse": "Serge Gainsbourg",
+      "reponsesAcceptees": [
+        "Gainsbourg"
+      ],
+      "anecdote": "La chanson a remporté l'Eurovision 1965… pour le Luxembourg."
+    },
+    {
+      "id": "loc-ch-020",
+      "difficulte": 3,
+      "enonce": "Avec quel musicien France Gall a-t-elle formé un couple à la ville comme à la scène ?",
+      "type": "qcm",
+      "choix": [
+        "Michel Berger",
+        "Serge Gainsbourg",
+        "Michel Sardou",
+        "Julien Clerc",
+        "Daniel Balavoine",
+        "Alain Souchon"
+      ],
+      "bonneReponse": "Michel Berger",
+      "reponsesAcceptees": [
+        "Berger"
+      ],
+      "anecdote": "Michel Berger a aussi écrit l'opéra-rock « Starmania » avec Luc Plamondon."
+    },
+    {
+      "id": "loc-ch-021",
+      "difficulte": 4,
+      "enonce": "Quel groupe a sorti l'album « 666.667 Club » en 1996 ?",
+      "type": "qcm",
+      "choix": [
+        "Noir Désir",
+        "Louise Attaque",
+        "Téléphone",
+        "Indochine",
+        "Les Négresses vertes",
+        "Mano Negra"
+      ],
+      "bonneReponse": "Noir Désir",
+      "anecdote": "Noir Désir est un groupe bordelais."
+    },
+    {
+      "id": "loc-ch-022",
+      "difficulte": 4,
+      "enonce": "Quelle chanteuse a créé « La Foule » en 1957 ?",
+      "type": "qcm",
+      "choix": [
+        "Édith Piaf",
+        "Dalida",
+        "Juliette Gréco",
+        "Barbara",
+        "Mireille Mathieu",
+        "Patachou"
+      ],
+      "bonneReponse": "Édith Piaf",
+      "anecdote": "La chanson est adaptée d'une valse péruvienne d'un compositeur argentin."
+    },
+    {
+      "id": "loc-ch-023",
+      "difficulte": 1,
+      "enonce": "Stromae est un chanteur belge.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Il est né à Bruxelles en 1985."
+    },
+    {
+      "id": "loc-ch-024",
+      "difficulte": 2,
+      "enonce": "Jacques Brel a représenté la France à l'Eurovision.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Faux",
+      "anecdote": "Artiste belge, il n'a jamais participé au concours."
+    },
+    {
+      "id": "loc-ch-025",
+      "difficulte": 3,
+      "enonce": "Daft Punk est un duo formé à Paris.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Thomas Bangalter et Guy-Manuel de Homem-Christo ont annoncé leur séparation en 2021."
+    },
+    {
+      "id": "loc-ch-026",
+      "difficulte": 1,
+      "enonce": "Quel est le prénom du chanteur Aznavour ?",
+      "type": "saisie",
+      "bonneReponse": "Charles",
+      "anecdote": "À ses débuts, il a été soutenu par Édith Piaf, pour qui il a aussi écrit."
+    },
+    {
+      "id": "loc-ch-027",
+      "difficulte": 2,
+      "enonce": "Quel est le nom de scène de Claude Moine, ancien chanteur des Chaussettes noires ?",
+      "type": "saisie",
+      "bonneReponse": "Eddy Mitchell",
+      "reponsesAcceptees": [
+        "Mitchell"
+      ],
+      "anecdote": "Ses fans le surnomment « Schmoll »."
+    },
+    {
+      "id": "loc-ch-028",
+      "difficulte": 3,
+      "enonce": "De quelle ville est originaire le groupe Noir Désir ?",
+      "type": "saisie",
+      "bonneReponse": "Bordeaux",
+      "anecdote": "Le groupe s'est formé au début des années 1980."
+    },
+    {
+      "id": "loc-ch-029",
+      "difficulte": 2,
+      "enonce": "Remettez ces chansons dans l'ordre de leur sortie.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "« Non, je ne regrette rien » (Édith Piaf)",
+        "« Les Champs-Élysées » (Joe Dassin)",
+        "« Je danse le mia » (IAM)",
+        "« Papaoutai » (Stromae)"
+      ],
+      "anecdote": "1960 → 1969 → 1994 → 2013."
+    },
+    {
+      "id": "loc-ch-030",
+      "difficulte": 3,
+      "enonce": "Remettez ces chansons dans l'ordre de leur sortie.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "« Comme d'habitude » (Claude François)",
+        "« Mistral gagnant » (Renaud)",
+        "« Pour que tu m'aimes encore » (Céline Dion)",
+        "« Dernière danse » (Indila)"
+      ],
+      "anecdote": "1967 → 1985 → 1995 → 2013."
+    },
+    {
+      "id": "loc-ch-031",
+      "difficulte": 2,
+      "enonce": "En quelle année Johnny Hallyday est-il mort ?",
+      "type": "estimation",
+      "bonneReponse": 2017,
+      "estimation": {
+        "marge": 10
+      },
+      "anecdote": "Un hommage populaire lui a été rendu sur les Champs-Élysées en décembre 2017."
+    },
+    {
+      "id": "loc-ch-032",
+      "difficulte": 3,
+      "enonce": "En quelle année est sorti l'album de l'opéra-rock « Starmania » ?",
+      "type": "estimation",
+      "bonneReponse": 1978,
+      "estimation": {
+        "marge": 10
+      },
+      "anecdote": "L'album sort en 1978 ; le spectacle est créé au Palais des congrès de Paris en 1979."
+    },
+    {
+      "id": "loc-ch-033",
+      "difficulte": 3,
+      "enonce": "En quelle année Édith Piaf est-elle morte ?",
+      "type": "estimation",
+      "bonneReponse": 1963,
+      "estimation": {
+        "marge": 10
+      },
+      "anecdote": "Elle est morte le 10 octobre 1963 ; Jean Cocteau, son ami, est mort le lendemain."
+    },
+    {
+      "id": "loc-ch-034",
+      "difficulte": 4,
+      "enonce": "En quelle année la Fête de la musique a-t-elle été créée ?",
+      "type": "estimation",
+      "bonneReponse": 1982,
+      "estimation": {
+        "marge": 10
+      },
+      "anecdote": "Lancée par Jack Lang et Maurice Fleuret, elle a lieu le 21 juin, jour du solstice d'été."
     }
   ]
 }

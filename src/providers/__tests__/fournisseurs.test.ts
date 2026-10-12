@@ -40,6 +40,7 @@ function faux(id: string, comportement: () => Promise<Question[]>): FournisseurQ
     categories: CATEGORIES,
     actifParDefaut: true,
     horsLigne: false,
+    partMax: 1,
     estDisponible: () => true,
     recuperer: comportement,
   };
@@ -66,5 +67,27 @@ describe('registre des fournisseurs', () => {
     const sansCle = { ...faux('cle', recuperer), estDisponible: () => false };
     await recupererQuestions({ categorie: 'sport', niveaux: [1], nombre: 5 }, [sansCle, fournisseurLocal]);
     expect(recuperer).not.toHaveBeenCalled();
+  });
+});
+
+describe('quota des sources générées', () => {
+  it('garde au plus partMax × nombre questions, en privilégiant le niveau demandé', async () => {
+    const genere = (n: number): Question[] =>
+      Array.from({ length: n }, (_, i) => ({
+        id: `g${i}`,
+        source: 'gen',
+        categorie: 'sport',
+        type: 'qcm',
+        difficulte: ((i % 4) + 1) as 1 | 2 | 3 | 4,
+        enonce: `Question générée ${i} ?`,
+        choix: ['a', 'b'],
+        bonneReponse: 'a',
+      }));
+    const recuperer = vi.fn(async (c: { nombre: number }) => genere(c.nombre));
+    const source = { ...faux('gen', recuperer as never), horsLigne: true, partMax: 0.5 };
+    const qs = await recupererQuestions({ categorie: 'sport', niveaux: [1], nombre: 10 }, [source]);
+    expect(recuperer).toHaveBeenCalledWith(expect.objectContaining({ nombre: 15 }));
+    expect(qs).toHaveLength(5);
+    expect(qs.every((q) => q.difficulte === 1 || q.difficulte === 2)).toBe(true);
   });
 });

@@ -1,0 +1,2963 @@
+[
+ {
+  "iso2": "fr",
+  "nom": "France",
+  "notoriete": 428,
+  "capitales": [
+   "Paris"
+  ],
+  "population": 68605616,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "us",
+  "nom": "États-Unis",
+  "notoriete": 427,
+  "capitales": [
+   "Washington"
+  ],
+  "population": 340110988,
+  "monnaies": [
+   "dollar des États-Unis"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "tr",
+  "nom": "Turquie",
+  "notoriete": 425,
+  "capitales": [
+   "Ankara"
+  ],
+  "population": 85372377,
+  "monnaies": [
+   "livre turque"
+  ],
+  "continents": [
+   "Europe",
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "ru",
+  "nom": "Russie",
+  "notoriete": 421,
+  "capitales": [
+   "Moscou"
+  ],
+  "population": 146119928,
+  "monnaies": [
+   "rouble russe"
+  ],
+  "continents": [
+   "Europe",
+   "Asie",
+   "Eurasie"
+  ]
+ },
+ {
+  "iso2": "jp",
+  "nom": "Japon",
+  "notoriete": 419,
+  "capitales": [
+   "Tokyo"
+  ],
+  "population": 123802000,
+  "monnaies": [
+   "yen"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "it",
+  "nom": "Italie",
+  "notoriete": 409,
+  "capitales": [
+   "Rome"
+  ],
+  "population": 58850717,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "de",
+  "nom": "Allemagne",
+  "notoriete": 405,
+  "capitales": [
+   "Berlin"
+  ],
+  "population": 83467117,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "in",
+  "nom": "Inde",
+  "notoriete": 403,
+  "capitales": [
+   "New Delhi"
+  ],
+  "population": 1326093247,
+  "monnaies": [
+   "roupie indienne"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "fi",
+  "nom": "Finlande",
+  "notoriete": 403,
+  "capitales": [
+   "Helsinki"
+  ],
+  "population": 5652881,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "mx",
+  "nom": "Mexique",
+  "notoriete": 401,
+  "capitales": [
+   "Mexico"
+  ],
+  "population": 132274416,
+  "monnaies": [
+   "peso mexicain"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "au",
+  "nom": "Australie",
+  "notoriete": 399,
+  "capitales": [
+   "Canberra"
+  ],
+  "population": 27614411,
+  "monnaies": [
+   "dollar australien"
+  ],
+  "continents": [
+   "Océanie"
+  ]
+ },
+ {
+  "iso2": "cn",
+  "nom": "Chine",
+  "notoriete": 399,
+  "capitales": [
+   "Pékin"
+  ],
+  "population": 1404890000,
+  "monnaies": [
+   "renminbi"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "ca",
+  "nom": "Canada",
+  "notoriete": 398,
+  "capitales": [
+   "Ottawa"
+  ],
+  "population": 36991981,
+  "monnaies": [
+   "dollar canadien"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "es",
+  "nom": "Espagne",
+  "notoriete": 396,
+  "capitales": [
+   "Madrid"
+  ],
+  "population": 48592909,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "gb",
+  "nom": "Royaume-Uni",
+  "notoriete": 396,
+  "capitales": [
+   "Londres"
+  ],
+  "population": 67326569,
+  "monnaies": [
+   "livre sterling"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "no",
+  "nom": "Norvège",
+  "notoriete": 393,
+  "capitales": [],
+  "population": 5627400,
+  "monnaies": [
+   "couronne norvégienne"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "eg",
+  "nom": "Égypte",
+  "notoriete": 391,
+  "capitales": [
+   "Le Caire"
+  ],
+  "population": 114535772,
+  "monnaies": [
+   "livre égyptienne"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "pl",
+  "nom": "Pologne",
+  "notoriete": 391,
+  "capitales": [
+   "Varsovie"
+  ],
+  "population": 37563071,
+  "monnaies": [
+   "złoty"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "ua",
+  "nom": "Ukraine",
+  "notoriete": 389,
+  "capitales": [
+   "Kiev"
+  ],
+  "population": 41167335,
+  "monnaies": [
+   "hryvnia"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "br",
+  "nom": "Brésil",
+  "notoriete": 387,
+  "capitales": [
+   "Brasilia"
+  ],
+  "population": 214211951,
+  "monnaies": [
+   "réal brésilien"
+  ],
+  "continents": [
+   "Amérique du Sud"
+  ]
+ },
+ {
+  "iso2": "ch",
+  "nom": "Suisse",
+  "notoriete": 387,
+  "capitales": [
+   "Berne"
+  ],
+  "population": 9104063,
+  "monnaies": [
+   "franc suisse"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "al",
+  "nom": "Albanie",
+  "notoriete": 387,
+  "capitales": [
+   "Tirana"
+  ],
+  "population": 2811655,
+  "monnaies": [
+   "lek"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "be",
+  "nom": "Belgique",
+  "notoriete": 383,
+  "capitales": [
+   "Bruxelles"
+  ],
+  "population": 11825551,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "cl",
+  "nom": "Chili",
+  "notoriete": 380,
+  "capitales": [
+   "Santiago"
+  ],
+  "population": 19458000,
+  "monnaies": [
+   "peso chilien"
+  ],
+  "continents": [
+   "Amérique du Sud"
+  ]
+ },
+ {
+  "iso2": "il",
+  "nom": "Israël",
+  "notoriete": 380,
+  "capitales": [
+   "Jérusalem"
+  ],
+  "population": 9840000,
+  "monnaies": [
+   "shekel"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "gr",
+  "nom": "Grèce",
+  "notoriete": 378,
+  "capitales": [
+   "Athènes"
+  ],
+  "population": 10482487,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "ir",
+  "nom": "Iran",
+  "notoriete": 376,
+  "capitales": [
+   "Téhéran"
+  ],
+  "population": 92417700,
+  "monnaies": [
+   "rial iranien"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "dz",
+  "nom": "Algérie",
+  "notoriete": 374,
+  "capitales": [
+   "Alger"
+  ],
+  "population": 46164219,
+  "monnaies": [
+   "dinar algérien"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "ar",
+  "nom": "Argentine",
+  "notoriete": 372,
+  "capitales": [
+   "Buenos Aires"
+  ],
+  "population": 47327407,
+  "monnaies": [
+   "peso argentin"
+  ],
+  "continents": [
+   "Amérique du Sud"
+  ]
+ },
+ {
+  "iso2": "at",
+  "nom": "Autriche",
+  "notoriete": 372,
+  "capitales": [
+   "Vienne"
+  ],
+  "population": 8979894,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "pt",
+  "nom": "Portugal",
+  "notoriete": 371,
+  "capitales": [
+   "Lisbonne"
+  ],
+  "population": 10347892,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "se",
+  "nom": "Suède",
+  "notoriete": 370,
+  "capitales": [
+   "Stockholm"
+  ],
+  "population": 10609460,
+  "monnaies": [
+   "couronne suédoise"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "vn",
+  "nom": "Vietnam",
+  "notoriete": 369,
+  "capitales": [
+   "Hanoï"
+  ],
+  "population": 96208984,
+  "monnaies": [
+   "dong"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "za",
+  "nom": "Afrique du Sud",
+  "notoriete": 368,
+  "capitales": [
+   "Pretoria",
+   "Le Cap",
+   "Bloemfontein"
+  ],
+  "population": 62027503,
+  "monnaies": [
+   "rand"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "co",
+  "nom": "Colombie",
+  "notoriete": 367,
+  "capitales": [
+   "Bogota"
+  ],
+  "population": 52321152,
+  "monnaies": [
+   "peso colombien"
+  ],
+  "continents": [
+   "Amérique du Sud"
+  ]
+ },
+ {
+  "iso2": "id",
+  "nom": "Indonésie",
+  "notoriete": 366,
+  "capitales": [
+   "Jakarta"
+  ],
+  "population": 275439000,
+  "monnaies": [
+   "roupie indonésienne"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "af",
+  "nom": "Afghanistan",
+  "notoriete": 362,
+  "capitales": [
+   "Kaboul"
+  ],
+  "population": 41454761,
+  "monnaies": [
+   "afghani"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "bg",
+  "nom": "Bulgarie",
+  "notoriete": 361,
+  "capitales": [
+   "Sofia"
+  ],
+  "population": 6423207,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "az",
+  "nom": "Azerbaïdjan",
+  "notoriete": 361,
+  "capitales": [
+   "Bakou"
+  ],
+  "population": 10180770,
+  "monnaies": [
+   "manat azerbaïdjanais"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "hu",
+  "nom": "Hongrie",
+  "notoriete": 358,
+  "capitales": [
+   "Budapest"
+  ],
+  "population": 9603634,
+  "monnaies": [
+   "forint"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "by",
+  "nom": "Biélorussie",
+  "notoriete": 358,
+  "capitales": [
+   "Minsk"
+  ],
+  "population": 9056080,
+  "monnaies": [
+   "rouble biélorusse"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "kr",
+  "nom": "Corée du Sud",
+  "notoriete": 356,
+  "capitales": [
+   "Séoul"
+  ],
+  "population": 51466201,
+  "monnaies": [
+   "mun coréen",
+   "won sud-coréen"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "hr",
+  "nom": "Croatie",
+  "notoriete": 356,
+  "capitales": [
+   "Zagreb"
+  ],
+  "population": 3871833,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "pk",
+  "nom": "Pakistan",
+  "notoriete": 355,
+  "capitales": [
+   "Islamabad"
+  ],
+  "population": 223773700,
+  "monnaies": [
+   "roupie pakistanaise"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "th",
+  "nom": "Thaïlande",
+  "notoriete": 355,
+  "capitales": [
+   "Bangkok"
+  ],
+  "population": 66188503,
+  "monnaies": [
+   "baht"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "is",
+  "nom": "Islande",
+  "notoriete": 355,
+  "capitales": [
+   "Reykjavik"
+  ],
+  "population": 364260,
+  "monnaies": [
+   "couronne islandaise"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "cz",
+  "nom": "Tchéquie",
+  "notoriete": 355,
+  "capitales": [
+   "Prague"
+  ],
+  "population": 10909500,
+  "monnaies": [
+   "couronne tchèque"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "ee",
+  "nom": "Estonie",
+  "notoriete": 354,
+  "capitales": [
+   "Tallinn"
+  ],
+  "population": 1369995,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "am",
+  "nom": "Arménie",
+  "notoriete": 353,
+  "capitales": [
+   "Erevan"
+  ],
+  "population": 2930450,
+  "monnaies": [
+   "dram arménien"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "rs",
+  "nom": "Serbie",
+  "notoriete": 352,
+  "capitales": [
+   "Belgrade"
+  ],
+  "population": 6605168,
+  "monnaies": [
+   "dinar serbe"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "lt",
+  "nom": "Lituanie",
+  "notoriete": 352,
+  "capitales": [
+   "Vilnius"
+  ],
+  "population": 2860002,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "iq",
+  "nom": "Irak",
+  "notoriete": 350,
+  "capitales": [
+   "Bagdad"
+  ],
+  "population": 38274618,
+  "monnaies": [
+   "dinar irakien"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "sa",
+  "nom": "Arabie saoudite",
+  "notoriete": 350,
+  "capitales": [
+   "Riyad"
+  ],
+  "population": 33000000,
+  "monnaies": [
+   "riyal saoudien"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "kz",
+  "nom": "Kazakhstan",
+  "notoriete": 350,
+  "capitales": [
+   "Astana"
+  ],
+  "population": 20139914,
+  "monnaies": [
+   "tenge kazakh"
+  ],
+  "continents": [
+   "Europe",
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "ng",
+  "nom": "Nigeria",
+  "notoriete": 349,
+  "capitales": [
+   "Abuja"
+  ],
+  "population": 211400708,
+  "monnaies": [
+   "naira"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "nz",
+  "nom": "Nouvelle-Zélande",
+  "notoriete": 349,
+  "capitales": [
+   "Wellington"
+  ],
+  "population": 5307800,
+  "monnaies": [
+   "dollar néo-zélandais"
+  ],
+  "continents": [
+   "Océanie"
+  ]
+ },
+ {
+  "iso2": "bd",
+  "nom": "Bangladesh",
+  "notoriete": 348,
+  "capitales": [
+   "Dacca"
+  ],
+  "population": 171466990,
+  "monnaies": [
+   "taka"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "ro",
+  "nom": "Roumanie",
+  "notoriete": 348,
+  "capitales": [
+   "Bucarest"
+  ],
+  "population": 19053815,
+  "monnaies": [
+   "leu roumain"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "ge",
+  "nom": "Géorgie",
+  "notoriete": 348,
+  "capitales": [
+   "Tbilissi"
+  ],
+  "population": 3929581,
+  "monnaies": [
+   "lari"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "et",
+  "nom": "Éthiopie",
+  "notoriete": 347,
+  "capitales": [
+   "Addis-Abeba"
+  ],
+  "population": 128691692,
+  "monnaies": [
+   "birr"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "ve",
+  "nom": "Venezuela",
+  "notoriete": 344,
+  "capitales": [
+   "Caracas"
+  ],
+  "population": 31250306,
+  "monnaies": [
+   "bolivar souverain"
+  ],
+  "continents": [
+   "Amérique du Sud"
+  ]
+ },
+ {
+  "iso2": "ie",
+  "nom": "Irlande",
+  "notoriete": 342,
+  "capitales": [
+   "Dublin"
+  ],
+  "population": 5149139,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "ba",
+  "nom": "Bosnie-Herzégovine",
+  "notoriete": 342,
+  "capitales": [
+   "Sarajevo"
+  ],
+  "population": 3816459,
+  "monnaies": [
+   "dinar de Bosnie-Herzégovine",
+   "mark convertible de Bosnie-Herzégovine"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "va",
+  "nom": "Vatican",
+  "notoriete": 342,
+  "capitales": [
+   "Vatican"
+  ],
+  "population": 882,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "sk",
+  "nom": "Slovaquie",
+  "notoriete": 341,
+  "capitales": [
+   "Bratislava"
+  ],
+  "population": 5409407,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "my",
+  "nom": "Malaisie",
+  "notoriete": 339,
+  "capitales": [
+   "Kuala Lumpur"
+  ],
+  "population": 34231700,
+  "monnaies": [
+   "ringgit"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "ke",
+  "nom": "Kenya",
+  "notoriete": 337,
+  "capitales": [
+   "Nairobi"
+  ],
+  "population": 48468138,
+  "monnaies": [
+   "shilling kényan"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "sy",
+  "nom": "Syrie",
+  "notoriete": 336,
+  "capitales": [
+   "Damas"
+  ],
+  "population": 23865423,
+  "monnaies": [
+   "livre syrienne"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "lv",
+  "nom": "Lettonie",
+  "notoriete": 336,
+  "capitales": [
+   "Riga"
+  ],
+  "population": 1845096,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "lu",
+  "nom": "Luxembourg",
+  "notoriete": 335,
+  "capitales": [
+   "Luxembourg"
+  ],
+  "population": 690959,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "sd",
+  "nom": "Soudan",
+  "notoriete": 334,
+  "capitales": [
+   "Khartoum"
+  ],
+  "population": 40533330,
+  "monnaies": [
+   "livre soudanaise"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "cd",
+  "nom": "République démocratique du Congo",
+  "notoriete": 334,
+  "capitales": [
+   "Kinshasa"
+  ],
+  "population": 105789731,
+  "monnaies": [
+   "franc congolais"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "ma",
+  "nom": "Maroc",
+  "notoriete": 334,
+  "capitales": [
+   "Rabat"
+  ],
+  "population": 36828330,
+  "monnaies": [
+   "dirham marocain"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "ph",
+  "nom": "Philippines",
+  "notoriete": 334,
+  "capitales": [
+   "Manille"
+  ],
+  "population": 112729484,
+  "monnaies": [
+   "peso philippin"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "ly",
+  "nom": "Libye",
+  "notoriete": 333,
+  "capitales": [
+   "Tripoli"
+  ],
+  "population": 7381023,
+  "monnaies": [
+   "dinar libyen"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "pe",
+  "nom": "Pérou",
+  "notoriete": 333,
+  "capitales": [
+   "Lima"
+  ],
+  "population": 34157732,
+  "monnaies": [
+   "sol"
+  ],
+  "continents": [
+   "Amérique du Sud"
+  ]
+ },
+ {
+  "iso2": "sg",
+  "nom": "Singapour",
+  "notoriete": 333,
+  "capitales": [
+   "Singapour"
+  ],
+  "population": 5866139,
+  "monnaies": [
+   "dollar de Singapour"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "ad",
+  "nom": "Andorre",
+  "notoriete": 333,
+  "capitales": [
+   "Andorre-la-Vieille"
+  ],
+  "population": 89752,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "si",
+  "nom": "Slovénie",
+  "notoriete": 331,
+  "capitales": [
+   "Ljubljana"
+  ],
+  "population": 2066880,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "md",
+  "nom": "Moldavie",
+  "notoriete": 331,
+  "capitales": [
+   "Chișinău"
+  ],
+  "population": 2409207,
+  "monnaies": [
+   "leu moldave"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "kh",
+  "nom": "Cambodge",
+  "notoriete": 330,
+  "capitales": [
+   "Phnom Penh"
+  ],
+  "population": 17423880,
+  "monnaies": [
+   "riel"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "lb",
+  "nom": "Liban",
+  "notoriete": 329,
+  "capitales": [
+   "Beyrouth"
+  ],
+  "population": 6100075,
+  "monnaies": [
+   "livre libanaise"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "tn",
+  "nom": "Tunisie",
+  "notoriete": 328,
+  "capitales": [
+   "Tunis"
+  ],
+  "population": 11565204,
+  "monnaies": [
+   "dinar tunisien"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "mt",
+  "nom": "Malte",
+  "notoriete": 327,
+  "capitales": [
+   "La Valette"
+  ],
+  "population": 553214,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "so",
+  "nom": "Somalie",
+  "notoriete": 326,
+  "capitales": [
+   "Mogadiscio"
+  ],
+  "population": 11031386,
+  "monnaies": [
+   "shilling somalien"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "gh",
+  "nom": "Ghana",
+  "notoriete": 326,
+  "capitales": [
+   "Accra"
+  ],
+  "population": 32833031,
+  "monnaies": [
+   "cedi"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "mk",
+  "nom": "Macédoine du Nord",
+  "notoriete": 326,
+  "capitales": [
+   "Skopje"
+  ],
+  "population": 1836713,
+  "monnaies": [
+   "denar macédonien"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "cy",
+  "nom": "Chypre",
+  "notoriete": 325,
+  "capitales": [
+   "Nicosie"
+  ],
+  "population": 1344976,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "uy",
+  "nom": "Uruguay",
+  "notoriete": 324,
+  "capitales": [
+   "Montevideo"
+  ],
+  "population": 3444263,
+  "monnaies": [
+   "peso uruguayen"
+  ],
+  "continents": [
+   "Amérique du Sud"
+  ]
+ },
+ {
+  "iso2": "ao",
+  "nom": "Angola",
+  "notoriete": 323,
+  "capitales": [
+   "Luanda"
+  ],
+  "population": 36749906,
+  "monnaies": [
+   "kwanza"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "np",
+  "nom": "Népal",
+  "notoriete": 323,
+  "capitales": [
+   "Katmandou"
+  ],
+  "population": 29164578,
+  "monnaies": [
+   "roupie népalaise"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "me",
+  "nom": "Monténégro",
+  "notoriete": 323,
+  "capitales": [
+   "Podgorica"
+  ],
+  "population": 617213,
+  "monnaies": [],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "mg",
+  "nom": "Madagascar",
+  "notoriete": 321,
+  "capitales": [
+   "Antananarivo"
+  ],
+  "population": 31964956,
+  "monnaies": [
+   "ariary"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "mn",
+  "nom": "Mongolie",
+  "notoriete": 321,
+  "capitales": [
+   "Oulan-Bator"
+  ],
+  "population": 3409939,
+  "monnaies": [
+   "tugrik"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "mc",
+  "nom": "Monaco",
+  "notoriete": 321,
+  "capitales": [
+   "Monaco"
+  ],
+  "population": 38857,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "tz",
+  "nom": "Tanzanie",
+  "notoriete": 320,
+  "capitales": [
+   "Dodoma"
+  ],
+  "population": 57310019,
+  "monnaies": [
+   "shilling tanzanien"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "zw",
+  "nom": "Zimbabwe",
+  "notoriete": 320,
+  "capitales": [
+   "Harare"
+  ],
+  "population": 15178979,
+  "monnaies": [
+   "or du Zimbabwe",
+   "dollar du Zimbabwe",
+   "rand",
+   "dollar australien",
+   "roupie indienne",
+   "renminbi",
+   "livre sterling",
+   "yen",
+   "dollar des États-Unis"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "kg",
+  "nom": "Kirghizistan",
+  "notoriete": 319,
+  "capitales": [
+   "Bichkek"
+  ],
+  "population": 7281800,
+  "monnaies": [
+   "som"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "ae",
+  "nom": "Émirats arabes unis",
+  "notoriete": 319,
+  "capitales": [
+   "Abou Dabi"
+  ],
+  "population": 9890400,
+  "monnaies": [
+   "dirham des Émirats arabes unis"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "td",
+  "nom": "Tchad",
+  "notoriete": 317,
+  "capitales": [
+   "N'Djaména"
+  ],
+  "population": 19319064,
+  "monnaies": [
+   "franc CFA d'Afrique centrale"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "mm",
+  "nom": "Birmanie",
+  "notoriete": 317,
+  "capitales": [
+   "Naypyidaw"
+  ],
+  "population": 53370609,
+  "monnaies": [
+   "kyat"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "li",
+  "nom": "Liechtenstein",
+  "notoriete": 316,
+  "capitales": [
+   "Vaduz"
+  ],
+  "population": 37922,
+  "monnaies": [
+   "franc suisse"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "na",
+  "nom": "Namibie",
+  "notoriete": 315,
+  "capitales": [
+   "Windhoek"
+  ],
+  "population": 2533794,
+  "monnaies": [
+   "rand",
+   "dollar namibien"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "ec",
+  "nom": "Équateur",
+  "notoriete": 315,
+  "capitales": [
+   "Quito"
+  ],
+  "population": 16938986,
+  "monnaies": [
+   "dollar des États-Unis"
+  ],
+  "continents": [
+   "Amérique du Sud"
+  ]
+ },
+ {
+  "iso2": "ye",
+  "nom": "Yémen",
+  "notoriete": 315,
+  "capitales": [
+   "Sanaa",
+   "Aden"
+  ],
+  "population": 28250420,
+  "monnaies": [
+   "rial yéménite"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "la",
+  "nom": "Laos",
+  "notoriete": 315,
+  "capitales": [
+   "Vientiane"
+  ],
+  "population": 6858160,
+  "monnaies": [
+   "kip laotien"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "cm",
+  "nom": "Cameroun",
+  "notoriete": 314,
+  "capitales": [
+   "Yaoundé"
+  ],
+  "population": 28372687,
+  "monnaies": [
+   "franc CFA d'Afrique centrale"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "bw",
+  "nom": "Botswana",
+  "notoriete": 314,
+  "capitales": [
+   "Gaborone"
+  ],
+  "population": 2480244,
+  "monnaies": [
+   "pula"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "jo",
+  "nom": "Jordanie",
+  "notoriete": 314,
+  "capitales": [
+   "Amman"
+  ],
+  "population": 10428241,
+  "monnaies": [
+   "dinar jordanien"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "tw",
+  "nom": "Taïwan",
+  "notoriete": 314,
+  "capitales": [
+   "Taipei"
+  ],
+  "population": 23317031,
+  "monnaies": [
+   "nouveau dollar de Taïwan"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "sm",
+  "nom": "Saint-Marin",
+  "notoriete": 314,
+  "capitales": [
+   "Saint-Marin"
+  ],
+  "population": 34167,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "ci",
+  "nom": "Côte d'Ivoire",
+  "notoriete": 313,
+  "capitales": [
+   "Yamoussoukro"
+  ],
+  "population": 31165654,
+  "monnaies": [
+   "franc CFA"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "bo",
+  "nom": "Bolivie",
+  "notoriete": 313,
+  "capitales": [
+   "La Paz",
+   "Sucre"
+  ],
+  "population": 12244159,
+  "monnaies": [
+   "boliviano"
+  ],
+  "continents": [
+   "Amérique du Sud"
+  ]
+ },
+ {
+  "iso2": "ug",
+  "nom": "Ouganda",
+  "notoriete": 312,
+  "capitales": [
+   "Kampala"
+  ],
+  "population": 47123531,
+  "monnaies": [
+   "shilling ougandais"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "ml",
+  "nom": "Mali",
+  "notoriete": 312,
+  "capitales": [
+   "Bamako"
+  ],
+  "population": 22395489,
+  "monnaies": [
+   "franc CFA"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "kp",
+  "nom": "Corée du Nord",
+  "notoriete": 312,
+  "capitales": [
+   "Pyongyang"
+  ],
+  "population": 26418204,
+  "monnaies": [
+   "won nord-coréen"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "cu",
+  "nom": "Cuba",
+  "notoriete": 312,
+  "capitales": [
+   "La Havane"
+  ],
+  "population": 10985974,
+  "monnaies": [
+   "peso cubain"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "py",
+  "nom": "Paraguay",
+  "notoriete": 311,
+  "capitales": [
+   "Asuncion"
+  ],
+  "population": 6811297,
+  "monnaies": [
+   "guaraní"
+  ],
+  "continents": [
+   "Amérique du Sud"
+  ]
+ },
+ {
+  "iso2": "sn",
+  "nom": "Sénégal",
+  "notoriete": 309,
+  "capitales": [
+   "Dakar"
+  ],
+  "population": 16876720,
+  "monnaies": [
+   "franc CFA"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "bf",
+  "nom": "Burkina Faso",
+  "notoriete": 309,
+  "capitales": [
+   "Ouagadougou"
+  ],
+  "population": 23025776,
+  "monnaies": [
+   "franc CFA"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "zm",
+  "nom": "Zambie",
+  "notoriete": 309,
+  "capitales": [
+   "Lusaka"
+  ],
+  "population": 19610769,
+  "monnaies": [
+   "kwacha zambien"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "uz",
+  "nom": "Ouzbékistan",
+  "notoriete": 309,
+  "capitales": [
+   "Tachkent"
+  ],
+  "population": 34915100,
+  "monnaies": [
+   "sum"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "bj",
+  "nom": "Bénin",
+  "notoriete": 308,
+  "capitales": [
+   "Porto-Novo"
+  ],
+  "population": 14111034,
+  "monnaies": [
+   "franc CFA"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "lk",
+  "nom": "Sri Lanka",
+  "notoriete": 308,
+  "capitales": [
+   "Colombo",
+   "Sri Jayawardenapura"
+  ],
+  "population": 21444000,
+  "monnaies": [
+   "roupie srilankaise"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "er",
+  "nom": "Érythrée",
+  "notoriete": 307,
+  "capitales": [
+   "Asmara"
+  ],
+  "population": 3497000,
+  "monnaies": [
+   "nakfa érythréen"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "tj",
+  "nom": "Tadjikistan",
+  "notoriete": 307,
+  "capitales": [
+   "Douchanbé"
+  ],
+  "population": 9504000,
+  "monnaies": [
+   "somoni"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "bh",
+  "nom": "Bahreïn",
+  "notoriete": 306,
+  "capitales": [
+   "Manama"
+  ],
+  "population": 1569666,
+  "monnaies": [
+   "dinar bahreïnien"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "mr",
+  "nom": "Mauritanie",
+  "notoriete": 305,
+  "capitales": [
+   "Nouakchott"
+  ],
+  "population": 4736139,
+  "monnaies": [
+   "ouguiya"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "kw",
+  "nom": "Koweït",
+  "notoriete": 305,
+  "capitales": [
+   "Koweït"
+  ],
+  "population": 4464000,
+  "monnaies": [
+   "dinar koweïtien"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "bt",
+  "nom": "Bhoutan",
+  "notoriete": 304,
+  "capitales": [
+   "Thimphou"
+  ],
+  "population": 787424,
+  "monnaies": [
+   "ngultrum"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "rw",
+  "nom": "Rwanda",
+  "notoriete": 303,
+  "capitales": [
+   "Kigali"
+  ],
+  "population": 14569341,
+  "monnaies": [
+   "franc rwandais"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "ne",
+  "nom": "Niger",
+  "notoriete": 302,
+  "capitales": [
+   "Niamey"
+  ],
+  "population": 21477348,
+  "monnaies": [
+   "franc CFA"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "bi",
+  "nom": "Burundi",
+  "notoriete": 302,
+  "capitales": [
+   "Gitega"
+  ],
+  "population": 13689450,
+  "monnaies": [
+   "franc burundais"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "tg",
+  "nom": "Togo",
+  "notoriete": 302,
+  "capitales": [
+   "Lomé"
+  ],
+  "population": 7797694,
+  "monnaies": [
+   "franc CFA"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "cr",
+  "nom": "Costa Rica",
+  "notoriete": 302,
+  "capitales": [
+   "San José"
+  ],
+  "population": 5265575,
+  "monnaies": [
+   "colón"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "pa",
+  "nom": "Panama",
+  "notoriete": 302,
+  "capitales": [
+   "Panama"
+  ],
+  "population": 4570133,
+  "monnaies": [
+   "balboa",
+   "dollar des États-Unis"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "gn",
+  "nom": "Guinée",
+  "notoriete": 301,
+  "capitales": [
+   "Conakry"
+  ],
+  "population": 17521167,
+  "monnaies": [
+   "franc guinéen"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "mz",
+  "nom": "Mozambique",
+  "notoriete": 301,
+  "capitales": [
+   "Maputo"
+  ],
+  "population": 29668834,
+  "monnaies": [
+   "metical"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "cf",
+  "nom": "République centrafricaine",
+  "notoriete": 301,
+  "capitales": [
+   "Bangui"
+  ],
+  "population": 5152421,
+  "monnaies": [
+   "franc CFA d'Afrique centrale"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "cg",
+  "nom": "République du Congo",
+  "notoriete": 300,
+  "capitales": [
+   "Brazzaville"
+  ],
+  "population": 6142180,
+  "monnaies": [
+   "franc CFA d'Afrique centrale"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "dj",
+  "nom": "Djibouti",
+  "notoriete": 300,
+  "capitales": [
+   "Djibouti"
+  ],
+  "population": 1152944,
+  "monnaies": [
+   "franc Djibouti"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "gm",
+  "nom": "Gambie",
+  "notoriete": 300,
+  "capitales": [
+   "Banjul"
+  ],
+  "population": 2639916,
+  "monnaies": [
+   "dalasi"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "tm",
+  "nom": "Turkménistan",
+  "notoriete": 299,
+  "capitales": [
+   "Achgabat"
+  ],
+  "population": 6117933,
+  "monnaies": [
+   "manat turkmène"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "gw",
+  "nom": "Guinée-Bissau",
+  "notoriete": 298,
+  "capitales": [
+   "Bissau"
+  ],
+  "population": 1861283,
+  "monnaies": [
+   "franc CFA"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "mw",
+  "nom": "Malawi",
+  "notoriete": 298,
+  "capitales": [
+   "Lilongwe"
+  ],
+  "population": 17563749,
+  "monnaies": [
+   "kwacha malawien"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "bn",
+  "nom": "Brunei",
+  "notoriete": 298,
+  "capitales": [
+   "Bandar Seri Begawan"
+  ],
+  "population": 458949,
+  "monnaies": [
+   "dollar de Brunei"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "hn",
+  "nom": "Honduras",
+  "notoriete": 298,
+  "capitales": [
+   "Tegucigalpa"
+  ],
+  "population": 8303771,
+  "monnaies": [
+   "lempira"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "om",
+  "nom": "Oman",
+  "notoriete": 297,
+  "capitales": [
+   "Mascate"
+  ],
+  "population": 4829480,
+  "monnaies": [
+   "rial omanais"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "ga",
+  "nom": "Gabon",
+  "notoriete": 295,
+  "capitales": [
+   "Libreville"
+  ],
+  "population": 2025137,
+  "monnaies": [
+   "franc CFA d'Afrique centrale"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "sl",
+  "nom": "Sierra Leone",
+  "notoriete": 294,
+  "capitales": [
+   "Freetown"
+  ],
+  "population": 7557212,
+  "monnaies": [
+   "leone"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "lr",
+  "nom": "Liberia",
+  "notoriete": 292,
+  "capitales": [
+   "Monrovia"
+  ],
+  "population": 5214030,
+  "monnaies": [
+   "dollar libérien"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "tl",
+  "nom": "Timor oriental",
+  "notoriete": 291,
+  "capitales": [
+   "Dili"
+  ],
+  "population": 1400638,
+  "monnaies": [
+   "dollar des États-Unis"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "ht",
+  "nom": "Haïti",
+  "notoriete": 291,
+  "capitales": [
+   "Port-au-Prince"
+  ],
+  "population": 10981229,
+  "monnaies": [
+   "gourde"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "cv",
+  "nom": "Cap-Vert",
+  "notoriete": 290,
+  "capitales": [
+   "Praia"
+  ],
+  "population": 555988,
+  "monnaies": [
+   "escudo cap-verdien"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "qa",
+  "nom": "Qatar",
+  "notoriete": 290,
+  "capitales": [
+   "Doha"
+  ],
+  "population": 2639211,
+  "monnaies": [
+   "riyal qatarien"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "mv",
+  "nom": "Maldives",
+  "notoriete": 289,
+  "capitales": [
+   "Malé"
+  ],
+  "population": 436330,
+  "monnaies": [
+   "rufiyaa"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "sr",
+  "nom": "Suriname",
+  "notoriete": 288,
+  "capitales": [
+   "Paramaribo"
+  ],
+  "population": 563402,
+  "monnaies": [
+   "dollar du Surinam"
+  ],
+  "continents": [
+   "Amérique du Sud"
+  ]
+ },
+ {
+  "iso2": "sv",
+  "nom": "Salvador",
+  "notoriete": 287,
+  "capitales": [
+   "San Salvador"
+  ],
+  "population": 6029976,
+  "monnaies": [
+   "dollar des États-Unis"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "sz",
+  "nom": "Eswatini",
+  "notoriete": 286,
+  "capitales": [
+   "Mbabane",
+   "Lobamba"
+  ],
+  "population": 1230506,
+  "monnaies": [
+   "lilangeni"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "gy",
+  "nom": "Guyana",
+  "notoriete": 286,
+  "capitales": [
+   "Georgetown"
+  ],
+  "population": 878674,
+  "monnaies": [
+   "dollar guyanien"
+  ],
+  "continents": [
+   "Amérique du Sud"
+  ]
+ },
+ {
+  "iso2": "pg",
+  "nom": "Papouasie-Nouvelle-Guinée",
+  "notoriete": 285,
+  "capitales": [
+   "Port Moresby"
+  ],
+  "population": 8935000,
+  "monnaies": [
+   "kina"
+  ],
+  "continents": [
+   "Océanie"
+  ]
+ },
+ {
+  "iso2": "km",
+  "nom": "Comores",
+  "notoriete": 284,
+  "capitales": [
+   "Moroni"
+  ],
+  "population": 902348,
+  "monnaies": [
+   "franc comorien"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "gq",
+  "nom": "Guinée équatoriale",
+  "notoriete": 284,
+  "capitales": [
+   "Ciudad de la Paz"
+  ],
+  "population": 1847549,
+  "monnaies": [
+   "franc CFA d'Afrique centrale"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "mu",
+  "nom": "Maurice",
+  "notoriete": 283,
+  "capitales": [
+   "Port-Louis"
+  ],
+  "population": 1264613,
+  "monnaies": [
+   "roupie mauricienne"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "xk",
+  "nom": "Kosovo",
+  "notoriete": 283,
+  "capitales": [
+   "Pristina"
+  ],
+  "population": 1586659,
+  "monnaies": [],
+  "continents": [
+   "Europe"
+  ]
+ },
+ {
+  "iso2": "ss",
+  "nom": "Soudan du Sud",
+  "notoriete": 282,
+  "capitales": [
+   "Djouba"
+  ],
+  "population": 12575714,
+  "monnaies": [
+   "livre sud-soudanaise"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "ni",
+  "nom": "Nicaragua",
+  "notoriete": 282,
+  "capitales": [
+   "Managua"
+  ],
+  "population": 5142098,
+  "monnaies": [
+   "córdoba"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "jm",
+  "nom": "Jamaïque",
+  "notoriete": 281,
+  "capitales": [
+   "Kingston"
+  ],
+  "population": 2697983,
+  "monnaies": [
+   "dollar jamaïcain"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "gt",
+  "nom": "Guatemala",
+  "notoriete": 281,
+  "capitales": [
+   "Guatemala"
+  ],
+  "population": 17263239,
+  "monnaies": [
+   "quetzal"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "bz",
+  "nom": "Belize",
+  "notoriete": 281,
+  "capitales": [
+   "Belmopan"
+  ],
+  "population": 411106,
+  "monnaies": [
+   "dollar bélizien"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "ls",
+  "nom": "Lesotho",
+  "notoriete": 280,
+  "capitales": [
+   "Maseru"
+  ],
+  "population": 2007201,
+  "monnaies": [
+   "rand",
+   "loti"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "bs",
+  "nom": "Bahamas",
+  "notoriete": 280,
+  "capitales": [
+   "Nassau"
+  ],
+  "population": 399440,
+  "monnaies": [
+   "dollar bahaméen"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "do",
+  "nom": "République dominicaine",
+  "notoriete": 280,
+  "capitales": [
+   "Saint-Domingue"
+  ],
+  "population": 10760028,
+  "monnaies": [
+   "peso dominicain"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "fj",
+  "nom": "Fidji",
+  "notoriete": 280,
+  "capitales": [
+   "Suva"
+  ],
+  "population": 926276,
+  "monnaies": [
+   "dollar des Fidji"
+  ],
+  "continents": [
+   "Océanie"
+  ]
+ },
+ {
+  "iso2": "sc",
+  "nom": "Seychelles",
+  "notoriete": 278,
+  "capitales": [
+   "Victoria"
+  ],
+  "population": 119773,
+  "monnaies": [
+   "roupie seychelloise"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "bb",
+  "nom": "Barbade",
+  "notoriete": 276,
+  "capitales": [
+   "Bridgetown"
+  ],
+  "population": 303431,
+  "monnaies": [
+   "dollar barbadien"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "st",
+  "nom": "Sao Tomé-et-Principe",
+  "notoriete": 274,
+  "capitales": [
+   "São Tomé"
+  ],
+  "population": 204327,
+  "monnaies": [
+   "dobra"
+  ],
+  "continents": [
+   "Afrique"
+  ]
+ },
+ {
+  "iso2": "ag",
+  "nom": "Antigua-et-Barbuda",
+  "notoriete": 266,
+  "capitales": [
+   "Saint John's"
+  ],
+  "population": 101489,
+  "monnaies": [
+   "dollar des Caraïbes orientales"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "nr",
+  "nom": "Nauru",
+  "notoriete": 265,
+  "capitales": [
+   "Yaren"
+  ],
+  "population": 13650,
+  "monnaies": [
+   "dollar australien"
+  ],
+  "continents": [
+   "Océanie"
+  ]
+ },
+ {
+  "iso2": "dm",
+  "nom": "Dominique",
+  "notoriete": 264,
+  "capitales": [
+   "Roseau"
+  ],
+  "population": 74656,
+  "monnaies": [
+   "dollar des Caraïbes orientales"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "vu",
+  "nom": "Vanuatu",
+  "notoriete": 264,
+  "capitales": [
+   "Port-Vila"
+  ],
+  "population": 300019,
+  "monnaies": [
+   "vatu"
+  ],
+  "continents": [
+   "Océanie"
+  ]
+ },
+ {
+  "iso2": "ws",
+  "nom": "Samoa",
+  "notoriete": 261,
+  "capitales": [
+   "Apia"
+  ],
+  "population": 200010,
+  "monnaies": [
+   "tala"
+  ],
+  "continents": [
+   "Océanie"
+  ]
+ },
+ {
+  "iso2": "to",
+  "nom": "Tonga",
+  "notoriete": 260,
+  "capitales": [
+   "Nukuʻalofa"
+  ],
+  "population": 108020,
+  "monnaies": [
+   "pa’anga"
+  ],
+  "continents": [
+   "Océanie"
+  ]
+ },
+ {
+  "iso2": "pw",
+  "nom": "Palaos",
+  "notoriete": 257,
+  "capitales": [
+   "Ngerulmud"
+  ],
+  "population": 21729,
+  "monnaies": [
+   "dollar des États-Unis"
+  ],
+  "continents": [
+   "Océanie"
+  ]
+ },
+ {
+  "iso2": "tv",
+  "nom": "Tuvalu",
+  "notoriete": 253,
+  "capitales": [
+   "Funafuti"
+  ],
+  "population": 10643,
+  "monnaies": [
+   "dollar australien",
+   "dollar de Tuvalu"
+  ],
+  "continents": [
+   "Océanie"
+  ]
+ },
+ {
+  "iso2": "tt",
+  "nom": "Trinité-et-Tobago",
+  "notoriete": 251,
+  "capitales": [
+   "Port-d'Espagne"
+  ],
+  "population": 1369125,
+  "monnaies": [
+   "dollar de Trinité-et-Tobago"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "gd",
+  "nom": "Grenade",
+  "notoriete": 251,
+  "capitales": [
+   "Saint-Georges"
+  ],
+  "population": 114299,
+  "monnaies": [
+   "dollar des Caraïbes orientales"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "ki",
+  "nom": "Kiribati",
+  "notoriete": 249,
+  "capitales": [
+   "Tarawa-Sud"
+  ],
+  "population": 134518,
+  "monnaies": [
+   "dollar des Kiribati",
+   "dollar australien"
+  ],
+  "continents": [
+   "Océanie"
+  ]
+ },
+ {
+  "iso2": "sb",
+  "nom": "Îles Salomon",
+  "notoriete": 245,
+  "capitales": [
+   "Honiara"
+  ],
+  "population": 611343,
+  "monnaies": [
+   "dollar des îles Salomon"
+  ],
+  "continents": [
+   "Océanie"
+  ]
+ },
+ {
+  "iso2": "kn",
+  "nom": "Saint-Christophe-et-Niévès",
+  "notoriete": 239,
+  "capitales": [
+   "Basseterre"
+  ],
+  "population": 46922,
+  "monnaies": [
+   "dollar des Caraïbes orientales"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "vc",
+  "nom": "Saint-Vincent-et-les-Grenadines",
+  "notoriete": 238,
+  "capitales": [
+   "Kingstown"
+  ],
+  "population": 109897,
+  "monnaies": [
+   "dollar des Caraïbes orientales"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "mh",
+  "nom": "Îles Marshall",
+  "notoriete": 236,
+  "capitales": [
+   "Majuro"
+  ],
+  "population": 53127,
+  "monnaies": [
+   "sOV",
+   "dollar des États-Unis"
+  ],
+  "continents": [
+   "Océanie"
+  ]
+ },
+ {
+  "iso2": "lc",
+  "nom": "Sainte-Lucie",
+  "notoriete": 235,
+  "capitales": [
+   "Castries"
+  ],
+  "population": 167591,
+  "monnaies": [
+   "dollar des Caraïbes orientales"
+  ],
+  "continents": [
+   "Amérique du Nord"
+  ]
+ },
+ {
+  "iso2": "ps",
+  "nom": "Palestine",
+  "notoriete": 225,
+  "capitales": [
+   "Jérusalem-Est",
+   "Ramallah"
+  ],
+  "population": 5227193,
+  "monnaies": [
+   "shekel"
+  ],
+  "continents": [
+   "Asie"
+  ]
+ },
+ {
+  "iso2": "fm",
+  "nom": "États fédérés de Micronésie",
+  "notoriete": 222,
+  "capitales": [
+   "Palikir"
+  ],
+  "population": 75817,
+  "monnaies": [
+   "dollar des États-Unis"
+  ],
+  "continents": [
+   "Océanie"
+  ]
+ },
+ {
+  "iso2": "nl",
+  "nom": "Royaume des Pays-Bas",
+  "notoriete": 107,
+  "capitales": [
+   "Amsterdam"
+  ],
+  "population": 17100715,
+  "monnaies": [
+   "euro"
+  ],
+  "continents": [
+   "Europe"
+  ]
+ }
+]

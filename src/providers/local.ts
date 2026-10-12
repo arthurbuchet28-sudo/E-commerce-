@@ -27,6 +27,7 @@ export const fournisseurLocal: FournisseurQuestions = {
   categories: CATEGORIES,
   actifParDefaut: true,
   horsLigne: true,
+  partMax: 1,
   estDisponible: () => true,
   async recuperer(c: CriteresRecuperation) {
     const toutes = banqueLocale();

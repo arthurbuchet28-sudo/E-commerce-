@@ -194,6 +194,288 @@
       ],
       "bonneReponse": "L'Empire ottoman",
       "anecdote": "Il a conclu une alliance avec François Ier contre Charles Quint."
+    },
+    {
+      "id": "loc-hi-014",
+      "difficulte": 1,
+      "enonce": "Quel roi de France a été guillotiné en 1793 ?",
+      "type": "qcm",
+      "choix": [
+        "Louis XVI",
+        "Louis XIV",
+        "Louis XV",
+        "Charles X"
+      ],
+      "bonneReponse": "Louis XVI",
+      "anecdote": "Il a été exécuté le 21 janvier 1793, place de la Révolution (l'actuelle place de la Concorde)."
+    },
+    {
+      "id": "loc-hi-015",
+      "difficulte": 1,
+      "enonce": "Quelle civilisation a construit les pyramides de Gizeh ?",
+      "type": "qcm",
+      "choix": [
+        "Les Égyptiens",
+        "Les Romains",
+        "Les Grecs",
+        "Les Mayas"
+      ],
+      "bonneReponse": "Les Égyptiens",
+      "anecdote": "La pyramide de Khéops est restée le plus haut édifice du monde pendant plus de 3 500 ans."
+    },
+    {
+      "id": "loc-hi-016",
+      "difficulte": 2,
+      "enonce": "Qui a été le premier empereur romain ?",
+      "type": "qcm",
+      "choix": [
+        "Auguste",
+        "Jules César",
+        "Néron",
+        "Caligula"
+      ],
+      "bonneReponse": "Auguste",
+      "anecdote": "Jules César n'a jamais été empereur ; Auguste l'est devenu en 27 av. J.-C."
+    },
+    {
+      "id": "loc-hi-017",
+      "difficulte": 2,
+      "enonce": "Quel événement s'est produit le 6 juin 1944 ?",
+      "type": "qcm",
+      "choix": [
+        "Le débarquement en Normandie",
+        "La libération de Paris",
+        "L'armistice",
+        "La bataille de Verdun"
+      ],
+      "bonneReponse": "Le débarquement en Normandie",
+      "anecdote": "Les Alliés ont débarqué sur cinq plages : Utah, Omaha, Gold, Juno et Sword."
+    },
+    {
+      "id": "loc-hi-018",
+      "difficulte": 2,
+      "enonce": "Quel chef gaulois a été vaincu par César à Alésia ?",
+      "type": "qcm",
+      "choix": [
+        "Vercingétorix",
+        "Brennus",
+        "Ambiorix",
+        "Astérix"
+      ],
+      "bonneReponse": "Vercingétorix",
+      "anecdote": "La bataille d'Alésia a eu lieu en 52 av. J.-C."
+    },
+    {
+      "id": "loc-hi-019",
+      "difficulte": 3,
+      "enonce": "Quelle dynastie commence avec Hugues Capet en 987 ?",
+      "type": "qcm",
+      "choix": [
+        "Les Capétiens",
+        "Les Carolingiens",
+        "Les Mérovingiens",
+        "Les Valois",
+        "Les Bourbons",
+        "Les Plantagenêts"
+      ],
+      "bonneReponse": "Les Capétiens",
+      "reponsesAcceptees": [
+        "Capétiens"
+      ],
+      "anecdote": "Les Valois et les Bourbons sont en réalité des branches de la dynastie capétienne."
+    },
+    {
+      "id": "loc-hi-020",
+      "difficulte": 3,
+      "enonce": "Qui a publié « J'accuse… ! » dans L'Aurore en 1898 ?",
+      "type": "qcm",
+      "choix": [
+        "Émile Zola",
+        "Victor Hugo",
+        "Jean Jaurès",
+        "Georges Clemenceau",
+        "Anatole France",
+        "Alfred Dreyfus"
+      ],
+      "bonneReponse": "Émile Zola",
+      "reponsesAcceptees": [
+        "Zola"
+      ],
+      "anecdote": "Ce texte prend la défense du capitaine Dreyfus ; son titre a été trouvé par Clemenceau."
+    },
+    {
+      "id": "loc-hi-021",
+      "difficulte": 4,
+      "enonce": "Quel traité de 1494 partage le Nouveau Monde entre l'Espagne et le Portugal ?",
+      "type": "qcm",
+      "choix": [
+        "Le traité de Tordesillas",
+        "Le traité d'Utrecht",
+        "Les traités de Westphalie",
+        "Le traité du Cateau-Cambrésis",
+        "Le traité de Saragosse",
+        "Le traité de Madrid"
+      ],
+      "bonneReponse": "Le traité de Tordesillas",
+      "reponsesAcceptees": [
+        "Tordesillas"
+      ],
+      "anecdote": "C'est pourquoi on parle portugais au Brésil."
+    },
+    {
+      "id": "loc-hi-022",
+      "difficulte": 4,
+      "enonce": "Quelle bataille de 1805 est surnommée « la bataille des Trois Empereurs » ?",
+      "type": "qcm",
+      "choix": [
+        "Austerlitz",
+        "Iéna",
+        "Wagram",
+        "Eylau",
+        "Friedland",
+        "Waterloo"
+      ],
+      "bonneReponse": "Austerlitz",
+      "anecdote": "Elle a eu lieu le 2 décembre 1805, un an jour pour jour après le sacre de Napoléon."
+    },
+    {
+      "id": "loc-hi-023",
+      "difficulte": 1,
+      "enonce": "La Première Guerre mondiale s'est terminée en 1918.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "L'armistice a été signé le 11 novembre 1918 à Rethondes."
+    },
+    {
+      "id": "loc-hi-024",
+      "difficulte": 2,
+      "enonce": "Charlemagne a été couronné empereur en l'an 800.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Il a été couronné à Rome, le jour de Noël, par le pape Léon III."
+    },
+    {
+      "id": "loc-hi-025",
+      "difficulte": 3,
+      "enonce": "Napoléon Ier mesurait moins de 1,60 m.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Faux",
+      "anecdote": "Il mesurait environ 1,69 m ; la légende vient d'une confusion d'unités et de la propagande britannique."
+    },
+    {
+      "id": "loc-hi-026",
+      "difficulte": 1,
+      "enonce": "Quel pays a offert la statue de la Liberté aux États-Unis ?",
+      "type": "saisie",
+      "bonneReponse": "France",
+      "reponsesAcceptees": [
+        "La France"
+      ],
+      "anecdote": "Œuvre du sculpteur Bartholdi, elle a été inaugurée à New York en 1886."
+    },
+    {
+      "id": "loc-hi-027",
+      "difficulte": 2,
+      "enonce": "Comment s'appelait le paquebot qui a coulé en 1912 après avoir heurté un iceberg ?",
+      "type": "saisie",
+      "bonneReponse": "Titanic",
+      "reponsesAcceptees": [
+        "Le Titanic"
+      ],
+      "anecdote": "Le naufrage, dans la nuit du 14 au 15 avril 1912, a fait plus de 1 500 morts."
+    },
+    {
+      "id": "loc-hi-028",
+      "difficulte": 3,
+      "enonce": "Quel général carthaginois a traversé les Alpes avec des éléphants ?",
+      "type": "saisie",
+      "bonneReponse": "Hannibal",
+      "reponsesAcceptees": [
+        "Hannibal Barca"
+      ],
+      "anecdote": "Il a franchi les Alpes en 218 av. J.-C. pour attaquer Rome."
+    },
+    {
+      "id": "loc-hi-029",
+      "difficulte": 2,
+      "enonce": "Remettez ces événements dans l'ordre chronologique.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "Le sacre de Charlemagne",
+        "La prise de la Bastille",
+        "La Commune de Paris",
+        "La chute du mur de Berlin"
+      ],
+      "anecdote": "800 → 1789 → 1871 → 1989."
+    },
+    {
+      "id": "loc-hi-030",
+      "difficulte": 3,
+      "enonce": "Remettez ces événements dans l'ordre chronologique.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "La bataille de Marignan",
+        "La révocation de l'édit de Nantes",
+        "Le sacre de Napoléon Ier",
+        "Le Front populaire"
+      ],
+      "anecdote": "1515 → 1685 → 1804 → 1936."
+    },
+    {
+      "id": "loc-hi-031",
+      "difficulte": 1,
+      "enonce": "En quelle année a commencé la Seconde Guerre mondiale ?",
+      "type": "estimation",
+      "bonneReponse": 1939,
+      "estimation": {
+        "marge": 10
+      },
+      "anecdote": "Elle commence avec l'invasion de la Pologne par l'Allemagne, le 1er septembre 1939."
+    },
+    {
+      "id": "loc-hi-032",
+      "difficulte": 2,
+      "enonce": "En quelle année a eu lieu le sacre de Napoléon Ier ?",
+      "type": "estimation",
+      "bonneReponse": 1804,
+      "estimation": {
+        "marge": 15
+      },
+      "anecdote": "Le 2 décembre 1804, à Notre-Dame de Paris : la scène a été peinte par Jacques-Louis David."
+    },
+    {
+      "id": "loc-hi-033",
+      "difficulte": 3,
+      "enonce": "En quelle année la France a-t-elle aboli définitivement l'esclavage ?",
+      "type": "estimation",
+      "bonneReponse": 1848,
+      "estimation": {
+        "marge": 20
+      },
+      "anecdote": "Le décret d'abolition a été porté par Victor Schœlcher."
+    },
+    {
+      "id": "loc-hi-034",
+      "difficulte": 4,
+      "enonce": "En quelle année Jeanne d'Arc a-t-elle été brûlée à Rouen ?",
+      "type": "estimation",
+      "bonneReponse": 1431,
+      "estimation": {
+        "marge": 30
+      },
+      "anecdote": "Elle avait environ 19 ans."
     }
   ]
 }

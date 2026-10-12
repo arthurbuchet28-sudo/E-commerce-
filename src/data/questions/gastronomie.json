@@ -194,6 +194,302 @@
       ],
       "bonneReponse": "La béchamel",
       "anecdote": "C'est une béchamel enrichie de fromage râpé et parfois de jaune d'œuf."
+    },
+    {
+      "id": "loc-ga-014",
+      "difficulte": 1,
+      "enonce": "Quel plat provençal mêle aubergines, courgettes, poivrons et tomates ?",
+      "type": "qcm",
+      "choix": [
+        "La ratatouille",
+        "La bouillabaisse",
+        "La soupe au pistou",
+        "La piperade"
+      ],
+      "bonneReponse": "La ratatouille",
+      "anecdote": "La ratatouille est une spécialité niçoise."
+    },
+    {
+      "id": "loc-ga-015",
+      "difficulte": 1,
+      "enonce": "Quel fromage est indispensable à la tartiflette ?",
+      "type": "qcm",
+      "choix": [
+        "Le reblochon",
+        "Le comté",
+        "Le brie",
+        "Le roquefort"
+      ],
+      "bonneReponse": "Le reblochon",
+      "anecdote": "La recette a été popularisée dans les années 1980 pour promouvoir le reblochon."
+    },
+    {
+      "id": "loc-ga-016",
+      "difficulte": 2,
+      "enonce": "Quelle ville est célèbre pour ses « bouchons », restaurants traditionnels ?",
+      "type": "qcm",
+      "choix": [
+        "Lyon",
+        "Paris",
+        "Bordeaux",
+        "Marseille"
+      ],
+      "bonneReponse": "Lyon",
+      "anecdote": "Lyon se présente souvent comme la capitale mondiale de la gastronomie."
+    },
+    {
+      "id": "loc-ga-017",
+      "difficulte": 2,
+      "enonce": "Quel poisson est la base de la brandade de Nîmes ?",
+      "type": "qcm",
+      "choix": [
+        "La morue",
+        "Le thon",
+        "Le saumon",
+        "La sardine"
+      ],
+      "bonneReponse": "La morue",
+      "anecdote": "La morue dessalée y est émulsionnée avec de l'huile d'olive."
+    },
+    {
+      "id": "loc-ga-018",
+      "difficulte": 2,
+      "enonce": "Quel dessert associe des choux garnis de glace et une sauce au chocolat chaud ?",
+      "type": "qcm",
+      "choix": [
+        "Les profiteroles",
+        "Les éclairs",
+        "Le paris-brest",
+        "La religieuse"
+      ],
+      "bonneReponse": "Les profiteroles",
+      "anecdote": "On les garnit aussi parfois de crème pâtissière ou de chantilly."
+    },
+    {
+      "id": "loc-ga-019",
+      "difficulte": 2,
+      "enonce": "Avec quel vin cuisine-t-on traditionnellement le bœuf bourguignon ?",
+      "type": "qcm",
+      "choix": [
+        "Du vin rouge de Bourgogne",
+        "Du vin blanc d'Alsace",
+        "Du cidre",
+        "De la bière"
+      ],
+      "bonneReponse": "Du vin rouge de Bourgogne",
+      "anecdote": "La viande mijote plusieurs heures dans le vin."
+    },
+    {
+      "id": "loc-ga-020",
+      "difficulte": 3,
+      "enonce": "Quel cépage est le seul autorisé pour le chablis ?",
+      "type": "qcm",
+      "choix": [
+        "Le chardonnay",
+        "Le sauvignon",
+        "Le chenin",
+        "Le riesling",
+        "Le viognier",
+        "Le sémillon"
+      ],
+      "bonneReponse": "Le chardonnay",
+      "reponsesAcceptees": [
+        "Chardonnay"
+      ],
+      "anecdote": "Le vignoble de Chablis se trouve au nord de la Bourgogne."
+    },
+    {
+      "id": "loc-ga-021",
+      "difficulte": 3,
+      "enonce": "Quelle épice est obtenue à partir des pistils d'une fleur de crocus ?",
+      "type": "qcm",
+      "choix": [
+        "Le safran",
+        "Le curcuma",
+        "Le paprika",
+        "La cannelle",
+        "Le cumin",
+        "La muscade"
+      ],
+      "bonneReponse": "Le safran",
+      "reponsesAcceptees": [
+        "Safran"
+      ],
+      "anecdote": "Il faut environ 150 000 fleurs pour obtenir 1 kg de safran."
+    },
+    {
+      "id": "loc-ga-022",
+      "difficulte": 3,
+      "enonce": "Quelle ville est célèbre pour ses « bêtises », des bonbons à la menthe ?",
+      "type": "qcm",
+      "choix": [
+        "Cambrai",
+        "Nancy",
+        "Vichy",
+        "Montélimar",
+        "Aix-en-Provence",
+        "Reims"
+      ],
+      "bonneReponse": "Cambrai",
+      "anecdote": "Selon la légende, elles sont nées de l'erreur d'un apprenti confiseur."
+    },
+    {
+      "id": "loc-ga-023",
+      "difficulte": 4,
+      "enonce": "Quel fromage aurait été sacré « roi des fromages » au congrès de Vienne en 1815 ?",
+      "type": "qcm",
+      "choix": [
+        "Le brie de Meaux",
+        "Le roquefort",
+        "Le comté",
+        "Le camembert",
+        "Le munster",
+        "Le saint-nectaire"
+      ],
+      "bonneReponse": "Le brie de Meaux",
+      "reponsesAcceptees": [
+        "Brie"
+      ],
+      "anecdote": "Talleyrand l'aurait fait goûter aux diplomates réunis à Vienne."
+    },
+    {
+      "id": "loc-ga-024",
+      "difficulte": 4,
+      "enonce": "Quel pâtissier français a été surnommé « le Picasso de la pâtisserie » ?",
+      "type": "qcm",
+      "choix": [
+        "Pierre Hermé",
+        "Christophe Michalak",
+        "Cédric Grolet",
+        "Philippe Conticini",
+        "Gaston Lenôtre",
+        "Yann Couvreur"
+      ],
+      "bonneReponse": "Pierre Hermé",
+      "reponsesAcceptees": [
+        "Hermé"
+      ],
+      "anecdote": "On lui doit notamment le macaron Ispahan (rose, litchi, framboise)."
+    },
+    {
+      "id": "loc-ga-025",
+      "difficulte": 1,
+      "enonce": "Le camembert est un fromage au lait de vache.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Le camembert de Normandie AOP est fabriqué au lait cru."
+    },
+    {
+      "id": "loc-ga-026",
+      "difficulte": 2,
+      "enonce": "La crêpe Suzette est flambée avec une liqueur à l'orange.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Au Grand Marnier ou au Cointreau, avec du beurre, du sucre et du jus d'orange."
+    },
+    {
+      "id": "loc-ga-027",
+      "difficulte": 3,
+      "enonce": "Le cassoulet traditionnel contient des lentilles.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Faux",
+      "anecdote": "Il se prépare avec des haricots blancs, souvent des lingots."
+    },
+    {
+      "id": "loc-ga-028",
+      "difficulte": 1,
+      "enonce": "Quel vin pétillant porte le nom d'une région du nord-est de la France ?",
+      "type": "saisie",
+      "bonneReponse": "Champagne",
+      "reponsesAcceptees": [
+        "Le champagne"
+      ],
+      "anecdote": "Seuls les vins produits dans cette région peuvent porter ce nom."
+    },
+    {
+      "id": "loc-ga-029",
+      "difficulte": 2,
+      "enonce": "Quel légume est à la base de la soupe vichyssoise ?",
+      "type": "saisie",
+      "bonneReponse": "Poireau",
+      "reponsesAcceptees": [
+        "Le poireau",
+        "Poireaux"
+      ],
+      "anecdote": "Servie froide, avec des pommes de terre, elle a été créée par le chef Louis Diat."
+    },
+    {
+      "id": "loc-ga-030",
+      "difficulte": 3,
+      "enonce": "Comment s'appelle la célèbre soupe de poissons marseillaise ?",
+      "type": "saisie",
+      "bonneReponse": "Bouillabaisse",
+      "reponsesAcceptees": [
+        "La bouillabaisse"
+      ],
+      "anecdote": "Une charte fixe sa recette depuis 1980."
+    },
+    {
+      "id": "loc-ga-031",
+      "difficulte": 2,
+      "enonce": "À quelle température sert-on idéalement un vin rouge de Bordeaux ?",
+      "type": "estimation",
+      "bonneReponse": 17,
+      "estimation": {
+        "marge": 5,
+        "unite": "°C",
+        "min": 5,
+        "max": 30
+      },
+      "anecdote": "On le sert généralement entre 16 et 18 °C."
+    },
+    {
+      "id": "loc-ga-032",
+      "difficulte": 2,
+      "enonce": "Combien d'étoiles au maximum un restaurant peut-il obtenir au Guide Michelin ?",
+      "type": "estimation",
+      "bonneReponse": 3,
+      "estimation": {
+        "marge": 2,
+        "unite": "étoiles",
+        "min": 0,
+        "max": 10
+      },
+      "anecdote": "Trois étoiles signifient « une cuisine unique, qui vaut le voyage »."
+    },
+    {
+      "id": "loc-ga-033",
+      "difficulte": 3,
+      "enonce": "En quelle année le repas gastronomique des Français a-t-il été inscrit au patrimoine immatériel de l'UNESCO ?",
+      "type": "estimation",
+      "bonneReponse": 2010,
+      "estimation": {
+        "marge": 8
+      },
+      "anecdote": "C'est une pratique sociale qui a été distinguée, plus qu'une recette."
+    },
+    {
+      "id": "loc-ga-034",
+      "difficulte": 4,
+      "enonce": "En quelle année la baguette de pain a-t-elle été inscrite au patrimoine immatériel de l'UNESCO ?",
+      "type": "estimation",
+      "bonneReponse": 2022,
+      "estimation": {
+        "marge": 6
+      },
+      "anecdote": "Ce sont les savoir-faire artisanaux et la culture de la baguette qui ont été inscrits."
     }
   ]
 }

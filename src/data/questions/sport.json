@@ -194,6 +194,297 @@
       ],
       "bonneReponse": "L'Afrique du Sud",
       "anecdote": "Les Springboks ont gagné en 1995, 2007, 2019 et 2023."
+    },
+    {
+      "id": "loc-sp-014",
+      "difficulte": 1,
+      "enonce": "Dans quel sport utilise-t-on un volant ?",
+      "type": "qcm",
+      "choix": [
+        "Le badminton",
+        "Le tennis",
+        "Le squash",
+        "Le tennis de table"
+      ],
+      "bonneReponse": "Le badminton",
+      "anecdote": "Lors d'un smash, le volant peut dépasser 400 km/h."
+    },
+    {
+      "id": "loc-sp-015",
+      "difficulte": 1,
+      "enonce": "Quel pays a remporté la Coupe du monde de football 2018 ?",
+      "type": "qcm",
+      "choix": [
+        "La France",
+        "La Croatie",
+        "L'Allemagne",
+        "Le Brésil"
+      ],
+      "bonneReponse": "La France",
+      "anecdote": "Les Bleus ont battu la Croatie 4-2 en finale, à Moscou."
+    },
+    {
+      "id": "loc-sp-016",
+      "difficulte": 2,
+      "enonce": "Combien de sets faut-il gagner pour remporter un match masculin de Grand Chelem ?",
+      "type": "qcm",
+      "choix": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ],
+      "bonneReponse": "3",
+      "anecdote": "Un match masculin de Grand Chelem se joue en cinq sets maximum."
+    },
+    {
+      "id": "loc-sp-017",
+      "difficulte": 2,
+      "enonce": "Quel sprinteur jamaïcain détient le record du monde du 100 m ?",
+      "type": "qcm",
+      "choix": [
+        "Usain Bolt",
+        "Asafa Powell",
+        "Yohan Blake",
+        "Carl Lewis"
+      ],
+      "bonneReponse": "Usain Bolt",
+      "anecdote": "Il a couru en 9,58 secondes à Berlin, en 2009."
+    },
+    {
+      "id": "loc-sp-018",
+      "difficulte": 2,
+      "enonce": "Dans quel sport Tony Parker s'est-il illustré ?",
+      "type": "qcm",
+      "choix": [
+        "Le basket-ball",
+        "Le handball",
+        "Le volley-ball",
+        "Le football"
+      ],
+      "bonneReponse": "Le basket-ball",
+      "anecdote": "Il a remporté quatre titres NBA avec les San Antonio Spurs."
+    },
+    {
+      "id": "loc-sp-019",
+      "difficulte": 3,
+      "enonce": "Quelle joueuse française a remporté Wimbledon en 2013 ?",
+      "type": "qcm",
+      "choix": [
+        "Marion Bartoli",
+        "Amélie Mauresmo",
+        "Caroline Garcia",
+        "Mary Pierce",
+        "Kristina Mladenovic",
+        "Alizé Cornet"
+      ],
+      "bonneReponse": "Marion Bartoli",
+      "reponsesAcceptees": [
+        "Bartoli"
+      ],
+      "anecdote": "Amélie Mauresmo l'avait remporté en 2006."
+    },
+    {
+      "id": "loc-sp-020",
+      "difficulte": 3,
+      "enonce": "Quel cycliste breton a remporté cinq Tours de France entre 1978 et 1985 ?",
+      "type": "qcm",
+      "choix": [
+        "Bernard Hinault",
+        "Jacques Anquetil",
+        "Eddy Merckx",
+        "Miguel Indurain",
+        "Laurent Fignon",
+        "Louison Bobet"
+      ],
+      "bonneReponse": "Bernard Hinault",
+      "reponsesAcceptees": [
+        "Hinault"
+      ],
+      "anecdote": "Il est, à ce jour, le dernier Français à avoir gagné le Tour."
+    },
+    {
+      "id": "loc-sp-021",
+      "difficulte": 4,
+      "enonce": "Quel est le seul pays à avoir participé à toutes les phases finales de la Coupe du monde de football ?",
+      "type": "qcm",
+      "choix": [
+        "Le Brésil",
+        "L'Allemagne",
+        "L'Italie",
+        "L'Argentine",
+        "La France",
+        "L'Uruguay"
+      ],
+      "bonneReponse": "Le Brésil",
+      "reponsesAcceptees": [
+        "Brésil"
+      ],
+      "anecdote": "Le Brésil détient aussi le record de titres, avec cinq victoires."
+    },
+    {
+      "id": "loc-sp-022",
+      "difficulte": 4,
+      "enonce": "Quelle ville a accueilli les Jeux olympiques d'hiver de 1992 ?",
+      "type": "qcm",
+      "choix": [
+        "Albertville",
+        "Grenoble",
+        "Chamonix",
+        "Lillehammer",
+        "Calgary",
+        "Nagano"
+      ],
+      "bonneReponse": "Albertville",
+      "anecdote": "C'est la dernière fois que les Jeux d'été et d'hiver ont eu lieu la même année."
+    },
+    {
+      "id": "loc-sp-023",
+      "difficulte": 1,
+      "enonce": "Un marathon mesure 42,195 km.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Cette distance a été fixée lors des Jeux de Londres de 1908."
+    },
+    {
+      "id": "loc-sp-024",
+      "difficulte": 2,
+      "enonce": "Le judo est originaire de Chine.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Faux",
+      "anecdote": "Il a été créé au Japon par Jigoro Kano, en 1882."
+    },
+    {
+      "id": "loc-sp-025",
+      "difficulte": 3,
+      "enonce": "Kylian Mbappé a marqué un triplé en finale de la Coupe du monde 2022.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "L'Argentine a tout de même gagné aux tirs au but."
+    },
+    {
+      "id": "loc-sp-026",
+      "difficulte": 1,
+      "enonce": "Quel sport pratique-t-on au tournoi de Roland-Garros ?",
+      "type": "saisie",
+      "bonneReponse": "Tennis",
+      "reponsesAcceptees": [
+        "Le tennis"
+      ],
+      "anecdote": "Le stade porte le nom de l'aviateur Roland Garros."
+    },
+    {
+      "id": "loc-sp-027",
+      "difficulte": 2,
+      "enonce": "De quelle couleur est le maillot du leader du Tour de France ?",
+      "type": "saisie",
+      "bonneReponse": "Jaune",
+      "reponsesAcceptees": [
+        "Maillot jaune",
+        "Le maillot jaune"
+      ],
+      "anecdote": "C'était la couleur des pages du journal L'Auto, organisateur de la course."
+    },
+    {
+      "id": "loc-sp-028",
+      "difficulte": 3,
+      "enonce": "Sous quel nom le boxeur Cassius Clay est-il devenu célèbre ?",
+      "type": "saisie",
+      "bonneReponse": "Mohamed Ali",
+      "reponsesAcceptees": [
+        "Muhammad Ali",
+        "Mohammed Ali",
+        "Ali"
+      ],
+      "anecdote": "Il a été champion olympique en 1960, à Rome."
+    },
+    {
+      "id": "loc-sp-029",
+      "difficulte": 2,
+      "enonce": "Remettez ces événements dans l'ordre chronologique.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "Les premiers Jeux olympiques modernes à Athènes",
+        "Le premier Tour de France",
+        "La première Coupe du monde de football",
+        "Les Jeux olympiques de Paris en 2024"
+      ],
+      "anecdote": "1896 → 1903 → 1930 → 2024."
+    },
+    {
+      "id": "loc-sp-030",
+      "difficulte": 3,
+      "enonce": "Remettez ces événements dans l'ordre chronologique.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "La victoire de Yannick Noah à Roland-Garros",
+        "Le premier titre mondial des handballeurs français",
+        "La première Coupe du monde de football gagnée par la France",
+        "La deuxième étoile des Bleus, en Russie"
+      ],
+      "anecdote": "1983 → 1995 → 1998 → 2018."
+    },
+    {
+      "id": "loc-sp-031",
+      "difficulte": 2,
+      "enonce": "Quelle est la longueur d'un bassin olympique ?",
+      "type": "estimation",
+      "bonneReponse": 50,
+      "estimation": {
+        "marge": 25,
+        "unite": "mètres",
+        "min": 10,
+        "max": 100
+      },
+      "anecdote": "Un bassin olympique compte 10 couloirs, dont 8 utilisés en finale."
+    },
+    {
+      "id": "loc-sp-032",
+      "difficulte": 2,
+      "enonce": "En quelle année ont eu lieu les premiers Jeux olympiques d'hiver ?",
+      "type": "estimation",
+      "bonneReponse": 1924,
+      "estimation": {
+        "marge": 15
+      },
+      "anecdote": "Ils se sont déroulés à Chamonix."
+    },
+    {
+      "id": "loc-sp-033",
+      "difficulte": 3,
+      "enonce": "Combien de joueurs une équipe de handball aligne-t-elle sur le terrain, gardien compris ?",
+      "type": "estimation",
+      "bonneReponse": 7,
+      "estimation": {
+        "marge": 4,
+        "unite": "joueurs",
+        "min": 1,
+        "max": 15
+      },
+      "anecdote": "Six joueurs de champ et un gardien."
+    },
+    {
+      "id": "loc-sp-034",
+      "difficulte": 4,
+      "enonce": "En quelle année Zinédine Zidane a-t-il donné un coup de tête à Marco Materazzi en finale de Coupe du monde ?",
+      "type": "estimation",
+      "bonneReponse": 2006,
+      "estimation": {
+        "marge": 8
+      },
+      "anecdote": "C'était le dernier match de sa carrière ; l'Italie a gagné aux tirs au but."
     }
   ]
 }

@@ -194,6 +194,292 @@
       ],
       "bonneReponse": "Lise Meitner",
       "anecdote": "Le Nobel de chimie 1944 a été attribué à Otto Hahn seul. L'élément 109, le meitnérium, porte son nom."
+    },
+    {
+      "id": "loc-pe-014",
+      "difficulte": 1,
+      "enonce": "Quel président américain a reçu le prix Nobel de la paix en 2009 ?",
+      "type": "qcm",
+      "choix": [
+        "Barack Obama",
+        "Bill Clinton",
+        "Joe Biden",
+        "Jimmy Carter"
+      ],
+      "bonneReponse": "Barack Obama",
+      "anecdote": "Il l'a reçu moins d'un an après le début de son premier mandat."
+    },
+    {
+      "id": "loc-pe-015",
+      "difficulte": 1,
+      "enonce": "Quelle jeune femme a mené les troupes françaises pendant la guerre de Cent Ans ?",
+      "type": "qcm",
+      "choix": [
+        "Jeanne d'Arc",
+        "Catherine de Médicis",
+        "Aliénor d'Aquitaine",
+        "Marie-Antoinette"
+      ],
+      "bonneReponse": "Jeanne d'Arc",
+      "anecdote": "Brûlée à Rouen en 1431, elle a été canonisée en 1920."
+    },
+    {
+      "id": "loc-pe-016",
+      "difficulte": 2,
+      "enonce": "Quel humoriste a fondé les Restos du cœur en 1985 ?",
+      "type": "qcm",
+      "choix": [
+        "Coluche",
+        "Pierre Desproges",
+        "Thierry Le Luron",
+        "Guy Bedos"
+      ],
+      "bonneReponse": "Coluche",
+      "anecdote": "De son vrai nom Michel Colucci."
+    },
+    {
+      "id": "loc-pe-017",
+      "difficulte": 2,
+      "enonce": "Quel peintre a réalisé « Guernica » ?",
+      "type": "qcm",
+      "choix": [
+        "Pablo Picasso",
+        "Salvador Dalí",
+        "Joan Miró",
+        "Francisco de Goya"
+      ],
+      "bonneReponse": "Pablo Picasso",
+      "anecdote": "Peint en 1937 après le bombardement de la ville basque, il est exposé au musée Reina Sofía de Madrid."
+    },
+    {
+      "id": "loc-pe-018",
+      "difficulte": 2,
+      "enonce": "Quel était le vrai nom de Molière ?",
+      "type": "qcm",
+      "choix": [
+        "Jean-Baptiste Poquelin",
+        "François-Marie Arouet",
+        "Henri Beyle",
+        "Aurore Dupin"
+      ],
+      "bonneReponse": "Jean-Baptiste Poquelin",
+      "anecdote": "Les autres sont les vrais noms de Voltaire, Stendhal et George Sand."
+    },
+    {
+      "id": "loc-pe-019",
+      "difficulte": 3,
+      "enonce": "Quel officier de marine français a co-inventé le scaphandre autonome moderne ?",
+      "type": "qcm",
+      "choix": [
+        "Jacques-Yves Cousteau",
+        "Paul-Émile Victor",
+        "Éric Tabarly",
+        "Haroun Tazieff",
+        "Alain Bombard",
+        "Théodore Monod"
+      ],
+      "bonneReponse": "Jacques-Yves Cousteau",
+      "reponsesAcceptees": [
+        "Cousteau"
+      ],
+      "anecdote": "Il l'a mis au point en 1943 avec l'ingénieur Émile Gagnan."
+    },
+    {
+      "id": "loc-pe-020",
+      "difficulte": 3,
+      "enonce": "Quelle militante a refusé de céder sa place dans un bus de Montgomery en 1955 ?",
+      "type": "qcm",
+      "choix": [
+        "Rosa Parks",
+        "Angela Davis",
+        "Harriet Tubman",
+        "Coretta Scott King",
+        "Maya Angelou",
+        "Ruby Bridges"
+      ],
+      "bonneReponse": "Rosa Parks",
+      "reponsesAcceptees": [
+        "Parks"
+      ],
+      "anecdote": "Son arrestation a déclenché un boycott des bus de 381 jours, mené par Martin Luther King."
+    },
+    {
+      "id": "loc-pe-021",
+      "difficulte": 4,
+      "enonce": "Quelle écrivaine fut la première femme à recevoir le prix Nobel de littérature ?",
+      "type": "qcm",
+      "choix": [
+        "Selma Lagerlöf",
+        "Grazia Deledda",
+        "Pearl Buck",
+        "Sigrid Undset",
+        "Gabriela Mistral",
+        "Marguerite Yourcenar"
+      ],
+      "bonneReponse": "Selma Lagerlöf",
+      "anecdote": "Récompensée en 1909, elle est l'autrice du « Merveilleux Voyage de Nils Holgersson »."
+    },
+    {
+      "id": "loc-pe-022",
+      "difficulte": 4,
+      "enonce": "Quel médecin français a inventé le stéthoscope ?",
+      "type": "qcm",
+      "choix": [
+        "René Laennec",
+        "Claude Bernard",
+        "Ambroise Paré",
+        "Xavier Bichat",
+        "Louis Pasteur",
+        "Jean-Martin Charcot"
+      ],
+      "bonneReponse": "René Laennec",
+      "reponsesAcceptees": [
+        "Laennec"
+      ],
+      "anecdote": "En 1816, il a eu l'idée d'écouter le cœur à travers une feuille de papier roulée."
+    },
+    {
+      "id": "loc-pe-023",
+      "difficulte": 1,
+      "enonce": "Napoléon Bonaparte est mort en exil sur l'île de Sainte-Hélène.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Il y est mort en 1821, au milieu de l'Atlantique sud."
+    },
+    {
+      "id": "loc-pe-024",
+      "difficulte": 2,
+      "enonce": "Albert Einstein était de nationalité française.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Faux",
+      "anecdote": "Né allemand, il a ensuite été suisse puis américain."
+    },
+    {
+      "id": "loc-pe-025",
+      "difficulte": 3,
+      "enonce": "Simone Veil a été la première présidente du Parlement européen élu au suffrage universel.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Elle a été élue à sa tête en 1979."
+    },
+    {
+      "id": "loc-pe-026",
+      "difficulte": 1,
+      "enonce": "Quel navigateur génois a atteint l'Amérique en 1492 ?",
+      "type": "saisie",
+      "bonneReponse": "Christophe Colomb",
+      "reponsesAcceptees": [
+        "Colomb"
+      ],
+      "anecdote": "Il pensait avoir atteint les Indes : d'où le nom d'« Indiens » donné aux habitants."
+    },
+    {
+      "id": "loc-pe-027",
+      "difficulte": 2,
+      "enonce": "Quel ingénieur a donné son nom à la tour construite pour l'Exposition universelle de 1889 ?",
+      "type": "saisie",
+      "bonneReponse": "Gustave Eiffel",
+      "reponsesAcceptees": [
+        "Eiffel"
+      ],
+      "anecdote": "Son entreprise a aussi conçu la structure interne de la statue de la Liberté."
+    },
+    {
+      "id": "loc-pe-028",
+      "difficulte": 3,
+      "enonce": "Quel pharaon, mort jeune, est célèbre pour son tombeau découvert presque intact en 1922 ?",
+      "type": "saisie",
+      "bonneReponse": "Toutânkhamon",
+      "reponsesAcceptees": [
+        "Toutankhamon",
+        "Tutankhamon"
+      ],
+      "anecdote": "Le tombeau a été découvert par l'archéologue britannique Howard Carter."
+    },
+    {
+      "id": "loc-pe-029",
+      "difficulte": 2,
+      "enonce": "Remettez ces personnalités dans l'ordre de leur naissance.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "Jules César",
+        "Charlemagne",
+        "Léonard de Vinci",
+        "Napoléon Bonaparte"
+      ],
+      "anecdote": "Jules César (100 av. J.-C.) → Charlemagne (VIIIe siècle) → Léonard de Vinci (1452) → Napoléon (1769)."
+    },
+    {
+      "id": "loc-pe-030",
+      "difficulte": 3,
+      "enonce": "Remettez ces écrivains dans l'ordre de leur naissance.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "Molière",
+        "Voltaire",
+        "Victor Hugo",
+        "Marcel Proust"
+      ],
+      "anecdote": "Molière (1622) → Voltaire (1694) → Victor Hugo (1802) → Marcel Proust (1871)."
+    },
+    {
+      "id": "loc-pe-031",
+      "difficulte": 2,
+      "enonce": "En quelle année Marie Curie a-t-elle reçu son premier prix Nobel ?",
+      "type": "estimation",
+      "bonneReponse": 1903,
+      "estimation": {
+        "marge": 20
+      },
+      "anecdote": "Le Nobel de physique 1903 était partagé avec Pierre Curie et Henri Becquerel."
+    },
+    {
+      "id": "loc-pe-032",
+      "difficulte": 3,
+      "enonce": "À quel âge Mozart est-il mort ?",
+      "type": "estimation",
+      "bonneReponse": 35,
+      "estimation": {
+        "marge": 10,
+        "unite": "ans",
+        "min": 10,
+        "max": 80
+      },
+      "anecdote": "Né en 1756, il est mort en 1791 à Vienne."
+    },
+    {
+      "id": "loc-pe-033",
+      "difficulte": 3,
+      "enonce": "En quelle année Charles de Gaulle a-t-il lancé l'appel du 18 Juin ?",
+      "type": "estimation",
+      "bonneReponse": 1940,
+      "estimation": {
+        "marge": 10
+      },
+      "anecdote": "Lancé depuis Londres sur la BBC, l'appel a été peu entendu en direct."
+    },
+    {
+      "id": "loc-pe-034",
+      "difficulte": 4,
+      "enonce": "En quelle année est né Victor Hugo ?",
+      "type": "estimation",
+      "bonneReponse": 1802,
+      "estimation": {
+        "marge": 25
+      },
+      "anecdote": "« Ce siècle avait deux ans ! » : c'est ainsi qu'il évoque sa naissance dans un poème."
     }
   ]
 }

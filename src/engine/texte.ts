@@ -34,3 +34,15 @@ export function normaliserTexte(texte: string): string {
 export function cleEnonce(enonce: string): string {
   return normaliserTexte(enonce);
 }
+
+/**
+ * Clé de dédoublonnage d'une question : son énoncé normalisé, plus les éléments à ordonner
+ * pour une chronologie (toutes partagent la même consigne).
+ */
+export function cleQuestion(q: { enonce: string; type?: string; bonneReponse?: unknown }): string {
+  const base = cleEnonce(q.enonce);
+  if (q.type === 'chronologie' && Array.isArray(q.bonneReponse)) {
+    return `${base}|${q.bonneReponse.map((e) => normaliserTexte(String(e))).sort().join('|')}`;
+  }
+  return base;
+}

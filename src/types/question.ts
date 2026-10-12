@@ -43,7 +43,15 @@ export type Question = {
   bonneReponse: string | string[] | number;
   /** Variantes acceptées pour la saisie libre. */
   reponsesAcceptees?: string[];
-  media?: { image?: string; audio?: string; credit?: string };
+  media?: { image?: string; audio?: string; credit?: string; /** Texte alternatif de l'image. */ alt?: string };
+  /** Réglages des questions d'estimation (points dégressifs selon l'écart). */
+  estimation?: {
+    /** Écart au-delà duquel la réponse ne rapporte plus rien. */
+    marge: number;
+    unite?: string;
+    min?: number;
+    max?: number;
+  };
   /** « Le saviez-vous ? » affiché après la réponse. */
   anecdote?: string;
 };

@@ -194,6 +194,297 @@
       ],
       "bonneReponse": "L'iMac G3",
       "anecdote": "Dessiné par Jonathan Ive, son premier coloris s'appelait « Bondi Blue »."
+    },
+    {
+      "id": "loc-no-014",
+      "difficulte": 1,
+      "enonce": "Quelle console Sony est sortie en 1994 au Japon ?",
+      "type": "qcm",
+      "choix": [
+        "La PlayStation",
+        "La Dreamcast",
+        "La Nintendo 64",
+        "La Xbox"
+      ],
+      "bonneReponse": "La PlayStation",
+      "anecdote": "Elle a été la première console à dépasser les 100 millions d'exemplaires vendus."
+    },
+    {
+      "id": "loc-no-015",
+      "difficulte": 1,
+      "enonce": "Quel jeu de société consiste à acheter des rues et à y construire des hôtels ?",
+      "type": "qcm",
+      "choix": [
+        "Le Monopoly",
+        "Le Cluedo",
+        "La Bonne Paye",
+        "Le Scrabble"
+      ],
+      "bonneReponse": "Le Monopoly",
+      "anecdote": "Dans la version française, la rue de la Paix est la plus chère."
+    },
+    {
+      "id": "loc-no-016",
+      "difficulte": 2,
+      "enonce": "Quelle tortue ninja porte un bandeau bleu ?",
+      "type": "qcm",
+      "choix": [
+        "Leonardo",
+        "Raphaël",
+        "Donatello",
+        "Michelangelo"
+      ],
+      "bonneReponse": "Leonardo",
+      "anecdote": "Les quatre tortues portent des noms de peintres de la Renaissance."
+    },
+    {
+      "id": "loc-no-017",
+      "difficulte": 2,
+      "enonce": "Quelle série animée japonaise raconte les aventures de Son Goku ?",
+      "type": "qcm",
+      "choix": [
+        "Dragon Ball",
+        "Naruto",
+        "One Piece",
+        "Les Chevaliers du Zodiaque"
+      ],
+      "bonneReponse": "Dragon Ball",
+      "anecdote": "Créée par Akira Toriyama, elle a été diffusée en France dans le Club Dorothée."
+    },
+    {
+      "id": "loc-no-018",
+      "difficulte": 2,
+      "enonce": "Dans quel film de 1985 Marty McFly voyage-t-il dans le temps ?",
+      "type": "qcm",
+      "choix": [
+        "Retour vers le futur",
+        "Les Goonies",
+        "E.T. l'extra-terrestre",
+        "SOS Fantômes"
+      ],
+      "bonneReponse": "Retour vers le futur",
+      "anecdote": "Sa DeLorean doit atteindre 88 miles à l'heure pour voyager dans le temps."
+    },
+    {
+      "id": "loc-no-019",
+      "difficulte": 3,
+      "enonce": "Quelle chaîne de télévision payante a été lancée en France en 1984 ?",
+      "type": "qcm",
+      "choix": [
+        "Canal+",
+        "La Cinq",
+        "M6",
+        "TF1",
+        "Arte",
+        "France 3"
+      ],
+      "bonneReponse": "Canal+",
+      "reponsesAcceptees": [
+        "Canal Plus",
+        "Canal +"
+      ],
+      "anecdote": "Elle a commencé à émettre le 4 novembre 1984 ; il fallait un décodeur."
+    },
+    {
+      "id": "loc-no-020",
+      "difficulte": 3,
+      "enonce": "Quelle peluche électronique interactive était la star de Noël 1998 ?",
+      "type": "qcm",
+      "choix": [
+        "Le Furby",
+        "Le Tamagotchi",
+        "Teddy Ruxpin",
+        "Tickle Me Elmo",
+        "Aibo",
+        "Poupy"
+      ],
+      "bonneReponse": "Le Furby",
+      "reponsesAcceptees": [
+        "Furby"
+      ],
+      "anecdote": "Il parlait sa propre langue, le « furbish »."
+    },
+    {
+      "id": "loc-no-021",
+      "difficulte": 4,
+      "enonce": "Comment s'appelait la mascotte de la Coupe du monde de football 1998 ?",
+      "type": "qcm",
+      "choix": [
+        "Footix",
+        "Goleo",
+        "Zakumi",
+        "Pique",
+        "Naranjito",
+        "Striker"
+      ],
+      "bonneReponse": "Footix",
+      "reponsesAcceptees": [
+        "Footix"
+      ],
+      "anecdote": "C'était un coq bleu."
+    },
+    {
+      "id": "loc-no-022",
+      "difficulte": 4,
+      "enonce": "Quel ordinateur Thomson équipait les écoles françaises avec le plan « Informatique pour tous » (1985) ?",
+      "type": "qcm",
+      "choix": [
+        "Le MO5",
+        "Le ZX Spectrum",
+        "L'Amstrad CPC 464",
+        "Le Commodore 64",
+        "L'Atari ST",
+        "L'Oric Atmos"
+      ],
+      "bonneReponse": "Le MO5",
+      "reponsesAcceptees": [
+        "MO5"
+      ],
+      "anecdote": "Il était installé avec le TO7/70, un autre ordinateur Thomson."
+    },
+    {
+      "id": "loc-no-023",
+      "difficulte": 1,
+      "enonce": "Le Walkman a été commercialisé par Sony.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Le premier modèle est sorti en 1979."
+    },
+    {
+      "id": "loc-no-024",
+      "difficulte": 2,
+      "enonce": "Le Tamagotchi est un jouet d'origine américaine.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Faux",
+      "anecdote": "Il est japonais, créé par Bandai en 1996."
+    },
+    {
+      "id": "loc-no-025",
+      "difficulte": 3,
+      "enonce": "Le film « La Boum » (1980) a révélé Sophie Marceau.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Elle avait 13 ans au moment du tournage."
+    },
+    {
+      "id": "loc-no-026",
+      "difficulte": 1,
+      "enonce": "Quel petit personnage jaune mange des pastilles dans un labyrinthe ?",
+      "type": "saisie",
+      "bonneReponse": "Pac-Man",
+      "reponsesAcceptees": [
+        "Pacman",
+        "Pac Man"
+      ],
+      "anecdote": "Son créateur se serait inspiré d'une pizza à laquelle il manquait une part."
+    },
+    {
+      "id": "loc-no-027",
+      "difficulte": 2,
+      "enonce": "Quel chanteur américain était surnommé le « roi de la pop » ?",
+      "type": "saisie",
+      "bonneReponse": "Michael Jackson",
+      "reponsesAcceptees": [
+        "Jackson"
+      ],
+      "anecdote": "Son album « Thriller » (1982) est le plus vendu de l'histoire."
+    },
+    {
+      "id": "loc-no-028",
+      "difficulte": 3,
+      "enonce": "Quelle monnaie l'euro a-t-il remplacée en France ?",
+      "type": "saisie",
+      "bonneReponse": "Franc",
+      "reponsesAcceptees": [
+        "Le franc",
+        "Francs"
+      ],
+      "anecdote": "Le premier franc, le « franc à cheval », a été créé en 1360."
+    },
+    {
+      "id": "loc-no-029",
+      "difficulte": 2,
+      "enonce": "Remettez ces appareils dans l'ordre de leur sortie.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "Le Walkman",
+        "Le Game Boy",
+        "La PlayStation",
+        "Le premier iPhone"
+      ],
+      "anecdote": "1979 → 1989 → 1994 → 2007."
+    },
+    {
+      "id": "loc-no-030",
+      "difficulte": 3,
+      "enonce": "Remettez ces films dans l'ordre de leur sortie.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "« E.T. l'extra-terrestre »",
+        "« Titanic »",
+        "« Harry Potter à l'école des sorciers »",
+        "« Avatar »"
+      ],
+      "anecdote": "1982 → 1997 → 2001 → 2009."
+    },
+    {
+      "id": "loc-no-031",
+      "difficulte": 2,
+      "enonce": "En quelle année est sorti le premier iPhone ?",
+      "type": "estimation",
+      "bonneReponse": 2007,
+      "estimation": {
+        "marge": 6
+      },
+      "anecdote": "Il a été présenté par Steve Jobs en janvier 2007."
+    },
+    {
+      "id": "loc-no-032",
+      "difficulte": 3,
+      "enonce": "En quelle année Facebook a-t-il été créé ?",
+      "type": "estimation",
+      "bonneReponse": 2004,
+      "estimation": {
+        "marge": 6
+      },
+      "anecdote": "Mark Zuckerberg l'a lancé alors qu'il était étudiant à Harvard."
+    },
+    {
+      "id": "loc-no-033",
+      "difficulte": 3,
+      "enonce": "Combien de francs valait un euro (arrondi au centime) ?",
+      "type": "estimation",
+      "bonneReponse": 6.56,
+      "estimation": {
+        "marge": 2,
+        "unite": "francs",
+        "min": 0,
+        "max": 20
+      },
+      "anecdote": "Le taux exact était de 6,55957 francs pour 1 euro."
+    },
+    {
+      "id": "loc-no-034",
+      "difficulte": 4,
+      "enonce": "En quelle année la chaîne MTV a-t-elle été lancée aux États-Unis ?",
+      "type": "estimation",
+      "bonneReponse": 1981,
+      "estimation": {
+        "marge": 8
+      },
+      "anecdote": "Le premier clip diffusé était « Video Killed the Radio Star »."
     }
   ]
 }

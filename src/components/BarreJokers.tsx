@@ -6,17 +6,19 @@ const ICONES: Record<Joker, string> = { cinquante: '✂️', indice: '💡', pas
 type Props = {
   restants: number;
   utilises: Joker[];
+  /** Jokers sans effet sur la question en cours (ex. 50/50 en saisie libre). */
+  inapplicables?: readonly Joker[];
   actif: boolean;
   onJoker: (j: Joker) => void;
 };
 
-export function BarreJokers({ restants, utilises, actif, onJoker }: Props) {
+export function BarreJokers({ restants, utilises, inapplicables = [], actif, onJoker }: Props) {
   if (restants === 0 && utilises.length === 0) return null;
   return (
     <div className="flex flex-wrap items-center gap-2" role="group" aria-label={`Jokers : ${T.jokersRestants(restants)}`}>
       {JOKERS_DISPONIBLES.map((j) => {
         const deja = utilises.includes(j);
-        const dispo = actif && !deja && restants > 0;
+        const dispo = actif && !deja && restants > 0 && !inapplicables.includes(j);
         return (
           <button
             key={j}

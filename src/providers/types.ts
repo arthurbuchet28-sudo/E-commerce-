@@ -22,7 +22,14 @@ export interface FournisseurQuestions {
   readonly actifParDefaut: boolean;
   /** Fonctionne sans réseau. */
   readonly horsLigne: boolean;
+  /**
+   * Part maximale d'une partie fournie par cette source (0 → 1).
+   * Évite que les questions générées automatiquement noient la banque rédigée à la main.
+   */
+  readonly partMax: number;
   /** Prêt à servir (clé API présente, etc.). */
   estDisponible(): boolean;
   recuperer(criteres: CriteresRecuperation): Promise<Question[]>;
+  /** Renouvelle un média expiré (ex. lien d'extrait audio Deezer valable 15 minutes). */
+  rafraichirMedia?(question: Question): Promise<Question['media'] | null>;
 }

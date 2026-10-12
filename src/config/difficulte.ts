@@ -70,3 +70,20 @@ export const POINTS = {
 export const ETOILES = { deux: 0.5, trois: 0.8 };
 
 export const NOMBRES_QUESTIONS = [10, 20] as const;
+
+/** Probabilité, en Expert, qu'un QCM ayant des réponses acceptées soit posé en saisie libre. */
+export const PROBA_SAISIE_EXPERT = 0.4;
+
+/** Temps supplémentaire selon la façon de répondre (multiplicateur du temps par question). */
+export const FACTEUR_TEMPS_MODE = { choix: 1, saisie: 1.5, chronologie: 2, estimation: 1.3 } as const;
+
+/** Marge des estimations selon la difficulté (multiplie la marge de la question). */
+export const FACTEUR_MARGE_ESTIMATION: Record<NiveauDifficulte, number> = {
+  facile: 1.5,
+  moyen: 1.2,
+  difficile: 1,
+  expert: 0.75,
+};
+
+/** Une estimation est comptée « juste » (série, stats) si elle rapporte au moins cette fraction des points. */
+export const SEUIL_ESTIMATION_JUSTE = 0.5;

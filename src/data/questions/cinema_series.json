@@ -194,6 +194,285 @@
       ],
       "bonneReponse": "Julia Ducournau",
       "anecdote": "Elle est la deuxième femme Palme d'or, après Jane Campion en 1993."
+    },
+    {
+      "id": "loc-ci-014",
+      "difficulte": 1,
+      "enonce": "Quel acteur incarne Jack dans « Titanic » (1997) ?",
+      "type": "qcm",
+      "choix": [
+        "Leonardo DiCaprio",
+        "Brad Pitt",
+        "Tom Cruise",
+        "Matt Damon"
+      ],
+      "bonneReponse": "Leonardo DiCaprio",
+      "anecdote": "Il a reçu l'Oscar du meilleur acteur en 2016 pour « The Revenant »."
+    },
+    {
+      "id": "loc-ci-015",
+      "difficulte": 1,
+      "enonce": "Comment s'appelle l'agent secret britannique au matricule 007 ?",
+      "type": "qcm",
+      "choix": [
+        "James Bond",
+        "Jason Bourne",
+        "Ethan Hunt",
+        "Austin Powers"
+      ],
+      "bonneReponse": "James Bond",
+      "anecdote": "Il a été créé par le romancier Ian Fleming en 1953."
+    },
+    {
+      "id": "loc-ci-016",
+      "difficulte": 1,
+      "enonce": "Dans quelle saga trouve-t-on le personnage de Dark Vador ?",
+      "type": "qcm",
+      "choix": [
+        "Star Wars",
+        "Star Trek",
+        "Le Seigneur des anneaux",
+        "Matrix"
+      ],
+      "bonneReponse": "Star Wars",
+      "anecdote": "Dans la version originale, sa voix est celle de James Earl Jones."
+    },
+    {
+      "id": "loc-ci-017",
+      "difficulte": 2,
+      "enonce": "Quel film de Gérard Oury (1966) réunit Bourvil et Louis de Funès sous l'Occupation ?",
+      "type": "qcm",
+      "choix": [
+        "La Grande Vadrouille",
+        "Le Corniaud",
+        "Les Aventures de Rabbi Jacob",
+        "La Folie des grandeurs"
+      ],
+      "bonneReponse": "La Grande Vadrouille",
+      "anecdote": "Il est resté le plus grand succès d'un film français en salles jusqu'à « Bienvenue chez les Ch'tis » en 2008."
+    },
+    {
+      "id": "loc-ci-018",
+      "difficulte": 2,
+      "enonce": "Quel studio a produit le dessin animé « Le Roi lion » (1994) ?",
+      "type": "qcm",
+      "choix": [
+        "Disney",
+        "Pixar",
+        "DreamWorks",
+        "Ghibli"
+      ],
+      "bonneReponse": "Disney",
+      "anecdote": "La musique est signée Elton John et Hans Zimmer."
+    },
+    {
+      "id": "loc-ci-019",
+      "difficulte": 3,
+      "enonce": "Quel réalisateur japonais a créé « Le Voyage de Chihiro » ?",
+      "type": "qcm",
+      "choix": [
+        "Hayao Miyazaki",
+        "Isao Takahata",
+        "Makoto Shinkai",
+        "Mamoru Hosoda",
+        "Katsuhiro Ōtomo",
+        "Satoshi Kon"
+      ],
+      "bonneReponse": "Hayao Miyazaki",
+      "reponsesAcceptees": [
+        "Miyazaki"
+      ],
+      "anecdote": "Le film a remporté l'Ours d'or à Berlin et l'Oscar du meilleur film d'animation."
+    },
+    {
+      "id": "loc-ci-020",
+      "difficulte": 3,
+      "enonce": "Quelle série suit un professeur de chimie devenu fabricant de drogue ?",
+      "type": "qcm",
+      "choix": [
+        "Breaking Bad",
+        "Ozark",
+        "Narcos",
+        "The Wire",
+        "Dexter",
+        "Weeds"
+      ],
+      "bonneReponse": "Breaking Bad",
+      "anecdote": "Walter White y est incarné par Bryan Cranston."
+    },
+    {
+      "id": "loc-ci-021",
+      "difficulte": 4,
+      "enonce": "Quel film a remporté la Palme d'or 2019 puis l'Oscar du meilleur film ?",
+      "type": "qcm",
+      "choix": [
+        "Parasite",
+        "Une affaire de famille",
+        "Burning",
+        "Roma",
+        "Joker",
+        "Sans filtre"
+      ],
+      "bonneReponse": "Parasite",
+      "anecdote": "C'est le premier film non anglophone à recevoir l'Oscar du meilleur film."
+    },
+    {
+      "id": "loc-ci-022",
+      "difficulte": 4,
+      "enonce": "Qui a réalisé « Les Quatre Cents Coups » (1959) ?",
+      "type": "qcm",
+      "choix": [
+        "François Truffaut",
+        "Jean-Luc Godard",
+        "Claude Chabrol",
+        "Éric Rohmer",
+        "Jacques Rivette",
+        "Louis Malle"
+      ],
+      "bonneReponse": "François Truffaut",
+      "reponsesAcceptees": [
+        "Truffaut"
+      ],
+      "anecdote": "Antoine Doinel y est incarné par Jean-Pierre Léaud : un film phare de la Nouvelle Vague."
+    },
+    {
+      "id": "loc-ci-023",
+      "difficulte": 1,
+      "enonce": "L'histoire du « Roi lion » se déroule en Afrique.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Le scénario s'inspire en partie de « Hamlet » de Shakespeare."
+    },
+    {
+      "id": "loc-ci-024",
+      "difficulte": 2,
+      "enonce": "Louis de Funès a joué dans la série de films « Le Gendarme de Saint-Tropez ».",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Six films sont sortis entre 1964 et 1982."
+    },
+    {
+      "id": "loc-ci-025",
+      "difficulte": 3,
+      "enonce": "« Le Chanteur de jazz » (1927) est considéré comme le premier long métrage parlant.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Al Jolson y chante et prononce quelques répliques synchronisées."
+    },
+    {
+      "id": "loc-ci-026",
+      "difficulte": 1,
+      "enonce": "Comment s'appelle le cow-boy de « Toy Story » ?",
+      "type": "saisie",
+      "bonneReponse": "Woody",
+      "anecdote": "« Toy Story » (1995) est le premier long métrage entièrement réalisé en images de synthèse."
+    },
+    {
+      "id": "loc-ci-027",
+      "difficulte": 2,
+      "enonce": "Dans quelle ville se déroule le festival qui décerne la Palme d'or ?",
+      "type": "saisie",
+      "bonneReponse": "Cannes",
+      "anecdote": "La première édition du festival s'est tenue en 1946."
+    },
+    {
+      "id": "loc-ci-028",
+      "difficulte": 3,
+      "enonce": "Quel acteur incarne Obélix dans « Astérix et Obélix contre César » (1999) ?",
+      "type": "saisie",
+      "bonneReponse": "Gérard Depardieu",
+      "reponsesAcceptees": [
+        "Depardieu"
+      ],
+      "anecdote": "Christian Clavier y joue Astérix."
+    },
+    {
+      "id": "loc-ci-029",
+      "difficulte": 2,
+      "enonce": "Remettez ces films dans l'ordre de leur sortie.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "« Le Voyage dans la Lune » (Méliès)",
+        "« Autant en emporte le vent »",
+        "« Star Wars »",
+        "« Avatar »"
+      ],
+      "anecdote": "1902 → 1939 → 1977 → 2009."
+    },
+    {
+      "id": "loc-ci-030",
+      "difficulte": 3,
+      "enonce": "Remettez ces films français dans l'ordre de leur sortie.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "« La Grande Vadrouille »",
+        "« Les Visiteurs »",
+        "« Intouchables »",
+        "« Anatomie d'une chute »"
+      ],
+      "anecdote": "1966 → 1993 → 2011 → 2023."
+    },
+    {
+      "id": "loc-ci-031",
+      "difficulte": 2,
+      "enonce": "En quelle année est sorti le premier film « Star Wars » ?",
+      "type": "estimation",
+      "bonneReponse": 1977,
+      "estimation": {
+        "marge": 10
+      },
+      "anecdote": "Il a ensuite été renommé « Épisode IV : Un nouvel espoir »."
+    },
+    {
+      "id": "loc-ci-032",
+      "difficulte": 3,
+      "enonce": "En quelle année les frères Lumière ont-ils organisé leur première projection publique payante ?",
+      "type": "estimation",
+      "bonneReponse": 1895,
+      "estimation": {
+        "marge": 15
+      },
+      "anecdote": "Elle a eu lieu le 28 décembre 1895, au Salon indien du Grand Café, à Paris."
+    },
+    {
+      "id": "loc-ci-033",
+      "difficulte": 3,
+      "enonce": "Combien de films compte la saga « Harry Potter » (hors « Les Animaux fantastiques ») ?",
+      "type": "estimation",
+      "bonneReponse": 8,
+      "estimation": {
+        "marge": 4,
+        "unite": "films",
+        "min": 1,
+        "max": 15
+      },
+      "anecdote": "Le dernier tome a été adapté en deux films."
+    },
+    {
+      "id": "loc-ci-034",
+      "difficulte": 4,
+      "enonce": "Combien de spectateurs « Bienvenue chez les Ch'tis » a-t-il attirés en France ?",
+      "type": "estimation",
+      "bonneReponse": 20.4,
+      "estimation": {
+        "marge": 6,
+        "unite": "millions",
+        "min": 0,
+        "max": 40
+      },
+      "anecdote": "C'est le record pour un film français en salles."
     }
   ]
 }

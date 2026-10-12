@@ -194,6 +194,286 @@
       ],
       "bonneReponse": "Hideo Kojima",
       "anecdote": "Il a ensuite fondé Kojima Productions, à qui l'on doit « Death Stranding » (2019)."
+    },
+    {
+      "id": "loc-jv-014",
+      "difficulte": 1,
+      "enonce": "Quel jeu d'Epic Games a popularisé le mode « Battle Royale » ?",
+      "type": "qcm",
+      "choix": [
+        "Fortnite",
+        "Minecraft",
+        "Roblox",
+        "Among Us"
+      ],
+      "bonneReponse": "Fortnite",
+      "anecdote": "Son mode Battle Royale a été lancé en 2017."
+    },
+    {
+      "id": "loc-jv-015",
+      "difficulte": 1,
+      "enonce": "Quel Pokémon jaune est la mascotte de la série ?",
+      "type": "qcm",
+      "choix": [
+        "Pikachu",
+        "Rondoudou",
+        "Salamèche",
+        "Évoli"
+      ],
+      "bonneReponse": "Pikachu",
+      "anecdote": "C'est un Pokémon de type Électrik."
+    },
+    {
+      "id": "loc-jv-016",
+      "difficulte": 2,
+      "enonce": "Comment s'appelle le frère de Mario ?",
+      "type": "qcm",
+      "choix": [
+        "Luigi",
+        "Wario",
+        "Toad",
+        "Yoshi"
+      ],
+      "bonneReponse": "Luigi",
+      "anecdote": "Il est habillé de vert et plus grand que Mario."
+    },
+    {
+      "id": "loc-jv-017",
+      "difficulte": 2,
+      "enonce": "Dans quelle série de jeux incarne-t-on Lara Croft ?",
+      "type": "qcm",
+      "choix": [
+        "Tomb Raider",
+        "Uncharted",
+        "Resident Evil",
+        "Prince of Persia"
+      ],
+      "bonneReponse": "Tomb Raider",
+      "anecdote": "Le premier jeu, du studio britannique Core Design, est sorti en 1996."
+    },
+    {
+      "id": "loc-jv-018",
+      "difficulte": 2,
+      "enonce": "Quel super-héros est l'alter ego de Bruce Wayne ?",
+      "type": "qcm",
+      "choix": [
+        "Batman",
+        "Superman",
+        "Spider-Man",
+        "Iron Man"
+      ],
+      "bonneReponse": "Batman",
+      "anecdote": "Batman est apparu pour la première fois en 1939."
+    },
+    {
+      "id": "loc-jv-019",
+      "difficulte": 3,
+      "enonce": "Dans quelle série d'Ubisoft incarne-t-on des membres d'une confrérie secrète à travers l'Histoire ?",
+      "type": "qcm",
+      "choix": [
+        "Assassin's Creed",
+        "Far Cry",
+        "Prince of Persia",
+        "Watch Dogs",
+        "Splinter Cell",
+        "Rayman"
+      ],
+      "bonneReponse": "Assassin's Creed",
+      "anecdote": "« Assassin's Creed Unity » se déroule à Paris pendant la Révolution."
+    },
+    {
+      "id": "loc-jv-020",
+      "difficulte": 3,
+      "enonce": "Comment s'appelle le petit dragon violet créé par Insomniac Games ?",
+      "type": "qcm",
+      "choix": [
+        "Spyro",
+        "Crash",
+        "Ratchet",
+        "Sly",
+        "Jak",
+        "Croc"
+      ],
+      "bonneReponse": "Spyro",
+      "reponsesAcceptees": [
+        "Spyro"
+      ],
+      "anecdote": "Son premier jeu est sorti en 1998 sur PlayStation."
+    },
+    {
+      "id": "loc-jv-021",
+      "difficulte": 4,
+      "enonce": "Quel jeu d'Atari (1972) est considéré comme le premier grand succès commercial du jeu vidéo ?",
+      "type": "qcm",
+      "choix": [
+        "Pong",
+        "Space Invaders",
+        "Pac-Man",
+        "Asteroids",
+        "Tennis for Two",
+        "Computer Space"
+      ],
+      "bonneReponse": "Pong",
+      "reponsesAcceptees": [
+        "Pong"
+      ],
+      "anecdote": "Il simule une partie de tennis de table."
+    },
+    {
+      "id": "loc-jv-022",
+      "difficulte": 4,
+      "enonce": "Quel héros robot de Capcom est surnommé le « Blue Bomber » ?",
+      "type": "qcm",
+      "choix": [
+        "Mega Man",
+        "Bomberman",
+        "Astro Boy",
+        "Sonic",
+        "Ryu",
+        "Strider Hiryu"
+      ],
+      "bonneReponse": "Mega Man",
+      "reponsesAcceptees": [
+        "Megaman"
+      ],
+      "anecdote": "Au Japon, il s'appelle Rockman."
+    },
+    {
+      "id": "loc-jv-023",
+      "difficulte": 1,
+      "enonce": "Sonic est un personnage créé par Nintendo.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Faux",
+      "anecdote": "Sonic a été créé par SEGA, le grand rival de Nintendo."
+    },
+    {
+      "id": "loc-jv-024",
+      "difficulte": 2,
+      "enonce": "Minecraft a été créé par Markus Persson, surnommé « Notch ».",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Microsoft a racheté le jeu en 2014."
+    },
+    {
+      "id": "loc-jv-025",
+      "difficulte": 3,
+      "enonce": "Le premier « Super Mario Bros. » est sorti en 1985.",
+      "type": "vrai_faux",
+      "choix": [
+        "Vrai",
+        "Faux"
+      ],
+      "bonneReponse": "Vrai",
+      "anecdote": "Il est sorti sur la console NES."
+    },
+    {
+      "id": "loc-jv-026",
+      "difficulte": 1,
+      "enonce": "Quel super-héros est surnommé « l'homme-araignée » ?",
+      "type": "saisie",
+      "bonneReponse": "Spider-Man",
+      "reponsesAcceptees": [
+        "Spiderman",
+        "Spider Man"
+      ],
+      "anecdote": "Peter Parker a été créé par Stan Lee et Steve Ditko en 1962."
+    },
+    {
+      "id": "loc-jv-027",
+      "difficulte": 2,
+      "enonce": "Quel auteur belge a créé les Schtroumpfs ?",
+      "type": "saisie",
+      "bonneReponse": "Peyo",
+      "anecdote": "Ils sont apparus en 1958 dans la bande dessinée « Johan et Pirlouit »."
+    },
+    {
+      "id": "loc-jv-028",
+      "difficulte": 3,
+      "enonce": "Dans quel jeu doit-on compléter des lignes avec des pièces qui tombent ?",
+      "type": "saisie",
+      "bonneReponse": "Tetris",
+      "anecdote": "Sa musique la plus connue reprend un air populaire russe, « Korobeïniki »."
+    },
+    {
+      "id": "loc-jv-029",
+      "difficulte": 2,
+      "enonce": "Remettez ces jeux dans l'ordre de leur sortie.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "Pong",
+        "Pac-Man",
+        "Super Mario Bros.",
+        "Minecraft"
+      ],
+      "anecdote": "1972 → 1980 → 1985 → 2009."
+    },
+    {
+      "id": "loc-jv-030",
+      "difficulte": 3,
+      "enonce": "Remettez ces consoles dans l'ordre de leur sortie.",
+      "type": "chronologie",
+      "bonneReponse": [
+        "La NES",
+        "La PlayStation",
+        "La Wii",
+        "La Nintendo Switch"
+      ],
+      "anecdote": "1983 (au Japon) → 1994 → 2006 → 2017."
+    },
+    {
+      "id": "loc-jv-031",
+      "difficulte": 2,
+      "enonce": "En quelle année est sortie la première Nintendo Switch ?",
+      "type": "estimation",
+      "bonneReponse": 2017,
+      "estimation": {
+        "marge": 5
+      },
+      "anecdote": "La Switch 2 lui a succédé en 2025."
+    },
+    {
+      "id": "loc-jv-032",
+      "difficulte": 3,
+      "enonce": "En quelle année est sorti le premier jeu « Pokémon » au Japon ?",
+      "type": "estimation",
+      "bonneReponse": 1996,
+      "estimation": {
+        "marge": 6
+      },
+      "anecdote": "Il s'agissait de « Pokémon Rouge » et « Pokémon Vert », sur Game Boy."
+    },
+    {
+      "id": "loc-jv-033",
+      "difficulte": 3,
+      "enonce": "Combien de Pokémon comptait la toute première génération ?",
+      "type": "estimation",
+      "bonneReponse": 151,
+      "estimation": {
+        "marge": 40,
+        "unite": "Pokémon",
+        "min": 0,
+        "max": 400
+      },
+      "anecdote": "Le 151e, Mew, était caché dans le jeu."
+    },
+    {
+      "id": "loc-jv-034",
+      "difficulte": 4,
+      "enonce": "En quelle année est sortie la console Atari 2600 ?",
+      "type": "estimation",
+      "bonneReponse": 1977,
+      "estimation": {
+        "marge": 6
+      },
+      "anecdote": "Elle a popularisé les cartouches de jeux interchangeables."
     }
   ]
 }

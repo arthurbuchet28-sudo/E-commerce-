@@ -10,11 +10,14 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "lint:types": "tsc -b --noEmit",
-    "questions:check": "tsx --tsconfig tsconfig.node.json scripts/check-questions.ts"
+    "questions:check": "tsx --tsconfig tsconfig.node.json scripts/check-questions.ts",
+    "data:wikidata": "tsx --tsconfig tsconfig.node.json scripts/generer-donnees.ts"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
+    "flag-icons": "^7.5.0",
     "framer-motion": "^14.1.0",
+    "idb-keyval": "^6.3.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "react-router-dom": "^7.18.4",

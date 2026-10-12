@@ -1,0 +1,6351 @@
+[
+ {
+  "id": "Q2831",
+  "nom": "Michael Jackson",
+  "notoriete": 322,
+  "naissance": 1958,
+  "naissancePrecise": true,
+  "deces": 2009,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Michael_Jackson_1983_%283x4_cropped%29_%28contrast%29.jpg/500px-Michael_Jackson_1983_%283x4_cropped%29_%28contrast%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Matthew Rolston; Distributed by Epic Records, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q868",
+  "nom": "Aristote",
+  "notoriete": 319,
+  "naissance": -383,
+  "naissancePrecise": true,
+  "deces": -321,
+  "genre": "m",
+  "paysNaissance": "Grèce",
+  "domaines": [
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/500px-Aristotle_Altemps_Inv8575.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : After Lysippos, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q7747",
+  "nom": "Vladimir Poutine",
+  "notoriete": 315,
+  "naissance": 1952,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%9F%D1%83%D1%82%D0%B8%D0%BD_%2808-03-2024%29_%28cropped%29_%28higher_res%29_2.jpg/500px-%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%9F%D1%83%D1%82%D0%B8%D0%BD_%2808-03-2024%29_%28cropped%29_%28higher_res%29_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Пресс-служба Президента РФ, CC BY 4.0 — Wikimedia Commons"
+ },
+ {
+  "id": "Q4604",
+  "nom": "Confucius",
+  "notoriete": 313,
+  "naissance": -550,
+  "naissancePrecise": true,
+  "deces": -478,
+  "genre": "m",
+  "paysNaissance": "Chine",
+  "domaines": [
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Confucius%2C_fresco_from_a_Western_Han_tomb_of_Dongping_County%2C_Shandong_province%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "credit": "Photo : Anonymous Chinese painter of the Western Han period, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q762",
+  "nom": "Léonard de Vinci",
+  "notoriete": 307,
+  "naissance": 1452,
+  "naissancePrecise": true,
+  "deces": 1519,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "peinture",
+   "musique",
+   "sciences",
+   "litterature"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Francesco_Melzi_-_Portrait_of_Leonardo.png/500px-Francesco_Melzi_-_Portrait_of_Leonardo.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Attributed to Francesco Melzi, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q935",
+  "nom": "Isaac Newton",
+  "notoriete": 303,
+  "naissance": 1643,
+  "naissancePrecise": true,
+  "deces": 1727,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sciences",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/GodfreyKneller-IsaacNewton-1689.jpg/500px-GodfreyKneller-IsaacNewton-1689.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Godfrey Kneller, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q859",
+  "nom": "Platon",
+  "notoriete": 302,
+  "naissance": -428,
+  "naissancePrecise": true,
+  "deces": -348,
+  "genre": "m",
+  "paysNaissance": "Grèce",
+  "domaines": [
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Plato_Silanion_Musei_Capitolini_MC1377.jpg/500px-Plato_Silanion_Musei_Capitolini_MC1377.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Marie-Lan Nguyen, CC BY 2.5 — Wikimedia Commons"
+ },
+ {
+  "id": "Q91",
+  "nom": "Abraham Lincoln",
+  "notoriete": 296,
+  "naissance": 1809,
+  "naissancePrecise": true,
+  "deces": 1865,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "litterature",
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/500px-Abraham_Lincoln_O-77_matte_collodion_print.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Alexander Gardner, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q1394",
+  "nom": "Lénine",
+  "notoriete": 295,
+  "naissance": 1870,
+  "naissancePrecise": true,
+  "deces": 1924,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Vlad%C3%ADmir_Lenin_%28fotograf%C3%ADa_coloreada%29.jpg/500px-Vlad%C3%ADmir_Lenin_%28fotograf%C3%ADa_coloreada%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Pavel Zhukov, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q8023",
+  "nom": "Nelson Mandela",
+  "notoriete": 295,
+  "naissance": 1918,
+  "naissancePrecise": true,
+  "deces": 2013,
+  "genre": "m",
+  "paysNaissance": "Afrique du Sud",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/500px-Nelson_Mandela_1994.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Kingkongphoto &amp; www.celebrity-photos.com from Laurel, CC BY-SA 2.0 — Wikimedia Commons"
+ },
+ {
+  "id": "Q1001",
+  "nom": "Mohandas Karamchand Gandhi",
+  "notoriete": 287,
+  "naissance": 1869,
+  "naissancePrecise": true,
+  "deces": 1948,
+  "genre": "m",
+  "paysNaissance": "Inde",
+  "domaines": [
+   "litterature",
+   "politique",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg/500px-Mahatma-Gandhi%2C_studio%2C_1931.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Elliott &amp; Fry, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q517",
+  "nom": "Napoléon Ier",
+  "notoriete": 287,
+  "naissance": 1769,
+  "naissancePrecise": true,
+  "deces": 1821,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg/500px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Jacques-Louis David, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q7243",
+  "nom": "Léon Tolstoï",
+  "notoriete": 282,
+  "naissance": 1828,
+  "naissancePrecise": true,
+  "deces": 1910,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/L.N.Tolstoy_Prokudin-Gorsky.jpg/500px-L.N.Tolstoy_Prokudin-Gorsky.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Sergei Prokudin-Gorskii, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q1048",
+  "nom": "Jules César",
+  "notoriete": 281,
+  "naissance": -99,
+  "naissancePrecise": true,
+  "deces": -43,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "litterature",
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Retrato_de_Julio_C%C3%A9sar_%2826724093101%29_%28cropped%29.jpg/500px-Retrato_de_Julio_C%C3%A9sar_%2826724093101%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Ángel M. Felicísimo from Mérida, España, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q855",
+  "nom": "Joseph Staline",
+  "notoriete": 279,
+  "naissance": 1878,
+  "naissancePrecise": true,
+  "deces": 1953,
+  "genre": "m",
+  "paysNaissance": "Géorgie",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/StalinCropped1943.jpg/500px-StalinCropped1943.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Franklin D. Roosevelt Library Public Domain Photographs, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q5879",
+  "nom": "Johann Wolfgang von Goethe",
+  "notoriete": 278,
+  "naissance": 1749,
+  "naissancePrecise": true,
+  "deces": 1832,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "peinture",
+   "musique",
+   "sciences",
+   "litterature",
+   "politique",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Goethe_%28Stieler_1828%29.jpg/500px-Goethe_%28Stieler_1828%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Joseph Karl Stieler, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q6279",
+  "nom": "Joe Biden",
+  "notoriete": 278,
+  "naissance": 1942,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "litterature",
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Joe_Biden_presidential_portrait.jpg/500px-Joe_Biden_presidential_portrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Adam Schultz, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q913",
+  "nom": "Socrate",
+  "notoriete": 276,
+  "naissance": -469,
+  "naissancePrecise": true,
+  "deces": -398,
+  "genre": "m",
+  "paysNaissance": "Grèce",
+  "domaines": [
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Socrates_Louvre.jpg/500px-Socrates_Louvre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Copy of Lysippos (?), Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q9441",
+  "nom": "Siddhartha Gautama",
+  "notoriete": 276,
+  "naissance": -500,
+  "naissancePrecise": true,
+  "deces": -500,
+  "genre": "m",
+  "paysNaissance": "Népal",
+  "domaines": [
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg/500px-Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : พระมหาเทวประภาส วชิรญาณเมธี (ผู้ถ่าย-ปล่อยสัญญาอนุญาตภาพให้นำไปใช้ได้เพื่อการศึก, CC BY-SA 3.0 — Wikimedia Commons"
+ },
+ {
+  "id": "Q254",
+  "nom": "Wolfgang Amadeus Mozart",
+  "notoriete": 274,
+  "naissance": 1756,
+  "naissancePrecise": true,
+  "deces": 1791,
+  "genre": "m",
+  "paysNaissance": "Autriche",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Wolfgang-amadeus-mozart_1.jpg/500px-Wolfgang-amadeus-mozart_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Barbara Krafft, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q255",
+  "nom": "Ludwig van Beethoven",
+  "notoriete": 274,
+  "naissance": 1770,
+  "naissancePrecise": true,
+  "deces": 1827,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Beethoven.jpg/500px-Beethoven.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Joseph Karl Stieler, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q1067",
+  "nom": "Dante Alighieri",
+  "notoriete": 271,
+  "naissance": 1265,
+  "naissancePrecise": true,
+  "deces": 1321,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "litterature",
+   "politique",
+   "philosophie"
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Portrait_de_Dante.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "credit": "Photo : Sandro Botticelli, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q307",
+  "nom": "Galilée",
+  "notoriete": 270,
+  "naissance": 1564,
+  "naissancePrecise": true,
+  "deces": 1642,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "sciences",
+   "politique",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Galileo.arp.300pix.jpg/500px-Galileo.arp.300pix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Justus Sustermans, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q5582",
+  "nom": "Vincent van Gogh",
+  "notoriete": 266,
+  "naissance": 1853,
+  "naissancePrecise": true,
+  "deces": 1890,
+  "genre": "m",
+  "paysNaissance": "Pays-Bas",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Self-portrait_-_Vincent_van_Gogh.jpg/500px-Self-portrait_-_Vincent_van_Gogh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Vincent van Gogh, CC BY-SA 4.0 — Wikimedia Commons"
+ },
+ {
+  "id": "Q882",
+  "nom": "Charlie Chaplin",
+  "notoriete": 262,
+  "naissance": 1889,
+  "naissancePrecise": true,
+  "deces": 1977,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "musique",
+   "cinema",
+   "litterature"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Charlie_Chaplin_portrait_Getty_1739411952.jpg/500px-Charlie_Chaplin_portrait_Getty_1739411952.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Strauss-Peyton Studio, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q8409",
+  "nom": "Alexandre le Grand",
+  "notoriete": 262,
+  "naissance": -355,
+  "naissancePrecise": true,
+  "deces": -322,
+  "genre": "m",
+  "paysNaissance": "Grèce",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Alexander_the_Great_mosaic_%28cropped%29.jpg/500px-Alexander_the_Great_mosaic_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Unknown authorUnknown author, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q8016",
+  "nom": "Winston Churchill",
+  "notoriete": 262,
+  "naissance": 1874,
+  "naissancePrecise": true,
+  "deces": 1965,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg/500px-Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Auteur inconnu, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q5592",
+  "nom": "Michel-Ange",
+  "notoriete": 259,
+  "naissance": 1475,
+  "naissancePrecise": true,
+  "deces": 1564,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "peinture",
+   "litterature"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg/500px-Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Attributed to Daniele da Volterra, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q1339",
+  "nom": "Jean-Sébastien Bach",
+  "notoriete": 259,
+  "naissance": 1685,
+  "naissancePrecise": true,
+  "deces": 1750,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Johann_Sebastian_Bach.png/500px-Johann_Sebastian_Bach.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Elias Gottlob Haussmann, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q9554",
+  "nom": "Martin Luther",
+  "notoriete": 259,
+  "naissance": 1483,
+  "naissancePrecise": true,
+  "deces": 1546,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "musique",
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg/500px-Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Lucas Cranach the Elder, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q991",
+  "nom": "Fiodor Dostoïevski",
+  "notoriete": 256,
+  "naissance": 1821,
+  "naissancePrecise": true,
+  "deces": 1881,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg/500px-Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Vasily Perov, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q8743",
+  "nom": "Thomas Edison",
+  "notoriete": 254,
+  "naissance": 1847,
+  "naissancePrecise": true,
+  "deces": 1931,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema",
+   "sciences"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Thomas_Edison2.jpg/500px-Thomas_Edison2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Louis Bachrach, Bachrach Studios, restored by Michel Vuijlsteke, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q9312",
+  "nom": "Emmanuel Kant",
+  "notoriete": 254,
+  "naissance": 1724,
+  "naissancePrecise": true,
+  "deces": 1804,
+  "genre": "m",
+  "paysNaissance": "Troisième Reich",
+  "domaines": [
+   "sciences",
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Immanuel_Kant_-_Gemaelde_2.jpg/500px-Immanuel_Kant_-_Gemaelde_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Becker, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q5152",
+  "nom": "Mustafa Kemal Atatürk",
+  "notoriete": 253,
+  "naissance": 1881,
+  "naissancePrecise": true,
+  "deces": 1938,
+  "genre": "m",
+  "paysNaissance": "Grèce",
+  "domaines": [
+   "litterature",
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Atat%C3%BCrk_Kemal.jpg/500px-Atat%C3%BCrk_Kemal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Unknown authorUnknown author, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q7245",
+  "nom": "Mark Twain",
+  "notoriete": 252,
+  "naissance": 1835,
+  "naissancePrecise": true,
+  "deces": 1910,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/MarkTwain.LOC.jpg/500px-MarkTwain.LOC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Unknown authorUnknown author, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q5686",
+  "nom": "Charles Dickens",
+  "notoriete": 250,
+  "naissance": 1812,
+  "naissancePrecise": true,
+  "deces": 1870,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Dickens_Gurney_head.jpg/500px-Dickens_Gurney_head.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Jeremiah Gurney, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q9696",
+  "nom": "John Fitzgerald Kennedy",
+  "notoriete": 249,
+  "naissance": 1917,
+  "naissancePrecise": true,
+  "deces": 1963,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "litterature",
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/John_F._Kennedy%2C_White_House_color_photo_portrait.jpg/500px-John_F._Kennedy%2C_White_House_color_photo_portrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Cecil W. Stoughton, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q5682",
+  "nom": "Miguel de Cervantes",
+  "notoriete": 249,
+  "naissance": 1547,
+  "naissancePrecise": true,
+  "deces": 1616,
+  "genre": "m",
+  "paysNaissance": "Espagne",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Cervantes_J%C3%A1uregui.jpg/500px-Cervantes_J%C3%A1uregui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Attributed to Juan de Jáuregui, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q8027",
+  "nom": "Martin Luther King",
+  "notoriete": 248,
+  "naissance": 1929,
+  "naissancePrecise": true,
+  "deces": 1968,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "litterature",
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/The_Rev._Dr._Martin_Luther_King_Jr._Color_Portrait_%28high_quality%29.jpg/500px-The_Rev._Dr._Martin_Luther_King_Jr._Color_Portrait_%28high_quality%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Associated Press, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q5577",
+  "nom": "Salvador Dalí",
+  "notoriete": 247,
+  "naissance": 1904,
+  "naissancePrecise": true,
+  "deces": 1989,
+  "genre": "m",
+  "paysNaissance": "Espagne",
+  "domaines": [
+   "peinture",
+   "cinema",
+   "litterature"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Salvador_Dal%C3%AD_1939.jpg/500px-Salvador_Dal%C3%AD_1939.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Van Vechten, Carl, 1880-1964., Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q7241",
+  "nom": "Rabîndranâth Tagore",
+  "notoriete": 246,
+  "naissance": 1861,
+  "naissancePrecise": true,
+  "deces": 1941,
+  "genre": "m",
+  "paysNaissance": "Inde",
+  "domaines": [
+   "peinture",
+   "musique",
+   "cinema",
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Rabindranath_Tagore_in_1909.jpg/500px-Rabindranath_Tagore_in_1909.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Generalstabens litografiska anstalt, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q8739",
+  "nom": "Archimède",
+  "notoriete": 246,
+  "naissance": -286,
+  "naissancePrecise": true,
+  "deces": -211,
+  "genre": "m",
+  "paysNaissance": "Rome antique",
+  "domaines": [
+   "sciences",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Retrato_de_un_erudito_%28%C2%BFArqu%C3%ADmedes%3F%29%2C_por_Domenico_Fetti.jpg/500px-Retrato_de_un_erudito_%28%C2%BFArqu%C3%ADmedes%3F%29%2C_por_Domenico_Fetti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Domenico Fetti, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q1398",
+  "nom": "Virgile",
+  "notoriete": 245,
+  "naissance": -69,
+  "naissancePrecise": true,
+  "deces": -18,
+  "genre": "m",
+  "paysNaissance": "Rome antique",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Parco_della_Grotta_di_Posillipo5_%28crop%29.jpg/500px-Parco_della_Grotta_di_Posillipo5_%28crop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Armando Mancini, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q1405",
+  "nom": "Auguste",
+  "notoriete": 245,
+  "naissance": -62,
+  "naissancePrecise": true,
+  "deces": 14,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Augustus_of_Prima_Porta_%28inv._2290%29.jpg/500px-Augustus_of_Prima_Porta_%28inv._2290%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Joel Bellviure, CC BY-SA 4.0 — Wikimedia Commons"
+ },
+ {
+  "id": "Q7322",
+  "nom": "Christophe Colomb",
+  "notoriete": 244,
+  "naissance": 1451,
+  "naissancePrecise": true,
+  "deces": 1506,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "sciences",
+   "exploration"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ridolfo_del_Ghirlandaio_-_Ritratto_di_Cristoforo_Colombo_%281520%29.jpg/500px-Ridolfo_del_Ghirlandaio_-_Ritratto_di_Cristoforo_Colombo_%281520%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Ridolfo del Ghirlandaio, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q5673",
+  "nom": "Hans Christian Andersen",
+  "notoriete": 244,
+  "naissance": 1805,
+  "naissancePrecise": true,
+  "deces": 1875,
+  "genre": "m",
+  "paysNaissance": "Danemark",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Hans_Christian_Andersen_by_Thora_Hallager_1869.jpg/500px-Hans_Christian_Andersen_by_Thora_Hallager_1869.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Thora Hallager, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q7200",
+  "nom": "Alexandre Pouchkine",
+  "notoriete": 244,
+  "naissance": 1799,
+  "naissancePrecise": true,
+  "deces": 1837,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Kiprensky_Pushkin.jpg/500px-Kiprensky_Pushkin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Orest Kiprensky, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q905",
+  "nom": "Franz Kafka",
+  "notoriete": 242,
+  "naissance": 1883,
+  "naissancePrecise": true,
+  "deces": 1924,
+  "genre": "m",
+  "paysNaissance": "Tchéquie",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Franz_Kafka%2C_1923.jpg/500px-Franz_Kafka%2C_1923.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Unknown photographer, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q4616",
+  "nom": "Marilyn Monroe",
+  "notoriete": 241,
+  "naissance": 1926,
+  "naissancePrecise": true,
+  "deces": 1962,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Marilyn_Monroe_in_How_to_Marry_a_Millionaire.jpg/500px-Marilyn_Monroe_in_How_to_Marry_a_Millionaire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Sam Shaw, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q5685",
+  "nom": "Anton Tchekhov",
+  "notoriete": 240,
+  "naissance": 1860,
+  "naissancePrecise": true,
+  "deces": 1904,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Anton_Chekhov_with_bow-tie_sepia_image.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "credit": "Photo : Unknown authorUnknown author, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q450675",
+  "nom": "François",
+  "notoriete": 236,
+  "naissance": 1936,
+  "naissancePrecise": true,
+  "deces": 2025,
+  "genre": "m",
+  "paysNaissance": "Argentine",
+  "domaines": [
+   "litterature",
+   "politique",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Pope_Francis_Korea_Haemi_Castle_19.jpg/500px-Pope_Francis_Korea_Haemi_Castle_19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Korea.net / Korean Culture and Information Service (Jeon Han), CC BY-SA 2.0 — Wikimedia Commons"
+ },
+ {
+  "id": "Q5816",
+  "nom": "Mao Zedong",
+  "notoriete": 232,
+  "naissance": 1893,
+  "naissancePrecise": true,
+  "deces": 1976,
+  "genre": "m",
+  "paysNaissance": "Chine",
+  "domaines": [
+   "litterature",
+   "politique",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Mao_Tse_Tung.jpg/500px-Mao_Tse_Tung.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Chen Zhengqing (1917–1966), Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q1399",
+  "nom": "Nicolas Machiavel",
+  "notoriete": 229,
+  "naissance": 1469,
+  "naissancePrecise": true,
+  "deces": 1527,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "litterature",
+   "politique",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg/500px-Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Santi di Tito, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q8018",
+  "nom": "Augustin d’Hippone",
+  "notoriete": 227,
+  "naissance": 354,
+  "naissancePrecise": true,
+  "deces": 430,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Saint_Augustine_by_Philippe_de_Champaigne.jpg/500px-Saint_Augustine_by_Philippe_de_Champaigne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Philippe de Champaigne, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q687",
+  "nom": "Molière",
+  "notoriete": 226,
+  "naissance": 1622,
+  "naissancePrecise": true,
+  "deces": 1673,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "cinema",
+   "litterature"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Pierre_Mignard_-_Portrait_de_Jean-Baptiste_Poquelin_dit_Moli%C3%A8re_%281622-1673%29_-_Google_Art_Project_%28cropped%29.jpg/500px-Pierre_Mignard_-_Portrait_de_Jean-Baptiste_Poquelin_dit_Moli%C3%A8re_%281622-1673%29_-_Google_Art_Project_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Pierre Mignard I, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q11812",
+  "nom": "Thomas Jefferson",
+  "notoriete": 225,
+  "naissance": 1743,
+  "naissancePrecise": true,
+  "deces": 1826,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "sciences",
+   "litterature",
+   "politique",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29%28cropped%29.jpg/500px-Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Rembrandt Peale, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q16867",
+  "nom": "Edgar Allan Poe",
+  "notoriete": 225,
+  "naissance": 1809,
+  "naissancePrecise": true,
+  "deces": 1849,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Edgar_Allan_Poe%2C_circa_1849%2C_restored%2C_squared_off.jpg/500px-Edgar_Allan_Poe%2C_circa_1849%2C_restored%2C_squared_off.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Unknown authorUnknown author; Restored by Yann Forget and Adam Cuerden, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q4617",
+  "nom": "Corbin Bleu",
+  "notoriete": 224,
+  "naissance": 1989,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Corbin_Bleu_at_MEGACON_2025_%28cropped%29.jpg/500px-Corbin_Bleu_at_MEGACON_2025_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Nielsoncaetanosalmeron, CC BY 4.0 — Wikimedia Commons"
+ },
+ {
+  "id": "Q30875",
+  "nom": "Oscar Wilde",
+  "notoriete": 224,
+  "naissance": 1854,
+  "naissancePrecise": true,
+  "deces": 1900,
+  "genre": "m",
+  "paysNaissance": "Irlande",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Oscar_Wilde_by_Napoleon_Sarony._Three-quarter-length_photograph%2C_seated.jpg/500px-Oscar_Wilde_by_Napoleon_Sarony._Three-quarter-length_photograph%2C_seated.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Napoleon Sarony / Adam Cuerden, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q1124",
+  "nom": "Bill Clinton",
+  "notoriete": 223,
+  "naissance": 1946,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "litterature",
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Bill_Clinton.jpg/500px-Bill_Clinton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Bob McNeely, The White House[1], Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q2042",
+  "nom": "Charles de Gaulle",
+  "notoriete": 222,
+  "naissance": 1890,
+  "naissancePrecise": true,
+  "deces": 1970,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/General_Charles_de_Gaulle_in_1945.jpg/500px-General_Charles_de_Gaulle_in_1945.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : The National Archives UK, No restrictions — Wikimedia Commons"
+ },
+ {
+  "id": "Q383541",
+  "nom": "Basshunter",
+  "notoriete": 221,
+  "naissance": 1984,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Suède",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Basshunter_%282009%29.jpg/500px-Basshunter_%282009%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Houlihanmartin, CC BY 3.0 — Wikimedia Commons"
+ },
+ {
+  "id": "Q9036",
+  "nom": "Nikola Tesla",
+  "notoriete": 219,
+  "naissance": 1856,
+  "naissancePrecise": true,
+  "deces": 1943,
+  "genre": "m",
+  "paysNaissance": "Croatie",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Tesla_circa_1890.jpeg/500px-Tesla_circa_1890.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Napoleon Sarony, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q5679",
+  "nom": "Lord Byron",
+  "notoriete": 219,
+  "naissance": 1788,
+  "naissancePrecise": true,
+  "deces": 1824,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "litterature",
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Byron_1813_by_Phillips.jpg/500px-Byron_1813_by_Phillips.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Thomas Phillips, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q8442",
+  "nom": "Otto von Bismarck",
+  "notoriete": 219,
+  "naissance": 1815,
+  "naissancePrecise": true,
+  "deces": 1898,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "litterature",
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Bundesarchiv_Bild_146-2005-0057%2C_Otto_von_Bismarck.jpg/500px-Bundesarchiv_Bild_146-2005-0057%2C_Otto_von_Bismarck.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Jacques Pilartz, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q1615",
+  "nom": "Neil Armstrong",
+  "notoriete": 219,
+  "naissance": 1930,
+  "naissancePrecise": true,
+  "deces": 2012,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/500px-Neil_Armstrong_pose.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Unknown authorUnknown author, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q157",
+  "nom": "François Hollande",
+  "notoriete": 218,
+  "naissance": 1954,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Fran%C3%A7ois_Hollande_-_2017_%2827869823159%29_%28cropped_2%29.jpg/500px-Fran%C3%A7ois_Hollande_-_2017_%2827869823159%29_%28cropped_2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Web Summit, CC BY 2.0 — Wikimedia Commons"
+ },
+ {
+  "id": "Q8704",
+  "nom": "Walt Disney",
+  "notoriete": 217,
+  "naissance": 1901,
+  "naissancePrecise": true,
+  "deces": 1966,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "peinture",
+   "cinema",
+   "sciences",
+   "litterature"
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/Walt_Disney_1946.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "credit": "Photo : Boy Scouts of America, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q34969",
+  "nom": "Benjamin Franklin",
+  "notoriete": 217,
+  "naissance": 1706,
+  "naissancePrecise": true,
+  "deces": 1790,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "litterature",
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Joseph_Siffrein_Duplessis_-_Benjamin_Franklin_-_Google_Art_Project.jpg/500px-Joseph_Siffrein_Duplessis_-_Benjamin_Franklin_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Joseph-Siffred Duplessis, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q303",
+  "nom": "Elvis Presley",
+  "notoriete": 216,
+  "naissance": 1935,
+  "naissancePrecise": true,
+  "deces": 1977,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Elvis_Presley_Publicity_Photo_for_The_Trouble_with_Girls_1968.jpg/500px-Elvis_Presley_Publicity_Photo_for_The_Trouble_with_Girls_1968.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : MGM, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q619",
+  "nom": "Nicolas Copernic",
+  "notoriete": 214,
+  "naissance": 1473,
+  "naissancePrecise": true,
+  "deces": 1543,
+  "genre": "m",
+  "paysNaissance": "Pologne",
+  "domaines": [
+   "peinture",
+   "sciences",
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Nikolaus_Kopernikus_MOT.jpg/500px-Nikolaus_Kopernikus_MOT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Unknown authorUnknown author, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q7235",
+  "nom": "Sophocle",
+  "notoriete": 214,
+  "naissance": -495,
+  "naissancePrecise": true,
+  "deces": -405,
+  "genre": "m",
+  "paysNaissance": "Grèce",
+  "domaines": [
+   "litterature",
+   "politique",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Ny_Carlsberg_Glyptothek_-_Sophokles.jpg/500px-Ny_Carlsberg_Glyptothek_-_Sophokles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Wolfgang Sauber, CC BY-SA 3.0 — Wikimedia Commons"
+ },
+ {
+  "id": "Q9333",
+  "nom": "Lao Tseu",
+  "notoriete": 214,
+  "naissance": -579,
+  "naissancePrecise": true,
+  "deces": -500,
+  "genre": "m",
+  "paysNaissance": "Chine",
+  "domaines": [
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Zhang_Lu-Laozi_Riding_an_Ox_%28cropped%29.jpg/500px-Zhang_Lu-Laozi_Riding_an_Ox_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Zhang Lu, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q3874799",
+  "nom": "Volodymyr Zelensky",
+  "notoriete": 214,
+  "naissance": 1978,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Ukraine",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%2831-12-2023%29.jpg/500px-%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%2831-12-2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : President.gov.ua, CC0 — Wikimedia Commons"
+ },
+ {
+  "id": "Q529",
+  "nom": "Louis Pasteur",
+  "notoriete": 213,
+  "naissance": 1822,
+  "naissancePrecise": true,
+  "deces": 1895,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Louis_Pasteur_%281822_-_1895%29%2C_microbiologist_and_chemist_Wellcome_V0026980.jpg/500px-Louis_Pasteur_%281822_-_1895%29%2C_microbiologist_and_chemist_Wellcome_V0026980.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Paul Nadar, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q6101",
+  "nom": "Marco Polo",
+  "notoriete": 212,
+  "naissance": 1254,
+  "naissancePrecise": true,
+  "deces": 1324,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "litterature",
+   "exploration"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Marco_Polo_Mosaic_from_Palazzo_Tursi.jpg/500px-Marco_Polo_Mosaic_from_Palazzo_Tursi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Salviati, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q3335",
+  "nom": "George Orwell",
+  "notoriete": 212,
+  "naissance": 1903,
+  "naissancePrecise": true,
+  "deces": 1950,
+  "genre": "m",
+  "paysNaissance": "Inde",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/George_Orwell%2C_c._1940_%2841928180381%29.jpg/500px-George_Orwell%2C_c._1940_%2841928180381%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Cassowary Colorizations, CC BY 2.0 — Wikimedia Commons"
+ },
+ {
+  "id": "Q10261",
+  "nom": "Pythagore",
+  "notoriete": 209,
+  "naissance": -582,
+  "naissancePrecise": true,
+  "deces": -490,
+  "genre": "m",
+  "paysNaissance": "Grèce",
+  "domaines": [
+   "sciences",
+   "litterature",
+   "politique",
+   "philosophie"
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Kapitolinischer_Pythagoras.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "credit": "Photo : The original uploader was Galilea at German Wikipedia., CC BY-SA 3.0 — Wikimedia Commons"
+ },
+ {
+  "id": "Q989",
+  "nom": "Jean-Paul II",
+  "notoriete": 209,
+  "naissance": 1920,
+  "naissancePrecise": true,
+  "deces": 2005,
+  "genre": "m",
+  "paysNaissance": "Pologne",
+  "domaines": [
+   "litterature",
+   "politique",
+   "philosophie"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Pope_John_Paul_II_smile.jpg/500px-Pope_John_Paul_II_smile.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Unknown authorUnknown author, CC BY 3.0 pl — Wikimedia Commons"
+ },
+ {
+  "id": "Q23434",
+  "nom": "Ernest Hemingway",
+  "notoriete": 208,
+  "naissance": 1899,
+  "naissancePrecise": true,
+  "deces": 1961,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema",
+   "litterature"
+  ],
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/ErnestHemingway.jpg/500px-ErnestHemingway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "credit": "Photo : Lloyd Arnold, Public domain — Wikimedia Commons"
+ },
+ {
+  "id": "Q9438",
+  "nom": "Thomas d’Aquin",
+  "notoriete": 208,
+  "naissance": 1225,
+  "naissancePrecise": true,
+  "deces": 1274,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/St-thomas-aquinasFXD.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « St-thomas-aquinasFXD.jpg »"
+ },
+ {
+  "id": "Q5598",
+  "nom": "Rembrandt",
+  "notoriete": 207,
+  "naissance": 1606,
+  "naissancePrecise": true,
+  "deces": 1669,
+  "genre": "m",
+  "paysNaissance": "Pays-Bas",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Rembrandt van Rijn - Self-Portrait - Google Art Project.jpg »"
+ },
+ {
+  "id": "Q6882",
+  "nom": "James Joyce",
+  "notoriete": 207,
+  "naissance": 1882,
+  "naissancePrecise": true,
+  "deces": 1941,
+  "genre": "m",
+  "paysNaissance": "Irlande",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/James_Joyce_by_Alex_Ehrenzweig%2C_1915_cropped.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « James Joyce by Alex Ehrenzweig, 1915 cropped.jpg »"
+ },
+ {
+  "id": "Q1511",
+  "nom": "Richard Wagner",
+  "notoriete": 206,
+  "naissance": 1813,
+  "naissancePrecise": true,
+  "deces": 1883,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "musique",
+   "litterature"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/RichardWagner.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « RichardWagner.jpg »"
+ },
+ {
+  "id": "Q9047",
+  "nom": "Gottfried Wilhelm Leibniz",
+  "notoriete": 206,
+  "naissance": 1646,
+  "naissancePrecise": true,
+  "deces": 1716,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "sciences",
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Christoph_Bernhard_Francke_-_Bildnis_des_Philosophen_Leibniz_(ca._1695).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Christoph Bernhard Francke - Bildnis des Philosophen Leibniz (ca. 1695).jpg »"
+ },
+ {
+  "id": "Q7327",
+  "nom": "Youri Gagarine",
+  "notoriete": 206,
+  "naissance": 1934,
+  "naissancePrecise": true,
+  "deces": 1968,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "politique",
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Yuri_Gagarin_portrait.png?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Yuri Gagarin portrait.png »"
+ },
+ {
+  "id": "Q11256",
+  "nom": "Fidel Castro",
+  "notoriete": 206,
+  "naissance": 1926,
+  "naissancePrecise": true,
+  "deces": 2016,
+  "genre": "m",
+  "paysNaissance": "Cuba",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fidel_Castro_1950s.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Fidel Castro 1950s.jpg »"
+ },
+ {
+  "id": "Q34670",
+  "nom": "Albert Camus",
+  "notoriete": 205,
+  "naissance": 1913,
+  "naissancePrecise": true,
+  "deces": 1960,
+  "genre": "m",
+  "paysNaissance": "Algérie",
+  "domaines": [
+   "cinema",
+   "litterature",
+   "sport",
+   "philosophie"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Albert_Camus%2C_gagnant_de_prix_Nobel%2C_portrait_en_buste%2C_pos%C3%A9_au_bureau%2C_faisant_face_%C3%A0_gauche%2C_cigarette_de_tabagisme.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Albert Camus, gagnant de prix Nobel, portrait en buste, posé au bureau, faisant  »"
+ },
+ {
+  "id": "Q892",
+  "nom": "J. R. R. Tolkien",
+  "notoriete": 205,
+  "naissance": 1892,
+  "naissancePrecise": true,
+  "deces": 1973,
+  "genre": "m",
+  "paysNaissance": "Afrique du Sud",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/J._R._R._Tolkien%2C_ca._1925.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « J. R. R. Tolkien, ca. 1925.jpg »"
+ },
+ {
+  "id": "Q4612",
+  "nom": "Marlène Dietrich",
+  "notoriete": 204,
+  "naissance": 1901,
+  "naissancePrecise": true,
+  "deces": 1992,
+  "genre": "f",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Marlene_Dietrich_Ross-Verlag_0875(crop).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Marlene Dietrich Ross-Verlag 0875(crop).jpg »"
+ },
+ {
+  "id": "Q8747",
+  "nom": "Euclide",
+  "notoriete": 203,
+  "naissance": -333,
+  "naissancePrecise": true,
+  "deces": -284,
+  "genre": "m",
+  "domaines": [
+   "sciences",
+   "litterature"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Euklid2.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Euklid2.jpg »"
+ },
+ {
+  "id": "Q36322",
+  "nom": "Jane Austen",
+  "notoriete": 203,
+  "naissance": 1775,
+  "naissancePrecise": true,
+  "deces": 1817,
+  "genre": "f",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CassandraAusten-JaneAusten(c.1810)_hires.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « CassandraAusten-JaneAusten(c.1810) hires.jpg »"
+ },
+ {
+  "id": "Q5676",
+  "nom": "Matsuo Bashō",
+  "notoriete": 202,
+  "naissance": 1644,
+  "naissancePrecise": true,
+  "deces": 1694,
+  "genre": "m",
+  "paysNaissance": "Japon",
+  "domaines": [
+   "peinture",
+   "litterature"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Basho_by_Buson.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Basho by Buson.jpg »"
+ },
+ {
+  "id": "Q8768",
+  "nom": "Henry Ford",
+  "notoriete": 202,
+  "naissance": 1863,
+  "naissancePrecise": true,
+  "deces": 1947,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "sciences",
+   "litterature",
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Henry_ford_1919.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Henry ford 1919.jpg »"
+ },
+ {
+  "id": "Q1541",
+  "nom": "Cicéron",
+  "notoriete": 202,
+  "naissance": -106,
+  "naissancePrecise": true,
+  "deces": -42,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "litterature",
+   "politique",
+   "philosophie"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bust_of_Cicero_(1st-cent._BC)_-_Palazzo_Nuovo_-_Musei_Capitolini_-_Rome_2016.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Bust of Cicero (1st-cent. BC) - Palazzo Nuovo - Musei Capitolini - Rome 2016.jpg »"
+ },
+ {
+  "id": "Q7198",
+  "nom": "Ovide",
+  "notoriete": 202,
+  "naissance": -42,
+  "naissancePrecise": true,
+  "deces": 17,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ovid_by_an_anonymous_sculptor.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ovid by an anonymous sculptor.jpg »"
+ },
+ {
+  "id": "Q30487",
+  "nom": "Mikhaïl Gorbatchev",
+  "notoriete": 202,
+  "naissance": 1931,
+  "naissancePrecise": true,
+  "deces": 2022,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/GorbachevMS.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « GorbachevMS.jpg »"
+ },
+ {
+  "id": "Q317521",
+  "nom": "Elon Musk",
+  "notoriete": 202,
+  "naissance": 1971,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Afrique du Sud",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Elon_Musk_(54816836217)_(cropped_2)_(b).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Elon Musk (54816836217) (cropped 2) (b).jpg »"
+ },
+ {
+  "id": "Q17714",
+  "nom": "Stephen Hawking",
+  "notoriete": 201,
+  "naissance": 1942,
+  "naissancePrecise": true,
+  "deces": 2018,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Relative_time_(2886233692)_(Stephen_Hawking_cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Relative time (2886233692) (Stephen Hawking cropped).jpg »"
+ },
+ {
+  "id": "Q4724",
+  "nom": "Le Corbusier",
+  "notoriete": 200,
+  "naissance": 1887,
+  "naissancePrecise": true,
+  "deces": 1965,
+  "genre": "m",
+  "paysNaissance": "Suisse",
+  "domaines": [
+   "peinture",
+   "litterature"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Le_Corbusier_(1964).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Le Corbusier (1964).jpg »"
+ },
+ {
+  "id": "Q5588",
+  "nom": "Frida Kahlo",
+  "notoriete": 200,
+  "naissance": 1907,
+  "naissancePrecise": true,
+  "deces": 1954,
+  "genre": "f",
+  "paysNaissance": "Mexique",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Frida_Kahlo%2C_by_Guillermo_Kahlo_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Frida Kahlo, by Guillermo Kahlo (cropped).jpg »"
+ },
+ {
+  "id": "Q1268",
+  "nom": "Frédéric Chopin",
+  "notoriete": 200,
+  "naissance": 1810,
+  "naissancePrecise": true,
+  "deces": 1849,
+  "genre": "m",
+  "paysNaissance": "Pologne",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Frederic_Chopin_photo.jpeg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Frederic Chopin photo.jpeg »"
+ },
+ {
+  "id": "Q6722",
+  "nom": "Carl Friedrich Gauss",
+  "notoriete": 200,
+  "naissance": 1777,
+  "naissancePrecise": true,
+  "deces": 1855,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Carl_Friedrich_Gauss.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Carl Friedrich Gauss.jpg »"
+ },
+ {
+  "id": "Q23685",
+  "nom": "Jimmy Carter",
+  "notoriete": 200,
+  "naissance": 1924,
+  "naissancePrecise": true,
+  "deces": 2024,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "litterature",
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/JimmyCarterPortrait2.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « JimmyCarterPortrait2.jpg »"
+ },
+ {
+  "id": "Q34787",
+  "nom": "Friedrich Engels",
+  "notoriete": 200,
+  "naissance": 1820,
+  "naissancePrecise": true,
+  "deces": 1895,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Friedrich_Engels_portrait_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Friedrich Engels portrait (cropped).jpg »"
+ },
+ {
+  "id": "Q2494",
+  "nom": "Benoît XVI",
+  "notoriete": 200,
+  "naissance": 1927,
+  "naissancePrecise": true,
+  "deces": 2022,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "philosophie"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Papst_Benedikt_XVI_in_Berlin_2011.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Papst Benedikt XVI in Berlin 2011.jpg »"
+ },
+ {
+  "id": "Q7071",
+  "nom": "Li Bai",
+  "notoriete": 198,
+  "naissance": 701,
+  "naissancePrecise": true,
+  "deces": 762,
+  "genre": "m",
+  "paysNaissance": "Chine",
+  "domaines": [
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%E6%9D%8E%E7%99%BD.png?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « 李白.png »"
+ },
+ {
+  "id": "Q11613",
+  "nom": "Harry S. Truman",
+  "notoriete": 198,
+  "naissance": 1884,
+  "naissancePrecise": true,
+  "deces": 1972,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/TRUMAN_58-766-06_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « TRUMAN 58-766-06 (cropped).jpg »"
+ },
+ {
+  "id": "Q9200",
+  "nom": "Paul de Tarse",
+  "notoriete": 197,
+  "naissance": 5,
+  "naissancePrecise": true,
+  "deces": 66,
+  "genre": "m",
+  "paysNaissance": "Turquie",
+  "domaines": [
+   "litterature"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Giovanni_Francesco_Barbieri_-_Saint_Paul.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Giovanni Francesco Barbieri - Saint Paul.jpg »"
+ },
+ {
+  "id": "Q6294",
+  "nom": "Hillary Clinton",
+  "notoriete": 197,
+  "naissance": 1947,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hillary_Clinton_official_Secretary_of_State_portrait_crop.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Hillary Clinton official Secretary of State portrait crop.jpg »"
+ },
+ {
+  "id": "Q7192",
+  "nom": "Qin Shi Huang",
+  "notoriete": 197,
+  "naissance": -258,
+  "naissancePrecise": true,
+  "deces": -209,
+  "genre": "m",
+  "paysNaissance": "Chine",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Qinshihuang.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Qinshihuang.jpg »"
+ },
+ {
+  "id": "Q1496",
+  "nom": "Fernand de Magellan",
+  "notoriete": 197,
+  "naissance": 1480,
+  "naissancePrecise": true,
+  "deces": 1521,
+  "genre": "m",
+  "paysNaissance": "Portugal",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Retrato_de_Hernando_de_Magallanes.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Retrato de Hernando de Magallanes.jpg »"
+ },
+ {
+  "id": "Q23505",
+  "nom": "George H. W. Bush",
+  "notoriete": 196,
+  "naissance": 1924,
+  "naissancePrecise": true,
+  "deces": 2018,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/George_H._W._Bush_presidential_portrait_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « George H. W. Bush presidential portrait (cropped).jpg »"
+ },
+ {
+  "id": "Q5597",
+  "nom": "Raphaël",
+  "notoriete": 195,
+  "naissance": 1483,
+  "naissancePrecise": true,
+  "deces": 1520,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Raffaello_Sanzio.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Raffaello Sanzio.jpg »"
+ },
+ {
+  "id": "Q1290",
+  "nom": "Blaise Pascal",
+  "notoriete": 195,
+  "naissance": 1623,
+  "naissancePrecise": true,
+  "deces": 1662,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "sciences",
+   "litterature",
+   "philosophie"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Blaise_Pascal_Versailles.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Blaise Pascal Versailles.JPG »"
+ },
+ {
+  "id": "Q4605",
+  "nom": "Sarah Bernhardt",
+  "notoriete": 194,
+  "naissance": 1844,
+  "naissancePrecise": true,
+  "deces": 1923,
+  "genre": "f",
+  "paysNaissance": "France",
+  "domaines": [
+   "peinture",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Face_detail%2C_Sarah_Bernhardt_as_Do%C3%B1a_Sol_in_Hernani_(cropped).png?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Face detail, Sarah Bernhardt as Doña Sol in Hernani (cropped).png »"
+ },
+ {
+  "id": "Q1744",
+  "nom": "Madonna",
+  "notoriete": 193,
+  "naissance": 1958,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Madonna_Rebel_Heart_Tour_2015_-_Stockholm_(23051472299)_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Madonna Rebel Heart Tour 2015 - Stockholm (23051472299) (cropped).jpg »"
+ },
+ {
+  "id": "Q8011",
+  "nom": "Avicenne",
+  "notoriete": 193,
+  "naissance": 980,
+  "naissancePrecise": true,
+  "deces": 1037,
+  "genre": "m",
+  "paysNaissance": "Ouzbékistan",
+  "domaines": [
+   "sciences",
+   "philosophie"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pursina.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Pursina.jpg »"
+ },
+ {
+  "id": "Q329",
+  "nom": "Nicolas Sarkozy",
+  "notoriete": 193,
+  "naissance": 1955,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicolas_Sarkozy_in_2010.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Nicolas Sarkozy in 2010.jpg »"
+ },
+ {
+  "id": "Q7315",
+  "nom": "Piotr Ilitch Tchaïkovski",
+  "notoriete": 192,
+  "naissance": 1840,
+  "naissancePrecise": true,
+  "deces": 1893,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portr%C3%A4t_des_Komponisten_Pjotr_I._Tschaikowski_(1840-1893).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Porträt des Komponisten Pjotr I. Tschaikowski (1840-1893).jpg »"
+ },
+ {
+  "id": "Q23810",
+  "nom": "Alfred Nobel",
+  "notoriete": 192,
+  "naissance": 1833,
+  "naissancePrecise": true,
+  "deces": 1896,
+  "genre": "m",
+  "paysNaissance": "Suède",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/AlfredNobel2.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « AlfredNobel2.jpg »"
+ },
+ {
+  "id": "Q33866",
+  "nom": "Theodore Roosevelt",
+  "notoriete": 192,
+  "naissance": 1858,
+  "naissancePrecise": true,
+  "deces": 1919,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "politique",
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Theodore_Roosevelt_by_the_Pach_Bros.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Theodore Roosevelt by the Pach Bros.jpg »"
+ },
+ {
+  "id": "Q1047",
+  "nom": "Jawaharlal Nehru",
+  "notoriete": 192,
+  "naissance": 1889,
+  "naissancePrecise": true,
+  "deces": 1964,
+  "genre": "m",
+  "paysNaissance": "Inde",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jawaharlal_Nehru%2C_circa_1925.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Jawaharlal Nehru, circa 1925.jpg »"
+ },
+ {
+  "id": "Q926",
+  "nom": "Roald Amundsen",
+  "notoriete": 191,
+  "naissance": 1872,
+  "naissancePrecise": true,
+  "deces": 1928,
+  "genre": "m",
+  "paysNaissance": "Norvège",
+  "domaines": [
+   "cinema",
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Amundsen_in_fur_skins.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Amundsen in fur skins.jpg »"
+ },
+ {
+  "id": "Q7604",
+  "nom": "Leonhard Euler",
+  "notoriete": 191,
+  "naissance": 1707,
+  "naissancePrecise": true,
+  "deces": 1783,
+  "genre": "m",
+  "paysNaissance": "Suisse",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Leonhard_Euler.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Leonhard Euler.jpg »"
+ },
+ {
+  "id": "Q9916",
+  "nom": "Dwight David Eisenhower",
+  "notoriete": 191,
+  "naissance": 1890,
+  "naissancePrecise": true,
+  "deces": 1969,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Dwight D. Eisenhower, official photo portrait, May 29, 1959.jpg »"
+ },
+ {
+  "id": "Q9588",
+  "nom": "Richard Nixon",
+  "notoriete": 190,
+  "naissance": 1913,
+  "naissancePrecise": true,
+  "deces": 1994,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard_Nixon_presidential_portrait.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Richard Nixon presidential portrait.jpg »"
+ },
+ {
+  "id": "Q34296",
+  "nom": "Woodrow Wilson",
+  "notoriete": 190,
+  "naissance": 1856,
+  "naissancePrecise": true,
+  "deces": 1924,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/President_Woodrow_Wilson_Harris_%26_Ewing_(3x4_cropped_b).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « President Woodrow Wilson Harris & Ewing (3x4 cropped b).jpg »"
+ },
+ {
+  "id": "Q7231",
+  "nom": "Rosa Luxemburg",
+  "notoriete": 190,
+  "naissance": 1871,
+  "naissancePrecise": true,
+  "deces": 1919,
+  "genre": "f",
+  "paysNaissance": "Pologne",
+  "domaines": [
+   "politique",
+   "philosophie"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rosa_Luxemburg.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Rosa Luxemburg.jpg »"
+ },
+ {
+  "id": "Q15031",
+  "nom": "Xi Jinping",
+  "notoriete": 190,
+  "naissance": 1953,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Chine",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Xi_Jinping_on_August_18%2C_2026_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Xi Jinping on August 18, 2026 (cropped).jpg »"
+ },
+ {
+  "id": "Q7374",
+  "nom": "Alfred Hitchcock",
+  "notoriete": 188,
+  "naissance": 1899,
+  "naissancePrecise": true,
+  "deces": 1980,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hitchcock%2C_Alfred_02.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Hitchcock, Alfred 02.jpg »"
+ },
+ {
+  "id": "Q37388",
+  "nom": "Francis Bacon",
+  "notoriete": 188,
+  "naissance": 1561,
+  "naissancePrecise": true,
+  "deces": 1626,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sciences",
+   "politique",
+   "philosophie"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Somer_Francis_Bacon.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Somer Francis Bacon.jpg »"
+ },
+ {
+  "id": "Q9049",
+  "nom": "Noam Chomsky",
+  "notoriete": 188,
+  "naissance": 1928,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "philosophie"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Noam_Chomsky_portrait_2015.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Noam Chomsky portrait 2015.jpg »"
+ },
+ {
+  "id": "Q5580",
+  "nom": "Albrecht Dürer",
+  "notoriete": 187,
+  "naissance": 1471,
+  "naissancePrecise": true,
+  "deces": 1528,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "peinture",
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/D%C3%BCrer_Alte_Pinakothek.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Dürer Alte Pinakothek.jpg »"
+ },
+ {
+  "id": "Q11806",
+  "nom": "John Adams",
+  "notoriete": 187,
+  "naissance": 1735,
+  "naissancePrecise": true,
+  "deces": 1826,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/John_Adams_A18236.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « John Adams A18236.jpg »"
+ },
+ {
+  "id": "Q8440",
+  "nom": "Hugo Chávez",
+  "notoriete": 187,
+  "naissance": 1954,
+  "naissancePrecise": true,
+  "deces": 2013,
+  "genre": "m",
+  "paysNaissance": "Venezuela",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hugo_Ch%C3%A1vez_in_Bras%C3%ADlia_2011_(3x4_cropped)_(2).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Hugo Chávez in Brasília 2011 (3x4 cropped) (2).jpg »"
+ },
+ {
+  "id": "Q5432",
+  "nom": "Francisco de Goya",
+  "notoriete": 186,
+  "naissance": 1746,
+  "naissancePrecise": true,
+  "deces": 1828,
+  "genre": "m",
+  "paysNaissance": "Espagne",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vicente_L%C3%B3pez_Porta%C3%B1a_-_el_pintor_Francisco_de_Goya.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Vicente López Portaña - el pintor Francisco de Goya.jpg »"
+ },
+ {
+  "id": "Q8963",
+  "nom": "Johannes Kepler",
+  "notoriete": 186,
+  "naissance": 1572,
+  "naissancePrecise": true,
+  "deces": 1630,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "sciences",
+   "philosophie"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Johannes_Kepler_by_Hans_von_Aachen.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Johannes Kepler by Hans von Aachen.jpg »"
+ },
+ {
+  "id": "Q7324",
+  "nom": "James Cook",
+  "notoriete": 186,
+  "naissance": 1728,
+  "naissancePrecise": true,
+  "deces": 1779,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Captainjamescookportrait.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Captainjamescookportrait.jpg »"
+ },
+ {
+  "id": "Q392",
+  "nom": "Bob Dylan",
+  "notoriete": 185,
+  "naissance": 1941,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "peinture",
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/DylanYoungKilkenny140719v2_(50_of_52)_(52246124397)_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « DylanYoungKilkenny140719v2 (50 of 52) (52246124397) (cropped).jpg »"
+ },
+ {
+  "id": "Q1203",
+  "nom": "John Lennon",
+  "notoriete": 185,
+  "naissance": 1940,
+  "naissancePrecise": true,
+  "deces": 1980,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/John_Lennon%2C_1974_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « John Lennon, 1974 (cropped).jpg »"
+ },
+ {
+  "id": "Q33760",
+  "nom": "Bertrand Russell",
+  "notoriete": 185,
+  "naissance": 1872,
+  "naissancePrecise": true,
+  "deces": 1970,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sciences",
+   "politique",
+   "philosophie"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bertrand_Russell_photo.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Bertrand Russell photo.jpg »"
+ },
+ {
+  "id": "Q33391",
+  "nom": "Léon Trotski",
+  "notoriete": 185,
+  "naissance": 1879,
+  "naissancePrecise": true,
+  "deces": 1940,
+  "genre": "m",
+  "paysNaissance": "Ukraine",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Leon_Trotsky%2C_1924.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Leon Trotsky, 1924.jpg »"
+ },
+ {
+  "id": "Q19878",
+  "nom": "Mouammar Kadhafi",
+  "notoriete": 185,
+  "naissance": 1942,
+  "naissancePrecise": true,
+  "deces": 2011,
+  "genre": "m",
+  "paysNaissance": "Libye",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Muammar_al-Gaddafi_in_2010_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Muammar al-Gaddafi in 2010 (cropped).jpg »"
+ },
+ {
+  "id": "Q7328",
+  "nom": "Vasco de Gama",
+  "notoriete": 184,
+  "naissance": 1460,
+  "naissancePrecise": true,
+  "deces": 1525,
+  "genre": "m",
+  "paysNaissance": "Portugal",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ignoto_portoghese%2C_ritratto_di_un_cavaliere_dell'ordine_di_cristo%2C_1525-50_ca._02.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ignoto portoghese, ritratto di un cavaliere dell'ordine di cristo, 1525-50 ca. 0 »"
+ },
+ {
+  "id": "Q12897",
+  "nom": "Pelé",
+  "notoriete": 183,
+  "naissance": 1940,
+  "naissancePrecise": true,
+  "deces": 2022,
+  "genre": "m",
+  "paysNaissance": "Brésil",
+  "domaines": [
+   "musique",
+   "cinema",
+   "politique",
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pele_con_brasil_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Pele con brasil (cropped).jpg »"
+ },
+ {
+  "id": "Q7742",
+  "nom": "Louis XIV",
+  "notoriete": 183,
+  "naissance": 1638,
+  "naissancePrecise": true,
+  "deces": 1715,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "cinema",
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Louis_XIV_of_France.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Louis XIV of France.jpg »"
+ },
+ {
+  "id": "Q8958",
+  "nom": "Johannes Gutenberg",
+  "notoriete": 183,
+  "naissance": 1400,
+  "naissancePrecise": true,
+  "deces": 1468,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gutenberg.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Gutenberg.jpg »"
+ },
+ {
+  "id": "Q9021",
+  "nom": "Max Planck",
+  "notoriete": 183,
+  "naissance": 1858,
+  "naissancePrecise": true,
+  "deces": 1947,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Max_Planck.png?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Max Planck.png »"
+ },
+ {
+  "id": "Q12706",
+  "nom": "Maxime Gorki",
+  "notoriete": 182,
+  "naissance": 1868,
+  "naissancePrecise": true,
+  "deces": 1936,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Maxim_Gorky_LOC_Restored_edit1.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Maxim Gorky LOC Restored edit1.jpg »"
+ },
+ {
+  "id": "Q5589",
+  "nom": "Henri Matisse",
+  "notoriete": 181,
+  "naissance": 1869,
+  "naissancePrecise": true,
+  "deces": 1954,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Henri_Matisse_1933_May_20.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Portrait of Henri Matisse 1933 May 20.jpg »"
+ },
+ {
+  "id": "Q8750",
+  "nom": "Michael Faraday",
+  "notoriete": 180,
+  "naissance": 1791,
+  "naissancePrecise": true,
+  "deces": 1867,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/M_Faraday_Th_Phillips_oil_1842.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « M Faraday Th Phillips oil 1842.jpg »"
+ },
+ {
+  "id": "Q5603",
+  "nom": "Andy Warhol",
+  "notoriete": 179,
+  "naissance": 1928,
+  "naissancePrecise": true,
+  "deces": 1987,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "peinture",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Andy_Warhol_at_the_Jewish_Museum_(by_Bernard_Gotfryd)_%E2%80%93_LOC.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Andy Warhol at the Jewish Museum (by Bernard Gotfryd) – LOC.jpg »"
+ },
+ {
+  "id": "Q1779",
+  "nom": "Louis Armstrong",
+  "notoriete": 179,
+  "naissance": 1901,
+  "naissancePrecise": true,
+  "deces": 1971,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Louis_Armstrong_restored.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Louis Armstrong restored.jpg »"
+ },
+ {
+  "id": "Q7317",
+  "nom": "Giuseppe Verdi",
+  "notoriete": 179,
+  "naissance": 1813,
+  "naissancePrecise": true,
+  "deces": 1901,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "musique",
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Giuseppi_Verdi_by_Ferdinand_Mulnier_c1870.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Giuseppi Verdi by Ferdinand Mulnier c1870.jpg »"
+ },
+ {
+  "id": "Q9106",
+  "nom": "Dmitri Mendeleïev",
+  "notoriete": 179,
+  "naissance": 1834,
+  "naissancePrecise": true,
+  "deces": 1907,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dmitri_Mendeleev.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Dmitri Mendeleev.jpg »"
+ },
+ {
+  "id": "Q5683",
+  "nom": "Geoffrey Chaucer",
+  "notoriete": 179,
+  "naissance": 1343,
+  "naissancePrecise": true,
+  "deces": 1400,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Geoffrey_Chaucer_(4671380)_(cropped)_02.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Portrait of Geoffrey Chaucer (4671380) (cropped) 02.jpg »"
+ },
+ {
+  "id": "Q1254",
+  "nom": "Kofi Annan",
+  "notoriete": 178,
+  "naissance": 1938,
+  "naissancePrecise": true,
+  "deces": 2018,
+  "genre": "m",
+  "paysNaissance": "Ghana",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kofi_Annan_2012_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Kofi Annan 2012 (cropped).jpg »"
+ },
+ {
+  "id": "Q5586",
+  "nom": "Hokusai",
+  "notoriete": 177,
+  "naissance": 1760,
+  "naissancePrecise": true,
+  "deces": 1849,
+  "genre": "m",
+  "paysNaissance": "Japon",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hokusai_as_an_old_man.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Hokusai as an old man.jpg »"
+ },
+ {
+  "id": "Q8006",
+  "nom": "Akira Kurosawa",
+  "notoriete": 177,
+  "naissance": 1910,
+  "naissancePrecise": true,
+  "deces": 1998,
+  "genre": "m",
+  "paysNaissance": "Japon",
+  "domaines": [
+   "peinture",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Akirakurosawa-onthesetof7samurai-1953-page88.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Akirakurosawa-onthesetof7samurai-1953-page88.jpg »"
+ },
+ {
+  "id": "Q43274",
+  "nom": "Charles III",
+  "notoriete": 177,
+  "naissance": 1948,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/King_Charles_III_(July_2023).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « King Charles III (July 2023).jpg »"
+ },
+ {
+  "id": "Q8589",
+  "nom": "Aśoka",
+  "notoriete": 177,
+  "naissance": -303,
+  "naissancePrecise": true,
+  "deces": -231,
+  "genre": "m",
+  "paysNaissance": "Inde",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ashoka's_visit_to_the_Ramagrama_stupa_Sanchi_Stupa_1_Southern_gateway.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ashoka's visit to the Ramagrama stupa Sanchi Stupa 1 Southern gateway.jpg »"
+ },
+ {
+  "id": "Q15869",
+  "nom": "Freddie Mercury",
+  "notoriete": 176,
+  "naissance": 1946,
+  "naissancePrecise": true,
+  "deces": 1991,
+  "genre": "m",
+  "paysNaissance": "Tanzanie",
+  "domaines": [
+   "peinture",
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Freddie_Mercury_at_Sheraton_Hotel_Buenos_Aires.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Freddie Mercury at Sheraton Hotel Buenos Aires.jpg »"
+ },
+ {
+  "id": "Q11813",
+  "nom": "James Madison",
+  "notoriete": 176,
+  "naissance": 1751,
+  "naissancePrecise": true,
+  "deces": 1836,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/James_Madison.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « James Madison.jpg »"
+ },
+ {
+  "id": "Q56226",
+  "nom": "Kim Jong-un",
+  "notoriete": 176,
+  "naissance": 1984,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Corée du Nord",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kim_Jong-un_and_Vladimir_Putin_(2023-09-13)_12_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Kim Jong-un and Vladimir Putin (2023-09-13) 12 (cropped).jpg »"
+ },
+ {
+  "id": "Q444",
+  "nom": "Lech Wałęsa",
+  "notoriete": 176,
+  "naissance": 1943,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Pologne",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lech_Walesa_-_2009.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Lech Walesa - 2009.jpg »"
+ },
+ {
+  "id": "Q1430",
+  "nom": "Marc Aurèle",
+  "notoriete": 176,
+  "naissance": 121,
+  "naissancePrecise": true,
+  "deces": 180,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Marcus_Aurelius_Louvre_MR561_n02.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Marcus Aurelius Louvre MR561 n02.jpg »"
+ },
+ {
+  "id": "Q5599",
+  "nom": "Pierre Paul Rubens",
+  "notoriete": 175,
+  "naissance": 1577,
+  "naissancePrecise": true,
+  "deces": 1640,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sir_Peter_Paul_Rubens_-_Portrait_of_the_Artist_-_Google_Art_Project.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Sir Peter Paul Rubens - Portrait of the Artist - Google Art Project.jpg »"
+ },
+ {
+  "id": "Q83287",
+  "nom": "Selena Gomez",
+  "notoriete": 175,
+  "naissance": 1992,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Selena_Gomez_at_the_2024_Toronto_International_Film_Festival_10_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Selena Gomez at the 2024 Toronto International Film Festival 10 (cropped).jpg »"
+ },
+ {
+  "id": "Q17515",
+  "nom": "Diego Maradona",
+  "notoriete": 175,
+  "naissance": 1960,
+  "naissancePrecise": true,
+  "deces": 2020,
+  "genre": "m",
+  "paysNaissance": "Argentine",
+  "domaines": [
+   "cinema",
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Argentina_celebrando_copa_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Argentina celebrando copa (cropped).jpg »"
+ },
+ {
+  "id": "Q6109517",
+  "nom": "Léon XIV",
+  "notoriete": 175,
+  "naissance": 1955,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Leo_XIV_(13_October_2025).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Leo XIV (13 October 2025).jpg »"
+ },
+ {
+  "id": "Q9582",
+  "nom": "Gerald Ford",
+  "notoriete": 175,
+  "naissance": 1913,
+  "naissancePrecise": true,
+  "deces": 2006,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerald_Ford_presidential_portrait_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Gerald Ford presidential portrait (cropped).jpg »"
+ },
+ {
+  "id": "Q9640",
+  "nom": "Lyndon B. Johnson",
+  "notoriete": 175,
+  "naissance": 1908,
+  "naissancePrecise": true,
+  "deces": 1973,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyndon_B._Johnson%2C_photo_portrait%2C_leaning_on_chair%2C_color_cropped.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Lyndon B. Johnson, photo portrait, leaning on chair, color cropped.jpg »"
+ },
+ {
+  "id": "Q8605",
+  "nom": "Simón Bolívar",
+  "notoriete": 175,
+  "naissance": 1783,
+  "naissancePrecise": true,
+  "deces": 1830,
+  "genre": "m",
+  "paysNaissance": "Venezuela",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sim%C3%B3n_Bol%C3%ADvar_by_Acevedo_Bernal%2C_1922.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Simón Bolívar by Acevedo Bernal, 1922.jpg »"
+ },
+ {
+  "id": "Q7312",
+  "nom": "Franz Schubert",
+  "notoriete": 174,
+  "naissance": 1797,
+  "naissancePrecise": true,
+  "deces": 1828,
+  "genre": "m",
+  "paysNaissance": "Autriche",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Franz_Schubert_by_Wilhelm_August_Rieder_1875_larger_version.png?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Franz Schubert by Wilhelm August Rieder 1875 larger version.png »"
+ },
+ {
+  "id": "Q9123",
+  "nom": "Ernest Rutherford",
+  "notoriete": 174,
+  "naissance": 1871,
+  "naissancePrecise": true,
+  "deces": 1937,
+  "genre": "m",
+  "paysNaissance": "Nouvelle-Zélande",
+  "domaines": [
+   "sciences",
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ernest_Rutherford_LOC.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ernest Rutherford LOC.jpg »"
+ },
+ {
+  "id": "Q1149",
+  "nom": "Indira Gandhi",
+  "notoriete": 173,
+  "naissance": 1917,
+  "naissancePrecise": true,
+  "deces": 1984,
+  "genre": "f",
+  "paysNaissance": "Inde",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Indira_Gandhi_official_portrait.png?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Indira Gandhi official portrait.png »"
+ },
+ {
+  "id": "Q19581",
+  "nom": "Rafael Correa",
+  "notoriete": 173,
+  "naissance": 1963,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Équateur",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rafael_Correa%2C_Ecuador_expresident.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Rafael Correa, Ecuador expresident.jpg »"
+ },
+ {
+  "id": "Q43723",
+  "nom": "Benjamin Netanyahou",
+  "notoriete": 172,
+  "naissance": 1949,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Israël",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin_Netanyahu%2C_February_2023.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Benjamin Netanyahu, February 2023.jpg »"
+ },
+ {
+  "id": "Q5208",
+  "nom": "Huang Xianfan",
+  "notoriete": 172,
+  "naissance": 1899,
+  "naissancePrecise": true,
+  "deces": 1982,
+  "genre": "m",
+  "paysNaissance": "Chine",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Huang_Xianfan_Graduation_Photo.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Huang Xianfan Graduation Photo.jpg »"
+ },
+ {
+  "id": "Q8877",
+  "nom": "Steven Spielberg",
+  "notoriete": 171,
+  "naissance": 1946,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Steven_Spielberg_2025.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Steven Spielberg 2025.jpg »"
+ },
+ {
+  "id": "Q8753",
+  "nom": "Enrico Fermi",
+  "notoriete": 171,
+  "naissance": 1901,
+  "naissancePrecise": true,
+  "deces": 1954,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Enrico_Fermi_1943-49.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Enrico Fermi 1943-49.jpg »"
+ },
+ {
+  "id": "Q36740",
+  "nom": "Aung San Suu Kyi",
+  "notoriete": 171,
+  "naissance": 1945,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "Birmanie",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Aung_San_Suu_Kyi_at_the_Enthronement_of_Naruhito_(1).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Aung San Suu Kyi at the Enthronement of Naruhito (1).jpg »"
+ },
+ {
+  "id": "Q1316",
+  "nom": "Saddam Hussein",
+  "notoriete": 171,
+  "naissance": 1937,
+  "naissancePrecise": true,
+  "deces": 2006,
+  "genre": "m",
+  "paysNaissance": "Irak",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Saddam_Hussein_at_trial%2C_July_2004.JPEG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Saddam Hussein at trial, July 2004.JPEG »"
+ },
+ {
+  "id": "Q7326",
+  "nom": "Hernán Cortés",
+  "notoriete": 171,
+  "naissance": 1485,
+  "naissancePrecise": true,
+  "deces": 1547,
+  "genre": "m",
+  "paysNaissance": "Espagne",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Retrato_de_Hern%C3%A1n_Cort%C3%A9s.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Retrato de Hernán Cortés.jpg »"
+ },
+ {
+  "id": "Q2908",
+  "nom": "Antoine de Saint-Exupéry",
+  "notoriete": 170,
+  "naissance": 1900,
+  "naissancePrecise": true,
+  "deces": 1944,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Antoine_de_Saint-Euxpery_(1920).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Antoine de Saint-Euxpery (1920).jpg »"
+ },
+ {
+  "id": "Q35314",
+  "nom": "Nikita Khrouchtchev",
+  "notoriete": 170,
+  "naissance": 1894,
+  "naissancePrecise": true,
+  "deces": 1971,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "politique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nikita_Khrushchev_official_portrait.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Nikita Khrushchev official portrait.jpg »"
+ },
+ {
+  "id": "Q78516",
+  "nom": "Anna Netrebko",
+  "notoriete": 169,
+  "naissance": 1971,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Anna_Netrebko_-_Romy_2013_a.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Anna Netrebko - Romy 2013 a.jpg »"
+ },
+ {
+  "id": "Q44403",
+  "nom": "Heinrich Heine",
+  "notoriete": 168,
+  "naissance": 1797,
+  "naissancePrecise": true,
+  "deces": 1856,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Heinrich_Heine.PNG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Heinrich Heine.PNG »"
+ },
+ {
+  "id": "Q1340",
+  "nom": "Antonio Vivaldi",
+  "notoriete": 168,
+  "naissance": 1678,
+  "naissancePrecise": true,
+  "deces": 1741,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Onbekend_-_Antonio_Vivaldi_-_Bologna_Museo_Internationale_e_biblioteca_della_musica_di_bologna_28-04-2012_9-21-050.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Onbekend - Antonio Vivaldi - Bologna Museo Internationale e biblioteca della mus »"
+ },
+ {
+  "id": "Q35900",
+  "nom": "Omar Khayyam",
+  "notoriete": 168,
+  "naissance": 1048,
+  "naissancePrecise": true,
+  "deces": 1131,
+  "genre": "m",
+  "paysNaissance": "Iran",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Omar_Khayyam2.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Omar Khayyam2.JPG »"
+ },
+ {
+  "id": "Q297",
+  "nom": "Diego Vélasquez",
+  "notoriete": 167,
+  "naissance": 1599,
+  "naissancePrecise": true,
+  "deces": 1660,
+  "genre": "m",
+  "paysNaissance": "Espagne",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Diego_Vel%C3%A1zquez_Autorretrato_45_x_38_cm_-_Colecci%C3%B3n_Real_Academia_de_Bellas_Artes_de_San_Carlos_-_Museo_de_Bellas_Artes_de_Valencia.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Diego Velázquez Autorretrato 45 x 38 cm - Colección Real Academia de Bellas Arte »"
+ },
+ {
+  "id": "Q7314",
+  "nom": "Igor Stravinsky",
+  "notoriete": 166,
+  "naissance": 1882,
+  "naissancePrecise": true,
+  "deces": 1971,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Igor_Stravinsky_LOC_32392u.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Igor Stravinsky LOC 32392u.jpg »"
+ },
+ {
+  "id": "Q16397",
+  "nom": "Bruce Lee",
+  "notoriete": 166,
+  "naissance": 1940,
+  "naissancePrecise": true,
+  "deces": 1973,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bruce_Lee_1973_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Bruce Lee 1973 (cropped).jpg »"
+ },
+ {
+  "id": "Q9038",
+  "nom": "Al-Khawarizmi",
+  "notoriete": 166,
+  "naissance": 780,
+  "naissancePrecise": true,
+  "deces": 850,
+  "genre": "m",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Madrid_-_Ciudad_Universitaria%2C_Monumento_a_Muhammad_al-Juarismi_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Madrid - Ciudad Universitaria, Monumento a Muhammad al-Juarismi (cropped).jpg »"
+ },
+ {
+  "id": "Q7331",
+  "nom": "Ibn Battuta",
+  "notoriete": 166,
+  "naissance": 1304,
+  "naissancePrecise": true,
+  "deces": 1368,
+  "genre": "m",
+  "paysNaissance": "Maroc",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bust_of_Ibn_Battuta_at_Ibn_Battuta_museum.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Bust of Ibn Battuta at Ibn Battuta museum.jpg »"
+ },
+ {
+  "id": "Q41585",
+  "nom": "David Hilbert",
+  "notoriete": 165,
+  "naissance": 1862,
+  "naissancePrecise": true,
+  "deces": 1943,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hilbert.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Hilbert.jpg »"
+ },
+ {
+  "id": "Q409",
+  "nom": "Bob Marley",
+  "notoriete": 164,
+  "naissance": 1945,
+  "naissancePrecise": true,
+  "deces": 1981,
+  "genre": "m",
+  "paysNaissance": "Jamaïque",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bob_Marley_(1976).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Bob Marley (1976).jpg »"
+ },
+ {
+  "id": "Q9130",
+  "nom": "Erwin Schrödinger",
+  "notoriete": 164,
+  "naissance": 1887,
+  "naissancePrecise": true,
+  "deces": 1961,
+  "genre": "m",
+  "paysNaissance": "Autriche",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Erwin_Schr%C3%B6dinger_-_Narodowe_Archiwum_Cyfrowe_(1-E-939).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Erwin Schrödinger - Narodowe Archiwum Cyfrowe (1-E-939).jpg »"
+ },
+ {
+  "id": "Q25973",
+  "nom": "Hermann Hesse",
+  "notoriete": 163,
+  "naissance": 1877,
+  "naissancePrecise": true,
+  "deces": 1962,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hermann_Hesse_2.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Hermann Hesse 2.jpg »"
+ },
+ {
+  "id": "Q7546",
+  "nom": "Ingmar Bergman",
+  "notoriete": 163,
+  "naissance": 1918,
+  "naissancePrecise": true,
+  "deces": 2007,
+  "genre": "m",
+  "paysNaissance": "Suède",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ingmar_Bergman_(1966).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ingmar Bergman (1966).jpg »"
+ },
+ {
+  "id": "Q9095",
+  "nom": "James Clerk Maxwell",
+  "notoriete": 163,
+  "naissance": 1831,
+  "naissancePrecise": true,
+  "deces": 1879,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/James-Clerk-Maxwell-1831-1879.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « James-Clerk-Maxwell-1831-1879.jpg »"
+ },
+ {
+  "id": "Q80",
+  "nom": "Tim Berners-Lee",
+  "notoriete": 163,
+  "naissance": 1955,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/LS3_4919_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « LS3 4919 (cropped).jpg »"
+ },
+ {
+  "id": "Q41513",
+  "nom": "William Blake",
+  "notoriete": 162,
+  "naissance": 1757,
+  "naissancePrecise": true,
+  "deces": 1827,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/William_Blake_by_Thomas_Phillips.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « William Blake by Thomas Phillips.jpg »"
+ },
+ {
+  "id": "Q36970",
+  "nom": "Jackie Chan",
+  "notoriete": 162,
+  "naissance": 1954,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Chine",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jackie_Chan_-_2025_Locarno_Film_Festival.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Jackie Chan - 2025 Locarno Film Festival.jpg »"
+ },
+ {
+  "id": "Q7371",
+  "nom": "Federico Fellini",
+  "notoriete": 162,
+  "naissance": 1920,
+  "naissancePrecise": true,
+  "deces": 1993,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Federico_Fellini_NYWTS_2.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Federico Fellini NYWTS 2.jpg »"
+ },
+ {
+  "id": "Q5105",
+  "nom": "Céline Dion",
+  "notoriete": 161,
+  "naissance": 1968,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "Canada",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/C%C3%A9line_Dion_2012.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Céline Dion 2012.jpg »"
+ },
+ {
+  "id": "Q7294",
+  "nom": "Johannes Brahms",
+  "notoriete": 161,
+  "naissance": 1833,
+  "naissancePrecise": true,
+  "deces": 1897,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/JohannesBrahms.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « JohannesBrahms.jpg »"
+ },
+ {
+  "id": "Q83338",
+  "nom": "Robin Williams",
+  "notoriete": 161,
+  "naissance": 1951,
+  "naissancePrecise": true,
+  "deces": 2014,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Robin_Williams_2011a_(2).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Robin Williams 2011a (2).jpg »"
+ },
+ {
+  "id": "Q7321",
+  "nom": "Jacques Cartier",
+  "notoriete": 161,
+  "naissance": 1492,
+  "naissancePrecise": true,
+  "deces": 1557,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "sciences",
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacques_Cartier_1851-1852.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Jacques Cartier 1851-1852.jpg »"
+ },
+ {
+  "id": "Q7302",
+  "nom": "Georg Friedrich Haendel",
+  "notoriete": 160,
+  "naissance": 1685,
+  "naissancePrecise": true,
+  "deces": 1759,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/George_Frideric_Handel_by_Balthasar_Denner.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « George Frideric Handel by Balthasar Denner.jpg »"
+ },
+ {
+  "id": "Q2001",
+  "nom": "Stanley Kubrick",
+  "notoriete": 160,
+  "naissance": 1928,
+  "naissancePrecise": true,
+  "deces": 1999,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Stanley Kubrick (1949 portrait by Phillip Harrington - cropped).jpg »"
+ },
+ {
+  "id": "Q9041",
+  "nom": "James Watt",
+  "notoriete": 160,
+  "naissance": 1736,
+  "naissancePrecise": true,
+  "deces": 1819,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/James_Watt_by_Henry_Howard.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « James Watt by Henry Howard.jpg »"
+ },
+ {
+  "id": "Q37621",
+  "nom": "Thomas Hobbes",
+  "notoriete": 160,
+  "naissance": 1588,
+  "naissancePrecise": true,
+  "deces": 1679,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Thomas_Hobbes_(portrait).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Thomas Hobbes (portrait).jpg »"
+ },
+ {
+  "id": "Q34836",
+  "nom": "Ulysses S. Grant",
+  "notoriete": 160,
+  "naissance": 1822,
+  "naissancePrecise": true,
+  "deces": 1885,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ulysses_S._Grant_1870-1880.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ulysses S. Grant 1870-1880.jpg »"
+ },
+ {
+  "id": "Q37150",
+  "nom": "Lana Del Rey",
+  "notoriete": 159,
+  "naissance": 1985,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lana_Del_Rey_Seattle.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Lana Del Rey Seattle.jpg »"
+ },
+ {
+  "id": "Q47737",
+  "nom": "Khalil Gibran",
+  "notoriete": 158,
+  "naissance": 1883,
+  "naissancePrecise": true,
+  "deces": 1931,
+  "genre": "m",
+  "paysNaissance": "Liban",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kahlil_Gibran_1913.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Kahlil Gibran 1913.jpg »"
+ },
+ {
+  "id": "Q25089",
+  "nom": "Woody Allen",
+  "notoriete": 158,
+  "naissance": 1935,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Woody_Allen_Cannes_2011.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Woody Allen Cannes 2011.jpg »"
+ },
+ {
+  "id": "Q7349",
+  "nom": "Joseph Haydn",
+  "notoriete": 158,
+  "naissance": 1732,
+  "naissancePrecise": true,
+  "deces": 1809,
+  "genre": "m",
+  "paysNaissance": "Autriche",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Joseph_Haydn%2C_m%C3%A5lning_av_Thomas_Hardy_fr%C3%A5n_1792.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Joseph Haydn, målning av Thomas Hardy från 1792.jpg »"
+ },
+ {
+  "id": "Q34012",
+  "nom": "Marlon Brando",
+  "notoriete": 158,
+  "naissance": 1924,
+  "naissancePrecise": true,
+  "deces": 2004,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Marlon_Brando_publicity_for_One-Eyed_Jacks.png?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Marlon Brando publicity for One-Eyed Jacks.png »"
+ },
+ {
+  "id": "Q38082",
+  "nom": "Lewis Carroll",
+  "notoriete": 157,
+  "naissance": 1832,
+  "naissancePrecise": true,
+  "deces": 1898,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/LewisCarrollSelfPhoto.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « LewisCarrollSelfPhoto.jpg »"
+ },
+ {
+  "id": "Q35149",
+  "nom": "Wilhelm Röntgen",
+  "notoriete": 157,
+  "naissance": 1845,
+  "naissancePrecise": true,
+  "deces": 1923,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Wilhelm_Conrad_R%C3%B6ntgen_(1888-1900)%2C_88374_p.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Wilhelm Conrad Röntgen (1888-1900), 88374 p.jpg »"
+ },
+ {
+  "id": "Q142794",
+  "nom": "Neymar",
+  "notoriete": 156,
+  "naissance": 1992,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Brésil",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Neymar_Junior_Brazil_V_Morocco_13_June_2026-40.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Neymar Junior Brazil V Morocco 13 June 2026-40.jpg »"
+ },
+ {
+  "id": "Q296",
+  "nom": "Claude Monet",
+  "notoriete": 155,
+  "naissance": 1840,
+  "naissancePrecise": true,
+  "deces": 1926,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude_Monet_1899_Nadar_crop.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Claude Monet 1899 Nadar crop.jpg »"
+ },
+ {
+  "id": "Q38757",
+  "nom": "Bertolt Brecht",
+  "notoriete": 155,
+  "naissance": 1898,
+  "naissancePrecise": true,
+  "deces": 1956,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-W0409-300%2C_Bertolt_Brecht.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Bundesarchiv Bild 183-W0409-300, Bertolt Brecht.jpg »"
+ },
+ {
+  "id": "Q10132",
+  "nom": "Rafael Nadal",
+  "notoriete": 155,
+  "naissance": 1986,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Espagne",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rafael_Nadal_en_2024_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Rafael Nadal en 2024 (cropped).jpg »"
+ },
+ {
+  "id": "Q7333",
+  "nom": "Zheng He",
+  "notoriete": 154,
+  "naissance": 1371,
+  "naissancePrecise": true,
+  "deces": 1433,
+  "genre": "m",
+  "paysNaissance": "Chine",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2016_Malakka%2C_Stadhuys_(09).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « 2016 Malakka, Stadhuys (09).jpg »"
+ },
+ {
+  "id": "Q41532",
+  "nom": "Carl Gustav Jung",
+  "notoriete": 153,
+  "naissance": 1875,
+  "naissancePrecise": true,
+  "deces": 1961,
+  "genre": "m",
+  "paysNaissance": "Suisse",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/ETH-BIB-Jung%2C_Carl_Gustav_(1875-1961)-Portrait-Portr_14163_(cropped).tif?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « ETH-BIB-Jung, Carl Gustav (1875-1961)-Portrait-Portr 14163 (cropped).tif »"
+ },
+ {
+  "id": "Q11637",
+  "nom": "Judy Garland",
+  "notoriete": 153,
+  "naissance": 1922,
+  "naissancePrecise": true,
+  "deces": 1969,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Judy_Garland_The_Harvey_Girls_MGM_Publicity_still.jpeg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Judy Garland The Harvey Girls MGM Publicity still.jpeg »"
+ },
+ {
+  "id": "Q34253",
+  "nom": "Linus Torvalds",
+  "notoriete": 153,
+  "naissance": 1969,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Finlande",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lc3_2018_(263682303)_(cropped).jpeg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Lc3 2018 (263682303) (cropped).jpeg »"
+ },
+ {
+  "id": "Q5812",
+  "nom": "Novak Djoković",
+  "notoriete": 153,
+  "naissance": 1987,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Serbie",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Novak_Djokovic_Paris_2024_Olympic_Games_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Novak Djokovic Paris 2024 Olympic Games (cropped).jpg »"
+ },
+ {
+  "id": "Q36268",
+  "nom": "Brigitte Bardot",
+  "notoriete": 152,
+  "naissance": 1934,
+  "naissancePrecise": true,
+  "deces": 2025,
+  "genre": "f",
+  "paysNaissance": "France",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Brigitte_Bardot_-_1962.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Brigitte Bardot - 1962.jpg »"
+ },
+ {
+  "id": "Q7304",
+  "nom": "Gustav Mahler",
+  "notoriete": 152,
+  "naissance": 1860,
+  "naissancePrecise": true,
+  "deces": 1911,
+  "genre": "m",
+  "paysNaissance": "Tchéquie",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Photo_of_Gustav_Mahler_by_Moritz_N%C3%A4hr_01.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Photo of Gustav Mahler by Moritz Nähr 01.jpg »"
+ },
+ {
+  "id": "Q41980",
+  "nom": "Démocrite",
+  "notoriete": 152,
+  "naissance": -460,
+  "naissancePrecise": false,
+  "deces": -360,
+  "genre": "m",
+  "paysNaissance": "Grèce",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Unknown_greek_pushkin.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Unknown greek pushkin.jpg »"
+ },
+ {
+  "id": "Q6105",
+  "nom": "Hebe Camargo",
+  "notoriete": 151,
+  "naissance": 1929,
+  "naissancePrecise": true,
+  "deces": 2012,
+  "genre": "f",
+  "paysNaissance": "Brésil",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hebe_Camargo.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Hebe Camargo.jpg »"
+ },
+ {
+  "id": "Q7298",
+  "nom": "Antonín Dvořák",
+  "notoriete": 151,
+  "naissance": 1841,
+  "naissancePrecise": true,
+  "deces": 1904,
+  "genre": "m",
+  "paysNaissance": "Tchéquie",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dvorak.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Dvorak.jpg »"
+ },
+ {
+  "id": "Q36330",
+  "nom": "Giordano Bruno",
+  "notoriete": 151,
+  "naissance": 1548,
+  "naissancePrecise": true,
+  "deces": 1600,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Giordano_Bruno_in_%22Opere%22_Wellcome_L0015152_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Portrait of Giordano Bruno in \"Opere\" Wellcome L0015152 (cropped).jpg »"
+ },
+ {
+  "id": "Q44301",
+  "nom": "Jim Morrison",
+  "notoriete": 150,
+  "naissance": 1943,
+  "naissancePrecise": true,
+  "deces": 1971,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jim_Morrison_1969.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Jim Morrison 1969.JPG »"
+ },
+ {
+  "id": "Q42786",
+  "nom": "Audrey Hepburn",
+  "notoriete": 150,
+  "naissance": 1929,
+  "naissancePrecise": true,
+  "deces": 1993,
+  "genre": "f",
+  "paysNaissance": "Belgique",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Audrey_Hepburn_in_1966.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Audrey Hepburn in 1966.jpg »"
+ },
+ {
+  "id": "Q2599",
+  "nom": "Paul McCartney",
+  "notoriete": 149,
+  "naissance": 1942,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "peinture",
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul_McCartney_in_October_2018.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Paul McCartney in October 2018.jpg »"
+ },
+ {
+  "id": "Q231690",
+  "nom": "Bhimrao Ramji Ambedkar",
+  "notoriete": 149,
+  "naissance": 1891,
+  "naissancePrecise": true,
+  "deces": 1956,
+  "genre": "m",
+  "paysNaissance": "Inde",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dr._Bhimrao_Ambedkar.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Dr. Bhimrao Ambedkar.jpg »"
+ },
+ {
+  "id": "Q221310",
+  "nom": "Anggun",
+  "notoriete": 149,
+  "naissance": 1974,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "Indonésie",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Anggun_at_Sundance_Film_Festival_2026-6_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Anggun at Sundance Film Festival 2026-6 (cropped).jpg »"
+ },
+ {
+  "id": "Q1362169",
+  "nom": "Agnez Mo",
+  "notoriete": 148,
+  "naissance": 1986,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "Indonésie",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Agnez_Monica_2019_(facecrop).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Agnez Monica 2019 (facecrop).jpg »"
+ },
+ {
+  "id": "Q17892",
+  "nom": "Sappho",
+  "notoriete": 148,
+  "naissance": -650,
+  "naissancePrecise": true,
+  "deces": -569,
+  "genre": "f",
+  "paysNaissance": "Grèce",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bust_Sappho_Musei_Capitolini_MC1164.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Bust Sappho Musei Capitolini MC1164.jpg »"
+ },
+ {
+  "id": "Q7311",
+  "nom": "Giacomo Puccini",
+  "notoriete": 147,
+  "naissance": 1858,
+  "naissancePrecise": true,
+  "deces": 1924,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/GiacomoPuccini.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « GiacomoPuccini.jpg »"
+ },
+ {
+  "id": "Q35332",
+  "nom": "Brad Pitt",
+  "notoriete": 147,
+  "naissance": 1963,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Brad_Pitt-69858.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Brad Pitt-69858.jpg »"
+ },
+ {
+  "id": "Q37175",
+  "nom": "Johnny Depp",
+  "notoriete": 147,
+  "naissance": 1963,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Johnny_Depp_2020.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Johnny Depp 2020.jpg »"
+ },
+ {
+  "id": "Q39829",
+  "nom": "Stephen King",
+  "notoriete": 147,
+  "naissance": 1947,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Stephen_King_at_the_2024_Toronto_International_Film_Festival_2_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Stephen King at the 2024 Toronto International Film Festival 2 (cropped).jpg »"
+ },
+ {
+  "id": "Q8003",
+  "nom": "Sergueï Eisenstein",
+  "notoriete": 147,
+  "naissance": 1898,
+  "naissancePrecise": true,
+  "deces": 1948,
+  "genre": "m",
+  "paysNaissance": "Lettonie",
+  "domaines": [
+   "cinema",
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sergei_Eisenstein_03.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Sergei Eisenstein 03.jpg »"
+ },
+ {
+  "id": "Q11975",
+  "nom": "Britney Spears",
+  "notoriete": 146,
+  "naissance": 1981,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Britney_Spears-FFT-Toronto_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Britney Spears-FFT-Toronto (cropped).jpg »"
+ },
+ {
+  "id": "Q19526",
+  "nom": "Maya Angelou",
+  "notoriete": 146,
+  "naissance": 1928,
+  "naissancePrecise": true,
+  "deces": 2014,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_photograph_of_Maya_Angelou%2C_c._1974.webp?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Portrait photograph of Maya Angelou, c. 1974.webp »"
+ },
+ {
+  "id": "Q1631",
+  "nom": "Édith Piaf",
+  "notoriete": 146,
+  "naissance": 1915,
+  "naissancePrecise": true,
+  "deces": 1963,
+  "genre": "f",
+  "paysNaissance": "France",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Piaf_Harcourt_1946_2.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Piaf Harcourt 1946 2.jpg »"
+ },
+ {
+  "id": "Q41155",
+  "nom": "Héraclite",
+  "notoriete": 146,
+  "naissance": -534,
+  "naissancePrecise": true,
+  "deces": -470,
+  "genre": "m",
+  "paysNaissance": "Turquie",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ca'_Rezzonico_-_Eraclito_1705_-_Giuseppe_Torretti.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ca' Rezzonico - Eraclito 1705 - Giuseppe Torretti.jpg »"
+ },
+ {
+  "id": "Q1835",
+  "nom": "Zinedine Zidane",
+  "notoriete": 146,
+  "naissance": 1972,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Zinedine_Zidane_by_Tasnim_03.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Zinedine Zidane by Tasnim 03.jpg »"
+ },
+ {
+  "id": "Q4573",
+  "nom": "Sean Connery",
+  "notoriete": 145,
+  "naissance": 1930,
+  "naissancePrecise": true,
+  "deces": 2020,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "cinema",
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sean_Connery_(1983).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Sean Connery (1983).jpg »"
+ },
+ {
+  "id": "Q8873",
+  "nom": "Satyajit Ray",
+  "notoriete": 144,
+  "naissance": 1921,
+  "naissancePrecise": true,
+  "deces": 1992,
+  "genre": "m",
+  "paysNaissance": "Inde",
+  "domaines": [
+   "peinture",
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Satyajit_Ray_in_New_York_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Satyajit Ray in New York (cropped).jpg »"
+ },
+ {
+  "id": "Q39476",
+  "nom": "Emma Watson",
+  "notoriete": 144,
+  "naissance": 1990,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "France",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Emma_Watson_2013.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Emma Watson 2013.jpg »"
+ },
+ {
+  "id": "Q34851",
+  "nom": "Elizabeth Taylor",
+  "notoriete": 144,
+  "naissance": 1932,
+  "naissancePrecise": true,
+  "deces": 2011,
+  "genre": "f",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Elizabeth_Taylor_with_Kennedy_award.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Elizabeth Taylor with Kennedy award.jpg »"
+ },
+ {
+  "id": "Q36233",
+  "nom": "Václav Havel",
+  "notoriete": 144,
+  "naissance": 1936,
+  "naissancePrecise": true,
+  "deces": 2011,
+  "genre": "m",
+  "paysNaissance": "Tchéquie",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A1clav_Havel_cut_out.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Václav Havel cut out.jpg »"
+ },
+ {
+  "id": "Q855252",
+  "nom": "Rama IX",
+  "notoriete": 143,
+  "naissance": 1927,
+  "naissancePrecise": true,
+  "deces": 2016,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "peinture",
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Aankomst_Koning_Bhumibol_en_Koningin_Sirikit_te_Den_Haag%2C_Koning_Bhumibol%2C_Bestanddeelnr_911-6993_(cropped)(2).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Aankomst Koning Bhumibol en Koningin Sirikit te Den Haag, Koning Bhumibol, Besta »"
+ },
+ {
+  "id": "Q41408",
+  "nom": "Federico García Lorca",
+  "notoriete": 143,
+  "naissance": 1898,
+  "naissancePrecise": true,
+  "deces": 1936,
+  "genre": "m",
+  "paysNaissance": "Espagne",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Federico_Garc%C3%ADa_Lorca._Huerta_de_San_Vicente%2C_Granada.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Federico García Lorca. Huerta de San Vicente, Granada.jpg »"
+ },
+ {
+  "id": "Q410",
+  "nom": "Carl Sagan",
+  "notoriete": 143,
+  "naissance": 1934,
+  "naissancePrecise": true,
+  "deces": 1996,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Carl_Sagan_Planetary_Society.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Carl Sagan Planetary Society.JPG »"
+ },
+ {
+  "id": "Q9372",
+  "nom": "Sima Qian",
+  "notoriete": 143,
+  "naissance": -144,
+  "naissancePrecise": true,
+  "deces": -85,
+  "genre": "m",
+  "paysNaissance": "Chine",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Si_maqian.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Si maqian.jpg »"
+ },
+ {
+  "id": "Q41223",
+  "nom": "Boris Pasternak",
+  "notoriete": 141,
+  "naissance": 1890,
+  "naissancePrecise": true,
+  "deces": 1960,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Boris_Pasternak_1958_photo.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Boris Pasternak 1958 photo.jpg »"
+ },
+ {
+  "id": "Q3099714",
+  "nom": "Justin Trudeau",
+  "notoriete": 141,
+  "naissance": 1971,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Canada",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Justin_Trudeau_at_the_European_Commission_-_2025.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Justin Trudeau at the European Commission - 2025.jpg »"
+ },
+ {
+  "id": "Q11758",
+  "nom": "Louis-Lazare Zamenhof",
+  "notoriete": 141,
+  "naissance": 1859,
+  "naissancePrecise": true,
+  "deces": 1917,
+  "genre": "m",
+  "paysNaissance": "Pologne",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Zamenhof_portreto.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Zamenhof portreto.jpg »"
+ },
+ {
+  "id": "Q6694",
+  "nom": "Alexander von Humboldt",
+  "notoriete": 141,
+  "naissance": 1769,
+  "naissancePrecise": true,
+  "deces": 1859,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "sciences",
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Stieler%2C_Joseph_Karl_-_Alexander_von_Humboldt_-_1843.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Stieler, Joseph Karl - Alexander von Humboldt - 1843.jpg »"
+ },
+ {
+  "id": "Q37327",
+  "nom": "Samuel Beckett",
+  "notoriete": 140,
+  "naissance": 1906,
+  "naissancePrecise": true,
+  "deces": 1989,
+  "genre": "m",
+  "paysNaissance": "Irlande",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Samuel_Beckett%2C_Pic%2C_1_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Samuel Beckett, Pic, 1 (cropped).jpg »"
+ },
+ {
+  "id": "Q35548",
+  "nom": "Paul Cézanne",
+  "notoriete": 139,
+  "naissance": 1839,
+  "naissancePrecise": true,
+  "deces": 1906,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul-Cezanne.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Paul-Cezanne.jpg »"
+ },
+ {
+  "id": "Q106529",
+  "nom": "Alain Delon",
+  "notoriete": 139,
+  "naissance": 1935,
+  "naissancePrecise": true,
+  "deces": 2024,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alain_Delon_1961.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Alain Delon 1961.jpg »"
+ },
+ {
+  "id": "Q36949",
+  "nom": "Robert De Niro",
+  "notoriete": 139,
+  "naissance": 1943,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert_de_Niro_Cannes_Film_Festival_(3x4_cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Robert de Niro Cannes Film Festival (3x4 cropped).jpg »"
+ },
+ {
+  "id": "Q134958",
+  "nom": "Taras Chevtchenko",
+  "notoriete": 138,
+  "naissance": 1814,
+  "naissancePrecise": true,
+  "deces": 1861,
+  "genre": "m",
+  "paysNaissance": "Ukraine",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A2._%D0%93._%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE._%D0%9A%D0%B2%D1%96%D1%82%D0%B5%D0%BD%D1%8C_1859.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Т. Г. Шевченко. Квітень 1859.jpg »"
+ },
+ {
+  "id": "Q40912",
+  "nom": "Frank Sinatra",
+  "notoriete": 138,
+  "naissance": 1915,
+  "naissancePrecise": true,
+  "deces": 1998,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Frank_Sinatra_(1957_studio_portrait_close-up).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Frank Sinatra (1957 studio portrait close-up).jpg »"
+ },
+ {
+  "id": "Q30449",
+  "nom": "Avril Lavigne",
+  "notoriete": 138,
+  "naissance": 1984,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "Canada",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Glaston2024_2806_300624_(129_of_173)_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Glaston2024 2806 300624 (129 of 173) (cropped).jpg »"
+ },
+ {
+  "id": "Q47478",
+  "nom": "Vivekananda",
+  "notoriete": 138,
+  "naissance": 1863,
+  "naissancePrecise": true,
+  "deces": 1902,
+  "genre": "m",
+  "paysNaissance": "Inde",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Swami_Vivekananda-1893-09-signed.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Swami Vivekananda-1893-09-signed.jpg »"
+ },
+ {
+  "id": "Q34943",
+  "nom": "Claude Ptolémée",
+  "notoriete": 138,
+  "naissance": 100,
+  "naissancePrecise": true,
+  "deces": 170,
+  "genre": "m",
+  "paysNaissance": "Égypte",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/PSM_V78_D326_Ptolemy.png?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « PSM V78 D326 Ptolemy.png »"
+ },
+ {
+  "id": "Q34389",
+  "nom": "Whitney Houston",
+  "notoriete": 137,
+  "naissance": 1963,
+  "naissancePrecise": true,
+  "deces": 2012,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Whitney_Houston_(cropped3).JPEG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Whitney Houston (cropped3).JPEG »"
+ },
+ {
+  "id": "Q3816",
+  "nom": "George Sand",
+  "notoriete": 137,
+  "naissance": 1804,
+  "naissancePrecise": true,
+  "deces": 1876,
+  "genre": "f",
+  "paysNaissance": "France",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/George_Sand.PNG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « George Sand.PNG »"
+ },
+ {
+  "id": "Q5383",
+  "nom": "David Bowie",
+  "notoriete": 136,
+  "naissance": 1947,
+  "naissancePrecise": true,
+  "deces": 2016,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "peinture",
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/David-Bowie_Chicago_2002-08-08_photoby_Adam-Bielawski-cropped.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « David-Bowie Chicago 2002-08-08 photoby Adam-Bielawski-cropped.jpg »"
+ },
+ {
+  "id": "Q40715",
+  "nom": "Jennifer Lopez",
+  "notoriete": 136,
+  "naissance": 1969,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jennifer_Lopez_at_the_2025_Sundance_Film_Festival_(cropped_3).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Jennifer Lopez at the 2025 Sundance Film Festival (cropped 3).jpg »"
+ },
+ {
+  "id": "Q2263",
+  "nom": "Tom Hanks",
+  "notoriete": 136,
+  "naissance": 1956,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tom_Hanks_at_the_Elvis_Premiere_2022.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Tom Hanks at the Elvis Premiere 2022.jpg »"
+ },
+ {
+  "id": "Q5928",
+  "nom": "Jimi Hendrix",
+  "notoriete": 136,
+  "naissance": 1942,
+  "naissancePrecise": true,
+  "deces": 1970,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jimi_Hendrix_(1967)_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Jimi Hendrix (1967) (cropped).jpg »"
+ },
+ {
+  "id": "Q23215",
+  "nom": "Adele",
+  "notoriete": 136,
+  "naissance": 1988,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Adele_2016.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Adele 2016.jpg »"
+ },
+ {
+  "id": "Q44461",
+  "nom": "Richard Dawkins",
+  "notoriete": 136,
+  "naissance": 1941,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Kenya",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dinner_with_Richard_Dawkins_and_CFI..._like_a_candle_in_the_dark.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Dinner with Richard Dawkins and CFI... like a candle in the dark.jpg »"
+ },
+ {
+  "id": "Q37876",
+  "nom": "Natalie Portman",
+  "notoriete": 136,
+  "naissance": 1981,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "Israël",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/NataliePortman.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « NataliePortman.jpg »"
+ },
+ {
+  "id": "Q9535",
+  "nom": "Shahrukh Khan",
+  "notoriete": 136,
+  "naissance": 1965,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Inde",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Shah_Rukh_Khan_graces_the_launch_of_the_new_Santro.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Shah Rukh Khan graces the launch of the new Santro.jpg »"
+ },
+ {
+  "id": "Q8962",
+  "nom": "James Prescott Joule",
+  "notoriete": 136,
+  "naissance": 1818,
+  "naissancePrecise": true,
+  "deces": 1889,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/SS-joule.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « SS-joule.jpg »"
+ },
+ {
+  "id": "Q1189",
+  "nom": "Usain Bolt",
+  "notoriete": 136,
+  "naissance": 1986,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Jamaïque",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Usain_Bolt_Rio_100m_final_2016k.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Usain Bolt Rio 100m final 2016k.jpg »"
+ },
+ {
+  "id": "Q40096",
+  "nom": "Will Smith",
+  "notoriete": 135,
+  "naissance": 1968,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/TechCrunch_Disrupt_2019_(48834434641)_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « TechCrunch Disrupt 2019 (48834434641) (cropped).jpg »"
+ },
+ {
+  "id": "Q42493",
+  "nom": "Katy Perry",
+  "notoriete": 135,
+  "naissance": 1984,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Katy_Perry_2026_Tribeca_Film_Festival_(cropped_1).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Katy Perry 2026 Tribeca Film Festival (cropped 1).jpg »"
+ },
+ {
+  "id": "Q43203",
+  "nom": "Clint Eastwood",
+  "notoriete": 135,
+  "naissance": 1930,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Clint_Eastwood_at_2010_New_York_Film_Festival.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Clint Eastwood at 2010 New York Film Festival.jpg »"
+ },
+ {
+  "id": "Q6107",
+  "nom": "Tupac Shakur",
+  "notoriete": 135,
+  "naissance": 1971,
+  "naissancePrecise": true,
+  "deces": 1996,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tupac_Shakur_driver's_license_photo_(1996)_(cropped).png?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Tupac Shakur driver's license photo (1996) (cropped).png »"
+ },
+ {
+  "id": "Q1151",
+  "nom": "Hector Berlioz",
+  "notoriete": 135,
+  "naissance": 1803,
+  "naissancePrecise": true,
+  "deces": 1869,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Berlioz_Petit_BNF_Gallica-crop.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Berlioz Petit BNF Gallica-crop.jpg »"
+ },
+ {
+  "id": "Q205707",
+  "nom": "Bradley Cooper",
+  "notoriete": 135,
+  "naissance": 1975,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bradley_Cooper.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Bradley Cooper.jpg »"
+ },
+ {
+  "id": "Q55800",
+  "nom": "Oprah Winfrey",
+  "notoriete": 135,
+  "naissance": 1954,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Oprah_Winfrey_1997.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Oprah Winfrey 1997.jpg »"
+ },
+ {
+  "id": "Q37064",
+  "nom": "Alexandre Fleming",
+  "notoriete": 135,
+  "naissance": 1881,
+  "naissancePrecise": true,
+  "deces": 1955,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Synthetic_Production_of_Penicillin_TR1468.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Synthetic Production of Penicillin TR1468.jpg »"
+ },
+ {
+  "id": "Q33817",
+  "nom": "Edmund Hillary",
+  "notoriete": 135,
+  "naissance": 1919,
+  "naissancePrecise": true,
+  "deces": 2008,
+  "genre": "m",
+  "paysNaissance": "Nouvelle-Zélande",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Edmund_Hillary_by_Kubik_2004.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Edmund Hillary by Kubik 2004.jpg »"
+ },
+ {
+  "id": "Q873",
+  "nom": "Meryl Streep",
+  "notoriete": 134,
+  "naissance": 1949,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Meryl_Streep-_Press_conference_for_the_film_%22The_Devil_Wears_Prada_2%22_-_55194765350_(cropped1).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Meryl Streep- Press conference for the film \"The Devil Wears Prada 2\" - 55194765 »"
+ },
+ {
+  "id": "Q41163",
+  "nom": "Al Pacino",
+  "notoriete": 134,
+  "naissance": 1940,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/ALPACINO_0234e_(30401875260)_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « ALPACINO 0234e (30401875260) (cropped).jpg »"
+ },
+ {
+  "id": "Q37970",
+  "nom": "Gregor Mendel",
+  "notoriete": 134,
+  "naissance": 1822,
+  "naissancePrecise": true,
+  "deces": 1884,
+  "genre": "m",
+  "paysNaissance": "Tchéquie",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gregor_Mendel_2.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Gregor Mendel 2.jpg »"
+ },
+ {
+  "id": "Q23380",
+  "nom": "Jean-Auguste-Dominique Ingres",
+  "notoriete": 133,
+  "naissance": 1780,
+  "naissancePrecise": true,
+  "deces": 1867,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ingres%2C_Self-portrait.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ingres, Self-portrait.jpg »"
+ },
+ {
+  "id": "Q37693",
+  "nom": "Paul Gauguin",
+  "notoriete": 133,
+  "naissance": 1848,
+  "naissancePrecise": true,
+  "deces": 1903,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Gauguin_1891.png?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Paul Gauguin 1891.png »"
+ },
+ {
+  "id": "Q43252",
+  "nom": "Sophia Loren",
+  "notoriete": 133,
+  "naissance": 1934,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sophia_Loren_1962.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Sophia Loren 1962.jpg »"
+ },
+ {
+  "id": "Q12881",
+  "nom": "Paulo Coelho",
+  "notoriete": 133,
+  "naissance": 1947,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Brésil",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Paulo_Coelho%2C_June_2024.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Paulo Coelho, June 2024.jpg »"
+ },
+ {
+  "id": "Q38222",
+  "nom": "George Lucas",
+  "notoriete": 133,
+  "naissance": 1944,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/George_Lucas_2024.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « George Lucas 2024.jpg »"
+ },
+ {
+  "id": "Q80966",
+  "nom": "Cate Blanchett",
+  "notoriete": 133,
+  "naissance": 1969,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "Australie",
+  "domaines": [
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cate_Blanchett-63298_(cropped_2).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Cate Blanchett-63298 (cropped 2).jpg »"
+ },
+ {
+  "id": "Q8772",
+  "nom": "Joseph Fourier",
+  "notoriete": 133,
+  "naissance": 1768,
+  "naissancePrecise": true,
+  "deces": 1830,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fourier2.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Fourier2.jpg »"
+ },
+ {
+  "id": "Q12718",
+  "nom": "Auguste Comte",
+  "notoriete": 133,
+  "naissance": 1798,
+  "naissancePrecise": true,
+  "deces": 1857,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_dAuguste_Comte_(maison_dA._Comte%2C_Paris)_(2424895050).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Portrait dAuguste Comte (maison dA. Comte, Paris) (2424895050).jpg »"
+ },
+ {
+  "id": "Q7259",
+  "nom": "Ada Lovelace",
+  "notoriete": 133,
+  "naissance": 1815,
+  "naissancePrecise": true,
+  "deces": 1852,
+  "genre": "f",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ada_Byron_daguerreotype_by_Antoine_Claudet_1843_or_1850_-_cropped.png?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ada Byron daguerreotype by Antoine Claudet 1843 or 1850 - cropped.png »"
+ },
+ {
+  "id": "Q41173",
+  "nom": "Demi Lovato",
+  "notoriete": 132,
+  "naissance": 1992,
+  "naissancePrecise": true,
+  "genre": null,
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Demi_Lovato_Interview_Feb_2020.png?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Demi Lovato Interview Feb 2020.png »"
+ },
+ {
+  "id": "Q34460",
+  "nom": "Gwyneth Paltrow",
+  "notoriete": 132,
+  "naissance": 1972,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique",
+   "cinema"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gwyneth_Paltrow_avp_Iron_Man_3_Paris.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Gwyneth Paltrow avp Iron Man 3 Paris.jpg »"
+ },
+ {
+  "id": "Q37459",
+  "nom": "Nicole Kidman",
+  "notoriete": 132,
+  "naissance": 1967,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/MKr384262_Nicole_Kidman_(Women_In_Motion%2C_Cannes_2025).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « MKr384262 Nicole Kidman (Women In Motion, Cannes 2025).jpg »"
+ },
+ {
+  "id": "Q44371",
+  "nom": "Valentina Terechkova",
+  "notoriete": 132,
+  "naissance": 1937,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/1st_meeting_of_8th_State_Duma_07.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « 1st meeting of 8th State Duma 07.jpg »"
+ },
+ {
+  "id": "Q30755",
+  "nom": "Auguste Rodin",
+  "notoriete": 131,
+  "naissance": 1840,
+  "naissancePrecise": true,
+  "deces": 1917,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Auguste_Rodin_fotografato_da_Nadar_nel_1891.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Auguste Rodin fotografato da Nadar nel 1891.jpg »"
+ },
+ {
+  "id": "Q1276",
+  "nom": "Leonard Cohen",
+  "notoriete": 131,
+  "naissance": 1934,
+  "naissancePrecise": true,
+  "deces": 2016,
+  "genre": "m",
+  "paysNaissance": "Canada",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Leonard_Cohen%2C_1988_01.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Leonard Cohen, 1988 01.jpg »"
+ },
+ {
+  "id": "Q4700",
+  "nom": "Claude Debussy",
+  "notoriete": 131,
+  "naissance": 1862,
+  "naissancePrecise": true,
+  "deces": 1918,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude_Debussy_by_Atelier_Nadar.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Claude Debussy by Atelier Nadar.jpg »"
+ },
+ {
+  "id": "Q234679",
+  "nom": "Charlotte Rampling",
+  "notoriete": 131,
+  "naissance": 1946,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Actress_Charlotte_Rampling_At_the_premiere_of_the_movie_%2245_Years%22_(cropped1).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Actress Charlotte Rampling At the premiere of the movie \"45 Years\" (cropped1).jp »"
+ },
+ {
+  "id": "Q7351",
+  "nom": "Robert Schumann",
+  "notoriete": 131,
+  "naissance": 1810,
+  "naissancePrecise": true,
+  "deces": 1856,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "musique"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert-schumann.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Robert-schumann.jpg »"
+ },
+ {
+  "id": "Q39837",
+  "nom": "Averroès",
+  "notoriete": 131,
+  "naissance": 1126,
+  "naissancePrecise": true,
+  "deces": 1198,
+  "genre": "m",
+  "paysNaissance": "Espagne",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Statue_of_Averroes_in_C%C3%B3rdoba%2C_Spain.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Statue of Averroes in Córdoba, Spain.jpg »"
+ },
+ {
+  "id": "Q2677",
+  "nom": "Guillaume II",
+  "notoriete": 130,
+  "naissance": 1859,
+  "naissancePrecise": true,
+  "deces": 1941,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kaiser_Wilhelm_II_of_Germany_-_1902.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Kaiser Wilhelm II of Germany - 1902.jpg »"
+ },
+ {
+  "id": "Q36488",
+  "nom": "Guglielmo Marconi",
+  "notoriete": 130,
+  "naissance": 1874,
+  "naissancePrecise": true,
+  "deces": 1937,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Guglielmo_Marconi.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Guglielmo Marconi.jpg »"
+ },
+ {
+  "id": "Q132537",
+  "nom": "Robert Oppenheimer",
+  "notoriete": 129,
+  "naissance": 1904,
+  "naissancePrecise": true,
+  "deces": 1967,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Oppenheimer_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Oppenheimer (cropped).jpg »"
+ },
+ {
+  "id": "Q39607",
+  "nom": "Antoine Lavoisier",
+  "notoriete": 129,
+  "naissance": 1743,
+  "naissancePrecise": true,
+  "deces": 1794,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/David_-_Portrait_of_Monsieur_Lavoisier_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « David - Portrait of Monsieur Lavoisier (cropped).jpg »"
+ },
+ {
+  "id": "Q134798",
+  "nom": "Haruki Murakami",
+  "notoriete": 129,
+  "naissance": 1949,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Japon",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Conversatorio_Haruki_Murakami_(12_de_12)_(45747009452)_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Conversatorio Haruki Murakami (12 de 12) (45747009452) (cropped).jpg »"
+ },
+ {
+  "id": "Q46599",
+  "nom": "Mikhaïl Lermontov",
+  "notoriete": 128,
+  "naissance": 1814,
+  "naissancePrecise": true,
+  "deces": 1841,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mikhail_lermontov.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Mikhail lermontov.jpg »"
+ },
+ {
+  "id": "Q47087",
+  "nom": "Arthur C. Clarke",
+  "notoriete": 128,
+  "naissance": 1917,
+  "naissancePrecise": true,
+  "deces": 2008,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sciences",
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Arthur_C._Clarke_1965.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Arthur C. Clarke 1965.jpg »"
+ },
+ {
+  "id": "Q81244",
+  "nom": "Karl Popper",
+  "notoriete": 128,
+  "naissance": 1902,
+  "naissancePrecise": true,
+  "deces": 1994,
+  "genre": "m",
+  "paysNaissance": "Autriche",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Karl_Popper.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Karl Popper.jpg »"
+ },
+ {
+  "id": "Q17163",
+  "nom": "Johan Cruijff",
+  "notoriete": 128,
+  "naissance": 1947,
+  "naissancePrecise": true,
+  "deces": 2016,
+  "genre": "m",
+  "paysNaissance": "Pays-Bas",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Johan_Cruyff_in_trainingspak_Nederlands_Elftal_%2C_kop.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Johan Cruyff in trainingspak Nederlands Elftal , kop.jpg »"
+ },
+ {
+  "id": "Q44481",
+  "nom": "Pierre-Simon de Laplace",
+  "notoriete": 127,
+  "naissance": 1749,
+  "naissancePrecise": true,
+  "deces": 1827,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre-Simon%2C_marquis_de_Laplace_(1745-1827)_-_Gu%C3%A9rin.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Pierre-Simon, marquis de Laplace (1745-1827) - Guérin.jpg »"
+ },
+ {
+  "id": "Q40504",
+  "nom": "Jim Carrey",
+  "notoriete": 126,
+  "naissance": 1962,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Canada",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jim_Carrey_2020_cropped.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Jim Carrey 2020 cropped.jpg »"
+ },
+ {
+  "id": "Q8763",
+  "nom": "Leonardo Fibonacci",
+  "notoriete": 126,
+  "naissance": 1170,
+  "naissancePrecise": true,
+  "deces": 1240,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fibonacci5.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Fibonacci5.jpg »"
+ },
+ {
+  "id": "Q20110",
+  "nom": "Francesco Totti",
+  "notoriete": 126,
+  "naissance": 1976,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Francesco_Totti_Vicario_(crop).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Francesco Totti Vicario (crop).jpg »"
+ },
+ {
+  "id": "Q202943",
+  "nom": "Brahmagupta",
+  "notoriete": 125,
+  "naissance": 598,
+  "naissancePrecise": true,
+  "deces": 670,
+  "genre": "m",
+  "paysNaissance": "Inde",
+  "domaines": [
+   "sciences"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hindu_astronomer%2C_19th-century_illustration.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Hindu astronomer, 19th-century illustration.jpg »"
+ },
+ {
+  "id": "Q11459",
+  "nom": "Serena Williams",
+  "notoriete": 125,
+  "naissance": 1981,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Serena_Williams_at_2013_US_Open.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Serena Williams at 2013 US Open.jpg »"
+ },
+ {
+  "id": "Q46096",
+  "nom": "Félix Mendelssohn Bartholdy",
+  "notoriete": 124,
+  "naissance": 1809,
+  "naissancePrecise": true,
+  "deces": 1847,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Felix_Mendelssohn_Bartholdy_by_Eduard_Magnus_(1833).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Felix Mendelssohn Bartholdy by Eduard Magnus (1833).jpg »"
+ },
+ {
+  "id": "Q132964",
+  "nom": "Vladimir Maïakovski",
+  "notoriete": 124,
+  "naissance": 1893,
+  "naissancePrecise": true,
+  "deces": 1930,
+  "genre": "m",
+  "paysNaissance": "Géorgie",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Majakovszkij.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Majakovszkij.jpg »"
+ },
+ {
+  "id": "Q529207",
+  "nom": "Ronaldo",
+  "notoriete": 124,
+  "naissance": 1976,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Brésil",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/051119SMcC0014.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « 051119SMcC0014.jpg »"
+ },
+ {
+  "id": "Q33477",
+  "nom": "Eugène Delacroix",
+  "notoriete": 122,
+  "naissance": 1798,
+  "naissancePrecise": true,
+  "deces": 1863,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Autoportrait_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_25.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Autoportrait - Eugène Delacroix - Musée du Louvre Peintures RF 25.jpg »"
+ },
+ {
+  "id": "Q83158",
+  "nom": "Jean Cocteau",
+  "notoriete": 121,
+  "naissance": 1889,
+  "naissancePrecise": true,
+  "deces": 1963,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Cocteau_b_Meurisse_1923.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Jean Cocteau b Meurisse 1923.jpg »"
+ },
+ {
+  "id": "Q280856",
+  "nom": "George VI",
+  "notoriete": 121,
+  "naissance": 1895,
+  "naissancePrecise": true,
+  "deces": 1952,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/King_George_VI_LOC_matpc.14736_A_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « King George VI LOC matpc.14736 A (cropped).jpg »"
+ },
+ {
+  "id": "Q36517",
+  "nom": "Francis Drake",
+  "notoriete": 121,
+  "naissance": 1540,
+  "naissancePrecise": true,
+  "deces": 1596,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gheeraerts_Francis_Drake_1591.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Gheeraerts Francis Drake 1591.jpg »"
+ },
+ {
+  "id": "Q41406",
+  "nom": "Edvard Munch",
+  "notoriete": 120,
+  "naissance": 1863,
+  "naissancePrecise": true,
+  "deces": 1944,
+  "genre": "m",
+  "paysNaissance": "Norvège",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Edvard_Munch_1933-2.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Edvard Munch 1933-2.jpg »"
+ },
+ {
+  "id": "Q65932",
+  "nom": "Anthony Hopkins",
+  "notoriete": 120,
+  "naissance": 1937,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Anthony_Hopkins_Red_Sea_Festival_2025_Portrait.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Anthony Hopkins Red Sea Festival 2025 Portrait.jpg »"
+ },
+ {
+  "id": "Q46896",
+  "nom": "Zlatan Ibrahimović",
+  "notoriete": 120,
+  "naissance": 1981,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Suède",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Zlatan_Ibrahimovi%C4%87_nyc.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Zlatan Ibrahimović nyc.jpg »"
+ },
+ {
+  "id": "Q5752",
+  "nom": "Pierre Kropotkine",
+  "notoriete": 119,
+  "naissance": 1842,
+  "naissancePrecise": true,
+  "deces": 1921,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kropotkin1.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Kropotkin1.jpg »"
+ },
+ {
+  "id": "Q37571",
+  "nom": "Jackson Pollock",
+  "notoriete": 118,
+  "naissance": 1912,
+  "naissancePrecise": true,
+  "deces": 1956,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jackson_Pollock_by_Hans_Namuth.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Jackson Pollock by Hans Namuth.jpg »"
+ },
+ {
+  "id": "Q7724",
+  "nom": "August Strindberg",
+  "notoriete": 118,
+  "naissance": 1849,
+  "naissancePrecise": true,
+  "deces": 1912,
+  "genre": "m",
+  "paysNaissance": "Suède",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/August_Strindberg_(Bj%C3%B6rkman_1912).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « August Strindberg (Björkman 1912).jpg »"
+ },
+ {
+  "id": "Q179126",
+  "nom": "John Ruskin",
+  "notoriete": 117,
+  "naissance": 1819,
+  "naissancePrecise": true,
+  "deces": 1900,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/John_Ruskin_1863.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « John Ruskin 1863.jpg »"
+ },
+ {
+  "id": "Q42207",
+  "nom": "Le Caravage",
+  "notoriete": 116,
+  "naissance": 1571,
+  "naissancePrecise": true,
+  "deces": 1610,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bild-Ottavio_Leoni%2C_Caravaggio.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Bild-Ottavio Leoni, Caravaggio.jpg »"
+ },
+ {
+  "id": "Q41264",
+  "nom": "Johannes Vermeer",
+  "notoriete": 116,
+  "naissance": 1632,
+  "naissancePrecise": true,
+  "deces": 1675,
+  "genre": "m",
+  "paysNaissance": "Pays-Bas",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Cropped version of Jan Vermeer van Delft 002.jpg »"
+ },
+ {
+  "id": "Q4457",
+  "nom": "Franz Beckenbauer",
+  "notoriete": 116,
+  "naissance": 1945,
+  "naissancePrecise": true,
+  "deces": 2024,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Franz_Beckenbauer_(1975).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Franz Beckenbauer (1975).jpg »"
+ },
+ {
+  "id": "Q5669",
+  "nom": "Sandro Botticelli",
+  "notoriete": 115,
+  "naissance": 1445,
+  "naissancePrecise": true,
+  "deces": 1510,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sandro_Botticelli_Self-portrait_ca_1475.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Sandro Botticelli Self-portrait ca 1475.jpg »"
+ },
+ {
+  "id": "Q39931",
+  "nom": "Auguste Renoir",
+  "notoriete": 115,
+  "naissance": 1841,
+  "naissancePrecise": true,
+  "deces": 1919,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_Auguste_Renoir%2C_uncropped_image.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Pierre Auguste Renoir, uncropped image.jpg »"
+ },
+ {
+  "id": "Q46373",
+  "nom": "Edgar Degas",
+  "notoriete": 115,
+  "naissance": 1834,
+  "naissancePrecise": true,
+  "deces": 1917,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Edgar_Degas_self_portrait_1855FXD.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Edgar Degas self portrait 1855FXD.jpg »"
+ },
+ {
+  "id": "Q301",
+  "nom": "Le Greco",
+  "notoriete": 115,
+  "naissance": 1541,
+  "naissancePrecise": true,
+  "deces": 1614,
+  "genre": "m",
+  "paysNaissance": "Grèce",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/El_Greco_-_Portrait_of_a_Man_-_WGA10554.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « El Greco - Portrait of a Man - WGA10554.jpg »"
+ },
+ {
+  "id": "Q2252",
+  "nom": "Buzz Aldrin",
+  "notoriete": 115,
+  "naissance": 1930,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Buzz_Aldrin.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Buzz Aldrin.jpg »"
+ },
+ {
+  "id": "Q40599",
+  "nom": "Édouard Manet",
+  "notoriete": 114,
+  "naissance": 1832,
+  "naissancePrecise": true,
+  "deces": 1883,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard_Manet%2C_en_buste%2C_de_face_-_Nadar.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Édouard Manet, en buste, de face - Nadar.jpg »"
+ },
+ {
+  "id": "Q25369",
+  "nom": "Kobe Bryant",
+  "notoriete": 114,
+  "naissance": 1978,
+  "naissancePrecise": true,
+  "deces": 2020,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/KBryant8.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « KBryant8.jpg »"
+ },
+ {
+  "id": "Q26517",
+  "nom": "Luis Suárez",
+  "notoriete": 114,
+  "naissance": 1987,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Uruguay",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Luis_Su%C3%A1rez_NE_Revolution_Inter_Miami_7.9.25-053_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Luis Suárez NE Revolution Inter Miami 7.9.25-053 (cropped).jpg »"
+ },
+ {
+  "id": "Q39444",
+  "nom": "Ronaldinho",
+  "notoriete": 114,
+  "naissance": 1980,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Brésil",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sports_Festival_2025_-_4_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Sports Festival 2025 - 4 (cropped).jpg »"
+ },
+ {
+  "id": "Q47674",
+  "nom": "Amerigo Vespucci",
+  "notoriete": 114,
+  "naissance": 1454,
+  "naissancePrecise": true,
+  "deces": 1512,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Amerigo_Vespucci.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Amerigo Vespucci.jpg »"
+ },
+ {
+  "id": "Q44980",
+  "nom": "Alex Ferguson",
+  "notoriete": 113,
+  "naissance": 1941,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alex_Ferguson.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Alex Ferguson.jpg »"
+ },
+ {
+  "id": "Q11666",
+  "nom": "Maria Sharapova",
+  "notoriete": 113,
+  "naissance": 1987,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sharapova2016.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Sharapova2016.jpg »"
+ },
+ {
+  "id": "Q68060",
+  "nom": "Gianluigi Buffon",
+  "notoriete": 112,
+  "naissance": 1978,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gianluigi_Buffon_(31784615942)_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Gianluigi Buffon (31784615942) (cropped).jpg »"
+ },
+ {
+  "id": "Q102139",
+  "nom": "Marguerite II de Danemark",
+  "notoriete": 111,
+  "naissance": 1940,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "Danemark",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Drottning_Margrethe_av_Danmark_crop.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Drottning Margrethe av Danmark crop.jpg »"
+ },
+ {
+  "id": "Q58720",
+  "nom": "Mikhaïl Lomonossov",
+  "notoriete": 110,
+  "naissance": 1711,
+  "naissancePrecise": true,
+  "deces": 1765,
+  "genre": "m",
+  "paysNaissance": "Russie",
+  "domaines": [
+   "peinture"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/M.V._Lomonosov_by_L.Miropolskiy_after_G.C.Prenner_(1787%2C_RAN).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « M.V. Lomonosov by L.Miropolskiy after G.C.Prenner (1787, RAN).jpg »"
+ },
+ {
+  "id": "Q79983",
+  "nom": "José Mourinho",
+  "notoriete": 110,
+  "naissance": 1963,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Portugal",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jos%C3%A9_Mourinho_20250206_(1).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « José Mourinho 20250206 (1).jpg »"
+ },
+ {
+  "id": "Q1912",
+  "nom": "Karim Benzema",
+  "notoriete": 107,
+  "naissance": 1987,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Karim_Benzema_Pick.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Karim Benzema Pick.jpg »"
+ },
+ {
+  "id": "Q160627",
+  "nom": "Alfred Russel Wallace",
+  "notoriete": 107,
+  "naissance": 1823,
+  "naissancePrecise": true,
+  "deces": 1913,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfred-Russel-Wallace-c1895.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Alfred-Russel-Wallace-c1895.jpg »"
+ },
+ {
+  "id": "Q43729",
+  "nom": "Andrés Iniesta",
+  "notoriete": 106,
+  "naissance": 1984,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Espagne",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Andr%C3%A9s_Iniesta_Argentina_v_Spain_19_July_2026-034_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Andrés Iniesta Argentina v Spain 19 July 2026-034 (cropped).jpg »"
+ },
+ {
+  "id": "Q18391",
+  "nom": "Elie Wiesel",
+  "notoriete": 106,
+  "naissance": 1928,
+  "naissancePrecise": true,
+  "deces": 2016,
+  "genre": "m",
+  "paysNaissance": "Roumanie",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Elie_Wiesel_2012_Shankbone.JPG?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Elie Wiesel 2012 Shankbone.JPG »"
+ },
+ {
+  "id": "Q83488",
+  "nom": "Mesut Özil",
+  "notoriete": 106,
+  "naissance": 1988,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mesut_%C3%96zil_at_Baku_before_2019_UEFA_Europe_League_Final.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Mesut Özil at Baku before 2019 UEFA Europe League Final.jpg »"
+ },
+ {
+  "id": "Q48246",
+  "nom": "Ernst Haeckel",
+  "notoriete": 106,
+  "naissance": 1834,
+  "naissancePrecise": true,
+  "deces": 1919,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ernst_Haeckel_1860.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ernst Haeckel 1860.jpg »"
+ },
+ {
+  "id": "Q41533",
+  "nom": "Frank Lampard",
+  "notoriete": 104,
+  "naissance": 1978,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Frank_Lampard_2019.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Frank Lampard 2019.jpg »"
+ },
+ {
+  "id": "Q4261",
+  "nom": "Michel Platini",
+  "notoriete": 104,
+  "naissance": 1955,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Michel_Platini_2010_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Michel Platini 2010 (cropped).jpg »"
+ },
+ {
+  "id": "Q1354960",
+  "nom": "Mohamed Salah",
+  "notoriete": 104,
+  "naissance": 1992,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Égypte",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Mohamed Salah Argentina v Egypt 7 July 2026-163 (cropped).jpg »"
+ },
+ {
+  "id": "Q45901",
+  "nom": "Thierry Henry",
+  "notoriete": 103,
+  "naissance": 1977,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Thierry_Henry_(51649035951)_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Thierry Henry (51649035951) (cropped).jpg »"
+ },
+ {
+  "id": "Q42188",
+  "nom": "Abel Tasman",
+  "notoriete": 103,
+  "naissance": 1603,
+  "naissancePrecise": true,
+  "deces": 1659,
+  "genre": "m",
+  "paysNaissance": "Pays-Bas",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Abel_Tasman_Navigateur_en_Australie_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Abel Tasman Navigateur en Australie (cropped).jpg »"
+ },
+ {
+  "id": "Q42838",
+  "nom": "Leif Ericson",
+  "notoriete": 103,
+  "naissance": 972,
+  "naissancePrecise": true,
+  "deces": 1020,
+  "genre": "m",
+  "paysNaissance": "Islande",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Viking_at_MN_Capitol.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Viking at MN Capitol.jpg »"
+ },
+ {
+  "id": "Q2172",
+  "nom": "Lance Armstrong",
+  "notoriete": 102,
+  "naissance": 1971,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lance_Armstrong_(Tour_Down_Under_2009).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Lance Armstrong (Tour Down Under 2009).jpg »"
+ },
+ {
+  "id": "Q80471",
+  "nom": "Miroslav Klose",
+  "notoriete": 101,
+  "naissance": 1978,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Pologne",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2016209185719_2016-07-27_Champions_for_Charity_-_Sven_-_1D_X_-_0149_-_DV3P4742_mod.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « 2016209185719 2016-07-27 Champions for Charity - Sven - 1D X - 0149 - DV3P4742 m »"
+ },
+ {
+  "id": "Q266613",
+  "nom": "Wayne Rooney",
+  "notoriete": 101,
+  "naissance": 1985,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Wayne-Rooney-2015-10-21.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Wayne-Rooney-2015-10-21.jpg »"
+ },
+ {
+  "id": "Q83233",
+  "nom": "Jacques-Yves Cousteau",
+  "notoriete": 101,
+  "naissance": 1910,
+  "naissancePrecise": true,
+  "deces": 1997,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cousteau1972_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Cousteau1972 (cropped).jpg »"
+ },
+ {
+  "id": "Q48373",
+  "nom": "David Livingstone",
+  "notoriete": 101,
+  "naissance": 1813,
+  "naissancePrecise": true,
+  "deces": 1873,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/David_Livingstone_by_Thomas_Annan.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « David Livingstone by Thomas Annan.jpg »"
+ },
+ {
+  "id": "Q11584",
+  "nom": "Iker Casillas",
+  "notoriete": 100,
+  "naissance": 1981,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Espagne",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Iker_Casillas_2.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Iker Casillas 2.jpg »"
+ },
+ {
+  "id": "Q7407",
+  "nom": "Andre Agassi",
+  "notoriete": 100,
+  "naissance": 1970,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Andre_Agassi_(2011).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Andre Agassi (2011).jpg »"
+ },
+ {
+  "id": "Q455462",
+  "nom": "Antoine Griezmann",
+  "notoriete": 100,
+  "naissance": 1991,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Antoine_Griezmann_(51100409504)_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Antoine Griezmann (51100409504) (cropped).jpg »"
+ },
+ {
+  "id": "Q531814",
+  "nom": "Kaká",
+  "notoriete": 100,
+  "naissance": 1982,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Brésil",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ricardo_Izecson_dos_Santos_Leite_(Kak%C3%A1)_01.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Ricardo Izecson dos Santos Leite (Kaká) 01.jpg »"
+ },
+ {
+  "id": "Q28967995",
+  "nom": "Erling Braut Haaland",
+  "notoriete": 99,
+  "naissance": 2000,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Erling_Haaland_France_v_Norway_26_June_26-008.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Erling Haaland France v Norway 26 June 26-008.jpg »"
+ },
+ {
+  "id": "Q107365",
+  "nom": "Manuel Neuer",
+  "notoriete": 99,
+  "naissance": 1986,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Manuel_Neuer_Ecuador_v_Germany_25_June_2026-148.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Manuel Neuer Ecuador v Germany 25 June 2026-148.jpg »"
+ },
+ {
+  "id": "Q54545",
+  "nom": "Martina Navrátilová",
+  "notoriete": 98,
+  "naissance": 1956,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "Tchéquie",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tennis_Nederland_tegen_Verenigde_Staten_in_Den_Haag_Navratilova_in_aktie%2C_Bestanddeelnr_930-9118_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Tennis Nederland tegen Verenigde Staten in Den Haag Navratilova in aktie, Bestan »"
+ },
+ {
+  "id": "Q2339",
+  "nom": "Robin van Persie",
+  "notoriete": 98,
+  "naissance": 1983,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Pays-Bas",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Loco-Fener_(10).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Loco-Fener (10).jpg »"
+ },
+ {
+  "id": "Q169963",
+  "nom": "Jason Statham",
+  "notoriete": 97,
+  "naissance": 1967,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jason_Statham_2018.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Jason Statham 2018.jpg »"
+ },
+ {
+  "id": "Q459830",
+  "nom": "Steven Gerrard",
+  "notoriete": 97,
+  "naissance": 1980,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Steven_Gerrard_2018.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Steven Gerrard 2018.jpg »"
+ },
+ {
+  "id": "Q969725",
+  "nom": "Harry Kane",
+  "notoriete": 97,
+  "naissance": 1993,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Harry_Kane_England_v_Ghana_23_June_2026-219_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Harry Kane England v Ghana 23 June 2026-219 (cropped).jpg »"
+ },
+ {
+  "id": "Q17500",
+  "nom": "Xavi Hernández",
+  "notoriete": 96,
+  "naissance": 1980,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Espagne",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Xavi_13981129001173637176666027076571.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Xavi 13981129001173637176666027076571.jpg »"
+ },
+ {
+  "id": "Q52651",
+  "nom": "Jesse Owens",
+  "notoriete": 96,
+  "naissance": 1913,
+  "naissancePrecise": true,
+  "deces": 1980,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jesse_Owens_1936.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Jesse Owens 1936.jpg »"
+ },
+ {
+  "id": "Q19825",
+  "nom": "Cecil Rhodes",
+  "notoriete": 96,
+  "naissance": 1853,
+  "naissancePrecise": true,
+  "deces": 1902,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cecil_Rhodes_ww.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Cecil Rhodes ww.jpg »"
+ },
+ {
+  "id": "Q162043",
+  "nom": "Eusébio",
+  "notoriete": 95,
+  "naissance": 1942,
+  "naissancePrecise": true,
+  "deces": 2014,
+  "genre": "m",
+  "paysNaissance": "Mozambique",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eusebio_en_1973.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Eusebio en 1973.jpg »"
+ },
+ {
+  "id": "Q482931",
+  "nom": "Ferenc Puskás",
+  "notoriete": 94,
+  "naissance": 1927,
+  "naissancePrecise": true,
+  "deces": 2006,
+  "genre": "m",
+  "paysNaissance": "Hongrie",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Puskas_(1971).tif?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Puskas (1971).tif »"
+ },
+ {
+  "id": "Q11662",
+  "nom": "Steffi Graf",
+  "notoriete": 94,
+  "naissance": 1969,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Steffi_Graf_in_Hamburg_2010_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Steffi Graf in Hamburg 2010 (cropped).jpg »"
+ },
+ {
+  "id": "Q43666",
+  "nom": "Thomas Müller",
+  "notoriete": 94,
+  "naissance": 1989,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Thomas_M%C3%BCller_2022_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Thomas Müller 2022 (cropped).jpg »"
+ },
+ {
+  "id": "Q184586",
+  "nom": "Gareth Bale",
+  "notoriete": 94,
+  "naissance": 1989,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2022_FIFA_World_Cup_United_States_1%E2%80%931_Wales_-_(32)_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « 2022 FIFA World Cup United States 1–1 Wales - (32) (cropped).jpg »"
+ },
+ {
+  "id": "Q173139",
+  "nom": "George Weah",
+  "notoriete": 94,
+  "naissance": 1966,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Liberia",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/George_Weah_in_2019_(cropped)_mod-2.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « George Weah in 2019 (cropped) mod-2.jpg »"
+ },
+ {
+  "id": "Q80732",
+  "nom": "Tensing Norgay",
+  "notoriete": 94,
+  "naissance": 1914,
+  "naissancePrecise": true,
+  "deces": 1986,
+  "genre": "m",
+  "paysNaissance": "Népal",
+  "domaines": [
+   "exploration"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tenzing_Norgay%2C_1953_-_2.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Tenzing Norgay, 1953 - 2.jpg »"
+ },
+ {
+  "id": "Q43913",
+  "nom": "Arjen Robben",
+  "notoriete": 93,
+  "naissance": 1984,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Pays-Bas",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Arjen_Robben_2013.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Arjen Robben 2013.jpg »"
+ },
+ {
+  "id": "Q214204",
+  "nom": "Eden Hazard",
+  "notoriete": 93,
+  "naissance": 1991,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Belgique",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eden_Hazard_at_Baku_before_2019_UEFA_Europe_League_Final.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Eden Hazard at Baku before 2019 UEFA Europe League Final.jpg »"
+ },
+ {
+  "id": "Q129027",
+  "nom": "Paul Pogba",
+  "notoriete": 93,
+  "naissance": 1993,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "France",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Pogba_at_the_2025_Cannes_Film_Festival_02.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Paul Pogba at the 2025 Cannes Film Festival 02.jpg »"
+ },
+ {
+  "id": "Q11578",
+  "nom": "Venus Williams",
+  "notoriete": 92,
+  "naissance": 1980,
+  "naissancePrecise": true,
+  "genre": "f",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Venus_Williams_(14948553428).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Venus Williams (14948553428).jpg »"
+ },
+ {
+  "id": "Q357984",
+  "nom": "Kevin De Bruyne",
+  "notoriete": 92,
+  "naissance": 1991,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Belgique",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kevin_De_Bruyne_USMNT_v_Belgium_Mar_28_2026-64_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Kevin De Bruyne USMNT v Belgium Mar 28 2026-64 (cropped).jpg »"
+ },
+ {
+  "id": "Q48892",
+  "nom": "Didier Drogba",
+  "notoriete": 92,
+  "naissance": 1978,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Côte d'Ivoire",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Didier_Drogba_(2019)_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Didier Drogba (2019) (cropped).jpg »"
+ },
+ {
+  "id": "Q209942",
+  "nom": "Sadio Mané",
+  "notoriete": 92,
+  "naissance": 1992,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Sénégal",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sadio_Mane_France_v_Senegal_16_June_2026-450.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Sadio Mane France v Senegal 16 June 2026-450.jpg »"
+ },
+ {
+  "id": "Q42731",
+  "nom": "Fernando Torres",
+  "notoriete": 91,
+  "naissance": 1984,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Espagne",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fernando_Torres_2017.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Fernando Torres 2017.jpg »"
+ },
+ {
+  "id": "Q483309",
+  "nom": "Sergio Ramos",
+  "notoriete": 91,
+  "naissance": 1986,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Espagne",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sergio_Ramos_Interview_2021_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Sergio Ramos Interview 2021 (cropped).jpg »"
+ },
+ {
+  "id": "Q483148",
+  "nom": "Michael Clarke Duncan",
+  "notoriete": 91,
+  "naissance": 1957,
+  "naissancePrecise": true,
+  "deces": 2012,
+  "genre": "m",
+  "paysNaissance": "États-Unis",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/MClarkeDuncan021109-R106_(50094589037).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « MClarkeDuncan021109-R106 (50094589037).jpg »"
+ },
+ {
+  "id": "Q43744",
+  "nom": "Gerd Müller",
+  "notoriete": 91,
+  "naissance": 1945,
+  "naissancePrecise": true,
+  "deces": 2021,
+  "genre": "m",
+  "paysNaissance": "Allemagne",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerd_M%C3%BCller_c1973_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Gerd Müller c1973 (cropped).jpg »"
+ },
+ {
+  "id": "Q67964",
+  "nom": "Roberto Baggio",
+  "notoriete": 91,
+  "naissance": 1967,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%D8%B1%D9%88%D8%A8%D8%B1%D8%AA%D9%88_%D8%A8%D8%A7%D8%AC%D9%88_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « روبرتو باجو (cropped).jpg »"
+ },
+ {
+  "id": "Q10125",
+  "nom": "Andy Murray",
+  "notoriete": 91,
+  "naissance": 1987,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Royaume-Uni",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2015_Australian_Open_-_Andy_Murray_12_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « 2015 Australian Open - Andy Murray 12 (cropped).jpg »"
+ },
+ {
+  "id": "Q1255625",
+  "nom": "Samuel Eto'o",
+  "notoriete": 91,
+  "naissance": 1981,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Cameroun",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sammuel_Eto'o_Fils_02.jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Sammuel Eto'o Fils 02.jpg »"
+ },
+ {
+  "id": "Q134976",
+  "nom": "Lukas Podolski",
+  "notoriete": 90,
+  "naissance": 1985,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Pologne",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lukas_Podolski_2023_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Lukas Podolski 2023 (cropped).jpg »"
+ },
+ {
+  "id": "Q129700",
+  "nom": "Mario Balotelli",
+  "notoriete": 90,
+  "naissance": 1990,
+  "naissancePrecise": true,
+  "genre": "m",
+  "paysNaissance": "Italie",
+  "domaines": [
+   "sport"
+  ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mario_Balotelli_(15440231808)_(cropped)_(cropped).jpg?width=480",
+  "credit": "Photo : Wikimedia Commons, fichier « Mario Balotelli (15440231808) (cropped) (cropped).jpg »"
+ }
+]
