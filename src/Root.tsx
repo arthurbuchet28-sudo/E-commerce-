@@ -7,6 +7,8 @@ import { SITE, SITE_TOTAL_FRAMES } from "./site/config";
 import { PubSite } from "./site/PubSite";
 import { MOCKUP, MOCKUP_TOTAL_FRAMES } from "./mockup/config";
 import { PubMockup } from "./mockup/PubMockup";
+import { BOOST, BOOST_TOTAL_FRAMES } from "./boost/config";
+import { PubBoost } from "./boost/PubBoost";
 
 waitForFonts();
 
@@ -38,6 +40,15 @@ export const RemotionRoot: React.FC = () => (
       fps={MOCKUP.fps}
       width={MOCKUP.width}
       height={MOCKUP.height}
+    />
+    {/* Pub Viralo (visibilité TikTok), 9:16 */}
+    <Composition
+      id="PubBoost"
+      component={PubBoost}
+      durationInFrames={BOOST_TOTAL_FRAMES}
+      fps={BOOST.fps}
+      width={BOOST.width}
+      height={BOOST.height}
     />
   </>
 );

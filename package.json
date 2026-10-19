@@ -11,7 +11,9 @@
     "typecheck": "tsc --noEmit",
     "render:tiktok": "remotion render PubSiteVertical out/pub-site-tiktok.mp4",
     "render:mockup": "remotion render PubMockup out/pub-mockup.mp4",
-    "music": "python3 scripts/make-music.py public/mockup-music.wav"
+    "music": "python3 scripts/make-music.py public/mockup-music.wav",
+    "render:boost": "remotion render PubBoost out/pub-boost.mp4",
+    "music:boost": "python3 scripts/make-music-boost.py public/boost-music.wav"
   },
   "dependencies": {
     "@fontsource/inter": "5.2.8",

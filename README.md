@@ -125,3 +125,31 @@ src/mockup/
 **Musique** : piste originale synthétisée par `scripts/make-music.py` (aucun sample téléchargé, donc libre de droits), électro/ambient à 100 BPM en la mineur, calée sur les moments clés (montée pendant l'arrivée de la main, clic à 3,5 s, impact au lancement à 3,8 s, souffles sur chaque changement de scène de la pub, break et cloches sur le logo, fondu final).
 - Régénérer après avoir changé les timings : `npm run music` (nécessite `pip install numpy scipy`), puis `npm run render:mockup`.
 - Volume : `musicVolume` dans `src/mockup/config.ts` ; pour utiliser une autre musique, mettez le fichier dans `public/` et changez `music` (ou `music: ""` pour aucune).
+
+---
+
+# Pub n°3 — « Viralo », visibilité TikTok (22 s, 9:16)
+
+Composition `PubBoost` (1080×1920, 60 fps, 11 mesures à 120 BPM). Site imaginaire et **honnête** : analyse du compte, conseils IA, tendances, planification — ni faux abonnés ni vues achetées.
+
+```bash
+npm run music:boost   # régénère la musique (python3 + numpy + scipy)
+npm run render:boost  # → out/pub-boost.mp4
+```
+
+```
+src/boost/
+├── config.ts          ← TOUT : textes, chiffres, couleurs, tempo (bpm), durées des scènes (en mesures)
+├── theme.ts           ← palettes dérivées des 2 couleurs, format des chiffres
+├── PubBoost.tsx       ← enchaînement des 7 scènes (raccords gérés dans les scènes, pas de fondu)
+├── scenes/            ← Act1 (accroche, problème, révélation), Act2 (solution, preuve), Act3 (fonctionnalités, appel à l'action)
+├── components/        ← Kinetic (typo mot par mot), Thread (la ligne de lumière), BoostLogo, fx (flash, secousse)
+└── ui/                ← Feed (fil vidéo générique + vignette SVG), icons
+scripts/make-music-boost.py ← musique + sound design synthétisés, calés sur les mêmes repères
+```
+
+**Modifier (dans `src/boost/config.ts`)** :
+- **Textes** : `siteName`, `url`, `tagline`, `ctaLabel`, `text.*` (phrases à l'écran, `key: true` = mot mis en valeur), `recos`, `notifications`, `features`, `hashtags`.
+- **Chiffres** : `viewsBefore`, `viewsAfter`, `followersGain`, `score`.
+- **Couleurs** : `accent`, `accent2`, `black`, `background`.
+- **Tempo et durées** : `bpm` (1 temps = `BEAT` frames) et `bars` (durée de chaque scène en mesures). Les animations sont exprimées en temps (`beats(n)`), elles suivent le tempo. Si vous changez le tempo ou les durées, reportez-les en tête de `scripts/make-music-boost.py`, puis `npm run music:boost`.
