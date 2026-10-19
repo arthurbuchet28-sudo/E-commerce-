@@ -96,3 +96,28 @@ npm run render:tiktok   # → out/pub-site-tiktok.mp4
 
 - Accroche en haut de l'écran pendant la scène 1 : `verticalHook` dans `src/site/config.ts`.
 - Les éléments importants restent dans la zone centrale (la barre de légende et les icônes TikTok couvrent le bas et la droite).
+
+---
+
+# Mockup — une main lance la pub sur un MacBook (25,5 s)
+
+Composition `PubMockup` (1920×1080, 60 fps) : une main entre, pose l'index sur le trackpad, amène le curseur sur ▶ et clique ; la pub `public/pub-site.mp4` tourne ensuite en entier sur l'écran du laptop pendant que la caméra se rapproche.
+
+```bash
+npm run render:mockup   # → out/pub-mockup.mp4
+```
+
+```
+src/mockup/
+├── config.ts               ← timings, teinte de peau, couleurs, caméra, vidéo affichée
+├── PubMockup.tsx           ← composition : caméra, laptop + bureau 3D, calque de la main
+├── components/             ← Hand (SVG articulée), Desk (bureau, mur, bokeh, accessoires), ScreenPlayer, Cursor
+└── lib/                    ← geometry.ts (projection du trackpad à l'écran), paths.ts (trajectoires main/curseur)
+```
+
+**Modifier (dans `src/mockup/config.ts`)** :
+- **Timings** : `timing.handIn`, `land`, `slide`, `click`, `play`, `handOut`, `pushIn`, `endHold` (secondes). La durée totale = `play` + durée de la vidéo + `endHold`.
+- **Main** : `skin` (teinte de peau ; ombres et lumières dérivées), `sleeve` (couleurs du pull).
+- **Couleurs** : `desk`, `wall`, `lampColor` ; les lueurs reprennent l'accent de `src/site/config.ts`.
+- **Caméra** : `camera.startScale` / `closeScale` / `endScale` (taille du laptop), rotations.
+- **Vidéo affichée** : copier le fichier dans `public/`, puis changer `video`, `videoFrames` (nombre d'images, cf. `ffprobe`) et `videoLabel` (titre affiché en pause).

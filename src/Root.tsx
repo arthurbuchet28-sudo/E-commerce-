@@ -5,6 +5,8 @@ import { waitForFonts } from "./fonts";
 import { Pub } from "./Pub";
 import { SITE, SITE_TOTAL_FRAMES } from "./site/config";
 import { PubSite } from "./site/PubSite";
+import { MOCKUP, MOCKUP_TOTAL_FRAMES } from "./mockup/config";
+import { PubMockup } from "./mockup/PubMockup";
 
 waitForFonts();
 
@@ -27,6 +29,15 @@ export const RemotionRoot: React.FC = () => (
       fps={SITE.fps}
       width={SITE.height}
       height={SITE.width}
+    />
+    {/* Mockup : une main lance la pub sur un MacBook */}
+    <Composition
+      id="PubMockup"
+      component={PubMockup}
+      durationInFrames={MOCKUP_TOTAL_FRAMES}
+      fps={MOCKUP.fps}
+      width={MOCKUP.width}
+      height={MOCKUP.height}
     />
   </>
 );
