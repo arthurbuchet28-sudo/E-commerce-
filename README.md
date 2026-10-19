@@ -141,7 +141,7 @@ npm run render:vicat  # rendu final → out/vicat-beton-presentation.mp4
 |---|---|---|
 | 1 | 0-3 s | Particules convergentes, logo Vicat tracé lettre par lettre puis rempli |
 | 2 | 3-6,5 s | « Bâtir le futur, décarboner le présent. » mot par mot |
-| 3 | 6,5-10,5 s | Carte 3D « Le béton prêt à l'emploi », puis Classiques · Décoratifs · Spécifiques |
+| 3 | 6,5-10,5 s | Carte 3D « Le béton prêt à l'emploi » qui remonte ; les gammes Classiques · Décoratifs · Spécifiques jaillissent en tuiles séparées (échantillon de matière), reliées par des lignes de lumière |
 | 4 | 10,5-14 s | Picto feuille + CO₂ en baisse, « Bas carbone avec DECA. Recyclé avec REVY. » |
 | 5 | 14-17,5 s | Formulation · Pompage · Centrale mobile · Livraison, reliés par des lignes de lumière |
 | 6 | 17,5-20 s | Compteur 200+ implantations en France |
