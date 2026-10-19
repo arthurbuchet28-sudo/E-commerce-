@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill } from "remotion";
+import { AbsoluteFill, Audio, staticFile } from "remotion";
 import { Camera, SceneDef, SceneTimeline } from "../lib/timeline";
 import { VICAT, vsec } from "./config";
 import { Backdrop, VicatGrain } from "./components/Backdrop";
@@ -33,5 +33,6 @@ export const VicatBeton: React.FC = () => (
       <SceneTimeline scenes={SCENES} pad={PAD} />
     </Camera>
     <VicatGrain />
+    {VICAT.music ? <Audio src={staticFile(VICAT.music)} volume={VICAT.musicVolume} /> : null}
   </AbsoluteFill>
 );

@@ -16,6 +16,10 @@ export const VICAT = {
     edge: "#D3D0C9", // gris béton clair
   },
 
+  // Musique originale (générée par scripts/make-music-vicat.py, calée sur les durées ci-dessous)
+  music: "vicat-music.wav",
+  musicVolume: 1,
+
   fontFamily:
     "'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif",
 

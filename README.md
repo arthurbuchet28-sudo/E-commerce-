@@ -148,3 +148,7 @@ npm run render:vicat  # rendu final → out/vicat-beton-presentation.mp4
 | 7 | 20-23 s | Logo, « Besoin de béton pour votre chantier ? », bouton vicat.fr |
 
 Tout se règle dans `src/vicat/config.ts`. Logo : `public/logo-vicat-bleu.svg` (tracés repris dans `src/vicat/components/VicatLogo.tsx`). Pictos au trait : `src/vicat/components/Pictos.tsx`.
+
+**Musique** : piste originale synthétisée par `scripts/make-music-vicat.py` (même moteur que la musique du mockup, aucun sample, donc libre de droits). Électro/ambient « industrielle » à 120 BPM en ré mineur, pour que chaque changement de scène tombe sur un temps. Elle suit les moments clés : montée pendant l'intro, impact et cloches quand le logo se remplit, entrée du groove sur l'accroche, impacts métalliques à partir de l'offre, une note par gamme et par service, tics du compteur et impact sur « 200+ », break et cloches sur le logo final, fondu de fin.
+- Régénérer après avoir changé les durées : `npm run music:vicat` (nécessite `pip install numpy scipy`), puis `npm run render:vicat`. Les repères sont en haut du script.
+- Volume : `musicVolume` dans `src/vicat/config.ts` ; `music: ""` pour aucune musique.
