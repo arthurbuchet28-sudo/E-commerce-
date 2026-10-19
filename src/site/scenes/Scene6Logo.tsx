@@ -4,6 +4,7 @@ import { useScene } from "../../lib/scene";
 import { clamp, ease, glow, lerp } from "../../lib/utils";
 import { SITE } from "../config";
 import { SiteLogoMark } from "../components/SiteLogo";
+import { useLayout } from "../layout";
 import { A, B, brandGradient, sfont, ui } from "../theme";
 import { IconArrow } from "../ui/kit";
 
@@ -25,6 +26,7 @@ const PARTICLES = 90;
 /** Scène 6 (16,5-20 s) : tout converge, le logo se dessine, le nom apparaît, le bouton pop. */
 export const Scene6Logo: React.FC = () => {
   const { frame, absFrame, fps } = useScene();
+  const { W, H, cx: CX, cy: CY, vertical } = useLayout();
   const t = absFrame / fps;
   const nameW = useMemo(measureName, []);
 
@@ -45,11 +47,15 @@ export const Scene6Logo: React.FC = () => {
   const fill = interpolate(frame, [92, 116], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease.out });
   const logoIn = spring({ frame: frame - 28, fps, config: { damping: 18, stiffness: 70 } });
 
-  // Glissement du logo vers la gauche pour faire place au nom
+  // Glissement du logo pour faire place au nom : vers la gauche (16:9) ou vers le haut (9:16)
   const slide = spring({ frame: frame - 104, fps, config: { damping: 20, stiffness: 70, mass: 1 } });
   const groupW = LOGO + GAP + nameW;
-  const logoX = lerp(0, -(groupW / 2 - LOGO / 2), slide);
-  const nameX = logoX + LOGO / 2 + GAP;
+  const logoX = vertical ? 0 : lerp(0, -(groupW / 2 - LOGO / 2), slide);
+  const logoY = vertical ? lerp(0, -230, slide) : 0;
+  const nameX = vertical ? -nameW / 2 : logoX + LOGO / 2 + GAP;
+  const nameY = vertical ? -230 + LOGO / 2 + 20 + NAME_SIZE * 0.62 : 0;
+  // En 9:16, slogan / bouton / URL descendent sous le nom
+  const vOff = vertical ? 40 : 0;
   const nameReveal = interpolate(frame, [110, 140], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease.out });
   const tagline = interpolate(frame, [128, 152], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease.out });
 
@@ -62,7 +68,7 @@ export const Scene6Logo: React.FC = () => {
   return (
     <AbsoluteFill>
       {/* Particules convergentes */}
-      <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+      <svg width={W} height={H} style={{ position: "absolute", inset: 0 }}>
         <defs>
           <filter id="streakBloom" x="-50%" y="-50%" width="200%" height="200%">
             <feGaussianBlur stdDeviation={3} />
@@ -76,8 +82,8 @@ export const Scene6Logo: React.FC = () => {
           if (p <= 0 || p >= 1) return null;
           const r = r0 * (1 - p);
           const rPrev = r0 * (1 - pPrev);
-          const cx = 960;
-          const cy = 540;
+          const cx = CX;
+          const cy = CY;
           const x1 = cx + Math.cos(a) * r;
           const y1 = cy + Math.sin(a) * r;
           const x2 = cx + Math.cos(a) * rPrev;
@@ -102,14 +108,14 @@ export const Scene6Logo: React.FC = () => {
       />
 
       <AbsoluteFill style={{ ...sfont, alignItems: "center", justifyContent: "center" }}>
-        <div style={{ position: "relative", width: 0, height: 0, transform: `translateY(-100px) scale(${breathe})` }}>
+        <div style={{ position: "relative", width: 0, height: 0, transform: `translateY(${vertical ? -40 : -100}px) scale(${breathe})` }}>
           {/* Logo */}
           <div
             style={{
               position: "absolute",
               left: logoX - LOGO / 2,
-              top: -LOGO / 2,
-              transform: `scale(${0.7 + 0.3 * logoIn})`,
+              top: logoY - LOGO / 2,
+              transform: `scale(${(0.7 + 0.3 * logoIn) * (vertical ? 1.2 : 1)})`,
               opacity: clamp(logoIn * 2),
               filter: `drop-shadow(0 0 ${30 * fill}px ${A.a(0.55 * fill)})`,
             }}
@@ -121,7 +127,7 @@ export const Scene6Logo: React.FC = () => {
             style={{
               position: "absolute",
               left: nameX,
-              top: -NAME_SIZE * 0.62,
+              top: nameY - NAME_SIZE * 0.62,
               width: nameW + 40,
               overflow: "hidden",
               clipPath: `inset(-40px ${(1 - nameReveal) * 100}% -40px 0)`,
@@ -150,9 +156,9 @@ export const Scene6Logo: React.FC = () => {
               position: "absolute",
               left: -600,
               width: 1200,
-              top: LOGO / 2 + 46,
+              top: LOGO / 2 + 46 + vOff,
               textAlign: "center",
-              fontSize: 36,
+              fontSize: vertical ? 44 : 36,
               fontWeight: 500,
               color: ui.muted,
               letterSpacing: -0.4,
@@ -168,7 +174,7 @@ export const Scene6Logo: React.FC = () => {
               position: "absolute",
               left: -600,
               width: 1200,
-              top: LOGO / 2 + 128,
+              top: LOGO / 2 + 128 + vOff,
               display: "flex",
               justifyContent: "center",
             }}
@@ -181,7 +187,7 @@ export const Scene6Logo: React.FC = () => {
                 gap: 16,
                 padding: "26px 54px",
                 borderRadius: 999,
-                fontSize: 34,
+                fontSize: vertical ? 40 : 34,
                 fontWeight: 800,
                 letterSpacing: -0.4,
                 color: "#fff",
@@ -214,9 +220,9 @@ export const Scene6Logo: React.FC = () => {
               position: "absolute",
               left: -600,
               width: 1200,
-              top: LOGO / 2 + 250,
+              top: LOGO / 2 + 250 + vOff,
               textAlign: "center",
-              fontSize: 24,
+              fontSize: vertical ? 30 : 24,
               fontWeight: 600,
               letterSpacing: 1,
               color: ui.faint,

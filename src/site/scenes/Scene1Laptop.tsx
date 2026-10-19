@@ -3,19 +3,22 @@ import { AbsoluteFill, interpolate, spring } from "remotion";
 import { useScene } from "../../lib/scene";
 import { clamp, ease, lerp } from "../../lib/utils";
 import { Laptop3D } from "../components/Laptop";
-import { A } from "../theme";
+import { SITE } from "../config";
+import { useLayout } from "../layout";
+import { A, B, sfont } from "../theme";
 import { Landing } from "../ui/Landing";
 
-export const LAPTOP_SCALE = 0.6;
+/** Échelle du laptop : plus grand en 9:16 pour occuper la largeur. */
+export const laptopScale = (vertical: boolean) => (vertical ? 0.5 : 0.6);
 /** Décalage vertical : la base du laptop étant sous l'écran, on remonte l'ensemble. */
-export const LAPTOP_Y = -90;
+export const laptopY = (vertical: boolean) => (vertical ? 40 : -90);
 
 /** Pose « posée, légèrement de 3/4 », avec un flottement permanent (en temps absolu). */
-export const restPose = (absFrame: number, fps: number) => {
+export const restPose = (absFrame: number, fps: number, vertical = false) => {
   const t = absFrame / fps;
   return {
     rx: -14 + Math.sin(t * 0.9) * 1.2,
-    ry: -18 + Math.sin(t * 0.6) * 2.5,
+    ry: (vertical ? -10 : -18) + Math.sin(t * 0.6) * 2.5,
     rz: -1.5 + Math.sin(t * 0.7) * 0.5,
     y: Math.sin(t * 1.1) * 6,
     lid: 10,
@@ -25,10 +28,13 @@ export const restPose = (absFrame: number, fps: number) => {
 /** Scène 1 (0-3 s) : le MacBook arrive en rotation et se pose, la landing apparaît. */
 export const Scene1Laptop: React.FC = () => {
   const { frame, absFrame, fps } = useScene();
+  const { cx, cy, vertical } = useLayout();
+  const LAPTOP_SCALE = laptopScale(vertical);
+  const LAPTOP_Y = laptopY(vertical);
 
   const pose = (f: number) => {
     const s = spring({ frame: f, fps, config: { damping: 22, stiffness: 48, mass: 1.25 }, durationInFrames: 140 });
-    const rest = restPose(absFrame - frame + f, fps);
+    const rest = restPose(absFrame - frame + f, fps, vertical);
     return {
       s,
       rx: lerp(30, rest.rx, s),
@@ -52,8 +58,8 @@ export const Scene1Laptop: React.FC = () => {
       <div
         style={{
           position: "absolute",
-          left: 960 - 700,
-          top: 500 - 600,
+          left: cx - 700,
+          top: cy - 40 + LAPTOP_Y - 600,
           width: 1400,
           height: 1200,
           borderRadius: "50%",
@@ -63,8 +69,8 @@ export const Scene1Laptop: React.FC = () => {
       <div
         style={{
           position: "absolute",
-          left: 960 - 520,
-          top: 900,
+          left: cx - 520,
+          top: cy + 360 + LAPTOP_Y * 1.5 + (vertical ? 80 : 0),
           width: 1040,
           height: 120,
           borderRadius: "50%",
@@ -86,6 +92,35 @@ export const Scene1Laptop: React.FC = () => {
           </div>
         </AbsoluteFill>
       </AbsoluteFill>
+      {vertical ? <Hook frame={frame} /> : null}
     </AbsoluteFill>
   );
 };
+
+/** Accroche en haut de l'écran (version TikTok uniquement). */
+const Hook: React.FC<{ frame: number }> = ({ frame }) => (
+  <div style={{ ...sfont, position: "absolute", left: 0, right: 0, top: 300, textAlign: "center" }}>
+    {SITE.verticalHook.map((line, i) => {
+      const p = interpolate(frame, [70 + i * 10, 104 + i * 10], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease.out });
+      return (
+        <div
+          key={i}
+          style={{
+            fontSize: 92,
+            fontWeight: 800,
+            letterSpacing: "-0.04em",
+            lineHeight: 1.08,
+            opacity: p,
+            transform: `translateY(${(1 - p) * 40}px)`,
+            filter: p < 1 ? `blur(${((1 - p) * 10).toFixed(2)}px)` : undefined,
+            ...(i === 1
+              ? { background: `linear-gradient(90deg, ${A.light}, ${B.light})`, WebkitBackgroundClip: "text", color: "transparent" }
+              : {}),
+          }}
+        >
+          {line}
+        </div>
+      );
+    })}
+  </div>
+);

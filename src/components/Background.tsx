@@ -10,7 +10,7 @@ export const Background: React.FC<{ center?: string; edge?: string; color?: stri
   color = CONFIG.accent,
 }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, width, height } = useVideoConfig();
   const t = frame / fps;
   return (
     <AbsoluteFill
@@ -24,8 +24,8 @@ export const Background: React.FC<{ center?: string; edge?: string; color?: stri
           width: 1100,
           height: 1100,
           borderRadius: "50%",
-          left: 960 - 550 + Math.sin(t * 0.35) * 220,
-          top: 540 - 650 + Math.cos(t * 0.27) * 120,
+          left: width / 2 - 550 + Math.sin(t * 0.35) * 220,
+          top: height / 2 - 650 + Math.cos(t * 0.27) * 120,
           background: `radial-gradient(circle, ${rgba(color, 0.12)} 0%, transparent 65%)`,
         }}
       />
@@ -35,8 +35,8 @@ export const Background: React.FC<{ center?: string; edge?: string; color?: stri
           width: 900,
           height: 900,
           borderRadius: "50%",
-          left: 1300 + Math.cos(t * 0.3) * 160,
-          top: 450 + Math.sin(t * 0.4) * 140,
+          left: (width * 1300) / 1920 + Math.cos(t * 0.3) * 160,
+          top: (height * 450) / 1080 + Math.sin(t * 0.4) * 140,
           background: `radial-gradient(circle, ${rgba(color, 0.07)} 0%, transparent 65%)`,
         }}
       />

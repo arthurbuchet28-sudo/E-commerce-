@@ -85,3 +85,14 @@ src/site/
 - **Textes** : `siteName`, `tagline`, `ctaLabel`, `url`, `heroTitle`, `heroSubtitle`, `prompt`, `generateLabel`, `readyLabel`, `stat.*`, `screens[]`. Le contenu détaillé des maquettes est dans `src/site/ui/`.
 - **Couleurs** : `accent` (violet) et `accent2` (cyan). Les teintes claires/pâles/foncées, les glows et les dégradés en sont dérivés. Fond : `background.center` / `background.edge`.
 - **Durée** : `durations` (secondes par scène, total recalculé automatiquement) et `transition` (fondus). Les moments précis d'une animation sont des plages `interpolate(frame, [début, fin], …)` en frames (60/s), dans le fichier de la scène.
+
+## Version TikTok (9:16)
+
+Composition `PubSiteVertical` (1080×1920) : mêmes scènes et même config, mise en page adaptée au portrait (`src/site/layout.ts` détecte le format).
+
+```bash
+npm run render:tiktok   # → out/pub-site-tiktok.mp4
+```
+
+- Accroche en haut de l'écran pendant la scène 1 : `verticalHook` dans `src/site/config.ts`.
+- Les éléments importants restent dans la zone centrale (la barre de légende et les icônes TikTok couvrent le bas et la droite).

@@ -6,7 +6,8 @@ import { Laptop3D } from "../components/Laptop";
 import { A } from "../theme";
 import { SCREEN_H, SCREEN_W } from "../ui/kit";
 import { LANDING_ITEMS, Landing } from "../ui/Landing";
-import { LAPTOP_SCALE, LAPTOP_Y, restPose } from "./Scene1Laptop";
+import { useLayout } from "../layout";
+import { laptopScale, laptopY, restPose } from "./Scene1Laptop";
 
 /** Position finale de chaque bloc de la landing dans l'espace 3D (z > 0 = vers la caméra). */
 const TARGETS: Record<string, { x: number; y: number; z: number; ry: number; rx: number; s: number }> = {
@@ -21,14 +22,31 @@ const TARGETS: Record<string, { x: number; y: number; z: number; ry: number; rx:
   progress: { x: -400, y: 430, z: 330, ry: 12, rx: -6, s: 0.9 },
 };
 
+/** Variante 9:16 : les blocs s'étagent verticalement. */
+const TARGETS_VERTICAL: typeof TARGETS = {
+  nav: { x: 0, y: -860, z: -700, ry: 0, rx: 12, s: 0.85 },
+  badge: { x: -180, y: -640, z: -100, ry: 14, rx: 4, s: 1.15 },
+  title: { x: 0, y: -430, z: -380, ry: 4, rx: 4, s: 0.8 },
+  subtitle: { x: 60, y: 720, z: -620, ry: -8, rx: -4, s: 0.85 },
+  prompt: { x: 0, y: -70, z: 170, ry: -4, rx: 3, s: 1.0 },
+  card1: { x: -250, y: 260, z: -60, ry: 18, rx: -2, s: 0.95 },
+  card2: { x: 270, y: 470, z: -280, ry: -18, rx: 4, s: 0.95 },
+  card3: { x: -200, y: 650, z: 80, ry: 16, rx: -4, s: 0.9 },
+  progress: { x: 200, y: 870, z: 300, ry: -10, rx: -6, s: 0.9 },
+};
+
 /** Scène 2 (3-6,5 s) : plongée dans l'écran, les blocs de la landing s'échappent et flottent. */
 export const Scene2Dive: React.FC = () => {
   const { frame, absFrame, fps } = useScene();
+  const { cx, cy, vertical } = useLayout();
+  const LAPTOP_SCALE = laptopScale(vertical);
+  const LAPTOP_Y = laptopY(vertical);
+  const targets = vertical ? TARGETS_VERTICAL : TARGETS;
   const t = absFrame / fps;
 
   const dive = (f: number) => interpolate(f, [0, 80], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease.inOut });
   const d = dive(frame);
-  const rest = restPose(absFrame - Math.max(0, frame), fps);
+  const rest = restPose(absFrame - Math.max(0, frame), fps, vertical);
   // Échelle de l'écran (×1 → ×2,6 par rapport à la pose de départ)
   const screenScale = (f: number) => LAPTOP_SCALE * lerp(1, 2.6, dive(f));
   const sCur = screenScale(frame);
@@ -43,7 +61,7 @@ export const Scene2Dive: React.FC = () => {
 
   const elementState = (i: number, f: number) => {
     const it = LANDING_ITEMS[i];
-    const tg = TARGETS[it.key];
+    const tg = targets[it.key];
     const p = spring({ frame: f - 46 - i * 2.5, fps, config: { damping: 20, stiffness: 46, mass: 1.1 } });
     const s0 = screenScale(f);
     const cx = (it.x + it.w / 2 - SCREEN_W / 2) * s0;
@@ -91,8 +109,8 @@ export const Scene2Dive: React.FC = () => {
         <div
           style={{
             position: "absolute",
-            left: 960,
-            top: 540,
+            left: cx,
+            top: cy,
             transformStyle: "preserve-3d",
             transform: `translateZ(${camZ}px) rotateY(${camRy}deg) rotateX(3deg)`,
           }}

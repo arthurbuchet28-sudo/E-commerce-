@@ -5,11 +5,10 @@ import { useScene } from "../../lib/scene";
 import { clamp, ease, glow, textGlow } from "../../lib/utils";
 import { SITE } from "../config";
 import { LightTrail } from "../components/LightTrail";
+import { useLayout } from "../layout";
 import { A, B, brandGradient, formatInt, sfont, ui } from "../theme";
 import { IconAward, IconBook, IconStar, IconUsers } from "../ui/kit";
 
-const CARD_W = 1120;
-const CARD_H = 600;
 const RADIUS = 48;
 const AVATARS = ["L", "H", "S", "I", "N", "J", "M"];
 
@@ -18,6 +17,9 @@ export const Scene4Stat: React.FC = () => {
   const { frame, absFrame, fps } = useScene();
   const t = absFrame / fps;
   const { stat } = SITE;
+  const { vertical } = useLayout();
+  const CARD_W = vertical ? 860 : 1120;
+  const CARD_H = vertical ? 980 : 600;
 
   const enter = spring({ frame: frame + 6, fps, config: { damping: 22, stiffness: 60 } });
 
@@ -110,11 +112,11 @@ export const Scene4Stat: React.FC = () => {
               {stat.eyebrow}
             </div>
           </div>
-          <div style={{ position: "relative", height: 200, marginTop: 26 }}>
+          <div style={{ position: "relative", height: vertical ? 250 : 200, marginTop: vertical ? 60 : 26 }}>
             <DirectionalBlur x={0} y={digitBlur}>
               <div
                 style={{
-                  fontSize: 200,
+                  fontSize: vertical ? 220 : 200,
                   fontWeight: 800,
                   letterSpacing: "-0.04em",
                   lineHeight: 1,
@@ -128,9 +130,19 @@ export const Scene4Stat: React.FC = () => {
               </div>
             </DirectionalBlur>
           </div>
-          <div style={{ position: "relative", fontSize: 40, fontWeight: 600, color: ui.muted, letterSpacing: "-0.02em" }}>{stat.label}</div>
-          <div style={{ position: "relative", display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: "auto" }}>
-            <div style={{ display: "flex", gap: 14 }}>
+          <div style={{ position: "relative", fontSize: vertical ? 50 : 40, fontWeight: 600, color: ui.muted, letterSpacing: "-0.02em" }}>{stat.label}</div>
+          <div
+            style={{
+              position: "relative",
+              display: "flex",
+              flexDirection: vertical ? "column" : "row",
+              alignItems: vertical ? "flex-start" : "center",
+              justifyContent: "space-between",
+              gap: vertical ? 44 : 0,
+              marginTop: "auto",
+            }}
+          >
+            <div style={{ display: "flex", flexDirection: vertical ? "column" : "row", alignItems: "flex-start", gap: 14 }}>
               {mini.map(({ Icon, label, star }, i) => {
                 const m = spring({ frame: frame - 40 - i * 10, fps, config: { damping: 16, stiffness: 110 } });
                 return (
@@ -142,7 +154,7 @@ export const Scene4Stat: React.FC = () => {
                       gap: 10,
                       padding: "12px 20px",
                       borderRadius: 999,
-                      fontSize: 22,
+                      fontSize: vertical ? 32 : 22,
                       fontWeight: 700,
                       background: "rgba(255,255,255,0.06)",
                       border: `1px solid ${ui.border}`,
@@ -151,7 +163,7 @@ export const Scene4Stat: React.FC = () => {
                     }}
                   >
                     {label}
-                    <Icon size={star ? 22 : 24} color={star ? "#FBBF24" : B.light} />
+                    <Icon size={(star ? 22 : 24) * (vertical ? 1.4 : 1)} color={star ? "#FBBF24" : B.light} />
                   </div>
                 );
               })}
@@ -163,9 +175,9 @@ export const Scene4Stat: React.FC = () => {
                   <div
                     key={i}
                     style={{
-                      width: 54,
-                      height: 54,
-                      borderRadius: 27,
+                      width: vertical ? 72 : 54,
+                      height: vertical ? 72 : 54,
+                      borderRadius: 36,
                       marginLeft: i ? -16 : 0,
                       border: "3px solid #120F22",
                       background: i % 2 ? `linear-gradient(135deg, ${B.light}, ${A.base})` : brandGradient(),

@@ -21,6 +21,9 @@ export const SITE = {
   fontFamily:
     "'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif",
 
+  // Accroche affichée en haut de l'écran dans la version TikTok (9:16)
+  verticalHook: ["Apprenez à créer", "des vidéos IA"],
+
   // Landing page (scène 1)
   heroTitle: ["Créez des vidéos IA", "dignes du cinéma"],
   heroSubtitle: "Prompts, génération, montage, animation : la méthode complète, pas à pas.",

@@ -8,7 +8,8 @@
     "render": "remotion render Pub out/pub.mp4",
     "render:site": "remotion render PubSite out/pub-site.mp4",
     "still": "remotion still Pub out/still.png",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "render:tiktok": "remotion render PubSiteVertical out/pub-site-tiktok.mp4"
   },
   "dependencies": {
     "@fontsource/inter": "5.2.8",

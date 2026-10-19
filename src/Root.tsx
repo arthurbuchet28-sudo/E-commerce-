@@ -19,5 +19,14 @@ export const RemotionRoot: React.FC = () => (
       width={SITE.width}
       height={SITE.height}
     />
+    {/* Version TikTok / Reels / Shorts : 9:16 */}
+    <Composition
+      id="PubSiteVertical"
+      component={PubSite}
+      durationInFrames={SITE_TOTAL_FRAMES}
+      fps={SITE.fps}
+      width={SITE.height}
+      height={SITE.width}
+    />
   </>
 );

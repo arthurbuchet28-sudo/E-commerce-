@@ -4,21 +4,33 @@ import { useScene } from "../../lib/scene";
 import { clamp, ease, glow } from "../../lib/utils";
 import { SITE } from "../config";
 import { LightTrail } from "../components/LightTrail";
+import { useLayout } from "../layout";
 import { A, B, brandGradient, sfont, ui } from "../theme";
 import { AIThumb, IconPlay, IconSpark } from "../ui/kit";
 
-const FIELD_W = 1240;
-const FIELD_H = 150;
-const FIELD_R = 30;
-const FIELD_Y = -330; // haut du champ (repère centré)
-const THUMB_W = 780;
-const THUMB_H = (THUMB_W * 9) / 16;
-const THUMB_Y = -60; // haut de la vignette
-const THUMB_R = 26;
+/** Géométrie (repère centré) : paysage 16:9 ou portrait 9:16. */
+const geometry = (vertical: boolean) => {
+  const FIELD_W = vertical ? 960 : 1240;
+  const FIELD_H = vertical ? 300 : 150;
+  const FIELD_Y = vertical ? -540 : -330; // haut du champ
+  const THUMB_W = vertical ? 960 : 780;
+  return {
+    FIELD_W,
+    FIELD_H,
+    FIELD_R: 30,
+    FIELD_Y,
+    THUMB_W,
+    THUMB_H: (THUMB_W * 9) / 16,
+    THUMB_Y: FIELD_Y + FIELD_H + (vertical ? 120 : 120), // haut de la vignette
+    THUMB_R: 26,
+  };
+};
 
 /** Scène 3 (6,5-10 s) : le prompt se tape, « Générer », la vidéo se génère sous une traînée néon. */
 export const Scene3Generate: React.FC = () => {
   const { frame, absFrame, fps } = useScene();
+  const { vertical } = useLayout();
+  const { FIELD_W, FIELD_H, FIELD_R, FIELD_Y, THUMB_W, THUMB_H, THUMB_Y, THUMB_R } = geometry(vertical);
   const t = absFrame / fps;
   const text = SITE.prompt;
 
@@ -89,9 +101,12 @@ export const Scene3Generate: React.FC = () => {
               border: `1px solid ${A.a(0.5)}`,
               boxShadow: `0 0 0 6px ${A.a(0.07)}, 0 0 70px ${A.a(0.3)}, 0 40px 90px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1)`,
               display: "flex",
-              alignItems: "center",
+              alignItems: vertical ? "flex-start" : "center",
+              alignContent: "center",
+              flexWrap: vertical ? "wrap" : "nowrap",
               gap: 26,
-              padding: "0 22px 0 36px",
+              rowGap: 24,
+              padding: vertical ? "34px 30px" : "0 22px 0 36px",
             }}
           >
             <div
@@ -110,7 +125,16 @@ export const Scene3Generate: React.FC = () => {
             >
               <IconSpark size={34} color={A.pale} />
             </div>
-            <div style={{ flex: 1, fontSize: 34, fontWeight: 500, lineHeight: 1.25, letterSpacing: "-0.01em" }}>
+            <div
+              style={{
+                flex: vertical ? "0 0 calc(100% - 90px)" : 1,
+                fontSize: vertical ? 38 : 34,
+                fontWeight: 500,
+                lineHeight: 1.25,
+                letterSpacing: "-0.01em",
+                minHeight: vertical ? 144 : undefined,
+              }}
+            >
               {text.split("").map((ch, i) => {
                 const a = clamp((typed - i) / 3);
                 if (a <= 0) return null;
@@ -137,6 +161,7 @@ export const Scene3Generate: React.FC = () => {
               style={{
                 height: 84,
                 flexShrink: 0,
+                marginLeft: vertical ? "auto" : undefined,
                 padding: "0 40px",
                 borderRadius: 22,
                 background: brandGradient(),

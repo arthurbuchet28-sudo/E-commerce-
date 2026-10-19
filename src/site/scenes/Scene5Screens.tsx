@@ -5,14 +5,11 @@ import { useScene } from "../../lib/scene";
 import { clamp, ease, lerp } from "../../lib/utils";
 import { SITE } from "../config";
 import { FlatBrowser } from "../components/Laptop";
+import { useLayout } from "../layout";
 import { A, B, sfont, ui } from "../theme";
 import { SCREEN_H, SCREEN_W } from "../ui/kit";
 import { CommunityScreen, EditorScreen, LessonScreen } from "../ui/Screens";
 
-const SCALE = 0.42;
-const SPACING = 640;
-const PW = SCREEN_W * SCALE;
-const PH = SCREEN_H * SCALE;
 
 type Pt = { x: number; y: number };
 const bezier = (p0: Pt, p1: Pt, p2: Pt, p3: Pt, t: number): Pt => {
@@ -26,11 +23,18 @@ const bezier = (p0: Pt, p1: Pt, p2: Pt, p3: Pt, t: number): Pt => {
 /** Scène 5 (13,5-16,5 s) : les écrans du site défilent en perspective, reliés par des lignes de lumière. */
 export const Scene5Screens: React.FC = () => {
   const { frame, absFrame, fps, duration } = useScene();
+  const { cx, cy, vertical } = useLayout();
   const t = absFrame / fps;
+  // 16:9 : écrans côte à côte, défilement horizontal. 9:16 : écrans empilés, défilement vertical.
+  const SCALE = vertical ? 0.66 : 0.42;
+  const SPACING = vertical ? 760 : 640;
+  const PW = SCREEN_W * SCALE;
+  const PH = SCREEN_H * SCALE;
 
-  // Défilement latéral continu du plan (avec flou de mouvement horizontal)
+  // Défilement continu du plan (avec flou de mouvement dans le sens du déplacement)
+  const travel = vertical ? 700 : 560;
   const scroll = (f: number) =>
-    interpolate(f, [-20, duration + 20], [560, -560], { easing: ease.soft });
+    interpolate(f, [-20, duration + 20], [travel, -travel], { easing: ease.soft });
   const vx = Math.abs(scroll(frame) - scroll(frame - 1));
 
   // Fin de scène : tout se rassemble vers le centre
@@ -41,8 +45,10 @@ export const Scene5Screens: React.FC = () => {
   });
 
   const planeX = scroll(frame) * (1 - converge);
-  const xs = [-1, 0, 1].map((k) => k * SPACING * (1 - converge * 0.92));
-  const ys = [40, -30, 40].map((y) => y * (1 - converge));
+  const spread = [-1, 0, 1].map((k) => k * SPACING * (1 - converge * 0.92));
+  const zigzag = (vertical ? [-50, 50, -50] : [40, -30, 40]).map((v) => v * (1 - converge));
+  const xs = vertical ? zigzag : spread;
+  const ys = vertical ? spread : zigzag;
 
   const screens = [
     <LessonScreen key="l" t={t} />,
@@ -52,16 +58,29 @@ export const Scene5Screens: React.FC = () => {
 
   // Liens lumineux entre écrans voisins (dans le plan des écrans)
   const links = [0, 1].map((i) => {
+    if (vertical) {
+      // du bord droit d'un écran au bord gauche du suivant, en traversant l'espace entre eux
+      const a = { x: xs[i] + PW / 2 + 6, y: ys[i] + PH / 2 - 70 };
+      const b = { x: xs[i + 1] - PW / 2 - 6, y: ys[i + 1] - PH / 2 + 70 };
+      return { p0: a, p1: { x: a.x + 220, y: a.y + 260 }, p2: { x: b.x - 220, y: b.y - 260 }, p3: b };
+    }
     const a = { x: xs[i] + PW / 2 + 6, y: ys[i] - 70 };
     const b = { x: xs[i + 1] - PW / 2 - 6, y: ys[i + 1] + 90 };
     const mid = (a.x + b.x) / 2;
     return { p0: a, p1: { x: mid, y: a.y }, p2: { x: mid, y: b.y }, p3: b };
   });
   // Liens qui partent hors champ, pour suggérer un réseau plus vaste
-  links.push(
-    { p0: { x: xs[0] - PW / 2 - 6, y: ys[0] + 160 }, p1: { x: xs[0] - 420, y: ys[0] + 160 }, p2: { x: xs[0] - 420, y: -300 }, p3: { x: xs[0] - 900, y: -300 } },
-    { p0: { x: xs[2] + PW / 2 + 6, y: ys[2] - 180 }, p1: { x: xs[2] + 420, y: ys[2] - 180 }, p2: { x: xs[2] + 420, y: 320 }, p3: { x: xs[2] + 900, y: 320 } },
-  );
+  if (vertical) {
+    links.push(
+      { p0: { x: xs[0] - PW / 2 - 6, y: ys[0] - 40 }, p1: { x: xs[0] - PW / 2 - 200, y: ys[0] - 40 }, p2: { x: -200, y: ys[0] - 500 }, p3: { x: -200, y: ys[0] - 900 } },
+      { p0: { x: xs[2] + PW / 2 + 6, y: ys[2] + 40 }, p1: { x: xs[2] + PW / 2 + 200, y: ys[2] + 40 }, p2: { x: 200, y: ys[2] + 500 }, p3: { x: 200, y: ys[2] + 900 } },
+    );
+  } else {
+    links.push(
+      { p0: { x: xs[0] - PW / 2 - 6, y: ys[0] + 160 }, p1: { x: xs[0] - 420, y: ys[0] + 160 }, p2: { x: xs[0] - 420, y: -300 }, p3: { x: xs[0] - 900, y: -300 } },
+      { p0: { x: xs[2] + PW / 2 + 6, y: ys[2] - 180 }, p1: { x: xs[2] + 420, y: ys[2] - 180 }, p2: { x: xs[2] + 420, y: 320 }, p3: { x: xs[2] + 900, y: 320 } },
+    );
+  }
 
   const pathOf = (l: (typeof links)[number]) =>
     `M${l.p0.x} ${l.p0.y} C${l.p1.x} ${l.p1.y} ${l.p2.x} ${l.p2.y} ${l.p3.x} ${l.p3.y}`;
@@ -70,20 +89,25 @@ export const Scene5Screens: React.FC = () => {
     interpolate(frame, [6 + i * 10, 50 + i * 10], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease.out }) *
     (1 - converge);
 
-  const svgW = 3200;
-  const svgH = 1400;
+  const svgW = vertical ? 2400 : 3200;
+  const svgH = vertical ? 3800 : 1400;
 
   return (
     <AbsoluteFill>
-      <DirectionalBlur x={clamp(vx * 0.9 + converge * 6, 0, 10)} y={converge * 6}>
+      <DirectionalBlur
+        x={vertical ? converge * 6 : clamp(vx * 0.9 + converge * 6, 0, 10)}
+        y={vertical ? clamp(vx * 0.9 + converge * 6, 0, 10) : converge * 6}
+      >
         <AbsoluteFill style={{ perspective: 2000, perspectiveOrigin: "50% 45%" }}>
           <div
             style={{
               position: "absolute",
-              left: 960,
-              top: 540,
+              left: cx,
+              top: cy,
               transformStyle: "preserve-3d",
-              transform: `scale(${lerp(1, 0.22, converge)}) translateX(${planeX}px) rotateX(${8 + Math.sin(t * 0.5) * 1.5}deg) rotateY(${-24 + Math.sin(t * 0.4) * 3}deg)`,
+              transform: vertical
+                ? `scale(${lerp(1, 0.22, converge)}) translateY(${planeX}px) rotateX(${16 + Math.sin(t * 0.5) * 2}deg) rotateY(${-10 + Math.sin(t * 0.4) * 3}deg)`
+                : `scale(${lerp(1, 0.22, converge)}) translateX(${planeX}px) rotateX(${8 + Math.sin(t * 0.5) * 1.5}deg) rotateY(${-24 + Math.sin(t * 0.4) * 3}deg)`,
             }}
           >
             {/* Lignes de lumière + particules */}
@@ -146,7 +170,7 @@ export const Scene5Screens: React.FC = () => {
                   style={{
                     position: "absolute",
                     left: xs[i] - PW / 2,
-                    top: ys[i] - PH / 2 + float + (1 - e) * 140,
+                    top: ys[i] - PH / 2 + float + (1 - e) * (vertical ? 220 : 140),
                     width: PW,
                     height: PH,
                     opacity: e,
@@ -160,15 +184,15 @@ export const Scene5Screens: React.FC = () => {
                       style={{
                         ...sfont,
                         position: "absolute",
-                        top: PH + 36,
+                        top: PH + (vertical ? 30 : 36),
                         left: -80,
                         right: -80,
                         textAlign: "center",
                         opacity: interpolate(e, [0.6, 1], [0, 1]) * (1 - converge),
                       }}
                     >
-                      <div style={{ fontSize: 34, fontWeight: 800, letterSpacing: -0.8 }}>{caption.title}</div>
-                      <div style={{ fontSize: 21, fontWeight: 500, color: ui.muted, marginTop: 6 }}>{caption.subtitle}</div>
+                      <div style={{ fontSize: vertical ? 50 : 34, fontWeight: 800, letterSpacing: -0.8 }}>{caption.title}</div>
+                      <div style={{ fontSize: vertical ? 30 : 21, fontWeight: 500, color: ui.muted, marginTop: 6 }}>{caption.subtitle}</div>
                     </div>
                   ) : null}
                 </div>
