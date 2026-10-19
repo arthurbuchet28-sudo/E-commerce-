@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Grain } from "../components/Background";
 import { DirectionalBlur } from "../lib/motionBlur";
 import { Camera } from "../lib/timeline";
@@ -87,6 +87,7 @@ export const PubMockup: React.FC = () => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: MOCKUP.wall }}>
+      {MOCKUP.music ? <Audio src={staticFile(MOCKUP.music)} volume={MOCKUP.musicVolume} /> : null}
       <Camera>
         <Wall t={t} screenLight={playing ? screenLight : 0} />
         <Mug x={mug.x} y={mug.y} k={mug.k / 0.62} />

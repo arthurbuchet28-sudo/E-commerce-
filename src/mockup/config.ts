@@ -9,6 +9,10 @@ export const MOCKUP = {
   videoFrames: 1200, // 20 s à 60 fps
   videoLabel: "Promptly — Vos idées. En vidéo.",
 
+  // Musique originale (générée par scripts/make-music.py, synchronisée sur les timings ci-dessous)
+  music: "mockup-music.wav",
+  musicVolume: 1,
+
   // Moments clés (secondes)
   timing: {
     handIn: 1.6, // la main entre dans le champ

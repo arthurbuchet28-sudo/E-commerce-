@@ -121,3 +121,7 @@ src/mockup/
 - **Couleurs** : `desk`, `wall`, `lampColor` ; les lueurs reprennent l'accent de `src/site/config.ts`.
 - **Caméra** : `camera.startScale` / `closeScale` / `endScale` (taille du laptop), rotations.
 - **Vidéo affichée** : copier le fichier dans `public/`, puis changer `video`, `videoFrames` (nombre d'images, cf. `ffprobe`) et `videoLabel` (titre affiché en pause).
+
+**Musique** : piste originale synthétisée par `scripts/make-music.py` (aucun sample téléchargé, donc libre de droits), électro/ambient à 100 BPM en la mineur, calée sur les moments clés (montée pendant l'arrivée de la main, clic à 3,5 s, impact au lancement à 3,8 s, souffles sur chaque changement de scène de la pub, break et cloches sur le logo, fondu final).
+- Régénérer après avoir changé les timings : `npm run music` (nécessite `pip install numpy scipy`), puis `npm run render:mockup`.
+- Volume : `musicVolume` dans `src/mockup/config.ts` ; pour utiliser une autre musique, mettez le fichier dans `public/` et changez `music` (ou `music: ""` pour aucune).
