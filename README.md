@@ -125,3 +125,26 @@ src/mockup/
 **Musique** : piste originale synthétisée par `scripts/make-music.py` (aucun sample téléchargé, donc libre de droits), électro/ambient à 100 BPM en la mineur, calée sur les moments clés (montée pendant l'arrivée de la main, clic à 3,5 s, impact au lancement à 3,8 s, souffles sur chaque changement de scène de la pub, break et cloches sur le logo, fondu final).
 - Régénérer après avoir changé les timings : `npm run music` (nécessite `pip install numpy scipy`), puis `npm run render:mockup`.
 - Volume : `musicVolume` dans `src/mockup/config.ts` ; pour utiliser une autre musique, mettez le fichier dans `public/` et changez `music` (ou `music: ""` pour aucune).
+
+---
+
+# Vidéo n°3 — « Vicat », offre béton (23 s)
+
+Composition `VicatBeton` (1920×1080, 60 fps, 1380 frames), même style que Promptly : elle réutilise `SceneTimeline` (fondus dissolve / blur), `Camera`, `Background`, `Grain`, `DirectionalBlur` et `LightTrail`. Seuls les textes, les couleurs (fond béton clair, bleu `#004587` extrait du logo officiel, anthracite) et le logo changent.
+
+```bash
+npm run dev           # Studio : choisir la composition « VicatBeton »
+npm run render:vicat  # rendu final → out/vicat-beton-presentation.mp4
+```
+
+| Scène | Temps | Contenu |
+|---|---|---|
+| 1 | 0-3 s | Particules convergentes, logo Vicat tracé lettre par lettre puis rempli |
+| 2 | 3-6,5 s | « Bâtir le futur, décarboner le présent. » mot par mot |
+| 3 | 6,5-10,5 s | Carte 3D « Le béton prêt à l'emploi », puis Classiques · Décoratifs · Spécifiques |
+| 4 | 10,5-14 s | Picto feuille + CO₂ en baisse, « Bas carbone avec DECA. Recyclé avec REVY. » |
+| 5 | 14-17,5 s | Formulation · Pompage · Centrale mobile · Livraison, reliés par des lignes de lumière |
+| 6 | 17,5-20 s | Compteur 200+ implantations en France |
+| 7 | 20-23 s | Logo, « Besoin de béton pour votre chantier ? », bouton vicat.fr |
+
+Tout se règle dans `src/vicat/config.ts`. Logo : `public/logo-vicat-bleu.svg` (tracés repris dans `src/vicat/components/VicatLogo.tsx`). Pictos au trait : `src/vicat/components/Pictos.tsx`.

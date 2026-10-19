@@ -44,17 +44,17 @@ export const Background: React.FC<{ center?: string; edge?: string; color?: stri
   );
 };
 
-/** Grain filmique très léger + vignettage. */
-export const Grain: React.FC = () => {
+/** Grain filmique très léger + vignettage (réglables pour les fonds clairs). */
+export const Grain: React.FC<{ vignette?: string; opacity?: number }> = ({ vignette = "rgba(0,0,0,0.6)", opacity = 0.07 }) => {
   const frame = useCurrentFrame();
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
       <AbsoluteFill
         style={{
-          background: "radial-gradient(ellipse 75% 70% at 50% 50%, transparent 55%, rgba(0,0,0,0.6) 100%)",
+          background: `radial-gradient(ellipse 75% 70% at 50% 50%, transparent 55%, ${vignette} 100%)`,
         }}
       />
-      <svg width="100%" height="100%" style={{ position: "absolute", inset: 0, opacity: 0.07, mixBlendMode: "overlay" }}>
+      <svg width="100%" height="100%" style={{ position: "absolute", inset: 0, opacity, mixBlendMode: "overlay" }}>
         <filter id="grain">
           <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={2} seed={frame % 24} stitchTiles="stitch" />
           <feColorMatrix type="saturate" values="0" />

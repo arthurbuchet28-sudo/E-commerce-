@@ -7,6 +7,8 @@ import { SITE, SITE_TOTAL_FRAMES } from "./site/config";
 import { PubSite } from "./site/PubSite";
 import { MOCKUP, MOCKUP_TOTAL_FRAMES } from "./mockup/config";
 import { PubMockup } from "./mockup/PubMockup";
+import { VICAT, VICAT_TOTAL_FRAMES } from "./vicat/config";
+import { VicatBeton } from "./vicat/VicatBeton";
 
 waitForFonts();
 
@@ -38,6 +40,15 @@ export const RemotionRoot: React.FC = () => (
       fps={MOCKUP.fps}
       width={MOCKUP.width}
       height={MOCKUP.height}
+    />
+    {/* Vicat : présentation de l'offre béton, même style que Promptly */}
+    <Composition
+      id="VicatBeton"
+      component={VicatBeton}
+      durationInFrames={VICAT_TOTAL_FRAMES}
+      fps={VICAT.fps}
+      width={VICAT.width}
+      height={VICAT.height}
     />
   </>
 );

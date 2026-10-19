@@ -13,7 +13,11 @@ export const LightTrail: React.FC<{
   length: number;
   intensity: number;
   pad?: number;
-}> = ({ width, height, radius, offset, length, intensity, pad = 2 }) => {
+  /** Couleurs du halo, du trait et du cœur (par défaut : accent du site). */
+  color?: string;
+  light?: string;
+  core?: string;
+}> = ({ width, height, radius, offset, length, intensity, pad = 2, color = A.base, light = A.light, core = "#ffffff" }) => {
   const id = "lt" + useId().replace(/[^a-zA-Z0-9]/g, "");
   const w = width + pad * 2;
   const h = height + pad * 2;
@@ -30,9 +34,9 @@ export const LightTrail: React.FC<{
           <feGaussianBlur stdDeviation={4} />
         </filter>
       </defs>
-      <rect {...rect} stroke={A.base} strokeWidth={22} strokeDasharray={dash} strokeDashoffset={offset} filter={`url(#${id}a)`} />
-      <rect {...rect} stroke={A.light} strokeWidth={8} strokeDasharray={dash} strokeDashoffset={offset} filter={`url(#${id}b)`} />
-      <rect {...rect} stroke="#ffffff" strokeWidth={3} strokeDasharray={`${length * 0.55} ${1 - length * 0.55}`} strokeDashoffset={offset - length * 0.45} />
+      <rect {...rect} stroke={color} strokeWidth={22} strokeDasharray={dash} strokeDashoffset={offset} filter={`url(#${id}a)`} />
+      <rect {...rect} stroke={light} strokeWidth={8} strokeDasharray={dash} strokeDashoffset={offset} filter={`url(#${id}b)`} />
+      <rect {...rect} stroke={core} strokeWidth={3} strokeDasharray={`${length * 0.55} ${1 - length * 0.55}`} strokeDashoffset={offset - length * 0.45} />
     </svg>
   );
 };
