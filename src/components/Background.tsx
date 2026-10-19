@@ -1,17 +1,21 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { CONFIG } from "../config";
-import { accent } from "../lib/utils";
+import { mix, rgba } from "../lib/utils";
 
 /** Fond presque noir avec léger dégradé + nébuleuses d'accent qui dérivent lentement. */
-export const Background: React.FC = () => {
+export const Background: React.FC<{ center?: string; edge?: string; color?: string }> = ({
+  center = CONFIG.background.center,
+  edge = CONFIG.background.edge,
+  color = CONFIG.accent,
+}) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
   return (
     <AbsoluteFill
       style={{
-        background: `radial-gradient(ellipse 80% 70% at 50% 42%, ${CONFIG.background.center} 0%, #07090f 55%, ${CONFIG.background.edge} 100%)`,
+        background: `radial-gradient(ellipse 80% 70% at 50% 42%, ${center} 0%, ${mix(center, edge, 0.6)} 55%, ${edge} 100%)`,
       }}
     >
       <div
@@ -22,7 +26,7 @@ export const Background: React.FC = () => {
           borderRadius: "50%",
           left: 960 - 550 + Math.sin(t * 0.35) * 220,
           top: 540 - 650 + Math.cos(t * 0.27) * 120,
-          background: `radial-gradient(circle, ${accent.a(0.12)} 0%, transparent 65%)`,
+          background: `radial-gradient(circle, ${rgba(color, 0.12)} 0%, transparent 65%)`,
         }}
       />
       <div
@@ -33,7 +37,7 @@ export const Background: React.FC = () => {
           borderRadius: "50%",
           left: 1300 + Math.cos(t * 0.3) * 160,
           top: 450 + Math.sin(t * 0.4) * 140,
-          background: `radial-gradient(circle, ${accent.a(0.07)} 0%, transparent 65%)`,
+          background: `radial-gradient(circle, ${rgba(color, 0.07)} 0%, transparent 65%)`,
         }}
       />
     </AbsoluteFill>

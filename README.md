@@ -49,3 +49,39 @@ Les textes internes des maquettes (exercices, séries, etc.) sont dans `src/ui/H
 Le logo (carré arrondi + pulsation) est dessiné en SVG dans `src/components/Logo.tsx` : remplacez les chemins `tile` et `pulse` pour le vôtre.
 
 > Les animations internes des scènes sont réglées pour des scènes de ~3 s. Si vous allongez beaucoup une scène, les mouvements continus (caméra, flottement, traînée) s'étirent naturellement, mais vous pouvez ajuster les plages de frames (`interpolate(frame, [début, fin], …)`) dans le fichier de la scène.
+
+---
+
+# Pub n°2 — « Promptly », site de formation vidéo IA (20 s)
+
+Composition `PubSite` (1920×1080, 60 fps, 1200 frames). Elle réutilise les utilitaires de la pub n°1 (fondus, caméra, flou de mouvement, grain).
+
+```bash
+npm run dev          # Studio : choisir la composition « PubSite »
+npm run render:site  # rendu final → out/pub-site.mp4
+```
+
+```
+src/site/
+├── config.ts          ← TOUT ce qui se personnalise (textes, couleurs, chiffre, durées)
+├── theme.ts           ← palettes dérivées des 2 couleurs + formats
+├── PubSite.tsx        ← enchaînement des 6 scènes
+├── scenes/            ← Scene1Laptop, Scene2Dive, Scene3Generate, Scene4Stat, Scene5Screens, Scene6Logo
+├── components/        ← Laptop3D (MacBook CSS 3D) + FlatBrowser, SiteLogo, LightTrail
+└── ui/                ← maquettes : Landing, LessonScreen, EditorScreen, CommunityScreen, AIThumb (vignettes SVG)
+```
+
+| Scène | Temps | Contenu |
+|---|---|---|
+| 1 | 0-3 s | Le MacBook arrive en rotation, la landing page apparaît bloc par bloc |
+| 2 | 3-6,5 s | Plongée dans l'écran, les blocs flottent en 3D avec profondeur de champ |
+| 3 | 6,5-10 s | Le prompt se tape, « Générer », traînée néon, la vidéo se génère jusqu'à 100 % |
+| 4 | 10-13,5 s | Compteur 12 400 créateurs formés, mini-stats, avatars |
+| 5 | 13,5-16,5 s | 3 fenêtres (leçon, montage, communauté) reliées par des lignes de lumière |
+| 6 | 16,5-20 s | Convergence, logo tracé en lumière, nom, bouton « Commencer gratuitement » |
+
+## Modifier (dans `src/site/config.ts`)
+
+- **Textes** : `siteName`, `tagline`, `ctaLabel`, `url`, `heroTitle`, `heroSubtitle`, `prompt`, `generateLabel`, `readyLabel`, `stat.*`, `screens[]`. Le contenu détaillé des maquettes est dans `src/site/ui/`.
+- **Couleurs** : `accent` (violet) et `accent2` (cyan). Les teintes claires/pâles/foncées, les glows et les dégradés en sont dérivés. Fond : `background.center` / `background.edge`.
+- **Durée** : `durations` (secondes par scène, total recalculé automatiquement) et `transition` (fondus). Les moments précis d'une animation sont des plages `interpolate(frame, [début, fin], …)` en frames (60/s), dans le fichier de la scène.

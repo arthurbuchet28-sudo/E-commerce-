@@ -24,14 +24,17 @@ export const mix = (a: string, b: string, t: number) => {
   return `#${c.map((v) => v.toString(16).padStart(2, "0")).join("")}`;
 };
 
+/** Palette complète dérivée d'une seule couleur. */
+export const makePalette = (hex: string) => ({
+  base: hex,
+  light: mix(hex, "#ffffff", 0.45),
+  pale: mix(hex, "#ffffff", 0.75),
+  deep: mix(hex, "#000000", 0.45),
+  a: (alpha: number) => rgba(hex, alpha),
+});
+
 /** Palette dérivée de la couleur d'accent. */
-export const accent = {
-  base: CONFIG.accent,
-  light: mix(CONFIG.accent, "#ffffff", 0.45),
-  pale: mix(CONFIG.accent, "#ffffff", 0.75),
-  deep: mix(CONFIG.accent, "#000000", 0.45),
-  a: (alpha: number) => rgba(CONFIG.accent, alpha),
-};
+export const accent = makePalette(CONFIG.accent);
 
 /** Format français : 102.5 → "102,5". */
 export const formatNumber = (v: number, decimals: number) =>
