@@ -74,12 +74,17 @@ export const DeskPlane: React.FC<{ lidW: number; yTop: number; screenLight: numb
       }}
     >
       {/* grain de matière étiré horizontalement */}
-      <svg width={DW} height={DD} style={{ position: "absolute", inset: 0, opacity: 0.06 }}>
+      {/* calculé à 1/10 de la taille puis agrandi : beaucoup plus rapide au rendu */}
+      <svg
+        width={DW / 10}
+        height={DD / 10}
+        style={{ position: "absolute", left: 0, top: 0, opacity: 0.06, transform: "scale(10)", transformOrigin: "0 0" }}
+      >
         <filter id="deskGrain">
-          <feTurbulence type="fractalNoise" baseFrequency="0.002 0.06" numOctaves={2} seed={3} />
+          <feTurbulence type="fractalNoise" baseFrequency="0.02 0.6" numOctaves={2} seed={3} />
           <feColorMatrix type="saturate" values="0" />
         </filter>
-        <rect width={DW} height={DD} filter="url(#deskGrain)" />
+        <rect width={DW / 10} height={DD / 10} filter="url(#deskGrain)" />
       </svg>
       {/* reflet flou de l'écran, devant le laptop */}
       <div
@@ -87,15 +92,18 @@ export const DeskPlane: React.FC<{ lidW: number; yTop: number; screenLight: numb
           position: "absolute",
           left: DW / 2 - 640,
           top: DD / 2 + 980,
-          width: 1280,
-          height: 720,
-          transform: "scaleY(-1)",
+          width: 320,
+          height: 180,
+          transform: "scale(4, -4)",
+          transformOrigin: "0 0",
+          marginTop: 720,
           opacity: 0.08,
-          filter: "blur(30px)",
+          filter: "blur(8px)",
         }}
       >
+        {/* image réduite (1/4) puis agrandie : le reflet est très flou de toute façon */}
         <Freeze frame={videoFrame}>
-          <OffthreadVideo src={staticFile(MOCKUP.video)} muted style={{ width: 1280, height: 720 }} />
+          <OffthreadVideo src={staticFile(MOCKUP.video)} muted style={{ width: 320, height: 180 }} />
         </Freeze>
       </div>
     </div>
