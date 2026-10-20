@@ -8,6 +8,7 @@ const styles = `
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html, body { overflow-x: hidden; max-width: 100vw; background: #0a0a0b; }
+html { scroll-behavior: smooth; }
 body { font-family: "Archivo", sans-serif; -webkit-font-smoothing: antialiased; }
 a { text-decoration: none; color: inherit; }
 a:hover { color: #fff; }
@@ -183,7 +184,14 @@ a:hover { color: #fff; }
 }
 `;
 
-export default function Hero() {
+const NAV_LINKS = [
+  { id: "accueil", label: "Accueil" },
+  { id: "a-propos", label: "À propos" },
+  { id: "voitures", label: "Voitures" },
+  { id: "contact", label: "Contact" },
+];
+
+export default function Hero({ activeSection = "accueil" }) {
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -216,7 +224,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="vl-hero">
+    <section className="vl-hero" id="accueil">
       <style>{styles}</style>
 
       <video
@@ -236,28 +244,35 @@ export default function Hero() {
       <nav className="vl-nav">
         <div className="vl-nav-left">
           <ul className="vl-links">
-            <li><a href="#" className="is-active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Cars</a></li>
-            <li><a href="#">Contact</a></li>
+            {NAV_LINKS.map((link) => (
+              <li key={link.id}>
+                <a
+                  href={`#${link.id}`}
+                  className={activeSection === link.id ? "is-active" : undefined}
+                  aria-current={activeSection === link.id ? "true" : undefined}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
-          <a href="#" className="vl-logo">VELORA</a>
+          <a href="#accueil" className="vl-logo">VELORA</a>
         </div>
-        <a href="#" className="vl-browse">
-          Browse cars <span>→</span>
+        <a href="#voitures" className="vl-browse">
+          Voir les voitures <span>→</span>
         </a>
       </nav>
 
       <div className="vl-headline" aria-hidden="true">REGAL DRIVE</div>
 
       <div className="vl-copy">
-        <h1>Rent Your Dream Luxury Car Today</h1>
+        <h1>Louez la voiture de luxe de vos rêves dès aujourd'hui</h1>
         <p>
-          Enjoy a premium rental experience with exclusive cars, seamless
-          booking, and honest pricing.
+          Profitez d'une expérience de location haut de gamme : voitures
+          d'exception, réservation simple et prix transparents.
         </p>
-        <a href="#" className="vl-cta">
-          DISCOVER NOW <span>↗</span>
+        <a href="#voitures" className="vl-cta">
+          DÉCOUVRIR <span>↗</span>
         </a>
       </div>
     </section>
