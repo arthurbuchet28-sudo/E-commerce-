@@ -1,18 +1,328 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Velora — Location de voitures de luxe</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HUNSY — Location de voitures de luxe à Dubaï, livrées en 30 minutes</title>
+<meta name="description" content="Louez une voiture premium à Dubaï sans contraintes : Rolls-Royce, Lamborghini, Ferrari, G 63… Réservation en 2 minutes, livraison offerte, assurance incluse.">
+<link rel="canonical" href="https://www.hunsy.ae/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HUNSY">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="HUNSY — Location de voitures de luxe à Dubaï, livrées en 30 minutes">
+<meta property="og:description" content="Louez une voiture premium à Dubaï sans contraintes : Rolls-Royce, Lamborghini, Ferrari, G 63… Réservation en 2 minutes, livraison offerte, assurance incluse.">
+<meta property="og:url" content="https://www.hunsy.ae/">
+<meta property="og:image" content="https://www.hunsy.ae/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#04060b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2304060b'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Helvetica Neue,Helvetica,Arial,sans-serif' font-size='38' font-weight='600' fill='%23ffffff'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/styles.css">
+<script>(function(h){h.classList.add('js');var s=false;try{s=!!sessionStorage.getItem('hunsy-preloaded')}catch(e){}h.classList.add(s?'no-preloader':'is-loading')})(document.documentElement);</script>
+<link rel="preload" as="video" href="https://cdn.sceneai.art/Hero%20section%20video%20file%20(2)/efcd1627-21df-4a73-ba9b-3ba7ac3a7f91.mp4" type="video/mp4">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "AutoRental", "name": "HUNSY", "url": "https://www.hunsy.ae/", "telephone": "+971501234567", "email": "bonjour@hunsy.ae", "priceRange": "800 AED - 4500 AED", "image": "https://www.hunsy.ae/assets/og-image.jpg", "address": {"@type": "PostalAddress", "streetAddress": "Business Bay", "addressLocality": "Dubaï", "addressCountry": "AE"}, "geo": {"@type": "GeoCoordinates", "latitude": 25.1866, "longitude": 55.2744}, "openingHoursSpecification": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "00:00", "closes": "23:59"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "2500"}}</script>
+</head>
+<body data-page="home">
+<div class="preloader" id="preloader" aria-hidden="true"><span class="preloader__value" id="preloader-value">0 %</span></div>
+<div class="bg-video" aria-hidden="true">
+  <video id="bg-video" autoplay muted loop playsinline preload="auto" src="https://cdn.sceneai.art/Hero%20section%20video%20file%20(2)/efcd1627-21df-4a73-ba9b-3ba7ac3a7f91.mp4"></video>
+  <div class="bg-video__overlay"></div>
+</div>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header" id="site-header">
+  <a class="logo" href="index.html" aria-label="HUNSY, retour à l’accueil">HUNSY</a>
+  <nav class="nav" aria-label="Navigation principale">
+    <a href="flotte.html">Flotte</a>
+    <a href="tarifs.html">Tarifs</a>
+    <a href="fonctionnement.html">Fonctionnement</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu"><span></span><span></span></button>
+    <a class="btn btn--glass btn--sm header-wa" href="https://wa.me/971501234567" target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp"><svg class="icon header-wa__icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg><span class="header-wa__label">Écrire sur WhatsApp</span></a>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="mobile-menu__top">
+    <a class="logo" href="index.html">HUNSY</a>
+    <button class="mobile-menu__close" type="button" aria-label="Fermer le menu"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <nav class="mobile-menu__nav" aria-label="Navigation mobile">
+      <a href="flotte.html">Flotte</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="fonctionnement.html">Fonctionnement</a>
+      <a href="contact.html">Contact</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="faq.html">FAQ</a>
+  </nav>
+  <div class="mobile-menu__bottom">
+    <a href="tel:+971501234567">+971 50 123 4567</a>
+    <a href="mailto:bonjour@hunsy.ae">bonjour@hunsy.ae</a>
+    <a class="btn btn--light" href="reservation.html">Réserver</a>
+  </div>
+</div>
+<main id="contenu">
+  <section class="hero" data-hero aria-label="Présentation">
+    <div class="hero__bottom">
+      <div class="hero__left">
+        <div class="renters anim anim--renters">
+          <div class="renters__avatars"><img src="https://cdn.sceneai.art/Only%20man%20image/42b82183-3b58-4a03-8e82-ca8b4bea698e.png" alt="" width="38" height="38"><img src="https://cdn.sceneai.art/Only%20man%20image/f042bdf5-73ea-4715-9b9b-6e1e9576119c.png" alt="" width="38" height="38"><img src="https://cdn.sceneai.art/Only%20man%20image/11790acc-96cb-44c9-8fa0-a95192bc1e93.png" alt="" width="38" height="38"><img src="https://cdn.sceneai.art/Only%20man%20image/0ccd6017-25fc-493b-abdf-321915dde101.jpg" alt="" width="38" height="38"><img src="https://cdn.sceneai.art/Only%20man%20image/7e1339ef-7a01-4979-93c8-21d97af291ee.webp" alt="" width="38" height="38"></div>
+          <p class="renters__label">Plus de 2 500 clients satisfaits</p>
+        </div>
+        <h1 class="hero__title" data-split="title">Louez des voitures premium<br>sans contraintes</h1>
+      </div>
+      <div class="hero__right">
+        <p class="hero__text" data-split="fade" data-start="1">Choisissez parmi notre flotte de luxe, réservez en un instant et recevez votre voiture partout à Dubaï, rapidement.</p>
+        <a class="btn btn--light anim anim--cta" href="flotte.html">Voir la flotte</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust" aria-label="Chiffres clés">
+    <div class="trust__grid reveal-group"><div class="stat"><p class="stat__value" data-count="2500" data-suffix="+">2 500+</p><p class="stat__label">Clients satisfaits</p></div><div class="stat"><p class="stat__value" data-count="60" data-suffix="+">60+</p><p class="stat__label">Voitures premium</p></div><div class="stat"><p class="stat__value" data-count="30" data-suffix=" min">30 min</p><p class="stat__label">Délai moyen de livraison</p></div><div class="stat"><p class="stat__value" data-count="4.9" data-decimals="1" data-suffix="/5">4,9/5</p><p class="stat__label">Note Google</p></div></div>
+  </section>
+
+  <section class="section bg-white" id="flotte" aria-labelledby="flotte-titre">
+    <div class="section-head">
+      <div class="section-head__left reveal">
+        <p class="eyebrow">Notre flotte</p>
+        <h2 class="h2" id="flotte-titre">Des voitures choisies pour chaque occasion</h2>
+      </div>
+      <div class="section-head__right reveal"><a class="btn btn--outline" href="flotte.html">Voir toutes les voitures</a></div>
+    </div>
+    <div class="reveal"><div class="pills" role="group" aria-label="Catégories" data-pills="home-grid"><button type="button" class="pill is-active" data-category="all" aria-pressed="true">Toutes</button><button type="button" class="pill" data-category="SUV" aria-pressed="false">SUV</button><button type="button" class="pill" data-category="Sportive" aria-pressed="false">Sportives</button><button type="button" class="pill" data-category="Berline de luxe" aria-pressed="false">Berlines de luxe</button><button type="button" class="pill" data-category="Cabriolet" aria-pressed="false">Cabriolets</button></div></div>
+    <div class="car-grid" id="home-grid" data-cars="featured" aria-live="polite"><noscript><p class="lead">Activez JavaScript pour afficher la flotte, ou <a href="https://wa.me/971501234567">écrivez-nous sur WhatsApp</a>.</p></noscript></div>
+  </section>
+
+  <section class="section bg-soft" aria-labelledby="pourquoi-titre">
+    <div class="section-head">
+      <div class="section-head__left reveal">
+        <p class="eyebrow">Pourquoi Hunsy</p>
+        <h2 class="h2" id="pourquoi-titre">Le luxe, sans la paperasse</h2>
+      </div>
+    </div>
+    <div class="feature-grid reveal-group">
+      <article class="feature reveal"><span class="feature__icon"><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></span><h3 class="h3">Livraison offerte à Dubaï</h3><p>Nous apportons la voiture à votre hôtel, à votre domicile ou à l’aéroport, sans frais.</p></article><article class="feature reveal"><span class="feature__icon"><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg></span><h3 class="h3">Aucun frais caché</h3><p>Des prix transparents, assurance et 250 km/jour inclus.</p></article><article class="feature reveal"><span class="feature__icon"><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3 class="h3">Réservation en 2 minutes</h3><p>Choisissez une voiture, vos dates, confirmez sur WhatsApp. C’est tout.</p></article><article class="feature reveal"><span class="feature__icon"><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><path d="M4 14h3v6H5a1 1 0 0 1-1-1zM20 14h-3v6h2a1 1 0 0 0 1-1z"/></svg></span><h3 class="h3">Assistance 24h/24</h3><p>Une vraie personne vous répond jour et nuit, en français, en anglais et en arabe.</p></article>
+    </div>
+  </section>
+
+  <section class="video-band">
+    <div class="video-band__inner">
+      <div class="reveal"><p class="eyebrow">Des projets ce week-end ?</p></div>
+      <h2 class="h2 h2--light reveal">La voiture de vos rêves, livrée en 30 minutes</h2>
+      
+      <div class="btn-row reveal"><a class="btn btn--light" href="reservation.html">Réserver</a><a class="btn btn--glass" href="https://wa.me/971501234567" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>Écrire sur WhatsApp</a></div>
+    </div>
+  </section>
+
+  <section class="section bg-white" id="fonctionnement" aria-labelledby="etapes-titre">
+    <div class="section-head">
+      <div class="section-head__left reveal">
+        <p class="eyebrow">Fonctionnement</p>
+        <h2 class="h2" id="etapes-titre">Quatre étapes jusqu’au volant</h2>
+      </div>
+      <div class="section-head__right reveal"><a class="text-link" href="fonctionnement.html">En savoir plus <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+    <ol class="steps reveal-group">
+      <li class="step reveal"><span class="step__num" aria-hidden="true">01</span><h3 class="h3">Choisissez votre voiture</h3><p>Parcourez notre flotte de plus de 60 modèles premium et trouvez celui qui vous ressemble.</p></li><li class="step reveal"><span class="step__num" aria-hidden="true">02</span><h3 class="h3">Sélectionnez dates et lieu</h3><p>Indiquez vos dates et l’adresse de livraison : hôtel, domicile, bureau ou aéroport.</p></li><li class="step reveal"><span class="step__num" aria-hidden="true">03</span><h3 class="h3">Confirmez et envoyez vos documents</h3><p>Validez sur WhatsApp et envoyez une photo de votre permis et de votre passeport ou Emirates ID.</p></li><li class="step reveal"><span class="step__num" aria-hidden="true">04</span><h3 class="h3">Prenez la route</h3><p>Nous livrons la voiture en 30 minutes en moyenne. La remise des clés prend moins de 10 minutes.</p></li>
+    </ol>
+  </section>
+
+  <section class="section bg-soft" id="tarifs" aria-labelledby="tarifs-titre">
+    <div class="section-head">
+      <div class="section-head__left reveal">
+        <p class="eyebrow">Tarifs</p>
+        <h2 class="h2" id="tarifs-titre">Plus vous louez longtemps, moins vous payez</h2>
+      </div>
+      <div class="section-head__right reveal"><p class="lead">Prix hors TVA. Assurance de base, livraison à Dubaï et 250 km/jour toujours inclus.</p></div>
+    </div>
+    <div class="price-grid"><article class="price-card reveal">
+        <div class="price-card__top">
+          <h3 class="h3">À la journée</h3>
+        </div>
+        <p class="price-card__tag">Tarif standard</p>
+        <p class="price-card__price">à partir de <strong class="price">800 <span class="cur">AED</span></strong> / jour</p>
+        <ul class="check-list"><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Assurance de base incluse</span></li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>250 km par jour</span></li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Livraison offerte à Dubaï</span></li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Assistance 24h/24</span></li></ul>
+        <a class="btn btn--dark" href="tarifs.html">Voir les tarifs</a>
+      </article>
+      <article class="price-card price-card--dark reveal">
+        <div class="price-card__top">
+          <h3 class="h3">À la semaine</h3><span class="price-card__badge">Le plus choisi</span>
+        </div>
+        <p class="price-card__tag">−15 % dès 7 jours</p>
+        <p class="price-card__price">à partir de <strong class="price">680 <span class="cur">AED</span></strong> / jour</p>
+        <ul class="check-list"><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Tous les avantages du tarif journée</span></li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Remise de 15 % automatique</span></li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Changement de voiture en cours de location</span></li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Conseiller dédié sur WhatsApp</span></li></ul>
+        <a class="btn btn--light" href="tarifs.html">Voir les tarifs</a>
+      </article>
+      <article class="price-card reveal">
+        <div class="price-card__top">
+          <h3 class="h3">Au mois</h3>
+        </div>
+        <p class="price-card__tag">−30 % dès 28 jours</p>
+        <p class="price-card__price">à partir de <strong class="price">560 <span class="cur">AED</span></strong> / jour</p>
+        <ul class="check-list"><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Tous les avantages du tarif semaine</span></li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Remise de 30 % automatique</span></li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Entretien et révisions inclus</span></li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Voiture de remplacement garantie</span></li></ul>
+        <a class="btn btn--dark" href="tarifs.html">Voir les tarifs</a>
+      </article></div>
+  </section>
+
+  <section class="section bg-white" aria-labelledby="avis-titre">
+    <div class="section-head">
+      <div class="section-head__left reveal">
+        <p class="eyebrow">Avis</p>
+        <h2 class="h2" id="avis-titre">Plus de 2 500 conducteurs conquis</h2>
+      </div>
+      <div class="section-head__right reveal"><div class="rating-badge"><span class="stars" role="img" aria-label="5 étoiles sur 5"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span><strong>4,9/5</strong> sur Google</span></div></div>
+    </div>
+    <div class="slider" data-slider>
+      <div class="slider__track" tabindex="0" aria-label="Avis clients, faites défiler horizontalement">
+        <figure class="review-card">
+          <span class="stars" role="img" aria-label="5 étoiles sur 5"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span>
+          <blockquote>« Voiture livrée à l’hôtel en 25 minutes, impeccable. Le G 63 était comme neuf et l’équipe répondait sur WhatsApp en quelques secondes. »</blockquote>
+          <figcaption>
+            <img src="https://cdn.sceneai.art/Only%20man%20image/42b82183-3b58-4a03-8e82-ca8b4bea698e.png" alt="" width="44" height="44" loading="lazy">
+            <span><strong>Thomas, touriste parisien</strong><span>A loué une Mercedes-AMG G 63</span></span>
+          </figcaption>
+        </figure>
+<figure class="review-card">
+          <span class="stars" role="img" aria-label="5 étoiles sur 5"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span>
+          <blockquote>« J’utilise HUNSY pour tous mes rendez-vous clients. Tarifs clairs, aucune surprise, et la caution m’a été rendue en dix jours. »</blockquote>
+          <figcaption>
+            <img src="https://cdn.sceneai.art/Only%20man%20image/f042bdf5-73ea-4715-9b9b-6e1e9576119c.png" alt="" width="44" height="44" loading="lazy">
+            <span><strong>Karim, résident à Dubaï</strong><span>A loué une Mercedes-Benz Classe S 500</span></span>
+          </figcaption>
+        </figure>
+<figure class="review-card">
+          <span class="stars" role="img" aria-label="5 étoiles sur 5"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span>
+          <blockquote>« Un week-end d’anniversaire en Ferrari Roma : une expérience incroyable. Réservation en deux minutes, remise des clés en dix. »</blockquote>
+          <figcaption>
+            <img src="https://cdn.sceneai.art/Only%20man%20image/11790acc-96cb-44c9-8fa0-a95192bc1e93.png" alt="" width="44" height="44" loading="lazy">
+            <span><strong>Julien, en voyage d’anniversaire</strong><span>A loué une Ferrari Roma</span></span>
+          </figcaption>
+        </figure>
+<figure class="review-card">
+          <span class="stars" role="img" aria-label="5 étoiles sur 5"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span>
+          <blockquote>« Nous étions six avec les bagages, le Patrol NISMO était parfait. Livraison à l’aéroport DXB à 2 h du matin, sans le moindre souci. »</blockquote>
+          <figcaption>
+            <img src="https://cdn.sceneai.art/Only%20man%20image/0ccd6017-25fc-493b-abdf-321915dde101.jpg" alt="" width="44" height="44" loading="lazy">
+            <span><strong>Mehdi, en famille</strong><span>A loué une Nissan Patrol NISMO</span></span>
+          </figcaption>
+        </figure>
+<figure class="review-card">
+          <span class="stars" role="img" aria-label="5 étoiles sur 5"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span>
+          <blockquote>« Location d’un mois pour mon installation à Dubaï. Avec la remise de 30 %, la Range Rover revient moins cher qu’un leasing. »</blockquote>
+          <figcaption>
+            <img src="https://cdn.sceneai.art/Only%20man%20image/7e1339ef-7a01-4979-93c8-21d97af291ee.webp" alt="" width="44" height="44" loading="lazy">
+            <span><strong>Antoine, nouvel expatrié</strong><span>A loué une Range Rover Sport</span></span>
+          </figcaption>
+        </figure>
+<figure class="review-card">
+          <span class="stars" role="img" aria-label="5 étoiles sur 5"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span>
+          <blockquote>« Service haut de gamme du début à la fin. Le Cullinan était parfait pour le mariage de mon frère, tout le monde en parle encore. »</blockquote>
+          <figcaption>
+            <img src="https://cdn.sceneai.art/Only%20man%20image/42b82183-3b58-4a03-8e82-ca8b4bea698e.png" alt="" width="44" height="44" loading="lazy">
+            <span><strong>Yassine, témoin de mariage</strong><span>A loué une Rolls-Royce Cullinan</span></span>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="slider__controls">
+        <button class="round-btn" type="button" data-slider-prev aria-label="Avis précédent"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+        <button class="round-btn" type="button" data-slider-next aria-label="Avis suivant"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-soft" aria-labelledby="faq-titre">
+    <div class="split">
+      <div class="split__aside reveal">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="h2" id="faq-titre">Vos questions, nos réponses.</h2>
+        <a class="text-link" href="faq.html">Voir toutes les questions <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="split__main reveal">
+        <div class="faq-list" data-accordion>
+<div class="faq-item" data-faq-item>
+          <h3 class="faq-item__q"><button type="button" aria-expanded="false" aria-controls="faq-100" id="faq-q-100"><span>Comment réserver une voiture ?</span><span class="faq-item__icon" aria-hidden="true"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span></button></h3>
+          <div class="faq-item__a" id="faq-100" role="region" aria-labelledby="faq-q-100"><div><p>Choisissez votre voiture sur la page Flotte, sélectionnez vos dates et votre lieu de livraison, puis remplissez le formulaire de réservation. Vous pouvez aussi nous écrire directement sur WhatsApp : un conseiller confirme la disponibilité en quelques minutes.</p></div></div>
+        </div>
+<div class="faq-item" data-faq-item>
+          <h3 class="faq-item__q"><button type="button" aria-expanded="false" aria-controls="faq-101" id="faq-q-101"><span>Quels documents dois-je fournir ?</span><span class="faq-item__icon" aria-hidden="true"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span></button></h3>
+          <div class="faq-item__a" id="faq-101" role="region" aria-labelledby="faq-q-101"><div><p>Résidents : Emirates ID et permis émirien. Touristes : passeport avec tampon ou visa d’entrée, et permis de conduire de votre pays, accompagné d’un permis international si nécessaire.</p></div></div>
+        </div>
+<div class="faq-item" data-faq-item>
+          <h3 class="faq-item__q"><button type="button" aria-expanded="false" aria-controls="faq-102" id="faq-q-102"><span>Comment fonctionne la caution ?</span><span class="faq-item__icon" aria-hidden="true"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span></button></h3>
+          <div class="faq-item__a" id="faq-102" role="region" aria-labelledby="faq-q-102"><div><p>La caution est une pré-autorisation bloquée sur votre carte de crédit à la livraison. Elle n’est pas débitée et elle est libérée sous 14 jours après la restitution, une fois les éventuels péages et amendes vérifiés.</p></div></div>
+        </div>
+<div class="faq-item" data-faq-item>
+          <h3 class="faq-item__q"><button type="button" aria-expanded="false" aria-controls="faq-103" id="faq-q-103"><span>Où livrez-vous ?</span><span class="faq-item__icon" aria-hidden="true"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span></button></h3>
+          <div class="faq-item__a" id="faq-103" role="region" aria-labelledby="faq-q-103"><div><p>Partout à Dubaï, gratuitement : hôtel, domicile, bureau ou aéroport (DXB et DWC). Nous livrons aussi à Sharjah pour 150 AED et à Abu Dhabi pour 300 AED.</p></div></div>
+        </div>
+<div class="faq-item" data-faq-item>
+          <h3 class="faq-item__q"><button type="button" aria-expanded="false" aria-controls="faq-104" id="faq-q-104"><span>Combien de kilomètres sont inclus ?</span><span class="faq-item__icon" aria-hidden="true"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span></button></h3>
+          <div class="faq-item__a" id="faq-104" role="region" aria-labelledby="faq-q-104"><div><p>250 km par jour, cumulables sur toute la durée de la location. Au-delà, chaque kilomètre est facturé selon le modèle. Vous pouvez aussi ajouter le forfait +100 km/jour pour 120 AED.</p></div></div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-night" id="contact" aria-labelledby="contact-titre">
+    <div class="cta-block">
+      <div class="reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 class="h2 h2--light" id="contact-titre">Prêts quand vous l’êtes</h2>
+        <p class="lead lead--dark">Une question, une envie de dernière minute ? Notre équipe vous répond en moins de 5 minutes, jour et nuit.</p>
+      </div>
+      <div class="cta-block__actions reveal">
+        <div class="btn-row"><a class="btn btn--light" href="contact.html">Nous contacter</a><a class="btn btn--glass" href="https://wa.me/971501234567" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>Écrire sur WhatsApp</a></div>
+        <p class="cta-block__contact"><a href="tel:+971501234567">+971 50 123 4567</a><a href="mailto:bonjour@hunsy.ae">bonjour@hunsy.ae</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer__inner">
+    <p class="footer__wordmark" aria-hidden="true">HUNSY</p>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <p class="footer__intro">Location de voitures de luxe à Dubaï. Livrées devant votre porte, 24h/24 et 7j/7.</p>
+        <a class="btn btn--glass btn--sm" href="https://wa.me/971501234567" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>Écrire sur WhatsApp</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__title">Explorer</p>
+        <ul>
+          <li><a href="flotte.html">Flotte</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="fonctionnement.html">Fonctionnement</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <p class="footer__title">Contact</p>
+        <ul>
+          <li><a href="tel:+971501234567">+971 50 123 4567</a></li>
+          <li><a href="mailto:bonjour@hunsy.ae">bonjour@hunsy.ae</a></li>
+          <li>Business Bay, Dubaï, Émirats arabes unis</li>
+          <li>Ouvert 24h/24 et 7j/7</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <p class="footer__title">Réseaux sociaux</p>
+        <ul>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a></li>
+          <li><a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok ↗</a></li>
+          <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube ↗</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 HUNSY Car Rental LLC. Tous droits réservés.</p>
+      <p class="footer__legal"><a href="conditions.html">Conditions générales</a><span aria-hidden="true"> · </span><a href="confidentialite.html">Confidentialité</a><span aria-hidden="true"> · </span><a href="mentions-legales.html">Mentions légales</a></p>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/971501234567" target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp"><svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a>
+<script src="js/cars.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
 </html>
