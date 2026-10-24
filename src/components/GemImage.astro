@@ -1,0 +1,40 @@
+---
+/**
+ * Image d'une gemme : WebP, chargement différé, dimensions explicites
+ * (pas de décalage de mise en page) et image de remplacement si la photo manque.
+ */
+import { type Gem, PLACEHOLDER, altText, thumbOf } from "../lib/gems";
+
+interface Props {
+  gem: Gem;
+  class?: string;
+  /** Image prioritaire (au-dessus de la ligne de flottaison) : pas de lazy loading. */
+  priority?: boolean;
+  /** Valeur de l'attribut sizes, pour choisir entre la vignette 400 px et l'image 800 px. */
+  sizes?: string;
+}
+
+const { gem, class: className = "", priority = false, sizes = "(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" } = Astro.props;
+const img = gem.image;
+---
+
+{
+  img ? (
+    <img
+      src={img.src}
+      srcset={`${thumbOf(img.src)} 400w, ${img.src} 800w`}
+      sizes={sizes}
+      width={img.width}
+      height={img.height}
+      alt={altText(gem)}
+      loading={priority ? "eager" : "lazy"}
+      fetchpriority={priority ? "high" : "auto"}
+      decoding="async"
+      class={className}
+      data-fallback={PLACEHOLDER}
+      onerror="this.onerror=null;this.removeAttribute('srcset');this.src=this.dataset.fallback;"
+    />
+  ) : (
+    <img src={PLACEHOLDER} width="800" height="800" alt={altText(gem)} loading="lazy" decoding="async" class={className} />
+  )
+}

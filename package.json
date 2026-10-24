@@ -1,19 +1,26 @@
 {
-  "name": "velora",
+  "name": "gemmes-reference",
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "description": "Encyclopédie des pierres précieuses, fines et organiques",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "fetch-images": "node scripts/fetch-images.mjs",
+    "verify": "node scripts/verify.mjs"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@astrojs/sitemap": "^3.7.4",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.4.1",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.4",
-    "vite": "^5.4.11"
+    "@astrojs/check": "^0.9.12",
+    "typescript": "^5.9.3"
   }
 }

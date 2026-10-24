@@ -1,0 +1,28 @@
+---
+/** Pied de page : liens secondaires et mention des sources. */
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-24 border-t border-line">
+  <div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-3">
+    <div>
+      <p class="font-display text-2xl">Gemmes</p>
+      <p class="mt-2 max-w-xs text-sm text-muted">
+        Encyclopédie illustrée des pierres précieuses, fines et organiques.
+      </p>
+    </div>
+    <nav aria-label="Liens du pied de page">
+      <ul class="space-y-2 text-sm">
+        <li><a class="text-muted hover:text-gold" href="/catalogue">Catalogue complet</a></li>
+        <li><a class="text-muted hover:text-gold" href="/pierres-de-naissance">Pierres de naissance</a></li>
+        <li><a class="text-muted hover:text-gold" href="/comparateur">Comparateur</a></li>
+        <li><a class="text-muted hover:text-gold" href="/a-propos">À propos et crédits photo</a></li>
+      </ul>
+    </nav>
+    <p class="text-sm text-muted md:text-right">
+      Photographies : <a class="underline hover:text-gold" href="https://commons.wikimedia.org/">Wikimedia Commons</a>, sous licences libres
+      (voir <a class="underline hover:text-gold" href="/a-propos#credits">crédits</a>).<br />
+      Données à titre informatif — © {year}
+    </p>
+  </div>
+</footer>

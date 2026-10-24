@@ -1,0 +1,98 @@
+---
+/** À propos : objectifs du site, sources des données et crédits de toutes les images. */
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { gems } from "../lib/gems";
+
+const withImage = gems.filter((g) => g.image);
+const withoutImage = gems.filter((g) => !g.image);
+const licenses = [...new Set(withImage.map((g) => g.image!.license))].sort();
+---
+
+<BaseLayout
+  title="À propos et crédits photographiques"
+  description="Sources des données minéralogiques et crédits des photographies (auteur, licence, lien) de toutes les gemmes du site, issues de Wikimedia Commons."
+>
+  <div class="mx-auto max-w-5xl px-4 py-12 sm:px-6">
+    <h1 class="text-4xl sm:text-5xl">À propos</h1>
+    <span class="gold-rule mt-4"></span>
+
+    <div class="mt-6 space-y-4 text-muted">
+      <p>
+        <strong class="text-fg">Gemmes</strong> est une encyclopédie de référence consacrée aux {gems.length} pierres précieuses, fines et
+        organiques les plus connues. Chaque fiche réunit les propriétés minéralogiques essentielles, les principaux gisements, la symbolique
+        traditionnelle et une indication de prix.
+      </p>
+      <p>
+        <strong class="text-fg">Sources des données.</strong> Les valeurs de dureté, densité et indice de réfraction sont des intervalles
+        usuels issus des ouvrages et bases de référence en gemmologie (fiches du GIA, base Mindat.org, manuels de gemmologie). Les
+        propriétés d'une gemme varient selon sa composition exacte et sa provenance : ces données sont fournies à titre informatif et ne
+        remplacent pas l'expertise d'un laboratoire gemmologique. Les fourchettes de prix sont purement indicatives.
+      </p>
+      <p>
+        <strong class="text-fg">Terminologie.</strong> Selon l'usage établi en France, l'appellation « pierre précieuse » est réservée au
+        diamant, au rubis, au saphir et à l'émeraude ; les autres gemmes minérales sont des « pierres fines » et les matières d'origine
+        animale ou végétale des « gemmes organiques ».
+      </p>
+    </div>
+
+    <section id="credits" class="mt-14" aria-labelledby="credits-title">
+      <h2 id="credits-title" class="text-3xl sm:text-4xl">Crédits photographiques</h2>
+      <span class="gold-rule mt-3"></span>
+      <p class="mt-4 text-muted">
+        Toutes les photographies proviennent de <a href="https://commons.wikimedia.org/" class="text-gold hover:underline">Wikimedia Commons</a>
+        et sont diffusées sous licence libre ({licenses.join(", ")}). Elles ont été redimensionnées (800 px de large) et converties au format
+        WebP ; aucune autre modification n'a été apportée. Merci à leurs auteurs.
+      </p>
+
+      <div class="mt-6 overflow-x-auto rounded-2xl border border-line bg-surface">
+        <table class="w-full min-w-[640px] text-left text-sm">
+          <caption class="sr-only">Liste des images, de leurs auteurs et de leurs licences</caption>
+          <thead class="text-muted">
+            <tr>
+              <th scope="col" class="p-3 font-medium">Gemme</th>
+              <th scope="col" class="p-3 font-medium">Fichier source</th>
+              <th scope="col" class="p-3 font-medium">Auteur</th>
+              <th scope="col" class="p-3 font-medium">Licence</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              withImage.map((g) => (
+                <tr class="border-t border-line align-top">
+                  <th scope="row" class="p-3 font-medium">
+                    <a href={`/gemmes/${g.slug}`} class="hover:text-gold">{g.name}</a>
+                  </th>
+                  <td class="max-w-xs break-words p-3">
+                    <a href={g.image!.sourceUrl} class="text-muted underline hover:text-gold" rel="noopener" target="_blank">
+                      {g.image!.title}
+                    </a>
+                  </td>
+                  <td class="p-3">{g.image!.author}</td>
+                  <td class="whitespace-nowrap p-3">
+                    {g.image!.licenseUrl ? (
+                      <a href={g.image!.licenseUrl} class="underline hover:text-gold" rel="license noopener" target="_blank">
+                        {g.image!.license}
+                      </a>
+                    ) : (
+                      g.image!.license
+                    )}
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+      {
+        withoutImage.length > 0 && (
+          <p class="mt-4 text-sm text-muted">
+            Sans photographie libre (illustration de remplacement) : {withoutImage.map((g) => g.name).join(", ")}.
+          </p>
+        )
+      }
+      <p class="mt-6 text-sm text-muted">
+        Polices : Cormorant Garamond et Inter (Google Fonts, licence SIL Open Font License).
+      </p>
+    </section>
+  </div>
+</BaseLayout>

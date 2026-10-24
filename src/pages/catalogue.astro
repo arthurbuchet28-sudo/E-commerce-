@@ -1,0 +1,160 @@
+---
+/**
+ * Catalogue : grille de toutes les gemmes avec recherche instantanée, filtres
+ * (catégorie, couleur, dureté, mois de naissance) et tri. Le filtrage se fait
+ * côté navigateur sur les attributs data-* des cartes, sans rechargement.
+ */
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GemCard from "../components/GemCard.astro";
+import { gems, CATEGORY_PLURALS, COLORS, MONTHS, type ColorKey } from "../lib/gems";
+
+const usedColors = (Object.keys(COLORS) as ColorKey[]).filter((c) => gems.some((g) => g.colors.includes(c)));
+const hardnessBuckets = [
+  { value: "0-4.99", label: "Tendre (< 5)" },
+  { value: "5-6.99", label: "Moyenne (5 – 6,5)" },
+  { value: "7-7.99", label: "Dure (7 – 7,5)" },
+  { value: "8-10", label: "Très dure (≥ 8)" },
+];
+---
+
+<BaseLayout
+  title="Catalogue des gemmes"
+  description={`Catalogue des ${gems.length} gemmes : recherchez et filtrez les pierres précieuses, fines et organiques par catégorie, couleur, dureté et mois de naissance.`}
+>
+  <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6">
+    <header class="mb-8">
+      <h1 class="text-4xl sm:text-5xl">Catalogue</h1>
+      <span class="gold-rule mt-4"></span>
+      <p class="mt-4 max-w-2xl text-muted">
+        {gems.length} gemmes référencées. Tapez un nom (français ou anglais), une couleur, un pays… ou affinez avec les filtres.
+      </p>
+    </header>
+
+    <form id="filters" class="mb-8 grid gap-3 rounded-2xl border border-line bg-surface p-4 sm:grid-cols-2 lg:grid-cols-6" role="search" onsubmit="return false">
+      <div class="sm:col-span-2 lg:col-span-2">
+        <label for="q" class="mb-1 block text-xs text-muted">Recherche</label>
+        <input id="q" name="q" type="search" class="field" placeholder="Ex. : rubis, bleu, Brésil…" autocomplete="off" />
+      </div>
+      <div>
+        <label for="category" class="mb-1 block text-xs text-muted">Catégorie</label>
+        <select id="category" name="category" class="field">
+          <option value="">Toutes</option>
+          {Object.entries(CATEGORY_PLURALS).map(([v, l]) => <option value={v}>{l}</option>)}
+        </select>
+      </div>
+      <div>
+        <label for="color" class="mb-1 block text-xs text-muted">Couleur</label>
+        <select id="color" name="color" class="field">
+          <option value="">Toutes</option>
+          {usedColors.map((c) => <option value={c}>{COLORS[c].label}</option>)}
+        </select>
+      </div>
+      <div>
+        <label for="hardness" class="mb-1 block text-xs text-muted">Dureté (Mohs)</label>
+        <select id="hardness" name="hardness" class="field">
+          <option value="">Toutes</option>
+          {hardnessBuckets.map((b) => <option value={b.value}>{b.label}</option>)}
+        </select>
+      </div>
+      <div>
+        <label for="month" class="mb-1 block text-xs text-muted">Mois de naissance</label>
+        <select id="month" name="month" class="field">
+          <option value="">Tous</option>
+          {MONTHS.map((m, i) => <option value={i + 1}>{m}</option>)}
+        </select>
+      </div>
+      <div class="flex flex-wrap items-end justify-between gap-3 sm:col-span-2 lg:col-span-6">
+        <div class="flex items-center gap-2">
+          <label for="sort" class="text-xs text-muted">Trier par</label>
+          <select id="sort" name="sort" class="field w-auto">
+            <option value="az">Nom (A → Z)</option>
+            <option value="za">Nom (Z → A)</option>
+            <option value="hard-desc">Dureté décroissante</option>
+            <option value="hard-asc">Dureté croissante</option>
+          </select>
+        </div>
+        <div class="flex items-center gap-4">
+          <p id="count" class="text-sm text-muted" aria-live="polite">{gems.length} gemmes</p>
+          <button type="reset" class="btn btn-ghost py-2">Réinitialiser</button>
+        </div>
+      </div>
+    </form>
+
+    <ul id="grid" class="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 lg:grid-cols-4">
+      {gems.map((g, i) => <GemCard gem={g} priority={i < 4} headingLevel="h2" />)}
+    </ul>
+    <p id="empty" class="hidden py-16 text-center text-muted">Aucune gemme ne correspond à ces critères.</p>
+  </div>
+</BaseLayout>
+
+<script>
+  const form = document.getElementById("filters") as HTMLFormElement;
+  const grid = document.getElementById("grid")!;
+  const count = document.getElementById("count")!;
+  const empty = document.getElementById("empty")!;
+  const cards = Array.from(grid.querySelectorAll<HTMLElement>("[data-gem]"));
+  const collator = new Intl.Collator("fr", { sensitivity: "base" });
+
+  /** Minuscules sans accents, pour une recherche tolérante. */
+  const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+  const index = new Map(cards.map((c) => [c, norm(c.dataset.search ?? "")]));
+
+  const field = (name: string) => (form.elements.namedItem(name) as HTMLInputElement | HTMLSelectElement).value;
+
+  function apply() {
+    const terms = norm(field("q")).split(/\s+/).filter(Boolean);
+    const category = field("category");
+    const color = field("color");
+    const month = field("month");
+    const [hLo, hHi] = field("hardness") ? field("hardness").split("-").map(Number) : [0, 10];
+
+    let visible = 0;
+    for (const card of cards) {
+      const d = card.dataset;
+      const hmin = Number(d.hmin), hmax = Number(d.hmax);
+      const show =
+        terms.every((t) => index.get(card)!.includes(t)) &&
+        (!category || d.category === category) &&
+        (!color || d.colors!.split(" ").includes(color)) &&
+        (!month || d.months!.split(" ").includes(month)) &&
+        hmax >= hLo && hmin <= hHi; // l'intervalle de dureté chevauche la tranche choisie
+      card.hidden = !show;
+      if (show) visible++;
+    }
+
+    // Tri : on réordonne les nœuds existants.
+    const sort = field("sort");
+    const sorted = cards.slice().sort((a, b) => {
+      if (sort.startsWith("hard")) {
+        const diff = Number(a.dataset.hmax) - Number(b.dataset.hmax) || Number(a.dataset.hmin) - Number(b.dataset.hmin);
+        if (diff) return sort === "hard-asc" ? diff : -diff;
+      }
+      const byName = collator.compare(a.dataset.name!, b.dataset.name!);
+      return sort === "za" ? -byName : byName;
+    });
+    grid.append(...sorted);
+
+    count.textContent = `${visible} gemme${visible > 1 ? "s" : ""}`;
+    empty.classList.toggle("hidden", visible > 0);
+
+    // L'état des filtres est reflété dans l'URL (lien partageable).
+    const params = new URLSearchParams();
+    for (const name of ["q", "category", "color", "hardness", "month", "sort"]) {
+      const v = field(name);
+      if (v && !(name === "sort" && v === "az")) params.set(name, v);
+    }
+    history.replaceState(null, "", params.size ? `?${params}` : location.pathname);
+  }
+
+  // Restaure les filtres depuis l'URL (ex. /catalogue?color=bleu).
+  const initial = new URLSearchParams(location.search);
+  for (const [k, v] of initial) {
+    const el = form.elements.namedItem(k) as HTMLInputElement | null;
+    if (el) el.value = v;
+  }
+
+  form.addEventListener("input", apply);
+  form.addEventListener("change", apply);
+  form.addEventListener("reset", () => setTimeout(apply));
+  apply();
+</script>

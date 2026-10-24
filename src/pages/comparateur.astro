@@ -1,0 +1,158 @@
+---
+/**
+ * Comparateur : choisir 2 ou 3 gemmes et afficher leurs caractéristiques côte à côte.
+ * Les données utiles sont intégrées en JSON dans la page ; la sélection est
+ * conservée dans l'URL (?g=rubis,saphir) pour pouvoir partager une comparaison.
+ */
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  gems,
+  CATEGORY_LABELS,
+  COLORS,
+  PRICE_LABELS,
+  PLACEHOLDER,
+  altText,
+  formatDensity,
+  formatHardness,
+  formatMonths,
+  formatRI,
+  thumbOf,
+} from "../lib/gems";
+
+// Version allégée et déjà formatée des données, pour le script client.
+const data = gems.map((g) => ({
+  slug: g.slug,
+  name: g.name,
+  nameEn: g.nameEn,
+  img: g.image ? thumbOf(g.image.src) : PLACEHOLDER,
+  alt: altText(g),
+  hardnessMax: g.hardness.max,
+  rows: {
+    "Catégorie": CATEGORY_LABELS[g.category],
+    "Famille minérale": g.family,
+    "Formule chimique": g.formula,
+    "Dureté (Mohs)": formatHardness(g),
+    "Densité": formatDensity(g),
+    "Indice de réfraction": formatRI(g),
+    "Couleurs": g.colors.map((c) => COLORS[c].label).join(", "),
+    "Principaux gisements": g.deposits.join(", "),
+    "Pierre de naissance": formatMonths(g) || "—",
+    "Prix indicatif": PRICE_LABELS[g.priceRange],
+  },
+}));
+const slots = [0, 1, 2];
+---
+
+<BaseLayout
+  title="Comparateur de gemmes"
+  description="Comparez deux ou trois gemmes côte à côte : dureté, densité, indice de réfraction, couleurs, gisements et prix indicatif."
+>
+  <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6">
+    <header class="mb-8 max-w-3xl">
+      <h1 class="text-4xl sm:text-5xl">Comparateur</h1>
+      <span class="gold-rule mt-4"></span>
+      <p class="mt-4 text-muted">Sélectionnez deux ou trois gemmes pour comparer leurs propriétés.</p>
+    </header>
+
+    <form id="cmp-form" class="grid gap-3 rounded-2xl border border-line bg-surface p-4 sm:grid-cols-3" onsubmit="return false">
+      {
+        slots.map((i) => (
+          <div>
+            <label for={`g${i}`} class="mb-1 block text-xs text-muted">
+              Gemme {i + 1}
+              {i === 2 && " (facultative)"}
+            </label>
+            <select id={`g${i}`} class="field" data-slot={i}>
+              <option value="">{i === 2 ? "— Aucune —" : "— Choisir —"}</option>
+              {gems.map((g) => (
+                <option value={g.slug}>{g.name}</option>
+              ))}
+            </select>
+          </div>
+        ))
+      }
+    </form>
+
+    <div id="cmp-result" class="mt-8" aria-live="polite">
+      <noscript><p class="text-muted">Le comparateur nécessite JavaScript.</p></noscript>
+    </div>
+  </div>
+  <script type="application/json" id="cmp-data" set:html={JSON.stringify(data)} />
+</BaseLayout>
+
+<script>
+  type Item = {
+    slug: string;
+    name: string;
+    nameEn: string;
+    img: string;
+    alt: string;
+    hardnessMax: number;
+    rows: Record<string, string>;
+  };
+  const data: Item[] = JSON.parse(document.getElementById("cmp-data")!.textContent!);
+  const bySlug = new Map(data.map((d) => [d.slug, d]));
+  const selects = Array.from(document.querySelectorAll<HTMLSelectElement>("#cmp-form select"));
+  const result = document.getElementById("cmp-result")!;
+
+  /** Échappe le texte inséré dans le HTML généré. */
+  const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
+
+  function render() {
+    const chosen = selects.map((s) => bySlug.get(s.value)).filter((x): x is Item => !!x);
+    const slugs = chosen.map((c) => c.slug);
+    history.replaceState(null, "", slugs.length ? `?g=${slugs.join(",")}` : location.pathname);
+
+    if (chosen.length < 2) {
+      result.innerHTML = `<p class="rounded-2xl border border-dashed border-line p-8 text-center text-muted">Choisissez au moins deux gemmes.</p>`;
+      return;
+    }
+
+    const head = chosen
+      .map(
+        (g) => `<th scope="col" class="p-3 align-bottom font-normal">
+          <a href="/gemmes/${g.slug}" class="group block">
+            <img src="${g.img}" alt="${esc(g.alt)}" width="400" height="400" loading="lazy" decoding="async"
+              class="mx-auto aspect-square w-full max-w-[180px] rounded-xl border border-line object-cover transition-transform group-hover:scale-[1.03]" />
+            <span class="mt-2 block font-display text-2xl text-fg group-hover:text-gold">${esc(g.name)}</span>
+            <span class="block text-xs text-muted">${esc(g.nameEn)}</span>
+          </a></th>`,
+      )
+      .join("");
+
+    const keys = Object.keys(chosen[0].rows);
+    const body = keys
+      .map((k) => {
+        const cells = chosen
+          .map((g) => {
+            let extra = "";
+            if (k === "Dureté (Mohs)") {
+              // Barre visuelle proportionnelle à la dureté maximale (sur 10).
+              extra = `<span class="mt-2 block h-1.5 rounded-full bg-surface-2" aria-hidden="true">
+                <span class="block h-full rounded-full bg-gold" style="width:${g.hardnessMax * 10}%"></span></span>`;
+            }
+            const mono = k === "Formule chimique" ? " font-mono" : "";
+            return `<td class="p-3 align-top text-sm${mono}">${esc(g.rows[k])}${extra}</td>`;
+          })
+          .join("");
+        return `<tr class="border-t border-line"><th scope="row" class="p-3 text-left align-top text-sm font-medium text-muted">${esc(k)}</th>${cells}</tr>`;
+      })
+      .join("");
+
+    result.innerHTML = `<div class="overflow-x-auto rounded-2xl border border-line bg-surface">
+      <table class="w-full min-w-[560px] table-fixed">
+        <caption class="sr-only">Comparaison de ${chosen.map((c) => esc(c.name)).join(", ")}</caption>
+        <colgroup><col class="w-36 sm:w-48" />${chosen.map(() => "<col />").join("")}</colgroup>
+        <thead><tr><td></td>${head}</tr></thead>
+        <tbody>${body}</tbody>
+      </table></div>`;
+  }
+
+  // Sélection initiale depuis l'URL, sinon rubis vs saphir.
+  const initial = (new URLSearchParams(location.search).get("g") ?? "rubis,saphir").split(",").filter((s) => bySlug.has(s));
+  if (initial.length === 1) initial.push(initial[0] === "diamant" ? "rubis" : "diamant");
+  initial.slice(0, 3).forEach((slug, i) => (selects[i].value = slug));
+
+  selects.forEach((s) => s.addEventListener("change", render));
+  render();
+</script>

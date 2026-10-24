@@ -1,0 +1,110 @@
+---
+/** Page d'accueil : présentation, les 4 pierres précieuses, accès au catalogue. */
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GemCard from "../components/GemCard.astro";
+import GemImage from "../components/GemImage.astro";
+import { gems, getGem, CATEGORY_PLURALS, type Category } from "../lib/gems";
+
+const precious = ["diamant", "rubis", "saphir", "emeraude"].map((s) => getGem(s)!);
+const hero = getGem("emeraude")!;
+const counts = (["precieuse", "fine", "organique"] as Category[]).map((c) => ({
+  c,
+  n: gems.filter((g) => g.category === c).length,
+}));
+const featured = ["opale", "tanzanite", "alexandrite", "tourmaline-paraiba", "spinelle", "perle", "aigue-marine", "grenat-demantoide"]
+  .map((s) => getGem(s))
+  .filter((g) => g !== undefined);
+---
+
+<BaseLayout
+  title="Gemmes"
+  description={`Encyclopédie illustrée de ${gems.length} pierres précieuses, fines et organiques : propriétés minéralogiques, gisements, symbolique, pierres de naissance et comparateur.`}
+  image={hero.image?.src}
+>
+  <!-- Héros -->
+  <section class="relative overflow-hidden border-b border-line">
+    <div
+      class="pointer-events-none absolute inset-0 opacity-60"
+      style="background: radial-gradient(60% 60% at 80% 20%, color-mix(in srgb, var(--gold) 18%, transparent), transparent 70%);"
+      aria-hidden="true"
+    >
+    </div>
+    <div class="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 md:py-24">
+      <div>
+        <p class="text-xs uppercase tracking-[0.3em] text-gold">Encyclopédie des gemmes</p>
+        <h1 class="mt-4 text-5xl sm:text-6xl lg:text-7xl">
+          L'éclat du monde <em class="text-gold">minéral</em>
+        </h1>
+        <p class="mt-6 max-w-lg text-lg text-muted">
+          {gems.length} pierres précieuses, fines et organiques décrites en détail : composition, dureté, densité, indice de réfraction,
+          gisements, symbolique et pierres de naissance — chacune illustrée d'une photographie libre de droits.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="/catalogue" class="btn btn-gold">Explorer le catalogue →</a>
+          <a href="/comparateur" class="btn btn-ghost">Comparer des gemmes</a>
+        </div>
+        <dl class="mt-10 grid max-w-md grid-cols-3 gap-4 border-t border-line pt-6">
+          {
+            counts.map(({ c, n }) => (
+              <div>
+                <dt class="text-xs text-muted">{CATEGORY_PLURALS[c]}</dt>
+                <dd class="font-display text-3xl text-gold">{n}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+      <figure class="relative mx-auto w-full max-w-md">
+        <div class="aspect-square overflow-hidden rounded-[2rem] border border-line shadow-2xl shadow-black/40">
+          <GemImage gem={hero} priority class="h-full w-full object-cover" sizes="(min-width: 768px) 450px, 100vw" />
+        </div>
+        <figcaption class="mt-3 text-center text-xs text-muted">
+          <a href={`/gemmes/${hero.slug}`} class="hover:text-gold">{hero.name}</a>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Les 4 pierres précieuses -->
+  <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6" aria-labelledby="precieuses">
+    <div class="mb-10 text-center">
+      <h2 id="precieuses" class="text-4xl sm:text-5xl">Les quatre pierres précieuses</h2>
+      <span class="gold-rule mx-auto mt-4"></span>
+      <p class="mx-auto mt-4 max-w-2xl text-muted">
+        En France, l'appellation « pierre précieuse » est traditionnellement réservée à quatre gemmes : le diamant, le rubis, le
+        saphir et l'émeraude. Toutes les autres sont des pierres fines ou des gemmes organiques.
+      </p>
+    </div>
+    <ul class="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+      {precious.map((g) => <GemCard gem={g} />)}
+    </ul>
+  </section>
+
+  <!-- Sélection -->
+  <section class="mx-auto max-w-7xl px-4 py-8 sm:px-6" aria-labelledby="selection">
+    <div class="mb-8 flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <h2 id="selection" class="text-3xl sm:text-4xl">Pierres remarquables</h2>
+        <span class="gold-rule mt-3"></span>
+      </div>
+      <a href="/catalogue" class="text-sm text-gold hover:underline">Voir les {gems.length} gemmes →</a>
+    </div>
+    <ul class="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 lg:grid-cols-4">
+      {featured.map((g) => <GemCard gem={g} />)}
+    </ul>
+  </section>
+
+  <!-- Raccourcis -->
+  <section class="mx-auto mt-12 grid max-w-7xl gap-6 px-4 sm:px-6 md:grid-cols-2">
+    <a href="/pierres-de-naissance" class="gem-card block rounded-2xl border border-line bg-surface p-8">
+      <p class="text-xs uppercase tracking-[0.2em] text-gold">Calendrier</p>
+      <h2 class="mt-2 text-3xl">Pierres de naissance</h2>
+      <p class="mt-3 text-muted">Découvrez la gemme associée à chaque mois de l'année.</p>
+    </a>
+    <a href="/comparateur" class="gem-card block rounded-2xl border border-line bg-surface p-8">
+      <p class="text-xs uppercase tracking-[0.2em] text-gold">Outil</p>
+      <h2 class="mt-2 text-3xl">Comparateur</h2>
+      <p class="mt-3 text-muted">Mettez deux ou trois gemmes côte à côte : dureté, densité, réfraction, prix…</p>
+    </a>
+  </section>
+</BaseLayout>

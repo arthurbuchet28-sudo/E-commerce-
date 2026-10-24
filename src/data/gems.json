@@ -1,0 +1,3586 @@
+[
+  {
+    "slug": "diamant",
+    "name": "Diamant",
+    "nameEn": "Diamond",
+    "category": "precieuse",
+    "family": "Élément natif — carbone (système cubique)",
+    "formula": "C",
+    "colors": [
+      "incolore",
+      "jaune",
+      "brun",
+      "rose",
+      "bleu",
+      "vert",
+      "noir"
+    ],
+    "hardness": {
+      "min": 10,
+      "max": 10
+    },
+    "density": {
+      "min": 3.5,
+      "max": 3.53
+    },
+    "refractiveIndex": {
+      "min": 2.417,
+      "max": 2.419
+    },
+    "deposits": [
+      "Russie",
+      "Botswana",
+      "Canada",
+      "République démocratique du Congo",
+      "Australie",
+      "Afrique du Sud",
+      "Angola",
+      "Namibie"
+    ],
+    "symbolism": "Symbole d'amour éternel, de pureté et d'invincibilité (du grec adamas, « indomptable »).",
+    "birthMonths": [
+      4
+    ],
+    "priceRange": "eleve",
+    "description": "Le diamant est du carbone pur cristallisé sous très haute pression, à plus de 150 km de profondeur, puis remonté par des cheminées volcaniques de kimberlite. C'est le matériau naturel le plus dur connu : il ne peut être rayé que par un autre diamant. Sa forte dispersion lumineuse produit les « feux » caractéristiques de la taille brillant. Sa valeur est estimée selon les « 4 C » : poids en carats, couleur, pureté et qualité de taille.",
+    "imageQueries": [
+      "Diamond gemstone brilliant cut",
+      "Rough diamond crystal",
+      "Diamond octahedron crystal"
+    ],
+    "image": {
+      "src": "/images/gems/diamant.webp",
+      "width": 800,
+      "height": 533,
+      "title": "Round Brilliant Cut Diamond.jpg",
+      "author": "Petragems",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Round_Brilliant_Cut_Diamond.jpg"
+    }
+  },
+  {
+    "slug": "rubis",
+    "name": "Rubis",
+    "nameEn": "Ruby",
+    "category": "precieuse",
+    "family": "Oxydes — corindon (système trigonal)",
+    "formula": "Al₂O₃ (Cr)",
+    "colors": [
+      "rouge",
+      "rose"
+    ],
+    "hardness": {
+      "min": 9,
+      "max": 9
+    },
+    "density": {
+      "min": 3.97,
+      "max": 4.05
+    },
+    "refractiveIndex": {
+      "min": 1.762,
+      "max": 1.77
+    },
+    "deposits": [
+      "Myanmar",
+      "Mozambique",
+      "Thaïlande",
+      "Sri Lanka",
+      "Madagascar",
+      "Tanzanie",
+      "Viêt Nam",
+      "Afghanistan"
+    ],
+    "symbolism": "Pierre de la passion, du courage et de la vitalité ; en Inde ancienne, « ratnaraj », le roi des gemmes.",
+    "birthMonths": [
+      7
+    ],
+    "priceRange": "eleve",
+    "description": "Le rubis est la variété rouge du corindon, dont la couleur provient de traces de chrome. Les pierres les plus recherchées, d'un rouge intense légèrement bleuté dit « sang de pigeon », proviennent historiquement de la vallée de Mogok, au Myanmar. Le chrome lui confère aussi une fluorescence rouge qui avive sa couleur à la lumière du jour. La plupart des rubis du marché sont chauffés pour améliorer leur couleur et leur transparence.",
+    "imageQueries": [
+      "Ruby gemstone faceted",
+      "Ruby cut stone",
+      "Ruby crystal corundum"
+    ],
+    "image": {
+      "src": "/images/gems/rubis.webp",
+      "width": 800,
+      "height": 713,
+      "title": "Gemstone Rubies.jpg",
+      "author": "Sasaki kijinuko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gemstone_Rubies.jpg"
+    }
+  },
+  {
+    "slug": "saphir",
+    "name": "Saphir",
+    "nameEn": "Sapphire",
+    "category": "precieuse",
+    "family": "Oxydes — corindon (système trigonal)",
+    "formula": "Al₂O₃ (Fe, Ti)",
+    "colors": [
+      "bleu",
+      "rose",
+      "jaune",
+      "orange",
+      "vert",
+      "violet",
+      "incolore",
+      "noir"
+    ],
+    "hardness": {
+      "min": 9,
+      "max": 9
+    },
+    "density": {
+      "min": 3.97,
+      "max": 4.05
+    },
+    "refractiveIndex": {
+      "min": 1.762,
+      "max": 1.77
+    },
+    "deposits": [
+      "Sri Lanka",
+      "Madagascar",
+      "Myanmar",
+      "Inde (Cachemire)",
+      "Australie",
+      "Thaïlande",
+      "États-Unis (Montana)",
+      "Tanzanie"
+    ],
+    "symbolism": "Symbole de sagesse, de loyauté et de vérité ; longtemps porté par le clergé et la royauté.",
+    "birthMonths": [
+      9
+    ],
+    "priceRange": "eleve",
+    "description": "Le saphir désigne toutes les variétés de corindon gemme autres que le rouge. Le bleu classique est dû à l'association de fer et de titane. Il existe aussi des saphirs roses, jaunes, verts ou incolores, ainsi que le rare « padparadscha » rose orangé. Les saphirs du Cachemire, au bleu velouté, sont parmi les plus prisés au monde.",
+    "imageQueries": [
+      "Sapphire gemstone faceted blue",
+      "Blue sapphire cut",
+      "Sapphire crystal corundum"
+    ],
+    "image": {
+      "src": "/images/gems/saphir.webp",
+      "width": 800,
+      "height": 628,
+      "title": "Point-19 carat diamond cut blue Yogo sapphire.jpg",
+      "author": "Tim1965",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Point-19_carat_diamond_cut_blue_Yogo_sapphire.jpg"
+    }
+  },
+  {
+    "slug": "emeraude",
+    "name": "Émeraude",
+    "nameEn": "Emerald",
+    "category": "precieuse",
+    "family": "Silicates (cyclosilicates) — béryl",
+    "formula": "Be₃Al₂Si₆O₁₈ (Cr, V)",
+    "colors": [
+      "vert"
+    ],
+    "hardness": {
+      "min": 7.5,
+      "max": 8
+    },
+    "density": {
+      "min": 2.67,
+      "max": 2.9
+    },
+    "refractiveIndex": {
+      "min": 1.56,
+      "max": 1.602
+    },
+    "deposits": [
+      "Colombie",
+      "Zambie",
+      "Brésil",
+      "Zimbabwe",
+      "Afghanistan",
+      "Russie (Oural)",
+      "Éthiopie"
+    ],
+    "symbolism": "Pierre de l'espérance, de la renaissance et de l'amour fidèle ; elle était chère à Cléopâtre.",
+    "birthMonths": [
+      5
+    ],
+    "priceRange": "eleve",
+    "description": "L'émeraude est la variété verte du béryl, colorée par le chrome et/ou le vanadium. Elle contient presque toujours des inclusions, poétiquement appelées « jardin », qui sont tolérées et servent même à l'identifier. La Colombie (Muzo, Chivor) produit les émeraudes les plus réputées. Fragile malgré sa dureté, elle est souvent taillée « à degrés » et ses fissures sont traditionnellement imprégnées d'huile.",
+    "imageQueries": [
+      "Emerald gemstone faceted",
+      "Emerald crystal beryl",
+      "Colombian emerald"
+    ],
+    "imageFile": "Émeraude, calcite 4.jpeg",
+    "image": {
+      "src": "/images/gems/emeraude.webp",
+      "width": 800,
+      "height": 532,
+      "title": "Émeraude, calcite 4.jpeg",
+      "author": "Parent Géry",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C3%89meraude,_calcite_4.jpeg"
+    }
+  },
+  {
+    "slug": "amethyste",
+    "name": "Améthyste",
+    "nameEn": "Amethyst",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — quartz",
+    "formula": "SiO₂",
+    "colors": [
+      "violet"
+    ],
+    "hardness": {
+      "min": 7,
+      "max": 7
+    },
+    "density": {
+      "min": 2.64,
+      "max": 2.69
+    },
+    "refractiveIndex": {
+      "min": 1.544,
+      "max": 1.553
+    },
+    "deposits": [
+      "Brésil",
+      "Uruguay",
+      "Zambie",
+      "Madagascar",
+      "Bolivie",
+      "Russie"
+    ],
+    "symbolism": "Pierre de la sobriété (du grec amethystos, « non ivre »), de la sérénité et de la spiritualité.",
+    "birthMonths": [
+      2
+    ],
+    "priceRange": "bas",
+    "description": "L'améthyste est la variété violette du quartz, colorée par des traces de fer irradiées naturellement. On la trouve souvent en géodes tapissées de cristaux, notamment au Brésil et en Uruguay. Autrefois aussi précieuse que le rubis, elle s'est démocratisée après la découverte de grands gisements brésiliens au XIXᵉ siècle. Chauffée, elle peut devenir jaune et donner de la citrine.",
+    "imageQueries": [
+      "Amethyst gemstone faceted",
+      "Amethyst crystal",
+      "Amethyst quartz cluster"
+    ],
+    "image": {
+      "src": "/images/gems/amethyste.webp",
+      "width": 800,
+      "height": 533,
+      "title": "Four faceted amethysts 2.jpg",
+      "author": "W.carter",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Four_faceted_amethysts_2.jpg"
+    }
+  },
+  {
+    "slug": "citrine",
+    "name": "Citrine",
+    "nameEn": "Citrine",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — quartz",
+    "formula": "SiO₂",
+    "colors": [
+      "jaune",
+      "orange"
+    ],
+    "hardness": {
+      "min": 7,
+      "max": 7
+    },
+    "density": {
+      "min": 2.64,
+      "max": 2.69
+    },
+    "refractiveIndex": {
+      "min": 1.544,
+      "max": 1.553
+    },
+    "deposits": [
+      "Brésil",
+      "Bolivie",
+      "Madagascar",
+      "Espagne",
+      "Russie"
+    ],
+    "symbolism": "Pierre de la joie, de la prospérité et de la confiance en soi.",
+    "birthMonths": [
+      11
+    ],
+    "priceRange": "bas",
+    "description": "La citrine est la variété jaune à orangée du quartz. La citrine naturelle est rare : la majorité des pierres commercialisées sont des améthystes ou des quartz fumés chauffés. Sa couleur rappelle celle du citron, d'où son nom. Abordable et durable, elle est souvent proposée comme alternative à la topaze.",
+    "imageQueries": [
+      "Citrine gemstone faceted",
+      "Citrine quartz crystal",
+      "Citrine cut stone"
+    ],
+    "image": {
+      "src": "/images/gems/citrine.webp",
+      "width": 800,
+      "height": 588,
+      "title": "Citrine x Smoky quartz gemstone from Czech Republic South of Bohemia.jpg",
+      "author": "AdamStejskal",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Citrine_x_Smoky_quartz_gemstone_from_Czech_Republic_South_of_Bohemia.jpg"
+    }
+  },
+  {
+    "slug": "quartz-rose",
+    "name": "Quartz rose",
+    "nameEn": "Rose quartz",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — quartz",
+    "formula": "SiO₂",
+    "colors": [
+      "rose"
+    ],
+    "hardness": {
+      "min": 7,
+      "max": 7
+    },
+    "density": {
+      "min": 2.64,
+      "max": 2.69
+    },
+    "refractiveIndex": {
+      "min": 1.544,
+      "max": 1.553
+    },
+    "deposits": [
+      "Brésil",
+      "Madagascar",
+      "Namibie",
+      "Inde",
+      "États-Unis"
+    ],
+    "symbolism": "Pierre de l'amour, de la tendresse et de la réconciliation.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "Le quartz rose est une variété de quartz d'un rose pâle à soutenu, généralement translucide et laiteux. Sa couleur serait due à de minuscules fibres d'un minéral proche de la dumortiérite. Il se présente presque toujours en masses et rarement en cristaux bien formés. Il est surtout taillé en cabochons, perles et objets d'ornement.",
+    "imageQueries": [
+      "Rose quartz",
+      "Rose quartz gemstone",
+      "Rose quartz crystal"
+    ],
+    "image": {
+      "src": "/images/gems/quartz-rose.webp",
+      "width": 800,
+      "height": 600,
+      "title": "Rose Quartz Macro 1.JPG",
+      "author": "“Jon Zander ( Digon3 )\"",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rose_Quartz_Macro_1.JPG"
+    }
+  },
+  {
+    "slug": "quartz-fume",
+    "name": "Quartz fumé",
+    "nameEn": "Smoky quartz",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — quartz",
+    "formula": "SiO₂",
+    "colors": [
+      "brun",
+      "gris",
+      "noir"
+    ],
+    "hardness": {
+      "min": 7,
+      "max": 7
+    },
+    "density": {
+      "min": 2.64,
+      "max": 2.69
+    },
+    "refractiveIndex": {
+      "min": 1.544,
+      "max": 1.553
+    },
+    "deposits": [
+      "Brésil",
+      "Suisse",
+      "Madagascar",
+      "Royaume-Uni (Écosse)",
+      "États-Unis"
+    ],
+    "symbolism": "Pierre d'ancrage et de protection, réputée dissiper les énergies négatives.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "Le quartz fumé est un quartz brun à gris, dont la teinte provient de l'irradiation naturelle d'atomes d'aluminium présents dans le cristal. Les variétés très foncées sont appelées « morion ». Le « cairngorm » écossais en est une variété traditionnelle de la joaillerie des Highlands. Il forme parfois des cristaux de très grande taille, notamment dans les Alpes.",
+    "imageQueries": [
+      "Smoky quartz crystal",
+      "Smoky quartz gemstone",
+      "Smoky quartz faceted"
+    ],
+    "imageFile": "Smoky-quartz-TUCQTZ09-03-arkenstone-irocks.png",
+    "image": {
+      "src": "/images/gems/quartz-fume.webp",
+      "width": 800,
+      "height": 1488,
+      "title": "Smoky-quartz-TUCQTZ09-03-arkenstone-irocks.png",
+      "author": "Rob Lavinsky",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Smoky-quartz-TUCQTZ09-03-arkenstone-irocks.png"
+    }
+  },
+  {
+    "slug": "cristal-de-roche",
+    "name": "Cristal de roche",
+    "nameEn": "Rock crystal",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — quartz",
+    "formula": "SiO₂",
+    "colors": [
+      "incolore"
+    ],
+    "hardness": {
+      "min": 7,
+      "max": 7
+    },
+    "density": {
+      "min": 2.64,
+      "max": 2.69
+    },
+    "refractiveIndex": {
+      "min": 1.544,
+      "max": 1.553
+    },
+    "deposits": [
+      "Brésil",
+      "Madagascar",
+      "États-Unis (Arkansas)",
+      "Suisse",
+      "France (Alpes)"
+    ],
+    "symbolism": "Symbole de clarté et de pureté ; utilisé depuis l'Antiquité pour les sphères divinatoires.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "Le cristal de roche est le quartz incolore et parfaitement transparent. Les Anciens le croyaient être de la glace éternellement gelée, d'où son nom grec krystallos. Il forme de magnifiques prismes hexagonaux terminés en pointe. Il a servi à tailler vases, lustres et objets d'art depuis l'Antiquité.",
+    "imageQueries": [
+      "Rock crystal quartz",
+      "Quartz crystal clear",
+      "Clear quartz crystal"
+    ],
+    "image": {
+      "src": "/images/gems/cristal-de-roche.webp",
+      "width": 800,
+      "height": 760,
+      "title": "Single clear quartz, rock crystal 2.jpg",
+      "author": "W.carter",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Single_clear_quartz,_rock_crystal_2.jpg"
+    }
+  },
+  {
+    "slug": "ametrine",
+    "name": "Amétrine",
+    "nameEn": "Ametrine",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — quartz",
+    "formula": "SiO₂",
+    "colors": [
+      "violet",
+      "jaune",
+      "multicolore"
+    ],
+    "hardness": {
+      "min": 7,
+      "max": 7
+    },
+    "density": {
+      "min": 2.64,
+      "max": 2.69
+    },
+    "refractiveIndex": {
+      "min": 1.544,
+      "max": 1.553
+    },
+    "deposits": [
+      "Bolivie"
+    ],
+    "symbolism": "Pierre de l'équilibre, alliant les vertus de l'améthyste et de la citrine.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "L'amétrine est un quartz bicolore qui associe dans un même cristal des zones violettes d'améthyste et jaunes de citrine. Cette coloration résulte de différences d'oxydation du fer selon les secteurs de croissance du cristal. La quasi-totalité de la production naturelle provient de la mine d'Anahí, en Bolivie. Elle est souvent taillée en forme allongée pour mettre en valeur ses deux couleurs.",
+    "imageQueries": [
+      "Ametrine",
+      "Ametrine gemstone",
+      "Ametrine faceted"
+    ],
+    "image": {
+      "src": "/images/gems/ametrine.webp",
+      "width": 800,
+      "height": 450,
+      "title": "Ametrine In Palm.png",
+      "author": "Steven HAuse",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ametrine_In_Palm.png"
+    }
+  },
+  {
+    "slug": "oeil-de-tigre",
+    "name": "Œil-de-tigre",
+    "nameEn": "Tiger's eye",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — quartz",
+    "formula": "SiO₂ (pseudomorphose de crocidolite)",
+    "colors": [
+      "brun",
+      "jaune"
+    ],
+    "hardness": {
+      "min": 6.5,
+      "max": 7
+    },
+    "density": {
+      "min": 2.64,
+      "max": 2.71
+    },
+    "refractiveIndex": {
+      "min": 1.544,
+      "max": 1.553
+    },
+    "deposits": [
+      "Afrique du Sud",
+      "Australie",
+      "Namibie",
+      "Inde",
+      "Myanmar"
+    ],
+    "symbolism": "Pierre de protection et de courage, censée renvoyer le mauvais œil.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "L'œil-de-tigre est un quartz qui a remplacé des fibres de crocidolite (amiante bleue) en conservant leur structure fibreuse. Cette structure produit un reflet lumineux mobile, la chatoyance, qui évoque l'œil d'un félin. Sa couleur jaune-brun dorée résulte de l'oxydation du fer. Il est presque toujours taillé en cabochon ou en perles pour révéler cet effet.",
+    "imageQueries": [
+      "Tiger's eye",
+      "Tigers eye gemstone",
+      "Tiger eye cabochon"
+    ],
+    "image": {
+      "src": "/images/gems/oeil-de-tigre.webp",
+      "width": 800,
+      "height": 623,
+      "title": "Tiger's eye - A.jpg",
+      "author": "Mauro Cateb",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tiger%27s_eye_-_A.jpg"
+    }
+  },
+  {
+    "slug": "agate",
+    "name": "Agate",
+    "nameEn": "Agate",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — calcédoine (quartz microcristallin)",
+    "formula": "SiO₂",
+    "colors": [
+      "multicolore",
+      "gris",
+      "bleu",
+      "brun",
+      "blanc",
+      "rouge"
+    ],
+    "hardness": {
+      "min": 6.5,
+      "max": 7
+    },
+    "density": {
+      "min": 2.55,
+      "max": 2.7
+    },
+    "refractiveIndex": {
+      "min": 1.53,
+      "max": 1.54
+    },
+    "deposits": [
+      "Brésil",
+      "Uruguay",
+      "Inde",
+      "Mexique",
+      "Botswana",
+      "Allemagne"
+    ],
+    "symbolism": "Pierre de l'harmonie et de la stabilité, utilisée comme talisman depuis l'Antiquité.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "L'agate est une calcédoine présentant des bandes concentriques de couleurs variées. Elle se forme par dépôts successifs de silice dans les cavités des roches volcaniques. Son nom viendrait du fleuve Achatès, en Sicile, où elle était récoltée. Idar-Oberstein, en Allemagne, est depuis des siècles un centre majeur de taille et de teinture des agates.",
+    "imageQueries": [
+      "Agate slice polished",
+      "Agate banded",
+      "Agate polished"
+    ],
+    "image": {
+      "src": "/images/gems/agate.webp",
+      "width": 800,
+      "height": 663,
+      "title": "Quartz - Agateplate, bluegrey.JPG",
+      "author": "Ra'ike (see also: de:Benutzer:Ra'ike )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quartz_-_Agateplate,_bluegrey.JPG"
+    }
+  },
+  {
+    "slug": "onyx",
+    "name": "Onyx",
+    "nameEn": "Onyx",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — calcédoine (quartz microcristallin)",
+    "formula": "SiO₂",
+    "colors": [
+      "noir",
+      "blanc"
+    ],
+    "hardness": {
+      "min": 6.5,
+      "max": 7
+    },
+    "density": {
+      "min": 2.55,
+      "max": 2.7
+    },
+    "refractiveIndex": {
+      "min": 1.53,
+      "max": 1.54
+    },
+    "deposits": [
+      "Brésil",
+      "Uruguay",
+      "Inde",
+      "Madagascar"
+    ],
+    "symbolism": "Pierre de la maîtrise de soi et de la force intérieure.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "L'onyx est une calcédoine à bandes parallèles, typiquement noires et blanches. Sa régularité en fait le matériau de prédilection des camées et des intailles. Dans le commerce, l'« onyx noir » uni est le plus souvent une calcédoine teintée. Le nom vient du grec onux, « ongle ».",
+    "imageQueries": [
+      "Onyx gemstone",
+      "Onyx chalcedony",
+      "Black onyx"
+    ],
+    "imageFile": "Black oval onyx cabochons 1.jpg",
+    "image": {
+      "src": "/images/gems/onyx.webp",
+      "width": 800,
+      "height": 450,
+      "title": "Black oval onyx cabochons 1.jpg",
+      "author": "W.carter",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_oval_onyx_cabochons_1.jpg"
+    }
+  },
+  {
+    "slug": "cornaline",
+    "name": "Cornaline",
+    "nameEn": "Carnelian",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — calcédoine (quartz microcristallin)",
+    "formula": "SiO₂",
+    "colors": [
+      "orange",
+      "rouge",
+      "brun"
+    ],
+    "hardness": {
+      "min": 6.5,
+      "max": 7
+    },
+    "density": {
+      "min": 2.55,
+      "max": 2.7
+    },
+    "refractiveIndex": {
+      "min": 1.53,
+      "max": 1.54
+    },
+    "deposits": [
+      "Inde",
+      "Brésil",
+      "Uruguay",
+      "Madagascar"
+    ],
+    "symbolism": "Pierre de la vitalité, de la créativité et de la motivation.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "La cornaline est une calcédoine translucide orange à rouge, colorée par des oxydes de fer. Utilisée dès le Néolithique, elle était très prisée des Égyptiens et des Romains pour les sceaux, car la cire n'y adhère pas. Une grande partie de la cornaline commerciale est de l'agate chauffée ou teintée. Elle est taillée en cabochons, perles et intailles.",
+    "imageQueries": [
+      "Carnelian gemstone",
+      "Carnelian polished",
+      "Carnelian"
+    ],
+    "image": {
+      "src": "/images/gems/cornaline.webp",
+      "width": 800,
+      "height": 800,
+      "title": "Three oval carnelian cabochons 2.jpg",
+      "author": "W.carter",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Three_oval_carnelian_cabochons_2.jpg"
+    }
+  },
+  {
+    "slug": "chrysoprase",
+    "name": "Chrysoprase",
+    "nameEn": "Chrysoprase",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — calcédoine (quartz microcristallin)",
+    "formula": "SiO₂ (Ni)",
+    "colors": [
+      "vert"
+    ],
+    "hardness": {
+      "min": 6.5,
+      "max": 7
+    },
+    "density": {
+      "min": 2.58,
+      "max": 2.64
+    },
+    "refractiveIndex": {
+      "min": 1.53,
+      "max": 1.54
+    },
+    "deposits": [
+      "Australie",
+      "Pologne",
+      "Brésil",
+      "Tanzanie",
+      "Kazakhstan"
+    ],
+    "symbolism": "Pierre du renouveau, de l'optimisme et du cœur.",
+    "birthMonths": [],
+    "priceRange": "moyen",
+    "description": "La chrysoprase est la calcédoine la plus précieuse, d'un vert pomme lumineux dû à des traces de nickel. Les plus belles pierres proviennent aujourd'hui du Queensland, en Australie. Elle était très appréciée en Europe au Moyen Âge et décore notamment la chapelle Saint-Venceslas de Prague. Sa couleur peut pâlir sous une exposition prolongée à la chaleur ou au soleil.",
+    "imageQueries": [
+      "Chrysoprase",
+      "Chrysoprase gemstone",
+      "Chrysoprase polished"
+    ],
+    "image": {
+      "src": "/images/gems/chrysoprase.webp",
+      "width": 800,
+      "height": 799,
+      "title": "Chrysoprase cabochon 1.jpg",
+      "author": "W.carter",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chrysoprase_cabochon_1.jpg"
+    }
+  },
+  {
+    "slug": "heliotrope",
+    "name": "Héliotrope (jaspe sanguin)",
+    "nameEn": "Bloodstone",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — calcédoine (quartz microcristallin)",
+    "formula": "SiO₂",
+    "colors": [
+      "vert",
+      "rouge"
+    ],
+    "hardness": {
+      "min": 6.5,
+      "max": 7
+    },
+    "density": {
+      "min": 2.55,
+      "max": 2.7
+    },
+    "refractiveIndex": {
+      "min": 1.53,
+      "max": 1.54
+    },
+    "deposits": [
+      "Inde",
+      "Brésil",
+      "Australie",
+      "États-Unis"
+    ],
+    "symbolism": "Pierre du courage et de la vitalité ; au Moyen Âge, ses taches rouges symbolisaient le sang du Christ.",
+    "birthMonths": [
+      3
+    ],
+    "priceRange": "bas",
+    "description": "L'héliotrope est une calcédoine vert foncé ponctuée de taches rouges d'oxyde de fer. Les Anciens lui attribuaient le pouvoir d'arrêter les hémorragies, d'où son nom anglais de « bloodstone ». L'Inde en est le principal producteur. Il est taillé en cabochons, chevalières et sceaux.",
+    "imageQueries": [
+      "Bloodstone heliotrope",
+      "Bloodstone gemstone",
+      "Heliotrope mineral"
+    ],
+    "image": {
+      "src": "/images/gems/heliotrope.webp",
+      "width": 800,
+      "height": 695,
+      "title": "Bloodstone 6.jpg",
+      "author": "James St. John",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bloodstone_6.jpg"
+    }
+  },
+  {
+    "slug": "jaspe",
+    "name": "Jaspe",
+    "nameEn": "Jasper",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — calcédoine / quartz microcristallin impur",
+    "formula": "SiO₂ (+ impuretés)",
+    "colors": [
+      "rouge",
+      "brun",
+      "jaune",
+      "vert",
+      "multicolore"
+    ],
+    "hardness": {
+      "min": 6.5,
+      "max": 7
+    },
+    "density": {
+      "min": 2.58,
+      "max": 2.91
+    },
+    "refractiveIndex": {
+      "min": 1.53,
+      "max": 1.54
+    },
+    "deposits": [
+      "Inde",
+      "Australie",
+      "Madagascar",
+      "Brésil",
+      "États-Unis",
+      "Russie"
+    ],
+    "symbolism": "Pierre de l'endurance et de la protection, appelée « nourrice suprême » par les lithothérapeutes.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "Le jaspe est une roche siliceuse opaque, composée de quartz microcristallin chargé d'impuretés minérales qui lui donnent ses couleurs. Le rouge est dû à l'hématite, le jaune et le brun à la goethite. Il présente une infinité de motifs (paysages, orbicules, bandes) qui donnent lieu à de nombreuses appellations commerciales. Il est utilisé depuis la Préhistoire pour l'outillage puis l'ornementation.",
+    "imageQueries": [
+      "Jasper polished",
+      "Red jasper",
+      "Jasper gemstone"
+    ],
+    "imageFile": "Red Jasper Tugaru Nishikiishi Japan IMG 8862.jpg",
+    "image": {
+      "src": "/images/gems/jaspe.webp",
+      "width": 800,
+      "height": 600,
+      "title": "Red Jasper Tugaru Nishikiishi Japan IMG 8862.jpg",
+      "author": "あおもりくま、Aomorikuma",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Jasper_Tugaru_Nishikiishi_Japan_IMG_8862.jpg"
+    }
+  },
+  {
+    "slug": "calcedoine",
+    "name": "Calcédoine bleue",
+    "nameEn": "Blue chalcedony",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — calcédoine (quartz microcristallin)",
+    "formula": "SiO₂",
+    "colors": [
+      "bleu",
+      "gris",
+      "blanc"
+    ],
+    "hardness": {
+      "min": 6.5,
+      "max": 7
+    },
+    "density": {
+      "min": 2.55,
+      "max": 2.7
+    },
+    "refractiveIndex": {
+      "min": 1.53,
+      "max": 1.54
+    },
+    "deposits": [
+      "Namibie",
+      "Malawi",
+      "Turquie",
+      "États-Unis",
+      "Brésil"
+    ],
+    "symbolism": "Pierre de la communication et de l'apaisement.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "La calcédoine est une forme compacte de quartz composée de fibres microscopiques. Le terme désigne en gemmologie surtout la variété translucide uniforme, souvent d'un bleu lavande doux. La Namibie produit une calcédoine bleue réputée, à bandes subtiles. Elle se taille en cabochons et en perles et se prête bien à la gravure.",
+    "imageQueries": [
+      "Blue chalcedony",
+      "Chalcedony gemstone",
+      "Chalcedony"
+    ],
+    "image": {
+      "src": "/images/gems/calcedoine.webp",
+      "width": 800,
+      "height": 800,
+      "title": "Blue high oval chalcedony cabochon 1.jpg",
+      "author": "W.carter",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_high_oval_chalcedony_cabochon_1.jpg"
+    }
+  },
+  {
+    "slug": "sardoine",
+    "name": "Sardonyx",
+    "nameEn": "Sardonyx",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — calcédoine (quartz microcristallin)",
+    "formula": "SiO₂",
+    "colors": [
+      "brun",
+      "rouge",
+      "blanc",
+      "multicolore"
+    ],
+    "hardness": {
+      "min": 6.5,
+      "max": 7
+    },
+    "density": {
+      "min": 2.55,
+      "max": 2.7
+    },
+    "refractiveIndex": {
+      "min": 1.53,
+      "max": 1.54
+    },
+    "deposits": [
+      "Inde",
+      "Brésil",
+      "Uruguay",
+      "Madagascar"
+    ],
+    "symbolism": "Pierre du bonheur conjugal, de la force et de la protection.",
+    "birthMonths": [
+      8
+    ],
+    "priceRange": "bas",
+    "description": "La sardonyx est une calcédoine rubanée qui alterne des couches brun-rouge de sarde et des couches blanches ou noires d'onyx. Les Romains la portaient gravée en sceaux et la croyaient source de courage au combat. Ses couches contrastées en font un support idéal pour les camées. Elle figure parmi les pierres de naissance traditionnelles du mois d'août.",
+    "imageQueries": [
+      "Sardonyx",
+      "Sardonyx gemstone",
+      "Sardonyx cameo stone"
+    ],
+    "imageFile": "Sardonyx illuminated.JPG",
+    "image": {
+      "src": "/images/gems/sardoine.webp",
+      "width": 800,
+      "height": 598,
+      "title": "Sardonyx illuminated.JPG",
+      "author": "Warclachaja",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sardonyx_illuminated.JPG"
+    }
+  },
+  {
+    "slug": "aigue-marine",
+    "name": "Aigue-marine",
+    "nameEn": "Aquamarine",
+    "category": "fine",
+    "family": "Silicates (cyclosilicates) — béryl",
+    "formula": "Be₃Al₂Si₆O₁₈ (Fe)",
+    "colors": [
+      "bleu",
+      "vert"
+    ],
+    "hardness": {
+      "min": 7.5,
+      "max": 8
+    },
+    "density": {
+      "min": 2.66,
+      "max": 2.8
+    },
+    "refractiveIndex": {
+      "min": 1.567,
+      "max": 1.59
+    },
+    "deposits": [
+      "Brésil",
+      "Madagascar",
+      "Mozambique",
+      "Nigeria",
+      "Pakistan",
+      "Afghanistan"
+    ],
+    "symbolism": "Pierre des marins, symbole de sérénité, de jeunesse et de fidélité.",
+    "birthMonths": [
+      3
+    ],
+    "priceRange": "moyen",
+    "description": "L'aigue-marine est la variété bleue à bleu-vert du béryl, colorée par le fer. Son nom vient du latin aqua marina, « eau de mer ». Elle forme souvent de grands cristaux prismatiques très purs, ce qui permet de tailler des pierres importantes et sans inclusion visible. La plupart des pierres sont chauffées pour éliminer la composante verte et obtenir un bleu pur.",
+    "imageQueries": [
+      "Aquamarine gemstone faceted",
+      "Aquamarine crystal beryl",
+      "Aquamarine cut"
+    ],
+    "image": {
+      "src": "/images/gems/aigue-marine.webp",
+      "width": 800,
+      "height": 927,
+      "title": "Dom Pedro Aquamarine cut by Bernd Munsteiner.jpg",
+      "author": "Cut By Munsteiner, Bernd",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dom_Pedro_Aquamarine_cut_by_Bernd_Munsteiner.jpg"
+    }
+  },
+  {
+    "slug": "morganite",
+    "name": "Morganite",
+    "nameEn": "Morganite",
+    "category": "fine",
+    "family": "Silicates (cyclosilicates) — béryl",
+    "formula": "Be₃Al₂Si₆O₁₈ (Mn)",
+    "colors": [
+      "rose",
+      "orange"
+    ],
+    "hardness": {
+      "min": 7.5,
+      "max": 8
+    },
+    "density": {
+      "min": 2.71,
+      "max": 2.9
+    },
+    "refractiveIndex": {
+      "min": 1.572,
+      "max": 1.6
+    },
+    "deposits": [
+      "Madagascar",
+      "Brésil",
+      "Mozambique",
+      "Afghanistan",
+      "États-Unis (Californie)"
+    ],
+    "symbolism": "Pierre de l'amour bienveillant et de la compassion.",
+    "birthMonths": [],
+    "priceRange": "moyen",
+    "description": "La morganite est la variété rose à pêche du béryl, colorée par le manganèse. Elle a été nommée en 1911 en l'honneur du banquier et collectionneur américain J. P. Morgan. Ses teintes douces et sa bonne dureté en font une pierre appréciée pour les bagues de fiançailles. Les tons pêche sont souvent chauffés pour obtenir un rose plus pur.",
+    "imageQueries": [
+      "Morganite gemstone",
+      "Morganite beryl",
+      "Morganite faceted"
+    ],
+    "image": {
+      "src": "/images/gems/morganite.webp",
+      "width": 800,
+      "height": 592,
+      "title": "Beryl-Quartz-morganite brazil1.jpg",
+      "author": "Robert M. Lavinsky",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beryl-Quartz-morganite_brazil1.jpg"
+    }
+  },
+  {
+    "slug": "heliodore",
+    "name": "Héliodore",
+    "nameEn": "Heliodor",
+    "category": "fine",
+    "family": "Silicates (cyclosilicates) — béryl",
+    "formula": "Be₃Al₂Si₆O₁₈ (Fe)",
+    "colors": [
+      "jaune",
+      "vert"
+    ],
+    "hardness": {
+      "min": 7.5,
+      "max": 8
+    },
+    "density": {
+      "min": 2.66,
+      "max": 2.8
+    },
+    "refractiveIndex": {
+      "min": 1.567,
+      "max": 1.59
+    },
+    "deposits": [
+      "Brésil",
+      "Namibie",
+      "Ukraine",
+      "Madagascar",
+      "Russie"
+    ],
+    "symbolism": "Pierre solaire (du grec « don du soleil »), symbole de chaleur et de rayonnement.",
+    "birthMonths": [],
+    "priceRange": "moyen",
+    "description": "L'héliodore est le béryl jaune doré à jaune-vert, coloré par le fer. Son nom fut donné au début du XXᵉ siècle à des pierres découvertes en Namibie. On le désigne aussi plus largement sous le nom de « béryl doré ». Il est généralement très pur et se taille en facettes pour mettre en valeur son éclat.",
+    "imageQueries": [
+      "Heliodor",
+      "Heliodor beryl",
+      "Golden beryl"
+    ],
+    "image": {
+      "src": "/images/gems/heliodore.webp",
+      "width": 800,
+      "height": 800,
+      "title": "Heliodore beryl-MCG 79777-IMG 7498-white.jpg",
+      "author": "Rama",
+      "license": "CC BY-SA 3.0 fr",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heliodore_beryl-MCG_79777-IMG_7498-white.jpg"
+    }
+  },
+  {
+    "slug": "topaze",
+    "name": "Topaze",
+    "nameEn": "Topaz",
+    "category": "fine",
+    "family": "Silicates (nésosilicates) — topaze",
+    "formula": "Al₂SiO₄(F,OH)₂",
+    "colors": [
+      "incolore",
+      "jaune",
+      "orange",
+      "bleu",
+      "rose",
+      "brun"
+    ],
+    "hardness": {
+      "min": 8,
+      "max": 8
+    },
+    "density": {
+      "min": 3.49,
+      "max": 3.57
+    },
+    "refractiveIndex": {
+      "min": 1.609,
+      "max": 1.643
+    },
+    "deposits": [
+      "Brésil",
+      "Pakistan",
+      "Sri Lanka",
+      "Russie",
+      "Nigeria",
+      "Mexique"
+    ],
+    "symbolism": "Pierre de la force, de l'amitié et de la sagesse.",
+    "birthMonths": [
+      11
+    ],
+    "priceRange": "moyen",
+    "description": "La topaze est un silicate d'aluminium fluoré qui forme des cristaux prismatiques parfois énormes. Incolore à l'état pur, elle prend des teintes jaunes, orangées, roses ou bleues. La « topaze impériale » orange-rosé de la région d'Ouro Preto, au Brésil, est la plus précieuse. La topaze bleue très courante sur le marché est presque toujours une topaze incolore irradiée puis chauffée.",
+    "imageQueries": [
+      "Topaz gemstone faceted",
+      "Topaz crystal",
+      "Imperial topaz"
+    ],
+    "image": {
+      "src": "/images/gems/topaze.webp",
+      "width": 800,
+      "height": 603,
+      "title": "TOPAZE9.jpg",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:TOPAZE9.jpg"
+    }
+  },
+  {
+    "slug": "grenat-almandin",
+    "name": "Grenat almandin",
+    "nameEn": "Almandine garnet",
+    "category": "fine",
+    "family": "Silicates (nésosilicates) — grenat (almandin)",
+    "formula": "Fe₃Al₂(SiO₄)₃",
+    "colors": [
+      "rouge",
+      "violet",
+      "brun"
+    ],
+    "hardness": {
+      "min": 7,
+      "max": 7.5
+    },
+    "density": {
+      "min": 3.93,
+      "max": 4.3
+    },
+    "refractiveIndex": {
+      "min": 1.76,
+      "max": 1.82
+    },
+    "deposits": [
+      "Inde",
+      "Sri Lanka",
+      "Brésil",
+      "Madagascar",
+      "Tanzanie"
+    ],
+    "symbolism": "Pierre de la loyauté, de l'amitié et de l'énergie ; elle protégeait les voyageurs.",
+    "birthMonths": [
+      1
+    ],
+    "priceRange": "bas",
+    "description": "L'almandin est le grenat le plus commun, d'un rouge profond souvent teinté de violet ou de brun. Il est riche en fer, ce qui lui confère une densité élevée. Très utilisé dans l'orfèvrerie mérovingienne en cloisonné, il ornait les bijoux des élites du haut Moyen Âge. Les pierres très foncées sont souvent taillées en cabochons creusés au dos pour s'éclaircir.",
+    "imageQueries": [
+      "Almandine garnet",
+      "Almandine crystal",
+      "Almandine gemstone"
+    ],
+    "image": {
+      "src": "/images/gems/grenat-almandin.webp",
+      "width": 800,
+      "height": 600,
+      "title": "Almandine garnet from Ústup, Czech Republic.jpg",
+      "author": "Zbynek Burival",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Almandine_garnet_from_%C3%9Astup,_Czech_Republic.jpg"
+    }
+  },
+  {
+    "slug": "grenat-pyrope",
+    "name": "Grenat pyrope",
+    "nameEn": "Pyrope garnet",
+    "category": "fine",
+    "family": "Silicates (nésosilicates) — grenat (pyrope)",
+    "formula": "Mg₃Al₂(SiO₄)₃",
+    "colors": [
+      "rouge"
+    ],
+    "hardness": {
+      "min": 7,
+      "max": 7.5
+    },
+    "density": {
+      "min": 3.62,
+      "max": 3.87
+    },
+    "refractiveIndex": {
+      "min": 1.714,
+      "max": 1.742
+    },
+    "deposits": [
+      "République tchèque (Bohême)",
+      "Afrique du Sud",
+      "États-Unis (Arizona)",
+      "Tanzanie",
+      "Madagascar"
+    ],
+    "symbolism": "Pierre du feu intérieur (du grec pyropos, « aux yeux de feu »), de la passion et de la vitalité.",
+    "birthMonths": [
+      1
+    ],
+    "priceRange": "bas",
+    "description": "Le pyrope est un grenat magnésien d'un rouge sang souvent très pur. Le « grenat de Bohême » fut au XIXᵉ siècle l'objet d'une importante industrie joaillière en Europe centrale. Il se forme à grande profondeur dans le manteau terrestre et accompagne parfois le diamant dans les kimberlites. Ses cristaux sont généralement petits.",
+    "imageQueries": [
+      "Pyrope garnet",
+      "Pyrope",
+      "Pyrope gemstone"
+    ],
+    "image": {
+      "src": "/images/gems/grenat-pyrope.webp",
+      "width": 800,
+      "height": 674,
+      "title": "Grenat pyrope 1.jpg",
+      "author": "Géry PARENT",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grenat_pyrope_1.jpg"
+    }
+  },
+  {
+    "slug": "grenat-rhodolite",
+    "name": "Grenat rhodolite",
+    "nameEn": "Rhodolite garnet",
+    "category": "fine",
+    "family": "Silicates (nésosilicates) — grenat (pyrope-almandin)",
+    "formula": "(Mg,Fe)₃Al₂(SiO₄)₃",
+    "colors": [
+      "rose",
+      "rouge",
+      "violet"
+    ],
+    "hardness": {
+      "min": 7,
+      "max": 7.5
+    },
+    "density": {
+      "min": 3.74,
+      "max": 3.94
+    },
+    "refractiveIndex": {
+      "min": 1.75,
+      "max": 1.78
+    },
+    "deposits": [
+      "Tanzanie",
+      "Kenya",
+      "Inde",
+      "Sri Lanka",
+      "Brésil",
+      "Madagascar"
+    ],
+    "symbolism": "Pierre de l'inspiration et de l'affection.",
+    "birthMonths": [
+      1
+    ],
+    "priceRange": "moyen",
+    "description": "La rhodolite est un grenat intermédiaire entre le pyrope et l'almandin, de couleur rose framboise à rouge violacé. Son nom évoque la rose (rhodon en grec) et le rhododendron. Elle a été décrite pour la première fois en Caroline du Nord à la fin du XIXᵉ siècle. Plus claire et plus lumineuse que l'almandin, elle se taille facilement en facettes.",
+    "imageQueries": [
+      "Rhodolite garnet",
+      "Rhodolite",
+      "Rhodolite gemstone"
+    ],
+    "image": {
+      "src": "/images/gems/grenat-rhodolite.webp",
+      "width": 800,
+      "height": 593,
+      "title": "Rhodolite in Matrix-Garnet Group Magnesium iron aluminum silicate Macon County North Carolina 2904.jpg",
+      "author": "Dave Dyet",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rhodolite_in_Matrix-Garnet_Group_Magnesium_iron_aluminum_silicate_Macon_County_North_Carolina_2904.jpg"
+    }
+  },
+  {
+    "slug": "tsavorite",
+    "name": "Tsavorite",
+    "nameEn": "Tsavorite",
+    "category": "fine",
+    "family": "Silicates (nésosilicates) — grenat (grossulaire)",
+    "formula": "Ca₃Al₂(SiO₄)₃ (V, Cr)",
+    "colors": [
+      "vert"
+    ],
+    "hardness": {
+      "min": 7,
+      "max": 7.5
+    },
+    "density": {
+      "min": 3.57,
+      "max": 3.73
+    },
+    "refractiveIndex": {
+      "min": 1.734,
+      "max": 1.759
+    },
+    "deposits": [
+      "Kenya",
+      "Tanzanie",
+      "Madagascar"
+    ],
+    "symbolism": "Pierre de la prospérité et de la vitalité.",
+    "birthMonths": [],
+    "priceRange": "eleve",
+    "description": "La tsavorite est un grossulaire vert vif coloré par le vanadium et le chrome. Elle a été découverte en Tanzanie en 1967 par le géologue Campbell Bridges, puis au Kenya près du parc national de Tsavo, qui lui a donné son nom. Plus brillante que l'émeraude et rarement traitée, elle est cependant rarement trouvée en pierres de plus de quelques carats. Elle a été popularisée par la maison Tiffany & Co. dans les années 1970.",
+    "imageQueries": [
+      "Tsavorite",
+      "Tsavorite garnet",
+      "Tsavorite gemstone"
+    ],
+    "imageFile": "Faceted tsavorite garnets, Tanzania.jpg",
+    "image": {
+      "src": "/images/gems/tsavorite.webp",
+      "width": 800,
+      "height": 800,
+      "title": "Faceted tsavorite garnets, Tanzania.jpg",
+      "author": "Adam Kelliher / Rubble Rock and Gem",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Faceted_tsavorite_garnets,_Tanzania.jpg"
+    }
+  },
+  {
+    "slug": "grenat-demantoide",
+    "name": "Grenat démantoïde",
+    "nameEn": "Demantoid garnet",
+    "category": "fine",
+    "family": "Silicates (nésosilicates) — grenat (andradite)",
+    "formula": "Ca₃Fe₂(SiO₄)₃ (Cr)",
+    "colors": [
+      "vert",
+      "jaune"
+    ],
+    "hardness": {
+      "min": 6.5,
+      "max": 7
+    },
+    "density": {
+      "min": 3.81,
+      "max": 3.87
+    },
+    "refractiveIndex": {
+      "min": 1.88,
+      "max": 1.889
+    },
+    "deposits": [
+      "Russie (Oural)",
+      "Namibie",
+      "Madagascar",
+      "Iran",
+      "Italie"
+    ],
+    "symbolism": "Pierre de l'éclat et de la confiance, autrefois prisée des joailliers de la cour impériale russe.",
+    "birthMonths": [],
+    "priceRange": "eleve",
+    "description": "Le démantoïde est une andradite verte dont la dispersion lumineuse surpasse celle du diamant, d'où son nom qui signifie « semblable au diamant ». Découvert dans l'Oural vers 1850, il fut très prisé par Carl Fabergé. Les pierres de l'Oural contiennent souvent des inclusions fibreuses dites « en queue de cheval », très recherchées. Les grands démantoïdes de qualité sont rares et chers.",
+    "imageQueries": [
+      "Demantoid garnet",
+      "Demantoid",
+      "Andradite demantoid"
+    ],
+    "imageFile": "Byssolite \"ponytail\" in the Ural demantoid.jpg",
+    "image": {
+      "src": "/images/gems/grenat-demantoide.webp",
+      "width": 800,
+      "height": 800,
+      "title": "Byssolite \"ponytail\" in the Ural demantoid.jpg",
+      "author": "Dr Anatoly",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Byssolite_%22ponytail%22_in_the_Ural_demantoid.jpg"
+    }
+  },
+  {
+    "slug": "grenat-spessartite",
+    "name": "Grenat spessartite",
+    "nameEn": "Spessartine garnet",
+    "category": "fine",
+    "family": "Silicates (nésosilicates) — grenat (spessartine)",
+    "formula": "Mn₃Al₂(SiO₄)₃",
+    "colors": [
+      "orange",
+      "rouge",
+      "jaune"
+    ],
+    "hardness": {
+      "min": 7,
+      "max": 7.5
+    },
+    "density": {
+      "min": 4.12,
+      "max": 4.2
+    },
+    "refractiveIndex": {
+      "min": 1.79,
+      "max": 1.82
+    },
+    "deposits": [
+      "Namibie",
+      "Nigeria",
+      "Brésil",
+      "Madagascar",
+      "Tanzanie",
+      "Chine"
+    ],
+    "symbolism": "Pierre de la créativité et de l'enthousiasme.",
+    "birthMonths": [],
+    "priceRange": "moyen",
+    "description": "La spessartite est un grenat manganésifère d'un orange vif à rouge orangé. Son nom vient du massif du Spessart, en Allemagne, où elle a été décrite. Les pierres orange « mandarine » découvertes en Namibie dans les années 1990 ont relancé l'intérêt pour cette espèce. Elle présente une forte brillance et une belle dispersion.",
+    "imageQueries": [
+      "Spessartine garnet",
+      "Spessartine",
+      "Spessartite"
+    ],
+    "image": {
+      "src": "/images/gems/grenat-spessartite.webp",
+      "width": 800,
+      "height": 799,
+      "title": "Garnet var. Spessartine, Putian City, Putian Prefecture, Fujian Province, China.jpg",
+      "author": "JJ Harrison",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garnet_var._Spessartine,_Putian_City,_Putian_Prefecture,_Fujian_Province,_China.jpg"
+    }
+  },
+  {
+    "slug": "grenat-hessonite",
+    "name": "Grenat hessonite",
+    "nameEn": "Hessonite garnet",
+    "category": "fine",
+    "family": "Silicates (nésosilicates) — grenat (grossulaire)",
+    "formula": "Ca₃Al₂(SiO₄)₃ (Fe, Mn)",
+    "colors": [
+      "orange",
+      "brun",
+      "jaune"
+    ],
+    "hardness": {
+      "min": 7,
+      "max": 7.5
+    },
+    "density": {
+      "min": 3.57,
+      "max": 3.73
+    },
+    "refractiveIndex": {
+      "min": 1.742,
+      "max": 1.748
+    },
+    "deposits": [
+      "Sri Lanka",
+      "Inde",
+      "Madagascar",
+      "Tanzanie",
+      "Brésil"
+    ],
+    "symbolism": "Dans l'astrologie védique, « gomedh » associée à Rahu, censée apporter succès et protection.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "L'hessonite est un grossulaire orange à brun-rouge, coloré par le fer et le manganèse, parfois appelé « pierre de cannelle ». Elle présente souvent un aspect intérieur huileux ou « en mélasse » caractéristique, dû à de nombreuses petites inclusions. Le Sri Lanka en est la source historique. Elle occupe une place importante dans la joaillerie et la tradition astrologique indiennes.",
+    "imageQueries": [
+      "Hessonite",
+      "Hessonite garnet",
+      "Grossular hessonite"
+    ],
+    "image": {
+      "src": "/images/gems/grenat-hessonite.webp",
+      "width": 800,
+      "height": 800,
+      "title": "Hessonite. Jesenik, Czech Republic-8871.jpg",
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hessonite._Jesenik,_Czech_Republic-8871.jpg"
+    }
+  },
+  {
+    "slug": "opale",
+    "name": "Opale",
+    "nameEn": "Opal",
+    "category": "fine",
+    "family": "Minéraloïde — silice hydratée amorphe",
+    "formula": "SiO₂·nH₂O",
+    "colors": [
+      "multicolore",
+      "blanc",
+      "noir",
+      "orange",
+      "bleu"
+    ],
+    "hardness": {
+      "min": 5.5,
+      "max": 6.5
+    },
+    "density": {
+      "min": 1.98,
+      "max": 2.25
+    },
+    "refractiveIndex": {
+      "min": 1.37,
+      "max": 1.47
+    },
+    "deposits": [
+      "Australie",
+      "Éthiopie",
+      "Mexique",
+      "Brésil",
+      "États-Unis"
+    ],
+    "symbolism": "Pierre de l'inspiration, de l'espoir et de la créativité.",
+    "birthMonths": [
+      10
+    ],
+    "priceRange": "moyen",
+    "description": "L'opale est une silice amorphe contenant de 3 à 21 % d'eau. L'opale noble présente un jeu de couleurs irisées dû à la diffraction de la lumière par un empilement régulier de microsphères de silice. L'Australie fournit l'essentiel de la production mondiale, notamment l'opale noire de Lightning Ridge. L'opale de feu mexicaine, orange vif, peut être transparente et se tailler en facettes. Sensible aux chocs et à la déshydratation, elle demande des précautions.",
+    "imageQueries": [
+      "Opal gemstone",
+      "Precious opal",
+      "Black opal Lightning Ridge"
+    ],
+    "image": {
+      "src": "/images/gems/opale.webp",
+      "width": 800,
+      "height": 616,
+      "title": "58.05ct Lambina Black Opal Rough Gemstone.JPG",
+      "author": "Danmekis",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:58.05ct_Lambina_Black_Opal_Rough_Gemstone.JPG"
+    }
+  },
+  {
+    "slug": "peridot",
+    "name": "Péridot",
+    "nameEn": "Peridot",
+    "category": "fine",
+    "family": "Silicates (nésosilicates) — olivine (forstérite)",
+    "formula": "(Mg,Fe)₂SiO₄",
+    "colors": [
+      "vert",
+      "jaune"
+    ],
+    "hardness": {
+      "min": 6.5,
+      "max": 7
+    },
+    "density": {
+      "min": 3.27,
+      "max": 3.48
+    },
+    "refractiveIndex": {
+      "min": 1.654,
+      "max": 1.69
+    },
+    "deposits": [
+      "Pakistan",
+      "Myanmar",
+      "États-Unis (Arizona)",
+      "Chine",
+      "Viêt Nam",
+      "Égypte"
+    ],
+    "symbolism": "Pierre de la lumière et de la bienveillance, que les Égyptiens appelaient « pierre du soleil ».",
+    "birthMonths": [
+      8
+    ],
+    "priceRange": "moyen",
+    "description": "Le péridot est la variété gemme de l'olivine, d'un vert olive à vert-jaune dû au fer. C'est l'une des rares gemmes qui n'existe qu'en une seule couleur. Il se forme dans le manteau terrestre et remonte avec les laves basaltiques ; on en a même trouvé dans des météorites. L'île égyptienne de Zabargad, en mer Rouge, en est la source historique exploitée depuis l'Antiquité.",
+    "imageQueries": [
+      "Peridot gemstone faceted",
+      "Peridot",
+      "Peridot olivine gem"
+    ],
+    "image": {
+      "src": "/images/gems/peridot.webp",
+      "width": 800,
+      "height": 533,
+      "title": "Peridot with ludwigite inclusion - faceted gemstone peridot from Pakistan.jpg",
+      "author": "AdamStejskal",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peridot_with_ludwigite_inclusion_-_faceted_gemstone_peridot_from_Pakistan.jpg"
+    }
+  },
+  {
+    "slug": "tourmaline",
+    "name": "Tourmaline",
+    "nameEn": "Tourmaline",
+    "category": "fine",
+    "family": "Silicates (cyclosilicates) — tourmaline (elbaïte)",
+    "formula": "Na(Li,Al)₃Al₆(BO₃)₃Si₆O₁₈(OH)₄",
+    "colors": [
+      "rose",
+      "vert",
+      "bleu",
+      "rouge",
+      "jaune",
+      "noir",
+      "multicolore"
+    ],
+    "hardness": {
+      "min": 7,
+      "max": 7.5
+    },
+    "density": {
+      "min": 3,
+      "max": 3.26
+    },
+    "refractiveIndex": {
+      "min": 1.624,
+      "max": 1.644
+    },
+    "deposits": [
+      "Brésil",
+      "Afghanistan",
+      "Mozambique",
+      "Nigeria",
+      "Madagascar",
+      "États-Unis (Californie)",
+      "Namibie"
+    ],
+    "symbolism": "Pierre de la réconciliation et de l'équilibre émotionnel.",
+    "birthMonths": [
+      10
+    ],
+    "priceRange": "moyen",
+    "description": "La tourmaline est un groupe de borosilicates complexes qui offre la plus grande variété de couleurs de toutes les gemmes. Un même cristal peut être zoné de plusieurs teintes, comme la tourmaline « melon d'eau » rose au cœur et verte en périphérie. Elle est pyroélectrique et piézoélectrique : chauffée ou frottée, elle attire les poussières. La rubellite (rose-rouge) et l'indicolite (bleue) sont ses variétés les plus recherchées.",
+    "imageQueries": [
+      "Tourmaline gemstone faceted",
+      "Tourmaline crystal elbaite",
+      "Watermelon tourmaline"
+    ],
+    "image": {
+      "src": "/images/gems/tourmaline.webp",
+      "width": 800,
+      "height": 710,
+      "title": "Tourmaline collection.jpg",
+      "author": "Eurico Zimbres Zimbres",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tourmaline_collection.jpg"
+    }
+  },
+  {
+    "slug": "tourmaline-paraiba",
+    "name": "Tourmaline Paraíba",
+    "nameEn": "Paraíba tourmaline",
+    "category": "fine",
+    "family": "Silicates (cyclosilicates) — tourmaline (elbaïte cuprifère)",
+    "formula": "Na(Li,Al)₃Al₆(BO₃)₃Si₆O₁₈(OH)₄ (Cu)",
+    "colors": [
+      "bleu",
+      "vert"
+    ],
+    "hardness": {
+      "min": 7,
+      "max": 7.5
+    },
+    "density": {
+      "min": 3,
+      "max": 3.26
+    },
+    "refractiveIndex": {
+      "min": 1.624,
+      "max": 1.644
+    },
+    "deposits": [
+      "Brésil (Paraíba)",
+      "Mozambique",
+      "Nigeria"
+    ],
+    "symbolism": "Pierre de la joie et de la clarté d'esprit.",
+    "birthMonths": [],
+    "priceRange": "eleve",
+    "description": "La tourmaline Paraíba est une elbaïte colorée par le cuivre, au bleu-vert « néon » d'une intensité unique. Découverte à la fin des années 1980 dans l'État brésilien de Paraíba, elle a immédiatement atteint des prix records. Des gisements semblables ont ensuite été trouvés au Nigeria et au Mozambique. Les pierres de plus d'un carat sont extrêmement rares.",
+    "imageQueries": [
+      "Paraiba tourmaline",
+      "Cuprian elbaite",
+      "Paraíba tourmaline gem"
+    ],
+    "image": {
+      "src": "/images/gems/tourmaline-paraiba.webp",
+      "width": 800,
+      "height": 874,
+      "title": "Tourmalines paraïba (Brésil).JPG",
+      "author": "Parent Géry",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tourmalines_para%C3%AFba_(Br%C3%A9sil).JPG"
+    }
+  },
+  {
+    "slug": "tanzanite",
+    "name": "Tanzanite",
+    "nameEn": "Tanzanite",
+    "category": "fine",
+    "family": "Silicates (sorosilicates) — zoïsite",
+    "formula": "Ca₂Al₃(SiO₄)(Si₂O₇)O(OH)",
+    "colors": [
+      "bleu",
+      "violet"
+    ],
+    "hardness": {
+      "min": 6,
+      "max": 7
+    },
+    "density": {
+      "min": 3.1,
+      "max": 3.45
+    },
+    "refractiveIndex": {
+      "min": 1.691,
+      "max": 1.7
+    },
+    "deposits": [
+      "Tanzanie"
+    ],
+    "symbolism": "Pierre de la transformation et de l'intuition.",
+    "birthMonths": [
+      12
+    ],
+    "priceRange": "moyen",
+    "description": "La tanzanite est la variété bleu-violet de la zoïsite, colorée par le vanadium. Elle n'est exploitée que sur un petit territoire près de Merelani, au pied du Kilimandjaro, en Tanzanie. Découverte en 1967, elle a été baptisée et lancée par Tiffany & Co. Très pléochroïque, elle montre du bleu, du violet et du brun-jaune selon l'angle d'observation ; la plupart des pierres sont chauffées pour éliminer la composante brune.",
+    "imageQueries": [
+      "Tanzanite gemstone",
+      "Tanzanite crystal",
+      "Tanzanite faceted"
+    ],
+    "image": {
+      "src": "/images/gems/tanzanite.webp",
+      "width": 800,
+      "height": 600,
+      "title": "Rough Tanzanite Gemstone from Mirerani.jpg",
+      "author": "Rcdrun",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rough_Tanzanite_Gemstone_from_Mirerani.jpg"
+    }
+  },
+  {
+    "slug": "spinelle",
+    "name": "Spinelle",
+    "nameEn": "Spinel",
+    "category": "fine",
+    "family": "Oxydes — spinelle",
+    "formula": "MgAl₂O₄",
+    "colors": [
+      "rouge",
+      "rose",
+      "bleu",
+      "violet",
+      "orange",
+      "noir"
+    ],
+    "hardness": {
+      "min": 7.5,
+      "max": 8
+    },
+    "density": {
+      "min": 3.57,
+      "max": 3.7
+    },
+    "refractiveIndex": {
+      "min": 1.71,
+      "max": 1.735
+    },
+    "deposits": [
+      "Myanmar",
+      "Sri Lanka",
+      "Tanzanie",
+      "Tadjikistan",
+      "Viêt Nam",
+      "Madagascar"
+    ],
+    "symbolism": "Pierre de la revitalisation et de l'espoir.",
+    "birthMonths": [
+      8
+    ],
+    "priceRange": "moyen",
+    "description": "Le spinelle est un oxyde de magnésium et d'aluminium qui se présente dans une large palette de couleurs. Longtemps confondu avec le rubis, il orne plusieurs joyaux historiques, comme le « rubis du Prince Noir » de la couronne impériale britannique. Monoréfringent et rarement traité, il est aujourd'hui très apprécié des connaisseurs. Le spinelle rouge du Myanmar et le spinelle « jedi » rose néon sont les plus recherchés.",
+    "imageQueries": [
+      "Spinel gemstone faceted",
+      "Spinel crystal",
+      "Red spinel"
+    ],
+    "imageFile": "Spinel-tuc1010c.jpg",
+    "image": {
+      "src": "/images/gems/spinelle.webp",
+      "width": 800,
+      "height": 465,
+      "title": "Spinel-tuc1010c.jpg",
+      "author": "Robert M. Lavinsky",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spinel-tuc1010c.jpg"
+    }
+  },
+  {
+    "slug": "alexandrite",
+    "name": "Alexandrite",
+    "nameEn": "Alexandrite",
+    "category": "fine",
+    "family": "Oxydes — chrysobéryl",
+    "formula": "BeAl₂O₄ (Cr)",
+    "colors": [
+      "vert",
+      "rouge",
+      "violet"
+    ],
+    "hardness": {
+      "min": 8.5,
+      "max": 8.5
+    },
+    "density": {
+      "min": 3.71,
+      "max": 3.75
+    },
+    "refractiveIndex": {
+      "min": 1.746,
+      "max": 1.755
+    },
+    "deposits": [
+      "Russie (Oural)",
+      "Brésil",
+      "Sri Lanka",
+      "Inde",
+      "Tanzanie",
+      "Madagascar"
+    ],
+    "symbolism": "Pierre de la chance et de l'équilibre entre le monde physique et spirituel.",
+    "birthMonths": [
+      6
+    ],
+    "priceRange": "eleve",
+    "description": "L'alexandrite est une variété de chrysobéryl qui change de couleur : verte à la lumière du jour, elle devient rouge pourpre sous une lumière incandescente. Ce phénomène est dû au chrome, qui absorbe la lumière de façon à équilibrer le vert et le rouge. Découverte dans l'Oural dans les années 1830, elle a été nommée en l'honneur du futur tsar Alexandre II. Ses couleurs reprenant celles de l'armée impériale russe, elle devint pierre nationale de la Russie.",
+    "imageQueries": [
+      "Alexandrite",
+      "Alexandrite gemstone",
+      "Alexandrite chrysoberyl"
+    ],
+    "image": {
+      "src": "/images/gems/alexandrite.webp",
+      "width": 800,
+      "height": 377,
+      "title": "Alexandrite 26.75cts.jpg",
+      "author": "Original uploader was User: at en.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alexandrite_26.75cts.jpg"
+    }
+  },
+  {
+    "slug": "chrysoberyl-oeil-de-chat",
+    "name": "Chrysobéryl œil-de-chat",
+    "nameEn": "Cat's eye chrysoberyl",
+    "category": "fine",
+    "family": "Oxydes — chrysobéryl",
+    "formula": "BeAl₂O₄",
+    "colors": [
+      "jaune",
+      "vert",
+      "brun"
+    ],
+    "hardness": {
+      "min": 8.5,
+      "max": 8.5
+    },
+    "density": {
+      "min": 3.71,
+      "max": 3.75
+    },
+    "refractiveIndex": {
+      "min": 1.746,
+      "max": 1.755
+    },
+    "deposits": [
+      "Sri Lanka",
+      "Brésil",
+      "Inde",
+      "Madagascar",
+      "Tanzanie"
+    ],
+    "symbolism": "Pierre de protection contre le mauvais œil et porte-bonheur dans la tradition indienne.",
+    "birthMonths": [],
+    "priceRange": "eleve",
+    "description": "Le chrysobéryl œil-de-chat, ou cymophane, présente une chatoyance très nette : un fin trait lumineux qui ondule à la surface du cabochon. Cet effet est produit par d'innombrables inclusions aciculaires parallèles. Les plus belles pierres, couleur miel avec une ligne nette et un effet « lait et miel », viennent du Sri Lanka. C'est la seule gemme que l'on appelle simplement « œil-de-chat » sans autre précision.",
+    "imageQueries": [
+      "Cat's eye chrysoberyl",
+      "Chrysoberyl cat's eye",
+      "Chrysoberyl"
+    ],
+    "image": {
+      "src": "/images/gems/chrysoberyl-oeil-de-chat.webp",
+      "width": 800,
+      "height": 781,
+      "title": "Chrysoberyl-cut.jpg",
+      "author": "Zimbres",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chrysoberyl-cut.jpg"
+    }
+  },
+  {
+    "slug": "zircon",
+    "name": "Zircon",
+    "nameEn": "Zircon",
+    "category": "fine",
+    "family": "Silicates (nésosilicates) — zircon",
+    "formula": "ZrSiO₄",
+    "colors": [
+      "bleu",
+      "incolore",
+      "jaune",
+      "brun",
+      "rouge",
+      "vert"
+    ],
+    "hardness": {
+      "min": 6,
+      "max": 7.5
+    },
+    "density": {
+      "min": 3.9,
+      "max": 4.73
+    },
+    "refractiveIndex": {
+      "min": 1.78,
+      "max": 2.024
+    },
+    "deposits": [
+      "Sri Lanka",
+      "Cambodge",
+      "Myanmar",
+      "Tanzanie",
+      "Australie",
+      "Viêt Nam"
+    ],
+    "symbolism": "Pierre de la sagesse, de l'honneur et de la prospérité.",
+    "birthMonths": [
+      12
+    ],
+    "priceRange": "moyen",
+    "description": "Le zircon est un minéral naturel à ne pas confondre avec la zircone cubique, une imitation synthétique du diamant. Son éclat adamantin et sa forte dispersion le rapprochent pourtant visuellement du diamant. Certains cristaux australiens datés de 4,4 milliards d'années sont les plus vieux fragments connus de la croûte terrestre. Le zircon bleu, très populaire, est obtenu par chauffage de zircons bruns du Cambodge.",
+    "imageQueries": [
+      "Zircon gemstone faceted",
+      "Zircon crystal",
+      "Blue zircon"
+    ],
+    "imageFile": "Zircon (GeoDIL number - 255).jpg",
+    "image": {
+      "src": "/images/gems/zircon.webp",
+      "width": 800,
+      "height": 667,
+      "title": "Zircon (GeoDIL number - 255).jpg",
+      "author": "Shannon Heinle",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zircon_(GeoDIL_number_-_255).jpg"
+    }
+  },
+  {
+    "slug": "jade-jadeite",
+    "name": "Jade (jadéite)",
+    "nameEn": "Jadeite jade",
+    "category": "fine",
+    "family": "Silicates (inosilicates) — pyroxène (jadéite)",
+    "formula": "NaAlSi₂O₆",
+    "colors": [
+      "vert",
+      "blanc",
+      "violet",
+      "jaune",
+      "noir"
+    ],
+    "hardness": {
+      "min": 6.5,
+      "max": 7
+    },
+    "density": {
+      "min": 3.25,
+      "max": 3.4
+    },
+    "refractiveIndex": {
+      "min": 1.652,
+      "max": 1.688
+    },
+    "deposits": [
+      "Myanmar",
+      "Guatemala",
+      "Japon",
+      "Russie"
+    ],
+    "symbolism": "En Chine, pierre de l'immortalité, de la vertu et de la noblesse ; chez les Mayas, pierre sacrée.",
+    "birthMonths": [],
+    "priceRange": "eleve",
+    "description": "La jadéite est l'une des deux roches désignées par le terme « jade », avec la néphrite. C'est un agrégat très tenace de cristaux de pyroxène imbriqués, ce qui la rend extrêmement résistante aux chocs. La variété « impériale », d'un vert émeraude translucide, provient du Myanmar et atteint des prix records. Beaucoup de jadéites commerciales sont blanchies, imprégnées de résine ou teintées.",
+    "imageQueries": [
+      "Jadeite",
+      "Jadeite jade",
+      "Jadeite rough"
+    ],
+    "image": {
+      "src": "/images/gems/jade-jadeite.webp",
+      "width": 800,
+      "height": 800,
+      "title": "Tricolour polished jadeite axe head Caillois Donation MNHN.jpg",
+      "author": "Marie-Lan Taÿ Pamart",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tricolour_polished_jadeite_axe_head_Caillois_Donation_MNHN.jpg"
+    }
+  },
+  {
+    "slug": "jade-nephrite",
+    "name": "Jade (néphrite)",
+    "nameEn": "Nephrite jade",
+    "category": "fine",
+    "family": "Silicates (inosilicates) — amphibole (trémolite-actinote)",
+    "formula": "Ca₂(Mg,Fe)₅Si₈O₂₂(OH)₂",
+    "colors": [
+      "vert",
+      "blanc",
+      "brun",
+      "noir"
+    ],
+    "hardness": {
+      "min": 6,
+      "max": 6.5
+    },
+    "density": {
+      "min": 2.9,
+      "max": 3.1
+    },
+    "refractiveIndex": {
+      "min": 1.6,
+      "max": 1.627
+    },
+    "deposits": [
+      "Chine (Hotan)",
+      "Canada (Colombie-Britannique)",
+      "Nouvelle-Zélande",
+      "Russie",
+      "Taïwan"
+    ],
+    "symbolism": "Pierre de la sagesse et de la protection ; en Nouvelle-Zélande, le « pounamu » sacré des Maoris.",
+    "birthMonths": [],
+    "priceRange": "moyen",
+    "description": "La néphrite est un agrégat de fibres enchevêtrées d'amphibole, ce qui lui confère une ténacité exceptionnelle. C'est le jade historique de la Chine, travaillé depuis plus de 7 000 ans. Sa couleur va du blanc crème (« graisse de mouton ») au vert épinard. Les Maoris de Nouvelle-Zélande en façonnent des pendentifs et des armes cérémonielles.",
+    "imageQueries": [
+      "Nephrite",
+      "Nephrite jade",
+      "Nephrite rough"
+    ],
+    "imageFile": "Green nephrite jade (Precambrian; Granite Mountains, Wyoming, USA) 1 (24356359100).jpg",
+    "image": {
+      "src": "/images/gems/jade-nephrite.webp",
+      "width": 800,
+      "height": 603,
+      "title": "Green nephrite jade (Precambrian; Granite Mountains, Wyoming, USA) 1 (24356359100).jpg",
+      "author": "James St. John",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Green_nephrite_jade_(Precambrian;_Granite_Mountains,_Wyoming,_USA)_1_(24356359100).jpg"
+    }
+  },
+  {
+    "slug": "lapis-lazuli",
+    "name": "Lapis-lazuli",
+    "nameEn": "Lapis lazuli",
+    "category": "fine",
+    "family": "Roche — lazurite (feldspathoïde) + calcite, pyrite",
+    "formula": "(Na,Ca)₈(AlSiO₄)₆(SO₄,S,Cl)₂ (lazurite)",
+    "colors": [
+      "bleu"
+    ],
+    "hardness": {
+      "min": 5,
+      "max": 5.5
+    },
+    "density": {
+      "min": 2.5,
+      "max": 3
+    },
+    "refractiveIndex": {
+      "min": 1.5,
+      "max": 1.5
+    },
+    "deposits": [
+      "Afghanistan",
+      "Chili",
+      "Russie (lac Baïkal)",
+      "Tadjikistan"
+    ],
+    "symbolism": "Pierre de la vérité, de la sagesse et de la royauté, chère aux pharaons.",
+    "birthMonths": [],
+    "priceRange": "moyen",
+    "description": "Le lapis-lazuli est une roche composée principalement de lazurite bleue, accompagnée de calcite blanche et de paillettes dorées de pyrite. Il est extrait depuis plus de 6 000 ans dans les mines de Sar-e-Sang, en Afghanistan. Broyé, il fournissait le pigment outremer, plus cher que l'or à la Renaissance. Les pièces les plus prisées sont d'un bleu intense et uniforme, avec quelques fines inclusions de pyrite.",
+    "imageQueries": [
+      "Lapis lazuli",
+      "Lapis lazuli rough",
+      "Lapis lazuli polished"
+    ],
+    "image": {
+      "src": "/images/gems/lapis-lazuli.webp",
+      "width": 800,
+      "height": 686,
+      "title": "Lapis-lazuli hg.jpg",
+      "author": "Hannes Grobe",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lapis-lazuli_hg.jpg"
+    }
+  },
+  {
+    "slug": "turquoise",
+    "name": "Turquoise",
+    "nameEn": "Turquoise",
+    "category": "fine",
+    "family": "Phosphates — turquoise",
+    "formula": "CuAl₆(PO₄)₄(OH)₈·4H₂O",
+    "colors": [
+      "bleu",
+      "vert"
+    ],
+    "hardness": {
+      "min": 5,
+      "max": 6
+    },
+    "density": {
+      "min": 2.31,
+      "max": 2.84
+    },
+    "refractiveIndex": {
+      "min": 1.61,
+      "max": 1.65
+    },
+    "deposits": [
+      "Iran",
+      "États-Unis (Arizona, Nevada)",
+      "Chine",
+      "Mexique",
+      "Égypte (Sinaï)"
+    ],
+    "symbolism": "Pierre de protection et de bonne fortune, sacrée chez les Aztèques et les Amérindiens.",
+    "birthMonths": [
+      12
+    ],
+    "priceRange": "bas",
+    "description": "La turquoise est un phosphate de cuivre et d'aluminium opaque, d'un bleu ciel à vert pomme. Son nom vient de ce qu'elle arrivait en Europe par la Turquie, depuis les mines de Nichapour, en Perse. Elle est souvent veinée d'une matrice brune ou noire, appelée « toile d'araignée ». Poreuse, elle est fréquemment stabilisée par imprégnation de résine et elle est largement imitée.",
+    "imageQueries": [
+      "Turquoise mineral",
+      "Turquoise rough",
+      "Turquoise polished"
+    ],
+    "image": {
+      "src": "/images/gems/turquoise.webp",
+      "width": 800,
+      "height": 533,
+      "title": "Rough turquoise from Arizona.jpg",
+      "author": "W.carter",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rough_turquoise_from_Arizona.jpg"
+    }
+  },
+  {
+    "slug": "malachite",
+    "name": "Malachite",
+    "nameEn": "Malachite",
+    "category": "fine",
+    "family": "Carbonates — malachite",
+    "formula": "Cu₂CO₃(OH)₂",
+    "colors": [
+      "vert"
+    ],
+    "hardness": {
+      "min": 3.5,
+      "max": 4
+    },
+    "density": {
+      "min": 3.25,
+      "max": 4.1
+    },
+    "refractiveIndex": {
+      "min": 1.655,
+      "max": 1.909
+    },
+    "deposits": [
+      "République démocratique du Congo",
+      "Zambie",
+      "Russie (Oural)",
+      "Namibie",
+      "Australie"
+    ],
+    "symbolism": "Pierre de la transformation et de la protection des voyageurs.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "La malachite est un carbonate de cuivre d'un vert intense, aux bandes concentriques alternant tons clairs et foncés. Elle se forme dans les zones d'altération des gisements de cuivre. Broyée, elle a servi de pigment et de fard dès l'Égypte ancienne. Les tsars russes en firent plaquer des colonnes et des salons entiers, comme au palais d'Hiver de Saint-Pétersbourg.",
+    "imageQueries": [
+      "Malachite polished",
+      "Malachite",
+      "Malachite mineral"
+    ],
+    "image": {
+      "src": "/images/gems/malachite.webp",
+      "width": 800,
+      "height": 588,
+      "title": "Tumble-polished malachite 1.jpg",
+      "author": "W.carter",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tumble-polished_malachite_1.jpg"
+    }
+  },
+  {
+    "slug": "pierre-de-lune",
+    "name": "Pierre de lune",
+    "nameEn": "Moonstone",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — feldspath (orthoclase)",
+    "formula": "KAlSi₃O₈",
+    "colors": [
+      "blanc",
+      "incolore",
+      "gris",
+      "bleu"
+    ],
+    "hardness": {
+      "min": 6,
+      "max": 6.5
+    },
+    "density": {
+      "min": 2.56,
+      "max": 2.59
+    },
+    "refractiveIndex": {
+      "min": 1.518,
+      "max": 1.526
+    },
+    "deposits": [
+      "Sri Lanka",
+      "Inde",
+      "Myanmar",
+      "Madagascar",
+      "Tanzanie"
+    ],
+    "symbolism": "Pierre de la féminité, de l'intuition et des voyages, associée à la Lune.",
+    "birthMonths": [
+      6
+    ],
+    "priceRange": "bas",
+    "description": "La pierre de lune est un feldspath qui montre une lueur bleutée flottante appelée adularescence. Cet effet est produit par la diffusion de la lumière entre de fines lamelles alternées d'orthoclase et d'albite. Les plus belles pierres, transparentes à reflet bleu, proviennent du Sri Lanka. Elle est taillée en cabochon pour révéler ce reflet et fut très en vogue à l'époque Art nouveau.",
+    "imageQueries": [
+      "Moonstone gemstone",
+      "Moonstone",
+      "Moonstone cabochon"
+    ],
+    "image": {
+      "src": "/images/gems/pierre-de-lune.webp",
+      "width": 800,
+      "height": 543,
+      "title": "Natural Blue Moonstone loose gemstone.jpg",
+      "author": "Gemsphoto",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Natural_Blue_Moonstone_loose_gemstone.jpg"
+    }
+  },
+  {
+    "slug": "labradorite",
+    "name": "Labradorite",
+    "nameEn": "Labradorite",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — feldspath plagioclase",
+    "formula": "(Ca,Na)(Al,Si)₄O₈",
+    "colors": [
+      "gris",
+      "bleu",
+      "vert",
+      "multicolore"
+    ],
+    "hardness": {
+      "min": 6,
+      "max": 6.5
+    },
+    "density": {
+      "min": 2.68,
+      "max": 2.75
+    },
+    "refractiveIndex": {
+      "min": 1.559,
+      "max": 1.573
+    },
+    "deposits": [
+      "Canada (Labrador)",
+      "Madagascar",
+      "Finlande",
+      "Russie",
+      "États-Unis"
+    ],
+    "symbolism": "Pierre de protection et de magie, que les Inuits disaient contenir les aurores boréales.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "La labradorite est un feldspath plagioclase gris sombre qui révèle sous certains angles de spectaculaires reflets bleus, verts ou dorés. Ce phénomène, appelé labradorescence, est dû à l'interférence de la lumière dans de fines lamelles internes. Elle doit son nom à la péninsule du Labrador, au Canada, où elle fut décrite à la fin du XVIIIᵉ siècle. La variété finlandaise particulièrement colorée porte le nom de spectrolite.",
+    "imageQueries": [
+      "Labradorite",
+      "Labradorite polished",
+      "Labradorite labradorescence"
+    ],
+    "image": {
+      "src": "/images/gems/labradorite.webp",
+      "width": 800,
+      "height": 533,
+      "title": "Labradorite crystal.jpg",
+      "author": "Linas Juozėnas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Labradorite_crystal.jpg"
+    }
+  },
+  {
+    "slug": "pierre-de-soleil",
+    "name": "Pierre de soleil",
+    "nameEn": "Sunstone",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — feldspath plagioclase (oligoclase)",
+    "formula": "(Na,Ca)(Al,Si)₄O₈",
+    "colors": [
+      "orange",
+      "rouge",
+      "jaune"
+    ],
+    "hardness": {
+      "min": 6,
+      "max": 6.5
+    },
+    "density": {
+      "min": 2.62,
+      "max": 2.67
+    },
+    "refractiveIndex": {
+      "min": 1.537,
+      "max": 1.547
+    },
+    "deposits": [
+      "Inde",
+      "Norvège",
+      "Tanzanie",
+      "États-Unis (Oregon)",
+      "Madagascar"
+    ],
+    "symbolism": "Pierre de la joie, de la chaleur et de la vitalité.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "La pierre de soleil est un feldspath parsemé de minuscules plaquettes d'hématite ou de cuivre qui scintillent : c'est l'aventurescence. Ces reflets métalliques orangés évoquent l'éclat du soleil. La pierre de soleil de l'Oregon, une labradorite contenant du cuivre natif, peut être transparente et présenter des teintes rouges ou vertes. Elle est taillée en cabochons ou en facettes selon sa transparence.",
+    "imageQueries": [
+      "Sunstone",
+      "Sunstone feldspar",
+      "Oregon sunstone"
+    ],
+    "image": {
+      "src": "/images/gems/pierre-de-soleil.webp",
+      "width": 800,
+      "height": 662,
+      "title": "Oligoclase-Sunstone from India2.jpg",
+      "author": "Ra'ike (see also: de:Benutzer:Ra'ike )",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oligoclase-Sunstone_from_India2.jpg"
+    }
+  },
+  {
+    "slug": "amazonite",
+    "name": "Amazonite",
+    "nameEn": "Amazonite",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — feldspath (microcline)",
+    "formula": "KAlSi₃O₈",
+    "colors": [
+      "vert",
+      "bleu"
+    ],
+    "hardness": {
+      "min": 6,
+      "max": 6.5
+    },
+    "density": {
+      "min": 2.56,
+      "max": 2.58
+    },
+    "refractiveIndex": {
+      "min": 1.522,
+      "max": 1.53
+    },
+    "deposits": [
+      "Brésil",
+      "Russie",
+      "États-Unis (Colorado)",
+      "Madagascar",
+      "Pérou"
+    ],
+    "symbolism": "Pierre de l'harmonie, du courage et de la communication.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "L'amazonite est la variété vert-bleu du microcline, un feldspath potassique. Sa couleur est attribuée à la présence de plomb et d'eau dans la structure cristalline. Malgré son nom, aucun gisement notable n'a été identifié en Amazonie. Elle montre souvent un quadrillage de veines blanches et se taille en cabochons et en perles.",
+    "imageQueries": [
+      "Amazonite",
+      "Amazonite crystal",
+      "Amazonite microcline"
+    ],
+    "image": {
+      "src": "/images/gems/amazonite.webp",
+      "width": 800,
+      "height": 600,
+      "title": "Amazonite-8819.jpg",
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amazonite-8819.jpg"
+    }
+  },
+  {
+    "slug": "iolite",
+    "name": "Iolite",
+    "nameEn": "Iolite",
+    "category": "fine",
+    "family": "Silicates (cyclosilicates) — cordiérite",
+    "formula": "(Mg,Fe)₂Al₄Si₅O₁₈",
+    "colors": [
+      "violet",
+      "bleu"
+    ],
+    "hardness": {
+      "min": 7,
+      "max": 7.5
+    },
+    "density": {
+      "min": 2.53,
+      "max": 2.65
+    },
+    "refractiveIndex": {
+      "min": 1.522,
+      "max": 1.578
+    },
+    "deposits": [
+      "Inde",
+      "Sri Lanka",
+      "Madagascar",
+      "Brésil",
+      "Tanzanie",
+      "Myanmar"
+    ],
+    "symbolism": "Pierre de la vision intérieure et de l'orientation, dite « pierre des Vikings ».",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "L'iolite est la variété gemme de la cordiérite, d'un bleu-violet évoquant le saphir. Elle est fortement pléochroïque : vue sous différents angles, elle passe du bleu violet au gris-jaune presque incolore. La légende veut que les navigateurs vikings l'aient utilisée comme filtre polarisant pour localiser le soleil par temps couvert. C'est une pierre abordable qui se taille en facettes.",
+    "imageQueries": [
+      "Iolite",
+      "Iolite gemstone",
+      "Cordierite iolite"
+    ],
+    "image": {
+      "src": "/images/gems/iolite.webp",
+      "width": 800,
+      "height": 1017,
+      "title": "Cordiérite var. iolite 3.jpg",
+      "author": "Parent Géry",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cordi%C3%A9rite_var._iolite_3.jpg"
+    }
+  },
+  {
+    "slug": "kunzite",
+    "name": "Kunzite",
+    "nameEn": "Kunzite",
+    "category": "fine",
+    "family": "Silicates (inosilicates) — pyroxène (spodumène)",
+    "formula": "LiAlSi₂O₆",
+    "colors": [
+      "rose",
+      "violet"
+    ],
+    "hardness": {
+      "min": 6.5,
+      "max": 7
+    },
+    "density": {
+      "min": 3.15,
+      "max": 3.21
+    },
+    "refractiveIndex": {
+      "min": 1.66,
+      "max": 1.676
+    },
+    "deposits": [
+      "Afghanistan",
+      "Brésil",
+      "Madagascar",
+      "États-Unis (Californie)",
+      "Pakistan"
+    ],
+    "symbolism": "Pierre de l'amour inconditionnel et de la paix intérieure.",
+    "birthMonths": [],
+    "priceRange": "moyen",
+    "description": "La kunzite est la variété rose à lilas du spodumène, colorée par le manganèse. Elle porte le nom du gemmologue George F. Kunz, de Tiffany & Co., qui la décrivit en 1903. Elle forme de grands cristaux, mais son clivage parfait la rend délicate à tailler. Sa couleur peut pâlir après une exposition prolongée à la lumière vive.",
+    "imageQueries": [
+      "Kunzite",
+      "Kunzite crystal",
+      "Kunzite gemstone"
+    ],
+    "image": {
+      "src": "/images/gems/kunzite.webp",
+      "width": 800,
+      "height": 743,
+      "title": "Kunzite Nouristan.jpg",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kunzite_Nouristan.jpg"
+    }
+  },
+  {
+    "slug": "apatite",
+    "name": "Apatite",
+    "nameEn": "Apatite",
+    "category": "fine",
+    "family": "Phosphates — apatite",
+    "formula": "Ca₅(PO₄)₃(F,Cl,OH)",
+    "colors": [
+      "bleu",
+      "vert",
+      "jaune",
+      "violet"
+    ],
+    "hardness": {
+      "min": 5,
+      "max": 5
+    },
+    "density": {
+      "min": 3.16,
+      "max": 3.23
+    },
+    "refractiveIndex": {
+      "min": 1.628,
+      "max": 1.65
+    },
+    "deposits": [
+      "Brésil",
+      "Madagascar",
+      "Mexique",
+      "Myanmar",
+      "Sri Lanka"
+    ],
+    "symbolism": "Pierre de la motivation et de l'appétit de vivre.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "L'apatite est un phosphate de calcium qui sert de référence pour la dureté 5 sur l'échelle de Mohs. Son nom, du grec apatein, « tromper », rappelle qu'elle était souvent confondue avec d'autres minéraux. Les variétés bleu néon de Madagascar et du Brésil rappellent la tourmaline Paraíba. C'est aussi le principal constituant minéral des os et des dents.",
+    "imageQueries": [
+      "Apatite gemstone",
+      "Apatite crystal",
+      "Blue apatite"
+    ],
+    "image": {
+      "src": "/images/gems/apatite.webp",
+      "width": 800,
+      "height": 1022,
+      "title": "Apatite-(CaF)-Quartz-Rutile-233143.jpg",
+      "author": "Robert M. Lavinsky",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apatite-(CaF)-Quartz-Rutile-233143.jpg"
+    }
+  },
+  {
+    "slug": "fluorite",
+    "name": "Fluorite",
+    "nameEn": "Fluorite",
+    "category": "fine",
+    "family": "Halogénures — fluorite",
+    "formula": "CaF₂",
+    "colors": [
+      "violet",
+      "vert",
+      "bleu",
+      "jaune",
+      "incolore",
+      "multicolore"
+    ],
+    "hardness": {
+      "min": 4,
+      "max": 4
+    },
+    "density": {
+      "min": 3,
+      "max": 3.25
+    },
+    "refractiveIndex": {
+      "min": 1.432,
+      "max": 1.434
+    },
+    "deposits": [
+      "Chine",
+      "Mexique",
+      "Afrique du Sud",
+      "Royaume-Uni (Angleterre)",
+      "France",
+      "États-Unis"
+    ],
+    "symbolism": "Pierre de la concentration et de l'ordre mental.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "La fluorite est un fluorure de calcium qui sert de référence pour la dureté 4 sur l'échelle de Mohs. Elle a donné son nom au phénomène de fluorescence, car de nombreux échantillons luisent sous les ultraviolets. Elle forme de superbes cubes et octaèdres, souvent zonés de violet, de vert et de jaune. Trop tendre pour les bagues, elle est surtout taillée pour les collectionneurs ou sculptée, comme le célèbre « Blue John » du Derbyshire.",
+    "imageQueries": [
+      "Fluorite crystal",
+      "Fluorite gemstone",
+      "Fluorite octahedron"
+    ],
+    "image": {
+      "src": "/images/gems/fluorite.webp",
+      "width": 800,
+      "height": 531,
+      "title": "9104 - Milano - Museo storia naturale - Fluorite - Foto Giovanni Dall'Orto 22-Apr-2007.jpg",
+      "author": "Giovanni Dall'Orto",
+      "license": "CC BY-SA 2.5 it",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/it/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:9104_-_Milano_-_Museo_storia_naturale_-_Fluorite_-_Foto_Giovanni_Dall%27Orto_22-Apr-2007.jpg"
+    }
+  },
+  {
+    "slug": "titanite",
+    "name": "Titanite (sphène)",
+    "nameEn": "Titanite (sphene)",
+    "category": "fine",
+    "family": "Silicates (nésosilicates) — titanite",
+    "formula": "CaTiSiO₅",
+    "colors": [
+      "jaune",
+      "vert",
+      "brun",
+      "orange"
+    ],
+    "hardness": {
+      "min": 5,
+      "max": 5.5
+    },
+    "density": {
+      "min": 3.5,
+      "max": 3.54
+    },
+    "refractiveIndex": {
+      "min": 1.885,
+      "max": 2.05
+    },
+    "deposits": [
+      "Madagascar",
+      "Brésil",
+      "Pakistan",
+      "Russie",
+      "Sri Lanka"
+    ],
+    "symbolism": "Pierre de la clarté mentale et de la créativité.",
+    "birthMonths": [],
+    "priceRange": "moyen",
+    "description": "La titanite, aussi appelée sphène, est un silicate de calcium et de titane. Sa dispersion lumineuse est supérieure à celle du diamant, ce qui lui donne des feux spectaculaires une fois taillée. Elle est également fortement biréfringente, ce qui produit un dédoublement visible des arêtes à travers la pierre. Sa dureté modérée la réserve plutôt aux pendentifs et boucles d'oreilles.",
+    "imageQueries": [
+      "Titanite crystal",
+      "Sphene gemstone",
+      "Titanite gemstone"
+    ],
+    "image": {
+      "src": "/images/gems/titanite.webp",
+      "width": 800,
+      "height": 600,
+      "title": "Titanite crystal yellow - Ochtendung, Eifel, Germany.jpg",
+      "author": "Fred Kruijen",
+      "license": "CC BY-SA 3.0 nl",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Titanite_crystal_yellow_-_Ochtendung,_Eifel,_Germany.jpg"
+    }
+  },
+  {
+    "slug": "kyanite",
+    "name": "Kyanite (disthène)",
+    "nameEn": "Kyanite",
+    "category": "fine",
+    "family": "Silicates (nésosilicates) — kyanite",
+    "formula": "Al₂SiO₅",
+    "colors": [
+      "bleu",
+      "vert",
+      "orange"
+    ],
+    "hardness": {
+      "min": 4.5,
+      "max": 7
+    },
+    "density": {
+      "min": 3.56,
+      "max": 3.69
+    },
+    "refractiveIndex": {
+      "min": 1.71,
+      "max": 1.734
+    },
+    "deposits": [
+      "Népal",
+      "Brésil",
+      "Inde",
+      "Kenya",
+      "Tanzanie"
+    ],
+    "symbolism": "Pierre de l'alignement et de la communication.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "La kyanite, ou disthène, est un silicate d'aluminium d'un bleu souvent intense, réparti en zones dans les cristaux allongés. Sa particularité est une dureté très différente selon la direction : environ 4,5 le long du cristal et 7 en travers. Cette anisotropie et un clivage parfait la rendent difficile à tailler. Les kyanites bleues du Népal sont réputées pour leur couleur proche de celle du saphir.",
+    "imageQueries": [
+      "Kyanite",
+      "Kyanite crystal",
+      "Kyanite gemstone"
+    ],
+    "image": {
+      "src": "/images/gems/kyanite.webp",
+      "width": 800,
+      "height": 533,
+      "title": "Kyanite crystal 2.jpg",
+      "author": "W.carter",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kyanite_crystal_2.jpg"
+    }
+  },
+  {
+    "slug": "andalousite",
+    "name": "Andalousite",
+    "nameEn": "Andalusite",
+    "category": "fine",
+    "family": "Silicates (nésosilicates) — andalousite",
+    "formula": "Al₂SiO₅",
+    "colors": [
+      "vert",
+      "brun",
+      "orange",
+      "rouge"
+    ],
+    "hardness": {
+      "min": 7,
+      "max": 7.5
+    },
+    "density": {
+      "min": 3.13,
+      "max": 3.21
+    },
+    "refractiveIndex": {
+      "min": 1.627,
+      "max": 1.649
+    },
+    "deposits": [
+      "Brésil",
+      "Sri Lanka",
+      "Madagascar",
+      "Espagne"
+    ],
+    "symbolism": "Pierre de la lucidité et de l'équilibre.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "L'andalousite est un silicate d'aluminium de même composition que la kyanite, mais de structure différente. Son nom vient de l'Andalousie, en Espagne. Fortement pléochroïque, elle montre simultanément des reflets vert olive et brun rougeâtre une fois taillée. La chiastolite, une variété opaque, présente une croix noire en section qui en faisait un talisman religieux.",
+    "imageQueries": [
+      "Andalusite gemstone",
+      "Andalusite",
+      "Andalusite crystal"
+    ],
+    "image": {
+      "src": "/images/gems/andalousite.webp",
+      "width": 800,
+      "height": 600,
+      "title": "Round faceted andalusite 7.jpg",
+      "author": "W.carter",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Round_faceted_andalusite_7.jpg"
+    }
+  },
+  {
+    "slug": "rhodochrosite",
+    "name": "Rhodochrosite",
+    "nameEn": "Rhodochrosite",
+    "category": "fine",
+    "family": "Carbonates — rhodochrosite",
+    "formula": "MnCO₃",
+    "colors": [
+      "rose",
+      "rouge",
+      "orange"
+    ],
+    "hardness": {
+      "min": 3.5,
+      "max": 4
+    },
+    "density": {
+      "min": 3.5,
+      "max": 3.8
+    },
+    "refractiveIndex": {
+      "min": 1.578,
+      "max": 1.84
+    },
+    "deposits": [
+      "Argentine",
+      "États-Unis (Colorado)",
+      "Pérou",
+      "Afrique du Sud"
+    ],
+    "symbolism": "Pierre de l'amour de soi et de la guérison émotionnelle, appelée « rose des Incas ».",
+    "birthMonths": [],
+    "priceRange": "moyen",
+    "description": "La rhodochrosite est un carbonate de manganèse d'un rose framboise caractéristique. En Argentine, elle forme des stalactites qui révèlent en coupe des bandes concentriques roses et blanches, d'où son surnom de « rose des Incas ». La mine Sweet Home, au Colorado, a produit de célèbres cristaux rouge cerise transparents. Très tendre et clivable, elle est surtout destinée aux collectionneurs et aux objets décoratifs.",
+    "imageQueries": [
+      "Rhodochrosite",
+      "Rhodochrosite crystal",
+      "Rhodochrosite polished"
+    ],
+    "image": {
+      "src": "/images/gems/rhodochrosite.webp",
+      "width": 800,
+      "height": 533,
+      "title": "Rhodochrosite on Matrix - Peru.jpg",
+      "author": "JJ Harrison",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rhodochrosite_on_Matrix_-_Peru.jpg"
+    }
+  },
+  {
+    "slug": "rhodonite",
+    "name": "Rhodonite",
+    "nameEn": "Rhodonite",
+    "category": "fine",
+    "family": "Silicates (inosilicates) — pyroxénoïde (rhodonite)",
+    "formula": "(Mn,Fe,Mg,Ca)SiO₃",
+    "colors": [
+      "rose",
+      "rouge",
+      "noir"
+    ],
+    "hardness": {
+      "min": 5.5,
+      "max": 6.5
+    },
+    "density": {
+      "min": 3.4,
+      "max": 3.74
+    },
+    "refractiveIndex": {
+      "min": 1.711,
+      "max": 1.752
+    },
+    "deposits": [
+      "Russie (Oural)",
+      "Australie",
+      "Suède",
+      "Brésil",
+      "Pérou"
+    ],
+    "symbolism": "Pierre du pardon, de la compassion et de l'équilibre émotionnel.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "La rhodonite est un silicate de manganèse rose, généralement veiné de noir par des oxydes de manganèse. Elle est surtout utilisée sous forme massive opaque pour des cabochons, des perles et des objets sculptés. Les tsars russes l'appréciaient particulièrement : le sarcophage de l'impératrice Maria Alexandrovna, épouse d'Alexandre II, est taillé dans un bloc de rhodonite de l'Oural. Les cristaux transparents, rares, sont réservés aux collectionneurs.",
+    "imageQueries": [
+      "Rhodonite",
+      "Rhodonite polished",
+      "Rhodonite mineral"
+    ],
+    "image": {
+      "src": "/images/gems/rhodonite.webp",
+      "width": 800,
+      "height": 737,
+      "title": "8224M-rhodonite3.jpg",
+      "author": "CarlesMillan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:8224M-rhodonite3.jpg"
+    }
+  },
+  {
+    "slug": "sodalite",
+    "name": "Sodalite",
+    "nameEn": "Sodalite",
+    "category": "fine",
+    "family": "Silicates (tectosilicates) — feldspathoïde (sodalite)",
+    "formula": "Na₈(Al₆Si₆O₂₄)Cl₂",
+    "colors": [
+      "bleu",
+      "blanc"
+    ],
+    "hardness": {
+      "min": 5.5,
+      "max": 6
+    },
+    "density": {
+      "min": 2.14,
+      "max": 2.4
+    },
+    "refractiveIndex": {
+      "min": 1.483,
+      "max": 1.487
+    },
+    "deposits": [
+      "Brésil",
+      "Canada",
+      "Namibie",
+      "Bolivie",
+      "Russie"
+    ],
+    "symbolism": "Pierre de la logique, de la vérité et de l'expression.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "La sodalite est un feldspathoïde bleu roi, souvent veiné de blanc, de la même famille que la lazurite du lapis-lazuli. On la distingue de ce dernier par l'absence de paillettes de pyrite et par sa densité plus faible. Elle doit son nom à sa teneur en sodium. Le gisement de Bancroft, en Ontario, est réputé pour ses masses bleu intense.",
+    "imageQueries": [
+      "Sodalite",
+      "Sodalite polished",
+      "Sodalite mineral"
+    ],
+    "image": {
+      "src": "/images/gems/sodalite.webp",
+      "width": 800,
+      "height": 640,
+      "title": "Sodalite Badakhshan Minéraux SU.jpg",
+      "author": "Marie-Lan Taÿ Pamart",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sodalite_Badakhshan_Min%C3%A9raux_SU.jpg"
+    }
+  },
+  {
+    "slug": "obsidienne",
+    "name": "Obsidienne",
+    "nameEn": "Obsidian",
+    "category": "fine",
+    "family": "Roche volcanique — verre naturel",
+    "formula": "SiO₂ (≈ 70 %) + oxydes divers (amorphe)",
+    "colors": [
+      "noir",
+      "brun",
+      "gris",
+      "vert"
+    ],
+    "hardness": {
+      "min": 5,
+      "max": 5.5
+    },
+    "density": {
+      "min": 2.33,
+      "max": 2.6
+    },
+    "refractiveIndex": {
+      "min": 1.48,
+      "max": 1.51
+    },
+    "deposits": [
+      "Mexique",
+      "États-Unis",
+      "Islande",
+      "Arménie",
+      "Italie",
+      "Turquie"
+    ],
+    "symbolism": "Pierre de protection et de vérité, utilisée par les Aztèques pour leurs miroirs divinatoires.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "L'obsidienne est un verre volcanique naturel formé par le refroidissement très rapide d'une lave riche en silice. Sa cassure conchoïdale très tranchante en a fait un matériau privilégié pour les outils et les armes dès la Préhistoire. Selon ses inclusions, on distingue l'obsidienne « flocon de neige », « acajou » ou « œil céleste » aux reflets irisés. Elle se taille en cabochons, en perles et en objets sculptés.",
+    "imageQueries": [
+      "Obsidian",
+      "Obsidian rock",
+      "Snowflake obsidian"
+    ],
+    "image": {
+      "src": "/images/gems/obsidienne.webp",
+      "width": 800,
+      "height": 572,
+      "title": "Obsidian 4.jpg",
+      "author": "James St. John",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Obsidian_4.jpg"
+    }
+  },
+  {
+    "slug": "hematite",
+    "name": "Hématite",
+    "nameEn": "Hematite",
+    "category": "fine",
+    "family": "Oxydes — hématite",
+    "formula": "Fe₂O₃",
+    "colors": [
+      "noir",
+      "gris",
+      "rouge"
+    ],
+    "hardness": {
+      "min": 5.5,
+      "max": 6.5
+    },
+    "density": {
+      "min": 4.95,
+      "max": 5.26
+    },
+    "refractiveIndex": {
+      "min": 2.94,
+      "max": 3.22
+    },
+    "deposits": [
+      "Brésil",
+      "Royaume-Uni (Angleterre)",
+      "Australie",
+      "Chine",
+      "Italie (île d'Elbe)"
+    ],
+    "symbolism": "Pierre de l'ancrage, de la force et du courage, associée au dieu Mars.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "L'hématite est un oxyde de fer et l'un des principaux minerais de fer. Polie, elle offre un éclat métallique gris acier, mais sa poudre, ou trace, est rouge sang : son nom vient du grec haima, « sang ». Broyée, elle a fourni l'ocre rouge des peintures préhistoriques. Elle est taillée en perles, cabochons et intailles ; de nombreuses « hématites » bon marché sont en réalité des imitations synthétiques.",
+    "imageQueries": [
+      "Hematite",
+      "Hematite polished",
+      "Hematite crystal"
+    ],
+    "imageFile": "Hematite pebbles.jpg",
+    "image": {
+      "src": "/images/gems/hematite.webp",
+      "width": 800,
+      "height": 600,
+      "title": "Hematite pebbles.jpg",
+      "author": "Mauro Cateb",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hematite_pebbles.jpg"
+    }
+  },
+  {
+    "slug": "diopside",
+    "name": "Diopside",
+    "nameEn": "Diopside",
+    "category": "fine",
+    "family": "Silicates (inosilicates) — pyroxène (diopside)",
+    "formula": "CaMgSi₂O₆",
+    "colors": [
+      "vert",
+      "noir"
+    ],
+    "hardness": {
+      "min": 5.5,
+      "max": 6.5
+    },
+    "density": {
+      "min": 3.22,
+      "max": 3.4
+    },
+    "refractiveIndex": {
+      "min": 1.664,
+      "max": 1.721
+    },
+    "deposits": [
+      "Russie (Sibérie)",
+      "Pakistan",
+      "Inde",
+      "Myanmar",
+      "Sri Lanka"
+    ],
+    "symbolism": "Pierre de la régénération et de l'ouverture du cœur.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "Le diopside est un pyroxène calcique et magnésien. Sa variété la plus connue, le diopside chromifère, d'un vert profond comparable à celui de l'émeraude, provient surtout de Sibérie orientale. Il existe aussi un diopside noir étoilé à quatre branches, extrait en Inde. Sa dureté modérée le destine plutôt aux pendentifs et boucles d'oreilles.",
+    "imageQueries": [
+      "Chrome diopside",
+      "Diopside crystal",
+      "Diopside gemstone"
+    ],
+    "image": {
+      "src": "/images/gems/diopside.webp",
+      "width": 800,
+      "height": 523,
+      "title": "Diopside faceted.jpg",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diopside_faceted.jpg"
+    }
+  },
+  {
+    "slug": "prehnite",
+    "name": "Prehnite",
+    "nameEn": "Prehnite",
+    "category": "fine",
+    "family": "Silicates (phyllosilicates) — prehnite",
+    "formula": "Ca₂Al₂Si₃O₁₀(OH)₂",
+    "colors": [
+      "vert",
+      "jaune"
+    ],
+    "hardness": {
+      "min": 6,
+      "max": 6.5
+    },
+    "density": {
+      "min": 2.8,
+      "max": 2.95
+    },
+    "refractiveIndex": {
+      "min": 1.611,
+      "max": 1.669
+    },
+    "deposits": [
+      "Australie",
+      "Afrique du Sud",
+      "Mali",
+      "Chine",
+      "Namibie"
+    ],
+    "symbolism": "Pierre de la prophétie et de la paix intérieure.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "La prehnite est un silicate de calcium et d'aluminium translucide, d'un vert pâle légèrement jaune très caractéristique. Elle fut le premier minéral nommé d'après une personne : le colonel néerlandais Hendrik von Prehn, qui la rapporta d'Afrique du Sud au XVIIIᵉ siècle. Elle forme des agrégats globulaires et parfois des inclusions d'épidote noire en aiguilles. Elle est surtout taillée en cabochons et en perles.",
+    "imageQueries": [
+      "Prehnite",
+      "Prehnite mineral",
+      "Prehnite gemstone"
+    ],
+    "image": {
+      "src": "/images/gems/prehnite.webp",
+      "width": 800,
+      "height": 1067,
+      "title": "Prehnite - Southbury, Connecticut, USA.jpg",
+      "author": "Ivar Leidus",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prehnite_-_Southbury,_Connecticut,_USA.jpg"
+    }
+  },
+  {
+    "slug": "larimar",
+    "name": "Larimar",
+    "nameEn": "Larimar",
+    "category": "fine",
+    "family": "Silicates (inosilicates) — pectolite",
+    "formula": "NaCa₂Si₃O₈(OH)",
+    "colors": [
+      "bleu",
+      "blanc",
+      "vert"
+    ],
+    "hardness": {
+      "min": 4.5,
+      "max": 5
+    },
+    "density": {
+      "min": 2.74,
+      "max": 2.88
+    },
+    "refractiveIndex": {
+      "min": 1.595,
+      "max": 1.645
+    },
+    "deposits": [
+      "République dominicaine"
+    ],
+    "symbolism": "Pierre de l'Atlantide pour certains, symbole de calme, de paix et des eaux des Caraïbes.",
+    "birthMonths": [],
+    "priceRange": "moyen",
+    "description": "Le larimar est une variété bleue de pectolite que l'on ne trouve qu'en République dominicaine. Sa couleur, due à des traces de cuivre, rappelle les motifs du soleil sur une eau turquoise. Il fut redécouvert en 1974 ; son nom associe le prénom Larissa, fille de l'un des découvreurs, et mar, la mer en espagnol. Il est taillé en cabochons et ne doit pas être exposé trop longtemps au soleil.",
+    "imageQueries": [
+      "Larimar",
+      "Larimar pectolite",
+      "Larimar polished"
+    ],
+    "image": {
+      "src": "/images/gems/larimar.webp",
+      "width": 800,
+      "height": 979,
+      "title": "Larimar hg.jpg",
+      "author": "Hannes Grobe",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Larimar_hg.jpg"
+    }
+  },
+  {
+    "slug": "sugilite",
+    "name": "Sugilite",
+    "nameEn": "Sugilite",
+    "category": "fine",
+    "family": "Silicates (cyclosilicates) — groupe de l'osumilite",
+    "formula": "KNa₂(Fe,Mn,Al)₂Li₃Si₁₂O₃₀",
+    "colors": [
+      "violet",
+      "rose"
+    ],
+    "hardness": {
+      "min": 5.5,
+      "max": 6.5
+    },
+    "density": {
+      "min": 2.69,
+      "max": 2.79
+    },
+    "refractiveIndex": {
+      "min": 1.607,
+      "max": 1.611
+    },
+    "deposits": [
+      "Afrique du Sud",
+      "Japon",
+      "Inde"
+    ],
+    "symbolism": "Pierre de la spiritualité et de la protection émotionnelle.",
+    "birthMonths": [],
+    "priceRange": "moyen",
+    "description": "La sugilite est un silicate rare de couleur pourpre intense, coloré par le manganèse. Elle a été décrite en 1976 au Japon par le pétrologue Ken-ichi Sugi, dont elle porte le nom. Les masses de qualité gemme proviennent essentiellement de la mine de Wessels, dans le désert du Kalahari, en Afrique du Sud. Opaque à translucide, elle est taillée en cabochons et en objets décoratifs.",
+    "imageQueries": [
+      "Sugilite",
+      "Sugilite mineral",
+      "Sugilite polished"
+    ],
+    "image": {
+      "src": "/images/gems/sugilite.webp",
+      "width": 800,
+      "height": 809,
+      "title": "Sugilite-40452.jpg",
+      "author": "Robert M. Lavinsky",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sugilite-40452.jpg"
+    }
+  },
+  {
+    "slug": "perle",
+    "name": "Perle",
+    "nameEn": "Pearl",
+    "category": "organique",
+    "family": "Biominéral — aragonite (carbonate de calcium) + conchyoline",
+    "formula": "CaCO₃ + matière organique",
+    "colors": [
+      "blanc",
+      "rose",
+      "noir",
+      "jaune",
+      "gris"
+    ],
+    "hardness": {
+      "min": 2.5,
+      "max": 4.5
+    },
+    "density": {
+      "min": 2.6,
+      "max": 2.85
+    },
+    "refractiveIndex": {
+      "min": 1.53,
+      "max": 1.685
+    },
+    "deposits": [
+      "Golfe Persique",
+      "Australie",
+      "Polynésie française",
+      "Japon",
+      "Chine",
+      "Indonésie",
+      "Philippines"
+    ],
+    "symbolism": "Symbole de pureté, d'innocence et de sagesse acquise par l'expérience.",
+    "birthMonths": [
+      6
+    ],
+    "priceRange": "moyen",
+    "description": "La perle est sécrétée par un mollusque autour d'un corps étranger, en couches concentriques de nacre composées de cristaux d'aragonite liés par une protéine, la conchyoline. Sa beauté réside dans son orient, un chatoiement irisé produit par la superposition de ces couches. Les perles fines, naturelles, sont aujourd'hui rarissimes et très chères ; l'essentiel du marché est constitué de perles de culture, mises au point au Japon par Kokichi Mikimoto. Tendre et sensible aux acides, elle doit être portée et rangée avec soin.",
+    "imageQueries": [
+      "Pearl gemstone",
+      "Pearls loose",
+      "Natural pearl oyster"
+    ],
+    "image": {
+      "src": "/images/gems/perle.webp",
+      "width": 800,
+      "height": 800,
+      "title": "Various pearls.jpg",
+      "author": "MASAYUKI KATO",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Various_pearls.jpg"
+    }
+  },
+  {
+    "slug": "ambre",
+    "name": "Ambre",
+    "nameEn": "Amber",
+    "category": "organique",
+    "family": "Résine végétale fossile",
+    "formula": "≈ C₁₀H₁₆O (composition variable)",
+    "colors": [
+      "jaune",
+      "orange",
+      "brun",
+      "rouge"
+    ],
+    "hardness": {
+      "min": 2,
+      "max": 2.5
+    },
+    "density": {
+      "min": 1.05,
+      "max": 1.1
+    },
+    "refractiveIndex": {
+      "min": 1.539,
+      "max": 1.545
+    },
+    "deposits": [
+      "Pologne",
+      "Lituanie",
+      "Russie (Kaliningrad)",
+      "République dominicaine",
+      "Mexique (Chiapas)",
+      "Myanmar"
+    ],
+    "symbolism": "Pierre de la chaleur, de la vitalité et de la protection des enfants.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "L'ambre est une résine d'arbres fossilisée depuis des millions d'années, et non un minéral. L'ambre de la Baltique, vieux d'environ 40 millions d'années, est le plus répandu et contient de l'acide succinique. Il renferme parfois des insectes ou des végétaux piégés, précieux pour les paléontologues. Très léger, il flotte dans l'eau salée et devient électrique quand on le frotte ; son nom grec, elektron, a donné le mot « électricité ».",
+    "imageQueries": [
+      "Amber gemstone",
+      "Baltic amber",
+      "Amber with insect"
+    ],
+    "imageFile": "A piece of raw Baltic amber 2.jpg",
+    "image": {
+      "src": "/images/gems/ambre.webp",
+      "width": 800,
+      "height": 533,
+      "title": "A piece of raw Baltic amber 2.jpg",
+      "author": "W.carter",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_piece_of_raw_Baltic_amber_2.jpg"
+    }
+  },
+  {
+    "slug": "corail",
+    "name": "Corail",
+    "nameEn": "Coral",
+    "category": "organique",
+    "family": "Biominéral — calcite (carbonate de calcium) + matière organique",
+    "formula": "CaCO₃ + matière organique",
+    "colors": [
+      "rouge",
+      "rose",
+      "orange",
+      "blanc"
+    ],
+    "hardness": {
+      "min": 3,
+      "max": 4
+    },
+    "density": {
+      "min": 2.6,
+      "max": 2.7
+    },
+    "refractiveIndex": {
+      "min": 1.486,
+      "max": 1.658
+    },
+    "deposits": [
+      "Italie (Sardaigne)",
+      "Tunisie",
+      "Algérie",
+      "Japon",
+      "Taïwan"
+    ],
+    "symbolism": "Talisman protecteur des enfants et des marins depuis l'Antiquité.",
+    "birthMonths": [],
+    "priceRange": "moyen",
+    "description": "Le corail précieux est le squelette calcaire de colonies d'animaux marins, notamment Corallium rubrum en Méditerranée. Sa couleur rouge à rose est due à des pigments organiques caroténoïdes. Torre del Greco, près de Naples, est depuis des siècles la capitale mondiale de sa taille. Sa pêche est aujourd'hui strictement réglementée afin de préserver des populations à croissance très lente.",
+    "imageQueries": [
+      "Precious coral Corallium rubrum",
+      "Red coral",
+      "Corallium rubrum"
+    ],
+    "image": {
+      "src": "/images/gems/corail.webp",
+      "width": 800,
+      "height": 508,
+      "title": "Corallium rubrum (polished precious red coral) 2.jpg",
+      "author": "James St. John",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corallium_rubrum_(polished_precious_red_coral)_2.jpg"
+    }
+  },
+  {
+    "slug": "jais",
+    "name": "Jais",
+    "nameEn": "Jet",
+    "category": "organique",
+    "family": "Bois fossile — lignite",
+    "formula": "Carbone + hydrocarbures (composition variable)",
+    "colors": [
+      "noir"
+    ],
+    "hardness": {
+      "min": 2.5,
+      "max": 4
+    },
+    "density": {
+      "min": 1.3,
+      "max": 1.4
+    },
+    "refractiveIndex": {
+      "min": 1.64,
+      "max": 1.68
+    },
+    "deposits": [
+      "Royaume-Uni (Whitby)",
+      "Espagne (Asturies)",
+      "Turquie",
+      "France (Aude)",
+      "États-Unis"
+    ],
+    "symbolism": "Pierre du deuil et de la protection contre les mauvais esprits.",
+    "birthMonths": [],
+    "priceRange": "bas",
+    "description": "Le jais est un bois fossilisé transformé en une variété de lignite compacte, d'un noir profond, qui prend un beau poli. Le gisement de Whitby, sur la côte du Yorkshire, est le plus célèbre ; il date du Jurassique. La reine Victoria le rendit très à la mode en le portant pendant son long deuil du prince Albert. Léger et chaud au toucher, il est facilement confondu avec des imitations en verre noir ou en matière plastique.",
+    "imageQueries": [
+      "Jet gemstone Whitby",
+      "Whitby jet",
+      "Jet lignite"
+    ],
+    "imageFile": "Small sample of jet.jpg",
+    "image": {
+      "src": "/images/gems/jais.webp",
+      "width": 800,
+      "height": 600,
+      "title": "Small sample of jet.jpg",
+      "author": "Konto na chwilę",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Small_sample_of_jet.jpg"
+    }
+  },
+  {
+    "slug": "ammolite",
+    "name": "Ammolite",
+    "nameEn": "Ammolite",
+    "category": "organique",
+    "family": "Biominéral — aragonite de coquille d'ammonite fossile",
+    "formula": "CaCO₃ (aragonite)",
+    "colors": [
+      "multicolore",
+      "rouge",
+      "vert"
+    ],
+    "hardness": {
+      "min": 3.5,
+      "max": 4.5
+    },
+    "density": {
+      "min": 2.75,
+      "max": 2.8
+    },
+    "refractiveIndex": {
+      "min": 1.52,
+      "max": 1.68
+    },
+    "deposits": [
+      "Canada (Alberta)"
+    ],
+    "symbolism": "Pierre de la prospérité et de l'énergie selon le feng shui ; « pierre de bison » pour les Blackfeet.",
+    "birthMonths": [],
+    "priceRange": "moyen",
+    "description": "L'ammolite est la nacre fossile irisée de coquilles d'ammonites ayant vécu il y a environ 70 millions d'années. Elle est extraite presque exclusivement dans la formation de Bearpaw, au sud de l'Alberta, au Canada. Ses couleurs vives, du rouge au violet, sont produites par l'interférence de la lumière dans de fines couches d'aragonite. Fragile, elle est le plus souvent montée en doublet ou en triplet protégé par du quartz.",
+    "imageQueries": [
+      "Ammolite",
+      "Ammolite gemstone",
+      "Ammolite Alberta"
+    ],
+    "image": {
+      "src": "/images/gems/ammolite.webp",
+      "width": 800,
+      "height": 899,
+      "title": "Ammolite.jpg",
+      "author": "Auteur inconnu",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ammolite.jpg"
+    }
+  }
+]

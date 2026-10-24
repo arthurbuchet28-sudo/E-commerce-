@@ -1,0 +1,201 @@
+---
+/**
+ * Fiche détail d'une gemme : grande image avec crédit, tableau des
+ * caractéristiques, description, gisements et gemmes similaires.
+ */
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import GemImage from "../../components/GemImage.astro";
+import GemCard from "../../components/GemCard.astro";
+import {
+  gems,
+  type Gem,
+  CATEGORY_LABELS,
+  COLORS,
+  PRICE_LABELS,
+  formatDensity,
+  formatHardness,
+  formatMonths,
+  formatRI,
+  similarGems,
+  altText,
+} from "../../lib/gems";
+
+export function getStaticPaths() {
+  return gems.map((gem) => ({ params: { slug: gem.slug }, props: { gem } }));
+}
+
+const { gem } = Astro.props as { gem: Gem };
+const similar = similarGems(gem);
+const months = formatMonths(gem);
+const priceLevel = { bas: 1, moyen: 2, eleve: 3 }[gem.priceRange];
+
+const description = `${gem.name} (${gem.nameEn}) : ${CATEGORY_LABELS[gem.category].toLowerCase()}, ${gem.family
+  .split("—")
+  .pop()!
+  .trim()}. Dureté ${formatHardness(gem)}, densité ${formatDensity(gem)}, gisements, symbolique${months ? ", pierre de naissance" : ""}.`;
+
+const rows: [string, string][] = [
+  ["Nom anglais", gem.nameEn],
+  ["Catégorie", CATEGORY_LABELS[gem.category]],
+  ["Famille minérale", gem.family],
+  ["Formule chimique", gem.formula],
+  ["Dureté (échelle de Mohs)", formatHardness(gem)],
+  ["Densité", formatDensity(gem)],
+  ["Indice de réfraction", formatRI(gem)],
+  ["Pierre de naissance", months || "—"],
+  ["Prix indicatif", PRICE_LABELS[gem.priceRange]],
+];
+
+// Données structurées (schema.org) pour les moteurs de recherche.
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: `${gem.name} — caractéristiques et propriétés`,
+  description,
+  inLanguage: "fr",
+  about: { "@type": "Thing", name: gem.name, alternateName: gem.nameEn },
+  ...(gem.image && {
+    image: {
+      "@type": "ImageObject",
+      contentUrl: new URL(gem.image.src, Astro.site).href,
+      creditText: gem.image.author,
+      license: gem.image.licenseUrl ?? undefined,
+      acquireLicensePage: gem.image.sourceUrl,
+    },
+  }),
+};
+---
+
+<BaseLayout title={`${gem.name} : propriétés, couleurs et gisements`} description={description} image={gem.image?.src} imageAlt={altText(gem)} type="article" jsonLd={jsonLd}>
+  <article class="mx-auto max-w-7xl px-4 py-10 sm:px-6">
+    <nav aria-label="Fil d'Ariane" class="mb-6 text-sm text-muted">
+      <ol class="flex flex-wrap gap-2">
+        <li><a href="/" class="hover:text-gold">Accueil</a> <span aria-hidden="true">/</span></li>
+        <li><a href="/catalogue" class="hover:text-gold">Catalogue</a> <span aria-hidden="true">/</span></li>
+        <li aria-current="page" class="text-fg">{gem.name}</li>
+      </ol>
+    </nav>
+
+    <div class="grid gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] lg:gap-14">
+      <!-- Image + crédit -->
+      <figure class="lg:sticky lg:top-24 lg:self-start">
+        <div class="overflow-hidden rounded-3xl border border-line bg-surface-2">
+          <GemImage gem={gem} priority class="h-auto w-full" sizes="(min-width: 1024px) 45vw, 100vw" />
+        </div>
+        <figcaption class="mt-3 text-xs leading-relaxed text-muted">
+          {
+            gem.image ? (
+              <>
+                Photo : <span class="text-fg">{gem.image.author}</span> —{" "}
+                {gem.image.licenseUrl ? (
+                  <a href={gem.image.licenseUrl} class="underline hover:text-gold" rel="license noopener" target="_blank">
+                    {gem.image.license}
+                  </a>
+                ) : (
+                  gem.image.license
+                )}
+                , via{" "}
+                <a href={gem.image.sourceUrl} class="underline hover:text-gold" rel="noopener" target="_blank">
+                  Wikimedia Commons
+                </a>
+              </>
+            ) : (
+              "Aucune photographie libre disponible : illustration de remplacement."
+            )
+          }
+        </figcaption>
+      </figure>
+
+      <div>
+        <p class="text-xs uppercase tracking-[0.25em] text-gold">{CATEGORY_LABELS[gem.category]}</p>
+        <h1 class="mt-2 text-5xl sm:text-6xl">{gem.name}</h1>
+        <p class="mt-1 text-lg italic text-muted">{gem.nameEn}</p>
+
+        <ul class="mt-5 flex flex-wrap gap-2" aria-label="Couleurs possibles">
+          {
+            gem.colors.map((c) => (
+              <li>
+                <a
+                  href={`/catalogue?color=${c}`}
+                  class="inline-flex items-center gap-2 rounded-full border border-line px-3 py-1 text-sm hover:border-gold"
+                >
+                  <span class="swatch" style={`background:${COLORS[c].swatch}`} aria-hidden="true" />
+                  {COLORS[c].label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+
+        <div class="mt-8 space-y-4 text-lg leading-relaxed">
+          <p>{gem.description}</p>
+        </div>
+
+        <section class="mt-10" aria-labelledby="carac">
+          <h2 id="carac" class="text-3xl">Caractéristiques</h2>
+          <span class="gold-rule mt-3"></span>
+          <div class="mt-4 rounded-2xl border border-line bg-surface px-5">
+            <table class="spec-table w-full text-sm sm:text-base">
+              <caption class="sr-only">Caractéristiques minéralogiques et commerciales de la gemme {gem.name}</caption>
+              <tbody>
+                {
+                  rows.map(([k, v]) => (
+                    <tr>
+                      <th scope="row">{k}</th>
+                      <td class:list={[k === "Formule chimique" && "font-mono text-[0.95em]"]}>
+                        {k === "Prix indicatif" ? (
+                          <span class="inline-flex items-center gap-2">
+                            <span class="text-gold" aria-hidden="true">
+                              {"◆".repeat(priceLevel)}
+                              <span class="opacity-30">{"◆".repeat(3 - priceLevel)}</span>
+                            </span>
+                            {v}
+                          </span>
+                        ) : (
+                          v
+                        )}
+                      </td>
+                    </tr>
+                  ))
+                }
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="mt-10" aria-labelledby="gisements">
+          <h2 id="gisements" class="text-3xl">Principaux gisements</h2>
+          <span class="gold-rule mt-3"></span>
+          <ul class="mt-4 flex flex-wrap gap-2">
+            {gem.deposits.map((d) => <li class="rounded-full bg-surface-2 px-3 py-1 text-sm">{d}</li>)}
+          </ul>
+        </section>
+
+        <section class="mt-10" aria-labelledby="symbolique">
+          <h2 id="symbolique" class="text-3xl">Signification et symbolique</h2>
+          <span class="gold-rule mt-3"></span>
+          <p class="mt-4 text-muted">{gem.symbolism}</p>
+          {
+            months && (
+              <p class="mt-3">
+                Pierre de naissance : <a href="/pierres-de-naissance" class="text-gold hover:underline">{months}</a>
+              </p>
+            )
+          }
+        </section>
+
+        <p class="mt-10">
+          <a href={`/comparateur?g=${gem.slug}`} class="btn btn-ghost">Comparer avec une autre gemme</a>
+        </p>
+      </div>
+    </div>
+
+    <section class="mt-20" aria-labelledby="similaires">
+      <h2 id="similaires" class="text-3xl sm:text-4xl">Gemmes similaires</h2>
+      <span class="gold-rule mt-3"></span>
+      <ul class="mt-6 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+        {similar.map((g) => <GemCard gem={g} />)}
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

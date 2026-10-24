@@ -1,0 +1,61 @@
+---
+/** Calendrier des pierres de naissance : une carte par mois, avec ses gemmes. */
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GemImage from "../components/GemImage.astro";
+import { gems, MONTHS } from "../lib/gems";
+
+const calendar = MONTHS.map((month, i) => ({
+  month,
+  gems: gems.filter((g) => g.birthMonths.includes(i + 1)),
+}));
+---
+
+<BaseLayout
+  title="Pierres de naissance : le calendrier des 12 mois"
+  description="Quelle est la pierre de naissance de votre mois ? Calendrier complet des gemmes associées à chaque mois de l'année, de janvier (grenat) à décembre (turquoise, tanzanite, zircon)."
+>
+  <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6">
+    <header class="mb-10 max-w-3xl">
+      <h1 class="text-4xl sm:text-5xl">Pierres de naissance</h1>
+      <span class="gold-rule mt-4"></span>
+      <p class="mt-4 text-muted">
+        La tradition d'associer une gemme à chaque mois remonte au pectoral du grand prêtre décrit dans l'Exode, orné de douze pierres.
+        La liste moderne la plus répandue a été établie en 1912 par l'association des bijoutiers américains (Jewelers of America),
+        puis complétée au fil du temps (tanzanite en 2002, spinelle en 2016). Plusieurs gemmes peuvent donc partager un même mois.
+      </p>
+    </header>
+
+    <ol class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        calendar.map(({ month, gems: list }, i) => (
+          <li class="gem-card overflow-hidden rounded-2xl border border-line bg-surface">
+            <div class="flex items-stretch">
+              <div class="relative aspect-square w-32 shrink-0 overflow-hidden bg-surface-2 sm:w-36">
+                {list[0] && <GemImage gem={list[0]} class="h-full w-full object-cover" sizes="150px" />}
+              </div>
+              <div class="flex min-w-0 flex-1 flex-col justify-center p-4">
+                <p class="text-xs uppercase tracking-[0.2em] text-gold">
+                  <span class="font-display text-2xl tracking-normal">{String(i + 1).padStart(2, "0")}</span>
+                </p>
+                <h2 class="text-2xl">{month}</h2>
+                <ul class="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-sm">
+                  {list.map((g) => (
+                    <li>
+                      <a href={`/gemmes/${g.slug}`} class="text-muted underline-offset-4 hover:text-gold hover:underline">
+                        {g.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+
+    <p class="mt-10 text-sm text-muted">
+      Astuce : filtrez le <a href="/catalogue" class="text-gold hover:underline">catalogue</a> par mois de naissance pour retrouver ces gemmes.
+    </p>
+  </div>
+</BaseLayout>
