@@ -12,7 +12,8 @@ export const tee = (name: string) => asset(`tees/${name}.jpg`);
 
 /* ───────────── Logo aux textures interchangeables ───────────── */
 
-export type Texture = (typeof GU.logoTextures)[number];
+/** Textures disponibles (« love » = rouge-blanc-vert, gardée en réserve). */
+export type Texture = "original" | "chrome" | "leopard" | "holo" | "fire" | "rose" | "love" | "ocean";
 
 /** Rendu à partir de la forme exacte des lettres du logo (extraite du logo officiel). */
 const MaskLogo: React.FC<{ width: number; fill: string; outline: string; gloss?: boolean; extra?: React.ReactNode }> = ({ width, fill, outline, gloss, extra }) => {
@@ -44,7 +45,91 @@ const MaskLogo: React.FC<{ width: number; fill: string; outline: string; gloss?:
 };
 
 /** Logo Gauche'Up dans une texture donnée, centré dans une boîte width × height. */
-export const GULogo: React.FC<{ texture: Texture; width: number; height: number }> = ({ texture, width, height }) => {
+/** Texture « océan » : eau profonde, reflets de lumière qui ondulent (caustiques), bulles et surface brillante. */
+const OceanLogo: React.FC<{ width: number; t: number }> = ({ width, t }) => {
+  const h = (width * 730) / 1053;
+  const mask: React.CSSProperties = {
+    WebkitMaskImage: `url(${asset("logo-mask.png")})`,
+    maskImage: `url(${asset("logo-mask.png")})`,
+    WebkitMaskSize: "100% 100%",
+    maskSize: "100% 100%",
+  };
+  return (
+    <div style={{ position: "relative", width, height: h }}>
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background: C.cream,
+          WebkitMaskImage: `url(${asset("logo-outline.png")})`,
+          maskImage: `url(${asset("logo-outline.png")})`,
+          WebkitMaskSize: "100% 100%",
+          maskSize: "100% 100%",
+          filter: "drop-shadow(0 18px 24px rgba(0,0,0,0.35))",
+        }}
+      />
+      <div style={{ position: "absolute", inset: 0, overflow: "hidden", ...mask }}>
+        {/* profondeur : turquoise en surface, bleu abyssal en bas */}
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(175deg, #8EF0F5 0%, #2EC4DD 24%, #1186C2 52%, #0A4F97 78%, #062A5E 100%)" }} />
+        {/* caustiques : bandes de lumière qui ondulent */}
+        <svg width={width} height={h} style={{ position: "absolute", inset: 0, mixBlendMode: "screen" }}>
+          <defs>
+            <filter id="guCaustics" x="0" y="0" width="100%" height="100%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.011 0.016" numOctaves={2} seed={4} />
+              <feComponentTransfer>
+                <feFuncR type="table" tableValues="0 0 0 0.2 1 0.2 0 0 0 0.15 0.9 0.1 0" />
+                <feFuncG type="table" tableValues="0 0 0 0.2 1 0.2 0 0 0 0.15 0.9 0.1 0" />
+                <feFuncB type="table" tableValues="0 0 0 0.2 1 0.2 0 0 0 0.15 0.9 0.1 0" />
+                <feFuncA type="table" tableValues="1 1" />
+              </feComponentTransfer>
+              <feGaussianBlur stdDeviation={1.2} />
+            </filter>
+          </defs>
+          <g transform={`translate(${-200 + Math.sin(t * 0.9) * 60 + t * 40} ${-150 + Math.cos(t * 0.7) * 40 + t * 22})`} opacity={0.8}>
+            <rect width={width + 600} height={h + 500} filter="url(#guCaustics)" />
+          </g>
+        </svg>
+        {/* bulles qui montent */}
+        {Array.from({ length: 14 }).map((_, i) => {
+          const r = 5 + random(`ob${i}`) * 12;
+          const speed = 60 + random(`os${i}`) * 90;
+          const y = h - (((t * speed + random(`oy${i}`) * h) % (h + 40)) - 20);
+          const x = random(`ox${i}`) * width + Math.sin(t * 2.5 + i) * 8;
+          return (
+            <div
+              key={i}
+              style={{
+                position: "absolute",
+                left: x - r,
+                top: y - r,
+                width: r * 2,
+                height: r * 2,
+                borderRadius: "50%",
+                border: "2px solid rgba(255,255,255,0.7)",
+                background: "radial-gradient(circle at 35% 30%, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.1) 40%, rgba(255,255,255,0) 70%)",
+              }}
+            />
+          );
+        })}
+        {/* surface : reflet brillant + ombre au fond */}
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(170deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.18) 22%, rgba(255,255,255,0) 40%, rgba(0,10,40,0.35) 100%)" }} />
+        <div
+          style={{
+            position: "absolute",
+            left: `${-30 + ((t * 18) % 160)}%`,
+            top: 0,
+            bottom: 0,
+            width: "22%",
+            background: "linear-gradient(100deg, transparent, rgba(255,255,255,0.35), transparent)",
+            transform: "skewX(-18deg)",
+          }}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const GULogo: React.FC<{ texture: Texture; width: number; height: number; t?: number }> = ({ texture, width, height, t = 0 }) => {
   const box: React.CSSProperties = { width, height, display: "flex", alignItems: "center", justifyContent: "center" };
   const img = (file: string, scale = 1) => (
     <div style={box}>
@@ -64,6 +149,12 @@ export const GULogo: React.FC<{ texture: Texture; width: number; height: number 
       return (
         <div style={box}>
           <MaskLogo width={width * 0.9} fill="radial-gradient(120% 90% at 35% 20%, #FFD3E4 0%, #FF8DB8 38%, #F2528E 75%, #C42D69 100%)" outline={C.cream} gloss />
+        </div>
+      );
+    case "ocean":
+      return (
+        <div style={box}>
+          <OceanLogo width={width * 0.9} t={t} />
         </div>
       );
     case "love":

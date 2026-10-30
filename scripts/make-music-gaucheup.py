@@ -1,7 +1,8 @@
 """
 Musique originale de la vidéo d'annonce Gauche'Up (15 s), entièrement synthétisée (numpy + scipy, aucun sample).
 
-Funky house joyeuse, ≈128,6 BPM (1 temps = 28 frames à 60 fps), la mineur (Am7 – Dm7 – G – Cmaj7).
+Amapiano / afro house (son urbain « new vibe ») à ≈128,6 BPM (1 temps = 28 frames à 60 fps) :
+log drum mélodique, shakers, rim shots syncopés, piano électrique jazzy (Dm9 – G13 – Cmaj9 – Am9), flûte.
 
 Repères (secondes) — IDENTIQUES à src/gaucheup/config.ts (1 temps = 28/60 s) :
   0,00  accroche « Ça penche… » : basse + kick filtrés
@@ -76,87 +77,143 @@ def saw(f, tt, harm=10):
     return sum(np.sin(2 * np.pi * f * h * tt) / h for h in range(1, harm + 1))
 
 
-CHORDS = [[57, 60, 64, 67], [50, 53, 57, 60], [55, 59, 62, 67], [48, 52, 55, 59]]  # Am7 Dm7 G Cmaj7
-ROOTS = [33, 38, 31, 36]
+# Progression jazzy, chaude (ii-V-I-vi) : Dm9 – G13 – Cmaj9 – Am9
+CHORDS = [[50, 53, 57, 60, 64], [53, 57, 59, 64, 67], [48, 52, 55, 59, 62], [45, 48, 52, 55, 59]]
+ROOTS = [38, 31, 36, 33]  # D2 G1 C2 A1
 
 
 def chord_idx(time):
     return int(time // (4 * BEAT)) % 4
 
 
-# ───────────── batterie ─────────────
+SIX = BEAT / 4  # double-croche
+BAR = 4 * BEAT
+
+# ───────────── batterie (amapiano / afro house) ─────────────
 def kick():
-    n = int(0.38 * SR)
+    n = int(0.34 * SR)
     tt = np.arange(n) / SR
-    f = 48 + 120 * np.exp(-tt * 34)
-    return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-tt * 8) + filt(rng.standard_normal(n), "high", 3500) * np.exp(-tt * 300) * 0.1
+    f = 50 + 95 * np.exp(-tt * 30)
+    return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-tt * 9)
 
 
 def clap():
-    n = int(0.28 * SR)
+    n = int(0.3 * SR)
     tt = np.arange(n) / SR
-    noise = filt(rng.standard_normal(n), "band", [1000, 6000])
-    env = np.exp(-tt * 20) + 0.6 * (tt > 0.011) * np.exp(-np.maximum(0, tt - 0.011) * 40) + 0.5 * (tt > 0.022) * np.exp(-np.maximum(0, tt - 0.022) * 40)
+    noise = filt(rng.standard_normal(n), "band", [1100, 7000])
+    env = np.exp(-tt * 16) + 0.6 * (tt > 0.012) * np.exp(-np.maximum(0, tt - 0.012) * 35) + 0.5 * (tt > 0.025) * np.exp(-np.maximum(0, tt - 0.025) * 35)
     return noise * env
 
 
-def hat(open_=False):
-    n = int((0.16 if open_ else 0.05) * SR)
+def shaker(acc):
+    n = int(0.07 * SR)
     tt = np.arange(n) / SR
-    return filt(rng.standard_normal(n), "high", 8500) * np.exp(-tt * (22 if open_ else 95))
+    return filt(rng.standard_normal(n), "band", [5000, 12000]) * (np.minimum(1, tt / 0.012)) * np.exp(-tt * (45 if acc else 70))
+
+
+def rim():
+    n = int(0.08 * SR)
+    tt = np.arange(n) / SR
+    return (np.sin(2 * np.pi * 1700 * tt) * 0.6 + filt(rng.standard_normal(n), "band", [1500, 5000]) * 0.5) * np.exp(-tt * 70)
 
 
 drums = np.zeros(N)
 duck = np.ones(N)
 K, CL = kick(), clap()
-full_from = LOGO
-for k, b in enumerate(np.arange(0, END + 6 * BEAT, BEAT)):
-    if b >= DUR - 0.35:
-        break
-    soft = b < full_from
-    place(drums, K, b, 0.45 if soft else 0.9)
-    i = int(b * SR)
-    n = int(0.28 * SR)
-    d = 1 - (0.35 if soft else 0.6) * np.exp(-np.arange(n) / SR * 11)
-    j = min(N, i + n)
-    duck[i:j] = np.minimum(duck[i:j], d[: j - i])
-    if not soft:
-        place(drums, hat(True), b + BEAT / 2, 0.2)
-        place(drums, hat(), b + BEAT / 4, 0.1)
-        place(drums, hat(), b + 3 * BEAT / 4, 0.1)
-        if k % 2 == 1:
-            place(drums, CL, b, 0.38)
+GROOVE = LOGO  # le groove part en entier sur le logo
+STOP = DUR - 0.3
+for k, b in enumerate(np.arange(0, STOP, BEAT)):
+    full = b >= GROOVE
+    place(drums, K, b, 0.85 if full else 0.35)
+    i0 = int(b * SR)
+    n = int(0.25 * SR)
+    d = 1 - (0.55 if full else 0.25) * np.exp(-np.arange(n) / SR * 12)
+    j0 = min(N, i0 + n)
+    duck[i0:j0] = np.minimum(duck[i0:j0], d[: j0 - i0])
+    if full and k % 2 == 1:
+        place(drums, CL, b, 0.34)
+# shaker en double-croches (accent sur le contretemps), présent dès le début
+for k, s16 in enumerate(np.arange(0, STOP, SIX)):
+    place(drums, shaker(k % 4 == 2), s16 + (0.008 if k % 2 else 0), 0.09 if k % 4 == 2 else 0.05)
+# rim shots syncopés (motif typique amapiano, sur 2 mesures)
+RIM = [3, 6, 11, 14, 19, 22, 27, 30]
+for bar0 in np.arange(GROOVE, STOP, 2 * BAR):
+    for r_ in RIM:
+        place(drums, rim(), bar0 + r_ * SIX, 0.12)
 
-# ───────────── basse funky (octaves) ─────────────
+# ───────────── log drum (la basse percussive mélodique de l'amapiano) ─────────────
+def log_drum(m, length=0.32):
+    n = int(length * SR)
+    tt = np.arange(n) / SR
+    f0 = midi(m)
+    f = f0 * (1 + 0.9 * np.exp(-tt * 45))  # attaque qui « tombe »
+    body = np.sin(2 * np.pi * np.cumsum(f) / SR)
+    body = np.tanh(body * 2.2) * 0.75 + 0.35 * np.sin(2 * np.pi * np.cumsum(f * 2) / SR) * np.exp(-tt * 18)
+    return body * np.exp(-tt * 7.5) * np.minimum(1, tt / 0.004)
+
+
 bass = np.zeros(N)
-for k, st in enumerate(np.arange(0, DUR - 0.4, BEAT / 2)):
-    root = ROOTS[chord_idx(st)]
-    m = root + (12 if k % 2 else 0)
-    n = int(BEAT / 2 * 0.8 * SR)
+# motif sur une mesure (en double-croches) : (position, décalage en demi-tons depuis la fondamentale, durée)
+LOG = [(0, 0, 0.3), (3, 0, 0.2), (6, 7, 0.22), (8, 12, 0.18), (10, 10, 0.2), (13, 7, 0.22)]
+for bar0 in np.arange(GROOVE, STOP, BAR):
+    root = ROOTS[chord_idx(bar0 + 0.01)]
+    for pos, semi, ln in LOG:
+        place(bass, log_drum(root + 12 + semi, ln + 0.1), bar0 + pos * SIX, 1.0)
+bass = filt(bass, "low", 2200) * 0.24
+# avant le logo : juste une sous-basse douce
+for k, b in enumerate(np.arange(0, GROOVE, 2 * BEAT)):
+    n = int(2 * BEAT * SR)
+    tt = np.arange(n) / SR
+    place(bass, np.sin(2 * np.pi * midi(ROOTS[0]) * tt) * adsr(n, 0.02, 0.2, 0.6, 0.2) * 0.12, b)
+
+# ───────────── piano électrique jazzy (accords sur les contretemps) ─────────────
+def epiano(m, length):
+    n = int(length * SR)
     tt = np.arange(n) / SR
     f = midi(m)
-    s = np.sin(2 * np.pi * f * tt) + 0.45 * saw(f, tt, 5) * 0.5
-    place(bass, s * adsr(n, 0.004, 0.08, 0.5, 0.03), st)
-bass = filt(bass, "low", 1100) * 0.2
-bass *= ramp(0.55, 1, LOGO - 0.05, LOGO)
+    mod = np.sin(2 * np.pi * f * 1.0 * tt) * 1.6 * np.exp(-tt * 6)
+    return (np.sin(2 * np.pi * f * tt + mod) * 0.8 + 0.2 * np.sin(2 * np.pi * f * 2 * tt) * np.exp(-tt * 9)) * np.exp(-tt * 3.2)
 
-# ───────────── accords « stabs » (sur les contretemps) ─────────────
-stabs = np.zeros(N)
-for st in np.arange(LOGO + BEAT / 2, DUR - 0.5, BEAT):
-    n = int(0.16 * SR)
-    tt = np.arange(n) / SR
-    sig = sum(saw(midi(m + 12), tt, 6) for m in CHORDS[chord_idx(st)])
-    place(stabs, filt(sig, "low", 3200) * np.exp(-tt * 18), st)
-stabs *= 0.011
 
-# ───────────── nappe de fond ─────────────
+keys = np.zeros(N)
+CHORD_HITS = [2, 5, 10, 13]  # positions (double-croches) dans la mesure : rythme « skank » décalé
+for bar0 in np.arange(0, STOP, BAR):
+    notes = CHORDS[chord_idx(bar0 + 0.01)]
+    for pos in CHORD_HITS:
+        for m in notes:
+            place(keys, epiano(m + 12, 0.55), bar0 + pos * SIX, 1.0)
+keys = filt(keys, "low", 4500) * 0.008
+keys *= ramp(0.7, 1, GROOVE - 0.1, GROOVE)
+
+# ───────────── nappe aérienne ─────────────
 pad = np.zeros(N)
-for b in range(int(DUR / (4 * BEAT)) + 1):
-    n = int((4 * BEAT + 0.8) * SR)
+for b in range(int(DUR / BAR) + 1):
+    n = int((BAR + 0.8) * SR)
     tt = np.arange(n) / SR
-    sig = sum(saw(midi(m) * 2 ** (det / 12), tt, 5) for m in CHORDS[b % 4] for det in (-0.08, 0.08))
-    place(pad, sig * adsr(n, 0.2, 0.2, 0.8, 0.7), b * 4 * BEAT)
-pad = filt(pad, "low", 1500) * 0.006
+    sig = sum(np.sin(2 * np.pi * midi(m + 12) * 2 ** (det / 12) * tt) for m in CHORDS[b % 4] for det in (-0.1, 0.1))
+    place(pad, sig * adsr(n, 0.3, 0.2, 0.8, 0.7), b * BAR)
+pad = filt(pad, "low", 2500) * 0.004
+
+# ───────────── mélodie « flûte » (accroche, puis écran de fin) ─────────────
+def flute(m, length):
+    n = int(length * SR)
+    tt = np.arange(n) / SR
+    f = midi(m) * (1 + 0.006 * np.sin(2 * np.pi * 5.2 * tt) * np.clip(tt * 5, 0, 1))
+    tone = np.sin(2 * np.pi * np.cumsum(f) / SR) + 0.12 * np.sin(2 * np.pi * np.cumsum(2 * f) / SR)
+    breath = filt(rng.standard_normal(n), "band", [midi(m) * 1.5, midi(m) * 4]) * 0.06
+    return (tone + breath) * adsr(n, 0.04, 0.1, 0.8, 0.08)
+
+
+lead = np.zeros(N)
+MEL = [(0, 76, 2), (2, 79, 1), (3, 81, 1), (4, 79, 2), (6, 76, 1), (7, 74, 1), (8, 76, 3), (11, 72, 1), (12, 74, 2), (14, 76, 2)]
+for start in (TEES[0], END):
+    for pos, m, ln in MEL:
+        st = start + pos * BEAT / 2
+        if st < STOP - 0.2:
+            place(lead, flute(m, ln * BEAT / 2 * 0.95), st)
+lead = filt(lead, "low", 5000) * 0.03
+
+stabs = keys  # (nom utilisé par l'écho et la réverbération du mixage)
 
 # ───────────── sound design ─────────────
 fx = np.zeros(N)
@@ -231,7 +288,7 @@ for m in (45, 57, 60, 64, 67, 72):
 place(fx, filt(fin, "low", 3000) * adsr(len(fin), 0.01, 0.3, 0.6, 0.6), END + 7 * BEAT, 0.012)
 
 # ───────────── mixage ─────────────
-mix = drums * 0.36 + bass * duck + stabs * duck**0.5 + pad * duck**0.5 + fx
+mix = drums * 0.42 + bass * duck + keys * duck**0.5 + pad * duck**0.5 + lead * duck**0.3 + fx
 L = mix.copy()
 R = mix.copy()
 d = int(BEAT * 0.75 * SR)
@@ -242,11 +299,11 @@ ir_t = np.arange(ir_n) / SR
 for ch, seed in ((L, 1), (R, 2)):
     ir = filt(np.random.default_rng(seed).standard_normal(ir_n), "low", 7000) * np.exp(-ir_t * 3.2)
     ir /= np.sqrt(np.sum(ir**2))
-    ch += 0.22 * fftconvolve(filt(stabs + pad + fx * 0.7, "high", 300), ir)[:N]
+    ch += 0.22 * fftconvolve(filt(keys + pad + lead + fx * 0.7, "high", 300), ir)[:N]
 
 env = ramp(1, 0, DUR - 0.3, DUR) * ramp(0, 1, 0, 0.005)
 st = np.stack([L * env, R * env], axis=1)
-DRIVE = float(sys.argv[2]) if len(sys.argv) > 2 else 1.75  # ≈ -14 LUFS, pic à -1 dBFS
+DRIVE = float(sys.argv[2]) if len(sys.argv) > 2 else 1.45  # ≈ -14 LUFS, pic à -1 dBFS
 st = np.tanh(st * DRIVE / np.max(np.abs(st))) / np.tanh(DRIVE)
 st *= 10 ** (-1 / 20) / np.max(np.abs(st))
 

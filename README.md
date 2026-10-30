@@ -174,5 +174,5 @@ npm run render:gaucheup  # → out/gaucheup.mp4
 | 11,2-15 s | Écran de fin : le logo change de texture à chaque temps, « C'est lancé ! », gaucheup.fr |
 
 - **Tout se règle dans `src/gaucheup/config.ts`** : textes, t-shirts (nom, légende, prix, photos, coloris), photos de la mosaïque, ordre des textures du logo (`logoTextures`), couleurs, rythme (`beatFrames`, durée des scènes en temps).
-- **Images** : `public/gaucheup/` (logos détourés, forme des lettres `logo-mask.png` / `logo-outline.png`, mockups dans `tees/`). Les textures `rose` et `love` sont générées sur la forme exacte des lettres ; pour en ajouter une, ajouter un `case` dans `GULogo` (`src/gaucheup/components.tsx`).
-- **Musique** : `scripts/make-music-gaucheup.py`, calée sur les mêmes repères (sifflet sur « à gauche », impact sur le logo, « pop » à chaque coloris, whoosh à chaque raccord, carillon à chaque texture).
+- **Images** : `public/gaucheup/` (logos détourés, forme des lettres `logo-mask.png` / `logo-outline.png`, mockups dans `tees/`). Les textures `rose`, `ocean` (eau animée : reflets, bulles) et `love` (en réserve) sont générées sur la forme exacte des lettres ; pour en ajouter une, ajouter un `case` dans `GULogo` (`src/gaucheup/components.tsx`).
+- **Musique** : `scripts/make-music-gaucheup.py`, amapiano / afro house (log drum, shakers, piano jazzy, flûte), calée sur les mêmes repères (sifflet sur « à gauche », impact sur le logo, « pop » à chaque coloris, whoosh à chaque raccord, carillon à chaque texture).

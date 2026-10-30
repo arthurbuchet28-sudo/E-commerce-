@@ -98,7 +98,7 @@ export const GU = {
   lifestyle: ["life-agt", "life-rep", "life-cauch", "life-bism", "life-rhaine", "life-agt2"],
 
   // Textures du logo sur l'écran de fin (une par temps, la dernière reste)
-  logoTextures: ["original", "chrome", "leopard", "holo", "fire", "rose", "love", "original"],
+  logoTextures: ["original", "chrome", "leopard", "holo", "fire", "rose", "ocean", "original"],
 
   // Rythme : 1 temps = 28 frames à 60 fps (≈ 128,6 BPM). Durées des scènes en temps.
   beatFrames: 28,

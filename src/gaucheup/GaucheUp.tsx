@@ -286,7 +286,7 @@ const EndCard: React.FC = () => {
             transform: `translateY(${Math.sin(t * 2.4) * 8}px) rotate(${Math.sin(t * 1.7) * 1.6}deg) scale(${scale})`,
           }}
         >
-          <GULogo texture={textures[idx]} width={940} height={720} />
+          <GULogo texture={textures[idx]} width={940} height={720} t={t} />
         </div>
         <SparkBurst age={age} cx={540} cy={LOGO_CY} seed={`e${idx}`} />
         {/* C'EST LANCÉ ! */}
