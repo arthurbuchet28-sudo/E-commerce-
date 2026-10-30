@@ -13,10 +13,13 @@
     "render:mockup": "remotion render PubMockup out/pub-mockup.mp4",
     "music": "python3 scripts/make-music.py public/mockup-music.wav",
     "render:boost": "remotion render PubBoost out/pub-boost.mp4",
-    "music:boost": "python3 scripts/make-music-boost.py public/boost-music.wav"
+    "music:boost": "python3 scripts/make-music-boost.py public/boost-music.wav",
+    "render:gaucheup": "remotion render GaucheUp out/gaucheup.mp4",
+    "music:gaucheup": "python3 scripts/make-music-gaucheup.py public/gaucheup/gaucheup-music.wav"
   },
   "dependencies": {
     "@fontsource/inter": "5.2.8",
+    "@fontsource/sour-gummy": "5.2.8",
     "@remotion/cli": "4.0.536",
     "react": "18.3.1",
     "react-dom": "18.3.1",

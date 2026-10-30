@@ -153,3 +153,26 @@ scripts/make-music-boost.py ← musique + sound design synthétisés, calés sur
 - **Chiffres** : `viewsBefore`, `viewsAfter`, `followersGain`, `score`.
 - **Couleurs** : `accent`, `accent2`, `black`, `background`.
 - **Tempo et durées** : `bpm` (1 temps = `BEAT` frames) et `bars` (durée de chaque scène en mesures). Les animations sont exprimées en temps (`beats(n)`), elles suivent le tempo. Si vous changez le tempo ou les durées, reportez-les en tête de `scripts/make-music-boost.py`, puis `npm run music:boost`.
+
+---
+
+# Annonce de lancement Gauche'Up (15 s, 9:16)
+
+Composition `GaucheUp` (1080×1920, 60 fps). Vidéo d'annonce « la boutique est ouverte » pour [gaucheup.fr](https://gaucheup.fr), avec les vrais mockups des t-shirts et les logos de la marque.
+
+```bash
+npm run music:gaucheup   # régénère la musique (python3 + numpy + scipy)
+npm run render:gaucheup  # → out/gaucheup.mp4
+```
+
+| Temps | Scène |
+|---|---|
+| 0-1,4 s | « Ça penche… à gauche. » : l'image penche vraiment vers la gauche |
+| 1,4-2,8 s | Le logo s'écrase à l'écran : « Nouvelle marque · Streetwear de gauche. » |
+| 2,8-9,8 s | Les 5 t-shirts (1,4 s chacun) : les coloris changent sur le temps, chaque raccord pousse vers la gauche |
+| 9,8-11,2 s | Mosaïque des t-shirts portés : « 4 t-shirts. + 1 édition limitée. » |
+| 11,2-15 s | Écran de fin : le logo change de texture à chaque temps, « C'est lancé ! », gaucheup.fr |
+
+- **Tout se règle dans `src/gaucheup/config.ts`** : textes, t-shirts (nom, légende, prix, photos, coloris), photos de la mosaïque, ordre des textures du logo (`logoTextures`), couleurs, rythme (`beatFrames`, durée des scènes en temps).
+- **Images** : `public/gaucheup/` (logos détourés, forme des lettres `logo-mask.png` / `logo-outline.png`, mockups dans `tees/`). Les textures `rose` et `love` sont générées sur la forme exacte des lettres ; pour en ajouter une, ajouter un `case` dans `GULogo` (`src/gaucheup/components.tsx`).
+- **Musique** : `scripts/make-music-gaucheup.py`, calée sur les mêmes repères (sifflet sur « à gauche », impact sur le logo, « pop » à chaque coloris, whoosh à chaque raccord, carillon à chaque texture).
