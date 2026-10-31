@@ -15,7 +15,9 @@
     "render:boost": "remotion render PubBoost out/pub-boost.mp4",
     "music:boost": "python3 scripts/make-music-boost.py public/boost-music.wav",
     "render:gaucheup": "remotion render GaucheUp out/gaucheup.mp4",
-    "music:gaucheup": "python3 scripts/make-music-gaucheup.py public/gaucheup/gaucheup-music.wav"
+    "music:gaucheup": "python3 scripts/make-music-gaucheup.py public/gaucheup/gaucheup-music.wav",
+    "render:gaucheup-promo": "remotion render GaucheUpPromo out/gaucheup-promo.mp4",
+    "music:gaucheup-promo": "python3 scripts/make-music-gaucheup-promo.py public/gaucheup/gaucheup-promo-music.wav"
   },
   "dependencies": {
     "@fontsource/inter": "5.2.8",

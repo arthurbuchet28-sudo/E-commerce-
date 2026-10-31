@@ -122,3 +122,58 @@ export const GU_SCENE_FRAMES = {
 };
 export const GU_TOTAL_FRAMES =
   GU_SCENE_FRAMES.hook + GU_SCENE_FRAMES.logo + GU_SCENE_FRAMES.tee * GU.tees.length + GU_SCENE_FRAMES.mosaic + GU_SCENE_FRAMES.end;
+
+/**
+ * ─────────────────────────────────────────────────────────────
+ *  VIDÉO DE PRÉSENTATION (marque + site + promos), 9:16, ≈ 20 s
+ * ─────────────────────────────────────────────────────────────
+ */
+export const GUP = {
+  promo: {
+    label: "Promo spéciale manif",
+    until: "jusqu'au 30 novembre",
+    tee: { price: "24,99 €", old: "28,99 €", off: "-14 %" },
+    limited: { price: "33,99 €", old: "35,79 €", off: "-5 %" },
+  },
+  site: {
+    title: "Tout est sur",
+    // positions de défilement dans la capture du site (px, capture de 975 px de large)
+    steps: [0, 1900, 3350, 4300],
+    // repère du bouton « Voir la collection » dans la capture (pour le « tap »)
+    tap: { x: 487, y: 1160 },
+    notes: ["Édition limitée", "-14 % sur tout", "Imprimé en Europe"],
+  },
+  limited: {
+    stamp: "Édition limitée",
+    name: "Bismillah c'est les ténèbres !",
+    views: ["bism-noir", "bism-rose"],
+    caption: "2 coloris. Pas un de plus.",
+  },
+  manif: {
+    sign: ["Promo", "spéciale manif"],
+    signBack: "-14 %",
+    signBackSub: "sur tous les t-shirts",
+    crowd: ["-14 %", "24,99 €", "-5 %", "À GAUCHE TOUTE", "PROMO MANIF", "-14 %", "LA RÉPUBLIQUE C'EST MOI", "24,99 €"],
+  },
+  end: {
+    lines: ["Retrouve nos t‑shirts", "dès maintenant sur"], // ‑ = trait d'union insécable
+    hint: "Lien dans la bio",
+    textures: ["original", "chrome", "leopard", "holo", "fire", "rose", "ocean", "original"] as const,
+  },
+  // durées des scènes, en temps (1 temps = 28 frames)
+  beats: { hook: 3, logo: 3, site: 8, tee: 3, limited: 4, manif: 4, end: 9 },
+} as const;
+
+export const GUP_FRAMES = {
+  hook: bt(GUP.beats.hook),
+  logo: bt(GUP.beats.logo),
+  site: bt(GUP.beats.site),
+  tee: bt(GUP.beats.tee),
+  limited: bt(GUP.beats.limited),
+  manif: bt(GUP.beats.manif),
+  end: bt(GUP.beats.end),
+};
+/** 4 t-shirts (l'édition limitée a sa propre scène). */
+export const GUP_TEES = 4;
+export const GUP_TOTAL_FRAMES =
+  GUP_FRAMES.hook + GUP_FRAMES.logo + GUP_FRAMES.site + GUP_FRAMES.tee * GUP_TEES + GUP_FRAMES.limited + GUP_FRAMES.manif + GUP_FRAMES.end;

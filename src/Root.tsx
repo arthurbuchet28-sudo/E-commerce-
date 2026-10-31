@@ -11,6 +11,8 @@ import { BOOST, BOOST_TOTAL_FRAMES } from "./boost/config";
 import { PubBoost } from "./boost/PubBoost";
 import { GU, GU_TOTAL_FRAMES } from "./gaucheup/config";
 import { GaucheUp } from "./gaucheup/GaucheUp";
+import { GUP_TOTAL_FRAMES } from "./gaucheup/config";
+import { GaucheUpPromo } from "./gaucheup/Promo";
 
 waitForFonts();
 
@@ -54,5 +56,7 @@ export const RemotionRoot: React.FC = () => (
     />
     {/* Annonce de lancement Gauche'Up, 9:16, 15 s */}
     <Composition id="GaucheUp" component={GaucheUp} durationInFrames={GU_TOTAL_FRAMES} fps={GU.fps} width={GU.width} height={GU.height} />
+    {/* Présentation Gauche'Up (marque, site, t-shirts, promos), 9:16, ≈ 20 s */}
+    <Composition id="GaucheUpPromo" component={GaucheUpPromo} durationInFrames={GUP_TOTAL_FRAMES} fps={GU.fps} width={GU.width} height={GU.height} />
   </>
 );

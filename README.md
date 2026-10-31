@@ -176,3 +176,14 @@ npm run render:gaucheup  # → out/gaucheup.mp4
 - **Tout se règle dans `src/gaucheup/config.ts`** : textes, t-shirts (nom, légende, prix, photos, coloris), photos de la mosaïque, ordre des textures du logo (`logoTextures`), couleurs, rythme (`beatFrames`, durée des scènes en temps).
 - **Images** : `public/gaucheup/` (logos détourés, forme des lettres `logo-mask.png` / `logo-outline.png`, mockups dans `tees/`). Les textures `rose`, `ocean` (eau animée : reflets, bulles) et `love` (en réserve) sont générées sur la forme exacte des lettres ; pour en ajouter une, ajouter un `case` dans `GULogo` (`src/gaucheup/components.tsx`).
 - **Musique** : `scripts/make-music-gaucheup.py`, amapiano / afro house (log drum, shakers, piano jazzy, flûte), calée sur les mêmes repères (sifflet sur « à gauche », impact sur le logo, « pop » à chaque coloris, whoosh à chaque raccord, carillon à chaque texture).
+
+## Présentation Gauche'Up (≈ 20 s, 9:16)
+
+Composition `GaucheUpPromo` : marque + vrai site + t-shirts avec prix promo + édition limitée + « promo spéciale manif » (Ernesto et sa pancarte) + fin « Retrouve nos t-shirts dès maintenant sur gaucheup.fr · Lien dans la bio ».
+
+```bash
+npm run music:gaucheup-promo   # musique (amapiano / afro house), calée sur la vidéo
+npm run render:gaucheup-promo  # → out/gaucheup-promo.mp4
+```
+
+Tout se règle dans l'objet `GUP` de `src/gaucheup/config.ts` : prix et réductions (`promo`), date de fin de promo (`promo.until`), annotations du site, textes de la pancarte, textes de fin, ordre des textures, durées des scènes (en temps). La capture du site est `public/gaucheup/site/home.jpg` (à refaire si le site change), Ernesto vient du site (`public/gaucheup/ernesto-beret.png`).

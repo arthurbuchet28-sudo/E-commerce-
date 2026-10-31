@@ -8,16 +8,16 @@ import { BEAT, GU, GU_SCENE_FRAMES as F, GU_TOTAL_FRAMES, ColorKey } from "./con
 import { asset, GULogo, HALF, Pushed, SparkBurst, Sparkle, Swirls, tee } from "./components";
 
 const C = GU.colors;
-const display: React.CSSProperties = { fontFamily: GU.fonts.display, fontWeight: 900, letterSpacing: "-0.01em", lineHeight: 0.95 };
-const body: React.CSSProperties = { fontFamily: GU.fonts.body, fontWeight: 800 };
+export const display: React.CSSProperties = { fontFamily: GU.fonts.display, fontWeight: 900, letterSpacing: "-0.01em", lineHeight: 0.95 };
+export const body: React.CSSProperties = { fontFamily: GU.fonts.body, fontWeight: 800 };
 /** Ombre « sticker » : décalage plein, sans flou. */
-const sticker = (c: string, d = 8) => `0 ${d}px 0 ${c}`;
+export const sticker = (c: string, d = 8) => `0 ${d}px 0 ${c}`;
 
-const popIn = (frame: number, at: number, fps: number, damping = 11) => spring({ frame: frame - at, fps, config: { damping, stiffness: 170, mass: 0.7 } });
+export const popIn = (frame: number, at: number, fps: number, damping = 11) => spring({ frame: frame - at, fps, config: { damping, stiffness: 170, mass: 0.7 } });
 
 /* ───────────── 1. Accroche : « Ça penche… à gauche. » (l'image penche vraiment) ───────────── */
 
-const Hook: React.FC = () => {
+export const Hook: React.FC = () => {
   const { frame, fps, duration } = useScene();
   const l1 = popIn(frame, -6, fps);
   const l2 = popIn(frame, BEAT, fps, 9);
@@ -43,7 +43,7 @@ const Hook: React.FC = () => {
 
 /* ───────────── 2. Le logo s'écrase à l'écran ───────────── */
 
-const LogoSlam: React.FC = () => {
+export const LogoSlam: React.FC = () => {
   const { frame, fps, duration } = useScene();
   const s = spring({ frame: frame - 2, fps, config: { damping: 9, stiffness: 140, mass: 0.9 } });
   const landed = frame - 10;
@@ -70,7 +70,8 @@ const LogoSlam: React.FC = () => {
 
 /* ───────────── 3. Les t-shirts : les couleurs changent sur le temps ───────────── */
 
-const TeeScene: React.FC<{ i: number }> = ({ i }) => {
+/** promo : affiche le prix promo, l'ancien prix barré et la réduction (vidéo de présentation). */
+export const TeeScene: React.FC<{ i: number; promo?: { price: string; old: string; off: string } }> = ({ i, promo }) => {
   const { frame, fps, duration } = useScene();
   const t = GU.tees[i];
   const views = t.views;
@@ -141,8 +142,10 @@ const TeeScene: React.FC<{ i: number }> = ({ i }) => {
           <Img src={tee(views[idx].img)} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", opacity: swapP }} />
         </div>
         {/* pastille prix */}
+        {promo ? <PromoPrice frame={frame} fps={fps} top={(limited ? 500 : 470) - 70} promo={promo} /> : null}
         <div
           style={{
+            display: promo ? "none" : undefined,
             position: "absolute",
             right: 150,
             top: (limited ? 500 : 470) - 46,
@@ -188,6 +191,25 @@ const TeeScene: React.FC<{ i: number }> = ({ i }) => {
     </Pushed>
   );
 };
+/** Prix promo : nouveau prix en grand, ancien prix barré, badge de réduction qui « pop ». */
+export const PromoPrice: React.FC<{ frame: number; fps: number; top: number; promo: { price: string; old: string; off: string } }> = ({ frame, fps, top, promo }) => {
+  const p = popIn(frame, 12, fps, 9);
+  const strike = clamp((frame - 20) / 8);
+  const badge = popIn(frame, BEAT, fps, 8);
+  return (
+    <div style={{ position: "absolute", right: 110, top, display: "flex", flexDirection: "column", alignItems: "flex-end", transform: `rotate(-6deg) scale(${Math.max(0, p)})`, transformOrigin: "100% 50%" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+        <div style={{ position: "relative", ...display, fontWeight: 800, fontSize: 40, color: C.ink, background: C.cream, padding: "8px 18px 12px", borderRadius: 999, border: `4px solid ${C.ink}` }}>
+          {promo.old}
+          <div style={{ position: "absolute", left: 10, right: 10, top: "52%", height: 5, background: C.red, borderRadius: 3, transform: `scaleX(${strike}) rotate(-8deg)`, transformOrigin: "0 50%" }} />
+        </div>
+        <div style={{ ...display, fontSize: 64, color: C.cream, background: C.red, padding: "14px 30px 22px", borderRadius: 999, border: `5px solid ${C.ink}` }}>{promo.price}</div>
+      </div>
+      <div style={{ ...body, fontSize: 30, color: C.cream, background: C.ink, padding: "8px 18px", borderRadius: 999, marginTop: 10, transform: `scale(${Math.max(0, badge)}) rotate(4deg)` }}>{promo.off}</div>
+    </div>
+  );
+};
+
 const teeScenes = GU.tees.map((_, i) => {
   const Comp: React.FC = () => <TeeScene i={i} />;
   return Comp;
