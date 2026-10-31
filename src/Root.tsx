@@ -1,5 +1,5 @@
 import React from "react";
-import { Composition } from "remotion";
+import { Composition, Still } from "remotion";
 import { CONFIG, TOTAL_FRAMES } from "./config";
 import { waitForFonts } from "./fonts";
 import { Pub } from "./Pub";
@@ -13,6 +13,7 @@ import { GU, GU_TOTAL_FRAMES } from "./gaucheup/config";
 import { GaucheUp } from "./gaucheup/GaucheUp";
 import { GUP_TOTAL_FRAMES } from "./gaucheup/config";
 import { GaucheUpPromo } from "./gaucheup/Promo";
+import { GaucheUpCover } from "./gaucheup/Cover";
 
 waitForFonts();
 
@@ -58,5 +59,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="GaucheUp" component={GaucheUp} durationInFrames={GU_TOTAL_FRAMES} fps={GU.fps} width={GU.width} height={GU.height} />
     {/* Présentation Gauche'Up (marque, site, t-shirts, promos), 9:16, ≈ 20 s */}
     <Composition id="GaucheUpPromo" component={GaucheUpPromo} durationInFrames={GUP_TOTAL_FRAMES} fps={GU.fps} width={GU.width} height={GU.height} />
+    {/* Miniature TikTok de la présentation */}
+    <Still id="GaucheUpCover" component={GaucheUpCover} width={GU.width} height={GU.height} />
   </>
 );
